@@ -27,20 +27,21 @@ body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-gl
   top: 0 !important;
   right: 0 !important;
   left: auto !important;
-  width: 271.1538461538px !important;
-  min-width: 271.1538461538px !important;
+  width: 284.7115384615px !important;
+  min-width: 284.7115384615px !important;
   height: 47px !important;
   display: block !important;
   padding: 0 !important;
   margin: 0 !important;
   border: 0 !important;
   border-radius: 0 !important;
-  background: url("../assets/tab-lab-header-right-family-preview.svg") right bottom / 271.1538461538px 31.6346153846px no-repeat !important;
+  background: url("../assets/tab-lab-header-right-family-preview.svg") right bottom / 284.7115384615px 31.6346153846px no-repeat !important;
   box-shadow: none !important;
   backdrop-filter: none !important;
   clip-path: none !important;
   z-index: 170 !important;
-  transform: none !important;
+  transform: scale(.9) !important;
+  transform-origin: right bottom !important;
 }
 body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-nav::before,
 body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-nav::after,
@@ -70,11 +71,11 @@ body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-gl
 }
 body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-nav .foundry-global-back { z-index: 3 !important; }
 body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-nav .foundry-global-home {
-  left: 85.8653846154px !important;
+  left: 92.6442307692px !important;
   z-index: 2 !important;
 }
 body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-nav .foundry-global-menu {
-  left: 171.7307692308px !important;
+  left: 185.2884615385px !important;
   z-index: 1 !important;
 }
 body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-control svg,

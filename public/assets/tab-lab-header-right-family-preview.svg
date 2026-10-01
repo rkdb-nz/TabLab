@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="600" height="70" viewBox="0 0 600 70" role="img" aria-label="Tab Lab matching right navigation preview">
+<svg xmlns="http://www.w3.org/2000/svg" width="630" height="70" viewBox="0 0 630 70" role="img" aria-label="Tab Lab matching right navigation preview">
 <defs>
   <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1">
     <stop offset="0" stop-color="#fffdf8"/>
@@ -9,12 +9,12 @@
   <filter id="tabShadow" x="-25%" y="-30%" width="160%" height="190%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#3d2a1f" flood-opacity=".36"/></filter>
 </defs>
 <!-- Identical LHS cream-tab silhouette, translated only. Back overlaps Home; Home overlaps MENU. -->
-<g transform="translate(380 0)">
+<g transform="translate(410 0)">
   <g filter="url(#tabShadow)"><path d="M0 70 V27 C0 8 11 0 30 0 H179 C198 0 207 9 211 27 L220 70 Z" fill="url(#cream)" stroke="#725b49" stroke-width="1.4"/></g>
   <path d="M4 26 C7 10 16 4 32 4 H177 C192 4 201 11 205 26" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="1.8"/>
   <text x="105" y="46" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="37" font-weight="700" fill="#2a1d17">MENU</text>
 </g>
-<g transform="translate(190 0)">
+<g transform="translate(205 0)">
   <g filter="url(#tabShadow)"><path d="M0 70 V27 C0 8 11 0 30 0 H179 C198 0 207 9 211 27 L220 70 Z" fill="url(#cream)" stroke="#725b49" stroke-width="1.4"/></g>
   <path d="M4 26 C7 10 16 4 32 4 H177 C192 4 201 11 205 26" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="1.8"/>
   <g transform="translate(105 37)" fill="none" stroke="#2a1d17" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M-20 -1 L0 -19 L20 -1"/><path d="M-15 -5 V20 H15 V-5"/></g>
