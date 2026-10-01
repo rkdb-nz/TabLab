@@ -40,6 +40,9 @@ body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-gl
   backdrop-filter: none !important;
   clip-path: none !important;
   z-index: 170 !important;
+  /* Match the visible LHS tab height; scale artwork and click targets together. */
+  transform: scale(.75) !important;
+  transform-origin: right bottom !important;
 }
 body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-nav::before,
 body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-nav::after,
