@@ -1,0 +1,86 @@
+/* Approved SVG masters: fixed presentation sizes; only the middle space flexes.
+   Preserve the existing 47px header and all content below it. */
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .tablab-browserbar {
+  height: 47px !important;
+  padding: 0 !important;
+  background: #816a58 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .tablab-browserbar::before {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  inset: auto auto 0 0 !important;
+  width: 214.2115384615px !important;
+  height: 47px !important;
+  background: url("../assets/tab-lab-header-left.svg") left bottom / 214.2115384615px 47px no-repeat !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+  pointer-events: none !important;
+}
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .tablab-browserbar::after {
+  display: none !important;
+}
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-nav {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: auto !important;
+  width: 256.6349206349px !important;
+  min-width: 256.6349206349px !important;
+  height: 47px !important;
+  display: block !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: url("../assets/tab-lab-header-right.svg") right bottom / 256.6349206349px 47px no-repeat !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  clip-path: none !important;
+  z-index: 170 !important;
+}
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-nav::before,
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-nav::after,
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-control::before,
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-control::after {
+  display: none !important;
+}
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-nav .foundry-global-control {
+  position: absolute !important;
+  top: 4.4761904762px !important;
+  left: 2.9841269841px !important;
+  width: 94px !important;
+  min-width: 0 !important;
+  height: 42.1507936508px !important;
+  min-height: 0 !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  transform: none !important;
+  clip-path: polygon(0 100%, 7.54% 74.34%, 13.89% 23.89%, 18% 9%, 28.57% 0, 72.22% 0, 84% 9%, 86.9% 23.89%, 93.25% 74.34%, 100% 100%) !important;
+  cursor: pointer !important;
+}
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-nav .foundry-global-back { z-index: 3 !important; }
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-nav .foundry-global-home {
+  left: 82.8095238095px !important;
+  z-index: 2 !important;
+}
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-nav .foundry-global-menu {
+  left: 162.6349206349px !important;
+  z-index: 1 !important;
+}
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-control svg,
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-menu span {
+  visibility: hidden !important;
+}
+body.homepage.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-control:focus-visible {
+  outline: 0 !important;
+  background: rgba(58,36,25,.16) !important;
+}
