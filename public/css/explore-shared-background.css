@@ -78,3 +78,83 @@ html[data-explore-invert] body.homepage.explore-open .explore-kicker {
   body.homepage.explore-open .explore-boardroom h2 {font-size: clamp(34px, 5vw, 52px) !important;}
   body.homepage.explore-open .explore-boardroom p {font-size:14px !important;}
 }
+
+/* Approved option 9: Espresso Edge navigation cards. */
+body.homepage.explore-open #exploreScreen .explore-choice {
+  display: grid !important;
+  grid-template-columns: 58px minmax(0, 1fr) 28px !important;
+  column-gap: 20px !important;
+  align-items: center !important;
+  min-height: 76px !important;
+  padding: 12px 24px 12px 22px !important;
+  box-sizing: border-box;
+  clip-path: none !important;
+  border: 1px solid #dfcdc0 !important;
+  border-left: 12px solid #3c2b24 !important;
+  border-bottom: 3px solid #32231d !important;
+  border-radius: 12px 12px 6px 6px !important;
+  background: linear-gradient(110deg, #fffaf4, #f8eee5) !important;
+  color: #261a14 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: clamp(12px, 1.08vw, 18px) !important;
+  font-weight: 500 !important;
+  letter-spacing: .08em !important;
+  text-shadow: none !important;
+  box-shadow: inset 0 1px 0 #fff, 0 8px 14px rgba(91,58,40,.12) !important;
+  transition: transform .18s ease, box-shadow .18s ease !important;
+}
+body.homepage.explore-open #exploreScreen .explore-choice:first-child {
+  background: linear-gradient(110deg, #e8b99b, #d6a28a) !important;
+  border-top-color: #e8bd9e !important;
+  border-right-color: #c99a80 !important;
+  margin-bottom: 0 !important;
+}
+body.homepage.explore-open #exploreScreen .explore-choice::before {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-start !important;
+  height: 62% !important;
+  padding-right: 15px !important;
+  border-right: 1px solid #725346 !important;
+  color: #35241c !important;
+  font-family: "Instrument Serif", Georgia, serif !important;
+  font-size: 28px !important;
+  font-weight: 400 !important;
+  text-shadow: none !important;
+}
+body.homepage.explore-open #exploreScreen .explore-choice::after {
+  width: 28px !important;
+  height: 20px !important;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 22'%3E%3Cpath d='M1 11H28M19 2L28 11 19 20' fill='none' stroke='%2335241c' stroke-width='1.5'/%3E%3C/svg%3E") center / contain no-repeat !important;
+  justify-self: end;
+}
+body.homepage.explore-open #exploreScreen .explore-choices::before,
+body.homepage.explore-open #exploreScreen .explore-choices::after {
+  display: none !important;
+}
+body.homepage.explore-open #exploreScreen .explore-choice:hover {
+  transform: translateY(-2px);
+  box-shadow: inset 0 1px 0 #fff, 0 10px 18px rgba(91,58,40,.18) !important;
+}
+body.homepage.explore-open #exploreScreen .explore-choice:focus-visible {
+  outline: 3px solid #684839;
+  outline-offset: 4px;
+}
+@media (max-width: 1100px) {
+  body.homepage.explore-open #exploreScreen .explore-choice {
+    grid-template-columns: 42px minmax(0, 1fr) 22px !important;
+    gap: 12px !important;
+    padding: 10px 16px 10px 15px !important;
+    min-height: 58px !important;
+    border-left-width: 9px !important;
+    font-size: 12px !important;
+    letter-spacing: .055em !important;
+  }
+  body.homepage.explore-open #exploreScreen .explore-choice::before {
+    font-size: 25px !important;
+    padding-right: 10px !important;
+  }
+  body.homepage.explore-open #exploreScreen .explore-choice::after {
+    width: 22px !important;
+  }
+}
