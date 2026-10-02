@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="688" height="126" viewBox="0 0 688 126">
+<defs>
+ <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fffdf8"/><stop offset=".48" stop-color="#fbf3ea"/><stop offset="1" stop-color="#eadbce"/></linearGradient>
+ <filter id="shadow" x="-15%" y="-20%" width="140%" height="160%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#2d1d15" flood-opacity=".34"/></filter>
+</defs>
+<g filter="url(#shadow)"><path d="M436 125 C446 123 451 111 455 96 L471 39 C476 20 488 12 508 12 H618 C638 12 650 20 655 39 L671 96 C675 111 680 123 688 125 Z" fill="url(#cream)" stroke="#765b47" stroke-width="2"/></g>
+<path d="M477 40 C481 24 492 18 510 18 H616 C633 18 644 25 648 40" fill="none" stroke="#fff" stroke-opacity=".78" stroke-width="3"/>
+<text x="563" y="82" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="38" font-weight="700" fill="#3a2419">MENU</text>
+<g filter="url(#shadow)"><path d="M222 125 C232 123 237 111 241 96 L257 39 C262 20 274 12 294 12 H404 C424 12 436 20 441 39 L457 96 C461 111 466 123 474 125 Z" fill="url(#cream)" stroke="#765b47" stroke-width="2"/></g>
+<path d="M263 40 C267 24 278 18 296 18 H402 C419 18 430 25 434 40" fill="none" stroke="#fff" stroke-opacity=".78" stroke-width="3"/>
+<g transform="translate(349 66)" fill="none" stroke="#3a2419" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"><path d="M-28 -2 L0 -27 L28 -2"/><path d="M-21 -7 V27 H21 V-7"/></g>
+<g filter="url(#shadow)"><path d="M8 125 C18 123 23 111 27 96 L43 39 C48 20 60 12 80 12 H190 C210 12 222 20 227 39 L243 96 C247 111 252 123 260 125 Z" fill="url(#cream)" stroke="#765b47" stroke-width="2"/></g>
+<path d="M49 40 C53 24 64 18 82 18 H188 C205 18 216 25 220 40" fill="none" stroke="#fff" stroke-opacity=".78" stroke-width="3"/>
+<g transform="translate(135 66)" fill="none" stroke="#3a2419" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"><path d="M5 -25 L-23 0 L5 25"/><path d="M-21 0 H31"/></g>
+</svg>

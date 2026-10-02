@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="474" height="104" viewBox="0 0 474 104"
+     role="img" aria-label="Tab Lab left header component">
+<defs>
+  <linearGradient id="cream" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fffdf8"/>
+    <stop offset=".35" stop-color="#fff8f0"/>
+    <stop offset=".78" stop-color="#f3e7dc"/>
+    <stop offset="1" stop-color="#e7d8ca"/>
+  </linearGradient>
+  <linearGradient id="brown" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#957761"/>
+    <stop offset=".48" stop-color="#80614d"/>
+    <stop offset="1" stop-color="#654b3a"/>
+  </linearGradient>
+  <radialGradient id="red" cx=".32" cy=".25"><stop offset="0" stop-color="#ff9488"/><stop offset=".5" stop-color="#f25d51"/><stop offset="1" stop-color="#d23f36"/></radialGradient>
+  <radialGradient id="amber" cx=".32" cy=".25"><stop offset="0" stop-color="#ffe37b"/><stop offset=".5" stop-color="#f2bd39"/><stop offset="1" stop-color="#d29422"/></radialGradient>
+  <radialGradient id="green" cx=".32" cy=".25"><stop offset="0" stop-color="#91dc91"/><stop offset=".5" stop-color="#57b761"/><stop offset="1" stop-color="#318944"/></radialGradient>
+  <filter id="tabShadow" x="-25%" y="-30%" width="160%" height="190%"><feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#3d2a1f" flood-opacity=".36"/></filter>
+  <filter id="dotShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="1.5" stdDeviation="1" flood-color="#38271d" flood-opacity=".38"/></filter>
+</defs>
+<g filter="url(#dotShadow)">
+  <circle cx="38" cy="61" r="13" fill="url(#red)" stroke="#8b382f" stroke-width="1.5"/>
+  <circle cx="74" cy="61" r="13" fill="url(#amber)" stroke="#8a6526" stroke-width="1.5"/>
+  <circle cx="110" cy="61" r="13" fill="url(#green)" stroke="#347b40" stroke-width="1.5"/>
+</g>
+<path d="M30 56 A10 10 0 0 1 41 50" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.3"/>
+<path d="M66 56 A10 10 0 0 1 77 50" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.3"/>
+<path d="M102 56 A10 10 0 0 1 113 50" fill="none" stroke="#fff" stroke-opacity=".35" stroke-width="1.3"/>
+<g filter="url(#tabShadow)"><path d="M374 104 L365 55 C362 39 372 33 386 33 H428 C442 33 450 41 454 56 L466 104 Z" fill="url(#brown)" stroke="#624938" stroke-width="1.4"/></g>
+<path d="M371 54 C375 41 383 37 394 37 H425 C437 37 444 43 447 55" fill="none" stroke="#b89a83" stroke-opacity=".72" stroke-width="2"/>
+<text x="413" y="78" text-anchor="middle" font-family="Arial,sans-serif" font-size="39" font-weight="300" fill="#f0e0d2">+</text>
+<g filter="url(#tabShadow)"><path d="M172 104 V61 C172 42 183 34 202 34 H351 C370 34 379 43 383 61 L392 104 Z" fill="url(#cream)" stroke="#725b49" stroke-width="1.4"/></g>
+<path d="M176 60 C179 44 188 38 204 38 H349 C364 38 373 45 377 60" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="1.8"/>
+<text x="282" y="80" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="37" fill="#2a1d17"><tspan font-style="normal" font-weight="700">Tab </tspan><tspan font-style="italic" font-weight="400">Lab</tspan></text>
+</svg>

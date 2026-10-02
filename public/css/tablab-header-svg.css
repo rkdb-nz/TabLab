@@ -1,0 +1,94 @@
+/* Approved LHS master and matching RHS preview: fixed presentation sizes.
+   Preserve the existing 47px header and all content below it. */
+body.homepage.homepage.homepage:has(#introPanel) .tablab-browserbar {
+  height: 47px !important;
+  padding: 0 !important;
+  background: #816a58 !important;
+  border: 0 !important;
+  box-shadow: none !important;
+}
+body.homepage.homepage.homepage:has(#introPanel) .tablab-browserbar::before {
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  inset: auto auto 0 0 !important;
+  width: 214.2115384615px !important;
+  height: 47px !important;
+  background: url("../assets/tab-lab-header-left.svg") left bottom / 214.2115384615px 47px no-repeat !important;
+  mask-image: none !important;
+  -webkit-mask-image: none !important;
+  pointer-events: none !important;
+}
+body.homepage.homepage.homepage:has(#introPanel) .tablab-browserbar::after {
+  display: none !important;
+}
+body.homepage.homepage.homepage:has(#introPanel) .foundry-global-nav {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  left: auto !important;
+  width: 284.7115384615px !important;
+  min-width: 284.7115384615px !important;
+  height: 47px !important;
+  display: block !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: url("../assets/tab-lab-header-right-family-preview.svg") right bottom / 284.7115384615px 31.6346153846px no-repeat !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  clip-path: none !important;
+  z-index: 170 !important;
+  transform: scale(.9) !important;
+  transform-origin: right bottom !important;
+}
+body.homepage.homepage.homepage:has(#introPanel) .foundry-global-nav::before,
+body.homepage.homepage.homepage:has(#introPanel) .foundry-global-nav::after,
+body.homepage.homepage.homepage:has(#introPanel) .foundry-global-control::before,
+body.homepage.homepage.homepage:has(#introPanel) .foundry-global-control::after {
+  display: none !important;
+}
+body.homepage.homepage.homepage:has(#introPanel) .foundry-global-nav .foundry-global-control {
+  position: absolute !important;
+  top: 15.3653846154px !important;
+  left: 0px !important;
+  width: 99.4230769231px !important;
+  min-width: 0 !important;
+  height: 31.6346153846px !important;
+  min-height: 0 !important;
+  display: block !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+  transform: none !important;
+  clip-path: polygon(0 100%, 0 38.57%, 2% 18%, 6% 6%, 13.64% 0, 81.36% 0, 90% 6%, 95.91% 38.57%, 100% 100%) !important;
+  cursor: pointer !important;
+}
+body.homepage.homepage.homepage:has(#introPanel) .foundry-global-nav .foundry-global-back { z-index: 3 !important; }
+body.homepage.homepage.homepage:has(#introPanel) .foundry-global-nav .foundry-global-home {
+  left: 92.6442307692px !important;
+  z-index: 2 !important;
+}
+body.homepage.homepage.homepage:has(#introPanel) .foundry-global-nav .foundry-global-menu {
+  left: 185.2884615385px !important;
+  z-index: 1 !important;
+}
+body.homepage.homepage.homepage:has(#introPanel) .foundry-global-control svg,
+body.homepage.homepage.homepage:has(#introPanel) .foundry-global-menu span {
+  visibility: hidden !important;
+}
+body.homepage.homepage.homepage:has(#introPanel) .foundry-global-control:focus-visible {
+  outline: 0 !important;
+  background: rgba(58,36,25,.16) !important;
+}
+
+/* The same locked chrome serves Home, Make me a site and Let me choose. */
+body.homepage.homepage.homepage:has(#introPanel) .tablab-window-dots,
+body.homepage.homepage.homepage:has(#introPanel) .tablab-reference-tabs {
+  display: none !important;
+}
