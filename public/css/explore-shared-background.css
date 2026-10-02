@@ -158,3 +158,18 @@ body.homepage.explore-open #exploreScreen .explore-choice:focus-visible {
     width: 22px !important;
   }
 }
+
+/* Boardroom colour sampled from the darkest red area of the monitor artwork. */
+body.homepage.explore-open #exploreScreen .explore-choice:first-child {
+  background: #8d3624 !important;
+  color: #fff7ef !important;
+  border-top-color: #aa5743 !important;
+  border-right-color: #713021 !important;
+}
+body.homepage.explore-open #exploreScreen .explore-choice:first-child::before {
+  color: #fff7ef !important;
+  border-right-color: #d5a99b !important;
+}
+body.homepage.explore-open #exploreScreen .explore-choice:first-child::after {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 22'%3E%3Cpath d='M1 11H28M19 2L28 11 19 20' fill='none' stroke='%23fff7ef' stroke-width='1.5'/%3E%3C/svg%3E") !important;
+}
