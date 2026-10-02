@@ -1588,3 +1588,72 @@ body.homepage:not(.explore-open):has(#introPanel.is-active) .foundry-global-home
     min-width: clamp(58px, 16.15vw, 84px) !important;
   }
 }
+
+/* Make me a site: readable copy within the viewport below the locked header. */
+body.homepage.homepage:has(#sortPanel.is-active):not(.explore-open) .hero {
+  position: fixed !important;
+  inset: 47px 0 0 !important;
+  width: 100% !important;
+  height: calc(100dvh - 47px) !important;
+  margin: 0 !important;
+  transform: none !important;
+}
+body.homepage.homepage #sortPanel {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+}
+body.homepage.homepage #sortPanel .sort-copy {
+  position: absolute !important;
+  inset: 0 !important;
+  width: auto !important;
+  height: auto !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: clamp(18px, 3vh, 30px) !important;
+  padding: 24px !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+  text-align: center !important;
+}
+body.homepage.homepage #sortPanel .sort-title,
+body.homepage.homepage #sortPanel .sort-lines,
+body.homepage.homepage #sortPanel .sort-actions {
+  position: static !important;
+  inset: auto !important;
+  width: auto !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  transform: none !important;
+  text-align: center !important;
+}
+body.homepage.homepage #sortPanel .sort-title {
+  background: none !important;
+  color: #35211b !important;
+  -webkit-text-fill-color: #35211b !important;
+  filter: none !important;
+  text-shadow: none !important;
+  font-size: clamp(38px, 5vw, 84px) !important;
+  line-height: 1.05 !important;
+}
+body.homepage.homepage #sortPanel .sort-lines {
+  background: none !important;
+  color: #68483d !important;
+  -webkit-text-fill-color: #68483d !important;
+  filter: none !important;
+  text-shadow: none !important;
+  font-size: clamp(24px, 2.55vw, 38px) !important;
+  line-height: 1.2 !important;
+}
+body.homepage.homepage #sortPanel .sort-actions {
+  display: flex !important;
+  justify-content: center !important;
+  padding-top: clamp(8px, 2vh, 20px) !important;
+}
+body.homepage.homepage #sortPanel .sort-actions .hero-button {
+  width: min(390px, 82vw) !important;
+  max-width: 100% !important;
+}
