@@ -33,7 +33,7 @@ body.homepage.explore-open .explore-boardroom p {
   color: #513f39 !important;
   text-shadow: none !important;
   font-weight: 400 !important;
-  font-size: clamp(16px, 1.1vw, 21px) !important;
+  font-size: clamp(18px, 1.3vw, 23px) !important;
   line-height: 1.5 !important;
 }
 body.homepage.explore-open .explore-kicker {
@@ -66,7 +66,7 @@ html[data-explore-invert] body.homepage.explore-open .explore-kicker {
     background-position: 56% center;
   }
   body.homepage.explore-open .explore-boardroom h2 {font-size: clamp(40px, 10vw, 57px) !important;}
-  body.homepage.explore-open .explore-boardroom p {font-size: 16px !important;}
+  body.homepage.explore-open .explore-boardroom p {font-size: 18px !important;}
   body.homepage.explore-open .explore-anvil-rule {display:none !important;}
 }
 @media (max-width: 1100px) and (max-height: 700px) and (orientation: landscape) {
@@ -76,7 +76,7 @@ html[data-explore-invert] body.homepage.explore-open .explore-kicker {
     gap: 5vw !important;
   }
   body.homepage.explore-open .explore-boardroom h2 {font-size: clamp(34px, 5vw, 52px) !important;}
-  body.homepage.explore-open .explore-boardroom p {font-size:14px !important;}
+  body.homepage.explore-open .explore-boardroom p {font-size:16px !important;}
 }
 
 /* Approved option 9: Espresso Edge navigation cards. */
