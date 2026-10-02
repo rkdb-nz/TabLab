@@ -1679,3 +1679,14 @@ body.homepage.homepage #sortPanel .sort-actions .hero-button {
   height: var(--next-action-height, 54px) !important;
   min-height: 0 !important;
 }
+
+/* Page navigation is animated by one short content transition.
+   The header and background surfaces never take part in the fade. */
+body.homepage.homepage #exploreScreen,
+body.homepage.homepage #exploreScreen > * {
+  animation: none !important;
+  transition: none !important;
+}
+body.homepage.homepage #landingStateBlackout {
+  display: none !important;
+}
