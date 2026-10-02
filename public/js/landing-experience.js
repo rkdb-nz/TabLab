@@ -139,11 +139,10 @@ function transitionHomeToExplore() {
     transitionTo(activateExploreScreen);
 }
 
-function forgeHomeToSort() {
-    if (isTransitioning) {
-        return;
-    }
+async function forgeHomeToSort() {
+    if (isTransitioning) return;
 
+    clearLegacyTransitionClasses();
     if (prefersReducedMotion()) {
         activateSortPanel();
         return;
@@ -151,18 +150,33 @@ function forgeHomeToSort() {
 
     isTransitioning = true;
     sortButton.disabled = true;
-    document.body.classList.remove('state-fade-out', 'state-fade-in', 'is-returning');
-    document.body.classList.add('is-forging');
+    const animations = [];
+    try {
+        const fadeOut = introPanel.animate(
+            [{ opacity: 1 }, { opacity: 0 }],
+            { duration: 180, easing: 'ease-out', fill: 'forwards' }
+        );
+        animations.push(fadeOut);
+        await fadeOut.finished;
 
-    window.setTimeout(() => {
-        activateSortPanel({ preserveForge: true });
-    }, 1400);
-
-    window.setTimeout(() => {
-        document.body.classList.remove('is-forging');
+        activateSortPanel();
+        const pieces = ['.sort-title', '.sort-lines', '.sort-actions'];
+        const arrivals = pieces.map((selector, index) => {
+            const animation = sortPanel.querySelector(selector).animate(
+                [{ opacity: 0, translate: '0 18px' }, { opacity: 1, translate: '0 0' }],
+                { duration: 320, delay: [0, 90, 190][index],
+                  easing: 'cubic-bezier(.16,1,.3,1)', fill: 'both' }
+            );
+            animations.push(animation);
+            return animation.finished;
+        });
+        fadeOut.cancel();
+        await Promise.all(arrivals);
+    } finally {
+        animations.forEach(animation => animation.cancel());
         sortButton.disabled = false;
         isTransitioning = false;
-    }, 3200);
+    }
 }
 
 function showSortPanel() {
