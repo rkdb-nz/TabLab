@@ -28,7 +28,33 @@ function clearExploreTransitionClass() {
     );
 }
 
+/* Keep the next action exactly under the Home action, at every viewport size. */
+function alignSortAction() {
+    const nodes = [document.documentElement, document.body, introPanel, sortPanel];
+    const classes = nodes.map(node => node.className);
+    try {
+        document.documentElement.classList.remove('restore-sort', 'restore-explore');
+        document.body.classList.remove('sort-open', 'explore-open');
+        sortPanel.classList.remove('is-active');
+        introPanel.classList.add('is-active');
+        const rect = sortButton.getBoundingClientRect();
+        sortPanel.style.setProperty('--next-action-top', rect.top + 'px');
+        sortPanel.style.setProperty('--next-action-left', rect.left + 'px');
+        sortPanel.style.setProperty('--next-action-width', rect.width + 'px');
+        sortPanel.style.setProperty('--next-action-height', rect.height + 'px');
+    } finally {
+        nodes.forEach((node, index) => { node.className = classes[index]; });
+    }
+}
+window.addEventListener('resize', () => {
+    if (sortPanel.classList.contains('is-active')) alignSortAction();
+});
+document.fonts?.ready.then(() => {
+    if (sortPanel.classList.contains('is-active')) alignSortAction();
+});
+
 function activateSortPanel({ preserveForge = false } = {}) {
+    alignSortAction();
     if (!preserveForge) {
         clearLegacyTransitionClasses();
     }
