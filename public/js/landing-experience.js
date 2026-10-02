@@ -7,8 +7,9 @@ const sortPanel = document.getElementById('sortPanel');
 const exploreScreen = document.getElementById('exploreScreen');
 const landingStateBlackout = document.getElementById('landingStateBlackout');
 
-const STATE_FADE_OUT_MS = 420;
-const STATE_FADE_IN_MS = 520;
+const STATE_FADE_OUT_MS = 150;
+const STATE_FADE_IN_MS = 250;
+let pendingState = null;
 
 let isTransitioning = false;
 
@@ -112,108 +113,69 @@ function activateExploreScreen() {
     exploreScreen?.setAttribute('aria-hidden', 'false');
 }
 
-function afterCurtainFade(duration, callback) {
-    let finished = false;
-
-    const finish = event => {
-        if (finished || (event && (event.target !== landingStateBlackout || event.propertyName !== 'opacity'))) {
-            return;
-        }
-
-        finished = true;
-        landingStateBlackout.removeEventListener('transitionend', finish);
-        window.clearTimeout(fallback);
-        callback();
-    };
-
-    const fallback = window.setTimeout(() => finish(), duration + 150);
-    landingStateBlackout.addEventListener('transitionend', finish);
+function activeContent() {
+    if (document.body.classList.contains('explore-open')) {
+        return Array.from(exploreScreen.children);
+    }
+    if (sortPanel.classList.contains('is-active')) {
+        return Array.from(sortPanel.querySelectorAll('.sort-title, .sort-lines, .sort-actions'));
+    }
+    return Array.from(introPanel.querySelectorAll('.hero-lines, .hero-actions'));
 }
 
-function transitionTo(activateState) {
+async function transitionTo(activateState) {
     if (isTransitioning) {
+        pendingState = activateState;
         return;
     }
-
     clearLegacyTransitionClasses();
-
+    introPanel.classList.remove('landing-enter');
+    if (landingStateBlackout) landingStateBlackout.className = 'landing-state-blackout';
     if (prefersReducedMotion()) {
         activateState();
         return;
     }
 
-    if (!landingStateBlackout) {
-        activateState();
-        return;
-    }
-
     isTransitioning = true;
-    landingStateBlackout.className = 'landing-state-blackout';
-    void landingStateBlackout.offsetWidth;
-    landingStateBlackout.classList.add('is-fading-to-black');
-
-    afterCurtainFade(STATE_FADE_OUT_MS, () => {
-        landingStateBlackout.className = 'landing-state-blackout is-black';
-        activateState();
-
-        requestAnimationFrame(() => {
-            requestAnimationFrame(() => {
-                landingStateBlackout.className = 'landing-state-blackout is-fading-from-black';
-
-                afterCurtainFade(STATE_FADE_IN_MS, () => {
-                    landingStateBlackout.className = 'landing-state-blackout';
-                    isTransitioning = false;
-                });
-            });
-        });
-    });
-}
-
-function transitionHomeToExplore() {
-    transitionTo(activateExploreScreen);
-}
-
-async function forgeHomeToSort() {
-    if (isTransitioning) return;
-
-    clearLegacyTransitionClasses();
-    if (prefersReducedMotion()) {
-        activateSortPanel();
-        return;
-    }
-
-    isTransitioning = true;
-    sortButton.disabled = true;
     const animations = [];
     try {
-        const fadeOut = introPanel.animate(
-            [{ opacity: 1 }, { opacity: 0 }],
-            { duration: 180, easing: 'ease-out', fill: 'forwards' }
-        );
-        animations.push(fadeOut);
-        await fadeOut.finished;
-
-        activateSortPanel();
-        const pieces = ['.sort-title', '.sort-lines', '.sort-actions'];
-        const arrivals = pieces.map((selector, index) => {
-            const animation = sortPanel.querySelector(selector).animate(
-                [{ opacity: 0, translate: '0 18px' }, { opacity: 1, translate: '0 0' }],
-                { duration: 320, delay: [0, 90, 190][index],
-                  easing: 'cubic-bezier(.16,1,.3,1)', fill: 'both' }
+        const outgoing = activeContent().map(element => {
+            const opacity = getComputedStyle(element).opacity;
+            const animation = element.animate(
+                [{ opacity }, { opacity: 0 }],
+                { duration: STATE_FADE_OUT_MS, easing: 'ease-out', fill: 'forwards' }
             );
             animations.push(animation);
             return animation.finished;
         });
-        fadeOut.cancel();
-        await Promise.all(arrivals);
+        await Promise.all(outgoing);
+        animations.forEach(animation => animation.cancel());
+        animations.length = 0;
+
+        activateState();
+        const incoming = activeContent().map(element => {
+            const opacity = getComputedStyle(element).opacity;
+            const animation = element.animate(
+                [{ opacity: 0, translate: '0 8px' }, { opacity, translate: '0 0' }],
+                { duration: STATE_FADE_IN_MS, easing: 'cubic-bezier(.16,1,.3,1)', fill: 'both' }
+            );
+            animations.push(animation);
+            return animation.finished;
+        });
+        await Promise.all(incoming);
     } finally {
         animations.forEach(animation => animation.cancel());
-        sortButton.disabled = false;
         isTransitioning = false;
+        if (pendingState) {
+            const next = pendingState;
+            pendingState = null;
+            transitionTo(next);
+        }
     }
 }
 
 function showSortPanel() {
+    if (isTransitioning) return;
     if (sortPanel.classList.contains('is-active') && !document.body.classList.contains('explore-open')) {
         return;
     }
@@ -222,15 +184,7 @@ function showSortPanel() {
         history.pushState({ foundryState: 'make-site' }, '', '#make-site');
     }
 
-    const comingDirectlyFromHome =
-        introPanel.classList.contains('is-active') &&
-        !document.body.classList.contains('explore-open');
-
-    if (comingDirectlyFromHome) {
-        forgeHomeToSort();
-    } else {
-        transitionTo(activateSortPanel);
-    }
+    transitionTo(activateSortPanel);
 }
 
 function showIntroPanel({ updateHistory = true } = {}) {
@@ -247,6 +201,7 @@ function showIntroPanel({ updateHistory = true } = {}) {
 }
 
 function showExploreScreen() {
+    if (isTransitioning) return;
     closeDrawer();
 
     if (document.body.classList.contains('explore-open')) {
@@ -257,15 +212,7 @@ function showExploreScreen() {
         history.pushState({ foundryState: 'explore' }, '', '#explore');
     }
 
-    const comingDirectlyFromHome =
-        introPanel.classList.contains('is-active') &&
-        !document.body.classList.contains('sort-open');
-
-    if (comingDirectlyFromHome) {
-        transitionHomeToExplore();
-    } else {
-        transitionTo(activateExploreScreen);
-    }
+    transitionTo(activateExploreScreen);
 }
 
 sortButton?.addEventListener('click', showSortPanel);
@@ -343,7 +290,7 @@ function restoreStateFromHash({ animate = false } = {}) {
             activateExploreScreen();
         }
     } else if (window.location.hash === '#make-site') {
-        document.documentElement.classList.add('restore-sort');
+        if (!animate) document.documentElement.classList.add('restore-sort');
         if (animate) {
             transitionTo(activateSortPanel);
         } else {
