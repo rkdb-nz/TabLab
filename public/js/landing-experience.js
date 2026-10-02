@@ -32,7 +32,9 @@ function clearExploreTransitionClass() {
 function alignSortAction() {
     const nodes = [document.documentElement, document.body, introPanel, sortPanel];
     const classes = nodes.map(node => node.className);
+    const wasDisabled = sortButton.disabled;
     try {
+        sortButton.disabled = false;
         document.documentElement.classList.remove('restore-sort', 'restore-explore');
         document.body.classList.remove('sort-open', 'explore-open');
         sortPanel.classList.remove('is-active');
@@ -44,6 +46,7 @@ function alignSortAction() {
         sortPanel.style.setProperty('--next-action-height', rect.height + 'px');
     } finally {
         nodes.forEach((node, index) => { node.className = classes[index]; });
+        sortButton.disabled = wasDisabled;
     }
 }
 window.addEventListener('resize', () => {
