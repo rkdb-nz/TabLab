@@ -1657,3 +1657,25 @@ body.homepage.homepage #sortPanel .sort-actions .hero-button {
   width: min(390px, 82vw) !important;
   max-width: 100% !important;
 }
+
+/* Follow-through action: preserve the exact Home button click position. */
+body.homepage.homepage #sortPanel .sort-copy {
+  top: auto !important;
+  bottom: calc(100dvh - var(--next-action-top, 55vh) + 30px) !important;
+  padding: 0 24px !important;
+}
+body.homepage.homepage #sortPanel .sort-actions {
+  position: fixed !important;
+  top: var(--next-action-top, 55vh) !important;
+  left: var(--next-action-left, calc(50vw - 139px)) !important;
+  right: auto !important;
+  bottom: auto !important;
+  width: var(--next-action-width, 278px) !important;
+  padding: 0 !important;
+}
+body.homepage.homepage #sortPanel .sort-actions .hero-button {
+  box-sizing: border-box !important;
+  width: 100% !important;
+  height: var(--next-action-height, 54px) !important;
+  min-height: 0 !important;
+}
