@@ -33,8 +33,11 @@ function alignSortAction() {
     const nodes = [document.documentElement, document.body, introPanel, sortPanel];
     const classes = nodes.map(node => node.className);
     const wasDisabled = sortButton.disabled;
+    const buttonStyle = sortButton.getAttribute('style');
     try {
         sortButton.disabled = false;
+        sortButton.style.setProperty('transform', 'none', 'important');
+        sortButton.style.setProperty('transition', 'none', 'important');
         document.documentElement.classList.remove('restore-sort', 'restore-explore');
         document.body.classList.remove('sort-open', 'explore-open');
         sortPanel.classList.remove('is-active');
@@ -47,6 +50,8 @@ function alignSortAction() {
     } finally {
         nodes.forEach((node, index) => { node.className = classes[index]; });
         sortButton.disabled = wasDisabled;
+        if (buttonStyle === null) sortButton.removeAttribute('style');
+        else sortButton.setAttribute('style', buttonStyle);
     }
 }
 window.addEventListener('resize', () => {
