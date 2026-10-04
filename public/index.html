@@ -103,7 +103,7 @@
     position:fixed !important; inset:60dvh 24px auto !important;
     width:auto !important; max-width:360px !important;
     margin:0 auto !important; padding:0 !important;
-    display:grid !important; gap:16px !important; transform:none !important;
+    display:grid !important; grid-template-columns:1fr !important; gap:16px !important; transform:none !important;
   }
   body.homepage.homepage.homepage.homepage:has(#introPanel) #introPanel .hero-button,
   body.homepage.homepage.homepage.homepage:has(#introPanel) #sortPanel .hero-button {
@@ -117,7 +117,7 @@
   body.homepage.homepage.homepage.homepage:has(#introPanel) #sortPanel .sort-copy {
     position:absolute !important; inset:18% 24px auto !important;
     display:flex !important; gap:20px !important; padding:0 !important;
-    width:auto !important; height:auto !important; transform:none !important;
+    width:auto !important; height:auto !important; bottom:auto !important; align-self:start !important; justify-self:stretch !important; justify-content:flex-start !important; transform:none !important;
   }
   body.homepage.homepage.homepage.homepage:has(#introPanel) #sortPanel .sort-title {
     font-size:clamp(38px,11vw,60px) !important; line-height:1.06 !important;
