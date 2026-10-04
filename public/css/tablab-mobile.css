@@ -263,3 +263,10 @@ body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #sor
 body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #sortPanel .sort-actions .hero-button { flex:1 1 auto !important; max-width:none !important; }
 body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) .hero { overflow:hidden !important; }
 }
+@media (max-width: 820px) and (orientation: portrait), (max-width: 1100px) and (max-height: 700px) and (orientation: landscape) {
+body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #introPanel .hero-button,
+body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #sortPanel .hero-button { -webkit-text-fill-color:currentColor !important; }
+}
+@media (max-width: 1100px) and (max-height: 700px) and (orientation: landscape), (max-width: 820px) and (orientation: portrait) and (min-height: 621px) {
+body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) .landing { overflow:hidden !important; }
+}
