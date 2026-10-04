@@ -250,3 +250,16 @@ background: rgba(255,250,247,.9) !important; color:#513f39 !important;
 border:1px solid #78543e !important; text-shadow:none !important;
 }
 }
+@media (max-width: 820px) and (orientation: portrait), (max-width: 1100px) and (max-height: 700px) and (orientation: landscape) {
+body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) { margin:0 !important; overflow:hidden !important; }
+body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #introPanel .hero-lines,
+body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #introPanel .hero-actions {
+align-self:center !important; float:none !important; flex-shrink:0 !important;
+}
+body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #introPanel .hero-button::before,
+body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #introPanel .hero-button::after,
+body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #sortPanel .hero-button::before,
+body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #sortPanel .hero-button::after { display:none !important; }
+body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #sortPanel .sort-actions .hero-button { flex:1 1 auto !important; max-width:none !important; }
+body.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) .hero { overflow:hidden !important; }
+}
