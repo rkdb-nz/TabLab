@@ -301,5 +301,28 @@
     <script src="./script.js"></script>
     <script src="./js/foundry-global-nav.js" data-root="./" data-landing-actions="true"></script>
     <script src="./js/landing-experience.js?v=blackout-transition-v2"></script>
+
+<script>
+/* Inline geometry wins over legacy important mobile stage rules. */
+(() => {
+ const mobile = matchMedia('(max-width:800px) and (orientation:portrait), (max-width:900px) and (max-height:500px) and (orientation:landscape)');
+ function fit(){
+  if(!mobile.matches) return;
+  const set=(selector,values)=>document.querySelectorAll(selector).forEach(el=>Object.entries(values).forEach(([k,v])=>el.style.setProperty(k,v,'important')));
+  set('#sortPanel .sort-copy',{top:'18%',bottom:'auto',left:'24px',right:'24px',height:'auto',position:'absolute','align-self':'start'});
+  set('#introPanel .hero-button, #sortPanel .hero-button',{background:'#b76c3a',color:'#21130f','clip-path':'none','text-align':'center',display:'flex','align-items':'center','justify-content':'center',position:'relative','z-index':'1'});
+  set('#exploreButton',{background:'#fff8f0',color:'#513f39',border:'1px solid #806354'});
+ }
+ fit(); addEventListener('load',fit); addEventListener('resize',fit);
+})();
+</script>
+<style>
+@media(max-width:800px) and (orientation:portrait),(max-width:900px) and (max-height:500px) and (orientation:landscape){
+ body.homepage.homepage.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #introPanel .hero-button::before,
+ body.homepage.homepage.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #introPanel .hero-button::after,
+ body.homepage.homepage.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #sortPanel .hero-button::before,
+ body.homepage.homepage.homepage.homepage.homepage.homepage.homepage.homepage:has(#introPanel) #sortPanel .hero-button::after {display:none !important;}
+}
+</style>
 </body>
 </html>
