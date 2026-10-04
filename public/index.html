@@ -306,9 +306,10 @@
 /* Inline geometry wins over legacy important mobile stage rules. */
 (() => {
  const mobile = matchMedia('(max-width:800px) and (orientation:portrait), (max-width:900px) and (max-height:500px) and (orientation:landscape)');
+ const originals=new Map();
  function fit(){
-  if(!mobile.matches) return;
-  const set=(selector,values)=>document.querySelectorAll(selector).forEach(el=>Object.entries(values).forEach(([k,v])=>el.style.setProperty(k,v,'important')));
+  if(!mobile.matches){ originals.forEach((props,el)=>props.forEach(([v,p],k)=>v?el.style.setProperty(k,v,p):el.style.removeProperty(k))); originals.clear(); return; }
+  const set=(selector,values)=>document.querySelectorAll(selector).forEach(el=>Object.entries(values).forEach(([k,v])=>{ if(!originals.has(el)) originals.set(el,new Map()); const props=originals.get(el); if(!props.has(k)) props.set(k,[el.style.getPropertyValue(k),el.style.getPropertyPriority(k)]); el.style.setProperty(k,v,'important'); }));
   set('#sortPanel .sort-copy',{top:'18%',bottom:'auto',left:'24px',right:'24px',height:'auto',position:'absolute','align-self':'start'});
   set('#introPanel .hero-button, #sortPanel .hero-button',{background:'#b76c3a',color:'#21130f','clip-path':'none','text-align':'center',display:'flex','align-items':'center','justify-content':'center',position:'relative','z-index':'1'});
   set('#exploreButton',{background:'#fff8f0',color:'#513f39',border:'1px solid #806354'});
