@@ -1,0 +1,10 @@
+<!doctype html><meta charset="utf-8"><title>Opening page responsive review</title>
+<style>body{margin:12px;font:16px Arial;background:#ddd;color:#111}button{padding:10px;margin:3px}iframe{display:block;border:0;background:white}pre{font:13px monospace;white-space:pre-wrap}</style>
+<div id="controls"></div><button id="enlarge">Double text</button><button id="normal">Normal text</button><button id="home">Opening</button><button id="site">Make site</button><button id="choose">Choose</button><iframe id="view" src="./" width="390" height="700"></iframe><pre id="result"></pre>
+<script>
+const sizes=[[320,568],[360,640],[390,700],[412,820],[768,1024],[820,1180],[844,390],[667,375],[568,320],[1024,768],[1280,800],[821,1180],[1101,700]];
+sizes.forEach(([w,h])=>{const b=document.createElement('button');b.textContent=w+' × '+h;b.onclick=()=>{view.width=w;view.height=h};controls.append(b)});
+enlarge.onclick=()=>{const d=view.contentDocument;d.querySelectorAll('#introPanel .mobile-tagline,#introPanel .hero-lines,#introPanel .hero-button').forEach(e=>{e.dataset.reviewStyle=e.getAttribute('style')||'';e.style.setProperty('font-size',parseFloat(getComputedStyle(e).fontSize)*2+'px','important')})};
+normal.onclick=()=>view.contentDocument.querySelectorAll('[data-review-style]').forEach(e=>{e.setAttribute('style',e.dataset.reviewStyle);delete e.dataset.reviewStyle});
+home.onclick=()=>view.src='./';site.onclick=()=>view.src='./#make-site';choose.onclick=()=>view.src='./#explore';
+</script>
