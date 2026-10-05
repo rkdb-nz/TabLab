@@ -120,7 +120,7 @@ function activeContent() {
     if (sortPanel.classList.contains('is-active')) {
         return Array.from(sortPanel.querySelectorAll('.sort-title, .sort-lines, .sort-actions'));
     }
-    return Array.from(introPanel.querySelectorAll('.hero-lines, .hero-actions'));
+    return Array.from(introPanel.querySelectorAll('.hero-lines, .mobile-tagline, .hero-actions'));
 }
 
 async function transitionTo(activateState) {
