@@ -12,7 +12,6 @@
 <g transform="translate(410 0)">
   <g filter="url(#tabShadow)"><path d="M0 70 V27 C0 8 11 0 30 0 H179 C198 0 207 9 211 27 L220 70 Z" fill="url(#cream)" stroke="#725b49" stroke-width="1.4"/></g>
   <path d="M4 26 C7 10 16 4 32 4 H177 C192 4 201 11 205 26" fill="none" stroke="#fff" stroke-opacity=".9" stroke-width="1.8"/>
-  <text x="110" y="46" text-anchor="middle" font-family="Georgia,'Times New Roman',serif" font-size="30" font-weight="700" fill="#2a1d17">MENU</text>
 </g>
 <g transform="translate(205 0)">
   <g filter="url(#tabShadow)"><path d="M0 70 V27 C0 8 11 0 30 0 H179 C198 0 207 9 211 27 L220 70 Z" fill="url(#cream)" stroke="#725b49" stroke-width="1.4"/></g>
