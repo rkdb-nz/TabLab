@@ -103,8 +103,8 @@
   #tablabMobile:has(#introPanel) .foundry-global-nav .foundry-global-control { height:44px !important; }
   #tablabMobile:has(#introPanel) .mobile-tagline { top:22%; left:8%; width:40%; font-size:clamp(36px,6.9vw,76px); line-height:1.06; }
   #tablabMobile:has(#introPanel) .landing { background-image:url('../assets/backgrounds/tablab-mobile-landscape.png') !important; background-position:right center !important; }
-  #tablabMobile:has(#introPanel) #sortPanel .sort-title { top:24% !important; left:8% !important; width:39% !important; font-size:clamp(32px,5.5vw,60px) !important; }
-  #tablabMobile:has(#introPanel) #sortPanel .sort-lines { top:62% !important; left:8% !important; width:39% !important; font-size:24px !important; }
+  #tablabMobile:has(#introPanel) #sortPanel .sort-title { top:calc(var(--action-top) - var(--chrome-height) - clamp(35.2px,6.05vw,66px) - 24px) !important; left:8% !important; width:39% !important; font-size:clamp(32px,5.5vw,60px) !important; }
+  #tablabMobile:has(#introPanel) #sortPanel .sort-lines { top:calc(var(--action-top) - var(--chrome-height)) !important; left:8% !important; width:39% !important; font-size:24px !important; }
   #tablabMobile:has(#introPanel).explore-open #exploreScreen { grid-template-columns:1fr 1fr !important; gap:24px !important; padding:24px 18% 24px 7% !important; align-content:center !important; }
   #tablabMobile:has(#introPanel) .explore-boardroom h2 { font-size:32px !important; }
   #tablabMobile:has(#introPanel) .explore-boardroom p { font-size:16px !important; }
