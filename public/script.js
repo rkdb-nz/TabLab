@@ -1,4 +1,4 @@
-const EMAIL = "thefoundry@rkdb.nz";
+const EMAIL = "tablab@rkdb.nz";
 const EXPLORE_HASH = "#explore";
 
 function encodeMail(value) {
@@ -14,7 +14,7 @@ function setStartEmailLinks() {
 
   const body = `Hi, I'm Rob.
 
-The Foundry was built to make having a website effortless.
+Tab Lab was built to make having a website effortless.
 
 In a few sentences, tell me who you are, where you are, and what you'd like your customers to know.
 
@@ -38,9 +38,9 @@ function setConceptEmailLinks() {
 
   const concept =
     document.querySelector("[data-concept]")?.dataset.concept ||
-    "A Foundry Possibility";
+    "A Tab Lab Possibility";
 
-  const subject = `Foundry Concept Interest - ${concept}`;
+  const subject = `Tab Lab Concept Interest - ${concept}`;
 
   const body = `I like this direction: ${concept}
 

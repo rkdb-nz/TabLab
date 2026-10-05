@@ -510,7 +510,7 @@
 
         <a
           class="foundry-nav-link"
-          href="mailto:thefoundry@rkdb.nz"
+          href="mailto:tablab@rkdb.nz"
         >
           <span class="foundry-nav-number">07</span>
           <span>Contact</span>

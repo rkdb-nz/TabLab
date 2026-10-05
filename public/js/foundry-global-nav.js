@@ -88,7 +88,7 @@
         <div class="foundry-global-menu-divider" aria-hidden="true"></div>
 
         ${landingActions ? `<button class="foundry-global-link" type="button" data-drawer-action="site"><span>Make me a site</span></button>` : `<a class="foundry-global-link" href="${root}start/"><span>Make me a site</span></a>`}
-        <a class="foundry-global-link" href="mailto:thefoundry@rkdb.nz"><span>Contact</span></a>
+        <a class="foundry-global-link" href="mailto:tablab@rkdb.nz"><span>Contact</span></a>
       </nav>
       <div class="foundry-global-footer">WEB DESIGN · TABLABCARE</div>
     </div>
