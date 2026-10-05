@@ -6,7 +6,7 @@
 }
 #tablabInner.whywebsite-page .whywebsite-photo {
   position: absolute; inset: 0; height: 100%; object-fit: cover;
-  object-position: center;
+  object-position: right center;
 }
 #tablabInner.whywebsite-page .whywebsite-copy {
   position: relative; top: auto; left: auto; transform: none;
@@ -62,4 +62,11 @@
   #tablabInner#tablabInner.whywebsite-page .whywebsite-mobile-story h1 {
     font-size: clamp(24px,4.6vw,38px);
   }
+}
+
+/* Tall desktop/tablet windows show the complete studio above the copy. */
+@media (min-width:821px) and (max-aspect-ratio:4/3) {
+  #tablabInner.whywebsite-page .whywebsite-photo-hero { padding: 0 0 40px; }
+  #tablabInner.whywebsite-page .whywebsite-photo { position: static; height: auto; }
+  #tablabInner.whywebsite-page .whywebsite-copy { margin: 32px auto 0; width: 84%; }
 }
