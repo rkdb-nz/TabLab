@@ -62,3 +62,12 @@
     width: 44px !important; height: 44px !important; border-radius: 12px !important;
   }
 }
+
+/* Keep the complete plaque within narrower desktop windows. */
+@media (min-width:1081px) {
+  #tablabInner .foundry-about-layout { grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr); gap:clamp(24px,4vw,78px); }
+  #tablabInner .foundry-about-copy { min-width:0; }
+}
+@media (min-width:1081px) and (max-width:1500px) {
+  #tablabInner .foundry-about-copy h1 { font-size:clamp(3rem,5.7vw,7rem); }
+}
