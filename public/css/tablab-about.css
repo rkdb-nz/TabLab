@@ -1,5 +1,5 @@
-/* Selected floating header, scoped to About Tab Lab. */
- page-scoped, with the existing navigation actions. */
+/* Approved floating header, About page only. */
+
 #tablabInner#tablabInner .tablab-inner-browserbar { display: none !important; }
 #tablabInner#tablabInner .tablab-studio-brand {
   position: fixed; z-index: 10021; top: 22px; left: 3%;
