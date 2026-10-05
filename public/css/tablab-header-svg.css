@@ -35,7 +35,7 @@ body.homepage.homepage.homepage:has(#introPanel) .foundry-global-nav {
   margin: 0 !important;
   border: 0 !important;
   border-radius: 0 !important;
-  background: url("../assets/tab-lab-header-right-family-preview.svg") right bottom / 284.7115384615px 31.6346153846px no-repeat !important;
+  background: url("../assets/tab-lab-header-right-family-preview.svg?v=animated-bars-1") right bottom / 284.7115384615px 31.6346153846px no-repeat !important;
   box-shadow: none !important;
   backdrop-filter: none !important;
   clip-path: none !important;
