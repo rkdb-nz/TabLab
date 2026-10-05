@@ -278,3 +278,9 @@
   }
   #tablabMobile:not(.sort-open):not(.explore-open):has(#introPanel) #introPanel .mobile-tagline { font-size: clamp(2rem, 5vw, 3.5rem) !important; }
 }
+
+/* Centre each line of the opening tagline in every layout. */
+#tablabMobile:has(#introPanel) #introPanel .mobile-tagline,
+#tablabMobile:has(#introPanel) #introPanel .hero-lines {
+  text-align: center !important;
+}
