@@ -134,7 +134,7 @@
 
   /* Concept C acrylic FoundryCare plaque, flat: no shadow effects. */
   .foundrycare-content::before {
-    content: "FOUNDRYCARE" !important;
+    content: "TABLABCARE" !important;
     position: relative !important;
     inset: auto !important;
     width: min(100%, 390px) !important;
