@@ -67,14 +67,14 @@
       </div>
     </section>
   </main>
-  <script src="../script.js"></script>
+  <script src="../script.js?v=tablab-contact-20261006"></script>
   <script>
     (() => {
       const mobileNavQuery = '(max-width: 700px), (orientation: landscape) and (max-height: 600px) and (max-width: 1000px)';
       const navScript = document.createElement('script');
       navScript.src = window.matchMedia(mobileNavQuery).matches
-        ? '../js/foundry-global-nav.js?v=about-tablab-copy-v1'
-        : '../js/foundry-global-nav.js';
+        ? '../js/foundry-global-nav.js?v=tablab-contact-20261006'
+        : '../js/foundry-global-nav.js?v=tablab-contact-20261006';
       navScript.dataset.root = '../';
       document.body.append(navScript);
     })();
