@@ -327,3 +327,12 @@
     align-content: safe center !important;
   }
 }
+
+/* Explore's mobile content does not need the decorative monitor overlay. */
+@media (max-width: 820px) and (orientation: portrait),
+       (max-width: 1100px) and (max-height: 700px) and (orientation: landscape) {
+  #tablabMobile.explore-open:has(#introPanel) .landing::before {
+    display: none !important;
+    background: none !important;
+  }
+}
