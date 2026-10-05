@@ -24,7 +24,7 @@
   #tablabMobile:has(#introPanel) .mobile-brand-name { display:grid; place-items:center; height:40px; width:122px; border-radius:12px 12px 0 0; background:linear-gradient(#fffaf2,#f4ecdf); font-size:20px; font-weight:600; }
   #tablabMobile:has(#introPanel) .mobile-brand-plus { display:grid; place-items:center; width:54px; height:40px; border-radius:12px 12px 0 0; background:linear-gradient(#e0d3c3,#cbbbA7); font-size:30px; font-weight:300; }
   #tablabMobile:has(#introPanel) .foundry-global-nav {
-    position:fixed !important; inset:48px 0 auto !important; width:100% !important; min-width:0 !important;
+    position:fixed !important; z-index:10020 !important; inset:48px 0 auto !important; width:100% !important; min-width:0 !important;
     height:56px !important; box-sizing:border-box !important; display:flex !important;
     flex-direction:row !important; align-items:center !important; gap:12px !important;
     padding:6px 28px !important; margin:0 !important; border:0 !important; border-radius:0 !important;
