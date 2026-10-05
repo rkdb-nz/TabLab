@@ -307,7 +307,7 @@
        (max-width: 1100px) and (max-height: 700px) and (orientation: landscape) {
   #tablabMobile.explore-open:has(#introPanel) .landing { min-height: 0 !important; }
   #tablabMobile.explore-open:has(#introPanel) #exploreScreen {
-    grid-template-rows: auto auto !important;
+    grid-template-rows: max-content max-content !important;
     align-content: start !important;
     align-items: start !important;
   }
@@ -323,7 +323,7 @@
 @media (max-width: 1100px) and (max-height: 700px) and (orientation: landscape) {
   #tablabMobile.explore-open:has(#introPanel) #exploreScreen {
     grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
-    grid-template-rows: auto !important;
+    grid-template-rows: max-content !important;
     align-content: safe center !important;
   }
 }
