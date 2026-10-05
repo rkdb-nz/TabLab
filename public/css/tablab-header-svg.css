@@ -39,7 +39,7 @@ body.homepage.homepage.homepage:has(#introPanel) .foundry-global-nav {
   box-shadow: none !important;
   backdrop-filter: none !important;
   clip-path: none !important;
-  z-index: 170 !important;
+  z-index: 10020 !important;
   transform: scale(.9) !important;
   transform-origin: right bottom !important;
 }
@@ -78,8 +78,7 @@ body.homepage.homepage.homepage:has(#introPanel) .foundry-global-nav .foundry-gl
   left: 185.2884615385px !important;
   z-index: 1 !important;
 }
-body.homepage.homepage.homepage:has(#introPanel) .foundry-global-control svg,
-body.homepage.homepage.homepage:has(#introPanel) .foundry-global-menu span {
+body.homepage.homepage.homepage:has(#introPanel) .foundry-global-control svg {
   visibility: hidden !important;
 }
 body.homepage.homepage.homepage:has(#introPanel) .foundry-global-control:focus-visible {
@@ -91,4 +90,23 @@ body.homepage.homepage.homepage:has(#introPanel) .foundry-global-control:focus-v
 body.homepage.homepage.homepage:has(#introPanel) .tablab-window-dots,
 body.homepage.homepage.homepage:has(#introPanel) .tablab-reference-tabs {
   display: none !important;
+}
+
+/* Live bars use the existing menu toggle and preserve the approved tab. */
+  body.homepage.homepage.homepage:has(#introPanel) .foundry-global-menu span {
+    display:block !important; visibility:visible !important; position:absolute !important;
+    top:50% !important; left:50% !important; right:auto !important; bottom:auto !important;
+    width:22px !important; height:3px !important; margin:0 !important; padding:0 !important;
+    border:0 !important; border-radius:2px !important; background:#080807 !important;
+    box-shadow:none !important; filter:none !important; opacity:1 !important;
+    transform:translate(-50%,-50%) !important; transform-origin:center !important;
+    transition:transform 420ms cubic-bezier(.2,.8,.2,1),opacity 220ms ease,width 320ms ease !important;
+  }
+  body.homepage.homepage.homepage:has(#introPanel) .foundry-global-menu span:nth-child(1) { transform:translate(-50%,calc(-50% - 6px)) !important; }
+  body.homepage.homepage.homepage:has(#introPanel) .foundry-global-menu span:nth-child(3) { transform:translate(-50%,calc(-50% + 6px)) !important; }
+  body.homepage.homepage.homepage:has(#introPanel).foundry-global-open .foundry-global-menu span:nth-child(1) { width:20px !important; transform:translate(calc(-50% + 1px),-50%) rotate(46deg) !important; }
+  body.homepage.homepage.homepage:has(#introPanel).foundry-global-open .foundry-global-menu span:nth-child(2) { opacity:0 !important; transform:translate(-50%,-50%) scaleX(.2) !important; }
+  body.homepage.homepage.homepage:has(#introPanel).foundry-global-open .foundry-global-menu span:nth-child(3) { width:23px !important; transform:translate(calc(-50% - 2px),-50%) rotate(-43deg) !important; }
+@media (prefers-reduced-motion:reduce) {
+ body.homepage.homepage.homepage:has(#introPanel) .foundry-global-menu span { transition:none !important; }
 }
