@@ -284,3 +284,46 @@
 #tablabMobile:has(#introPanel) #introPanel .hero-lines {
   text-align: center !important;
 }
+
+/* Explore: allow text enlargement without widening or overlapping the grid. */
+#tablabMobile.explore-open:has(#introPanel) #exploreScreen {
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+#tablabMobile.explore-open:has(#introPanel) .explore-boardroom,
+#tablabMobile.explore-open:has(#introPanel) .explore-choices {
+  min-width: 0 !important;
+}
+#tablabMobile.explore-open:has(#introPanel) .explore-boardroom h2,
+#tablabMobile.explore-open:has(#introPanel) .explore-boardroom p,
+#tablabMobile.explore-open:has(#introPanel) .explore-choice {
+  overflow-wrap: anywhere;
+}
+#tablabMobile.explore-open:has(#introPanel) .explore-kicker {
+  white-space: normal !important;
+  min-width: 0 !important;
+}
+@media (max-width: 820px) and (orientation: portrait),
+       (max-width: 1100px) and (max-height: 700px) and (orientation: landscape) {
+  #tablabMobile.explore-open:has(#introPanel) .landing { min-height: 0 !important; }
+  #tablabMobile.explore-open:has(#introPanel) #exploreScreen {
+    grid-template-rows: auto auto !important;
+    align-content: start !important;
+    align-items: start !important;
+  }
+  #tablabMobile.explore-open:has(#introPanel) .explore-choices {
+    grid-template-rows: repeat(4, auto) !important;
+  }
+  #tablabMobile.explore-open:has(#introPanel) .explore-choice {
+    height: auto !important;
+    white-space: normal !important;
+    text-align: center !important;
+  }
+}
+@media (max-width: 1100px) and (max-height: 700px) and (orientation: landscape) {
+  #tablabMobile.explore-open:has(#introPanel) #exploreScreen {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) !important;
+    grid-template-rows: auto !important;
+    align-content: safe center !important;
+  }
+}
