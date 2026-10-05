@@ -19,7 +19,7 @@
 
   const nav = document.createElement('nav');
   nav.className = 'foundry-global-nav';
-  nav.setAttribute('aria-label', 'Foundry navigation');
+  nav.setAttribute('aria-label', 'Tab Lab navigation');
 
   nav.innerHTML = `
     <button class="foundry-global-control foundry-global-back" type="button" aria-label="Back" title="Back">
@@ -71,18 +71,18 @@
 
   drawer.innerHTML = `
     <div class="foundry-global-drawer-inner">
-      <div class="foundry-global-kicker">THE FOUNDRY</div>
+      <div class="foundry-global-kicker">TAB LAB</div>
       <nav aria-label="Main navigation">
         ${landingActions ? `<button class="foundry-global-link" type="button" data-drawer-action="home"><span>Home</span></button>` : `<a class="foundry-global-link" href="${root}"><span>Home</span></a>`}
 
         <div class="foundry-global-menu-divider" aria-hidden="true"></div>
 
         <a class="foundry-global-link" href="${root}boardroom/"><span>The Boardroom</span></a>
-        <a class="foundry-global-link" href="${root}foundrycare/"><span>FoundryCare</span></a>
+        <a class="foundry-global-link" href="${root}foundrycare/"><span>TabLabCare</span></a>
 
         <div class="foundry-global-menu-divider" aria-hidden="true"></div>
 
-        <a class="foundry-global-link" href="${root}the-foundry/"><span>About The Foundry</span></a>
+        <a class="foundry-global-link" href="${root}the-foundry/"><span>About Tab Lab</span></a>
         <a class="foundry-global-link" href="${root}whywebsite/"><span>Why own a website?</span></a>
 
         <div class="foundry-global-menu-divider" aria-hidden="true"></div>
@@ -90,7 +90,7 @@
         ${landingActions ? `<button class="foundry-global-link" type="button" data-drawer-action="site"><span>Make me a site</span></button>` : `<a class="foundry-global-link" href="${root}start/"><span>Make me a site</span></a>`}
         <a class="foundry-global-link" href="mailto:thefoundry@rkdb.nz"><span>Contact</span></a>
       </nav>
-      <div class="foundry-global-footer">WEB DESIGN · FOUNDRYCARE</div>
+      <div class="foundry-global-footer">WEB DESIGN · TABLABCARE</div>
     </div>
   `;
 
