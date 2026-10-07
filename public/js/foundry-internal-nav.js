@@ -371,7 +371,7 @@
 
 
     /* =========================================
-       FOUNDRYCARE LIGHT PAGE
+       TABLABCARE LIGHT PAGE
        ========================================= */
 
     body.foundrycare-page
@@ -414,7 +414,7 @@
   const controls = document.createElement("nav");
 
   controls.className = "foundry-nav-set";
-  controls.setAttribute("aria-label", "Foundry navigation");
+  controls.setAttribute("aria-label", "Tab Lab navigation");
 
   controls.innerHTML = `
 
@@ -473,7 +473,7 @@
     <div class="foundry-nav-drawer-inner">
 
       <div class="foundry-nav-kicker">
-        THE FOUNDRY
+        TAB LAB
       </div>
 
       <nav aria-label="Main navigation">
@@ -500,12 +500,12 @@
 
         <a class="foundry-nav-link" href="${root}foundrycare/">
           <span class="foundry-nav-number">05</span>
-          <span>FoundryCare</span>
+          <span>TabLabCare</span>
         </a>
 
         <a class="foundry-nav-link" href="${root}the-foundry/">
           <span class="foundry-nav-number">06</span>
-          <span>About The Foundry</span>
+          <span>About Tab Lab</span>
         </a>
 
         <a
@@ -519,7 +519,7 @@
       </nav>
 
       <div class="foundry-nav-footer">
-        WEB DESIGN · FOUNDRYCARE
+        WEB DESIGN · TABLABCARE
       </div>
 
     </div>
