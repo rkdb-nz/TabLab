@@ -68,11 +68,27 @@
   #tablabInner#tablabInner .foundrycare-content { padding-top:98px !important; }
 }
 
-/* Mobile care plaque: bold label and clear checkmark. */
+
+/* Mobile plaque with slightly larger T, L and C initials. */
+.tablab-care-plaque { display:none; }
 @media (max-width:1050px) {
-  #tablabInner#tablabInner .foundrycare-content::before {
-    font-weight:700 !important;
-    font-size:clamp(1.35rem,6.2vw,1.9rem) !important;
-    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M9 25l10 10L40 13' fill='none' stroke='%238b542c' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  #tablabInner#tablabInner .foundrycare-content::before { display:none !important; }
+  #tablabInner#tablabInner .tablab-care-plaque {
+    display:flex; align-items:center; width:min(100%,390px); min-height:84px;
+    margin:0 0 22px; padding:0 18px 0 82px; box-sizing:border-box;
+    border:1px solid rgba(79,50,31,.22); background-color:rgba(255,249,239,.26);
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M9 25l10 10L40 13' fill='none' stroke='%238b542c' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat:no-repeat; background-position:22px center; background-size:46px auto;
+    color:var(--fc-mobile-ink); font-family:Georgia,'Times New Roman',serif;
+    font-size:clamp(1.25rem,5.8vw,1.75rem); font-weight:700; line-height:1;
+    letter-spacing:.035em;
+  }
+  .tablab-care-plaque-label { white-space:nowrap; }
+  .tablab-care-plaque-label b { font-size:1.1em; font-weight:inherit; }
+}
+@media (max-width:430px) {
+  #tablabInner#tablabInner .tablab-care-plaque {
+    width:100%; min-height:76px; margin-bottom:18px; padding-left:74px;
+    background-position:18px center; background-size:41px auto;
   }
 }
