@@ -24,7 +24,7 @@
   #tablabMobile:has(#introPanel) .mobile-brand-name { display:grid; place-items:center; height:40px; width:122px; border-radius:12px 12px 0 0; background:linear-gradient(#fffaf2,#f4ecdf); font-family:Georgia,'Times New Roman',serif; font-size:20px; font-weight:400; color:#2a1d17; }
   #tablabMobile:has(#introPanel) .mobile-brand-name strong { font-weight:700; }
   #tablabMobile:has(#introPanel) .mobile-brand-name em { font-weight:400; font-style:italic; }
-  #tablabMobile:has(#introPanel) .mobile-brand-plus { display:grid; place-items:center; width:54px; height:40px; border-radius:12px 12px 0 0; background:linear-gradient(#e0d3c3,#cbbbA7); font-size:30px; font-weight:300; }
+  #tablabMobile:has(#introPanel) .mobile-brand-plus { display:grid; place-items:center; width:54px; height:40px; border-radius:12px 12px 0 0; background:linear-gradient(#d4a080,#bb805e); border:1px solid #8b5b40; border-bottom:0; box-sizing:border-box; box-shadow:inset 0 1px 0 #f0c6a5; color:#080807; font-size:30px; font-weight:300; }
   #tablabMobile:has(#introPanel) .foundry-global-nav {
     position:fixed !important; z-index:10020 !important; inset:48px 0 auto !important; width:100% !important; min-width:0 !important;
     height:56px !important; box-sizing:border-box !important; display:flex !important;
