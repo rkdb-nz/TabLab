@@ -28,7 +28,7 @@
   viewport.append(exit);
 
   const sync = () => {
-    const active = document.fullscreenElement === viewport;
+    const active = document.fullscreenElement === viewport || viewport.classList.contains('demo-expanded');
     exit.hidden = !active;
     if (active) exit.focus({ preventScroll: true });
     else fullScreen.focus({ preventScroll: true });
@@ -37,17 +37,25 @@
   status.className = 'demo-fullscreen-status';
   status.setAttribute('role', 'status');
   document.body.append(status);
-  if (!document.fullscreenEnabled || !viewport.requestFullscreen) fullScreen.hidden = true;
   fullScreen.addEventListener('click', async () => {
     try {
       status.textContent = '';
+      if (!viewport.requestFullscreen) throw new Error('Fullscreen unsupported');
       await viewport.requestFullscreen();
     } catch {
-      status.textContent = 'Full screen is unavailable in this browser.';
+      viewport.classList.add('demo-expanded');
+      document.body.classList.add('demo-expanded-mode');
+      sync();
     }
   });
   exit.addEventListener('click', async () => {
     if (document.fullscreenElement === viewport) await document.exitFullscreen();
+    viewport.classList.remove('demo-expanded');
+    document.body.classList.remove('demo-expanded-mode');
+    sync();
   });
   document.addEventListener('fullscreenchange', sync);
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && viewport.classList.contains('demo-expanded')) exit.click();
+  });
 })();
