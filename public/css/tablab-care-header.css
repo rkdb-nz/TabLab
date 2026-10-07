@@ -72,6 +72,7 @@
 @media (max-width:1050px) {
   #tablabInner#tablabInner .foundrycare-content::before {
     font-weight:700 !important;
+    font-size:clamp(1.35rem,6.2vw,1.9rem) !important;
     background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M9 25l10 10L40 13' fill='none' stroke='%238b542c' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
   }
 }
