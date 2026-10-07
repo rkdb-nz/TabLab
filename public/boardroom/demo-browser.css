@@ -48,3 +48,30 @@ body { background:#816a58; font-family:Arial,sans-serif; }
 }
 
 .demo-expanded-mode .demo-browser-header,.tablab-demo-shell .demo-expanded-mode .foundry-global-nav { display:none; }
+
+/* Mobile example frame: reserve space explicitly instead of squeezing controls. */
+@media(max-width:700px) and (orientation:portrait) {
+ :root { --demo-header:76px; --demo-edge:3px; }
+ .demo-brand { width:164px; height:36px; background-size:164px 36px; }
+ .tablab-demo-shell .foundry-global-nav { inset:0 6px auto; width:auto; height:76px; display:block; }
+ .tablab-demo-shell .foundry-global-control { position:absolute; height:36px; min-height:36px; }
+ .tablab-demo-shell .foundry-global-back { top:38px; left:0; right:auto; width:auto; min-width:0; margin:0; padding:0 10px; font-size:14px; }
+ .tablab-demo-shell .demo-fullscreen { top:38px; right:0; left:auto; width:auto; min-width:0; padding:0 10px; font-size:14px; }
+ .tablab-demo-shell .foundry-global-home { top:0; right:42px; left:auto; width:36px; min-width:36px; }
+ .tablab-demo-shell .foundry-global-menu { top:0; right:0; left:auto; width:36px; min-width:36px; }
+ .tablab-demo-shell .foundry-global-menu span { top:17px; left:8px; }
+ .demo-fullscreen-return { width:36px; padding:16px 9px; }
+}
+@media(max-width:1000px) and (orientation:landscape) {
+ :root { --demo-header:47px; --demo-edge:3px; }
+ .tablab-demo-shell .foundry-global-nav { inset:0 6px auto auto; width:max-content; height:47px; display:flex; gap:6px; }
+ .tablab-demo-shell .foundry-global-control { position:relative; inset:auto; height:40px; min-height:40px; }
+ .tablab-demo-shell .foundry-global-back { width:auto; min-width:0; margin:0; padding:0 10px; font-size:14px; }
+ .tablab-demo-shell .demo-fullscreen { width:40px; min-width:40px; padding:0; }
+ .tablab-demo-shell .demo-fullscreen span { display:none; }
+ .tablab-demo-shell .foundry-global-home,.tablab-demo-shell .foundry-global-menu { width:40px; min-width:40px; }
+ .tablab-demo-shell .foundry-global-menu span { top:19px; left:10px; }
+}
+@media(max-width:600px) and (orientation:landscape) {
+ .demo-brand { width:172px; background-size:172px 37.75px; }
+}
