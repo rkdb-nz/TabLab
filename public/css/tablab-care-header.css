@@ -1,3 +1,6 @@
+/* Slim header is mobile only; preserve the existing desktop header. */
+.tablab-studio-brand { display:none; }
+@media (max-width:820px) and (orientation:portrait), (max-width:1100px) and (max-height:700px) and (orientation:landscape) {
 /* Floating header matching Why have a website. */
 #tablabInner#tablabInner .tablab-inner-browserbar { display: none !important; }
 #tablabInner#tablabInner .tablab-studio-brand {
@@ -69,6 +72,8 @@
 }
 
 
+
+}
 /* Mobile plaque with slightly larger T, L and C initials. */
 .tablab-care-plaque { display:none; }
 @media (max-width:1050px) {
