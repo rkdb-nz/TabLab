@@ -67,3 +67,11 @@
 @media (max-width:820px) and (orientation:portrait), (max-width:1100px) and (max-height:700px) and (orientation:landscape) {
   #tablabInner#tablabInner .foundrycare-content { padding-top:98px !important; }
 }
+
+/* Mobile care plaque: bold label and clear checkmark. */
+@media (max-width:1050px) {
+  #tablabInner#tablabInner .foundrycare-content::before {
+    font-weight:700 !important;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath d='M9 25l10 10L40 13' fill='none' stroke='%238b542c' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+  }
+}
