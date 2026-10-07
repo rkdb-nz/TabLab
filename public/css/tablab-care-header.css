@@ -97,3 +97,10 @@
     background-position:18px center; background-size:41px auto;
   }
 }
+
+/* Desktop plaque artwork; desktop header and layout remain unchanged. */
+@media (min-width:1051px) {
+  .foundrycare-scene {
+    background-image:url("../assets/backgrounds/tablabcare-desktop.webp");
+  }
+}
