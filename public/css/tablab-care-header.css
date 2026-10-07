@@ -101,6 +101,6 @@
 /* Desktop plaque artwork; desktop header and layout remain unchanged. */
 @media (min-width:1051px) {
   .foundrycare-scene {
-    background-image:url("../assets/backgrounds/tablabcare-desktop.webp");
+    background-image:url("../assets/backgrounds/tablabcare-desktop-large-l.webp");
   }
 }
