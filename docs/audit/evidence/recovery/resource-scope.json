@@ -1,0 +1,557 @@
+{
+  "method": "transcribed from read-only browser DOM outputs; see markdown classifications and limitations",
+  "origin": "https://b94ffb34.foundry-a3k.pages.dev",
+  "routeCount": 50,
+  "rows": [
+    {
+      "path": "/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/billboard/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 3,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/noticeboard/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 3,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/skateboard/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 3,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 3,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/mobile-preview",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/foundrycare/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/maintenance/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 1,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/start/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/the-foundry/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/whywebsite/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 1,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/billboard/demos/donut/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/billboard/demos/donut/site",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 6,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/billboard/demos/drilling/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/billboard/demos/drilling/site",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 1,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/billboard/demos/mini-golf/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/billboard/demos/mini-golf/site",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 1,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/noticeboard/demos/charity-walk/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/noticeboard/demos/charity-walk/site",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 7,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/noticeboard/demos/diner/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/noticeboard/demos/diner/site",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 8,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/noticeboard/demos/produce/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/noticeboard/demos/produce/site",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/skateboard/demos/florist/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/skateboard/demos/florist/site",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 7,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/skateboard/demos/florist/success",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/skateboard/demos/pottery/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/skateboard/demos/pottery/site",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 16,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/skateboard/demos/tailor/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/skateboard/demos/tailor/site",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 16,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/skateboard/demos/tailor/shop/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 9,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/dining/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/dining/site",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 7,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/dining/dine",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 1,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/dining/reviews",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/dining/sign",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 2,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/dining/wine",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 1,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/retreat/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/retreat/site",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 5,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/retreat/book",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 1,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/retreat/discover",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 9,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/retreat/retreats",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 17,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/retreat/reviews",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1348,
+      "scrollWidth": 1348,
+      "imageCount": 8,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/theatre/",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 0,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/theatre/site",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 5,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/theatre/book-tickets",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 1,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/theatre/clementine-street",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 3,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/theatre/coming-soon",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 4,
+      "fontStatus": "loaded"
+    },
+    {
+      "path": "/boardroom/springboard/demos/theatre/now-playing",
+      "viewport": [
+        1363,
+        936
+      ],
+      "clientWidth": 1363,
+      "scrollWidth": 1363,
+      "imageCount": 2,
+      "fontStatus": "loaded"
+    }
+  ]
+}

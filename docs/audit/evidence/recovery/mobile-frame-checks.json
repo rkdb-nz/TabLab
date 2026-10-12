@@ -1,0 +1,365 @@
+{
+  "method": "existing host controls; nested frame locator DOM; bounded settlement; responsive iframe only",
+  "rows": [
+    {
+      "example": "donut",
+      "orientation": "Portrait",
+      "wrapperViewport": [
+        360,
+        740
+      ],
+      "innerViewport": [
+        352,
+        659
+      ],
+      "clientWidth": 352,
+      "scrollWidth": 352,
+      "identityConfirmed": true
+    },
+    {
+      "example": "mini golf",
+      "orientation": "Portrait",
+      "wrapperViewport": [
+        360,
+        740
+      ],
+      "innerViewport": [
+        352,
+        659
+      ],
+      "clientWidth": 352,
+      "scrollWidth": 352,
+      "identityConfirmed": true
+    },
+    {
+      "example": "drilling",
+      "orientation": "Portrait",
+      "wrapperViewport": [
+        360,
+        740
+      ],
+      "innerViewport": [
+        352,
+        659
+      ],
+      "clientWidth": 352,
+      "scrollWidth": 352,
+      "identityConfirmed": true
+    },
+    {
+      "example": "diner",
+      "orientation": "Portrait",
+      "wrapperViewport": [
+        360,
+        740
+      ],
+      "innerViewport": [
+        352,
+        659
+      ],
+      "clientWidth": 352,
+      "scrollWidth": 352,
+      "identityConfirmed": true
+    },
+    {
+      "example": "produce",
+      "orientation": "Portrait",
+      "wrapperViewport": [
+        360,
+        740
+      ],
+      "innerViewport": [
+        352,
+        659
+      ],
+      "clientWidth": 352,
+      "scrollWidth": 352,
+      "identityConfirmed": true
+    },
+    {
+      "example": "charity walk",
+      "orientation": "Portrait",
+      "wrapperViewport": [
+        360,
+        740
+      ],
+      "innerViewport": [
+        352,
+        659
+      ],
+      "clientWidth": 352,
+      "scrollWidth": 352,
+      "identityConfirmed": true
+    },
+    {
+      "example": "florist",
+      "orientation": "Portrait",
+      "wrapperViewport": [
+        360,
+        740
+      ],
+      "innerViewport": [
+        352,
+        659
+      ],
+      "clientWidth": 337,
+      "scrollWidth": 337,
+      "identityConfirmed": true
+    },
+    {
+      "example": "pottery",
+      "orientation": "Portrait",
+      "wrapperViewport": [
+        360,
+        740
+      ],
+      "innerViewport": [
+        352,
+        659
+      ],
+      "clientWidth": 337,
+      "scrollWidth": 505,
+      "identityConfirmed": true
+    },
+    {
+      "example": "tailor",
+      "orientation": "Portrait",
+      "wrapperViewport": [
+        360,
+        740
+      ],
+      "innerViewport": [
+        352,
+        659
+      ],
+      "clientWidth": 352,
+      "scrollWidth": 352,
+      "identityConfirmed": true
+    },
+    {
+      "example": "dining",
+      "orientation": "Portrait",
+      "wrapperViewport": [
+        360,
+        740
+      ],
+      "innerViewport": [
+        352,
+        659
+      ],
+      "clientWidth": 337,
+      "scrollWidth": 337,
+      "identityConfirmed": true
+    },
+    {
+      "example": "retreat",
+      "orientation": "Portrait",
+      "wrapperViewport": [
+        360,
+        740
+      ],
+      "innerViewport": [
+        352,
+        659
+      ],
+      "clientWidth": 337,
+      "scrollWidth": 337,
+      "identityConfirmed": true
+    },
+    {
+      "example": "theatre",
+      "orientation": "Portrait",
+      "wrapperViewport": [
+        360,
+        740
+      ],
+      "innerViewport": [
+        352,
+        659
+      ],
+      "clientWidth": 337,
+      "scrollWidth": 337,
+      "identityConfirmed": true
+    },
+    {
+      "example": "donut",
+      "orientation": "Landscape",
+      "wrapperViewport": [
+        740,
+        360
+      ],
+      "innerViewport": [
+        732,
+        308
+      ],
+      "clientWidth": 732,
+      "scrollWidth": 732,
+      "identityConfirmed": true
+    },
+    {
+      "example": "mini golf",
+      "orientation": "Landscape",
+      "wrapperViewport": [
+        740,
+        360
+      ],
+      "innerViewport": [
+        732,
+        308
+      ],
+      "clientWidth": 732,
+      "scrollWidth": 732,
+      "identityConfirmed": true
+    },
+    {
+      "example": "drilling",
+      "orientation": "Landscape",
+      "wrapperViewport": [
+        740,
+        360
+      ],
+      "innerViewport": [
+        732,
+        308
+      ],
+      "clientWidth": 732,
+      "scrollWidth": 732,
+      "identityConfirmed": true
+    },
+    {
+      "example": "diner",
+      "orientation": "Landscape",
+      "wrapperViewport": [
+        740,
+        360
+      ],
+      "innerViewport": [
+        732,
+        308
+      ],
+      "clientWidth": 732,
+      "scrollWidth": 732,
+      "identityConfirmed": true
+    },
+    {
+      "example": "produce",
+      "orientation": "Landscape",
+      "wrapperViewport": [
+        740,
+        360
+      ],
+      "innerViewport": [
+        732,
+        308
+      ],
+      "clientWidth": 732,
+      "scrollWidth": 732,
+      "identityConfirmed": true
+    },
+    {
+      "example": "charity walk",
+      "orientation": "Landscape",
+      "wrapperViewport": [
+        740,
+        360
+      ],
+      "innerViewport": [
+        732,
+        308
+      ],
+      "clientWidth": 732,
+      "scrollWidth": 732,
+      "identityConfirmed": true
+    },
+    {
+      "example": "florist",
+      "orientation": "Landscape",
+      "wrapperViewport": [
+        740,
+        360
+      ],
+      "innerViewport": [
+        732,
+        308
+      ],
+      "clientWidth": 717,
+      "scrollWidth": 717,
+      "identityConfirmed": true
+    },
+    {
+      "example": "pottery",
+      "orientation": "Landscape",
+      "wrapperViewport": [
+        740,
+        360
+      ],
+      "innerViewport": [
+        732,
+        308
+      ],
+      "clientWidth": 717,
+      "scrollWidth": 717,
+      "identityConfirmed": true
+    },
+    {
+      "example": "tailor",
+      "orientation": "Landscape",
+      "wrapperViewport": [
+        740,
+        360
+      ],
+      "innerViewport": [
+        732,
+        308
+      ],
+      "clientWidth": 732,
+      "scrollWidth": 732,
+      "identityConfirmed": true
+    },
+    {
+      "example": "dining",
+      "orientation": "Landscape",
+      "wrapperViewport": [
+        740,
+        360
+      ],
+      "innerViewport": [
+        732,
+        308
+      ],
+      "clientWidth": 717,
+      "scrollWidth": 717,
+      "identityConfirmed": true
+    },
+    {
+      "example": "retreat",
+      "orientation": "Landscape",
+      "wrapperViewport": [
+        740,
+        360
+      ],
+      "innerViewport": [
+        732,
+        308
+      ],
+      "clientWidth": 717,
+      "scrollWidth": 717,
+      "identityConfirmed": true
+    },
+    {
+      "example": "theatre",
+      "orientation": "Landscape",
+      "wrapperViewport": [
+        740,
+        360
+      ],
+      "innerViewport": [
+        732,
+        308
+      ],
+      "clientWidth": 717,
+      "scrollWidth": 717,
+      "identityConfirmed": true
+    }
+  ]
+}

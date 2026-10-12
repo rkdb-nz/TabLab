@@ -1,0 +1,72 @@
+[
+  {
+    "element": "Noticeboard kicker",
+    "foreground": [
+      207,
+      143,
+      57
+    ],
+    "background": [
+      246,
+      241,
+      230
+    ],
+    "ratio": 2.439859218001902
+  },
+  {
+    "element": "Skateboard kicker",
+    "foreground": [
+      227,
+      168,
+      78
+    ],
+    "background": [
+      124,
+      103,
+      86
+    ],
+    "ratio": 2.5377742934660437
+  },
+  {
+    "element": "Skateboard copy",
+    "foreground": [
+      220.72,
+      218.44,
+      214.7
+    ],
+    "background": [
+      124,
+      103,
+      86
+    ],
+    "ratio": 3.845380612969185
+  },
+  {
+    "element": "Springboard active link",
+    "foreground": [
+      255,
+      255,
+      255
+    ],
+    "background": [
+      102,
+      130,
+      125
+    ],
+    "ratio": 4.155007501228011
+  },
+  {
+    "element": "Theatre ComingSoon CTA",
+    "foreground": [
+      247,
+      243,
+      239
+    ],
+    "background": [
+      239,
+      235,
+      230
+    ],
+    "ratio": 1.0748953372163452
+  }
+]

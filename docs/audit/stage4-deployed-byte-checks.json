@@ -1,0 +1,38 @@
+[
+  {
+    "path": "public/js/foundry-global-nav.js",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "path": "public/script.js",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "path": "public/boardroom/skateboard/demos/tailor/js/app.js",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "path": "public/boardroom/springboard/demos/dining/assets/js/main.js",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "path": "public/boardroom/springboard/demos/dining/assets/css/main.css",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "path": "public/boardroom/springboard/demos/retreat/js/main.js",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "path": "public/boardroom/repair-contrast.css",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "path": "public/boardroom/skateboard/demos/pottery/css/style.css",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "path": "public/boardroom/springboard/demos/theatre/assets/css/responsive.css",
+    "error": "HTTP Error 403: Forbidden"
+  }
+]
