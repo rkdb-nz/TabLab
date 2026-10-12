@@ -1169,3 +1169,6 @@ img{display:block; max-width:100%}
 }
 
 .booking-confirmation[hidden]{display:none}
+
+/* Visibility must change immediately so the close control can receive entry focus. */
+.booking-confirmation{transition:opacity .25s ease}

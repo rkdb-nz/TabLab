@@ -248,11 +248,12 @@ document.querySelectorAll('.faq-q').forEach(q=>{
     modal.hidden=false;
     modal.setAttribute('aria-hidden','false');
     modal.classList.add('is-open');
-    requestAnimationFrame(()=>close.focus());
+    close.focus();
   });
   close.addEventListener('click',closeDialog);
   modal.addEventListener('click',event=>{if(event.target===modal) closeDialog();});
-  modal.addEventListener('keydown',event=>{
+  document.addEventListener('keydown',event=>{
+    if(!modal.classList.contains('is-open')) return;
     if(event.key==='Escape'){event.preventDefault();closeDialog();}
     if(event.key==='Tab'){event.preventDefault();close.focus();}
   });
