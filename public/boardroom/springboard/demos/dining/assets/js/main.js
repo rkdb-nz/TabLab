@@ -212,7 +212,7 @@ document.querySelectorAll('.faq-q').forEach(q=>{
   });
   mobile.addEventListener('change',()=>setOpen(false));
   menu.querySelectorAll('a').forEach(link=>{
-    if(new URL(link.href).pathname===location.pathname){link.classList.add('active');link.setAttribute('aria-current','page');}
+    if(new URL(link.href).pathname.replace(/\.html$/, '').replace(/\/$/, '')===location.pathname.replace(/\.html$/, '').replace(/\/$/, '')){link.classList.add('active');link.setAttribute('aria-current','page');}
     link.addEventListener('click',()=>setOpen(false));
   });
 })();
@@ -248,7 +248,7 @@ document.querySelectorAll('.faq-q').forEach(q=>{
     modal.hidden=false;
     modal.setAttribute('aria-hidden','false');
     modal.classList.add('is-open');
-    close.focus();
+    requestAnimationFrame(()=>close.focus());
   });
   close.addEventListener('click',closeDialog);
   modal.addEventListener('click',event=>{if(event.target===modal) closeDialog();});
