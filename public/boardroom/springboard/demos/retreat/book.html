@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/style.css?v=retreat-landscape-header-1">
 <link rel="icon" href="assets/icons/favicon.svg">
 </head>
-<body>
+<body class="book-page">
 <header class="header"><a class="logo" href="site.html?v=retreat-landscape-header-1">Clementine's</a>
 <nav class="nav"><a href="site.html?v=retreat-landscape-header-1">Home</a><a href="retreats.html?v=retreat-landscape-header-1">Retreats</a><a href="discover.html?v=retreat-landscape-header-1">Discover</a><a href="reviews.html?v=retreat-landscape-header-1">Reviews</a><a href="book.html?v=retreat-landscape-header-1">Book</a></nav>
 <button class="menu-btn">Menu</button>
@@ -17,12 +17,12 @@
 <section class="section wrap" style="padding-top:22vh"><span class="eyebrow">Book</span><h1 class="h2">Simple. Calm. Beautiful.</h1></section>
 <div class="wrap book-grid">
 <div><p style="margin-bottom:5vh;max-width:40ch;color:rgba(43,43,40,.75)">Rates are tailored to the season and length of stay. We'd love to prepare a personalised quote for your visit.</p><form id="clementine-book-form" style="max-width:520px">
-<label>Retreat</label><select class="input"><option>Woodland Retreat</option><option>Coastal Retreat</option><option>Farm Retreat</option><option>Town Retreat</option><option>Undecided</option></select>
-<label>Dates</label><input class="input" type="text" placeholder="Flexible dates?">
-<label>Guests</label><input class="input" type="number" min="1" max="6" value="2">
-<label>Name</label><input class="input" required>
-<label>Email</label><input class="input" type="email" required>
-<label>Message</label><textarea class="input" rows="4" placeholder="Tell us about your stay..."></textarea>
+<label for="retreat-retreat">Retreat</label><select id="retreat-retreat" class="input"><option>Woodland Retreat</option><option>Coastal Retreat</option><option>Farm Retreat</option><option>Town Retreat</option><option>Undecided</option></select>
+<label for="retreat-dates">Dates</label><input id="retreat-dates" class="input" type="text" placeholder="Flexible dates?">
+<label for="retreat-guests">Guests</label><input id="retreat-guests" class="input" type="number" min="1" max="6" value="2">
+<label for="retreat-name">Name</label><input id="retreat-name" class="input" required>
+<label for="retreat-email">Email</label><input id="retreat-email" class="input" type="email" required>
+<label for="retreat-message">Message</label><textarea id="retreat-message" class="input" rows="4" placeholder="Tell us about your stay..."></textarea>
 <br><br><button class="btn btn-dark" type="submit">Send Enquiry</button>
 </form>
 
@@ -41,26 +41,6 @@
 
 <footer class="footer"><div><strong class="serif" style="font-size:20px;letter-spacing:.2em">CLEMENTINE'S</strong><br>A collection of distinctive retreats.<br><a href="mailto:Clementines.rkdb.nz">Clementines.rkdb.nz</a><br>© 2026 Clementine's</div></footer>
 <script src="js/main.js"></script>
-<script>
-const clementineForm=document.getElementById("clementine-book-form");
-const clementineModal=document.getElementById("clementine-confirmation");
-const clementineOK=clementineModal.querySelector(".clementine-confirmation-ok");
 
-clementineForm.addEventListener("submit",e=>{
-  e.preventDefault();
-  clementineModal.hidden=false;
-  requestAnimationFrame(()=>clementineModal.classList.add("is-open"));
-  clementineOK.focus();
-});
 
-clementineOK.addEventListener("click",()=>{
-  clementineModal.classList.remove("is-open");
-  setTimeout(()=>{clementineModal.hidden=true;},220);
-});
-
-clementineModal.addEventListener("click",e=>{
-  if(e.target===clementineModal)clementineOK.click();
-});
-</script>
-<script>document.querySelectorAll('.nav a').forEach(a=>{if(a.getAttribute('href')==='book.html')a.classList.add('active')})</script>
 </body></html>

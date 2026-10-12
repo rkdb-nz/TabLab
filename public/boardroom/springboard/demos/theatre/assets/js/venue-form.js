@@ -25,7 +25,22 @@
         if(err) err.textContent='Enter a valid email.';
       }
     });
-    if(!valid) return;
+    const attendance = form.elements.attendance;
+    if(attendance){
+      const err = attendance.parentElement.querySelector('.field-error');
+      if(attendance.value !== '' && !attendance.checkValidity()){
+        valid = false;
+        attendance.setAttribute('aria-invalid','true');
+        if(err) err.textContent = 'Enter a whole number from 1 to 200.';
+      } else {
+        attendance.removeAttribute('aria-invalid');
+        if(err) err.textContent = '';
+      }
+    }
+    if(!valid){
+      form.querySelector('[aria-invalid="true"]')?.focus();
+      return;
+    }
     form.style.display='none';
     if(success){ success.classList.add('show'); success.style.display='block'; success.focus(); }
   });

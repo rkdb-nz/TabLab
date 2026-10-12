@@ -6,6 +6,8 @@
   .menu-btn{display:inline-flex}
   .mobile-panel{position:fixed;inset:58px 0 0 0;background:#0A0A0A;z-index:50;padding:18px;display:none;flex-direction:column;gap:8px}
   .mobile-panel.open{display:flex}
+  .mobile-panel{overflow-y:auto;overscroll-behavior:contain}
+  .mobile-panel a{flex-shrink:0}
   .mobile-panel a{padding:16px;border:1px solid rgba(247,243,239,.12);letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
   .mobile-panel a[aria-current="page"]{border-color:#C8A96A;color:#C8A96A}
   .site-footer{height:auto;padding:14px 18px;flex-wrap:wrap;gap:10px}
@@ -239,4 +241,9 @@
     aspect-ratio:4 / 3;
     object-fit:cover;
   }
+}
+
+/* Keep Venue Hire inside the same responsive grid as the other venue tabs. */
+@media(max-width:980px){
+  .clem-theatre-page[data-active-panel="hire"]{grid-template-columns:1fr}
 }

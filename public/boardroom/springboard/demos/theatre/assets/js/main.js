@@ -213,6 +213,21 @@
   const lightboxImage = document.getElementById('csLightboxImage');
   const lightboxClose = document.getElementById('csLightboxClose');
   let lastPosterTrigger = null;
+  let posterBackground = [];
+  let posterOverflow = '';
+  function setPosterBackgroundInert(){
+    posterBackground = [];
+    let branch = lightbox;
+    while(branch && branch !== document.body){
+      Array.from(branch.parentElement.children).forEach(function(sibling){
+        if(sibling !== branch && !['SCRIPT','STYLE','LINK'].includes(sibling.tagName)){
+          posterBackground.push([sibling, sibling.inert]);
+          sibling.inert = true;
+        }
+      });
+      branch = branch.parentElement;
+    }
+  }
 
   if(posterTriggers.length && lightbox && lightboxImage && lightboxClose){
     function closeLightbox(){
@@ -220,7 +235,9 @@
       lightbox.setAttribute('aria-hidden', 'true');
       lightboxImage.src = '';
       lightboxImage.alt = '';
-      document.body.style.overflow = '';
+      document.body.style.overflow = posterOverflow;
+      posterBackground.forEach(function(entry){ entry[0].inert = entry[1]; });
+      posterBackground = [];
       document.removeEventListener('keydown', onLightboxKeydown);
       if(lastPosterTrigger){
         lastPosterTrigger.focus();
@@ -229,7 +246,11 @@
 
     function onLightboxKeydown(e){
       if(e.key === 'Escape'){
+        e.preventDefault();
         closeLightbox();
+      } else if(e.key === 'Tab'){
+        e.preventDefault();
+        lightboxClose.focus();
       }
     }
 
@@ -238,6 +259,8 @@
       if(!posterImage) return;
 
       lastPosterTrigger = trigger;
+      posterOverflow = document.body.style.overflow;
+      setPosterBackgroundInert();
       lightboxImage.src = posterImage.currentSrc || posterImage.src;
       lightboxImage.alt = posterImage.alt;
       lightbox.hidden = false;

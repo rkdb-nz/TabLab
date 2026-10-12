@@ -25,8 +25,8 @@ Keep the existing Pages project and domains in place during the transition. A re
 
 ## Design preservation
 
-The approved header is documented in notes/tab-lab-header-approved.md. Preserve approved artwork and layout unless Robert explicitly requests a change. Use a preview branch for visual changes and obtain approval before publishing them.
+The current design authority is Robert’s October 5–8 desktop and mobile approvals, recorded in docs/audit/tab-lab-audit.md. notes/tab-lab-header-approved.md preserves earlier header history. Preserve approved artwork and layout unless Robert explicitly requests a change. Use a preview branch for visual changes and obtain approval before publishing them.
 
 ## Remaining rebrand work
 
-Some page paths, text and contact links retain the Foundry name. The current contact address is thefoundry@rkdb.nz; update it only after a replacement mailbox or alias has been configured and verified.
+Some page paths, text and contact links retain the Foundry name. The current public contact address is tablab@rkdb.nz. Retained historical notes may mention the previous Foundry address. Mailbox delivery is not established by the website audit.

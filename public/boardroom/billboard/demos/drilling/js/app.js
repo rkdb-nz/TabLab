@@ -7,12 +7,14 @@
   const links = [...document.querySelectorAll('.drawer-link')];
   const panels = [...document.querySelectorAll('.drawer-panel')];
   let menuOpener = null;
+  if (drawer) drawer.inert = true;
 
   function openMenu() {
     menuOpener = document.activeElement;
     body.classList.add('menu-open');
     toggle?.setAttribute('aria-expanded', 'true');
     drawer?.setAttribute('aria-hidden', 'false');
+    if (drawer) drawer.inert = false;
     close?.focus({preventScroll:true});
   }
 
@@ -20,6 +22,7 @@
     body.classList.remove('menu-open');
     toggle?.setAttribute('aria-expanded', 'false');
     drawer?.setAttribute('aria-hidden', 'true');
+    if (drawer) drawer.inert = true;
     (menuOpener instanceof HTMLElement ? menuOpener : toggle)?.focus({preventScroll:true});
   }
 

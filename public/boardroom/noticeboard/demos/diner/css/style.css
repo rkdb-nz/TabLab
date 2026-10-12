@@ -1303,3 +1303,6 @@ button{color:inherit}
     bottom:clamp(8px,2.5dvh,12px);
   }
 }
+
+/* S19: override the later important ticker rule under reduced motion. */
+@media(prefers-reduced-motion:reduce){.ticker-track{animation:none !important;}}

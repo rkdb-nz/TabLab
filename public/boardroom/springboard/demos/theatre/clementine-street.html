@@ -97,7 +97,7 @@
         <div><label for="fPhone">Phone</label><input id="fPhone" name="phone"></div>
         <div><label for="fDate">Proposed date</label><input id="fDate" type="date" name="date"></div>
         <div><label for="fType">Event type *</label><select id="fType" required><option value="">Select...</option><option>Dramatic production</option><option>Rehearsal</option><option>Staged reading</option><option>Small creative launch</option><option>Theatre workshop</option><option>Private performance event</option></select><div class="field-error" style="font-size:.7rem;color:#8a1a1a;min-height:1em"></div></div>
-        <div><label for="fAtt">Expected attendance</label><input id="fAtt" type="number" min="1" max="200" name="attendance" ></div>
+        <div><label for="fAtt">Expected attendance</label><input id="fAtt" type="number" min="1" max="200" name="attendance" aria-describedby="attendanceError"><span class="field-error" id="attendanceError" aria-live="polite"></span></div>
         <div><label for="fMsg">Message *</label><textarea id="fMsg" name="message" rows="4" required></textarea><div class="field-error" style="font-size:.7rem;color:#8a1a1a;min-height:1em"></div></div>
         <div><div class="field-error" style="font-size:.7rem;color:#8a1a1a;min-height:1em"></div></div>
         <button class="btn btn-primary" type="submit">Send enquiry</button>
@@ -128,39 +128,39 @@
 
 <style>
 /* Slightly compress Venue Hire form to eliminate tiny internal scroll */
-#hire form {
+#formWrap form {
   gap: 10px !important;
 }
 
-#hire input,
-#hire select {
+#formWrap input,
+#formWrap select {
   min-height: 38px !important;
 }
 
-#hire textarea {
+#formWrap textarea {
   min-height: 72px !important;
 }
 
-#hire .btn {
+#formWrap .btn {
   margin-top: 4px !important;
 }
 </style>
 
 <style>
 /* Final Venue Hire spacing tweak */
-#hire textarea {
+#formWrap textarea {
   min-height: 58px !important;
   height: 58px !important;
 }
 
-#hire .btn {
+#formWrap .btn {
   margin-top: -6px !important;
 }
 </style>
 
 <style>
 /* Venue Hire — reduce vertical gaps by 10% */
-#hire form {
+#formWrap form {
   gap: 9px !important;
 }
 </style>

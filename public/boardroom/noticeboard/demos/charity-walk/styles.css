@@ -306,3 +306,6 @@
   }
 }
 @media(max-width:900px) and (prefers-reduced-motion:reduce){.mobile-view,.mobile-diary-entry{transition:none}}
+
+/* S3-L01: editing notice wraps rather than clipping at narrow card widths. */
+.about-text .freely-edit{white-space:normal;overflow-wrap:break-word;}

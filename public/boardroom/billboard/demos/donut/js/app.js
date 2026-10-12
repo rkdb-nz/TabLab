@@ -41,7 +41,7 @@
       if (other !== overlay) hideImmediately(other);
     });
 
-    lastTrigger = trigger;
+    lastTrigger = mobileMenuPanel?.contains(trigger) ? mobileMenuToggle : trigger;
     resetOverlay(overlay);
     overlay.hidden = false;
     document.body.classList.add('overlay-open');

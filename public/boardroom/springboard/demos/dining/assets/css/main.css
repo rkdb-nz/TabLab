@@ -1156,3 +1156,16 @@ img{display:block; max-width:100%}
     margin:18px 0 0 !important;
   }
 }
+
+/* Stage 4: retain desktop styling; expose navigation within short mobile heights. */
+.faq-q{width:100%;border:0;background:none;color:inherit;font-family:inherit;padding:0;text-align:left}
+@media(max-width:900px){
+  .nav-links.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;padding:12px 22px;background:var(--warm);max-height:calc(100dvh - 70px);overflow-y:auto}
+  .nav-links.open a{padding:12px 0}
+  .mobile-toggle{min-width:44px;min-height:44px;background:none;border:0;color:inherit}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+
+.booking-confirmation[hidden]{display:none}

@@ -84,6 +84,7 @@ img{display:block;max-width:100%}
 .cast-list li{display:flex;justify-content:space-between;border-bottom:1px solid rgba(0,0,0,.08);padding:8px 0;font-size:.88rem}
 .np-actions{padding:16px 32px;border-top:1px solid rgba(0,0,0,.1);display:flex;gap:12px;background:#EFEBE6}
 .np-actions .btn{flex:1}
+.np-actions .btn:not(.btn-primary){color:#2a241d;border-color:#2a241d}
 .cs-main{height:calc(100vh - 64px - 52px);overflow:hidden;position:relative;padding:12px 22px 10px;background:#1d1814;color:var(--off);--cs-card-height:232px;display:grid;grid-template-rows:auto minmax(0,1fr);row-gap:8px}
 .cs-main::before{content:"";position:absolute;inset:-1.5%;background:url("../images/comingsoonbackground.webp") center/cover no-repeat;filter:blur(2px) contrast(.42) saturate(.72) brightness(.82);opacity:.42;z-index:0;transform:scale(1.02)}
 .cs-main::after{content:"";position:absolute;inset:0;background:

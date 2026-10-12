@@ -1131,3 +1131,9 @@ h1 span {
   content:none !important;
   display:none !important;
 }
+
+/* S21: desktop cards grow with their approved copy instead of overflowing. */
+@media (min-width: 981px) {
+  .boards { height: auto; grid-template-rows: repeat(4, minmax(min-content, auto)); }
+  .board-card { height: auto; min-height: min-content; }
+}

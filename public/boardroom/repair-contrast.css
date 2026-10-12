@@ -1,0 +1,5 @@
+/* P04: verified opaque normal-text contrast; approved surfaces retained. */
+body.noticeboard .board-kicker { color: #855b20; }
+body.skateboard .board-kicker { color: #fff1d8; }
+body.skateboard .board-copy { color: #f8fbfb; }
+body.springboard .board-tabs a.active { color: #111111; }

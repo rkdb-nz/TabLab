@@ -56,7 +56,9 @@
 
   
   backButton.addEventListener('click', () => {
-    history.back();
+    const sameSiteReferrer = document.referrer && new URL(document.referrer).origin === location.origin;
+    if (history.length > 1 && (sameSiteReferrer || history.state)) history.back();
+    else location.assign(fallback);
   });
 
 
@@ -68,6 +70,10 @@
   drawer.className = 'foundry-global-drawer';
   drawer.setAttribute('aria-hidden', 'true');
   drawer.setAttribute('aria-label', 'Site navigation');
+  drawer.setAttribute('role', 'dialog');
+  drawer.inert = true;
+  drawer.id = 'tablab-site-drawer';
+  menuButton.setAttribute('aria-controls', drawer.id);
 
   drawer.innerHTML = `
     <div class="foundry-global-drawer-inner">
@@ -96,24 +102,39 @@
 
   document.body.append(backdrop, drawer);
 
+  const backgroundStates = new Map();
   const closeMenu = () => {
+    const wasOpen = menuButton.getAttribute('aria-expanded') === 'true';
+    backgroundStates.forEach((value, element) => { element.inert = value; });
+    backgroundStates.clear();
+    drawer.inert = true;
+    drawer.removeAttribute('aria-modal');
     document.body.classList.remove('foundry-global-open');
     menuButton.setAttribute('aria-expanded', 'false');
     menuButton.setAttribute('aria-label', 'Open menu');
     menuButton.title = 'Menu';
     drawer.setAttribute('aria-hidden', 'true');
     backdrop.setAttribute('aria-hidden', 'true');
+    if (wasOpen) menuButton.focus();
   };
 
   window.closeFoundryDrawer = closeMenu;
 
   const openMenu = () => {
+    [...document.body.children, ...nav.children].forEach(element => {
+      if ([nav, drawer, backdrop, menuButton].includes(element) || ['SCRIPT','STYLE','LINK'].includes(element.tagName)) return;
+      backgroundStates.set(element, element.inert);
+      element.inert = true;
+    });
+    drawer.inert = false;
+    drawer.setAttribute('aria-modal', 'true');
     document.body.classList.add('foundry-global-open');
     menuButton.setAttribute('aria-expanded', 'true');
     menuButton.setAttribute('aria-label', 'Close menu');
     menuButton.title = 'Close menu';
     drawer.setAttribute('aria-hidden', 'false');
     backdrop.setAttribute('aria-hidden', 'false');
+    drawer.querySelector('a, button')?.focus();
   };
 
   menuButton.addEventListener('click', () => {
@@ -124,6 +145,14 @@
   drawer.querySelectorAll('a, button').forEach(link => link.addEventListener('click', closeMenu));
 
   document.addEventListener('keydown', event => {
+    if (event.key === 'Tab' && menuButton.getAttribute('aria-expanded') === 'true') {
+      const targets = [menuButton, ...drawer.querySelectorAll('a[href],button:not([disabled])')];
+      const index = targets.indexOf(document.activeElement);
+      if ((event.shiftKey && index <= 0) || (!event.shiftKey && (index < 0 || index === targets.length - 1))) {
+        event.preventDefault();
+        targets[event.shiftKey ? targets.length - 1 : 0].focus();
+      }
+    }
     if (event.key === 'Escape' && document.body.classList.contains('foundry-global-open')) {
       closeMenu();
       menuButton.focus();

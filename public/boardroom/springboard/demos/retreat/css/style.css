@@ -1,6 +1,7 @@
 
 :root{
   --warm-white:#FFFCF8;
+  --serif:"Cormorant Garamond",Georgia,serif;
   --stone:#E8E2D9;
   --sand:#D9CFC2;
   --charcoal:#2B2B28;
@@ -631,4 +632,12 @@ body:has(.hero) .header:not(.scrolled){
     max-width:none;
     font-size:clamp(29px,8.5vw,38px);
   }
+}
+
+/* Stage 4: opaque text contrast and preference-aware motion. */
+.book-page .eyebrow{color:#796047}
+@media(max-width:900px){.menu-btn{min-width:44px;min-height:44px}.header .nav{overflow-y:auto}}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .reveal,.img-reveal{opacity:1;transform:none}
 }

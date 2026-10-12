@@ -1,4 +1,5 @@
-site {s*transition: filter .*?}s*site {s*transition: filter .*?}s*:root {
+/* Legacy palette was previously discarded by malformed selectors. Retained inactive to preserve the approved rendering.
+
   --wine: #5f0f20;
   --rose: #e95d78;
   --blush: #fff1ed;
@@ -8,6 +9,7 @@ site {s*transition: filter .*?}s*site {s*transition: filter .*?}s*:root {
   --canvas-w: 1536;
   --canvas-h: 1024;
 }
+*/
 * { box-sizing: border-box; }
 html, body { width:100%; height:100%; margin:0; overflow:hidden; background:#eadbd3; }
 body { font-family: Georgia, 'Times New Roman', serif; color:var(--ink); }
@@ -256,11 +258,7 @@ input:focus,select:focus,textarea:focus { border-color:#c42b55; box-shadow:0 0 0
 }
 
 /* Foundry refinement: Donut editorial slide reveal */
-site {.*?}s*#site {
-  filter: blur(9px) saturate(.72) brightness(.72);
-  transform: scale(.975);
-  transition: filter .42s ease, transform .42s cubic-bezier(.2,.75,.25,1);
-}
+/* Discarded malformed legacy blur rule removed (C04). */
 
 #site {
   transition: filter .34s ease, transform .34s cubic-bezier(.2,.75,.25,1);
@@ -683,12 +681,7 @@ site {.*?}s*#site {
 }
 
 /* Donut slide reveal — clarity + reliable dismissal */
-site {.*?}s*.topbar,
-body.overlay-open .hero,
-body.overlay-open .features {
-  filter: brightness(.58) saturate(.72);
-  transition: filter .3s ease;
-}
+/* Discarded malformed legacy dimming rule removed (C04). */
 
 .topbar,
 .hero,

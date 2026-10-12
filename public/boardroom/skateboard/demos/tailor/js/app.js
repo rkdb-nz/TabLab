@@ -1,3 +1,4 @@
+const scroller = document.getElementById('scroller');
 const track = document.getElementById('track');
 const progress = document.getElementById('progress');
 const chapterInd = document.getElementById('chapter-ind');
@@ -44,6 +45,8 @@ function updateUI(idx){
   if(chapterNext) chapterNext.hidden = idx >= total-1;
   chapters.forEach((ch,i)=>{
     ch.classList.toggle('active', i===idx);
+    ch.inert = i !== idx;
+    ch.setAttribute('aria-hidden', String(i !== idx));
     if(i===idx){
       ch.querySelectorAll('.reveal').forEach((el,j)=>setTimeout(()=>el.classList.add('in'),j*120));
       ch.querySelectorAll('.img-reveal').forEach((el,j)=>setTimeout(()=>el.classList.add('in'),j*150+200));
@@ -51,9 +54,15 @@ function updateUI(idx){
   });
 }
 
-function goTo(index){
+function chapterHash(index){ return index ? '#' + chapters[index].id : ''; }
+function syncHash(index){
+  const hash = chapterHash(index);
+  if(location.hash !== hash) history.pushState(null, '', location.pathname + location.search + hash);
+}
+function goTo(index, writeHistory=true){
   if(!track) return;
   index = Math.max(0, Math.min(total-1, index));
+  if(writeHistory) syncHash(index);
 
   if(isMobile()){
     targetIndex=index;
@@ -74,7 +83,9 @@ function goTo(index){
 
 function lerp(a,b,t){ return a+(b-a)*t }
 function animate(){
-  if(track && !isMobile()){    currentX=lerp(currentX,targetX,0.08);
+  if(track && !isMobile()){
+    if(scroller && scroller.scrollLeft) scroller.scrollLeft = 0;
+    currentX=lerp(currentX,targetX,0.08);
     if(Math.abs(currentX-targetX)<0.5){
       currentX=targetX;
       if(isAnimating){ currentIndex=targetIndex; updateUI(currentIndex); isAnimating=false; }
@@ -84,10 +95,11 @@ function animate(){
   requestAnimationFrame(animate);
 }
 function getInitialChapterIndex(){
-  if(location.hash==='#boutiques') return total-1;
-  if(location.hash==='#collection') return 2;
-  return 0;
+  const index = chapters.findIndex(ch => '#' + ch.id === location.hash);
+  return index < 0 ? 0 : index;
 }
+window.addEventListener('hashchange',()=>goTo(getInitialChapterIndex(), false));
+window.addEventListener('popstate',()=>goTo(getInitialChapterIndex(), false));
 if(track){
   const initialIndex = getInitialChapterIndex();
   currentIndex = initialIndex;
@@ -95,6 +107,7 @@ if(track){
   currentX = -initialIndex * window.innerWidth;
   targetX = currentX;
   track.style.transform = `translate3d(${currentX}px,0,0)`;
+  if(isMobile()) requestAnimationFrame(()=>scroller?.scrollTo({left:initialIndex*window.innerWidth,behavior:'instant'}));
   animate();
   updateUI(initialIndex);
 }
@@ -188,20 +201,24 @@ window.addEventListener('resize',()=>{
     targetX=-targetIndex*window.innerWidth;
     currentX=targetX;
     track.style.transform=`translate3d(${currentX}px,0,0)`;
+    scroller?.scrollTo({left:isMobile()?targetIndex*window.innerWidth:0,behavior:'instant'});
+    updateUI(targetIndex);
   }
 });
 
 
 
-if(isMobile() && scroller){
+if(scroller){
   let mobileScrollFrame=0;
   scroller.addEventListener('scroll',()=>{
+    if(!isMobile()) return;
     cancelAnimationFrame(mobileScrollFrame);
     mobileScrollFrame=requestAnimationFrame(()=>{
       const idx=Math.max(0,Math.min(total-1,Math.round(scroller.scrollLeft/window.innerWidth)));
       if(idx!==currentIndex){
         currentIndex=idx;
         targetIndex=idx;
+        history.replaceState(null, '', location.pathname + location.search + chapterHash(idx));
         updateUI(idx);
       }
     });
