@@ -905,3 +905,28 @@ body#tablabMobile#tablabMobile.foundry-global-open .foundry-global-menu span:nth
   width: 23px !important;
   transform: translate(calc(-50% - 2px),-50%) rotate(-43deg) !important;
 }
+
+/* Uniform closed hamburger; open-state asymmetric transforms remain intact. */
+body#tablabMobile#tablabMobile:not(.foundry-global-open):not(.menu-open) .foundry-global-menu span {
+  position: absolute !important;
+  top: 50% !important;
+  left: 50% !important;
+  width: 22px !important;
+  height: 3px !important;
+  min-height: 3px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  border-radius: 1px !important;
+  background: #080807 !important;
+  opacity: 1 !important;
+  box-shadow: none !important;
+  filter: none !important;
+  transform: translate(-50%, -50%) !important;
+}
+body#tablabMobile#tablabMobile:not(.foundry-global-open):not(.menu-open) .foundry-global-menu span:nth-child(1) {
+  transform: translate(-50%, calc(-50% - 6px)) !important;
+}
+body#tablabMobile#tablabMobile:not(.foundry-global-open):not(.menu-open) .foundry-global-menu span:nth-child(3) {
+  transform: translate(-50%, calc(-50% + 6px)) !important;
+}
