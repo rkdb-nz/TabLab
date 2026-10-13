@@ -919,3 +919,7 @@ body.foundry-global-open #tablab-drawer-close span:nth-child(3) {
   transform: translate(-2px, -8px) rotate(-43deg) !important;
 }
 #tablab-drawer-close:focus-visible { outline: 2px solid #e1bd84; outline-offset: -3px; }
+
+/* Explicit shared overlay layers override homepage-specific stacking. */
+body.foundry-global-open .foundry-global-drawer { z-index: 10010 !important; }
+body.foundry-global-open .foundry-global-backdrop { z-index: 10000 !important; }
