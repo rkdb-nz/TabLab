@@ -102,6 +102,15 @@
 
   document.body.append(backdrop, drawer);
 
+  const drawerClose = menuButton.cloneNode(true);
+  drawerClose.id = 'tablab-drawer-close';
+  drawerClose.setAttribute('aria-label', 'Close menu');
+  drawerClose.title = 'Close menu';
+  drawerClose.removeAttribute('aria-controls');
+  drawerClose.removeAttribute('aria-expanded');
+  drawer.append(drawerClose);
+  drawerClose.addEventListener('click', () => closeMenu());
+
   const backgroundStates = new Map();
   const closeMenu = () => {
     const wasOpen = menuButton.getAttribute('aria-expanded') === 'true';
@@ -146,7 +155,7 @@
 
   document.addEventListener('keydown', event => {
     if (event.key === 'Tab' && menuButton.getAttribute('aria-expanded') === 'true') {
-      const targets = [menuButton, ...drawer.querySelectorAll('a[href],button:not([disabled])')];
+      const targets = [...drawer.querySelectorAll('a[href],button:not([disabled])')];
       const index = targets.indexOf(document.activeElement);
       if ((event.shiftKey && index <= 0) || (!event.shiftKey && (index < 0 || index === targets.length - 1))) {
         event.preventDefault();
