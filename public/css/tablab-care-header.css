@@ -148,3 +148,21 @@
 #tablabInner#tablabInner.foundry-global-open .foundry-global-menu span:nth-child(3) { transform: translate(-50%,-50%) rotate(-43deg) !important; }
 
 }
+
+/* Complete the matching desktop header with the approved cream brand badge. */
+@media (min-width:821px) and (min-height:701px), (min-width:1101px) {
+  #tablabInner#tablabInner .foundrycare-header,
+  #tablabInner#tablabInner .tablab-inner-browserbar { display: none !important; }
+  #tablabInner#tablabInner .tablab-studio-brand {
+    position: fixed; z-index: 10021; top: 22px; left: 3%;
+    display: flex; align-items: center; justify-content: center;
+    padding: 12px 30px; border-radius: 18px;
+    background: linear-gradient(#fffdf7,#f5eadb); color: #34251c;
+    font: 32px/1.1 Georgia,serif; text-decoration: none;
+    box-shadow: inset 0 1px 1px #fff,0 5px 14px #72523235;
+  }
+  #tablabInner#tablabInner .tablab-studio-brand strong { font-weight: 700; white-space: pre; }
+  #tablabInner#tablabInner .tablab-studio-brand:focus-visible {
+    outline: 3px solid #a64523; outline-offset: 3px;
+  }
+}
