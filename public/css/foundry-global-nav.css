@@ -873,3 +873,35 @@ html body.foundry-global-open:is(#tablabMobile, .homepage, body) .foundry-global
 }
 body.foundry-global-open .foundry-global-drawer { z-index: 10010 !important; }
 body.foundry-global-open .foundry-global-backdrop { z-index: 10000 !important; }
+
+/* Locked header rules use an ID in :has(); this explicit scope wins that cascade. */
+body#tablabMobile#tablabMobile.foundry-global-open .foundry-global-nav {
+  z-index: 10020 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+body#tablabMobile#tablabMobile.foundry-global-open .foundry-global-back,
+body#tablabMobile#tablabMobile.foundry-global-open .foundry-global-home {
+  visibility: hidden !important;
+}
+body#tablabMobile#tablabMobile .foundry-global-menu span {
+  display: block !important;
+  visibility: visible !important;
+  transition: transform 420ms cubic-bezier(.2,.8,.2,1), opacity 220ms ease, width 320ms ease !important;
+}
+body#tablabMobile#tablabMobile.foundry-global-open .foundry-global-menu span {
+  background: #e1bd84 !important;
+  box-shadow: none !important;
+}
+body#tablabMobile#tablabMobile.foundry-global-open .foundry-global-menu span:nth-child(1) {
+  width: 20px !important;
+  transform: translate(calc(-50% + 1px),-50%) rotate(46deg) !important;
+}
+body#tablabMobile#tablabMobile.foundry-global-open .foundry-global-menu span:nth-child(2) {
+  opacity: 0 !important;
+  transform: translate(-50%,-50%) scaleX(.2) !important;
+}
+body#tablabMobile#tablabMobile.foundry-global-open .foundry-global-menu span:nth-child(3) {
+  width: 23px !important;
+  transform: translate(calc(-50% - 2px),-50%) rotate(-43deg) !important;
+}
