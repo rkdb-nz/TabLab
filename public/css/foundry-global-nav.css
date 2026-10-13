@@ -930,3 +930,20 @@ body#tablabMobile#tablabMobile:not(.foundry-global-open):not(.menu-open) .foundr
 body#tablabMobile#tablabMobile:not(.foundry-global-open):not(.menu-open) .foundry-global-menu span:nth-child(3) {
   transform: translate(-50%, calc(-50% + 6px)) !important;
 }
+
+/* Compensate for the approved desktop header's 0.9 scale.
+   Each closed bar renders 22px by 3px, with identical 6px centre spacing. */
+@media (min-width: 701px) {
+  body#tablabMobile#tablabMobile:not(.foundry-global-open):not(.menu-open) .foundry-global-menu span {
+    width: 24.444444px !important;
+    height: 3.333333px !important;
+    min-height: 3.333333px !important;
+    border-radius: 0 !important;
+  }
+  body#tablabMobile#tablabMobile:not(.foundry-global-open):not(.menu-open) .foundry-global-menu span:nth-child(1) {
+    transform: translate(-50%, calc(-50% - 6.666667px)) !important;
+  }
+  body#tablabMobile#tablabMobile:not(.foundry-global-open):not(.menu-open) .foundry-global-menu span:nth-child(3) {
+    transform: translate(-50%, calc(-50% + 6.666667px)) !important;
+  }
+}
