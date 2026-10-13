@@ -107,9 +107,6 @@
     const wasOpen = menuButton.getAttribute('aria-expanded') === 'true';
     backgroundStates.forEach((value, element) => { element.inert = value; });
     backgroundStates.clear();
-    nav.append(menuButton);
-    menuButton.removeAttribute('style');
-    menuButton.querySelectorAll('span').forEach(bar => bar.removeAttribute('style'));
     drawer.inert = true;
     drawer.removeAttribute('aria-modal');
     document.body.classList.remove('foundry-global-open');
@@ -130,37 +127,6 @@
       element.inert = true;
     });
     drawer.inert = false;
-    // Reuse the actual toggle so its three bars retain their original animation.
-    drawer.append(menuButton);
-    const buttonStyles = {
-      position: 'absolute', top: '12px', right: '12px', left: 'auto',
-      width: '44px', minWidth: '44px', height: '44px', minHeight: '44px',
-      display: 'flex', flexDirection: 'column', alignItems: 'center',
-      justifyContent: 'center', gap: '6px', padding: '0', margin: '0',
-      border: '0', background: 'transparent', boxShadow: 'none',
-      clipPath: 'none', transform: 'none', zIndex: '1'
-    };
-    Object.entries(buttonStyles).forEach(([key,value]) =>
-      menuButton.style.setProperty(key.replace(/[A-Z]/g, c => '-' + c.toLowerCase()), value, 'important'));
-    const bars = [...menuButton.querySelectorAll('span')];
-    bars.forEach(bar => {
-      Object.entries({position:'static', width:'24px', height:'2px', margin:'0',
-        border:'0', background:'#e1bd84', boxShadow:'none', visibility:'visible',
-        opacity:'1', transform:'none', filter:'none',
-        transition:'transform 420ms cubic-bezier(.2,.8,.2,1), opacity 220ms ease, width 320ms ease'
-      }).forEach(([key,value]) => bar.style.setProperty(
-        key.replace(/[A-Z]/g, c => '-' + c.toLowerCase()), value, 'important'));
-    });
-    menuButton.getBoundingClientRect();
-    requestAnimationFrame(() => {
-      if (menuButton.getAttribute('aria-expanded') !== 'true') return;
-      bars[0].style.setProperty('width', '22px', 'important');
-      bars[0].style.setProperty('transform', 'translate(1px,8px) rotate(46deg)', 'important');
-      bars[1].style.setProperty('opacity', '0', 'important');
-      bars[1].style.setProperty('transform', 'scaleX(.2)', 'important');
-      bars[2].style.setProperty('width', '25px', 'important');
-      bars[2].style.setProperty('transform', 'translate(-2px,-8px) rotate(-43deg)', 'important');
-    });
     drawer.setAttribute('aria-modal', 'true');
     document.body.classList.add('foundry-global-open');
     menuButton.setAttribute('aria-expanded', 'true');
@@ -180,7 +146,7 @@
 
   document.addEventListener('keydown', event => {
     if (event.key === 'Tab' && menuButton.getAttribute('aria-expanded') === 'true') {
-      const targets = [...drawer.querySelectorAll('a[href],button:not([disabled])')];
+      const targets = [menuButton, ...drawer.querySelectorAll('a[href],button:not([disabled])')];
       const index = targets.indexOf(document.activeElement);
       if ((event.shiftKey && index <= 0) || (!event.shiftKey && (index < 0 || index === targets.length - 1))) {
         event.preventDefault();

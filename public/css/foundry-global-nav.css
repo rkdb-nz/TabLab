@@ -765,7 +765,6 @@ body.foundry-global-open .foundry-global-drawer {
   }
 }
 
-
 /* Approved Option 1 reference: framed Tab Lab menu. */
 .foundry-global-drawer {
   box-sizing: border-box;
@@ -835,31 +834,6 @@ body.foundry-global-open .foundry-global-drawer {
   opacity: 1;
   transform: translateX(0);
 }
-/* Keep the existing animated menu button within the frame while open. */
-body.foundry-global-open .foundry-global-nav {
-  top: max(30px, calc(env(safe-area-inset-top) + 12px)) !important;
-  right: max(30px, calc(env(safe-area-inset-right) + 12px)) !important;
-  left: auto !important;
-  width: 44px !important;
-  height: 44px !important;
-  padding: 0 !important;
-  display: flex !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  backdrop-filter: none !important;
-}
-body.foundry-global-open .foundry-global-nav::before,
-body.foundry-global-open .foundry-global-back,
-body.foundry-global-open .foundry-global-home {
-  display: none !important;
-}
-body.foundry-global-open .foundry-global-nav .foundry-global-menu {
-  width: 44px !important;
-  min-width: 44px !important;
-  height: 44px !important;
-}
 @media (max-width: 700px) {
   .foundry-global-drawer .foundry-global-drawer-inner { padding: 32px 18px 32px; }
   .foundry-global-drawer .foundry-global-kicker { margin-bottom: 24px; font-size: 9px; }
@@ -872,54 +846,30 @@ body.foundry-global-open .foundry-global-nav .foundry-global-menu {
   .foundry-global-drawer .foundry-global-link { font-size: 18px; min-height: 44px; }
 }
 
-/* Open drawer covers all three header tabs; its own close keeps the animation. */
-body.foundry-global-open .foundry-global-nav {
-  z-index: 9999 !important;
-}
-body.homepage.homepage.homepage:has(#introPanel).foundry-global-open .foundry-global-nav {
-  z-index: 9999 !important;
-}
-#tablab-drawer-close {
-  position: absolute !important;
-  top: 12px !important;
-  right: 12px !important;
-  left: auto !important;
-  width: 44px !important;
-  min-width: 44px !important;
-  height: 44px !important;
-  min-height: 44px !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  flex-direction: column !important;
-  gap: 6px !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  border: 0 !important;
-  background: transparent !important;
-  box-shadow: none !important;
-  clip-path: none !important;
-  cursor: pointer;
-}
-#tablab-drawer-close span {
-  position: static !important;
-  width: 24px !important;
-  height: 2px !important;
-  border: 0 !important;
-  background: #e1bd84 !important;
-  box-shadow: none !important;
-}
-body.foundry-global-open #tablab-drawer-close span:nth-child(1) {
-  transform: translate(1px, 8px) rotate(46deg) !important;
-}
-body.foundry-global-open #tablab-drawer-close span:nth-child(2) {
-  opacity: 0 !important;
-}
-body.foundry-global-open #tablab-drawer-close span:nth-child(3) {
-  transform: translate(-2px, -8px) rotate(-43deg) !important;
-}
-#tablab-drawer-close:focus-visible { outline: 2px solid #e1bd84; outline-offset: -3px; }
 
-/* Explicit shared overlay layers override homepage-specific stacking. */
+/* Keep the original toggle stationary: only its bars animate.
+   The tab artwork and other controls sit behind the open drawer. */
+html body.foundry-global-open:is(#tablabMobile, .homepage, body) .foundry-global-nav {
+  z-index: 10020 !important;
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+html body.foundry-global-open:is(#tablabMobile, .homepage, body) .foundry-global-nav::before,
+html body.foundry-global-open:is(#tablabMobile, .homepage, body) .foundry-global-nav::after,
+html body.foundry-global-open:is(#tablabMobile, .homepage, body) .foundry-global-control::before,
+html body.foundry-global-open:is(#tablabMobile, .homepage, body) .foundry-global-control::after {
+  display: none !important;
+}
+html body.foundry-global-open:is(#tablabMobile, .homepage, body) .foundry-global-back,
+html body.foundry-global-open:is(#tablabMobile, .homepage, body) .foundry-global-home {
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+html body.foundry-global-open:is(#tablabMobile, .homepage, body) .foundry-global-menu span {
+  background: #e1bd84 !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
 body.foundry-global-open .foundry-global-drawer { z-index: 10010 !important; }
 body.foundry-global-open .foundry-global-backdrop { z-index: 10000 !important; }
