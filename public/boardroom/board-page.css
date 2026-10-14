@@ -2235,3 +2235,43 @@ body.springboard .board-system-illustration{
     background-image:url("billboard/assets/images/billboard-drilling.svg?v=2");
   }
 }
+
+/* A soft light travels across each Open site label, then rests. */
+body.dual-board-page .demo-meta > span,
+body.dual-board-page .billboard-example small {
+  position: relative;
+  display: inline-block;
+  align-self: flex-start;
+  overflow: hidden;
+  isolation: isolate;
+  padding: .65em .85em;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+}
+
+body.dual-board-page .demo-meta > span::after,
+body.dual-board-page .billboard-example small::after {
+  content: "";
+  position: absolute;
+  inset: -30% -80%;
+  z-index: -1;
+  pointer-events: none;
+  background: linear-gradient(110deg, transparent 38%, rgba(227, 185, 126, .18) 46%, rgba(255, 235, 200, .48) 50%, rgba(227, 185, 126, .18) 54%, transparent 62%);
+  transform: translateX(-65%);
+  animation: board-button-sweep 6s ease-in-out infinite;
+}
+
+body.dual-board-page .demo-card:nth-child(2) .demo-meta > span::after,
+body.dual-board-page .billboard-example:nth-child(2) small::after { animation-delay: .45s; }
+body.dual-board-page .demo-card:nth-child(3) .demo-meta > span::after,
+body.dual-board-page .billboard-example:nth-child(3) small::after { animation-delay: .9s; }
+
+@keyframes board-button-sweep {
+  0%, 10% { transform: translateX(-65%); }
+  38%, 100% { transform: translateX(65%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body.dual-board-page .demo-meta > span::after,
+  body.dual-board-page .billboard-example small::after { animation: none; display: none; }
+}
