@@ -947,3 +947,41 @@ body#tablabMobile#tablabMobile:not(.foundry-global-open):not(.menu-open) .foundr
     transform: translate(-50%, calc(-50% + 6.666667px)) !important;
   }
 }
+
+
+/* Quartet desktop: the open drawer has a bare asymmetric close control. */
+@media (min-width:821px) and (min-height:701px), (min-width:1101px) {
+  body#tablabInner#tablabInner#tablabInner.foundry-global-open .foundry-global-nav {
+    position: fixed !important;
+    inset: 30px 30px auto auto !important;
+    width: 44px !important; min-width: 44px !important; height: 44px !important;
+    display: block !important; margin: 0 !important; padding: 0 !important;
+    border: 0 !important; border-radius: 0 !important;
+    background: none !important; box-shadow: none !important;
+    transform: none !important; filter: none !important; backdrop-filter: none !important;
+    clip-path: none !important; overflow: visible !important;
+  }
+  body#tablabInner#tablabInner#tablabInner.foundry-global-open .foundry-global-nav .foundry-global-menu {
+    position: absolute !important; inset: 0 !important;
+    width: 44px !important; height: 44px !important; min-width: 44px !important;
+    margin: 0 !important; padding: 0 !important;
+    border: 0 !important; border-radius: 0 !important;
+    background: none !important; box-shadow: none !important;
+    transform: none !important; filter: none !important; clip-path: none !important;
+  }
+  body#tablabInner#tablabInner#tablabInner.foundry-global-open .foundry-global-menu span {
+    position: absolute !important; top: 50% !important; left: 50% !important;
+    height: 3px !important; min-height: 3px !important;
+    margin: 0 !important; padding: 0 !important; border: 0 !important;
+    background: #e1bd84 !important; box-shadow: none !important;
+  }
+  body#tablabInner#tablabInner#tablabInner.foundry-global-open .foundry-global-menu span:nth-child(1) {
+    width: 24px !important; transform: translate(calc(-50% + 1px),-50%) rotate(46deg) !important;
+  }
+  body#tablabInner#tablabInner#tablabInner.foundry-global-open .foundry-global-menu span:nth-child(2) {
+    opacity: 0 !important; transform: translate(-50%,-50%) scaleX(.2) !important;
+  }
+  body#tablabInner#tablabInner#tablabInner.foundry-global-open .foundry-global-menu span:nth-child(3) {
+    width: 27px !important; transform: translate(calc(-50% - 2px),-50%) rotate(-43deg) !important;
+  }
+}
