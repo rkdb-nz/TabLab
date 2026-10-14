@@ -306,3 +306,11 @@
   }
 }
 @media(max-width:900px) and (prefers-reduced-motion:reduce){.mobile-view,.mobile-diary-entry{transition:none}}
+
+/* Keep the desktop hero tagline together. */
+@media (min-width: 901px) {
+  .hero-sub {
+    max-width: none;
+    white-space: nowrap;
+  }
+}
