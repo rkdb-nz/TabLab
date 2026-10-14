@@ -137,6 +137,7 @@
     event.preventDefault();
     const status = event.currentTarget.querySelector('.form-status');
     status.textContent = 'Got it! Consider your message freshly glazed and delivered.';
+    status.append(document.createElement('br'), document.createTextNode('One of our team will contact you shortly!'));
   });
 
   site.querySelector('.brand')?.addEventListener('click', event => {
