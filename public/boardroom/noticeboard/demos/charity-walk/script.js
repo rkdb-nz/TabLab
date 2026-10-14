@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const subject = encodeURIComponent(`A trail message for Kōkiri from ${name}`);
       const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`);
       status.textContent = 'Opening your email app…';
-      window.location.href = `mailto:kokiri@ontheroad.nz?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:kokiri_ontheroad@rkdb.nz?subject=${subject}&body=${body}`;
     });
   }
 
