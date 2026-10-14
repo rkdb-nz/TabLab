@@ -804,3 +804,20 @@ nav button {
 @keyframes produceTicker{from{transform:translateX(0)}to{transform:translateX(-100%)}}
 
 @media (max-width:900px) and (prefers-reduced-motion:reduce){.footer div{animation:none}}
+
+/* Selected street-map option 4; show only the map area of the concept sheet. */
+.map-card.map-card--street {
+  height: auto;
+  aspect-ratio: 752 / 423;
+  background: #edf0e8;
+}
+.map-card--street > img.produce-street-map {
+  position: absolute;
+  width: 204.255319%;
+  height: 242.080378%;
+  max-width: none;
+  left: -102.659574%;
+  top: -129.314421%;
+  display: block;
+  object-fit: fill;
+}
