@@ -49,7 +49,7 @@
 /* Charity Walk — editing message: bottom bar */
 .about-text{
   position:relative;
-  padding-bottom:44px;
+  padding-bottom:18px;
 }
 
 .about-text .freely-edit{
@@ -79,7 +79,7 @@
 /* Charity Walk — keep edit notice fully inside card */
 .about-text{
   overflow:hidden;
-  padding-bottom:36px;
+  padding-bottom:18px;
 }
 
 .about-text .freely-edit{
@@ -128,11 +128,11 @@
   .hero-meta{margin-top:9px;font-size:8px;letter-spacing:.08em}
 
   .card-about{display:grid}
-  .about-text{min-height:0;overflow:hidden;padding:12px 12px 31px}
+  .about-text{min-height:0;overflow:hidden;padding:12px}
   .about-text h2{font-size:clamp(20px,3.8dvh,28px);margin:0 0 7px}
   .about-text p{display:none}
   .about-text .freely-edit{display:block;min-height:25px;padding:6px 4px;font-size:clamp(7px,1.35dvh,10px);line-height:12px}
-  .about-text p:nth-of-type(2){display:block;margin:0;font-size:clamp(8px,1.45dvh,10px);line-height:1.35}
+  .about-text p:nth-of-type(1){display:block;margin:0;font-size:clamp(8px,1.45dvh,10px);line-height:1.35}
 
   .next-stop-card{padding:clamp(10px,2dvh,15px);border-top-width:3px}
   .next-stop-head h2{font-size:clamp(19px,3.5dvh,24px)}
@@ -181,9 +181,9 @@
 
   .card-about{grid-template-columns:1fr;grid-template-rows:42% 58%}
   .about-portrait{height:100%;min-height:0}
-  .about-text{padding:8px 9px 26px}
+  .about-text{padding:8px 9px}
   .about-text h2{font-size:clamp(17px,6dvh,23px);margin-bottom:4px}
-  .about-text p:nth-of-type(2){font-size:clamp(7px,2.35dvh,9px);line-height:1.25}
+  .about-text p:nth-of-type(1){font-size:clamp(7px,2.35dvh,9px);line-height:1.25}
 
   .next-stop-card{padding:clamp(8px,2.7dvh,12px)}
   .next-stop-route{grid-template-columns:1fr;align-items:start;margin-top:7px;padding-top:6px}
@@ -313,4 +313,18 @@
     max-width: none;
     white-space: nowrap;
   }
+}
+
+/* The editable content is the journal; place its notice beside the title. */
+.journal-head { flex-wrap: wrap; gap: 8px 12px; }
+.journal-head > div { flex: 1 1 auto; }
+.journal-edit-banner {
+  flex: 0 1 auto;
+  margin: 0;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #b72f35;
+  color: #fff;
+  font: 800 10px/1.3 'Inter', Arial, sans-serif;
+  text-align: center;
 }
