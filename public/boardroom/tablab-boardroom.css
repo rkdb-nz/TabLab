@@ -106,3 +106,15 @@
  #tablabInner#tablabInner .tablab-studio-brand {font-size:19px;padding:8px 10px;}
  #tablabInner#tablabInner .foundry-global-nav {gap:5px !important;}
 }
+
+/* Centre longer descriptions within the card instead of letting the grid
+   row's automatic minimum push their midpoint below the card midpoint. */
+@media (min-width:901px) {
+  #tablabInner .board-card {
+    grid-template-rows: minmax(0, 1fr);
+    align-items: center;
+  }
+  #tablabInner .board-description {
+    align-self: center;
+  }
+}
