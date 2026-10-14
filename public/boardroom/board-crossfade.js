@@ -28,6 +28,8 @@
       if (finished) return;
       try {
         if (!frame.contentDocument || frame.contentWindow.location.pathname !== next.pathname || !frame.contentDocument.querySelector('.board-main')) { navigate(); return; }
+        // The destination loads again after the fade; keep its preview sweep still.
+        frame.contentDocument.documentElement.classList.add('board-transition-preview');
         await Promise.race([frame.contentDocument.fonts.ready, new Promise(resolve => setTimeout(resolve, 700))]);
         if (finished) return;
         const animation = frame.animate([{ opacity: 0 }, { opacity: 1 }], { duration: 1500, easing: 'ease-in-out', fill: 'forwards' });
