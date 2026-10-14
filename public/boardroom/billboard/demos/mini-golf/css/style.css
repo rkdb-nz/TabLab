@@ -311,11 +311,11 @@
   height: 8.20% !important;
 }
 
-/* FINAL MINI-GOLF SURROUND MATCH */
+/* Mini Golf surround sampled from the Snacks & Drinks artwork. */
 html,
 body,
 .viewport {
-  background: #292929 !important;
+  background: #01474e !important;
 }
 
 .mobile-home {
@@ -327,17 +327,17 @@ body,
 }
 
 /* Final Mini Golf surround fix:
-   body is already the correct Billboard grey (#292929);
+   body uses the Snacks & Drinks deep blue (#01474e);
    remove the stage shadow that darkens it. */
 .stage {
   box-shadow: none !important;
 }
 
-/* MINI-GOLF — exact Billboard surround match */
+/* Keep the outer canvas in the same Snacks & Drinks blue. */
 html,
 body,
 .viewport {
-  background: #292929 !important;
+  background: #01474e !important;
 }
 
 .stage {
