@@ -300,7 +300,7 @@ h3{font-family:var(--font-serif);font-size:28px;font-weight:400;line-height:1.1}
 
 .philosophy-short { display:none; }
 @media(max-width:860px) {
-  .philosophy-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin-top:28px; }
+  .philosophy-grid { grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin-top:28px; scroll-margin-top:40px; }
   .philosophy-card { min-width:0; padding:16px 10px; border-radius:12px; }
   .philosophy-card h3 { font-size:24px; margin-bottom:8px; }
   .philosophy-card .philosophy-full { display:none; }
