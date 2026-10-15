@@ -6,6 +6,7 @@
   const mobileMenuPanel = document.getElementById('mobile-menu-panel');
   let lastTrigger = null;
   let closeTimer = null;
+  let openTimer = null;
 
   function closeMobileMenu() {
     if (!mobileMenuToggle || !mobileMenuPanel) return;
@@ -37,6 +38,7 @@
 
     closeMobileMenu();
     clearTimeout(closeTimer);
+    clearTimeout(openTimer);
     overlays.forEach(other => {
       if (other !== overlay) hideImmediately(other);
     });
@@ -49,7 +51,7 @@
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         overlay.classList.add('is-opening');
-        setTimeout(() => {
+        openTimer = setTimeout(() => {
           overlay.classList.remove('is-opening');
           overlay.classList.add('is-open');
           overlay.querySelector('.overlay-close')?.focus();
@@ -65,15 +67,19 @@
       return;
     }
 
+    if (active.classList.contains('is-closing')) return;
     clearTimeout(closeTimer);
+    clearTimeout(openTimer);
+    const closeDuration = parseFloat(getComputedStyle(active).getPropertyValue('--donut-close-duration')) || 500;
     active.classList.remove('is-opening', 'is-open');
     active.classList.add('is-closing');
-    document.body.classList.remove('overlay-open');
+    if (closeDuration <= 500) document.body.classList.remove('overlay-open');
 
     closeTimer = setTimeout(() => {
       hideImmediately(active);
+      document.body.classList.remove('overlay-open');
       if (restoreFocus && lastTrigger) lastTrigger.focus();
-    }, 500);
+    }, closeDuration);
   }
 
   mobileMenuToggle?.addEventListener('click', toggleMobileMenu);
