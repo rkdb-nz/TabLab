@@ -1,5 +1,16 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Choose a performance, seating area and tickets for The Glass Room at Clementine Street Theatre in Wāperiki.">
-<title>Book Tickets — Clementine Street Theatre</title><link rel="icon" href="assets/icons/favicon.svg"><link rel="stylesheet" href="assets/css/styles.css"><link rel="stylesheet" href="assets/css/responsive.css?v=theatre-mobile-lock-1"></head>
+<title>Book Tickets — Clementine Street Theatre</title><link rel="icon" href="assets/icons/favicon.svg"><link rel="stylesheet" href="assets/css/styles.css"><link rel="stylesheet" href="assets/css/responsive.css?v=theatre-mobile-lock-1"><style>
+.demo-field{display:block;margin-top:12px;font-size:.85rem}
+.demo-field input{box-sizing:border-box;display:block;width:100%;margin-top:5px;padding:10px 12px;border:1px solid #777;background:#202020;color:#fff;font:inherit;font-size:16px}
+.demo-payment-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.demo-notice,#demoBookingResult{color:var(--brass);line-height:1.5;margin-top:16px}
+.book-main.is-checkout{display:block!important;overflow-y:auto!important}
+.book-main.is-checkout .book-left,.book-main.is-checkout .summary,.book-main.is-checkout .book-venue-panel{display:none}
+.book-main.is-checkout .book-right{width:100%;max-width:700px;margin:0 auto;overflow:visible}
+#bookingConfirm [hidden]{display:none!important}
+#bookingConfirm .summary-line{gap:16px}
+@media(max-width:380px){.demo-payment-pair{grid-template-columns:1fr}}
+</style></head>
 <body class="desktop-lock book-page">
 
 <a href="#main" class="skip">Skip to content</a>
@@ -34,12 +45,23 @@
         <div class="qty-row"><span>Under 25 — $28</span><span class="qty-controls" data-type="under25"><button data-dec aria-label="Decrease under 25">−</button><span data-val>0</span><button data-inc aria-label="Increase under 25">+</button></span></div>
       </div></div>
   </div>
-  <div class="book-right"><div class="summary" aria-live="polite"><h3>Booking Summary</h3><div class="summary-line"><span>Performance</span><span id="sumPerf">—</span></div><div class="summary-line"><span>Zone</span><span id="sumZone">—</span></div><div class="summary-line"><span>Tickets</span><span id="sumTickets">—</span></div><div class="summary-total"><span>Total</span><span id="sumTotal">$0</span></div><p id="bookingHint" class="booking-hint">Select a performance, seating area and at least one ticket to continue.</p><div id="bookingError" class="error" role="alert" style="margin-top:10px"></div><button id="checkoutBtn" class="btn btn-primary checkout" style="width:100%;margin-top:12px" disabled>Proceed to checkout</button><button id="resetBooking" class="btn" style="width:100%;margin-top:8px;background:transparent;border-color:rgba(247,243,239,.2);color:var(--off)">Reset</button><div style="font-size:.68rem;opacity:.5;margin-top:14px;line-height:1.5">Secure online booking. Payment is confirmed during checkout.</div></div>
+  <div class="book-right"><div class="summary" aria-live="polite"><h3>Booking Summary</h3><div class="summary-line"><span>Performance</span><span id="sumPerf">—</span></div><div class="summary-line"><span>Zone</span><span id="sumZone">—</span></div><div class="summary-line"><span>Tickets</span><span id="sumTickets">—</span></div><div class="summary-total"><span>Total</span><span id="sumTotal">$0</span></div><p id="bookingHint" class="booking-hint">Select a performance, seating area and at least one ticket to continue.</p><div id="bookingError" class="error" role="alert" style="margin-top:10px"></div><button id="checkoutBtn" class="btn btn-primary checkout" style="width:100%;margin-top:12px" disabled>Proceed to checkout</button><button id="resetBooking" class="btn" style="width:100%;margin-top:8px;background:transparent;border-color:rgba(247,243,239,.2);color:var(--off)">Reset</button><div style="font-size:.68rem;opacity:.5;margin-top:14px;line-height:1.5">Demo booking — sample payment details are supplied. No payment is taken.</div></div>
     <div id="bookingConfirm" hidden tabindex="-1" style="border:2px solid var(--brass);padding:20px;background:#111;color:var(--off);">
-      <h2 style="font-size:1rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 12px">Booking Confirmation</h2>
-      <p style="font-size:.8rem;line-height:1.6;opacity:.8">Your booking details are ready for confirmation. Complete checkout to secure your seats.</p>
+      <h2 id="checkoutHeading" style="font-size:1rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 12px">Complete your booking</h2>
       <div id="confirmDetails" style="margin-top:12px"></div>
-      <div style="display:flex;gap:10px;margin-top:16px"><button id="closeConfirm" class="btn btn-primary">Return to booking</button></div>
+      <div id="demoPayment">
+        <p class="demo-notice">Demo only — sample details are supplied. No real card details needed.</p>
+        <label class="demo-field">Name on card<input value="Alex Taylor" readonly aria-readonly="true"></label>
+        <label class="demo-field">Card number<input value="4242 4242 4242 4242" readonly aria-readonly="true"></label>
+        <div class="demo-payment-pair">
+          <label class="demo-field">Expiry date<input value="12 / 30" readonly aria-readonly="true"></label>
+          <label class="demo-field">Security code<input value="123" readonly aria-readonly="true"></label>
+        </div>
+        <button id="completeDemoBooking" type="button" class="btn btn-primary" style="width:100%;margin-top:18px">Complete demo booking</button>
+        <p style="margin-top:10px">No payment will be taken.</p>
+      </div>
+      <p id="demoBookingResult" hidden role="status">This was a demonstration. No payment was taken and no seats have been reserved.</p>
+      <div style="display:flex;gap:10px;margin-top:16px"><button id="closeConfirm" type="button" class="btn">Return to booking</button><button id="anotherBooking" type="button" class="btn btn-primary" hidden>Book another performance</button></div>
     </div>
     <div class="book-venue-panel"><div class="section-label" style="color:var(--brass)">At Clementine Street</div><p>Latecomers are admitted at a suitable break. The bar opens one hour before curtain, and step-free access is available via the side entrance.</p><img src="assets/images/audience.webp" alt="Audience seated at Clementine Street Theatre" class="book-audience-image"></div></div>
 </main>
@@ -48,7 +70,7 @@
   <div>Clementine Street Theatre — 18 Clementine Street, W&#257;pereki — <a href="mailto:clementinesttheatre@rkdb.nz">clementinesttheatre@rkdb.nz</a> (07) 555 0148</div>
   <div class="foot-right"><a href="book-tickets.html?v=theatre-mobile-lock-1">Book Tickets</a><a href="clementine-street.html?v=theatre-mobile-lock-1#accessibility">Accessibility</a><span>© 2026 Clementine Street Theatre. All rights reserved.</span></div>
 </footer>
-<script src="assets/js/main.js"></script><script src="assets/js/booking.js"></script></body></html>
+<script src="assets/js/main.js"></script><script src="assets/js/booking.js?v=demo-payment-1"></script></body></html>
 
 
 

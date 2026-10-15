@@ -13,6 +13,23 @@
   const confirmEl = document.getElementById('bookingConfirm');
   const confirmDetails = document.getElementById('confirmDetails');
   const closeConfirm = document.getElementById('closeConfirm');
+  const main = document.querySelector('.book-main');
+  const payment = document.getElementById('demoPayment');
+  const complete = document.getElementById('completeDemoBooking');
+  const result = document.getElementById('demoBookingResult');
+  const heading = document.getElementById('checkoutHeading');
+  const another = document.getElementById('anotherBooking');
+  function closeCheckout(){
+    confirmEl.hidden=true;
+    main.classList.remove('is-checkout');
+  }
+  function preparePayment(){
+    payment.hidden=false;
+    result.hidden=true;
+    closeConfirm.hidden=false;
+    another.hidden=true;
+    heading.textContent='Complete your booking';
+  }
   const prices = {adult:42, concession:36, under25:28};
   let state = {perf:null, zone:null, adult:0, concession:0, under25:0};
   function update(){
@@ -80,7 +97,7 @@
       perfBtns.forEach(function(x){x.setAttribute('aria-pressed','false');});
       zoneCards.forEach(function(x){x.setAttribute('aria-pressed','false');});
       document.querySelectorAll('[data-val]').forEach(function(v){v.textContent='0';});
-      if(confirmEl){ confirmEl.hidden=true; }
+      if(confirmEl){ closeCheckout(); preparePayment(); }
       update();
     });
   }
@@ -96,6 +113,9 @@
         confirmDetails.innerHTML = '<div class=\"summary-line\"><span>Performance</span><span>'+state.perf+'</span></div><div class=\"summary-line\"><span>Zone</span><span>'+state.zone+'</span></div><div class=\"summary-line\"><span>Adult x'+state.adult+'</span><span>$'+(state.adult*prices.adult)+'</span></div><div class=\"summary-line\"><span>Concession x'+state.concession+'</span><span>$'+(state.concession*prices.concession)+'</span></div><div class=\"summary-line\"><span>Under 25 x'+state.under25+'</span><span>$'+(state.under25*prices.under25)+'</span></div><div class=\"summary-total\"><span>Total</span><span>$'+total+'</span></div>';
       }
       if(confirmEl){
+        preparePayment();
+        complete.textContent='Complete demo booking · $'+total;
+        main.classList.add('is-checkout');
         confirmEl.hidden=false;
         confirmEl.focus();
       }
@@ -103,15 +123,27 @@
   }
   if(closeConfirm){
     closeConfirm.addEventListener('click', function(){
-      if(confirmEl) confirmEl.hidden=true;
-      if(checkout) checkout.focus();
+      closeCheckout();
+      checkout.focus();
     });
   }
   document.addEventListener('keydown', function(e){
-    if(e.key==='Escape' && confirmEl && !confirmEl.hidden){
-      confirmEl.hidden=true;
-      if(checkout) checkout.focus();
+    if(e.key==='Escape' && !confirmEl.hidden){
+      closeCheckout();
+      checkout.focus();
     }
+  });
+  complete.addEventListener('click', function(){
+    payment.hidden=true;
+    heading.textContent='Demo booking complete';
+    result.hidden=false;
+    closeConfirm.hidden=true;
+    another.hidden=false;
+    confirmEl.focus();
+  });
+  another.addEventListener('click', function(){
+    resetBtn.click();
+    perfBtns[0].focus();
   });
   update();
 })();
