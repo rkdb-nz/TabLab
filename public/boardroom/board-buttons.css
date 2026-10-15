@@ -72,3 +72,26 @@ body.dual-board-page .billboard-example small {
     height: 43.4px;
   }
 }
+
+/* Keep the mobile header and coloured selector above scrolling content. */
+@media (max-width: 980px) {
+  body.dual-board-page.billboard-scroll {
+    --board-header-height: clamp(72px, 11svh, 92px);
+  }
+  body.dual-board-page.billboard-scroll .billboard-header {
+    position: sticky;
+    top: 0;
+    z-index: 9998;
+    height: var(--board-header-height);
+  }
+  body.dual-board-page.billboard-scroll .billboard-section-nav {
+    position: sticky;
+    top: var(--board-header-height);
+    z-index: 9998;
+  }
+}
+@media (max-width: 980px) and (orientation: landscape) and (max-height: 560px) {
+  body.dual-board-page.billboard-scroll {
+    --board-header-height: 62px;
+  }
+}
