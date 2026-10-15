@@ -47,3 +47,28 @@ body.dual-board-page .billboard-example small {
     align-self: center;
   }
 }
+
+/* Reduce all four mobile board navigation banners by 30%. */
+@media (max-width: 980px) {
+  body.dual-board-page.billboard-scroll .billboard-section-nav {
+    box-sizing: border-box;
+    height: 53.2px;
+    min-height: 0;
+    padding: 3px 0;
+  }
+  body.dual-board-page.billboard-scroll .billboard-section-nav a {
+    min-height: 0;
+    padding: 2px 4px;
+    gap: 3px;
+  }
+}
+@media (max-width: 560px) {
+  body.dual-board-page.billboard-scroll .billboard-section-nav {
+    height: 50.4px;
+  }
+}
+@media (max-width: 980px) and (orientation: landscape) and (max-height: 720px) {
+  body.dual-board-page.billboard-scroll .billboard-section-nav {
+    height: 43.4px;
+  }
+}
