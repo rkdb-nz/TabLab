@@ -1179,3 +1179,29 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
     text-shadow: 0 1px 5px rgba(0,0,0,.35);
   }
 }
+
+/* Desktop magazine controls: one compact group above the spine. */
+@media (min-width:901px) {
+  .ch3 #look-prev,
+  .ch3 #look-next {
+    top: -40px !important;
+    bottom: auto !important;
+    width: 44px !important;
+    height: 44px !important;
+    transform: none !important;
+    opacity: .75 !important;
+  }
+  .ch3 #look-prev { left: calc(50% - 104px) !important; right: auto !important; }
+  .ch3 #look-next { right: calc(50% - 104px) !important; left: auto !important; }
+  .ch3 #look-prev::after,
+  .ch3 #look-next::after {
+    font: 400 28px/44px Arial, sans-serif !important;
+    transform: none !important;
+  }
+  .ch3 #look-prev::after { content: "←"; }
+  .ch3 #look-next::after { content: "→"; }
+  .ch3 #look-prev:hover,
+  .ch3 #look-next:hover { transform: none !important; opacity: 1 !important; }
+  .ch3 #look-prev:focus-visible,
+  .ch3 #look-next:focus-visible { outline: 2px solid #6a5844; outline-offset: 1px; }
+}
