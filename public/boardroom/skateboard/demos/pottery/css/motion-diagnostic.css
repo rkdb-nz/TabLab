@@ -1,0 +1,11 @@
+/* Deliberately exaggerated, preview-only animation diagnostic. */
+#motion-test-panel {position:fixed;bottom:12px;left:12px;right:12px;max-width:460px;z-index:10000;background:#fff500;color:#171717;border:3px solid #6800a8;border-radius:10px;padding:10px 12px;font:700 14px/1.4 Arial,sans-serif;box-shadow:0 3px 16px #0005;}
+#motion-test-panel p {margin:4px 0 8px;}
+#motion-test-panel button {min-height:44px;padding:8px 14px;background:#470078;color:white;border:0;border-radius:6px;font:700 15px/1.2 Arial,sans-serif;cursor:pointer;}
+.motion-test-curtain {position:absolute;inset:0;z-index:8;display:flex;align-items:center;justify-content:center;padding:20px;background:#fff500;color:#470078;border:8px solid #a000cc;text-align:center;font:900 30px/1.2 Arial,sans-serif;pointer-events:none;}
+.motion-test-curtain[hidden] {display:none!important;}
+@media(max-width:860px) {
+ .motion-diagnostic .reveal-img::after {display:none!important;}
+ .motion-diagnostic .reveal-img img {opacity:1!important;transition:none!important;}
+ .motion-diagnostic .reveal-img {scroll-margin-top:110px;}
+}
