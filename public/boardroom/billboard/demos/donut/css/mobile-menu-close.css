@@ -1,15 +1,15 @@
 /* Let phone visitors see the menu close control tilt before the sheet exits. */
 @media (max-width: 980px) {
-  #overlay-menu { --donut-close-duration: 2000ms; }
+  #overlay-menu { --donut-close-duration: 2080ms; }
   #overlay-menu .overlay-close {
     transform: none !important;
-    transition: transform .7s ease-in-out !important;
+    transition: transform 1.6s ease-in-out !important;
   }
   #overlay-menu.is-closing .overlay-close {
-    transform: rotate(8deg) scale(1.05) !important;
+    transform: rotate(16deg) scale(1.05) !important;
   }
   #overlay-menu.is-closing .overlay-panel {
-    animation: donut-sheet-out 1.3s cubic-bezier(.45,0,.7,1) .7s both;
+    animation: donut-sheet-out .48s cubic-bezier(.55,.02,.9,.42) 1.6s both;
     pointer-events: none !important;
   }
 }
