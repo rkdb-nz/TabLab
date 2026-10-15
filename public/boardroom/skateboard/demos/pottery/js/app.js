@@ -17,6 +17,11 @@
       }
       const box = frame.getBoundingClientRect();
       if (box.bottom < 0 || box.top > innerHeight) return;
+      const viewportHeight = window.visualViewport?.height || innerHeight;
+      const viewportTop = window.visualViewport?.offsetTop || 0;
+      if (!frame.classList.contains('in') && box.top <= viewportTop + viewportHeight * .5 && box.bottom > viewportTop) {
+        frame.classList.add('in');
+      }
       const travel = Math.min(18, box.height * .04);
       const progress = Math.max(-1, Math.min(1, (innerHeight / 2 - box.top - box.height / 2) / ((innerHeight + box.height) / 2)));
       img.style.setProperty('--photo-drift', (progress * travel).toFixed(2) + 'px');
@@ -25,14 +30,12 @@
 
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
+      if (entry.isIntersecting && !(mobileView.matches && entry.target.classList.contains('reveal-img'))) {
         entry.target.classList.add('in');
         io.unobserve(entry.target);
       }
     });
-  }, mobileView.matches
-    ? { threshold: 0.12, rootMargin: `0px 0px -${Math.round(innerHeight * .18)}px 0px` }
-    : { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
   revealEls.forEach(el => io.observe(el));
 
   requestAnimationFrame(() => {
@@ -66,6 +69,8 @@
   }, { passive: true });
 
   window.addEventListener('resize', updatePhotoDrift, { passive: true });
+  window.visualViewport?.addEventListener('resize', updatePhotoDrift, { passive: true });
+  window.visualViewport?.addEventListener('scroll', updatePhotoDrift, { passive: true });
   reducedMotion.addEventListener('change', updatePhotoDrift);
   updatePhotoDrift();
 
