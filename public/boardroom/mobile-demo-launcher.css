@@ -1,0 +1,19 @@
+/* These classes exist only while a demo is selected from a mobile gallery. */
+html.board-demo-open, html.board-demo-open body { overflow: hidden !important; }
+.board-demo-overlay {
+  position: fixed; inset: 0; z-index: 2147483647;
+  width: 100%; height: 100%; height: 100dvh;
+  margin: 0; padding: 0; border: 0; background: #fff;
+}
+.board-demo-overlay:fullscreen { width: 100%; height: 100%; }
+.board-demo-overlay iframe { display: block; width: 100%; height: 100%; border: 0; background: #fff; }
+.board-demo-return {
+  position: absolute; top: 22%; left: 0; z-index: 2;
+  min-width: 36px; padding: 16px 9px;
+  border: 1px solid #ad927b; border-left: 0; border-radius: 0 9px 9px 0;
+  background: linear-gradient(90deg,#725a47,#907660); color: #fff9f1;
+  box-shadow: 2px 3px 8px #0003; font: 600 14px/1.2 Arial,sans-serif;
+  writing-mode: vertical-rl; cursor: pointer;
+}
+.board-demo-return:hover { background: #604b3b; }
+.board-demo-return:focus-visible { outline: 3px solid #fff; outline-offset: -4px; }
