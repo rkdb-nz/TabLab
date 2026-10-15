@@ -632,3 +632,15 @@ body:has(.hero) .header:not(.scrolled){
     font-size:clamp(29px,8.5vw,38px);
   }
 }
+
+/* Keep each collection gallery clear of its enquiry pill. */
+.retreat-copy .retreat-thumbs{
+  flex-shrink:0;
+}
+.retreat-copy .retreat-thumbs + br{
+  display:none;
+}
+.retreat-copy .retreat-thumbs + br + .btn{
+  margin-top:24px;
+  flex-shrink:0;
+}
