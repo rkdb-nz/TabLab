@@ -104,33 +104,7 @@ nav#topnav .links a.is-current{opacity:1;font-weight:800}
 .wheel-hint .mouse::after{content:'';position:absolute;left:50%;top:8px;width:2px;height:6px;background:var(--charcoal);border-radius:1px;transform:translateX(-50%);animation:wheelMove 2.2s infinite}
 @keyframes wheelMove{0%{transform:translate(-50%,0);opacity:1}100%{transform:translate(-50%,10px);opacity:0}}
 
-@media(max-width:900px){
- body{overflow:auto}
- #scroller{height:auto;overflow:visible}
- #track{flex-direction:column;width:100vw !important;transform:none !important;height:auto}
- .chapter{width:100vw !important;height:auto;min-height:100vh;flex-direction:column}
- .ch1 .hero{position:relative;inset:auto;width:100vw;height:80vh}
- .ch1 .type{position:relative;left:auto;top:auto;padding:8vw}
- .ch1 .ch1-passage{left:8vw;bottom:4vh;max-width:28ch}
- .ch2 .left-img{position:relative;width:100vw;height:70vh}
- .ch2 .right-content{margin-left:0;width:100vw;padding:8vw}
- .ch2 .kraft{position:relative;left:auto;top:auto;width:86vw;margin:0 7vw;transform:none}
- .ch3 .look{position:relative;left:auto !important;top:auto !important;width:86vw !important;height:70vh !important;margin:4vh 7vw}
- .ch4 .macro{position:relative;width:100vw;height:70vh}
- .ch4 .details{position:relative;left:auto;top:auto;width:86vw;margin:6vw 7vw}
- .ch5{min-height:100vh}
- .ch5 .boutique-scroll{height:auto;overflow:visible;padding-top:72px}
- .boutique-intro{padding:12vw 7vw 10vw}
- .boutique-intro h2{font-size:13vw}
- .boutique-panel,.boutique-panel.reverse{grid-template-columns:1fr;min-height:0}
- .boutique-panel>img{height:62vh}
- .boutique-panel.reverse .boutique-info{order:2}
- .boutique-info{padding:14vw 8vw}
- .boutique-info h3{font-size:12vw}
- nav#topnav{padding:0 24px;background:rgba(247,243,238,0.9);mix-blend-mode:normal;color:var(--charcoal)}
- #chapter-ind{bottom:20px;left:24px}
- #counter{bottom:20px;right:24px}
-}
+
 
 /* Fix: allow vertical scroll on non-home pages */
 body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;height:auto !important}
@@ -143,23 +117,11 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
   transform: translateY(18px);
 }
 
-@media(max-width:900px){
-  #chapter-ind{
-    bottom:6px;
-  }
-}
 
-@media(max-width:900px){
-  #s01 .hero-copy{
-    transform:translateY(-12px);
-  }
-}
 
-@media(max-width:900px){
-  .ch1 .type{
-    transform:translateY(-12px);
-  }
-}
+
+
+
 
 
 /* DESKTOP — Chapter 01 small upward nudge */
@@ -205,25 +167,7 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
 .visit-card h3{font-size:42px;line-height:1;margin-top:10px}
 .visit-card p{font-size:12px;line-height:1.8;opacity:.64;margin-top:18px}
 .visit-card .btn{margin-top:24px}
-@media(max-width:900px){
- .lookbook-kicker{position:relative;left:auto;top:auto;margin:100px 7vw 0}
- .lookbook-stage{position:relative;inset:auto;min-height:78vh;margin-top:24px}
- .lookbook-slide{inset:0 7vw}
- .lookbook-image-main{left:0;top:0;width:58vw;height:54vh}
- .lookbook-image-detail{left:61vw;top:0;width:25vw;height:24vh}
- .lookbook-copy{left:0;top:57vh;width:86vw}
- .lookbook-copy h2{font-size:12vw}
- .lookbook-controls{position:relative;left:auto;bottom:auto;width:86vw;margin:30px 7vw 0}
- .lookbook-note{position:relative;left:auto;bottom:auto;margin:18px 7vw 60px}
- .visit-stage{position:relative;inset:auto;display:block}
- .visit-copy{padding:110px 7vw 30px}
- .visit-copy h2{font-size:13vw}
- .visit-visual{height:72vh}
- .visit-card{right:5vw;bottom:5vw;width:74vw;padding:22px}
- .visit-card h3{font-size:34px}
- nav#topnav .links{gap:14px}
- nav#topnav .links a{font-size:8px;letter-spacing:.12em}
-}
+
 
 /* Magazine Collection override */
 .ch3{padding:0;background:#e8e3db}.lookbook-kicker{left:5vw;top:8vh}.book-shell{position:absolute;left:5vw;right:5vw;top:13vh;bottom:13vh;background:#f6f0e7;box-shadow:0 22px 60px #2d241c2b;overflow:hidden}.book-spine{position:absolute;z-index:20;left:50%;top:0;bottom:0;width:32px;transform:translateX(-50%);background:linear-gradient(90deg,#4a3a2814,#fff8 46%,#3a2d201c 53%,transparent);pointer-events:none}.lookbook-slide{inset:0;display:grid;grid-template-columns:1fr 1fr}.book-page{position:relative;overflow:hidden;background:#f7f1e8;border-right:1px solid #5d4c3818}.book-page>i{position:absolute;bottom:2.5vh;left:3vw;font:normal 11px Georgia;letter-spacing:.16em}.book-page:nth-child(2)>i{left:auto;right:3vw}.copy{position:absolute;z-index:4;left:4vw;top:10vh;width:17vw}.copy.top{top:6vh;width:22vw}.copy h2{font-size:4.1vw;line-height:.88;margin-top:15px;letter-spacing:-.04em}.copy p{font-size:12px;line-height:1.8;opacity:.64;margin-top:22px}.spec{font-size:9px;line-height:1.7;letter-spacing:.13em;text-transform:uppercase;border-top:1px solid #5d4c3838;margin-top:23px;padding-top:12px;opacity:.6}.book-page figure{position:absolute;margin:0;overflow:hidden;background:#ddd}.book-page figure img{width:100%;height:100%;object-fit:cover}.hero{right:3vw;top:5vh;width:22vw;height:58vh}.hero.full{left:4vw;right:auto;width:36vw;height:61vh}.hero.slim{width:19vw}.hero.evening{left:4vw;right:auto;width:30vw;height:62vh}.still{left:5vw;top:7vh;width:34vw;height:35vh}.still.low{top:auto;bottom:6vh;height:29vh}.still.big{left:4vw;top:6vh;width:36vw;height:57vh}.still.detail{left:auto;right:4vw;top:auto;bottom:5vh;width:24vw;height:27vh}.pull{position:absolute;left:5vw;top:8vh;font-size:3.4vw;line-height:.95}.closing{position:absolute;right:3.5vw;bottom:5vh;font-size:2.8vw;line-height:.92;text-align:right}.caption{position:absolute;left:4vw;bottom:3.5vh;opacity:.5}.dark{background:#20262B;color:#f4eee5}.light{color:#f4eee5}blockquote{position:absolute;left:6vw;bottom:8vh;width:28vw;margin:0;font:italic 2.2vw/1.1 Georgia;color:#322b24}.lookbook-controls{left:5vw;right:5vw;bottom:6vh;width:auto}.lookbook-note{left:50%;bottom:2.5vh;transform:translateX(-50%);white-space:nowrap}
@@ -532,13 +476,7 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
   background:#f7f3ee;
   color:#171614;
 }
-@media(max-width:900px){
-  .visit-scroll{position:relative;height:auto;overflow:visible}
-  .visit-section{height:100vh;min-height:720px}
-  .visit-intro,.visit-intro-right{left:7vw;right:auto;top:auto;bottom:9vh;transform:none;width:78vw}
-  .visit-intro h2{font-size:13vw}
-  .visit-intro h3{font-size:9vw}
-}
+
 
 
 
@@ -585,591 +523,33 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
   white-space:nowrap;
   letter-spacing:-.02em;
 }
-@media(max-width:900px){
-  .visit-interlude{height:180px;min-height:180px;padding:0 7vw;gap:3vw}
-  .visit-interlude::before,.visit-interlude::after{display:none}
-  .visit-interlude-mark{font-size:7vw}
-  .visit-interlude-place{font-size:7px}
-}
+
 
 /* TAILOR MOBILE — VERTICAL SWIPE, HORIZONTAL CHAPTERS */
-@media (max-width:900px) {
-  html,
-  body {
-    width:100%;
-    height:100%;
-    height:100dvh;
-    overflow:hidden !important;
-    overscroll-behavior:none;
-  }
 
-  #scroller {
-    width:100vw;
-    height:100dvh;
-    overflow:hidden;
-  }
-
-  #track {
-    width:500vw !important;
-    height:100dvh !important;
-    display:flex !important;
-    flex-direction:row !important;
-    transform:translate3d(0,0,0);
-    will-change:transform;
-  }
-
-  .chapter {
-    width:100vw !important;
-    height:100dvh !important;
-    min-height:0 !important;
-    flex:0 0 100vw !important;
-    overflow:hidden !important;
-  }
-
-  /* Arrival */
-  .ch1 .hero {
-    position:absolute !important;
-    inset:0 0 0 28vw !important;
-    width:auto !important;
-    height:auto !important;
-  }
-
-  .ch1 .type {
-    position:absolute !important;
-    left:7vw !important;
-    top:19dvh !important;
-    width:48vw;
-    padding:0 !important;
-    transform:none !important;
-  }
-
-  .ch1 .type h1 {
-    font-size:clamp(62px,18vw,112px);
-  }
-
-  .ch1 .type .tag {
-    max-width:24ch;
-    margin-top:4dvh;
-    font-size:clamp(11px,2.8vw,14px);
-    line-height:1.5;
-  }
-
-  .ch1 .type .reveal[style*="margin-top:36px"] {
-    margin-top:3dvh !important;
-  }
-
-  .ch1 .ch1-passage {
-    left:32vw;
-    bottom:3dvh;
-  }
-
-  /* Atelier */
-  .ch2 .left-img {
-    position:absolute;
-    left:0;
-    top:0;
-    width:46vw;
-    height:100dvh;
-  }
-
-  .ch2 .right-content {
-    position:absolute;
-    left:51vw;
-    top:14dvh;
-    width:43vw;
-    margin:0;
-    padding:0;
-  }
-
-  .ch2 .right-content h2 {
-    font-size:clamp(38px,9vw,72px) !important;
-  }
-
-  .ch2 .right-content p {
-    font-size:clamp(10px,2.35vw,13px) !important;
-    line-height:1.55 !important;
-  }
-
-  .ch2 .kraft {
-    position:absolute;
-    left:18vw;
-    top:auto;
-    bottom:5dvh;
-    width:29vw;
-    margin:0;
-    padding:clamp(12px,2.5vw,22px);
-    transform:rotate(-1.2deg);
-  }
-
-  .ch2 .kraft p {
-    font-size:clamp(12px,2.8vw,17px);
-  }
-
-  /* Collection */
-  .lookbook-kicker {
-    position:absolute;
-    left:5vw;
-    top:8dvh;
-    margin:0;
-  }
-
-  .book-shell {
-    top:13dvh;
-    bottom:13dvh;
-  }
-
-  .lookbook-slide {
-    inset:0;
-  }
-
-  .lookbook-controls {
-    position:absolute !important;
-    left:auto !important;
-    right:auto !important;
-    top:13dvh !important;
-    bottom:13dvh !important;
-    width:auto !important;
-    margin:0 !important;
-  }
-
-  .copy h2 {
-    font-size:clamp(27px,7vw,52px);
-  }
-
-  .copy p {
-    font-size:clamp(9px,2vw,12px);
-    line-height:1.45;
-    margin-top:1.5dvh;
-  }
-
-  .spec {
-    margin-top:1.5dvh;
-  }
-
-  /* Craft */
-  .ch4 .macro {
-    position:absolute;
-    left:0;
-    top:0;
-    width:62vw;
-    height:100dvh;
-  }
-
-  .ch4 .details {
-    position:absolute;
-    left:66vw;
-    top:12dvh;
-    width:30vw;
-    margin:0;
-  }
-
-  .ch4 .details h2 {
-    font-size:clamp(30px,7vw,54px) !important;
-  }
-
-  .ch4 .details > div[style*="margin-top:36px"] {
-    margin-top:2dvh !important;
-  }
-
-  .ch4 .ditem {
-    padding:clamp(8px,1.4dvh,14px) 0;
-    gap:12px;
-  }
-
-  .ch4 .ditem h5 {
-    font-size:clamp(13px,2.8vw,18px);
-  }
-
-  .ch4 .ditem p {
-    font-size:clamp(8px,1.9vw,11px);
-    line-height:1.35;
-  }
-
-  /* Visit retains its internal Wāperiki-to-Milan vertical ending. */
-  .ch5 {
-    height:100dvh !important;
-  }
-
-  .visit-scroll {
-    position:absolute;
-    inset:0;
-    height:100dvh;
-    overflow-y:auto;
-    overflow-x:hidden;
-    overscroll-behavior:contain;
-  }
-
-  .visit-section {
-    height:100dvh;
-    min-height:100dvh;
-  }
-
-  .visit-intro,
-  .visit-intro-right {
-    left:7vw;
-    right:auto;
-    top:auto;
-    bottom:8dvh;
-    width:min(78vw,430px);
-  }
-
-  .visit-intro h2 {
-    font-size:clamp(54px,14vw,96px);
-  }
-
-  .visit-intro h3 {
-    font-size:clamp(38px,10vw,72px);
-  }
-
-  nav#topnav {
-    height:clamp(54px,9dvh,68px);
-    padding:0 clamp(20px,5vw,36px);
-    background:rgba(247,243,238,.88);
-  }
-
-  nav#topnav .links {
-    gap:clamp(8px,2.2vw,18px);
-  }
-
-  #chapter-ind {
-    left:clamp(18px,5vw,34px);
-    bottom:clamp(8px,2dvh,18px);
-  }
-
-  #counter {
-    right:clamp(18px,5vw,34px);
-    bottom:clamp(10px,2dvh,20px);
-  }
-}
 
 /* Short landscape phones */
-@media (max-width:900px) and (orientation:landscape) and (max-height:500px) {
-  .ch1 .type {
-    top:16dvh !important;
-    width:42vw;
-  }
 
-  .ch1 .type h1 {
-    font-size:clamp(54px,12vw,88px);
-  }
-
-  .ch1 .type .tag {
-    margin-top:2dvh;
-    font-size:10px;
-  }
-
-  .ch2 .right-content {
-    top:12dvh;
-  }
-
-  .ch2 .right-content > div[style*="margin-top:32px"],
-  .ch2 .right-content > div[style*="margin-top:40px"] {
-    margin-top:2dvh !important;
-  }
-
-  .ch2 .kraft {
-    bottom:3dvh;
-  }
-
-  .ch4 .details {
-    top:10dvh;
-  }
-
-  .ch4 .ditem p {
-    display:none;
-  }
-
-  .visit-intro {
-    bottom:5dvh;
-  }
-
-  .visit-intro p {
-    margin-top:2dvh;
-    line-height:1.45;
-  }
-}
 
 /* TAILOR MOBILE V2 — DELIBERATE FIXED-SCREEN EDIT */
 .visit-mobile-tabs{display:none}
 
-@media (max-width:900px) {
-  html,body,#scroller,#track,.chapter{
-    height:100dvh !important;
-    min-height:0 !important;
-  }
-  body{overflow:hidden !important}
-  #track{display:flex !important;flex-direction:row !important;width:500vw !important}
-  .chapter{width:100vw !important;flex:0 0 100vw !important;overflow:hidden !important}
-  nav#topnav{
-    height:clamp(50px,8.5dvh,66px) !important;
-    padding:0 max(18px,5vw) !important;
-    background:linear-gradient(180deg,rgba(247,243,238,.96),rgba(247,243,238,.82)) !important;
-    backdrop-filter:blur(12px);
-  }
-  nav#topnav .wordmark{font-size:clamp(14px,4vw,18px)}
-  nav#topnav .links{gap:clamp(7px,2vw,16px) !important}
-  nav#topnav .links a{font-size:clamp(7px,1.9vw,9px) !important;letter-spacing:.1em !important}
-  #chapter-ind{left:max(16px,5vw);bottom:max(8px,2dvh)}
-  #chapter-ind .cur{font-size:clamp(30px,8vw,44px)}
-  #chapter-ind .meta{font-size:7px;letter-spacing:.15em}
-  #counter{right:max(16px,5vw);bottom:max(10px,2.2dvh);font-size:8px}
 
-  /* 01 — Arrival: one full-bleed fashion cover */
-  .ch1::after{
-    content:"";position:absolute;inset:0;z-index:1;
-    background:linear-gradient(90deg,rgba(20,17,14,.83) 0%,rgba(20,17,14,.48) 46%,rgba(20,17,14,.05) 76%);
-    pointer-events:none;
-  }
-  .ch1 .hero{position:absolute !important;inset:0 !important;width:100vw !important;height:100dvh !important}
-  .ch1 .hero img{object-position:62% center}
-  .ch1 .type{
-    position:absolute !important;z-index:2 !important;left:max(24px,7vw) !important;top:18dvh !important;
-    width:min(54vw,360px) !important;padding:0 !important;color:var(--cream);transform:none !important
-  }
-  .ch1 .type h1{font-size:clamp(58px,17vw,108px) !important;line-height:.78 !important}
-  .ch1 .type .tag{font-size:clamp(10px,2.6vw,13px) !important;line-height:1.5 !important;opacity:.8 !important;max-width:25ch}
-  .ch1 .type .tiny{opacity:.86 !important}
-  .ch1 .type .btn{padding:11px 16px;border-color:rgba(247,243,238,.7)}
-  .ch1 .floating-num,.ch1 .ch1-passage{display:none !important}
 
-  /* 02 — Atelier: image above, concise editorial panel below */
-  .ch2{display:block !important;background:var(--paper)}
-  .ch2 .left-img{position:absolute !important;left:0 !important;top:0 !important;width:100vw !important;height:46dvh !important}
-  .ch2 .left-img img{object-position:center 38%}
-  .ch2 .right-content{
-    position:absolute !important;left:0 !important;top:46dvh !important;width:100vw !important;height:54dvh !important;
-    margin:0 !important;padding:clamp(20px,5vw,34px) max(24px,7vw) 8dvh !important;overflow:hidden
-  }
-  .ch2 .right-content h2{font-size:clamp(38px,11vw,66px) !important;line-height:.82 !important;margin-top:1dvh !important}
-  .ch2 .right-content>p{font-size:clamp(10px,2.7vw,13px) !important;line-height:1.45 !important;margin-top:1.8dvh !important;max-width:42ch !important}
-  .ch2 .right-content>div[style*="display:grid"]{display:none !important}
-  .ch2 .right-content>div[style*="margin-top:40px"]{margin-top:2dvh !important}
-  .ch2 .kraft{display:none !important}
 
-  /* 03 — Collection: one readable magazine page at a time */
-  .ch3{display:block !important}
-  .lookbook-kicker{position:absolute !important;left:7vw !important;top:9dvh !important;margin:0 !important}
-  .book-shell{left:7vw !important;right:7vw !important;top:14dvh !important;bottom:12dvh !important}
-  .book-spine{display:none !important}
-  .lookbook-slide{display:block !important;inset:0 !important}
-  .book-page{position:absolute !important;inset:0 !important;border:0 !important}
-  .book-page:nth-child(2){display:none !important}
-  .copy,.copy.top{left:7vw !important;top:7dvh !important;width:38vw !important}
-  .copy h2{font-size:clamp(38px,10.5vw,66px) !important;line-height:.83 !important}
-  .copy p{font-size:clamp(10px,2.7vw,13px) !important;line-height:1.5 !important}
-  .hero,.hero.full,.hero.slim,.hero.evening{
-    left:auto !important;right:5vw !important;top:5dvh !important;width:42vw !important;height:56dvh !important
-  }
-  .still.big{left:auto !important;right:5vw !important;top:5dvh !important;width:44vw !important;height:56dvh !important}
-  .lookbook-slide:last-of-type .book-page:first-child{display:block !important}
-  .lookbook-controls{inset:14dvh 7vw 12dvh !important}
-  #look-prev,#look-next{height:110px !important}
-  #look-prev::after,#look-next::after{font-size:58px !important;line-height:110px !important}
-  #look-count{top:-24px !important;font-size:13px !important}
 
-  /* 04 — Craft: detail image with a compact material ledger */
-  .ch4{display:block !important}
-  .ch4 .macro{position:absolute !important;inset:0 !important;width:100vw !important;height:100dvh !important}
-  .ch4::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,.06),rgba(10,10,10,.88) 56%);z-index:1}
-  .ch4 .details{
-    position:absolute !important;z-index:2 !important;left:51vw !important;top:13dvh !important;width:43vw !important;
-    margin:0 !important;color:var(--cream)
-  }
-  .ch4 .details h2{font-size:clamp(34px,9vw,58px) !important}
-  .ch4 .details>div[style*="margin-top:36px"]{margin-top:2dvh !important}
-  .ch4 .ditem{padding:clamp(8px,1.4dvh,13px) 0 !important;gap:10px !important}
-  .ch4 .ditem h5{font-size:clamp(13px,3vw,18px) !important}
-  .ch4 .ditem p{display:none !important}
 
-  /* 05 — Visit: two horizontal full-screen panels, selected by taps or sideways swipes */
-  .ch5{display:block !important}
-  .visit-mobile-tabs{
-    position:absolute;z-index:8;top:calc(clamp(50px,8.5dvh,66px) + 12px);left:50%;transform:translateX(-50%);
-    display:flex;gap:4px;padding:4px;border:1px solid rgba(247,243,238,.32);border-radius:999px;
-    background:rgba(20,18,16,.58);backdrop-filter:blur(10px)
-  }
-  .visit-mobile-tabs button{
-    border:0;border-radius:999px;background:transparent;color:#fff;padding:9px 15px;
-    font:600 9px/1 Inter,sans-serif;letter-spacing:.16em;text-transform:uppercase
-  }
-  .visit-mobile-tabs button.active{background:#f4eee5;color:#292824}
-  .visit-scroll{
-    position:absolute !important;inset:0 !important;width:100vw !important;height:100dvh !important;
-    display:flex !important;overflow-x:auto !important;overflow-y:hidden !important;scroll-snap-type:x mandatory;
-    scroll-behavior:smooth;scrollbar-width:none;touch-action:pan-x
-  }
-  .visit-scroll::-webkit-scrollbar{display:none}
-  .visit-section{width:100vw !important;min-width:100vw !important;height:100dvh !important;min-height:100dvh !important;scroll-snap-align:start}
-  .visit-interlude{display:none !important}
-  .visit-intro,.visit-intro-right{
-    left:max(24px,7vw) !important;right:auto !important;bottom:10dvh !important;top:auto !important;
-    width:min(78vw,430px) !important;transform:none !important
-  }
-}
-
-@media (max-width:600px) and (orientation:portrait) {
-  nav#topnav .links a:nth-child(1),
-  nav#topnav .links a:nth-child(3){display:none}
-  .ch1::after{background:linear-gradient(0deg,rgba(20,17,14,.9) 0%,rgba(20,17,14,.22) 62%,rgba(20,17,14,.02) 100%)}
-  .ch1 .hero img{object-position:58% center}
-  .ch1 .type{left:7vw !important;top:auto !important;bottom:13dvh !important;width:86vw !important}
-  .ch1 .type h1{font-size:clamp(72px,22vw,110px) !important}
-  .ch1 .type .tag{max-width:36ch;margin-top:2.4dvh !important}
-  .ch1 .type .reveal[style*="margin-top:36px"]{margin-top:2.2dvh !important}
-
-  .book-shell{left:5vw !important;right:5vw !important}
-  .copy,.copy.top{left:7vw !important;top:5dvh !important;width:72vw !important}
-  .copy h2{font-size:clamp(44px,14vw,70px) !important}
-  .copy p,.spec{width:56vw}
-  .hero,.hero.full,.hero.slim,.hero.evening,.still.big{
-    top:auto !important;bottom:4dvh !important;right:5vw !important;width:42vw !important;height:31dvh !important
-  }
-
-  .ch4::after{background:linear-gradient(0deg,rgba(10,10,10,.94),rgba(10,10,10,.12) 72%)}
-  .ch4 .macro img{object-position:42% center}
-  .ch4 .details{left:7vw !important;top:auto !important;bottom:9dvh !important;width:86vw !important}
-  .ch4 .details h2{font-size:clamp(44px,13vw,70px) !important}
-  .ch4 .ditem{display:inline-flex !important;width:48%;vertical-align:top}
-}
-
-@media (max-width:900px) and (orientation:landscape) and (max-height:500px) {
-  nav#topnav{height:52px !important}
-  #chapter-ind .meta,#counter{display:none}
-  .ch1 .type{top:15dvh !important;width:43vw !important}
-  .ch1 .type h1{font-size:clamp(54px,11vw,82px) !important}
-  .ch1 .type .tag{margin-top:2dvh !important;font-size:10px !important}
-  .ch1 .type .reveal[style*="margin-top:36px"]{margin-top:2dvh !important}
-  .ch2 .left-img{width:48vw !important;height:100dvh !important}
-  .ch2 .right-content{left:48vw !important;top:0 !important;width:52vw !important;height:100dvh !important;padding:16dvh 5vw 8dvh !important}
-  .ch2 .right-content h2{font-size:clamp(36px,6vw,54px) !important}
-  .lookbook-kicker{top:10dvh !important}
-  .book-shell{top:17dvh !important;bottom:9dvh !important}
-  .lookbook-controls{inset:17dvh 7vw 9dvh !important}
-  .copy,.copy.top{top:5dvh !important}
-  .hero,.hero.full,.hero.slim,.hero.evening,.still.big{height:58dvh !important}
-  .ch4 .details{top:14dvh !important}
-  .ch4 .details h2{font-size:clamp(32px,5.2vw,48px) !important}
-  .visit-mobile-tabs{top:62px}
-  .visit-intro,.visit-intro-right{bottom:7dvh !important;width:42vw !important}
-  .visit-intro h2{font-size:clamp(46px,8vw,72px)}
-  .visit-intro h3{font-size:clamp(34px,6vw,54px)}
-  .visit-intro p{font-size:10px;line-height:1.45;margin-top:2dvh}
-}
 
 /* TAILOR MOBILE V3 — CHAPTER EDGE ARROWS */
 .mobile-chapter-controls{display:none}
 
-@media (max-width:900px) {
-  .mobile-chapter-controls{
-    position:fixed;
-    inset:0;
-    z-index:850;
-    display:block;
-    pointer-events:none;
-  }
 
-  .mobile-chapter-controls button{
-    position:absolute;
-    top:50%;
-    transform:translateY(-50%);
-    width:clamp(34px,9vw,44px);
-    height:clamp(76px,18dvh,116px);
-    padding:0;
-    display:grid;
-    place-items:center;
-    pointer-events:auto;
-    border:1px solid rgba(201,168,106,.52);
-    background:linear-gradient(145deg,rgba(34,31,28,.92),rgba(18,17,16,.94));
-    color:#f3dfb5;
-    box-shadow:0 8px 24px rgba(0,0,0,.25),inset 0 1px rgba(255,255,255,.08);
-    font:300 clamp(42px,11vw,64px)/1 Georgia,serif;
-    opacity:.88;
-    touch-action:manipulation;
-  }
 
-  #chapter-prev{
-    left:0;
-    border-left:0;
-    border-radius:0 14px 14px 0;
-  }
 
-  #chapter-next{
-    right:0;
-    border-right:0;
-    border-radius:14px 0 0 14px;
-  }
-
-  .mobile-chapter-controls button:active{
-    opacity:1;
-    background:#171514;
-  }
-
-  .mobile-chapter-controls button[hidden],
-  .mobile-chapter-controls button:disabled{
-    display:none !important;
-  }
-
-  /* Keep the chapter arrows clear of Collection's page-turn arrows. */
-  .ch3.active ~ * .mobile-chapter-controls{
-    pointer-events:none;
-  }
-}
-
-@media (max-width:900px) and (orientation:landscape) and (max-height:500px) {
-  .mobile-chapter-controls button{
-    width:34px;
-    height:82px;
-    font-size:44px;
-  }
-}
 
 
 /* Tailor mobile: native horizontal chapter journey. */
-@media (max-width:900px) {
-  html,
-  body {
-    width:100%;
-    height:100dvh !important;
-    min-height:0 !important;
-    overflow:hidden !important;
-    overscroll-behavior:none;
-  }
 
-  #scroller {
-    width:100vw;
-    height:100dvh !important;
-    overflow-x:auto !important;
-    overflow-y:hidden !important;
-    scroll-snap-type:x mandatory;
-    scroll-behavior:smooth;
-    scrollbar-width:none;
-    touch-action:pan-x;
-    -webkit-overflow-scrolling:touch;
-  }
-
-  #scroller::-webkit-scrollbar {
-    display:none;
-  }
-
-  #track {
-    width:500vw !important;
-    height:100dvh !important;
-    display:flex !important;
-    flex-direction:row !important;
-    transform:none !important;
-  }
-
-  .chapter {
-    position:relative;
-    width:100vw !important;
-    height:100dvh !important;
-    min-height:0 !important;
-    flex:0 0 100vw !important;
-    overflow:hidden !important;
-    scroll-snap-align:start;
-    scroll-snap-stop:always;
-  }
-}
 
 /* White menu labels over the Arrival photograph on desktop. */
 @media (min-width:901px) {
@@ -1212,3 +592,6 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
     margin-left: 140px;
   }
 }
+
+/* Generated mobile lookbook is never part of the desktop composition. */
+.mobile-look{display:none}

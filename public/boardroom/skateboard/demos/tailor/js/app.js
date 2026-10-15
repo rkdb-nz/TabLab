@@ -1,3 +1,4 @@
+const scroller = document.getElementById('scroller');
 const track = document.getElementById('track');
 const progress = document.getElementById('progress');
 const chapterInd = document.getElementById('chapter-ind');
@@ -21,7 +22,7 @@ const chaptersMeta = [
   {n:'05', name:'Boutiques'}
 ];
 
-function isMobile(){ return window.innerWidth <= 900 }
+function isMobile(){ return window.matchMedia('(max-width:900px), (pointer:coarse) and (max-width:1100px)').matches }
 function pad(n){ return String(n).padStart(2,'0') }
 
 function updateUI(idx){
@@ -30,7 +31,8 @@ function updateUI(idx){
   document.querySelectorAll('nav#topnav .links a[data-goto]').forEach(link=>{
     const isCurrent = parseInt(link.dataset.goto,10) === idx && idx > 0;
     link.classList.toggle('is-current', isCurrent);
-    link.toggleAttribute('aria-current', isCurrent);
+    if(isCurrent) link.setAttribute('aria-current','page');
+    else link.removeAttribute('aria-current');
   });
   const m = chaptersMeta[idx];
   if(chapterInd && m) chapterInd.innerHTML = `<div class="cur">${m.n}</div><div class="meta">${m.name}<br>${pad(idx+1)} / ${pad(total)}</div>`;
@@ -43,6 +45,7 @@ function updateUI(idx){
   if(chapterPrev) chapterPrev.hidden = idx <= 0;
   if(chapterNext) chapterNext.hidden = idx >= total-1;
   chapters.forEach((ch,i)=>{
+    if(isMobile()) ch.inert = i !== idx;
     ch.classList.toggle('active', i===idx);
     if(i===idx){
       ch.querySelectorAll('.reveal').forEach((el,j)=>setTimeout(()=>el.classList.add('in'),j*120));
@@ -60,7 +63,7 @@ function goTo(index){
     currentIndex=index;
     isAnimating=false;
     wheelHint?.classList.add('hide');
-    scroller?.scrollTo({left:index*window.innerWidth,behavior:'smooth'});
+    scroller?.scrollTo({left:index*scroller.clientWidth,behavior:window.matchMedia('(prefers-reduced-motion:reduce)').matches?'instant':'smooth'});
     updateUI(index);
     return;
   }
@@ -84,6 +87,10 @@ function animate(){
   requestAnimationFrame(animate);
 }
 function getInitialChapterIndex(){
+  if(isMobile()) {
+    const idx = chapters.findIndex(ch => '#' + ch.id === location.hash);
+    if(idx >= 0) return idx;
+  }
   if(location.hash==='#boutiques') return total-1;
   if(location.hash==='#collection') return 2;
   return 0;
@@ -97,6 +104,7 @@ if(track){
   track.style.transform = `translate3d(${currentX}px,0,0)`;
   animate();
   updateUI(initialIndex);
+  if(isMobile()) requestAnimationFrame(()=>scroller.scrollTo({left:initialIndex*scroller.clientWidth,behavior:'instant'}));
 }
 
 let wheelAcc=0;
@@ -133,7 +141,7 @@ window.addEventListener('touchend',e=>{
   const dy=e.changedTouches[0].clientY-touchStartY;
 
   if(isMobile()){
-    // Mobile uses the browser's native vertical chapter scroll.
+    // Native horizontal chapter swipes; each chapter may scroll vertically.
     return;
   }
 
@@ -159,6 +167,7 @@ function showLook(index){
   if(!lookSlides.length) return;
   lookIndex=(index+lookSlides.length)%lookSlides.length;
   lookSlides.forEach((slide,i)=>slide.classList.toggle('active',i===lookIndex));
+  if(isMobile()) lookSlides[lookIndex]?.querySelector('.mobile-look')?.scrollTo({top:0,behavior:'instant'});
   if(lookCount) lookCount.textContent=`${pad(lookIndex+1)} / ${pad(lookSlides.length)}`;
 }
 document.getElementById('look-prev')?.addEventListener('click',()=>showLook(lookIndex-1));
@@ -183,27 +192,83 @@ visitScroll?.addEventListener('scroll',()=>{
 // Reset to Wāperiki whenever Visit is entered directly.
 document.querySelector('a[data-goto="4"]')?.addEventListener('click',()=>showVisitPanel(0,false));
 
+// Reflow native chapter and location positions after rotation or viewport resizing.
+let wasMobile=isMobile();
 window.addEventListener('resize',()=>{
-  if(track){
+  if(!track) return;
+  if(isMobile()){
+    buildMobileLooks();
+    document.getElementById('look-prev').textContent='← Previous look';
+    document.getElementById('look-next').textContent='Next look →';
+    updateUI(targetIndex);
+    scroller.scrollTo({left:targetIndex*scroller.clientWidth,behavior:'instant'});
+    const selected=visitTabs.findIndex(button=>button.classList.contains('active'));
+    showVisitPanel(Math.max(0,selected),false);
+  } else {
+    if(wasMobile){
+      chapters.forEach(ch=>ch.inert=false);
+      document.getElementById('look-prev').textContent='← TURN BACK';
+      document.getElementById('look-next').textContent='TURN PAGE →';
+      scroller.scrollLeft=0;
+    }
     targetX=-targetIndex*window.innerWidth;
     currentX=targetX;
     track.style.transform=`translate3d(${currentX}px,0,0)`;
   }
+  wasMobile=isMobile();
 });
 
+let mobileScrollFrame=0;
+scroller?.addEventListener('scroll',()=>{
+  if(!isMobile()) return;
+  cancelAnimationFrame(mobileScrollFrame);
+  mobileScrollFrame=requestAnimationFrame(()=>{
+    const idx=Math.max(0,Math.min(total-1,Math.round(scroller.scrollLeft/scroller.clientWidth)));
+    if(idx!==currentIndex){
+      currentIndex=idx;
+      targetIndex=idx;
+      updateUI(idx);
+    }
+  });
+},{passive:true});
 
-
-if(isMobile() && scroller){
-  let mobileScrollFrame=0;
-  scroller.addEventListener('scroll',()=>{
-    cancelAnimationFrame(mobileScrollFrame);
-    mobileScrollFrame=requestAnimationFrame(()=>{
-      const idx=Math.max(0,Math.min(total-1,Math.round(scroller.scrollLeft/window.innerWidth)));
-      if(idx!==currentIndex){
-        currentIndex=idx;
-        targetIndex=idx;
-        updateUI(idx);
-      }
+// A mobile look combines both magazine pages without discarding their contents.
+// Desktop continues to use the original spread markup and styling.
+function buildMobileLooks(){
+  if(!isMobile()) return;
+  lookSlides.forEach((slide,index)=>{
+    if(slide.querySelector('.mobile-look')) return;
+    const mobile=document.createElement('div');
+    mobile.className='mobile-look';
+    const copy=slide.querySelector('.book-page .copy');
+    if(copy){
+      const clone=copy.cloneNode(true);
+      clone.className='mobile-copy';
+      mobile.append(clone);
+    }
+    const gallery=document.createElement('div');
+    gallery.className='mobile-gallery';
+    slide.querySelectorAll('.book-page figure img').forEach((img,i)=>{
+      const clone=img.cloneNode(true);
+      clone.alt=img.alt || (copy?.querySelector('h2')?.textContent.replace(/\s+/g,' ').trim() || `Look ${index+1}`) + (i ? ' — detail' : '');
+      clone.decoding='async';
+      gallery.append(clone);
     });
-  },{passive:true});
+    mobile.append(gallery);
+    slide.querySelectorAll('.book-page blockquote,.book-page .pull,.book-page .caption,.book-page .closing').forEach(note=>{
+      const clone=note.cloneNode(true);
+      clone.className='mobile-note';
+      mobile.append(clone);
+    });
+    slide.append(mobile);
+  });
 }
+buildMobileLooks();
+if(isMobile()){
+  document.getElementById('look-prev').textContent='← Previous look';
+  document.getElementById('look-next').textContent='Next look →';
+}
+
+window.addEventListener('hashchange',()=>{
+  if(isMobile()) goTo(getInitialChapterIndex());
+});
