@@ -4,6 +4,25 @@
   const nav = document.getElementById('nav');
   const navToggle = document.getElementById('navToggle');
 
+  const mobileView = matchMedia('(max-width: 860px)');
+  const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const photoFrames = [...document.querySelectorAll('.reveal-img')];
+  function updatePhotoDrift() {
+    photoFrames.forEach(frame => {
+      const img = frame.querySelector('img');
+      if (!img) return;
+      if (!mobileView.matches || reducedMotion.matches) {
+        img.style.removeProperty('--photo-drift');
+        return;
+      }
+      const box = frame.getBoundingClientRect();
+      if (box.bottom < 0 || box.top > innerHeight) return;
+      const travel = Math.min(18, box.height * .04);
+      const progress = Math.max(-1, Math.min(1, (innerHeight / 2 - box.top - box.height / 2) / ((innerHeight + box.height) / 2)));
+      img.style.setProperty('--photo-drift', (progress * travel).toFixed(2) + 'px');
+    });
+  }
+
   const io = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -11,7 +30,9 @@
         io.unobserve(entry.target);
       }
     });
-  }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+  }, mobileView.matches
+    ? { threshold: 0.12, rootMargin: '0px 0px -18% 0px' }
+    : { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
   revealEls.forEach(el => io.observe(el));
 
   requestAnimationFrame(() => {
@@ -22,6 +43,7 @@
   window.addEventListener('scroll', () => {
     if (!ticking) {
       requestAnimationFrame(() => {
+        updatePhotoDrift();
         const h = document.documentElement;
         const scrolled = (h.scrollTop / (h.scrollHeight - h.clientHeight)) * 100;
         if (progressBar) progressBar.style.width = scrolled + '%';
@@ -37,11 +59,15 @@
 
   const heroImg = document.querySelector('.hero-media img');
   window.addEventListener('scroll', () => {
-    if (!heroImg) return;
+    if (!heroImg || (mobileView.matches && reducedMotion.matches)) return;
     const y = window.scrollY * 0.18;
     heroImg.style.transform = `translateY(${y}px) scale(1.06)`;
     if (window.scrollY < 10) heroImg.style.transform = 'scale(1)';
   }, { passive: true });
+
+  window.addEventListener('resize', updatePhotoDrift, { passive: true });
+  reducedMotion.addEventListener('change', updatePhotoDrift);
+  updatePhotoDrift();
 
   navToggle?.addEventListener('click', () => {
     nav.classList.toggle('open');
