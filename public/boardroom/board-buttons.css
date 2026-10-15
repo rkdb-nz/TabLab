@@ -1,0 +1,35 @@
+/* Keep every board's Open site label and arrow together. */
+body.dual-board-page .demo-meta > span,
+body.dual-board-page .billboard-example small {
+  white-space: nowrap;
+}
+
+/* Equal button dimensions within the three-column mobile galleries. */
+@media (max-width: 980px) {
+  body.dual-board-page .mobile-board-page .billboard-example > span {
+    min-width: 0;
+  }
+  body.dual-board-page .mobile-board-page .billboard-example small {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .35em;
+    box-sizing: border-box;
+    width: 140px;
+    max-width: 100%;
+    min-height: 26px;
+    padding: .65em .6em;
+    font-size: clamp(8px, 2.15vw, 12px);
+    line-height: 1;
+    letter-spacing: .12em;
+  }
+}
+
+/* Narrow galleries switch all three buttons to the same two-line label. */
+@media (max-width: 560px) {
+  body.dual-board-page .mobile-board-page .billboard-example small {
+    flex-direction: column;
+    gap: 4px;
+    min-height: 38px;
+  }
+}
