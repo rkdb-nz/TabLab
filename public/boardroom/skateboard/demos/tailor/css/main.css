@@ -1205,3 +1205,10 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
   .ch3 #look-prev:focus-visible,
   .ch3 #look-next:focus-visible { outline: 2px solid #6a5844; outline-offset: 1px; }
 }
+
+/* Keep the Arrival action clear of the fixed chapter marker. */
+@media (min-width:901px) {
+  .ch1 .type > .reveal:last-child {
+    margin-left: 140px;
+  }
+}
