@@ -31,7 +31,7 @@
       }
     });
   }, mobileView.matches
-    ? { threshold: 0.12, rootMargin: '0px 0px -18% 0px' }
+    ? { threshold: 0.12, rootMargin: `0px 0px -${Math.round(innerHeight * .18)}px 0px` }
     : { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
   revealEls.forEach(el => io.observe(el));
 
