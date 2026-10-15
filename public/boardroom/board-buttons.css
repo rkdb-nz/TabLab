@@ -95,3 +95,16 @@ body.dual-board-page .billboard-example small {
     --board-header-height: 62px;
   }
 }
+
+/* Match the landing page's mobile Tab Lab wordmark. */
+@media (max-width: 980px) {
+  body.dual-board-page.billboard-scroll .billboard-brand .board-wordmark {
+    color: #2a1d17;
+    font: 400 20px/1.1 Georgia, "Times New Roman", serif;
+    letter-spacing: 0;
+    text-transform: none;
+    white-space: nowrap;
+  }
+  body.dual-board-page .board-wordmark strong { font-weight: 700; }
+  body.dual-board-page .board-wordmark em { font-weight: 400; font-style: italic; }
+}
