@@ -1,0 +1,8 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Tailor mobile review</title>
+<style>body{margin:20px;background:#e8e3db;color:#211d19;font:16px Arial,sans-serif}header{display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin-bottom:20px}select,button{font:inherit;padding:10px}iframe{display:block;border:1px solid #817360;background:#f7f3ee}p{max-width:65ch;line-height:1.5}</style></head><body>
+<header><strong>Tailor mobile review</strong><label>Screen <select id="size"><option value="390,700">390 × 700 portrait</option><option value="360,640">360 × 640 portrait</option><option value="320,568">320 × 568 portrait</option><option value="412,740">412 × 740 portrait</option><option value="844,300">844 × 300 landscape</option><option value="780,280">780 × 280 landscape</option><option value="1440,900">1440 × 900 desktop</option></select></label><button id="rotate">Rotate</button><a href="index.html">Open demo</a></header>
+<iframe id="review" title="Tailor review screen" width="390" height="700" src="site.html?v=tailor-mobile-cleanup-1"></iframe>
+<p>Use the chapter buttons at the bottom. Collection has separate Previous look / Next look controls. Scroll within a chapter when its content needs more room.</p>
+<script>const frame=document.getElementById('review');document.getElementById('size').onchange=e=>{const [w,h]=e.target.value.split(',');frame.width=w;frame.height=h};document.getElementById('rotate').onclick=()=>{const w=frame.width;frame.width=frame.height;frame.height=w};</script>
+</body></html>
