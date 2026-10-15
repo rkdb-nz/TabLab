@@ -1,12 +1,9 @@
-/* Tilt for 1.6s, hold for .45s, then reveal the main page instantly. */
+/* The return pill animates its tilt and hold in app.js before instant dismissal. */
 @media (max-width: 980px) {
-  #overlay-menu { --donut-close-duration: 2050ms; }
+  #overlay-menu { --donut-close-duration: 2600ms; }
   #overlay-menu .overlay-close {
     transform: none !important;
-    transition: transform 1.6s ease-in-out !important;
-  }
-  #overlay-menu.is-closing .overlay-close {
-    transform: rotate(16deg) scale(1.05) !important;
+    transition: none !important;
   }
   #overlay-menu.is-closing .overlay-panel {
     animation: none !important;

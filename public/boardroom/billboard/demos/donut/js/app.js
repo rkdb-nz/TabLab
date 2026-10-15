@@ -75,11 +75,30 @@
     active.classList.add('is-closing');
     if (closeDuration <= 500) document.body.classList.remove('overlay-open');
 
-    closeTimer = setTimeout(() => {
+    const finishClose = () => {
+      if (!active.classList.contains('is-closing')) return;
+      clearTimeout(closeTimer);
       hideImmediately(active);
       document.body.classList.remove('overlay-open');
       if (restoreFocus && lastTrigger) lastTrigger.focus();
-    }, closeDuration);
+    };
+    const pill = active.querySelector('.overlay-close');
+    if (closeDuration > 500 && pill?.animate) {
+      // Wait for the visible tilt AND its held beat before revealing home.
+      // Independent rotate avoids existing transform overrides on mobile.
+      const tilt = pill.animate([
+        { rotate: '0deg', offset: 0 },
+        { rotate: '-20deg', offset: 1.6 / 2.6 },
+        { rotate: '-20deg', offset: 1 }
+      ], { duration: closeDuration, easing: 'ease-in-out', fill: 'forwards' });
+      tilt.finished.then(() => {
+        finishClose();
+        tilt.cancel();
+      }).catch(() => {});
+      closeTimer = setTimeout(() => { finishClose(); tilt.cancel(); }, closeDuration + 500);
+    } else {
+      closeTimer = setTimeout(finishClose, closeDuration);
+    }
   }
 
   mobileMenuToggle?.addEventListener('click', toggleMobileMenu);
