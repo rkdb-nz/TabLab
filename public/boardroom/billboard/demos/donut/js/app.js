@@ -6,7 +6,6 @@
   const mobileMenuPanel = document.getElementById('mobile-menu-panel');
   let lastTrigger = null;
   let closeTimer = null;
-  let openTimer = null;
 
   function closeMobileMenu() {
     if (!mobileMenuToggle || !mobileMenuPanel) return;
@@ -38,7 +37,6 @@
 
     closeMobileMenu();
     clearTimeout(closeTimer);
-    clearTimeout(openTimer);
     overlays.forEach(other => {
       if (other !== overlay) hideImmediately(other);
     });
@@ -51,7 +49,7 @@
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         overlay.classList.add('is-opening');
-        openTimer = setTimeout(() => {
+        setTimeout(() => {
           overlay.classList.remove('is-opening');
           overlay.classList.add('is-open');
           overlay.querySelector('.overlay-close')?.focus();
@@ -67,38 +65,15 @@
       return;
     }
 
-    if (active.classList.contains('is-closing')) return;
     clearTimeout(closeTimer);
-    clearTimeout(openTimer);
-    const closeDuration = parseFloat(getComputedStyle(active).getPropertyValue('--donut-close-duration')) || 500;
     active.classList.remove('is-opening', 'is-open');
     active.classList.add('is-closing');
-    if (closeDuration <= 500) document.body.classList.remove('overlay-open');
+    document.body.classList.remove('overlay-open');
 
-    const finishClose = () => {
-      if (!active.classList.contains('is-closing')) return;
-      clearTimeout(closeTimer);
+    closeTimer = setTimeout(() => {
       hideImmediately(active);
-      document.body.classList.remove('overlay-open');
       if (restoreFocus && lastTrigger) lastTrigger.focus();
-    };
-    const pill = active.querySelector('.overlay-close');
-    if (closeDuration > 500 && pill?.animate) {
-      // Wait for the visible tilt AND its held beat before revealing home.
-      // Independent rotate avoids existing transform overrides on mobile.
-      const tilt = pill.animate([
-        { rotate: '0deg', offset: 0 },
-        { rotate: '-20deg', offset: 1.6 / 2.6 },
-        { rotate: '-20deg', offset: 1 }
-      ], { duration: closeDuration, easing: 'ease-in-out', fill: 'forwards' });
-      tilt.finished.then(() => {
-        finishClose();
-        tilt.cancel();
-      }).catch(() => {});
-      closeTimer = setTimeout(() => { finishClose(); tilt.cancel(); }, closeDuration + 500);
-    } else {
-      closeTimer = setTimeout(finishClose, closeDuration);
-    }
+    }, 500);
   }
 
   mobileMenuToggle?.addEventListener('click', toggleMobileMenu);
