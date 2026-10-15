@@ -1170,3 +1170,12 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
     scroll-snap-stop:always;
   }
 }
+
+/* White menu labels over the Arrival photograph on desktop. */
+@media (min-width:901px) {
+  body:has(.ch1.active) nav#topnav .links a {
+    color: #fff !important;
+    opacity: 1;
+    text-shadow: 0 1px 5px rgba(0,0,0,.35);
+  }
+}
