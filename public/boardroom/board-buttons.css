@@ -33,3 +33,17 @@ body.dual-board-page .billboard-example small {
     min-height: 38px;
   }
 }
+
+/* Centre every mobile demo name over its Open site button. */
+@media (max-width: 980px) {
+  body.dual-board-page .mobile-board-page .billboard-example > span {
+    align-items: center;
+  }
+  body.dual-board-page .mobile-board-page .billboard-example strong {
+    width: 100%;
+    text-align: center;
+  }
+  body.dual-board-page .mobile-board-page .billboard-example small {
+    align-self: center;
+  }
+}
