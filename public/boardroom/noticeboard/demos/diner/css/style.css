@@ -1303,3 +1303,17 @@ button{color:inherit}
     bottom:clamp(8px,2.5dvh,12px);
   }
 }
+
+/* Show every mobile food category without sideways scrolling. */
+@media (max-width: 900px) {
+  .menu-layout { grid-template-columns: minmax(0, 1fr); }
+  .menu-tabs { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:6px; overflow:visible; padding:8px; }
+  .menu-tab { min-width:0; min-height:44px; height:auto; padding:9px 10px; gap:7px; font-size:15px; border:1px solid rgba(239,177,46,.3); border-radius:4px; white-space:normal; }
+  .menu-tab span { flex:0 0 20px; width:20px; }
+  .menu-tab.active { background:#aa1b15; border-color:var(--gold); box-shadow:inset 0 0 0 1px var(--gold); color:#fff; }
+  .menu-tab:focus-visible { outline:2px solid #fff; outline-offset:1px; }
+}
+@media (max-width:900px) and (orientation:landscape) {
+  .menu-tabs { grid-template-columns:repeat(5,minmax(0,1fr)); }
+  .menu-tab { justify-content:center; padding:8px 5px; gap:4px; font-size:14px; }
+}
