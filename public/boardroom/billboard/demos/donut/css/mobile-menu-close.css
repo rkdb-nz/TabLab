@@ -1,6 +1,6 @@
-/* Let phone visitors see the menu close control tilt before the sheet exits. */
+/* Tilt for 1.6s, hold for .45s, then reveal the main page instantly. */
 @media (max-width: 980px) {
-  #overlay-menu { --donut-close-duration: 2080ms; }
+  #overlay-menu { --donut-close-duration: 2050ms; }
   #overlay-menu .overlay-close {
     transform: none !important;
     transition: transform 1.6s ease-in-out !important;
@@ -9,7 +9,10 @@
     transform: rotate(16deg) scale(1.05) !important;
   }
   #overlay-menu.is-closing .overlay-panel {
-    animation: donut-sheet-out .48s cubic-bezier(.55,.02,.9,.42) 1.6s both;
+    animation: none !important;
+    transition: none !important;
+    transform: translateX(0) !important;
+    opacity: 1 !important;
     pointer-events: none !important;
   }
 }
