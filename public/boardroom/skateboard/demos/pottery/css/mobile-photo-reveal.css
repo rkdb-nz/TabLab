@@ -1,0 +1,12 @@
+.mobile-photo-curtain {display:none;}
+@media(max-width:860px) {
+  .mobile-photo-reveals .reveal-img::after {display:none!important;}
+  .mobile-photo-reveals .reveal-img img {opacity:1!important;transition:none!important;}
+  .mobile-photo-reveals .mobile-photo-curtain {position:absolute;inset:0;z-index:8;display:block;background:var(--stone);pointer-events:none;}
+  .mobile-photo-reveals .mobile-photo-curtain[hidden] {display:none!important;}
+  .hero-media img {transition-duration:2.5s;}
+}
+@media(max-width:860px) and (prefers-reduced-motion:reduce) {
+  .mobile-photo-reveals .mobile-photo-curtain {display:none!important;}
+  .hero-media img {transition:none!important;}
+}
