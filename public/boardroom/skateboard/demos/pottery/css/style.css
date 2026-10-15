@@ -297,3 +297,17 @@ h3{font-family:var(--font-serif);font-size:28px;font-weight:400;line-height:1.1}
     padding-top:78px;
   }
 }
+
+/* Mobile showcase: start once photos are visibly on screen, then keep a soft scroll drift. */
+@media (max-width:860px) and (prefers-reduced-motion:no-preference) {
+  .reveal-img::after { transition-duration:1.8s,1.8s,.9s; transition-timing-function:cubic-bezier(.45,0,.2,1); }
+  .reveal-img img { translate:0 var(--photo-drift,0px); transition-duration:.9s,2s; transition-delay:.15s,.1s; }
+  .studio .reveal-img img { transform:translateX(-42px) scale(1.18); }
+  .artist-media img { transform:translateY(42px) scale(1.18); }
+  .process-hero img { transform:scale(1.24); }
+  .workshop .reveal-img img { transform:translateY(46px) scale(1.18); }
+  .gallery .g-1 img,.gallery .g-3 img,.gallery .g-5 img { transform:translateX(-38px) scale(1.18); }
+  .gallery .g-2 img,.gallery .g-4 img,.gallery .g-6 img { transform:translateX(38px) scale(1.18); }
+  .visit .reveal-img img { transform:translateX(42px) scale(1.18); }
+  .reveal-img.in img,.studio .reveal-img.in img,.workshop .reveal-img.in img,.gallery .reveal-img.in img,.visit .reveal-img.in img,.reveal-img.in.split-media:hover img { transform:scale(1.12); }
+}
