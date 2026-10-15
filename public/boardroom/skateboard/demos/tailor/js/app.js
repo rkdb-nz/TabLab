@@ -198,12 +198,17 @@ window.addEventListener('resize',()=>{
   if(!track) return;
   if(isMobile()){
     buildMobileLooks();
+    document.getElementById('look-prev').textContent='← Previous look';
+    document.getElementById('look-next').textContent='Next look →';
+    updateUI(targetIndex);
     scroller.scrollTo({left:targetIndex*scroller.clientWidth,behavior:'instant'});
     const selected=visitTabs.findIndex(button=>button.classList.contains('active'));
     showVisitPanel(Math.max(0,selected),false);
   } else {
     if(wasMobile){
       chapters.forEach(ch=>ch.inert=false);
+      document.getElementById('look-prev').textContent='← TURN BACK';
+      document.getElementById('look-next').textContent='TURN PAGE →';
       scroller.scrollLeft=0;
     }
     targetX=-targetIndex*window.innerWidth;
