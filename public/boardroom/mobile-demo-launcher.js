@@ -45,10 +45,18 @@
     back.textContent = 'Tab Lab';
     back.setAttribute('aria-label', 'Back to gallery');
     back.title = 'Back to gallery';
-    back.addEventListener('click', () => history.back());
+    back.addEventListener('click', () => {
+      if (!active) return;
+      const current = active;
+      // Closing the iframe first also discards its nested navigation history.
+      close();
+      history.replaceState(current.galleryState, '', current.galleryUrl);
+      history.back();
+    });
     overlay.append(frame, back);
     const background = [...document.body.children].map(element => [element, element.inert]);
-    active = { overlay, link, background, x: scrollX, y: scrollY };
+    active = { overlay, link, background, x: scrollX, y: scrollY,
+      galleryState: history.state, galleryUrl: location.href };
     background.forEach(([element]) => { element.inert = true; });
     document.body.append(overlay);
     document.documentElement.classList.add('board-demo-open');
