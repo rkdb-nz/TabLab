@@ -155,12 +155,29 @@ window.addEventListener('keydown',e=>{
 const lookSlides=Array.from(document.querySelectorAll('.lookbook-slide'));
 const lookCount=document.getElementById('look-count');
 let lookIndex=0;
+
+// Build the mobile reading order from each original desktop spread.
+lookSlides.forEach(slide=>{
+  const copy=slide.querySelector('.copy');
+  const photograph=slide.querySelector('figure.hero img') || slide.querySelector('figure.still.big img');
+  if(!copy || !photograph) return;
+  const card=document.createElement('div');
+  card.className='mobile-look-card';
+  const photo=photograph.cloneNode(true);
+  photo.className='mobile-look-photo';
+  photo.alt=copy.querySelector('h2')?.textContent.trim() || 'Collection photograph';
+  const description=copy.cloneNode(true);
+  description.className='mobile-look-copy';
+  // Separate words previously divided by editorial line breaks.
+  description.querySelectorAll('br').forEach(br=>br.replaceWith(document.createTextNode(' ')));
+  card.append(photo,description);
+  slide.append(card);
+});
 function showLook(index){
   if(!lookSlides.length) return;
   lookIndex=(index+lookSlides.length)%lookSlides.length;
   lookSlides.forEach((slide,i)=>slide.classList.toggle('active',i===lookIndex));
-  if(lookCount) lookCount.textContent=`${pad(lookIndex+1)} / ${pad(lookSlides.length)}`;
-  positionLookArrows();
+  if(lookCount) lookCount.textContent=isMobile() ? `${lookIndex+1} / ${lookSlides.length}` : `${pad(lookIndex+1)} / ${pad(lookSlides.length)}`;
 }
 document.getElementById('look-prev')?.addEventListener('click',()=>showLook(lookIndex-1));
 document.getElementById('look-next')?.addEventListener('click',()=>showLook(lookIndex+1));
@@ -209,22 +226,4 @@ if(isMobile() && scroller){
   },{passive:true});
 }
 
-
-// Keep mobile magazine controls beside the visible photograph on every look.
-function positionLookArrows(){
-  if(!isMobile()) return;
-  const chapter=document.getElementById('collection');
-  const slide=lookSlides[lookIndex];
-  if(!chapter || !slide) return;
-  const photo=Array.from(slide.querySelectorAll('figure')).find(figure=>{
-    const rect=figure.getBoundingClientRect();
-    return rect.width>0 && rect.height>0;
-  });
-  if(!photo) return;
-  const imageRect=photo.getBoundingClientRect();
-  const chapterRect=chapter.getBoundingClientRect();
-  chapter.style.setProperty('--look-image-left', (imageRect.left-chapterRect.left)+'px');
-  chapter.style.setProperty('--look-image-right', (imageRect.right-chapterRect.left)+'px');
-  chapter.style.setProperty('--look-image-centre', (imageRect.top-chapterRect.top+imageRect.height/2)+'px');
-}
-window.addEventListener('resize',()=>requestAnimationFrame(positionLookArrows));
+window.addEventListener('resize',()=>showLook(lookIndex));

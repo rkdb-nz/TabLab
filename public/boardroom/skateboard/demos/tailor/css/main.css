@@ -1263,22 +1263,60 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
   .visit-mobile-tabs { top:62px; }
 }
 
-/* Mobile page arrows flank the active photograph. */
+/* Mobile collection: counter, photograph, description. */
+.mobile-look-card { display:none; }
 @media (max-width:900px) {
+  .lookbook-kicker { top:calc(clamp(50px,8.5dvh,66px) + 8px) !important; }
+  .book-shell {
+    top:calc(clamp(50px,8.5dvh,66px) + 80px) !important;
+    bottom:76px !important;
+    left:5vw !important;
+    right:5vw !important;
+  }
+  .ch3 .lookbook-slide .book-page,
+  .ch3 .lookbook-slide:last-of-type .book-page:first-child { display:none !important; }
+  .mobile-look-card {
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+    height:100%;
+    padding:18px;
+    overflow-y:auto;
+    overscroll-behavior-y:contain;
+    touch-action:auto;
+    scrollbar-width:thin;
+    background:#f7f1e8;
+    color:#292824;
+  }
+  .mobile-look-photo {
+    display:block;
+    flex:none;
+    width:100%;
+    height:clamp(180px,31dvh,300px);
+    object-fit:contain;
+    background:#f7f1e8;
+  }
+  .mobile-look-copy { position:static; flex:none; width:100%; padding-bottom:8px; }
+  .mobile-look-copy .tiny { font-size:10px; letter-spacing:.16em; opacity:.8; }
+  .mobile-look-copy h2 { font-size:34px; line-height:1; margin-top:10px; }
+  .mobile-look-copy h2 br { display:none; }
+  .mobile-look-copy p { font-size:15px; line-height:1.55; margin-top:12px; }
+  .mobile-look-copy .spec { width:auto; margin-top:14px; font-size:10px; opacity:.8; }
   .lookbook-controls {
-    inset:0 !important;
+    inset:auto 7vw auto !important;
+    top:calc(clamp(50px,8.5dvh,66px) + 24px) !important;
+    height:48px;
     width:auto !important;
-    height:auto;
     margin:0 !important;
     padding:0 !important;
     border:0;
   }
   #look-prev, #look-next {
-    top:var(--look-image-centre,65dvh) !important;
+    top:0 !important;
     bottom:auto !important;
-    width:44px !important;
+    width:48px !important;
     height:48px !important;
-    transform:translateY(-50%) !important;
+    transform:none !important;
     background:none !important;
     border:0 !important;
     border-radius:0;
@@ -1286,39 +1324,31 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
     opacity:1 !important;
     touch-action:manipulation;
   }
-  #look-prev {
-    left:max(0px,calc(var(--look-image-left,48vw) - 44px)) !important;
-    right:auto !important;
-  }
-  #look-next {
-    left:min(calc(100vw - 44px),var(--look-image-right,90vw)) !important;
-    right:auto !important;
-  }
+  #look-prev { left:calc(50% - 110px) !important; right:auto !important; }
+  #look-next { right:calc(50% - 110px) !important; left:auto !important; }
   #look-prev::before, #look-next::before { content:none; }
   #look-prev::after, #look-next::after,
   #look-prev:hover::after, #look-next:hover::after {
     color:#292824;
-    font:400 32px/48px Arial,sans-serif !important;
+    font:400 30px/48px Arial,sans-serif !important;
     transform:none !important;
   }
   #look-prev::after { content:"←"; }
   #look-next::after { content:"→"; }
-  #look-prev:hover, #look-next:hover {
-    opacity:1 !important;
-    transform:translateY(-50%) !important;
-  }
-  #look-prev:focus-visible, #look-next:focus-visible {
-    outline:2px solid #6a5844;
-    outline-offset:0;
-  }
+  #look-prev:hover, #look-next:hover { opacity:1 !important; transform:none !important; }
+  #look-prev:focus-visible, #look-next:focus-visible { outline:2px solid #6a5844; outline-offset:0; }
   #look-count {
-    top:calc(14dvh - 24px) !important;
-    font-size:13px !important;
-    line-height:20px;
+    top:0 !important;
+    font-size:28px !important;
+    line-height:48px;
+    letter-spacing:.08em !important;
     opacity:1 !important;
     color:#292824;
   }
 }
 @media (max-width:900px) and (orientation:landscape) and (max-height:500px) {
-  #look-count { top:calc(17dvh - 24px) !important; }
+  .lookbook-kicker { top:68px !important; }
+  .lookbook-controls { top:54px !important; left:auto !important; right:7vw !important; width:230px !important; }
+  .book-shell { top:110px !important; }
+  .mobile-look-photo { height:180px; }
 }
