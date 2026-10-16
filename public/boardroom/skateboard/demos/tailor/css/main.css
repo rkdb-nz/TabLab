@@ -1263,27 +1263,22 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
   .visit-mobile-tabs { top:62px; }
 }
 
-/* Mobile magazine navigation follows the desktop counter-and-arrows row. */
+/* Mobile page arrows flank the active photograph. */
 @media (max-width:900px) {
-  .lookbook-kicker {
-    top:calc(clamp(50px,8.5dvh,66px) + 8px) !important;
-  }
-  .book-shell {
-    top:calc(clamp(50px,8.5dvh,66px) + 72px) !important;
-  }
   .lookbook-controls {
-    inset:auto 7vw auto !important;
-    top:calc(clamp(50px,8.5dvh,66px) + 24px) !important;
-    height:44px;
-    padding:0;
+    inset:0 !important;
+    width:auto !important;
+    height:auto;
+    margin:0 !important;
+    padding:0 !important;
     border:0;
   }
   #look-prev, #look-next {
-    top:0 !important;
+    top:var(--look-image-centre,65dvh) !important;
     bottom:auto !important;
-    width:48px !important;
-    height:44px !important;
-    transform:none !important;
+    width:44px !important;
+    height:48px !important;
+    transform:translateY(-50%) !important;
     background:none !important;
     border:0 !important;
     border-radius:0;
@@ -1291,27 +1286,33 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
     opacity:1 !important;
     touch-action:manipulation;
   }
-  #look-prev { left:calc(50% - 104px) !important; right:auto !important; }
-  #look-next { right:calc(50% - 104px) !important; left:auto !important; }
+  #look-prev {
+    left:max(0px,calc(var(--look-image-left,48vw) - 44px)) !important;
+    right:auto !important;
+  }
+  #look-next {
+    left:min(calc(100vw - 44px),var(--look-image-right,90vw)) !important;
+    right:auto !important;
+  }
   #look-prev::before, #look-next::before { content:none; }
   #look-prev::after, #look-next::after,
   #look-prev:hover::after, #look-next:hover::after {
     color:#292824;
-    font:400 30px/44px Arial,sans-serif !important;
+    font:400 32px/48px Arial,sans-serif !important;
     transform:none !important;
   }
   #look-prev::after { content:"←"; }
   #look-next::after { content:"→"; }
   #look-prev:hover, #look-next:hover {
     opacity:1 !important;
-    transform:none !important;
+    transform:translateY(-50%) !important;
   }
   #look-prev:focus-visible, #look-next:focus-visible {
     outline:2px solid #6a5844;
     outline-offset:0;
   }
   #look-count {
-    top:12px !important;
+    top:calc(14dvh - 24px) !important;
     font-size:13px !important;
     line-height:20px;
     opacity:1 !important;
@@ -1319,12 +1320,5 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
   }
 }
 @media (max-width:900px) and (orientation:landscape) and (max-height:500px) {
-  .lookbook-kicker { top:68px !important; }
-  .lookbook-controls {
-    top:54px !important;
-    left:auto !important;
-    right:7vw !important;
-    width:210px !important;
-  }
-  .book-shell { top:102px !important; }
+  #look-count { top:calc(17dvh - 24px) !important; }
 }

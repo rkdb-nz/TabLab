@@ -160,6 +160,7 @@ function showLook(index){
   lookIndex=(index+lookSlides.length)%lookSlides.length;
   lookSlides.forEach((slide,i)=>slide.classList.toggle('active',i===lookIndex));
   if(lookCount) lookCount.textContent=`${pad(lookIndex+1)} / ${pad(lookSlides.length)}`;
+  positionLookArrows();
 }
 document.getElementById('look-prev')?.addEventListener('click',()=>showLook(lookIndex-1));
 document.getElementById('look-next')?.addEventListener('click',()=>showLook(lookIndex+1));
@@ -207,3 +208,23 @@ if(isMobile() && scroller){
     });
   },{passive:true});
 }
+
+
+// Keep mobile magazine controls beside the visible photograph on every look.
+function positionLookArrows(){
+  if(!isMobile()) return;
+  const chapter=document.getElementById('collection');
+  const slide=lookSlides[lookIndex];
+  if(!chapter || !slide) return;
+  const photo=Array.from(slide.querySelectorAll('figure')).find(figure=>{
+    const rect=figure.getBoundingClientRect();
+    return rect.width>0 && rect.height>0;
+  });
+  if(!photo) return;
+  const imageRect=photo.getBoundingClientRect();
+  const chapterRect=chapter.getBoundingClientRect();
+  chapter.style.setProperty('--look-image-left', (imageRect.left-chapterRect.left)+'px');
+  chapter.style.setProperty('--look-image-right', (imageRect.right-chapterRect.left)+'px');
+  chapter.style.setProperty('--look-image-centre', (imageRect.top-chapterRect.top+imageRect.height/2)+'px');
+}
+window.addEventListener('resize',()=>requestAnimationFrame(positionLookArrows));
