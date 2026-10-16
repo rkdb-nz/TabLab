@@ -227,3 +227,32 @@ if(isMobile() && scroller){
 }
 
 window.addEventListener('resize',()=>showLook(lookIndex));
+
+// Mobile craft descriptions use native keyboard-accessible disclosure controls.
+const craftPanel=document.querySelector('.ch4 .details');
+if(craftPanel){
+  const accordion=document.createElement('div');
+  accordion.className='mobile-craft-accordion';
+  const entries=Array.from(craftPanel.querySelectorAll('.ditem'));
+  entries.forEach((entry,index)=>{
+    const item=document.createElement('details');
+    item.name='tailor-craft';
+    const summary=document.createElement('summary');
+    const number=document.createElement('span');
+    number.className='craft-number';
+    number.textContent=String(index+1).padStart(2,'0');
+    const title=document.createElement('span');
+    title.className='craft-title';
+    title.textContent=entry.querySelector('h5').textContent;
+    const description=entry.querySelector('p').cloneNode(true);
+    summary.append(number,title);
+    item.append(summary,description);
+    item.addEventListener('toggle',()=>{
+      if(item.open) accordion.querySelectorAll('details').forEach(other=>{
+        if(other!==item) other.open=false;
+      });
+    });
+    accordion.append(item);
+  });
+  craftPanel.append(accordion);
+}

@@ -1352,3 +1352,66 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
   .book-shell { top:110px !important; }
   .mobile-look-photo { height:180px; }
 }
+
+/* Mobile craft ledger: one expandable description at a time. */
+.mobile-craft-accordion { display:none; }
+@media (max-width:900px) {
+  .ch4 .details {
+    top:35dvh !important;
+    bottom:76px !important;
+    left:7vw !important;
+    width:86vw !important;
+    margin:0 !important;
+    overflow-y:auto;
+    overscroll-behavior-y:contain;
+    touch-action:auto;
+    padding:0 2px 16px;
+    scrollbar-width:thin;
+  }
+  .ch4 .details > div[style*="margin-top:36px"] { display:none; }
+  .ch4 .details > .tiny { opacity:1 !important; }
+  .ch4 .details h2 {
+    font-size:clamp(34px,10vw,48px) !important;
+    line-height:1 !important;
+    margin-top:12px !important;
+  }
+  .mobile-craft-accordion { display:block; margin-top:20px; }
+  .mobile-craft-accordion details { border-top:1px solid #ffffff59; }
+  .mobile-craft-accordion details:last-child { border-bottom:1px solid #ffffff59; }
+  .mobile-craft-accordion summary {
+    display:flex;
+    align-items:center;
+    gap:12px;
+    min-height:48px;
+    padding:12px 0;
+    color:#fff;
+    cursor:pointer;
+    list-style:none;
+    touch-action:manipulation;
+  }
+  .mobile-craft-accordion summary::-webkit-details-marker { display:none; }
+  .mobile-craft-accordion summary::after {
+    content:"+";
+    flex:none;
+    margin-left:auto;
+    font:400 26px/1 Arial,sans-serif;
+    color:#f3dfb5;
+  }
+  .mobile-craft-accordion details[open] > summary::after { content:"−"; }
+  .mobile-craft-accordion .craft-number { font:400 11px/1 Arial,sans-serif; color:#eee2cb; }
+  .mobile-craft-accordion .craft-title { font:400 21px/1.2 'Instrument Serif',serif; }
+  .mobile-craft-accordion p {
+    padding:0 24px 16px 26px;
+    font-size:15px;
+    line-height:1.55;
+    color:#fff;
+    opacity:1;
+  }
+  .mobile-craft-accordion details:not([open]) p { display:none; }
+  .mobile-craft-accordion summary:focus-visible { outline:2px solid #f3dfb5; outline-offset:-2px; }
+  body:has(.ch4.active) nav#topnav { color:#292824 !important; }
+}
+@media (max-width:900px) and (orientation:landscape) and (max-height:500px) {
+  .ch4 .details { top:76px !important; }
+  .ch4 .details h2 { font-size:34px !important; }
+}
