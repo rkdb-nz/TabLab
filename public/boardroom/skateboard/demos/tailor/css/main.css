@@ -1212,3 +1212,53 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
     margin-left: 140px;
   }
 }
+
+/* Mobile readability: keep navigation below the copy. */
+@media (max-width:900px) {
+  .mobile-chapter-controls button {
+    top:auto;
+    bottom:max(12px,env(safe-area-inset-bottom));
+    transform:none;
+    width:48px;
+    height:48px;
+    font-size:38px;
+    opacity:1;
+  }
+  #chapter-prev { left:12px; border:1px solid #c9a86a; border-radius:12px; }
+  #chapter-next { right:12px; border:1px solid #c9a86a; border-radius:12px; }
+  #chapter-ind, #counter { display:none; }
+
+  /* Vertical reading and horizontal chapter navigation both remain native. */
+  #scroller, .visit-scroll { touch-action:auto; }
+  .visit-section::after, .visit-milan::after {
+    background:linear-gradient(90deg,rgba(15,13,11,.88),rgba(15,13,11,.74));
+  }
+  .visit-intro, .visit-intro-right {
+    left:24px !important;
+    right:24px !important;
+    top:132px !important;
+    bottom:calc(76px + env(safe-area-inset-bottom)) !important;
+    width:auto !important;
+    overflow-y:auto;
+    overscroll-behavior-y:contain;
+    touch-action:pan-y;
+    padding:4px 4px 16px 0;
+    scrollbar-width:thin;
+    color:#fff;
+  }
+  .visit-intro .tiny { opacity:1; font-size:11px; letter-spacing:.18em; }
+  .visit-intro h2 { font-size:clamp(42px,12vw,64px); line-height:.98; margin-top:14px; color:#fff; }
+  .visit-intro h3 { font-size:clamp(32px,9vw,46px); line-height:1.1; color:#fff; }
+  .visit-intro p { font-size:16px; line-height:1.6; margin-top:20px; opacity:1; color:#fff; max-width:42ch; }
+  .visit-address { margin-top:24px; padding-top:16px; opacity:1; }
+  .visit-intro .btn { margin-top:22px; min-height:44px; background:#f7f3ee; color:#171614; border-color:#f7f3ee; }
+  .visit-mobile-tabs { top:76px; background:#211f1c; border-color:#b6aa98; }
+  .visit-mobile-tabs button { min-height:40px; font-size:11px; }
+}
+@media (max-width:900px) and (orientation:landscape) {
+  .visit-intro, .visit-intro-right { top:118px !important; left:7vw !important; right:7vw !important; }
+  .visit-intro h2 { font-size:42px; }
+  .visit-intro h3 { font-size:32px; }
+  .visit-intro p { font-size:16px; max-width:62ch; }
+  .visit-mobile-tabs { top:62px; }
+}
