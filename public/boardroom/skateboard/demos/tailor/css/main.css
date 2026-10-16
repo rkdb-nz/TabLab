@@ -1263,40 +1263,68 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
   .visit-mobile-tabs { top:62px; }
 }
 
-/* Mobile magazine page turns: explicit, high-contrast controls. */
+/* Mobile magazine navigation follows the desktop counter-and-arrows row. */
 @media (max-width:900px) {
+  .lookbook-kicker {
+    top:calc(clamp(50px,8.5dvh,66px) + 8px) !important;
+  }
+  .book-shell {
+    top:calc(clamp(50px,8.5dvh,66px) + 72px) !important;
+  }
+  .lookbook-controls {
+    inset:auto 7vw auto !important;
+    top:calc(clamp(50px,8.5dvh,66px) + 24px) !important;
+    height:44px;
+    padding:0;
+    border:0;
+  }
   #look-prev, #look-next {
+    top:0 !important;
+    bottom:auto !important;
     width:48px !important;
-    height:64px !important;
-    background:#292824 !important;
-    border:1px solid #c9a86a !important;
-    border-radius:10px;
-    box-shadow:0 3px 10px #0003;
+    height:44px !important;
+    transform:none !important;
+    background:none !important;
+    border:0 !important;
+    border-radius:0;
+    box-shadow:none;
     opacity:1 !important;
     touch-action:manipulation;
   }
+  #look-prev { left:calc(50% - 104px) !important; right:auto !important; }
+  #look-next { right:calc(50% - 104px) !important; left:auto !important; }
+  #look-prev::before, #look-next::before { content:none; }
   #look-prev::after, #look-next::after,
   #look-prev:hover::after, #look-next:hover::after {
-    position:absolute;
-    inset:0 0 18px;
-    color:#fff3d9;
-    font:400 42px/44px Georgia,serif !important;
+    color:#292824;
+    font:400 30px/44px Arial,sans-serif !important;
     transform:none !important;
   }
-  #look-prev::before, #look-next::before {
-    content:"PAGE";
-    position:absolute;
-    bottom:7px;
-    left:0;
-    right:0;
-    color:#fff3d9;
-    font:700 8px/1 Arial,sans-serif;
-    letter-spacing:.12em;
+  #look-prev::after { content:"←"; }
+  #look-next::after { content:"→"; }
+  #look-prev:hover, #look-next:hover {
+    opacity:1 !important;
+    transform:none !important;
   }
-  #look-prev:hover, #look-next:hover { opacity:1 !important; }
   #look-prev:focus-visible, #look-next:focus-visible {
-    outline:3px solid #8a5c1d;
-    outline-offset:3px;
+    outline:2px solid #6a5844;
+    outline-offset:0;
   }
-  #look-count { opacity:1 !important; color:#292824; }
+  #look-count {
+    top:12px !important;
+    font-size:13px !important;
+    line-height:20px;
+    opacity:1 !important;
+    color:#292824;
+  }
+}
+@media (max-width:900px) and (orientation:landscape) and (max-height:500px) {
+  .lookbook-kicker { top:68px !important; }
+  .lookbook-controls {
+    top:54px !important;
+    left:auto !important;
+    right:7vw !important;
+    width:210px !important;
+  }
+  .book-shell { top:102px !important; }
 }
