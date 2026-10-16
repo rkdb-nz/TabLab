@@ -1231,7 +1231,7 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
   /* Vertical reading and horizontal chapter navigation both remain native. */
   #scroller, .visit-scroll { touch-action:auto; }
   .visit-section::after, .visit-milan::after {
-    background:linear-gradient(90deg,rgba(15,13,11,.88),rgba(15,13,11,.74));
+    background:linear-gradient(90deg,rgba(15,13,11,.64),rgba(15,13,11,.38));
   }
   .visit-intro, .visit-intro-right {
     left:24px !important;
