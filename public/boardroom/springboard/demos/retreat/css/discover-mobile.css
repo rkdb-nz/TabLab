@@ -27,3 +27,10 @@
 @media (max-width:700px) and (orientation:portrait){
   .discover-snap .d-scene:not(.d-scene-hero){padding-bottom:84px}
 }
+
+/* Show the complete welcome sign at a quieter scale on portrait phones. */
+@media (max-width:700px) and (orientation:portrait){
+  .discover-page .d-bg-hero{inset:92px 20px auto;height:min(36vh,280px);transform:none;border-radius:12px;box-shadow:none}
+  .discover-page .d-bg-hero img{height:100%;object-fit:contain;transform:none;opacity:1}
+  .discover-page .d-bg-hero:before,.discover-page .d-bg-hero:after{display:none}
+}

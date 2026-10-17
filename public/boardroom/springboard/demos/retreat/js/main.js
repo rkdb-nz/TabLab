@@ -31,17 +31,12 @@ function returnRetreatToTop(){
     requestAnimationFrame(step);
   }
 }
-document.querySelector('.header .logo')?.addEventListener('click',event=>{
-  if(!retreatMobileHeader.matches)return;
-  event.preventDefault();
-  returnRetreatToTop();
-});
 // One visible return control throughout the mobile demo.
 const retreatBackTop=document.createElement('button');
 retreatBackTop.type='button';
 retreatBackTop.className='retreat-back-top';
 retreatBackTop.setAttribute('aria-label','Back to top');
-retreatBackTop.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11l7-7 7 7M12 4v16"/></svg><span>Top</span>';
+retreatBackTop.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11l7-7 7 7M12 4v16"/></svg>';
 retreatBackTop.hidden=true;
 document.body.append(retreatBackTop);
 retreatBackTop.addEventListener('click',returnRetreatToTop);

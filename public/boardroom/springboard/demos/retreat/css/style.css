@@ -676,3 +676,8 @@ body:has(.hero) .header:not(.scrolled){
   .retreat-back-top:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
   body:has(.nav.open) .retreat-back-top{visibility:hidden;pointer-events:none}
 }
+
+@media (max-width:900px), (max-width:1000px) and (orientation:landscape){
+  .retreat-back-top:not([hidden]){width:46px;height:46px;padding:12px;border-radius:50%;gap:0}
+  .retreat-back-top svg{width:20px;height:20px}
+}
