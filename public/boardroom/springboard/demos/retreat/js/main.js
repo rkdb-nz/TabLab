@@ -1,7 +1,38 @@
 
 const header=document.querySelector('.header');
 window.addEventListener('scroll',()=>{ header.classList.toggle('scrolled', scrollY>40); });
-document.querySelectorAll('.menu-btn').forEach(b=>b.addEventListener('click',()=>document.querySelector('.nav').classList.toggle('open')));
+const retreatMobileHeader = matchMedia('(max-width:900px), (max-width:1000px) and (orientation:landscape)');
+const retreatNav = document.querySelector('.nav');
+const retreatMenu = document.querySelector('.menu-btn');
+function closeRetreatMenu(){
+  retreatNav.classList.remove('open');
+  retreatMenu.setAttribute('aria-expanded','false');
+  retreatMenu.setAttribute('aria-label','Open menu');
+}
+retreatMenu?.addEventListener('click',()=>{
+  const open=retreatNav.classList.toggle('open');
+  retreatMenu.setAttribute('aria-expanded',String(open));
+  retreatMenu.setAttribute('aria-label',open?'Close menu':'Open menu');
+});
+retreatNav?.addEventListener('click',event=>{if(event.target.closest('a'))closeRetreatMenu();});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&retreatNav?.classList.contains('open')){closeRetreatMenu();retreatMenu.focus();}});
+document.querySelector('.header .logo')?.addEventListener('click',event=>{
+  if(!retreatMobileHeader.matches)return;
+  event.preventDefault();
+  closeRetreatMenu();
+  if(document.querySelector('.discover-track') && matchMedia('(max-width:700px) and (orientation:portrait), (max-width:1000px) and (orientation:landscape)').matches){
+    document.dispatchEvent(new Event('retreat-return-top'));
+  }else{
+    const start=window.scrollY, began=performance.now();
+    const step=now=>{
+      const t=Math.min(1,(now-began)/1500);
+      const ease=t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2;
+      window.scrollTo({top:start*(1-ease),behavior:'instant'});
+      if(t<1)requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }
+});
 const obs=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); }),{threshold:.15});
 document.querySelectorAll('.reveal,.img-reveal').forEach(el=>obs.observe(el));
 document.querySelector('.hero')?.classList.add('loaded');

@@ -5,7 +5,7 @@
   const shell = document.querySelector('.discover-shell');
   const track = document.querySelector('.discover-track');
   const sections = [...track.children];
-  let index = 0, moving = false, touch = null;
+  let index = 0, moving = false, touch = null, motionTimer;
   function go(next) {
     if (moving || next < 0 || next >= sections.length || next === index || document.querySelector('.nav.open')) return;
     index = next;
@@ -15,7 +15,8 @@
     sections.forEach((section, i) => {section.inert = i !== index;});
     document.querySelector('.header').classList.toggle('scrolled', index > 0);
     document.querySelector('.progress').style.width = `${index / (sections.length - 1) * 100}%`;
-    setTimeout(() => {moving = false;}, 1500);
+    clearTimeout(motionTimer);
+    motionTimer = setTimeout(() => {moving = false;}, 1500);
   }
   sections.forEach((section, i) => {section.inert = i !== index;});
   shell.addEventListener('touchstart', event => {
@@ -35,5 +36,6 @@
     if (['ArrowDown','PageDown',' '].includes(event.key)) {event.preventDefault();go(index + 1);}
     if (['ArrowUp','PageUp'].includes(event.key)) {event.preventDefault();go(index - 1);}
   });
+  document.addEventListener('retreat-return-top', () => {moving = false;go(0);});
   mobile.addEventListener('change', () => location.reload());
 })();
