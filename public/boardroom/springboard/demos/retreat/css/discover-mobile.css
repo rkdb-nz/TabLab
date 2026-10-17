@@ -24,3 +24,6 @@
   .discover-page .d-text-closure br{display:none}
   .discover-page .d-text-closure .btn{padding:10px 22px;margin-top:12px}
 }
+@media (max-width:700px) and (orientation:portrait){
+  .discover-snap .d-scene:not(.d-scene-hero){padding-bottom:84px}
+}

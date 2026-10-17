@@ -13,6 +13,7 @@
     track.style.transition = 'transform 1.5s cubic-bezier(.65,0,.35,1)';
     track.style.transform = `translateY(${-index * 100}%)`;
     sections.forEach((section, i) => {section.inert = i !== index;});
+    document.dispatchEvent(new CustomEvent('retreat-scene-change',{detail:index}));
     document.querySelector('.header').classList.toggle('scrolled', index > 0);
     document.querySelector('.progress').style.width = `${index / (sections.length - 1) * 100}%`;
     clearTimeout(motionTimer);

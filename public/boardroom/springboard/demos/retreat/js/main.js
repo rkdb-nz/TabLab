@@ -16,9 +16,7 @@ retreatMenu?.addEventListener('click',()=>{
 });
 retreatNav?.addEventListener('click',event=>{if(event.target.closest('a'))closeRetreatMenu();});
 document.addEventListener('keydown',event=>{if(event.key==='Escape'&&retreatNav?.classList.contains('open')){closeRetreatMenu();retreatMenu.focus();}});
-document.querySelector('.header .logo')?.addEventListener('click',event=>{
-  if(!retreatMobileHeader.matches)return;
-  event.preventDefault();
+function returnRetreatToTop(){
   closeRetreatMenu();
   if(document.querySelector('.discover-track') && matchMedia('(max-width:700px) and (orientation:portrait), (max-width:1000px) and (orientation:landscape)').matches){
     document.dispatchEvent(new Event('retreat-return-top'));
@@ -32,7 +30,29 @@ document.querySelector('.header .logo')?.addEventListener('click',event=>{
     };
     requestAnimationFrame(step);
   }
+}
+document.querySelector('.header .logo')?.addEventListener('click',event=>{
+  if(!retreatMobileHeader.matches)return;
+  event.preventDefault();
+  returnRetreatToTop();
 });
+// One visible return control throughout the mobile demo.
+const retreatBackTop=document.createElement('button');
+retreatBackTop.type='button';
+retreatBackTop.className='retreat-back-top';
+retreatBackTop.setAttribute('aria-label','Back to top');
+retreatBackTop.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 11l7-7 7 7M12 4v16"/></svg><span>Top</span>';
+retreatBackTop.hidden=true;
+document.body.append(retreatBackTop);
+retreatBackTop.addEventListener('click',returnRetreatToTop);
+let retreatSceneIndex=0;
+function updateRetreatBackTop(){
+  retreatBackTop.hidden=!retreatMobileHeader.matches || !(scrollY>120 || retreatSceneIndex>0);
+}
+window.addEventListener('scroll',updateRetreatBackTop,{passive:true});
+document.addEventListener('retreat-scene-change',event=>{retreatSceneIndex=event.detail;updateRetreatBackTop();});
+retreatMobileHeader.addEventListener('change',updateRetreatBackTop);
+updateRetreatBackTop();
 const obs=new IntersectionObserver(es=>es.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in'); }),{threshold:.15});
 document.querySelectorAll('.reveal,.img-reveal').forEach(el=>obs.observe(el));
 document.querySelector('.hero')?.classList.add('loaded');
