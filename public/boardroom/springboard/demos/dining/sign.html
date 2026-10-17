@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Sign — CLEMENTINES</title>
-<link rel="stylesheet" href="assets/css/main.css?v=dining-venue-lines-5">
+<link rel="stylesheet" href="assets/css/main.css?v=dining-email-booking-6">
 </head>
 <body class="sign-page">
 <nav class="nav">
@@ -32,6 +32,10 @@
 </div>
 </div>
 <div>
+<div class="mobile-booking">
+<a class="btn mobile-booking-email" href="mailto:clementinesdining@rkdb.nz?subject=Table%20request%20%E2%80%94%20Clementines&amp;body=Hello%20Clementines%2C%0D%0A%0D%0AI%20would%20like%20to%20request%20a%20table%2C%20please.%0D%0A%0D%0AName%3A%20%0D%0ADate%3A%20%0D%0ATime%3A%20%0D%0ANumber%20of%20guests%3A%20%0D%0APhone%20number%3A%20%0D%0ADietary%20needs%20or%20other%20requests%3A%20%0D%0A%0D%0AThank%20you.">Request a table</a>
+<p class="mobile-booking-note">Send us your preferred date, time and guest numbers. We’ll be in touch to confirm.</p>
+</div>
 <form class="booking-form" onsubmit="event.preventDefault(); document.getElementById('booking-confirmation').classList.add('is-open');">
 <input class="input" placeholder="Name" required>
 <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px"><select class="input"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option></select><input class="input" type="date"></div>
@@ -53,6 +57,6 @@
     <button type="button" class="booking-confirmation-close" onclick="document.getElementById('booking-confirmation').classList.remove('is-open')">Close</button>
   </div>
 </div>
-<script src="assets/js/main.js?v=dining-venue-lines-5"></script>
+<script src="assets/js/main.js?v=dining-email-booking-6"></script>
 </body>
 </html>

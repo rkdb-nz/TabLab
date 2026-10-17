@@ -1198,3 +1198,15 @@ img{display:block; max-width:100%}
   .sign-page .venue-details .venue-value{display:block;line-height:1.65;margin:2px 0 16px;overflow-wrap:anywhere}
   .sign-page .venue-details br{display:none}
 }
+
+.mobile-booking{display:none}
+@media (max-width:900px), (max-width:1000px) and (orientation:landscape){
+  .sign-page .booking-form,.sign-page .booking-note{display:none}
+  .sign-page .mobile-booking{display:block;grid-area:booking}
+  .sign-page .mobile-booking-email{display:flex;align-items:center;justify-content:center;min-height:52px;width:100%;text-align:center;border-radius:4px;grid-area:booking;align-self:start}
+  .sign-page .mobile-booking-note{display:block;grid-area:note;font-size:13px;line-height:1.65;color:#6b625b;margin:14px 0 24px}
+}
+
+@media (max-width:1000px) and (orientation:landscape){
+  .sign-page .mobile-booking{grid-row:1 / 3}
+}
