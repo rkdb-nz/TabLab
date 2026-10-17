@@ -1192,3 +1192,9 @@ img{display:block; max-width:100%}
   .nav.mobile-menu-open .nav-links a{display:flex;align-items:center;justify-content:center;min-height:44px;flex:1 0 40%;padding:10px 14px;font-size:12px}
   .home-page .nav{padding-block:8px}
 }
+
+@media (max-width:900px), (max-width:1000px) and (orientation:landscape){
+  .sign-page .venue-details .venue-separator{display:none}
+  .sign-page .venue-details .venue-value{display:block;line-height:1.65;margin:2px 0 16px;overflow-wrap:anywhere}
+  .sign-page .venue-details br{display:none}
+}
