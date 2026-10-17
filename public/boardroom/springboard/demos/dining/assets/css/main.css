@@ -1177,6 +1177,7 @@ img{display:block; max-width:100%}
   .home-page .nav{padding:16px 24px}
   .home-page .nav-logo{font-size:16px}
   .home-page .mobile-toggle{display:none}
+  .home-page .scroll-ind{display:none}
 }
 @media (max-width:1000px) and (orientation:landscape){
   .home-page .trifold-inner{max-width:900px;padding:72px 30px 22px;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:minmax(0,1fr);gap:22px}
