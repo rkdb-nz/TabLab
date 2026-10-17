@@ -67,6 +67,11 @@ dialog{width:calc(100% - 32px);max-width:560px;max-height:84dvh;border:1px solid
 .collection-visual .collection-controls{inset:0;z-index:2;justify-content:space-between;gap:0}
 .collection-visual .collection-controls button{border:1px solid #27272355;border-radius:50%;background:var(--cream);color:var(--ink)}
 .collection-visual .collection-controls span{position:absolute;top:-30px;left:50%;transform:translateX(-50%)}
+
+/* Buttons advance the cinematic viewport by exactly one full scene. */
+.journey{overflow:hidden;overscroll-behavior:none}
+.journey>.scene{position:relative;inset:auto;width:100%;height:100%;opacity:1;visibility:visible;transition:none}
+.journey>.scene.active{z-index:auto}
 </style>
 </head>
 <body data-scene="0">
@@ -102,7 +107,9 @@ dialog{width:calc(100% - 32px);max-width:560px;max-height:84dvh;border:1px solid
 <script>
 (() => {
  if(window.self!==window.top)document.documentElement.classList.add('framed-demo');
- const scenes=[...document.querySelectorAll('.journey>.scene')];
+ const journey=document.querySelector('.journey');
+ const scenes=[...journey.querySelectorAll(':scope>.scene')];
+ const reducedMotion=matchMedia('(prefers-reduced-motion:reduce)');
  const ids=scenes.map(s=>s.id), names=['Clay','The maker','The collection','The making','Come closer'];
  const previous=document.getElementById('scene-prev'),next=document.getElementById('scene-next');
  let index=0,collection=0,makerTimer=null;
@@ -110,6 +117,7 @@ dialog{width:calc(100% - 32px);max-width:560px;max-height:84dvh;border:1px solid
  function changeScene(value,updateHash=true){
   index=Math.max(0,Math.min(scenes.length-1,value));
   scenes.forEach((scene,i)=>{scene.classList.toggle('active',i===index);scene.inert=i!==index;scene.setAttribute('aria-hidden',i===index?'false':'true');});
+  journey.scrollTo({top:scenes[index].offsetTop,behavior:updateHash&&!reducedMotion.matches?'smooth':'instant'});
   document.body.dataset.scene=index;
   previous.disabled=index===0;next.disabled=index===scenes.length-1;
   document.getElementById('chapter-count').textContent=String(index+1).padStart(2,'0')+' / 05';
@@ -133,6 +141,7 @@ dialog{width:calc(100% - 32px);max-width:560px;max-height:84dvh;border:1px solid
  document.addEventListener('keydown',event=>{if(document.querySelector('dialog[open]'))return;if(['ArrowDown','PageDown'].includes(event.key)){event.preventDefault();changeScene(index+1);}if(['ArrowUp','PageUp'].includes(event.key)){event.preventDefault();changeScene(index-1);}if(index===2&&event.key==='ArrowRight')changeCollection(collection+1);if(index===2&&event.key==='ArrowLeft')changeCollection(collection-1);});
  let touch=null;document.querySelector('.journey').addEventListener('touchstart',event=>{if(event.target.closest('button,a,.scene-copy'))return;touch={x:event.touches[0].clientX,y:event.touches[0].clientY};},{passive:true});document.querySelector('.journey').addEventListener('touchend',event=>{if(!touch)return;const dx=event.changedTouches[0].clientX-touch.x,dy=event.changedTouches[0].clientY-touch.y;touch=null;if(Math.abs(dy)>70&&Math.abs(dy)>Math.abs(dx))changeScene(index+(dy<0?1:-1));else if(index===2&&Math.abs(dx)>60&&Math.abs(dx)>Math.abs(dy))changeCollection(collection+(dx<0?1:-1));},{passive:true});
  document.querySelectorAll('.photograph>img').forEach(image=>{const ready=()=>image.classList.add('ready');if(image.complete)ready();else{image.addEventListener('load',ready,{once:true});image.addEventListener('error',ready,{once:true});}});
+ new ResizeObserver(()=>journey.scrollTo({top:scenes[index].offsetTop,behavior:'instant'})).observe(journey);
  const initial=ids.indexOf(location.hash.slice(1));changeScene(initial<0?0:initial,false);
  document.addEventListener('visibilitychange',()=>{if(document.hidden)clearInterval(makerTimer);else if(index===1)changeScene(1,false);});
 })();
