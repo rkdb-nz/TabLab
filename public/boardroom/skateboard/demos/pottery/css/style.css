@@ -298,44 +298,32 @@ h3{font-family:var(--font-serif);font-size:28px;font-weight:400;line-height:1.1}
   }
 }
 
-/* Mobile: visible, repeatable photo motion without relying on hover. */
+/* Mobile photos settle visibly before a gentle, repeatable zoom. */
 @media(max-width:980px) {
   .pottery-mobile-motion .reveal {
     transition:opacity 2.5s ease-in-out,transform 2.5s ease-in-out;
   }
-  .pottery-mobile-motion .pottery-photo-reveal { position:relative; overflow:hidden; }
-  .pottery-mobile-motion .pottery-photo-reveal::after {
-    content:"";
-    display:block;
-    position:absolute;
-    inset:0;
-    z-index:2;
-    pointer-events:none;
-    background:var(--stone);
-    clip-path:none;
+  .pottery-mobile-motion .collection-card.reveal {
     opacity:1;
-    transform:scaleX(1);
-    transform-origin:right;
-    transition:transform 2.5s ease-in-out;
-    transition-delay:0s;
+    transform:none;
+    transition:none;
   }
-  .pottery-mobile-motion .process-hero::after { background:var(--charcoal); }
+  .pottery-mobile-motion .pottery-photo-reveal { position:relative; overflow:hidden; }
+  .pottery-mobile-motion .pottery-photo-reveal::after { display:none; }
   .pottery-mobile-motion .pottery-photo-reveal img {
-    opacity:0;
-    transform:translate3d(0,var(--pottery-drift,0px),0) scale(1.14);
-    transition:opacity 2.5s ease-in-out;
+    opacity:1;
+    transform:translate3d(0,0,0) scale(1.18);
+    transition:none;
     animation:none;
     will-change:transform;
   }
-  .pottery-mobile-motion .pottery-photo-active::after { transform:scaleX(0); }
   .pottery-mobile-motion .pottery-photo-active img {
-    opacity:1;
-    animation:potteryMobilePhoto 2.5s ease-in-out both;
+    animation:potteryMobilePhoto 2.5s ease-in-out .75s both;
   }
   .pottery-mobile-motion .collection-card:hover { transform:none; }
   @keyframes potteryMobilePhoto {
-    from { transform:translate3d(0,36px,0) scale(1.35); }
-    to { transform:translate3d(0,var(--pottery-drift,0px),0) scale(1.14); }
+    from { transform:translate3d(0,0,0) scale(1.18); }
+    to { transform:translate3d(0,var(--pottery-drift,0px),0) scale(1.10); }
   }
 }
 @media(max-width:980px) and (prefers-reduced-motion:reduce) {

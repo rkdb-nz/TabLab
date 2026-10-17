@@ -89,7 +89,8 @@
       const rect=photo.getBoundingClientRect();
       if(rect.bottom<0 || rect.top>height) return;
       const position=(height/2-(rect.top+rect.height/2))/(height/2+rect.height/2);
-      photo.style.setProperty('--pottery-drift',Math.max(-24,Math.min(24,position*24))+'px');
+      const driftLimit=Math.min(12,rect.height*0.04);
+      photo.style.setProperty('--pottery-drift',Math.max(-driftLimit,Math.min(driftLimit,position*driftLimit))+'px');
     });
   }
   function scheduleDrift(){
