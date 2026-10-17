@@ -681,3 +681,11 @@ body:has(.hero) .header:not(.scrolled){
   .retreat-back-top:not([hidden]){width:46px;height:46px;padding:12px;border-radius:50%;gap:0}
   .retreat-back-top svg{width:20px;height:20px}
 }
+
+.retreat-tablab-return{display:none}
+@media (max-width:900px), (max-width:1000px) and (orientation:landscape){
+  .retreat-tablab-return{position:fixed;top:22%;left:0;z-index:120;display:block;width:36px;padding:16px 9px;border:1px solid #ad927b;border-left:0;border-radius:0 9px 9px 0;background:linear-gradient(90deg,#725a47,#907660);color:#fff9f1;box-shadow:2px 3px 8px #0003;font:600 14px/1.2 Arial,sans-serif;writing-mode:vertical-rl;cursor:pointer}
+  .retreat-tablab-return:hover{background:#604b3b}
+  .retreat-tablab-return:focus-visible{outline:2px solid white;outline-offset:2px}
+  body:has(.nav.open) .retreat-tablab-return{visibility:hidden;pointer-events:none}
+}

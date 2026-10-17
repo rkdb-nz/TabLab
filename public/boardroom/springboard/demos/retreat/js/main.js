@@ -181,3 +181,13 @@ if(thumbButtons.length && lightbox){
   });
 }
 
+
+// Standalone mobile pages need the same return tab as framed fullscreen demos.
+if(window.self===window.top){
+  const tab=document.createElement('a');
+  tab.className='retreat-tablab-return';
+  tab.href='../../';
+  tab.textContent='Tab Lab';
+  tab.setAttribute('aria-label','Back to Tab Lab gallery');
+  document.body.append(tab);
+}
