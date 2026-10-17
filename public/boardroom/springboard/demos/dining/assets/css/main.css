@@ -1169,11 +1169,11 @@ img{display:block; max-width:100%}
   .home-page .panel{height:auto;min-height:0;width:100%;border-radius:10px}
   .home-page .panel-content{padding:18px 22px;background:linear-gradient(transparent 35%,#0008)}
   .home-page .panel-label{font-size:30px}
-  .home-page .card-image--busy,.home-page .card-image--neat{transition:opacity 2.5s ease-in-out}
+  .home-page .card-image--busy,.home-page .card-image--neat{transition:opacity 1.5s ease-in-out}
   .home-page .panel:hover .card-image--busy,.home-page .panel:focus-visible .card-image--busy{opacity:1}
   .home-page .panel:hover .card-image--neat,.home-page .panel:focus-visible .card-image--neat{opacity:0}
-  .home-page .cards-revealed .card-image--busy,.home-page .panel.is-activating .card-image--busy{opacity:0}
-  .home-page .cards-revealed .card-image--neat,.home-page .panel.is-activating .card-image--neat{opacity:1}
+  .home-page .cards-revealed .panel .card-image--busy,.home-page .panel.is-activating .card-image--busy{opacity:0}
+  .home-page .cards-revealed .panel .card-image--neat,.home-page .panel.is-activating .card-image--neat{opacity:1}
   .home-page .nav{padding:16px 24px}
   .home-page .nav-logo{font-size:16px}
   .home-page .mobile-toggle{display:none}
@@ -1182,8 +1182,4 @@ img{display:block; max-width:100%}
   .home-page .trifold-inner{max-width:900px;padding:72px 30px 22px;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:minmax(0,1fr);gap:22px}
   .home-page .panel-content{padding:16px 18px}
   .home-page .panel-label{font-size:28px}
-}
-@media (prefers-reduced-motion:reduce){
-  .home-page .home-track{transition:none}
-  .home-page .card-image--busy,.home-page .card-image--neat{transition:none}
 }

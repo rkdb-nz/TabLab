@@ -222,7 +222,6 @@ document.querySelectorAll('.faq-q').forEach(q=>{
 (() => {
   const track = document.querySelector('.home-track');
   if (!track) return;
-  const reduced = matchMedia('(prefers-reduced-motion:reduce)');
   let scene = 0, moving = false, touch = null, revealTimer, settleTimer, lastSwipe = 0;
   function revealAfterRest() {
     moving = false;
@@ -238,12 +237,14 @@ document.querySelectorAll('.faq-q').forEach(q=>{
     clearTimeout(revealTimer);
     clearTimeout(settleTimer);
     wrap.classList.remove('cards-revealed');
+    // Match pottery: set the glide explicitly for every scene change.
+    track.style.transition = 'transform 1.5s cubic-bezier(.65,0,.35,1)';
     track.classList.toggle('show-cards', scene === 1);
     nav.classList.toggle('hidden', scene === 0);
     hero.inert = scene !== 0;
     wrap.inert = scene !== 1;
     // The timer starts only after the glide has finished.
-    settleTimer = setTimeout(revealAfterRest, reduced.matches ? 0 : 1500);
+    settleTimer = setTimeout(revealAfterRest, 1500);
   }
   track.addEventListener('touchstart', event => {
     touch = event.touches.length === 1 ? {x:event.touches[0].clientX,y:event.touches[0].clientY} : null;
