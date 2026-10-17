@@ -1,0 +1,26 @@
+.discover-track{display:contents}
+@media (max-width:700px) and (orientation:portrait), (max-width:1000px) and (orientation:landscape){
+  html.discover-snap,body.discover-page{height:100%;overflow:hidden;overscroll-behavior:none;scroll-snap-type:none}
+  .discover-page .discover-shell{position:fixed;inset:0;height:100%;padding:0;overflow:hidden;touch-action:pan-x}
+  .discover-page .discover-track{display:block;height:100%;will-change:transform}
+  .discover-snap .d-scene,.discover-snap .d-scene-hero{height:100%;min-height:100%;margin:0;padding:96px 24px 32px;align-items:flex-end;scroll-snap-align:none}
+  .discover-page .d-text{width:100%;max-width:520px;padding:24px;flex-shrink:0}
+  .discover-page .d-text h2{font-size:40px;margin-bottom:12px}
+  .discover-page .d-text p{font-size:14px;line-height:1.65}
+  .discover-page .d-hero-copy{min-height:0;gap:18px;padding-right:0}
+  .discover-page .d-hero-title{font-size:clamp(44px,13vw,76px)}
+  .discover-page .d-text-closure{padding:20px}
+  .discover-page .progress{transition:width 1.5s cubic-bezier(.65,0,.35,1)}
+}
+@media (max-width:1000px) and (orientation:landscape){
+  .discover-snap .d-scene,.discover-snap .d-scene-hero{padding:78px 28px 20px;align-items:center}
+  .discover-page .d-text{width:min(56%,460px);padding:18px 24px}
+  .discover-page .d-text h2{font-size:34px;margin-bottom:10px}
+  .discover-page .d-text p{font-size:13px;line-height:1.5}
+  .discover-page .d-hero-title{font-size:52px;max-width:9ch}
+  .discover-page .d-hero-copy{gap:12px}
+  .discover-page .d-text-closure{width:min(75%,580px);padding:14px 20px}
+  .discover-page .d-closing-copy{margin:12px auto}
+  .discover-page .d-text-closure br{display:none}
+  .discover-page .d-text-closure .btn{padding:10px 22px;margin-top:12px}
+}
