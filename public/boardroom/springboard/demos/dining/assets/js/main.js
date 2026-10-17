@@ -7,7 +7,8 @@ if(hero && nav){
 }
 // Trifold scroll
 const wrap = document.querySelector('.trifold-wrap');
-if(wrap){
+const mobileLanding = window.matchMedia("(max-width:700px) and (orientation:portrait), (max-width:1000px) and (orientation:landscape)");
+if(wrap && !mobileLanding.matches){
   const triggerTarget = wrap.querySelector('.trifold-sticky') || wrap;
   const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const revealDurationMs = prefersReducedMotion ? 0 : 800;
@@ -215,4 +216,61 @@ document.querySelectorAll('.faq-q').forEach(q=>{
       openPanel(panel);
     });
   });
+})();
+
+// Mobile landing: a deliberate swipe glides between two complete screens.
+(() => {
+  const track = document.querySelector('.home-track');
+  if (!track) return;
+  const reduced = matchMedia('(prefers-reduced-motion:reduce)');
+  let scene = 0, moving = false, touch = null, revealTimer, settleTimer, lastSwipe = 0;
+  function revealAfterRest() {
+    moving = false;
+    clearTimeout(revealTimer);
+    if (scene === 1) revealTimer = setTimeout(() => {
+      if (mobileLanding.matches && scene === 1) wrap.classList.add('cards-revealed');
+    }, 2000);
+  }
+  function go(next) {
+    if (!mobileLanding.matches || moving || next === scene || next < 0 || next > 1) return;
+    scene = next;
+    moving = true;
+    clearTimeout(revealTimer);
+    clearTimeout(settleTimer);
+    wrap.classList.remove('cards-revealed');
+    track.classList.toggle('show-cards', scene === 1);
+    nav.classList.toggle('hidden', scene === 0);
+    hero.inert = scene !== 0;
+    wrap.inert = scene !== 1;
+    // The timer starts only after the glide has finished.
+    settleTimer = setTimeout(revealAfterRest, reduced.matches ? 0 : 1500);
+  }
+  track.addEventListener('touchstart', event => {
+    touch = event.touches.length === 1 ? {x:event.touches[0].clientX,y:event.touches[0].clientY} : null;
+  }, {passive:true});
+  track.addEventListener('touchend', event => {
+    if (!touch || !event.changedTouches.length) return;
+    const dx = event.changedTouches[0].clientX - touch.x;
+    const dy = event.changedTouches[0].clientY - touch.y;
+    touch = null;
+    if (Math.abs(dy) > 48 && Math.abs(dy) > Math.abs(dx) * 1.2) {
+      lastSwipe = Date.now();
+      go(scene + (dy < 0 ? 1 : -1));
+    }
+  }, {passive:true});
+  track.addEventListener('click', event => {
+    if (mobileLanding.matches && Date.now() - lastSwipe < 400) {event.preventDefault();event.stopImmediatePropagation();}
+  }, true);
+  track.addEventListener('touchcancel', () => {touch = null;}, {passive:true});
+  window.addEventListener('wheel', event => {
+    if (Math.abs(event.deltaY) > 35) go(scene + (event.deltaY > 0 ? 1 : -1));
+  }, {passive:true});
+  document.addEventListener('keydown', event => {
+    if (!mobileLanding.matches || event.target.closest('a,button,[role="button"]')) return;
+    if (['ArrowDown','PageDown',' '].includes(event.key)) {event.preventDefault();go(1);}
+    if (['ArrowUp','PageUp'].includes(event.key)) {event.preventDefault();go(0);}
+  });
+  // Reinitialise the original desktop observer when crossing the breakpoint.
+  mobileLanding.addEventListener('change', () => location.reload());
+  if (mobileLanding.matches) wrap.inert = true;
 })();
