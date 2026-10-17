@@ -248,3 +248,11 @@
   #find .venue-contact-link{text-decoration:underline;text-underline-offset:3px}
   .mobile-venue-copyright{display:block;font-size:.72rem;opacity:.65;margin-top:24px}
 }
+
+/* Keep the home title to its intended three lines on phones. */
+@media(max-width:980px){
+  .home-page .h1 span{white-space:nowrap;overflow-wrap:normal;word-break:normal}
+}
+@media(max-width:700px) and (orientation:portrait){
+  .home-page .h1{font-size:clamp(28px,10vw,42px)}
+}
