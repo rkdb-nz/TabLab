@@ -1176,11 +1176,19 @@ img{display:block; max-width:100%}
   .home-page .cards-revealed .panel .card-image--neat,.home-page .panel.is-activating .card-image--neat{opacity:1}
   .home-page .nav{padding:16px 24px}
   .home-page .nav-logo{font-size:16px}
-  .home-page .mobile-toggle{display:none}
   .home-page .scroll-ind{display:none}
 }
 @media (max-width:1000px) and (orientation:landscape){
   .home-page .trifold-inner{max-width:900px;padding:72px 30px 22px;grid-template-columns:repeat(3,minmax(0,1fr));grid-template-rows:minmax(0,1fr);gap:22px}
   .home-page .panel-content{padding:16px 18px}
   .home-page .panel-label{font-size:28px}
+}
+
+/* A visible, working menu for portrait and landscape restaurant pages. */
+@media (max-width:900px), (max-width:1000px) and (orientation:landscape){
+  .nav .mobile-toggle{display:flex;align-items:center;justify-content:center;width:44px;height:44px;flex-shrink:0;border:1px solid #b48e5c55;border-radius:6px;background:transparent;color:var(--charcoal);font-size:25px;line-height:1;cursor:pointer}
+  .nav .nav-links{display:none}
+  .nav.mobile-menu-open .nav-links{display:flex;position:absolute;top:100%;left:0;right:0;gap:4px;padding:12px 20px;background:var(--warm);border-bottom:1px solid #b48e5c55;box-shadow:0 12px 20px #0002;flex-wrap:wrap}
+  .nav.mobile-menu-open .nav-links a{display:flex;align-items:center;justify-content:center;min-height:44px;flex:1 0 40%;padding:10px 14px;font-size:12px}
+  .home-page .nav{padding-block:8px}
 }

@@ -275,3 +275,30 @@ document.querySelectorAll('.faq-q').forEach(q=>{
   mobileLanding.addEventListener('change', () => location.reload());
   if (mobileLanding.matches) wrap.inert = true;
 })();
+
+// Restaurant mobile navigation: keep the links above the page content.
+(() => {
+  const toggle = document.querySelector('.mobile-toggle');
+  const links = document.querySelector('.nav-links');
+  if (!nav || !toggle || !links) return;
+  links.id = 'restaurant-navigation';
+  toggle.type = 'button';
+  toggle.textContent = '☰';
+  toggle.setAttribute('aria-controls', links.id);
+  const setOpen = open => {
+    nav.classList.toggle('mobile-menu-open', open);
+    toggle.setAttribute('aria-expanded', String(open));
+    toggle.setAttribute('aria-label', open ? 'Close restaurant menu' : 'Open restaurant menu');
+    toggle.textContent = open ? '×' : '☰';
+  };
+  setOpen(false);
+  toggle.addEventListener('click', () => setOpen(!nav.classList.contains('mobile-menu-open')));
+  links.addEventListener('click', () => setOpen(false));
+  document.addEventListener('click', event => {if (!nav.contains(event.target)) setOpen(false);});
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape' && nav.classList.contains('mobile-menu-open')) {
+      setOpen(false);
+      toggle.focus();
+    }
+  });
+})();
