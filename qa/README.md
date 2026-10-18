@@ -9,6 +9,6 @@ Screens cover desktop, narrow phones, portrait, landscape and a shallow viewport
 
 Evidence: `results/report.json`, screenshots and `summary.txt`. A successful script is not design approval: review screenshots for spelling in artwork, spacing, hierarchy, balanced photos and interactions. Test real mobile browser behaviour where emulation does not suffice.
 
-Only GET/HEAD requests are allowed during an audit. It cannot send live forms, payments or bookings. Real submissions need a separately approved test environment. Link destinations such as mailto should be inspected without sending email.
+Only GET/HEAD HTTP requests are allowed during an audit. This blocks normal POST submissions, but is not a universal guarantee against side effects: future adapters must avoid live bookings, payments, side-effecting GET links, and external mail actions. Real submissions need a separately approved test environment. Inspect mailto destinations without sending email.
 
 Keep one demo at a time. On GitHub the workflow runs when relevant PR files change; use manual dispatch once the workflow is accepted onto the default branch. No automatic publishing.
