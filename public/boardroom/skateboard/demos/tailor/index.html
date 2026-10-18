@@ -7,12 +7,21 @@
 <link rel="stylesheet" href="../../../../css/foundry-global-nav.css">
 <link rel="stylesheet" href="../../../demo-browser.css?v=mobile-2">
 <style>
-@media(max-width:900px) {
+@media(max-width:900px) and (orientation:portrait) {
   .demo-fullscreen-return {
     top:auto; bottom:max(12px,env(safe-area-inset-bottom)); left:50%;
     transform:translateX(-50%); writing-mode:horizontal-tb;
     width:auto; min-height:48px; padding:0 16px;
     border:1px solid #ad927b; border-radius:12px;
+  }
+}
+@media(max-width:1100px) and (orientation:landscape) and (max-height:700px) {
+  .demo-fullscreen-return {
+    top:50%; bottom:auto; left:0;
+    transform:translateY(-50%); writing-mode:vertical-rl;
+    width:44px; min-height:0; padding:14px 12px;
+    border:1px solid #ad927b; border-left:0;
+    border-radius:0 12px 12px 0;
   }
 }
 </style>
