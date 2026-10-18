@@ -73,17 +73,21 @@ try {
     // Audit cannot send a real order/payment even if a future site's form is wired.
     await context.route('**/*',route=>['GET','HEAD'].includes(route.request().method())?route.continue():route.abort());
     const page=await context.newPage();
+    page.setDefaultTimeout(10000);
+    page.setDefaultNavigationTimeout(15000);
+    console.log(screen.name+': starting');
     page.on('pageerror',e=>entry.errors.push(e.message));
     page.on('response',response=>{if(response.status()>=400&&['document','image','stylesheet','script','font'].includes(response.request().resourceType()))entry.errors.push('HTTP '+response.status()+': '+response.url());});
     page.on('requestfailed',request=>{if(['document','image','stylesheet','script','font'].includes(request.resourceType()))entry.errors.push('Asset request failed: '+request.url());});
     const check=(pass,label)=>entry.checks.push({pass,label});
     try {
-      await page.goto(new URL(target.path,base).href,{waitUntil:'networkidle',timeout:30000});
+      await page.goto(new URL(target.path,base).href,{waitUntil:'domcontentloaded',timeout:15000});
       const iframe=page.locator('iframe');
       check((await iframe.count())===1,'Demo wrapper contains required iframe');
       const content=await iframe.count()?await iframe.elementHandle().then(e=>e.contentFrame()):page;
       await content.waitForLoadState('load');
       const capture=async(name)=>{
+        console.log(screen.name+': capture '+name);
         await page.screenshot({path:resolve(output,screen.name+'-'+name+'.png'),animations:'disabled'});
         const layout=await inspect(content);
         const outer=content===page?null:await inspect(page);
@@ -114,7 +118,7 @@ try {
         await page.waitForURL(u=>u.pathname.replace(/index\.html$/,'')===target.gallery);
         check(true,'Back to gallery reaches expected Tab Lab gallery');
       }
-    } catch(e) {entry.errors.push(e.stack);check(false,'Runtime: '+e.message);}
+    } catch(e) {entry.errors.push(e.stack);check(false,'Runtime: '+e.message);await page.screenshot({path:resolve(output,screen.name+'-runtime-failure.png'),timeout:10000}).catch(()=>{});}
     finally {await context.close();}
     await writeFile(resolve(output,'report.json'),JSON.stringify(report,null,2));
     console.log(screen.name+': '+entry.checks.filter(c=>!c.pass).length+' failed checks; '+entry.errors.length+' runtime errors');
