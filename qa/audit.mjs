@@ -35,11 +35,11 @@ const report={target:targetName,base,commit:process.env.GITHUB_SHA||'local',scre
 // Shared read-only inspection. Ignore hidden/transparent artwork used as mobile backgrounds.
 async function inspect(frame) {
   return frame.evaluate(()=>{
-    const shown=el=>{const s=getComputedStyle(el),r=el.getBoundingClientRect();return s.display!=='none'&&s.visibility!=='hidden'&&Number(s.opacity)!==0&&r.width>0&&r.height>0;};
+    const shown=el=>{const r=el.getBoundingClientRect();if(!r.width||!r.height)return false;for(let a=el;a;a=a.parentElement){const s=getComputedStyle(a);if(s.display==='none'||s.visibility==='hidden'||Number(s.opacity)===0)return false;}return true;};
     const issues=[];
     if(document.documentElement.scrollWidth>innerWidth+2) issues.push('Horizontal document overflow');
     for(const img of document.images) if(shown(img)&&(!img.complete||!img.naturalWidth)) issues.push('Broken image: '+img.getAttribute('src'));
-    const selectors='.feature-copy h2,.feature-copy p,.mobile-order-button,.overlay:not([hidden]) h2,.overlay:not([hidden]) .lead,.overlay:not([hidden]) .form-status';
+    const selectors='.feature-copy h2,.feature-copy p,.mobile-order-button,.overlay:not([hidden]) h2,.overlay:not([hidden]) p,.overlay:not([hidden]) strong,.overlay:not([hidden]) small,.overlay:not([hidden]) article span,.overlay:not([hidden]) label,.overlay:not([hidden]) input,.overlay:not([hidden]) select,.overlay:not([hidden]) textarea,.overlay:not([hidden]) button';
     const measured=[];
     for(const el of document.querySelectorAll(selectors)) {
       if(!shown(el)||!el.textContent.trim()) continue;
@@ -51,6 +51,9 @@ async function inspect(frame) {
       let a=el.parentElement;
       while(a&&a!==document.body) {
         const cs=getComputedStyle(a),ar=a.getBoundingClientRect();
+        // Contents can intentionally extend beyond a scrollable panel. Its
+        // ancestors must not cause a false clipping failure for scrollable text.
+        if(['auto','scroll'].includes(cs.overflowY)&&a.scrollHeight>a.clientHeight+2) break;
         if(['hidden','clip'].includes(cs.overflowY)&&(r.top<ar.top-2||r.bottom>ar.bottom+2)) {issues.push('Clipped vertically: '+text);break;}
         if(['hidden','clip'].includes(cs.overflowX)&&(r.left<ar.left-2||r.right>ar.right+2)) {issues.push('Clipped horizontally: '+text);break;}
         a=a.parentElement;
@@ -71,10 +74,13 @@ try {
     await context.route('**/*',route=>['GET','HEAD'].includes(route.request().method())?route.continue():route.abort());
     const page=await context.newPage();
     page.on('pageerror',e=>entry.errors.push(e.message));
+    page.on('response',response=>{if(response.status()>=400&&['document','image','stylesheet','script','font'].includes(response.request().resourceType()))entry.errors.push('HTTP '+response.status()+': '+response.url());});
+    page.on('requestfailed',request=>{if(['document','image','stylesheet','script','font'].includes(request.resourceType()))entry.errors.push('Asset request failed: '+request.url());});
     const check=(pass,label)=>entry.checks.push({pass,label});
     try {
       await page.goto(new URL(target.path,base).href,{waitUntil:'networkidle',timeout:30000});
       const iframe=page.locator('iframe');
+      check((await iframe.count())===1,'Demo wrapper contains required iframe');
       const content=await iframe.count()?await iframe.elementHandle().then(e=>e.contentFrame()):page;
       await content.waitForLoadState('load');
       const capture=async(name)=>{
@@ -87,6 +93,7 @@ try {
       };
       await capture('framed');
       const full=page.getByRole('button',{name:'Open example in full screen',exact:true});
+      check((await full.count())===1,'Required full-screen control exists');
       if(await full.count()) {
         await full.click();
         await page.getByRole('button',{name:'Exit full screen and return to Tab Lab frame',exact:true}).waitFor({state:'visible'});
@@ -101,6 +108,7 @@ try {
         check(await full.isVisible(),'Tab Lab tab restores browser frame');
       }
       const back=page.getByRole('button',{name:'Back to gallery',exact:true});
+      check((await back.count())===1,'Required gallery return exists');
       if(await back.count()) {
         await back.click();
         await page.waitForURL(u=>u.pathname.replace(/index\.html$/,'')===target.gallery);
