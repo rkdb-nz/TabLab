@@ -1237,3 +1237,18 @@ img{display:block; max-width:100%}
   .dine-page .meet-editorial .meet-copy p { font-size:15px; line-height:1.65; }
   .dine-page .meet-editorial .signature { margin-top:18px; }
 }
+
+/* Consistent compact navigation across every restaurant page in landscape. */
+@media (orientation:landscape) and (max-width:1000px) and (max-height:700px) {
+  body .nav,
+  body.home-page .nav,
+  body.dine-page .nav,
+  body.wine-page .nav,
+  body.sign-page .nav {
+    height:52px;
+    min-height:52px;
+    padding:3px max(24px,env(safe-area-inset-right)) 3px max(24px,env(safe-area-inset-left));
+  }
+  body .nav .nav-logo { font-size:16px; line-height:1.2; }
+  body .nav .mobile-toggle { width:44px; height:44px; min-height:44px; }
+}
