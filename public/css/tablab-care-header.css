@@ -204,3 +204,12 @@
   #tablabInner#tablabInner .foundrycare-services h2 { font-size:18px !important; line-height:1.15 !important; }
   #tablabInner#tablabInner .foundrycare-services p { font-size:13px !important; line-height:1.4 !important; }
 }
+
+/* Landscape care page: match the clean Tab Lab information-page background. */
+@media (orientation:landscape) and (max-width:1100px) and (max-height:700px) {
+  #tablabInner.foundrycare-page .foundrycare-scene {
+    background-image:linear-gradient(135deg,#fff8ed,#efdbc1) !important;
+    background-color:#fff8ed;
+    background-attachment:scroll !important;
+  }
+}
