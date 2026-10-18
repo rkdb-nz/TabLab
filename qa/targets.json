@@ -1,0 +1,7 @@
+{
+  "donut": {
+    "path": "/boardroom/billboard/demos/donut/",
+    "adapter": "donut",
+    "gallery": "/boardroom/billboard/"
+  }
+}
