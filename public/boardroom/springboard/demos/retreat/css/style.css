@@ -725,3 +725,66 @@ body:has(.hero) .header:not(.scrolled){
   .header .menu-btn { width:44px; height:44px; flex-basis:44px; }
   .header .nav { padding-top:60px; }
 }
+
+/* Landscape collection: compact property spreads with a separate gallery rail. */
+@media (orientation:landscape) and (max-width:1000px) and (max-height:700px) {
+  html.retreats-snap { scroll-snap-type:none; scroll-padding-top:68px; }
+  .retreats-snap body > .section:first-of-type {
+    padding:82px 0 28px !important;
+    scroll-snap-align:none;
+  }
+  .retreats-snap body > .section:first-of-type .eyebrow { margin-bottom:8px; }
+  .retreats-snap body > .section:first-of-type .h2 { font-size:36px; margin-bottom:12px; }
+  .retreats-snap body > .section:first-of-type .lead { max-width:64ch; font-size:16px; line-height:1.5; }
+  .retreats-snap .retreat-full,
+  .retreats-snap .retreat-full:nth-child(even) {
+    display:grid;
+    grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr) !important;
+    grid-template-rows:auto auto auto auto auto;
+    grid-template-areas:
+      "photo eyebrow"
+      "photo title"
+      "photo description"
+      "photo highlights"
+      "thumbnails enquiry";
+    column-gap:28px;
+    row-gap:8px;
+    align-items:start;
+    min-height:0;
+    padding:24px 5vw 28px;
+    scroll-snap-align:none;
+    scroll-margin-top:68px;
+  }
+  .retreats-snap .retreat-full::after { display:none; }
+  .retreats-snap .retreat-full .retreat-media,
+  .retreats-snap .retreat-full:nth-child(even) .retreat-media {
+    grid-area:photo;
+    order:0 !important;
+    width:100%;
+    min-height:190px;
+    height:100%;
+    aspect-ratio:auto;
+    border-radius:10px;
+    align-self:stretch;
+  }
+  .retreats-snap .retreat-media > img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+  .retreats-snap .retreat-full .retreat-copy { display:contents; }
+  .retreats-snap .retreat-copy > .eyebrow { grid-area:eyebrow; margin:0; font-size:10px; line-height:1.4; }
+  .retreats-snap .retreat-copy > h2 { grid-area:title; margin:0; font-size:32px; line-height:1.05; }
+  .retreats-snap .retreat-copy > p { grid-area:description; margin:0; font-size:15px; line-height:1.5; }
+  .retreats-snap .retreat-highlights { grid-area:highlights; margin:4px 0 8px; gap:6px; }
+  .retreats-snap .retreat-highlights .hl { padding:5px 9px; font-size:10px; line-height:1.4; letter-spacing:.06em; }
+  .retreats-snap .retreat-thumbs { grid-area:thumbnails; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin:0; }
+  .retreats-snap .retreat-thumb-btn { width:100%; height:58px; min-height:44px; aspect-ratio:auto; border-radius:5px; }
+  .retreats-snap .retreat-thumb-btn img { width:100%; height:100%; aspect-ratio:auto; }
+  .retreats-snap .retreat-copy > .btn,
+  .retreats-snap .retreat-copy .retreat-thumbs + br + .btn {
+    grid-area:enquiry; align-self:center; justify-self:start;
+    min-height:44px; margin:0; padding:10px 18px;
+    font-size:10px; line-height:1.4; letter-spacing:.12em;
+  }
+  .retreats-snap .retreat-inclusions { padding:32px 0 44px; }
+  .retreats-snap .retreat-inclusions .eyebrow { margin-bottom:18px; }
+  .retreats-snap .inclusion-list { grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px 24px; padding-bottom:0; }
+  .retreats-snap .inclusion-list li { font-size:20px; line-height:1.25; }
+}
