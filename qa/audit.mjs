@@ -41,8 +41,10 @@ async function inspect(frame) {
     for(const img of document.images) if(shown(img)&&(!img.complete||!img.naturalWidth)) issues.push('Broken image: '+img.getAttribute('src'));
     const measured=[];
     for(const el of document.querySelectorAll(selector)) {
-      if(!shown(el)||!el.textContent.trim()) continue;
-      const r=el.getBoundingClientRect(),s=getComputedStyle(el),text=el.textContent.trim().replace(/\s+/g,' ').slice(0,85);
+      if(!shown(el)) continue;
+      const raw=(el instanceof HTMLInputElement||el instanceof HTMLTextAreaElement)?el.value||el.placeholder||el.getAttribute('name')||el.tagName:el.textContent;
+      if(!raw.trim()) continue;
+      const r=el.getBoundingClientRect(),s=getComputedStyle(el),text=raw.trim().replace(/\s+/g,' ').slice(0,85);
       measured.push({text,font:parseFloat(s.fontSize),x:r.x,y:r.y,width:r.width,height:r.height});
       if(parseFloat(s.fontSize)<minTextPx) issues.push('Small text: '+text+' ('+s.fontSize+')');
       // A scrollable overlay may intentionally contain off-screen content. Only flag
@@ -81,9 +83,9 @@ try {
     const check=(pass,label)=>entry.checks.push({pass,label});
     try {
       await page.goto(new URL(target.path,base).href,{waitUntil:'domcontentloaded',timeout:15000});
-      const iframe=page.locator('iframe');
+      const iframe=page.locator(target.frameSelector||'iframe');
       if(target.wrapped) check((await iframe.count())===1,'Demo wrapper contains required iframe');
-      const content=await iframe.count()?await iframe.elementHandle().then(e=>e.contentFrame()):page;
+      const content=(target.wrapped||target.frameSelector)?await iframe.elementHandle().then(e=>e.contentFrame()):page;
       await content.waitForLoadState('load');
       const capture=async(name)=>{
         console.log(screen.name+': capture '+name);
