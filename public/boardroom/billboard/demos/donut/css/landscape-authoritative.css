@@ -117,3 +117,27 @@
     background: linear-gradient(180deg, rgba(255,245,239,.91), rgba(255,237,230,.95)) !important;
   }
 }
+
+/* Readability review: space for real text rather than shrinking it. */
+@media (max-width:760px) and (orientation:portrait) {
+  .site { grid-template-rows:clamp(58px,8dvh,76px) minmax(0,20fr) minmax(0,28fr) minmax(0,52fr) !important; }
+  .feature-card,.feature-card:nth-child(even) { grid-template-columns:40px minmax(0,1fr) !important; padding:4px 8px !important; }
+  .feature-copy { padding:0 4px !important; overflow:visible !important; }
+  .feature-copy h2 { font-size:14px !important; line-height:1.15 !important; margin-bottom:4px !important; white-space:normal !important; }
+  .feature-copy p { font-size:13px !important; line-height:1.25 !important; display:block !important; white-space:normal !important; overflow:visible !important; text-overflow:clip !important; -webkit-line-clamp:unset !important; -webkit-box-orient:initial !important; }
+}
+@media (orientation:landscape) and (max-width:1000px) and (max-height:520px) {
+  .site { grid-template-columns:58% 42% !important; grid-template-rows:clamp(50px,15dvh,64px) minmax(0,1fr) !important; }
+  .hero { grid-row:2 !important; }
+  .mobile-message { width:49% !important; height:calc(100% - clamp(50px,15dvh,64px)) !important; justify-content:center !important; }
+  .features { grid-row:2 !important; padding:6px max(8px,env(safe-area-inset-right)) 6px 8px !important; gap:5px !important; }
+  .feature-card,.feature-card:nth-child(even) { grid-template-columns:30px minmax(0,1fr) !important; padding:4px 6px !important; }
+  .feature-icon { width:26px !important; font-size:15px !important; }
+  .feature-copy { overflow:visible !important; }
+  .feature-copy h2 { font-size:14px !important; line-height:1.1 !important; white-space:normal !important; overflow:visible !important; text-overflow:clip !important; margin-bottom:3px !important; }
+  .feature-copy p { font-size:13px !important; line-height:1.2 !important; display:block !important; white-space:normal !important; overflow:visible !important; text-overflow:clip !important; -webkit-line-clamp:unset !important; -webkit-box-orient:initial !important; }
+}
+@media (min-width:1001px) {
+  .overlay-panel,.overlay-panel--split,.overlay-panel--order { height:auto !important; min-height:0 !important; max-height:calc(100dvh - 28px) !important; overflow:auto !important; border-radius:0 24px 24px 0 !important; }
+}
+.demo-notice { font:14px/1.4 Arial,sans-serif; }
