@@ -1,5 +1,8 @@
 {
   "donut": {
+    "wrapped": true,
+    "minTextPx": 12,
+    "textSelector": ".feature-copy h2,.feature-copy p,.mobile-order-button,.overlay:not([hidden]) h2,.overlay:not([hidden]) p,.overlay:not([hidden]) strong,.overlay:not([hidden]) small,.overlay:not([hidden]) article span,.overlay:not([hidden]) label,.overlay:not([hidden]) input,.overlay:not([hidden]) select,.overlay:not([hidden]) textarea,.overlay:not([hidden]) button",
     "path": "/boardroom/billboard/demos/donut/",
     "adapter": "donut",
     "gallery": "/boardroom/billboard/"

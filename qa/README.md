@@ -5,6 +5,7 @@ By default a temporary local server serves the checked-out `public/` source, wit
 Set `QA_BASE_URL` to test a deployed preview instead. Set `QA_TARGET` to a target in `targets.json`.
 
 The shared runner and screen matrix can be copied to future sites. Each site gets its own target and small interaction adapter; do not assume Donut's menus/forms apply to another site.
+Set `wrapped: true` for Tab Lab gallery demos: missing iframe/full-screen/return controls are failures. Use `wrapped: false` for a customer's standalone site. Each target can set `textSelector` and `minTextPx`; generic headings/body/form controls and a 12px warning threshold are the defaults. These thresholds are checks, not accessibility certification.
 Screens cover desktop, narrow phones, portrait, landscape and a shallow viewport representing browser bars. They emulate viewport and touch, not physical Samsung/iPhone hardware or Safari.
 
 Evidence: `results/report.json`, screenshots and `summary.txt`. A successful script is not design approval: review screenshots for spelling in artwork, spacing, hierarchy, balanced photos and interactions. Test real mobile browser behaviour where emulation does not suffice.

@@ -17,6 +17,9 @@ on:
         required: true
 permissions:
   contents: read
+concurrency:
+  group: browser-audit-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   browser-audit:
     runs-on: ubuntu-latest

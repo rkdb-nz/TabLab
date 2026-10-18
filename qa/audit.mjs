@@ -34,18 +34,17 @@ const report={target:targetName,base,commit:process.env.GITHUB_SHA||'local',scre
 
 // Shared read-only inspection. Ignore hidden/transparent artwork used as mobile backgrounds.
 async function inspect(frame) {
-  return frame.evaluate(()=>{
+  return frame.evaluate(({selector,minTextPx})=>{
     const shown=el=>{const r=el.getBoundingClientRect();if(!r.width||!r.height)return false;for(let a=el;a;a=a.parentElement){const s=getComputedStyle(a);if(s.display==='none'||s.visibility==='hidden'||Number(s.opacity)===0)return false;}return true;};
     const issues=[];
     if(document.documentElement.scrollWidth>innerWidth+2) issues.push('Horizontal document overflow');
     for(const img of document.images) if(shown(img)&&(!img.complete||!img.naturalWidth)) issues.push('Broken image: '+img.getAttribute('src'));
-    const selectors='.feature-copy h2,.feature-copy p,.mobile-order-button,.overlay:not([hidden]) h2,.overlay:not([hidden]) p,.overlay:not([hidden]) strong,.overlay:not([hidden]) small,.overlay:not([hidden]) article span,.overlay:not([hidden]) label,.overlay:not([hidden]) input,.overlay:not([hidden]) select,.overlay:not([hidden]) textarea,.overlay:not([hidden]) button';
     const measured=[];
-    for(const el of document.querySelectorAll(selectors)) {
+    for(const el of document.querySelectorAll(selector)) {
       if(!shown(el)||!el.textContent.trim()) continue;
       const r=el.getBoundingClientRect(),s=getComputedStyle(el),text=el.textContent.trim().replace(/\s+/g,' ').slice(0,85);
       measured.push({text,font:parseFloat(s.fontSize),x:r.x,y:r.y,width:r.width,height:r.height});
-      if(parseFloat(s.fontSize)<12) issues.push('Small text: '+text+' ('+s.fontSize+')');
+      if(parseFloat(s.fontSize)<minTextPx) issues.push('Small text: '+text+' ('+s.fontSize+')');
       // A scrollable overlay may intentionally contain off-screen content. Only flag
       // clipping by non-scrollable hidden ancestors, and visible landing controls.
       let a=el.parentElement;
@@ -62,7 +61,7 @@ async function inspect(frame) {
       if(!el.closest('.overlay')&&el.scrollHeight>el.clientHeight+2&&['hidden','clip'].includes(s.overflowY)) issues.push('Text truncated: '+text);
     }
     return {viewport:{width:innerWidth,height:innerHeight},issues:[...new Set(issues)],measured};
-  });
+  },{selector:target.textSelector||'h1,h2,h3,p,label,button,input,select,textarea',minTextPx:target.minTextPx||12});
 }
 
 try {
@@ -83,7 +82,7 @@ try {
     try {
       await page.goto(new URL(target.path,base).href,{waitUntil:'domcontentloaded',timeout:15000});
       const iframe=page.locator('iframe');
-      check((await iframe.count())===1,'Demo wrapper contains required iframe');
+      if(target.wrapped) check((await iframe.count())===1,'Demo wrapper contains required iframe');
       const content=await iframe.count()?await iframe.elementHandle().then(e=>e.contentFrame()):page;
       await content.waitForLoadState('load');
       const capture=async(name)=>{
@@ -97,7 +96,7 @@ try {
       };
       await capture('framed');
       const full=page.getByRole('button',{name:'Open example in full screen',exact:true});
-      check((await full.count())===1,'Required full-screen control exists');
+      if(target.wrapped) check((await full.count())===1,'Required full-screen control exists');
       if(await full.count()) {
         await full.click();
         await page.getByRole('button',{name:'Exit full screen and return to Tab Lab frame',exact:true}).waitFor({state:'visible'});
@@ -112,7 +111,7 @@ try {
         check(await full.isVisible(),'Tab Lab tab restores browser frame');
       }
       const back=page.getByRole('button',{name:'Back to gallery',exact:true});
-      check((await back.count())===1,'Required gallery return exists');
+      if(target.wrapped) check((await back.count())===1,'Required gallery return exists');
       if(await back.count()) {
         await back.click();
         await page.waitForURL(u=>u.pathname.replace(/index\.html$/,'')===target.gallery);
