@@ -821,11 +821,11 @@ body:has(.hero) .header:not(.scrolled){
   }
   body:has(#clementine-book-form) .book-grid > div:last-child { grid-area:location; width:100%; min-width:0; }
   body:has(#clementine-book-form) .book-grid > div:last-child > div {
-    display:grid; grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);
+    display:grid; grid-template-columns:160px minmax(0,1fr);
     align-items:center; aspect-ratio:auto !important; border-radius:10px;
   }
   body:has(#clementine-book-form) .book-grid > div:last-child img {
-    width:100%; height:160px; object-fit:cover;
+    width:160px; height:160px; object-fit:contain;
   }
   body:has(#clementine-book-form) .book-grid > div:last-child img + div { padding:18px 24px !important; }
   body:has(#clementine-book-form) .book-grid > div:last-child .eyebrow { margin-bottom:8px; }
