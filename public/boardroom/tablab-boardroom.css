@@ -118,3 +118,32 @@
     align-self: center;
   }
 }
+
+/* Landscape: let the document grow and scroll when the cards exceed the viewport.
+   The old mobile grid locked html even after body/content became taller. */
+@media (orientation:landscape) and (max-width:1100px) and (max-height:700px) {
+  html {
+    height:auto !important;
+    min-height:100%;
+    overflow-x:hidden !important;
+    overflow-y:auto !important;
+    overscroll-behavior-y:auto;
+    scroll-padding-top:76px;
+  }
+  body#tablabInner#tablabInner {
+    height:auto !important;
+    min-height:100dvh;
+    overflow-x:hidden !important;
+    overflow-y:visible !important;
+    overscroll-behavior-y:auto;
+  }
+  #tablabInner#tablabInner .boardroom {
+    height:auto !important;
+    min-height:100dvh !important;
+    grid-template-rows:auto !important;
+    overflow:visible !important;
+    padding-bottom:max(24px,env(safe-area-inset-bottom)) !important;
+  }
+  #tablabInner#tablabInner .intro { align-self:start !important; }
+  #tablabInner#tablabInner .boards { height:auto !important; }
+}
