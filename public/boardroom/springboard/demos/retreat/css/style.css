@@ -802,3 +802,26 @@ body:has(.hero) .header:not(.scrolled){
       "enquiry thumbnails";
   }
 }
+
+/* Booking landscape: a compact location panel alongside the enquiry form. */
+@media (orientation:landscape) and (max-width:1000px) and (max-height:700px) {
+  body:has(#clementine-book-form) .book-grid {
+    grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);
+    gap:28px;
+    align-items:start;
+  }
+  body:has(#clementine-book-form) .book-grid > div { min-width:0; }
+  body:has(#clementine-book-form) .book-grid > div:last-child {
+    width:100%; max-width:320px; justify-self:end;
+  }
+  body:has(#clementine-book-form) .book-grid > div:last-child > div {
+    aspect-ratio:auto !important;
+    border-radius:10px;
+  }
+  body:has(#clementine-book-form) .book-grid > div:last-child img {
+    width:100%; height:clamp(140px,42dvh,200px); object-fit:contain;
+  }
+  body:has(#clementine-book-form) .book-grid > div:last-child img + div { padding:18px !important; }
+  body:has(#clementine-book-form) .book-grid > div:last-child .eyebrow { margin-bottom:8px; }
+  body:has(#clementine-book-form) .book-grid > div:last-child p { font-size:14px; line-height:1.55; }
+}
