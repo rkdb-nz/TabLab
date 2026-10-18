@@ -128,3 +128,23 @@
   #tablabInner#tablabInner.whywebsite-page .whywebsite-mobile-pill { min-height:44px; }
   #tablabInner#tablabInner.whywebsite-page .whywebsite-mobile-pill p { font-size:14px; line-height:1.12; }
 }
+
+/* Compact floating headers on the three landscape information pages. */
+@media (orientation:landscape) and (max-width:1100px) and (max-height:700px) {
+  body#tablabInner#tablabInner:is(.whywebsite-page,.foundry-info-page,.foundrycare-page) {
+    --chrome-height:calc(56px + env(safe-area-inset-top,0px)) !important;
+  }
+  body#tablabInner#tablabInner:is(.whywebsite-page,.foundry-info-page,.foundrycare-page) .tablab-studio-brand {
+    top:calc(6px + env(safe-area-inset-top,0px));
+    height:44px;
+  }
+  body#tablabInner#tablabInner:is(.whywebsite-page,.foundry-info-page,.foundrycare-page) .foundry-global-nav {
+    inset:calc(6px + env(safe-area-inset-top,0px)) 12px auto auto !important;
+  }
+  body#tablabInner#tablabInner.foundry-info-page .foundry-about-layout {
+    padding-top:calc(68px + env(safe-area-inset-top,0px)) !important;
+  }
+  body#tablabInner#tablabInner.foundrycare-page .foundrycare-content {
+    padding-top:calc(64px + env(safe-area-inset-top,0px)) !important;
+  }
+}
