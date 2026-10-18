@@ -803,25 +803,51 @@ body:has(.hero) .header:not(.scrolled){
   }
 }
 
-/* Booking landscape: a compact location panel alongside the enquiry form. */
+/* Booking landscape: location strip above a balanced two-column enquiry form. */
 @media (orientation:landscape) and (max-width:1000px) and (max-height:700px) {
+  body:has(#clementine-book-form) > .section:first-of-type { padding:82px 0 24px !important; }
+  body:has(#clementine-book-form) > .section:first-of-type .eyebrow { margin-bottom:8px; }
+  body:has(#clementine-book-form) > .section:first-of-type h1 { font-size:36px; margin-bottom:0; }
   body:has(#clementine-book-form) .book-grid {
-    grid-template-columns:minmax(0,1.2fr) minmax(0,.8fr);
-    gap:28px;
+    grid-template-columns:minmax(0,1fr);
+    grid-template-areas:"location" "intro" "form";
+    gap:22px;
     align-items:start;
   }
-  body:has(#clementine-book-form) .book-grid > div { min-width:0; }
-  body:has(#clementine-book-form) .book-grid > div:last-child {
-    width:100%; max-width:320px; justify-self:end;
+  body:has(#clementine-book-form) .book-grid > div:first-child { display:contents; }
+  body:has(#clementine-book-form) .book-grid > div:first-child > p {
+    grid-area:intro; max-width:none !important; margin:0 !important;
+    font-size:15px; line-height:1.5;
   }
+  body:has(#clementine-book-form) .book-grid > div:last-child { grid-area:location; width:100%; min-width:0; }
   body:has(#clementine-book-form) .book-grid > div:last-child > div {
-    aspect-ratio:auto !important;
-    border-radius:10px;
+    display:grid; grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr);
+    align-items:center; aspect-ratio:auto !important; border-radius:10px;
   }
   body:has(#clementine-book-form) .book-grid > div:last-child img {
-    width:100%; height:clamp(140px,42dvh,200px); object-fit:contain;
+    width:100%; height:160px; object-fit:cover;
   }
-  body:has(#clementine-book-form) .book-grid > div:last-child img + div { padding:18px !important; }
+  body:has(#clementine-book-form) .book-grid > div:last-child img + div { padding:18px 24px !important; }
   body:has(#clementine-book-form) .book-grid > div:last-child .eyebrow { margin-bottom:8px; }
   body:has(#clementine-book-form) .book-grid > div:last-child p { font-size:14px; line-height:1.55; }
+  #clementine-book-form {
+    grid-area:form; display:grid; grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:8px 28px; max-width:none !important; align-items:start;
+  }
+  #clementine-book-form label { margin:8px 0 0; }
+  #clementine-book-form .input { min-width:0; min-height:44px; padding:10px 0; }
+  #clementine-book-form label:nth-of-type(1) { grid-area:1 / 1; }
+  #clementine-book-form select { grid-area:2 / 1; }
+  #clementine-book-form label:nth-of-type(2) { grid-area:1 / 2; }
+  #clementine-book-form input:nth-of-type(1) { grid-area:2 / 2; }
+  #clementine-book-form label:nth-of-type(3) { grid-area:3 / 1; }
+  #clementine-book-form input:nth-of-type(2) { grid-area:4 / 1; }
+  #clementine-book-form label:nth-of-type(4) { grid-area:3 / 2; }
+  #clementine-book-form input:nth-of-type(3) { grid-area:4 / 2; }
+  #clementine-book-form label:nth-of-type(5) { grid-area:5 / 1; }
+  #clementine-book-form input:nth-of-type(4) { grid-area:6 / 1; }
+  #clementine-book-form label:nth-of-type(6) { grid-area:5 / 2; }
+  #clementine-book-form textarea { grid-area:6 / 2; resize:vertical; }
+  #clementine-book-form br { display:none; }
+  #clementine-book-form > button { grid-area:7 / 1 / 8 / 3; justify-self:start; min-height:44px; margin-top:12px; }
 }
