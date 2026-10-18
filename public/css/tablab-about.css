@@ -81,3 +81,39 @@
 #tablabInner#tablabInner .tablab-studio-brand {
   background:linear-gradient(#f9fbf4,#e7eddf);
 }
+
+/* Phone landscape: balance the introduction against the principles panel. */
+@media (orientation:landscape) and (max-width:1100px) and (max-height:700px) {
+  #tablabInner .foundry-about-layout {
+    width:calc(100% - 64px); min-height:100dvh; box-sizing:border-box;
+    margin:0 auto; padding:88px 0 24px;
+    grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr);
+    grid-template-rows:1fr auto; align-items:start; gap:20px 28px;
+  }
+  #tablabInner .foundry-about-copy { min-width:0; max-width:none; }
+  #tablabInner .foundry-about-copy h1 {
+    font-size:clamp(30px,9dvh,40px); line-height:1.02;
+  }
+  #tablabInner .foundry-about-lead,
+  #tablabInner .foundry-about-statement { font-size:15px; line-height:1.4; }
+  #tablabInner .foundry-about-lead { margin:0 0 14px; }
+  #tablabInner .foundry-about-statement { margin:16px 0 0; }
+  #tablabInner .foundry-about-lead br,
+  #tablabInner .foundry-about-statement br { display:none; }
+  #tablabInner .foundry-principles { min-width:0; padding:16px; }
+  #tablabInner .foundry-principles-title { margin-bottom:12px; font-size:11px; letter-spacing:.2em; }
+  #tablabInner .foundry-principles-title::after { display:none; }
+  #tablabInner .foundry-principles-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  #tablabInner .foundry-principle,
+  #tablabInner .foundry-principle:nth-child(even),
+  #tablabInner .foundry-principle:nth-child(-n+2) {
+    padding:12px 10px; border-top:1px solid rgba(238,228,212,.1); border-left:0;
+  }
+  #tablabInner .foundry-principle:nth-child(-n+2) { padding-top:0; border-top:0; }
+  #tablabInner .foundry-principle:nth-child(even) { border-left:1px solid rgba(238,228,212,.1); }
+  #tablabInner .foundry-principle-head { min-height:28px; gap:10px; margin-bottom:8px; }
+  #tablabInner .foundry-principle svg { width:26px; height:26px; }
+  #tablabInner .foundry-principle h2 { margin-bottom:6px; font-size:18px; line-height:1.15; }
+  #tablabInner .foundry-principle p { font-size:13px; line-height:1.4; }
+  #tablabInner .foundry-principle a { margin-top:10px; font-size:10px; line-height:1.4; }
+}
