@@ -7,6 +7,8 @@ on:
       - '.github/workflows/browser-audit.yml'
       - 'public/boardroom/billboard/demos/donut/**'
       - 'public/boardroom/demo-browser*'
+      - 'public/js/foundry-global-nav.js'
+      - 'public/css/foundry-global-nav.css'
   workflow_dispatch:
     inputs:
       target:
