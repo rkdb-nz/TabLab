@@ -120,7 +120,7 @@
 
 /* Readability review: space for real text rather than shrinking it. */
 @media (max-width:760px) and (orientation:portrait) {
-  .site { grid-template-rows:clamp(58px,8dvh,76px) minmax(0,20fr) minmax(0,28fr) minmax(0,52fr) !important; }
+  .site { grid-template-rows:clamp(58px,8dvh,76px) minmax(0,20fr) minmax(150px,28fr) minmax(220px,52fr) !important; }
   .feature-card,.feature-card:nth-child(even) { grid-template-columns:40px minmax(0,1fr) !important; padding:4px 8px !important; }
   .feature-copy { padding:0 4px !important; overflow:visible !important; }
   .feature-copy h2 { font-size:14px !important; line-height:1.15 !important; margin-bottom:4px !important; white-space:normal !important; }
