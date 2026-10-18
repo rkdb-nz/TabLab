@@ -302,3 +302,14 @@ document.querySelectorAll('.faq-q').forEach(q=>{
     }
   });
 })();
+
+// Direct landscape previews also need a route back to the Tab Lab frame.
+(() => {
+  if (window.self !== window.top || document.querySelector('.restaurant-tablab-return')) return;
+  const link = document.createElement('a');
+  link.className = 'restaurant-tablab-return';
+  link.href = './';
+  link.textContent = 'Tab Lab';
+  link.setAttribute('aria-label', 'Return to the Tab Lab demo frame');
+  document.body.append(link);
+})();
