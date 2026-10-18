@@ -1,0 +1,43 @@
+name: Tab Lab browser audit
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'qa/**'
+      - '.github/workflows/browser-audit.yml'
+      - 'public/boardroom/billboard/demos/donut/**'
+      - 'public/boardroom/demo-browser*'
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Target name in qa/targets.json
+        default: donut
+        required: true
+permissions:
+  contents: read
+jobs:
+  browser-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Install audit dependencies
+        working-directory: qa
+        run: npm install --ignore-scripts
+      - name: Install Chromium
+        working-directory: qa
+        run: npx playwright install --with-deps chromium
+      - name: Run browser audit
+        working-directory: qa
+        env:
+          QA_TARGET: ${{ inputs.target || 'donut' }}
+        run: npm run audit
+      - uses: actions/upload-artifact@v5
+        if: ${{ !cancelled() }}
+        with:
+          name: browser-audit-evidence
+          path: qa/results/
+          retention-days: 14
