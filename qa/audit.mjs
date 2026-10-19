@@ -34,9 +34,9 @@ if(!base) {
   base='http://127.0.0.1:4173';
 }
 let browser;
-try {browser=await engine.launch({headless:true,...(browserName==='firefox'?{firefoxUserPrefs:{'full-screen-api.ignore-widgets':true}}:{})});}
+try {browser=await engine.launch({headless:true});}
 catch(error) {await writeFile(resolve(output,'setup-failure.json'),JSON.stringify({browser:browserName,error:error.stack}));if(server)await new Promise(r=>server.close(r));throw error;}
-const report={target:targetName,base,browser:browserName,browserVersion:browser.version(),platform:process.platform,startedAt:new Date().toISOString(),reviewStatus:'Pending visual and checklist review',commit:process.env.GITHUB_SHA||'local',screens:[],limitations:['Viewport/touch emulation; not physical devices.','Screenshots require human visual review; geometry assertions do not judge design quality.','Open-state rotation is tested in the frame; full-screen states run at each fixed size, not native full-screen rotation.', ...(browserName==='firefox'?['Firefox: viewport/touch only; isMobile unsupported. Fullscreen stays inside the emulated window using full-screen-api.ignore-widgets; native OS fullscreen is not verified.']:[]), ...(browserName==='webkit'?['Linux WebKit is not actual Safari or iOS.']:[])]};
+const report={target:targetName,base,browser:browserName,browserVersion:browser.version(),platform:process.platform,startedAt:new Date().toISOString(),reviewStatus:'Pending visual and checklist review',commit:process.env.GITHUB_SHA||'local',screens:[],limitations:['Viewport/touch emulation; not physical devices.','Screenshots require human visual review; geometry assertions do not judge design quality.','Open-state rotation is tested in the frame; full-screen states run at each fixed size, not native full-screen rotation.', ...(browserName==='firefox'?['Firefox: viewport/touch only; isMobile unsupported. Wrapped demos test the existing CSS fullscreen fallback with the native API unavailable. Native OS fullscreen cannot preserve the requested emulated dimensions and is not verified.']:[]), ...(browserName==='webkit'?['Linux WebKit is not actual Safari or iOS.']:[])]};
 
 // Shared read-only inspection. Ignore hidden/transparent artwork used as mobile backgrounds.
 async function inspect(frame) {
@@ -80,6 +80,11 @@ try {
     let context,page;
     try {
     context=await browser.newContext({viewport:{width:screen.width,height:screen.height},...(browserName==='firefox'?{}:{isMobile:!!screen.mobile}),hasTouch:!!screen.mobile,deviceScaleFactor:1});
+    if(browserName==='firefox'&&target.wrapped) {
+      // Firefox native fullscreen changes the real window outside viewport emulation.
+      // Exercise the product's existing unsupported-API fallback, explicitly reported.
+      await context.addInitScript(()=>Object.defineProperty(Element.prototype,'requestFullscreen',{value:undefined,configurable:true}));
+    }
     // Defense in depth only: adapters must avoid live side effects, including GETs.
     await context.route('**/*',route=>{if(['GET','HEAD'].includes(route.request().method()))return route.continue();entry.blockedRequests.push({method:route.request().method(),url:route.request().url()});return route.abort();});
     page=await context.newPage();

@@ -22,4 +22,4 @@ A disconnected standalone fixture also runs on all engines. It checks ordinary b
 
 Open-dialog rotation runs in the frame because Chromium cannot resize a native full-screen window via Playwright. The adapter also tests every dialog independently at each fixed full-screen size. Actual full-screen device rotation remains an explicit boundary.
 
-Every capture asserts actual outer browser dimensions match the requested viewport. Firefox uses full-screen-api.ignore-widgets=true to keep fullscreen inside that emulated window; native OS fullscreen is not claimed. This prevents a desktop fullscreen render being cropped into a phone-sized screenshot.
+Every capture asserts actual outer browser dimensions match the requested viewport. Firefox wrapper tests deliberately make the native fullscreen API unavailable and exercise the existing CSS fallback. Native Firefox fullscreen does not retain the requested emulated dimensions in this environment and remains untested. This prevents a desktop fullscreen render being cropped into a phone-sized screenshot.
