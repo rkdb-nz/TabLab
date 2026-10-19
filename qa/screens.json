@@ -1,0 +1,83 @@
+[
+  {
+    "name": "desktop-1366",
+    "width": 1366,
+    "height": 768
+  },
+  {
+    "name": "desktop-1440",
+    "width": 1440,
+    "height": 900
+  },
+  {
+    "name": "desktop-1920",
+    "width": 1920,
+    "height": 1080
+  },
+  {
+    "name": "small-portrait",
+    "width": 320,
+    "height": 568,
+    "mobile": true
+  },
+  {
+    "name": "small-landscape",
+    "width": 568,
+    "height": 320,
+    "mobile": true
+  },
+  {
+    "name": "android-portrait",
+    "width": 360,
+    "height": 780,
+    "mobile": true
+  },
+  {
+    "name": "android-landscape",
+    "width": 780,
+    "height": 360,
+    "mobile": true
+  },
+  {
+    "name": "iphone-portrait",
+    "width": 390,
+    "height": 844,
+    "mobile": true
+  },
+  {
+    "name": "iphone-landscape",
+    "width": 844,
+    "height": 390,
+    "mobile": true
+  },
+  {
+    "name": "large-portrait",
+    "width": 412,
+    "height": 915,
+    "mobile": true
+  },
+  {
+    "name": "large-landscape",
+    "width": 915,
+    "height": 412,
+    "mobile": true
+  },
+  {
+    "name": "browser-bars-landscape",
+    "width": 780,
+    "height": 300,
+    "mobile": true
+  },
+  {
+    "name": "tablet-portrait",
+    "width": 768,
+    "height": 1024,
+    "mobile": true
+  },
+  {
+    "name": "tablet-landscape",
+    "width": 1024,
+    "height": 768,
+    "mobile": true
+  }
+]

@@ -1,0 +1,7 @@
+{
+  "name": "tablab-browser-audit",
+  "private": true,
+  "type": "module",
+  "scripts": { "audit": "node audit.mjs" },
+  "dependencies": { "playwright": "1.62.1" }
+}

@@ -1,0 +1,61 @@
+name: Tab Lab automated browser checks
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'qa/**'
+      - '.github/workflows/browser-audit.yml'
+      - 'public/boardroom/billboard/demos/donut/**'
+      - 'public/boardroom/demo-browser*'
+      - 'public/js/foundry-global-nav.js'
+      - 'public/css/foundry-global-nav.css'
+  workflow_dispatch:
+    inputs:
+      target:
+        description: Target name in qa/targets.json
+        default: donut
+        required: true
+permissions:
+  contents: read
+concurrency:
+  group: browser-audit-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  browser-audit:
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Install audit dependencies
+        working-directory: qa
+        run: npm install --ignore-scripts
+      - name: Install browser
+        working-directory: qa
+        run: npx playwright install --with-deps ${{ matrix.browser }}
+      - name: Verify standalone runner fixture
+        working-directory: qa
+        env:
+          QA_BROWSER: ${{ matrix.browser }}
+          QA_TARGET: fixture
+          QA_ROOT: fixtures
+        run: npm run audit
+      - name: Run browser audit
+        if: ${{ !cancelled() }}
+        working-directory: qa
+        env:
+          QA_BROWSER: ${{ matrix.browser }}
+          QA_TARGET: ${{ inputs.target || 'donut' }}
+        run: npm run audit
+      - uses: actions/upload-artifact@v5
+        if: ${{ !cancelled() }}
+        with:
+          name: browser-audit-${{ matrix.browser }}
+          path: qa/results/
+          retention-days: 3
