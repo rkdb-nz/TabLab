@@ -24,16 +24,18 @@ Produce a JSON manifest, separate from the runner's machine report. A screenshot
 {
   "target":"Example", "version":"commit or deployment ID", "url":"https://example.rkdb.nz", "timestamp":"ISO timestamp",
   "browsers":["chromium","firefox","webkit"],
+  "leadReviewer":"",
   "inventoryReconciled":false,
+  "inventory":[{"route":"/","states":["landing-top"]}],
   "required":[{"route":"/","state":"landing-top","browser":"chromium","viewport":"390x844"}],
   "captures":[{"route":"/","state":"landing-top","browser":"chromium","viewport":"390x844","file":"capture.png","leadReviewed":false,"reviewEvidence":""}],
   "checklist":[{"id":"scope","status":"Couldn't test","evidence":"Inventory pending"}],
-  "independentReview":{"reviewer":"","coverage":[],"evidence":""},
+  "independentReview":{"reviewer":"","coverage":["/"],"evidence":""},
   "unresolvedRuntimeFailures":[]
 }
 ```
 
-Expand required entries for every route/state, browser and viewport. Include all checklist IDs from checklist.md, even absent features. Add evidence references and reviewer notes. `acceptedBoundary:true` is allowed only for an explicitly explained scope boundary such as physical-device behavior, after exhausting available free methods; list it in the final report. Never use it for missing screenshots, unavailable browsers, unreviewed states, failed tests, or unfinished core checks. It records a limitation, not a Passed status. Do not suppress known defects to obtain a passing CI badge.
+Expand required entries for every route/state, browser and viewport. Include all checklist IDs from checklist.md, even absent features. Add existing screenshot file paths relative to the manifest, evidence references and reviewer notes. Record distinct lead and independent reviewer identities; independent coverage lists the routes actually checked. `acceptedBoundary:true`, a concrete `boundaryReason`, and `coreChecksComplete:true` are allowed together only for an explicitly explained scope boundary such as physical-device behavior, after exhausting available free methods; list it in the final report. Never use it for missing screenshots, unavailable browsers, unreviewed states, failed tests, or unfinished core checks. It records a limitation, not a Passed status. Do not suppress known defects to obtain a passing CI badge.
 
 Run `python scripts/coverage_gate.py manifest.json`. Exit0 means the manifest asserts completed coverage, not that screenshots were automatically verified or every defect was found. Review evidence honesty yourself. An incomplete manifest exits1. A completed audit with defects may exit0 while the verdict remains Audit complete with findings. The machine runner may correctly exit1 because it detected product defects; classify them as findings rather than hiding them.
 

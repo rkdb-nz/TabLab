@@ -1,4 +1,4 @@
-name: Tab Lab browser audit
+name: Tab Lab automated browser checks
 on:
   pull_request:
     branches: [main]

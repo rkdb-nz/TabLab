@@ -8,10 +8,12 @@ The shared runner and screen matrix can be copied to future sites. Each site get
 Set `wrapped: true` for Tab Lab gallery demos: missing iframe/full-screen/return controls are failures. Use `wrapped: false` for a customer's standalone site. Each target can set `textSelector` and `minTextPx`; generic headings/body/form controls and a 12px warning threshold are the defaults. These thresholds are checks, not accessibility certification.
 The GitHub workflow runs all three engines independently. Firefox uses viewport/touch coverage without isMobile; Linux WebKit is not actual Safari/iOS. Screens cover tablet, desktop, narrow phones, portrait, landscape and a shallow viewport representing browser bars. They emulate viewport and touch, not physical Samsung/iPhone hardware or Safari.
 
-Evidence: `results/<browser>/report.json`, screenshots and `summary.txt`. A successful script is not design approval: review screenshots for spelling in artwork, spacing, hierarchy, balanced photos and interactions. Test real mobile browser behaviour where emulation does not suffice.
+Evidence: `results/<target>/<run>/<browser>/report.json`, screenshots and `summary.txt`. A successful script is not design approval: review screenshots for spelling in artwork, spacing, hierarchy, balanced photos and interactions. Test real mobile browser behaviour where emulation does not suffice.
 
 Only GET/HEAD HTTP requests are allowed during an audit. This blocks normal POST submissions, but is not a universal guarantee against side effects: future adapters must avoid live bookings, payments, side-effecting GET links, and external mail actions. Real submissions need a separately approved test environment. Inspect mailto destinations without sending email.
 
 Keep one demo at a time. On GitHub the workflow runs when relevant PR files change; use manual dispatch once the workflow is accepted onto the default branch. No automatic publishing.
 
 Use `##sitecheck <name or URL>` for the full protocol. See `qa/sitecheck/SKILL.md` and its references for the conditional checklist and evidence gate. The runner is a foundation: site-specific inventory, additional feature tests, visual review and independent review are required. Each capture starts unreviewed. JavaScript exceptions, asset failures and intentionally blocked requests are reported separately. CI artifacts expire after three days; preserve cited evidence with the project audit report.
+
+Automated checks are separate from the full protocol gate: CI does not assert visual approval. Unexpected blocked requests fail the machine run for review. Console warnings are retained. Standalone pages use full-page captures; scrolled panels and open-state rotation need feature adapters.

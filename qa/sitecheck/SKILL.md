@@ -1,6 +1,6 @@
 ---
 name: sitecheck
-description: Run an evidence-based website audit for Tab Lab demos and future client sites. Trigger on '##sitecheck <name or URL>', '$sitecheck', or a request to use the Tab Lab site checking protocol. Combine Playwright tests across Chromium, Firefox and WebKit, desktop and phone portrait/landscape, direct visual inspection, an independent review, a conditional feature checklist, and one report with explicit gaps.
+description: Run an evidence-based website audit for Tab Lab demos and future client sites. Trigger on '##sitecheck Donut' or '##sitecheck URL', '$sitecheck', or a request to use the Tab Lab site checking protocol. Combine Playwright tests across Chromium, Firefox and WebKit, desktop and phone portrait/landscape, direct visual inspection, an independent review, a conditional feature checklist, and one report with explicit gaps.
 ---
 
 # Sitecheck
