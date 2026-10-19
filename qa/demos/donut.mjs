@@ -21,10 +21,18 @@ export async function audit({ page, content, capture, check, screen }) {
       await page.setViewportSize({width:screen.width,height:screen.height});
       await page.waitForTimeout(750);
     }
-    const scrollers=await overlay.evaluate(root=>{for(const n of [root,...root.querySelectorAll('[data-qa-scroll]')]) n.removeAttribute('data-qa-scroll');return [root,...root.querySelectorAll('*')].filter(n=>n.scrollHeight>n.clientHeight+2&&['auto','scroll'].includes(getComputedStyle(n).overflowY)).map((n,i)=>{n.dataset.qaScroll=String(i);return {id:String(i),max:n.scrollHeight-n.clientHeight,step:Math.max(1,Math.floor(n.clientHeight*0.8))};});});
-    for(const {id,max,step} of scrollers) {
+    const scrollers=await overlay.evaluate(root=>{for(const n of [root,...root.querySelectorAll('[data-qa-scroll]')]) n.removeAttribute('data-qa-scroll');return [root,...root.querySelectorAll('*')].filter(n=>n.scrollHeight>n.clientHeight+2&&['auto','scroll'].includes(getComputedStyle(n).overflowY)).map((n,i)=>{n.dataset.qaScroll=String(i);return {id:String(i),max:n.scrollHeight-n.clientHeight,height:n.clientHeight,step:Math.max(1,Math.floor(n.clientHeight*0.8))};});});
+    for(const {id,max,height,step} of scrollers) {
       const panel=content.locator('#overlay-'+key+'[data-qa-scroll="'+id+'"],#overlay-'+key+' [data-qa-scroll="'+id+'"]');
-      for(let offset=step;offset<max+step;offset+=step) {
+      if(height<40) {
+        check(false,key+': scroll panel has less than 40px visible height; full content coverage blocked');
+        await panel.evaluate(n=>{n.scrollTop=n.scrollHeight;});
+        await capture(key+'-unusable-scroll-'+id);
+        await panel.evaluate(n=>{n.scrollTop=0;});
+        continue;
+      }
+      if(Math.ceil(max/step)>25) check(false,key+': panel needs more than 25 scroll captures; additional manual coverage required');
+      for(let offset=step,count=0;offset<max+step&&count<25;offset+=step,count++) {
         await panel.evaluate((n,y)=>{n.scrollTop=y;},Math.min(offset,max));
         await capture(key+'-scroll-'+id+'-'+Math.min(offset,max));
       }
