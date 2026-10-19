@@ -46,10 +46,28 @@ export async function audit({ page, content, capture, check, screen }) {
       check((await overlay.locator('.form-status').innerText()).includes('No order has been sent'), 'Order: honest demo confirmation');
       await capture('confirmation');
     }
-    // Check real Escape handling as well as the visible close control.
-    if(key==='story') await overlay.locator('.overlay-close').press('Escape');
-    else await overlay.locator('.overlay-close').click();
+    // Native Firefox fullscreen consumes the first Escape before page handlers.
+    // Verify that browser action, then test dialog Escape and restore presentation.
+    const wasNative=await page.evaluate(()=>!!document.fullscreenElement);
+    if(key==='story') {
+      await overlay.locator('.overlay-close').press('Escape');
+      await page.waitForTimeout(750);
+      const leftNative=wasNative&&!(await page.evaluate(()=>!!document.fullscreenElement));
+      if(await overlay.isVisible()) {
+        check(leftNative,'Story: Escape either closes dialog or exits native fullscreen');
+        if(leftNative) await overlay.locator('.overlay-close').press('Escape');
+        await page.waitForTimeout(750);
+      }
+      if(await overlay.isVisible()) {
+        check(false,'Story: dialog Escape handler failed; continuing through close button');
+        await overlay.locator('.overlay-close').click();
+      }
+    } else await overlay.locator('.overlay-close').click();
     await overlay.waitFor({state:'hidden'});
+    if(wasNative&&!(await page.evaluate(()=>!!document.fullscreenElement))) {
+      await page.getByRole('button',{name:'Open example in full screen',exact:true}).click();
+      await page.getByRole('button',{name:'Exit full screen and return to Tab Lab frame',exact:true}).waitFor({state:'visible'});
+    }
     check(!(await overlay.isVisible()),`${key}: closes`);
   }
 }
