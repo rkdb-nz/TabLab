@@ -19,3 +19,5 @@ Use `##sitecheck <name or URL>` for the full protocol. See `qa/sitecheck/SKILL.m
 Automated checks are separate from the full protocol gate: CI does not assert visual approval. Unexpected blocked requests fail the machine run for review. Console warnings are retained. Standalone pages use full-page captures; scrolled panels and open-state rotation need feature adapters.
 
 A disconnected standalone fixture also runs on all engines. It checks ordinary below-fold content, embedded-frame selection, invalid form input and a local demo confirmation. These are runner regression checks, not a client-site audit.
+
+Open-dialog rotation runs in the frame because Chromium cannot resize a native full-screen window via Playwright. The adapter also tests every dialog independently at each fixed full-screen size. Actual full-screen device rotation remains an explicit boundary.
