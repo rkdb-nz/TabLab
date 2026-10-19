@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tab Lab Sitecheck"
+  short_description: "Check sites across browsers and phone sizes"
+  default_prompt: "Use $sitecheck to audit the named Tab Lab demo or website."

@@ -22,6 +22,10 @@ concurrency:
   cancel-in-progress: true
 jobs:
   browser-audit:
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
@@ -32,17 +36,18 @@ jobs:
       - name: Install audit dependencies
         working-directory: qa
         run: npm install --ignore-scripts
-      - name: Install Chromium
+      - name: Install browser
         working-directory: qa
-        run: npx playwright install --with-deps chromium
+        run: npx playwright install --with-deps ${{ matrix.browser }}
       - name: Run browser audit
         working-directory: qa
         env:
+          QA_BROWSER: ${{ matrix.browser }}
           QA_TARGET: ${{ inputs.target || 'donut' }}
         run: npm run audit
       - uses: actions/upload-artifact@v5
         if: ${{ !cancelled() }}
         with:
-          name: browser-audit-evidence
+          name: browser-audit-${{ matrix.browser }}
           path: qa/results/
-          retention-days: 14
+          retention-days: 3

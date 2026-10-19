@@ -1,4 +1,4 @@
-import { chromium } from 'playwright';
+import { chromium, firefox, webkit } from 'playwright';
 import { readFile, writeFile, mkdir, stat } from 'node:fs/promises';
 import { createServer } from 'node:http';
 import { dirname, resolve, extname, sep } from 'node:path';
@@ -10,12 +10,15 @@ const screens=JSON.parse(await readFile(resolve(here,'screens.json'),'utf8'));
 const targetName=process.env.QA_TARGET || 'donut';
 const target=targets[targetName];
 if(!target) throw new Error(`Unknown QA_TARGET: ${targetName}`);
-const output=resolve(here,'results');
+const browserName=process.env.QA_BROWSER || 'chromium';
+const engine={chromium,firefox,webkit}[browserName];
+if(!engine) throw new Error('Unsupported QA_BROWSER: '+browserName);
+const output=resolve(here,'results',browserName);
 await mkdir(output,{recursive:true});
 let server;
 let base=process.env.QA_BASE_URL;
 if(!base) {
-  const root=resolve(here,'../public');
+  const root=resolve(process.env.QA_ROOT || resolve(here,'../public'));
   const mime={'.html':'text/html','.css':'text/css','.js':'text/javascript','.svg':'image/svg+xml','.png':'image/png','.jpg':'image/jpeg','.webp':'image/webp','.woff2':'font/woff2','.json':'application/json'};
   server=createServer(async(req,res)=>{
     try {
@@ -29,8 +32,8 @@ if(!base) {
   await new Promise(r=>server.listen(4173,'127.0.0.1',r));
   base='http://127.0.0.1:4173';
 }
-const browser=await chromium.launch({headless:true});
-const report={target:targetName,base,commit:process.env.GITHUB_SHA||'local',screens:[],limitations:['Viewport/touch emulation; not physical devices.','Screenshots require human visual review; geometry assertions do not judge design quality.']};
+const browser=await engine.launch({headless:true});
+const report={target:targetName,base,browser:browserName,browserVersion:browser.version(),platform:process.platform,startedAt:new Date().toISOString(),reviewStatus:'Pending visual and checklist review',commit:process.env.GITHUB_SHA||'local',screens:[],limitations:['Viewport/touch emulation; not physical devices.','Screenshots require human visual review; geometry assertions do not judge design quality.', ...(browserName==='firefox'?['Firefox: viewport/touch only; isMobile unsupported.']:[]), ...(browserName==='webkit'?['Linux WebKit is not actual Safari or iOS.']:[])]};
 
 // Shared read-only inspection. Ignore hidden/transparent artwork used as mobile backgrounds.
 async function inspect(frame) {
@@ -68,18 +71,18 @@ async function inspect(frame) {
 
 try {
   for(const screen of screens) {
-    const entry={name:screen.name,width:screen.width,height:screen.height,checks:[],captures:[],errors:[]};
+    const entry={name:screen.name,width:screen.width,height:screen.height,checks:[],captures:[],errors:[],assetFailures:[],blockedRequests:[]};
     report.screens.push(entry);
-    const context=await browser.newContext({viewport:{width:screen.width,height:screen.height},isMobile:!!screen.mobile,hasTouch:!!screen.mobile,deviceScaleFactor:1});
-    // Audit cannot send a real order/payment even if a future site's form is wired.
-    await context.route('**/*',route=>['GET','HEAD'].includes(route.request().method())?route.continue():route.abort());
+    const context=await browser.newContext({viewport:{width:screen.width,height:screen.height},...(browserName==='firefox'?{}:{isMobile:!!screen.mobile}),hasTouch:!!screen.mobile,deviceScaleFactor:1});
+    // Defense in depth only: adapters must avoid live side effects, including GETs.
+    await context.route('**/*',route=>{if(['GET','HEAD'].includes(route.request().method()))return route.continue();entry.blockedRequests.push({method:route.request().method(),url:route.request().url()});return route.abort();});
     const page=await context.newPage();
     page.setDefaultTimeout(10000);
     page.setDefaultNavigationTimeout(15000);
     console.log(screen.name+': starting');
     page.on('pageerror',e=>entry.errors.push(e.message));
-    page.on('response',response=>{if(response.status()>=400&&['document','image','stylesheet','script','font'].includes(response.request().resourceType()))entry.errors.push('HTTP '+response.status()+': '+response.url());});
-    page.on('requestfailed',request=>{if(['document','image','stylesheet','script','font'].includes(request.resourceType()))entry.errors.push('Asset request failed: '+request.url());});
+    page.on('response',response=>{if(response.status()>=400&&['document','image','stylesheet','script','font'].includes(response.request().resourceType()))entry.assetFailures.push('HTTP '+response.status()+': '+response.url());});
+    page.on('requestfailed',request=>{if(['document','image','stylesheet','script','font'].includes(request.resourceType()))entry.assetFailures.push('Asset request failed: '+request.url());});
     const check=(pass,label)=>entry.checks.push({pass,label});
     try {
       await page.goto(new URL(target.path,base).href,{waitUntil:'domcontentloaded',timeout:15000});
@@ -92,11 +95,18 @@ try {
         await page.screenshot({path:resolve(output,screen.name+'-'+name+'.png'),animations:'disabled'});
         const layout=await inspect(content);
         const outer=content===page?null:await inspect(page);
-        entry.captures.push({name,file:screen.name+'-'+name+'.png',...layout,outer});
+        entry.captures.push({name,file:screen.name+'-'+name+'.png',leadReviewed:false,reviewNotes:'',...layout,outer});
         check(!layout.issues.length, name+': readable and unclipped ('+layout.issues.join('; ')+')');
         if(outer) check(!outer.issues.length,name+': frame fits viewport ('+outer.issues.join('; ')+')');
       };
       await capture('framed');
+      if(screen.mobile) {
+        await page.setViewportSize({width:screen.height,height:screen.width});
+        await page.waitForTimeout(750);
+        await capture('rotated');
+        await page.setViewportSize({width:screen.width,height:screen.height});
+        await page.waitForTimeout(750);
+      }
       const full=page.getByRole('button',{name:'Open example in full screen',exact:true});
       if(target.wrapped) check((await full.count())===1,'Required full-screen control exists');
       if(await full.count()) {
@@ -105,8 +115,10 @@ try {
         await page.waitForTimeout(250);
         await capture('fullscreen');
       }
-      const adapter=await import('./demos/'+target.adapter+'.mjs');
-      await adapter.audit({page,content,capture,check});
+      if(target.adapter) {
+        const adapter=await import('./demos/'+target.adapter+'.mjs');
+        await adapter.audit({page,content,capture,check});
+      }
       const exit=page.getByRole('button',{name:'Exit full screen and return to Tab Lab frame',exact:true});
       if(await exit.isVisible()) {
         await exit.click();
@@ -122,7 +134,7 @@ try {
     } catch(e) {entry.errors.push(e.stack);check(false,'Runtime: '+e.message);await page.screenshot({path:resolve(output,screen.name+'-runtime-failure.png'),timeout:10000}).catch(()=>{});}
     finally {await context.close();}
     await writeFile(resolve(output,'report.json'),JSON.stringify(report,null,2));
-    console.log(screen.name+': '+entry.checks.filter(c=>!c.pass).length+' failed checks; '+entry.errors.length+' runtime errors');
+    console.log(screen.name+': '+entry.checks.filter(c=>!c.pass).length+' failed checks; '+entry.errors.length+' JavaScript/runtime errors; '+entry.assetFailures.length+' asset failures');
   }
 } finally {
   await browser.close();
@@ -130,5 +142,5 @@ try {
 }
 const failed=report.screens.flatMap(s=>s.checks.filter(c=>!c.pass).map(c=>s.name+': '+c.label));
 await writeFile(resolve(output,'summary.txt'),[...report.limitations,'',...failed].join('\n'));
-console.log('Evidence saved to qa/results. Manual visual review required.');
-if(failed.length||report.screens.some(s=>s.errors.length)) process.exitCode=1;
+console.log('Evidence saved to qa/results/'+browserName+'. Manual visual and conditional checklist review required.');
+if(failed.length||report.screens.some(s=>s.errors.length||s.assetFailures.length)) process.exitCode=1;
