@@ -21,7 +21,7 @@ export async function audit({ page, content, capture, check, screen }) {
       await page.setViewportSize({width:screen.width,height:screen.height});
       await page.waitForTimeout(750);
     }
-    const scrollers=await overlay.evaluate(root=>[root,...root.querySelectorAll('*')].filter(n=>n.scrollHeight>n.clientHeight+2&&['auto','scroll'].includes(getComputedStyle(n).overflowY)).map((n,i)=>{n.dataset.qaScroll=String(i);return {id:String(i),max:n.scrollHeight-n.clientHeight,step:Math.max(1,Math.floor(n.clientHeight*0.8))};}));
+    const scrollers=await overlay.evaluate(root=>{for(const n of [root,...root.querySelectorAll('[data-qa-scroll]')]) n.removeAttribute('data-qa-scroll');return [root,...root.querySelectorAll('*')].filter(n=>n.scrollHeight>n.clientHeight+2&&['auto','scroll'].includes(getComputedStyle(n).overflowY)).map((n,i)=>{n.dataset.qaScroll=String(i);return {id:String(i),max:n.scrollHeight-n.clientHeight,step:Math.max(1,Math.floor(n.clientHeight*0.8))};});});
     for(const {id,max,step} of scrollers) {
       const panel=content.locator('#overlay-'+key+'[data-qa-scroll="'+id+'"],#overlay-'+key+' [data-qa-scroll="'+id+'"]');
       for(let offset=step;offset<max+step;offset+=step) {
