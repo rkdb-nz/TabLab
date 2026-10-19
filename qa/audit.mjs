@@ -76,10 +76,13 @@ try {
   for(const screen of screens) {
     const entry={name:screen.name,width:screen.width,height:screen.height,checks:[],captures:[],errors:[],assetFailures:[],blockedRequests:[],consoleWarnings:[]};
     report.screens.push(entry);
-    const context=await browser.newContext({viewport:{width:screen.width,height:screen.height},...(browserName==='firefox'?{}:{isMobile:!!screen.mobile}),hasTouch:!!screen.mobile,deviceScaleFactor:1});
+    const check=(pass,label)=>entry.checks.push({pass,label});
+    let context,page;
+    try {
+    context=await browser.newContext({viewport:{width:screen.width,height:screen.height},...(browserName==='firefox'?{}:{isMobile:!!screen.mobile}),hasTouch:!!screen.mobile,deviceScaleFactor:1});
     // Defense in depth only: adapters must avoid live side effects, including GETs.
     await context.route('**/*',route=>{if(['GET','HEAD'].includes(route.request().method()))return route.continue();entry.blockedRequests.push({method:route.request().method(),url:route.request().url()});return route.abort();});
-    const page=await context.newPage();
+    page=await context.newPage();
     page.setDefaultTimeout(10000);
     page.setDefaultNavigationTimeout(15000);
     console.log(screen.name+': starting');
@@ -87,8 +90,6 @@ try {
     page.on('pageerror',e=>entry.errors.push(e.message));
     page.on('response',response=>{if(response.status()>=400&&['document','image','stylesheet','script','font'].includes(response.request().resourceType()))entry.assetFailures.push('HTTP '+response.status()+': '+response.url());});
     page.on('requestfailed',request=>{if(['document','image','stylesheet','script','font'].includes(request.resourceType()))entry.assetFailures.push('Asset request failed: '+request.url());});
-    const check=(pass,label)=>entry.checks.push({pass,label});
-    try {
       await page.goto(new URL(target.path,base).href,{waitUntil:'domcontentloaded',timeout:15000});
       const iframe=page.locator(target.frameSelector||'iframe');
       if(target.wrapped) check((await iframe.count())===1,'Demo wrapper contains required iframe');
@@ -135,8 +136,8 @@ try {
         await page.waitForURL(u=>u.pathname.replace(/index\.html$/,'')===target.gallery);
         check(true,'Back to gallery reaches expected Tab Lab gallery');
       }
-    } catch(e) {entry.errors.push(e.stack);check(false,'Runtime: '+e.message);await page.screenshot({path:resolve(output,screen.name+'-runtime-failure.png'),timeout:10000}).catch(()=>{});}
-    finally {await context.close();}
+    } catch(e) {entry.errors.push(e.stack);check(false,'Runtime: '+e.message);if(page)await page.screenshot({path:resolve(output,screen.name+'-runtime-failure.png'),timeout:10000}).catch(()=>{});}
+    finally {if(context)await context.close();}
     await writeFile(resolve(output,'report.json'),JSON.stringify(report,null,2));
     console.log(screen.name+': '+entry.checks.filter(c=>!c.pass).length+' failed checks; '+entry.errors.length+' JavaScript/runtime errors; '+entry.assetFailures.length+' asset failures');
   }

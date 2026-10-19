@@ -7,5 +7,11 @@
     "adapter": "donut",
     "gallery": "/boardroom/billboard/",
     "fixedViewport": true
+  },
+  "fixture": {
+    "wrapped": false,
+    "path": "/",
+    "adapter": "fixture",
+    "minTextPx": 16
   }
 }

@@ -17,3 +17,5 @@ Keep one demo at a time. On GitHub the workflow runs when relevant PR files chan
 Use `##sitecheck <name or URL>` for the full protocol. See `qa/sitecheck/SKILL.md` and its references for the conditional checklist and evidence gate. The runner is a foundation: site-specific inventory, additional feature tests, visual review and independent review are required. Each capture starts unreviewed. JavaScript exceptions, asset failures and intentionally blocked requests are reported separately. CI artifacts expire after three days; preserve cited evidence with the project audit report.
 
 Automated checks are separate from the full protocol gate: CI does not assert visual approval. Unexpected blocked requests fail the machine run for review. Console warnings are retained. Standalone pages use full-page captures; scrolled panels and open-state rotation need feature adapters.
+
+A disconnected standalone fixture also runs on all engines. It checks ordinary below-fold content, embedded-frame selection, invalid form input and a local demo confirmation. These are runner regression checks, not a client-site audit.

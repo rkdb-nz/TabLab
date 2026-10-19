@@ -39,7 +39,15 @@ jobs:
       - name: Install browser
         working-directory: qa
         run: npx playwright install --with-deps ${{ matrix.browser }}
+      - name: Verify standalone runner fixture
+        working-directory: qa
+        env:
+          QA_BROWSER: ${{ matrix.browser }}
+          QA_TARGET: fixture
+          QA_ROOT: fixtures
+        run: npm run audit
       - name: Run browser audit
+        if: ${{ !cancelled() }}
         working-directory: qa
         env:
           QA_BROWSER: ${{ matrix.browser }}
