@@ -34,9 +34,9 @@ if(!base) {
   base='http://127.0.0.1:4173';
 }
 let browser;
-try {browser=await engine.launch({headless:true});}
+try {browser=await engine.launch({headless:true,...(browserName==='firefox'?{firefoxUserPrefs:{'full-screen-api.ignore-widgets':true}}:{})});}
 catch(error) {await writeFile(resolve(output,'setup-failure.json'),JSON.stringify({browser:browserName,error:error.stack}));if(server)await new Promise(r=>server.close(r));throw error;}
-const report={target:targetName,base,browser:browserName,browserVersion:browser.version(),platform:process.platform,startedAt:new Date().toISOString(),reviewStatus:'Pending visual and checklist review',commit:process.env.GITHUB_SHA||'local',screens:[],limitations:['Viewport/touch emulation; not physical devices.','Screenshots require human visual review; geometry assertions do not judge design quality.','Open-state rotation is tested in the frame; full-screen states run at each fixed size, not native full-screen rotation.', ...(browserName==='firefox'?['Firefox: viewport/touch only; isMobile unsupported.']:[]), ...(browserName==='webkit'?['Linux WebKit is not actual Safari or iOS.']:[])]};
+const report={target:targetName,base,browser:browserName,browserVersion:browser.version(),platform:process.platform,startedAt:new Date().toISOString(),reviewStatus:'Pending visual and checklist review',commit:process.env.GITHUB_SHA||'local',screens:[],limitations:['Viewport/touch emulation; not physical devices.','Screenshots require human visual review; geometry assertions do not judge design quality.','Open-state rotation is tested in the frame; full-screen states run at each fixed size, not native full-screen rotation.', ...(browserName==='firefox'?['Firefox: viewport/touch only; isMobile unsupported. Fullscreen stays inside the emulated window using full-screen-api.ignore-widgets; native OS fullscreen is not verified.']:[]), ...(browserName==='webkit'?['Linux WebKit is not actual Safari or iOS.']:[])]};
 
 // Shared read-only inspection. Ignore hidden/transparent artwork used as mobile backgrounds.
 async function inspect(frame) {
@@ -100,7 +100,9 @@ try {
         await page.screenshot({path:resolve(output,screen.name+'-'+name+'.png'),animations:'disabled',fullPage:!target.wrapped});
         const layout=await inspect(content);
         const outer=content===page?null:await inspect(page);
-        entry.captures.push({name,file:screen.name+'-'+name+'.png',leadReviewed:false,reviewNotes:'',...layout,outer});
+        const requestedViewport=page.viewportSize(),observedViewport=(outer||layout).viewport;
+        check(observedViewport.width===requestedViewport.width&&observedViewport.height===requestedViewport.height,name+': actual browser viewport matches requested size ('+observedViewport.width+'x'+observedViewport.height+')');
+        entry.captures.push({name,requestedViewport,observedViewport,file:screen.name+'-'+name+'.png',leadReviewed:false,reviewNotes:'',...layout,outer});
         check(!layout.issues.length, name+': readable and unclipped ('+layout.issues.join('; ')+')');
         if(outer) check(!outer.issues.length,name+': frame fits viewport ('+outer.issues.join('; ')+')');
       };
