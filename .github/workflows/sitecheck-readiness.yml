@@ -28,7 +28,7 @@ jobs:
       - name: Capture full Minigolf audit matrix
         env:
           QA_BROWSER: ${{ matrix.browser }}
-        run: node qa/minigolf-audit.mjs
+        run: xvfb-run -a node qa/minigolf-audit.mjs
       - uses: actions/upload-artifact@v5
         if: always()
         with:
