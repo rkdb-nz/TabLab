@@ -8,7 +8,7 @@ permissions:
 jobs:
   readiness:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     strategy:
       fail-fast: false
       matrix:
@@ -25,9 +25,15 @@ jobs:
           QA_BROWSER: ${{ matrix.browser }}
           SITECHECK_OUTPUT: qa/readiness-results/${{ matrix.browser }}
         run: node qa/readiness.mjs qa/minigolf-readiness.json
+      - name: Capture full Minigolf audit matrix
+        env:
+          QA_BROWSER: ${{ matrix.browser }}
+        run: node qa/minigolf-audit.mjs
       - uses: actions/upload-artifact@v5
         if: always()
         with:
           name: sitecheck-readiness-${{ matrix.browser }}
-          path: qa/readiness-results/
+          path: |
+            qa/readiness-results/
+            qa/minigolf-results/
           retention-days: 3
