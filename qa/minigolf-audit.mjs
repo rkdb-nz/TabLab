@@ -55,5 +55,29 @@ try{for(const [w,h] of sizes){
  }catch(e){report.screens.push({size,complete:false,error:e.stack});await page.screenshot({path:resolve(out,size+'-failure.png')}).catch(()=>{});}
  finally{await ctx.close();await writeFile(resolve(out,'report.json'),JSON.stringify(report,null,2));}
 }
+// Supplement: wrapper navigation, focus, background close, date limits, magnification and slowed cold loads.
+for(const [w,h] of sizes){
+ const size=`${w}x${h}`,ctx=await browser.newContext({viewport:{width:w,height:h}}),page=await ctx.newPage();page.setDefaultTimeout(4000);
+ try{
+ await page.goto(origin+path,{waitUntil:'load'});let f=page.frames().find(f=>f.url().includes('/site.html'));
+ const menu=page.locator('.foundry-global-menu');await menu.click();check(await menu.getAttribute('aria-expanded')==='true','Wrapper menu opens',{size});
+ let file=`${size}-wrapper-menu.png`;await page.screenshot({path:resolve(out,file)});report.captures.push({size,state:'wrapper-menu',file,leadReviewed:false,layout:await inspect(page)});
+ const links=await page.locator('.foundry-global-drawer a').evaluateAll(a=>a.map(e=>({text:e.innerText,url:e.href})));
+ if(w===1366){for(const l of links){if(l.url.startsWith(origin)){let dest=await ctx.newPage();await dest.goto(l.url,{waitUntil:'domcontentloaded'});check((await dest.title()).length>0,'Wrapper destination renders',{link:l,url:dest.url(),title:await dest.title()});await dest.close();}else check(l.url==='mailto:tablab@rkdb.nz','Contact destination syntax',{link:l});}}
+ await menu.press('Escape');check(await menu.getAttribute('aria-expanded')==='false','Wrapper Escape closes',{size});check(await menu.evaluate(e=>e===document.activeElement),'Wrapper focus returns',{size});
+ let toggle=f.locator('.mobile-nav-toggle');if(await toggle.isVisible())await toggle.click();let trigger=f.locator('[data-overlay=course]');await trigger.click();let dialog=f.locator('#overlay-course');await dialog.locator('.overlay-close').press('Escape');check(await trigger.evaluate(e=>e===document.activeElement),'Dialog focus returns to trigger',{size});
+ if(await toggle.isVisible())await toggle.click();await trigger.click();let box=await dialog.boundingBox();await f.locator('#overlay-course').click({position:{x:2,y:2}});check(!(await dialog.isVisible()),'Backdrop closes dialog',{size});if(await dialog.isVisible())await dialog.locator('.overlay-close').click();
+ if(await toggle.isVisible())await toggle.click();await f.locator('.hotspot--book').click();let form=f.locator('#booking-form');await form.locator('[name=name]').fill('Audit');await form.locator('[name=email]').fill('demo@example.com');await form.locator('[name=date]').fill('2000-01-01');check(!(await form.evaluate(e=>e.checkValidity())),'Past booking date rejected',{size});await f.locator('#overlay-book .overlay-close').click();
+ if(w===1366||w===320||w===780){await page.goto(origin+path+'site.html',{waitUntil:'load'});await page.evaluate(()=>document.documentElement.style.zoom='2');file=`${size}-css-magnification-200.png`;await page.screenshot({path:resolve(out,file)});report.captures.push({size,state:'css-magnification-200',file,leadReviewed:false,layout:await inspect(page),boundary:'CSS 200% magnification; native browser zoom not exercised.'});}
+ }catch(e){report.errors.push({size,supplement:e.message});}finally{await ctx.close();}
+}
+for(let repeat=0;repeat<3;repeat++){
+ const ctx=await browser.newContext({viewport:{width:390,height:844}}),page=await ctx.newPage();let bytes=0;
+ await ctx.route('**/*',async route=>{if(!route.request().url().startsWith(origin+'/'))return route.abort();const response=await route.fetch();const body=await response.body();bytes+=body.length;await new Promise(r=>setTimeout(r,150+body.length/200000*1000));await route.fulfill({response,body});});
+ await page.addInitScript(()=>{window.auditCLS=0;new PerformanceObserver(list=>{for(const e of list.getEntries())if(!e.hadRecentInput)window.auditCLS+=e.value;}).observe({type:'layout-shift',buffered:true});});
+ const start=Date.now();await page.goto(origin+path,{waitUntil:'load',timeout:60000});const f=page.frames().find(f=>f.url().includes('/site.html'));await f.locator('.mobile-book').click();check(await f.locator('#overlay-book').isVisible(),'Slowed load booking responds',{repeat});
+ report.checks.push({pass:true,label:'Cold-load simulation measurement',repeat,ms:Date.now()-start,bytes,condition:'Each resource delayed by 150ms + bytes/200000 seconds; independent parallel resource throughput, no cache across contexts',CLS:await page.evaluate(()=>window.auditCLS)});await ctx.close();
+}
+
 }finally{await browser.close();await new Promise(r=>server.close(r));await writeFile(resolve(out,'report.json'),JSON.stringify(report,null,2));}
 console.log('Audit evidence captured; visual review pending.');
