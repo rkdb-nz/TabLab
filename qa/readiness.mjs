@@ -13,6 +13,9 @@ await mkdir(output, { recursive: true });
 const report = {
   kind: 'sitecheck-readiness', target: config.target,
   commit: process.env.GITHUB_SHA || process.env.SITECHECK_COMMIT || 'unrecorded',
+  playwrightVersion: require('playwright/package.json').version,
+  control: config.control, expected: config.expected,
+  requiredEngines: ['chromium', 'firefox', 'webkit'],
   timestamp: new Date().toISOString(), status: 'Blocked—readiness check failed',
   source: { status: 'pending' }, browsers: [],
   screenshotInspection: 'pending: a reviewer must open every readiness capture',
@@ -20,6 +23,10 @@ const report = {
 };
 let server;
 try {
+  if (report.commit === 'unrecorded') throw new Error('Source revision is required: set SITECHECK_COMMIT or GITHUB_SHA');
+  if (!Array.isArray(config.viewports) || !config.viewports.length) throw new Error('At least one viewport is required');
+  for (const size of config.viewports) if (!Number.isInteger(size.width) || !Number.isInteger(size.height) || size.width < 1 || size.height < 1) throw new Error('Invalid viewport dimensions');
+  if (!config.control?.role || !config.control?.name || !config.expected?.role || !config.expected?.name) throw new Error('Control and expected result require roles and exact accessible names');
   const root = resolve(config.root || 'public');
   const source = resolve(root, config.source);
   if (!source.startsWith(root + sep)) throw new Error('Source path leaves configured root');
@@ -63,8 +70,9 @@ try {
           page.setDefaultTimeout(10000);
           await page.goto(origin + config.path, { waitUntil: 'load', timeout: 20000 });
           const frame = config.frame ? page.frameLocator(config.frame) : page;
-          await frame.getByRole(config.control.role, { name: config.control.name, exact: true }).click();
           const expected = frame.getByRole(config.expected.role, { name: config.expected.name, exact: true });
+          if (await expected.isVisible()) throw new Error('Expected result already visible before click; choose a control proving a state change');
+          await frame.getByRole(config.control.role, { name: config.control.name, exact: true }).click();
           await expected.waitFor({ state: 'visible' });
           // Wait for the panel transition to settle using its actual animations.
           await expected.evaluate(el => Promise.all(el.getAnimations({ subtree: true }).map(a => a.finished.catch(() => {}))));
@@ -74,6 +82,7 @@ try {
           await page.screenshot({ path: resolve(output, file) });
           const bytes = await readFile(resolve(output, file));
           if (bytes.length < 100 || bytes.subarray(0, 8).toString('hex') !== '89504e470d0a1a0a') throw new Error('Invalid screenshot PNG');
+          if (bytes.readUInt32BE(16) !== viewport.width || bytes.readUInt32BE(20) !== viewport.height) throw new Error('Screenshot PNG dimensions differ from measured viewport');
           result.captures.push({ file, requested: viewport, actual, clickVerified: true, screenshotCaptured: true, visuallyInspected: false });
         } finally { await context.close(); }
       }
