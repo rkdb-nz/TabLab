@@ -1,0 +1,7 @@
+{
+  "name": "tablab-sitecheck-readiness",
+  "private": true,
+  "type": "module",
+  "scripts": { "readiness": "node readiness.mjs minigolf-readiness.json" },
+  "dependencies": { "playwright": "1.62.1" }
+}
