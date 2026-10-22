@@ -65,24 +65,17 @@ try{
   await page.waitForTimeout(200);
   const dom=await geometry(page),metrics=await cdp.send('Page.getLayoutMetrics');
   report.states.push({state,dom,cdpMetrics:metrics});
-  // Retain the problematic Playwright capture as a diagnostic comparison only.
-  await saveCapture(state,'playwright-diagnostic',await page.screenshot({animations:'disabled',fullPage:false}),{diagnosticOnly:true});
-  // Let Chrome capture the actual render surface without a Playwright clip.
+  // Use the verified full Chrome surface; cropped diagnostic variants are unnecessary.
   const raw=await cdp.send('Page.captureScreenshot',{format:'png',fromSurface:true,captureBeyondViewport:false});
   await saveCapture(state,'cdp-surface',Buffer.from(raw.data,'base64'),{primary:true});
-  // Save explicit CSS viewport variants to expose any CSS/device pixel mismatch.
-  const css=metrics.cssVisualViewport||{pageX:0,pageY:0,clientWidth:dom.innerWidth,clientHeight:dom.innerHeight};
-  for(const scale of [1,2]){
-   const clip={x:css.pageX||0,y:css.pageY||0,width:css.clientWidth||dom.innerWidth,height:css.clientHeight||dom.innerHeight,scale};
-   try{const shot=await cdp.send('Page.captureScreenshot',{format:'png',fromSurface:true,captureBeyondViewport:false,clip});await saveCapture(state,`cdp-css-scale${scale}`,Buffer.from(shot.data,'base64'),{clip});}catch(e){report.errors.push({state,method:`cdp-css-scale${scale}`,error:e.stack});}
-  }
   await writeFile(resolve(out,'zoom-recovery-report.json'),JSON.stringify(report,null,2));
  }
  await capture('home');
+ const home=page.locator('.mobile-home');if(await home.isVisible()){await home.evaluate(e=>e.scrollTop=e.scrollHeight);await capture('home-end');await home.evaluate(e=>e.scrollTop=0);}
  for(const key of ['course','story','events','book']){
   const toggle=page.locator('.mobile-nav-toggle');if(await toggle.isVisible()&&await toggle.getAttribute('aria-expanded')!=='true')await toggle.click();
   await page.locator(`.hotspots [data-overlay="${key}"]`).click();await page.locator('#overlay-'+key).waitFor({state:'visible'});
-  await capture(key);await page.locator('#overlay-'+key+' .overlay-close').press('Escape');
+  await capture(key);const panel=page.locator('#overlay-'+key+' .overlay-panel');const max=await panel.evaluate(e=>e.scrollHeight-e.clientHeight);if(max>2){for(let y=200;y<max+200;y+=200){await panel.evaluate((e,y)=>e.scrollTop=y,Math.min(y,max));await capture(key+'-scroll-'+Math.round(Math.min(y,max)));}}await page.locator('#overlay-'+key+' .overlay-close').press('Escape');
  }
  report.status='Native zoom geometry and capture variants collected; visual review pending';
 }catch(e){report.errors.push({error:e.stack});report.status='Zoom recovery incomplete';process.exitCode=1;}
