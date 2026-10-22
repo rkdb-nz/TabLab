@@ -1,0 +1,2352 @@
+{
+  "mode": "routine",
+  "engine": "firefox",
+  "commit": "611663d53ba0b8c39996d5909e14e1418e6483f6",
+  "captures": [
+    {
+      "file": "390x844-home.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "state": "390x844-home",
+      "visuallyInspected": false
+    },
+    {
+      "file": "rotation-services.png",
+      "viewport": [
+        844,
+        390
+      ],
+      "state": "rotation-services",
+      "visuallyInspected": false
+    },
+    {
+      "file": "844x390-home.png",
+      "viewport": [
+        844,
+        390
+      ],
+      "state": "844x390-home",
+      "visuallyInspected": false
+    },
+    {
+      "file": "320x568-home.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "state": "320x568-home",
+      "visuallyInspected": false
+    },
+    {
+      "file": "320x568-completed-quote.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "state": "320x568-completed-quote",
+      "visuallyInspected": false
+    },
+    {
+      "file": "780x300-home.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "state": "780x300-home",
+      "visuallyInspected": false
+    },
+    {
+      "file": "780x300-services.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "state": "780x300-services",
+      "visuallyInspected": false
+    },
+    {
+      "file": "780x300-completed-quote.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "state": "780x300-completed-quote",
+      "visuallyInspected": false
+    },
+    {
+      "file": "720x450-home.png",
+      "viewport": [
+        720,
+        450
+      ],
+      "state": "720x450-home",
+      "visuallyInspected": false
+    }
+  ],
+  "checks": [
+    {
+      "id": "DR-01",
+      "label": "390x844 no horizontal overflow",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          382,
+          763
+        ],
+        "mobile": true,
+        "overflow": false,
+        "heading": {
+          "x": 7,
+          "y": 76.30000305175781,
+          "right": 226.39999389648438,
+          "bottom": 151.46665954589844,
+          "width": 219.39999389648438,
+          "height": 75.16665649414062,
+          "client": 219,
+          "scroll": 219
+        },
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "right": 382,
+          "bottom": 427.26666259765625,
+          "width": 382,
+          "height": 427.26666259765625
+        },
+        "proof": {
+          "x": 7,
+          "y": 289.8999938964844,
+          "right": 190.35000610351562,
+          "bottom": 358.6000061035156,
+          "width": 183.35000610351562,
+          "height": 68.70001220703125
+        },
+        "cta": {
+          "x": 0,
+          "y": 379.26666259765625,
+          "right": 148.96665954589844,
+          "bottom": 423.26666259765625,
+          "width": 148.96665954589844,
+          "height": 44
+        },
+        "brand": {
+          "x": 9,
+          "y": 9,
+          "right": 188.68333435058594,
+          "bottom": 48.71665954589844,
+          "width": 179.68333435058594,
+          "height": 39.71665954589844
+        },
+        "services": [
+          {
+            "text": "SPECIALIST\nDRILLING",
+            "box": {
+              "x": 54,
+              "y": 458.816650390625,
+              "right": 205.0500030517578,
+              "bottom": 493.0166473388672,
+              "width": 151.0500030517578,
+              "height": 34.19999694824219
+            },
+            "card": {
+              "x": 3,
+              "y": 429.26666259765625,
+              "right": 379,
+              "bottom": 522.5833282470703,
+              "width": 376,
+              "height": 93.31666564941406
+            },
+            "client": 151,
+            "scroll": 151,
+            "font": "15.2667px"
+          },
+          {
+            "text": "EXPERIENCED\nPROFESSIONALS",
+            "box": {
+              "x": 54,
+              "y": 555.13330078125,
+              "right": 205.0500030517578,
+              "bottom": 589.3332977294922,
+              "width": 151.0500030517578,
+              "height": 34.19999694824219
+            },
+            "card": {
+              "x": 3,
+              "y": 525.5833129882812,
+              "right": 379,
+              "bottom": 618.8999786376953,
+              "width": 376,
+              "height": 93.31666564941406
+            },
+            "client": 151,
+            "scroll": 151,
+            "font": "15.2667px"
+          },
+          {
+            "text": "SAFETY\nFIRST",
+            "box": {
+              "x": 54,
+              "y": 651.4500122070312,
+              "right": 205.0500030517578,
+              "bottom": 685.6500091552734,
+              "width": 151.0500030517578,
+              "height": 34.19999694824219
+            },
+            "card": {
+              "x": 3,
+              "y": 621.9000244140625,
+              "right": 379,
+              "bottom": 715.2166900634766,
+              "width": 376,
+              "height": 93.31666564941406
+            },
+            "client": 151,
+            "scroll": 151,
+            "font": "15.2667px"
+          }
+        ],
+        "title": "A Hole in One Drilling | Specialist Drilling",
+        "landmark": "A Hole in One Drilling",
+        "desktopText": "\n        A Hole in One Drilling — drilling deeper, delivering more.\n        Specialist drilling solutions. Any terrain. Any challenge. Done right.\n        Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.\n        Specialist drillingFrom exploration to production, we deliver precision you can trust.\n        Experienced professionalsHighly skilled teams committed to safety, quality and efficiency.\n        Safety firstZero compromise. Every job. Everyone goes home safe.\n        Built on precision. Driven by performance.\n      "
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "390x844 service labels wrap",
+      "pass": true,
+      "evidence": [
+        {
+          "text": "SPECIALIST\nDRILLING",
+          "box": {
+            "x": 54,
+            "y": 458.816650390625,
+            "right": 205.0500030517578,
+            "bottom": 493.0166473388672,
+            "width": 151.0500030517578,
+            "height": 34.19999694824219
+          },
+          "card": {
+            "x": 3,
+            "y": 429.26666259765625,
+            "right": 379,
+            "bottom": 522.5833282470703,
+            "width": 376,
+            "height": 93.31666564941406
+          },
+          "client": 151,
+          "scroll": 151,
+          "font": "15.2667px"
+        },
+        {
+          "text": "EXPERIENCED\nPROFESSIONALS",
+          "box": {
+            "x": 54,
+            "y": 555.13330078125,
+            "right": 205.0500030517578,
+            "bottom": 589.3332977294922,
+            "width": 151.0500030517578,
+            "height": 34.19999694824219
+          },
+          "card": {
+            "x": 3,
+            "y": 525.5833129882812,
+            "right": 379,
+            "bottom": 618.8999786376953,
+            "width": 376,
+            "height": 93.31666564941406
+          },
+          "client": 151,
+          "scroll": 151,
+          "font": "15.2667px"
+        },
+        {
+          "text": "SAFETY\nFIRST",
+          "box": {
+            "x": 54,
+            "y": 651.4500122070312,
+            "right": 205.0500030517578,
+            "bottom": 685.6500091552734,
+            "width": 151.0500030517578,
+            "height": 34.19999694824219
+          },
+          "card": {
+            "x": 3,
+            "y": 621.9000244140625,
+            "right": 379,
+            "bottom": 715.2166900634766,
+            "width": 376,
+            "height": 93.31666564941406
+          },
+          "client": 151,
+          "scroll": 151,
+          "font": "15.2667px"
+        }
+      ]
+    },
+    {
+      "id": "DR-01",
+      "label": "390x844 heading fits",
+      "pass": true,
+      "evidence": {
+        "x": 7,
+        "y": 76.30000305175781,
+        "right": 226.39999389648438,
+        "bottom": 151.46665954589844,
+        "width": 219.39999389648438,
+        "height": 75.16665649414062,
+        "client": 219,
+        "scroll": 219
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "390x844 CTA inside hero",
+      "pass": true,
+      "evidence": {
+        "x": 0,
+        "y": 379.26666259765625,
+        "right": 148.96665954589844,
+        "bottom": 423.26666259765625,
+        "width": 148.96665954589844,
+        "height": 44
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "390x844 heading below brand",
+      "pass": true,
+      "evidence": {
+        "heading": {
+          "x": 7,
+          "y": 76.30000305175781,
+          "right": 226.39999389648438,
+          "bottom": 151.46665954589844,
+          "width": 219.39999389648438,
+          "height": 75.16665649414062,
+          "client": 219,
+          "scroll": 219
+        },
+        "brand": {
+          "x": 9,
+          "y": 9,
+          "right": 188.68333435058594,
+          "bottom": 48.71665954589844,
+          "width": 179.68333435058594,
+          "height": 39.71665954589844
+        }
+      }
+    },
+    {
+      "id": "DR-08",
+      "label": "390x844 correct identity",
+      "pass": true,
+      "evidence": {
+        "title": "A Hole in One Drilling | Specialist Drilling",
+        "landmark": "A Hole in One Drilling"
+      }
+    },
+    {
+      "id": "DR-04",
+      "label": "390x844 closed drawer excluded",
+      "pass": true,
+      "evidence": "<body>\n  <main class=\"viewport\" aria-label=\"A Hole in One Drilling\">\n    <section class=\"site\" id=\"site\">\n      <img class=\"artwork\" src=\"assets/images/drilling-hero-optimised.webp\" alt=\"\" aria-hidden=\"true\" fetchpriority=\"high\">\n      <section class=\"desktop-accessible\" aria-label=\"Company introduction\">\n        <h1>A Hole in One Drilling — drilling deeper, delivering more.</h1>\n        <p>Specialist drilling solutions. Any terrain. Any challenge. Done right.</p>\n        <p>Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.</p>\n        <h2>Specialist drilling</h2><p>From exploration to production, we deliver precision you can trust.</p>\n        <h2>Experienced professionals</h2><p>Highly skilled teams committed to safety, quality and efficiency.</p>\n        <h2>Safety first</h2><p>Zero compromise. Every job. Everyone goes home safe.</p>\n        <p>Built on precision. Driven by performance.</p>\n      </section>\n\n      <div class=\"mobile-experience\">\n        <section class=\"mobile-hero\">\n          <div class=\"mobile-brand\" aria-label=\"A Hole in One Drilling\">\n            <strong><span>A</span>1</strong>\n            <p>A HOLE IN ONE<br><b>DRILLING</b></p>\n          </div>\n          <div class=\"mobile-hero__copy\">\n            <p class=\"mobile-kicker\">BUILT ON PRECISION</p>\n            <h1>Drilling<br><em>deeper.</em></h1>\n            <h2>Delivering more.</h2>\n            <p>Specialist drilling solutions for any terrain, any challenge—done right.</p>\n            <button class=\"mobile-menu-cta\" type=\"button\">GET IN TOUCH <span aria-hidden=\"true\">›</span></button>\n          </div>\n        </section>\n\n        <section class=\"mobile-proof\" aria-label=\"Company strengths\">\n          <ul>\n            <li>Any terrain.</li>\n            <li>Any challenge.</li>\n            <li>Done right.</li>\n          </ul>\n        </section>\n\n        <section class=\"mobile-services\" aria-label=\"Service highlights\">\n          <article>\n            <span>01</span>\n            <h2><span>Specialist</span><b>drilling</b></h2>\n            <p>From exploration to production, we deliver precision you can trust.</p>\n          </article>\n          <article>\n            <span>02</span>\n            <h2><span>Experienced</span><b>professionals</b></h2>\n            <p>Highly skilled teams committed to safety, quality and efficiency.</p>\n          </article>\n          <article>\n            <span>03</span>\n            <h2><span>Safety</span><b>first</b></h2>\n            <p>Zero compromise. Every job. Everyone goes home safe.</p>\n          </article>\n        </section>\n\n        <p class=\"mobile-signoff\">BUILT ON <b>PRECISION.</b> DRIVEN BY <b>PERFORMANCE.</b></p>\n      </div>\n\n      <button class=\"menu-toggle\" type=\"button\" aria-expanded=\"false\" aria-controls=\"site-menu\">\n        <span class=\"menu-icon\" aria-hidden=\"true\"><i></i><i></i><i></i></span>\n        <span>MENU</span>\n      </button>\n\n      <div class=\"menu-backdrop\" aria-hidden=\"true\"></div>\n\n      <div class=\"menu-drawer\" inert=\"\" id=\"site-menu\" role=\"dialog\" aria-modal=\"true\" aria-hidden=\"true\" aria-label=\"Site menu\">\n        <div class=\"drawer-head\">\n          <p><span class=\"menu-location\">NATIONWIDE NEW ZEALAND</span><span class=\"menu-company\">A HOLE IN ONE DRILLING</span></p>\n          <button class=\"menu-close\" type=\"button\" aria-label=\"Close menu\">×</button>\n        </div>\n\n        <div class=\"drawer-grid\">\n          <nav class=\"drawer-nav\" aria-label=\"Primary navigation\">\n            <button class=\"drawer-link is-active\" type=\"button\" data-panel=\"services\">Our Services</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"about\">About Us</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"projects\">Projects</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"safety\">Safety</button>\n            <button class=\"drawer-link drawer-link--quote\" type=\"button\" data-panel=\"quote\">Get a Quote</button>\n          </nav>\n\n          <div class=\"drawer-content\">\n            <section class=\"drawer-panel is-active\" data-content=\"services\">\n              <p class=\"panel-kicker\">CAPABILITIES</p>\n              <h2>Built for difficult ground.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Geotechnical Drilling</strong><p>Investigation, sampling and site characterisation.</p></article>\n                <article><strong>Water Bore Drilling</strong><p>Reliable groundwater access and bore development.</p></article>\n                <article><strong>Environmental Drilling</strong><p>Monitoring wells, remediation and compliance work.</p></article>\n                <article><strong>Foundation Drilling</strong><p>Piles, anchors and specialist structural solutions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"about\">\n              <p class=\"panel-kicker\">THE COMPANY</p>\n              <h2>Experienced people. Proven systems.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Our Story</strong><p>Built by experienced operators who value precision.</p></article>\n                <article><strong>Our People</strong><p>Specialist crews, project managers and field experts.</p></article>\n                <article><strong>Equipment Fleet</strong><p>Modern rigs selected for demanding conditions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"projects\">\n              <p class=\"panel-kicker\">SELECTED WORK</p>\n              <h2>Real sites. Real constraints. Real results.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Infrastructure</strong><p>Transport, utilities and major civil projects.</p></article>\n                <article><strong>Commercial</strong><p>Complex urban sites and constrained-access drilling.</p></article>\n                <article><strong>Regional</strong><p>Remote terrain, farms and nationwide field programmes.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"safety\">\n              <p class=\"panel-kicker\">ZERO COMPROMISE</p>\n              <h2>Everyone goes home safe.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Safety Systems</strong><p>Planning, permits, controls and field verification.</p></article>\n                <article><strong>Training</strong><p>Competent crews, current certification and leadership.</p></article>\n                <article><strong>Environmental Care</strong><p>Low-impact methods and responsible site management.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"quote\">\n              <p class=\"panel-kicker\">START A PROJECT</p>\n              <h2>Tell us what needs drilling.</h2>\n              <p class=\"quote-copy\">Try the form with a project location, scope and timing.</p>\n              <p class=\"demo-notice\">Demo only — no quote request is sent.</p>\n              <form id=\"quote-form\" aria-label=\"Demo quote request\">\n                <label><span>Name</span><input name=\"name\" autocomplete=\"name\" required=\"\" style=\"\"></label>\n                <label><span>Email</span><input name=\"email\" type=\"email\" autocomplete=\"email\" required=\"\" style=\"\"></label>\n                <label class=\"full\"><span>Project outline</span><textarea name=\"project\" rows=\"4\" required=\"\" style=\"\"></textarea></label>\n                <button type=\"submit\">REQUEST A CALL →</button>\n                <p class=\"form-status\" role=\"status\"></p>\n              </form>\n            </section>\n          </div>\n        </div>\n      </div>\n    </section>\n  </main>\n  <script src=\"js/app.js?v=4\"></script>\n\n\n</body>"
+    },
+    {
+      "id": "DR-02",
+      "label": "390x844 Close visible",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          382,
+          763
+        ],
+        "close": {
+          "top": 10,
+          "bottom": 54
+        },
+        "content": {
+          "height": 680,
+          "scroll": 680,
+          "top": 0
+        },
+        "nav": {
+          "height": 680,
+          "scroll": 680,
+          "top": 0
+        },
+        "submit": {
+          "top": 0,
+          "bottom": 0
+        },
+        "fields": [
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "font": "16px"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DR-03",
+      "label": "390x844 notice only inside Quote",
+      "pass": true,
+      "evidence": "Demo only — no quote request is sent."
+    },
+    {
+      "id": "DR-03",
+      "label": "390x844 empty required fields rejected",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "id": "DR-03",
+      "label": "390x844 invalid email rejected",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "id": "DR-03",
+      "label": "390x844 honest local completion",
+      "pass": true,
+      "evidence": "Demo complete — no quote request was sent."
+    },
+    {
+      "id": "DR-02",
+      "label": "390x844 Close remains visible after form scroll",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          382,
+          763
+        ],
+        "close": {
+          "top": 10,
+          "bottom": 54
+        },
+        "content": {
+          "height": 680,
+          "scroll": 680,
+          "top": 0
+        },
+        "nav": {
+          "height": 680,
+          "scroll": 680,
+          "top": 0
+        },
+        "submit": {
+          "top": 543.4000244140625,
+          "bottom": 587.4000244140625
+        },
+        "fields": [
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "font": "16px"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DR-06",
+      "label": "390x844 readable fields",
+      "pass": true,
+      "evidence": [
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "INPUT",
+          "font": "16px"
+        },
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "INPUT",
+          "font": "16px"
+        },
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "TEXTAREA",
+          "font": "16px"
+        }
+      ]
+    },
+    {
+      "id": "DR-02",
+      "label": "open menu survives rotation",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          836,
+          338
+        ],
+        "close": {
+          "top": 10,
+          "bottom": 54
+        },
+        "content": {
+          "height": 255,
+          "scroll": 333,
+          "top": 0
+        },
+        "nav": {
+          "height": 255,
+          "scroll": 255,
+          "top": 0
+        },
+        "submit": {
+          "top": 0,
+          "bottom": 0
+        },
+        "fields": [
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "font": "16px"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DR-04",
+      "label": "390x844 drawer inert after close",
+      "pass": true,
+      "evidence": "<body class=\"\">\n  <main class=\"viewport\" aria-label=\"A Hole in One Drilling\">\n    <section class=\"site\" id=\"site\">\n      <img class=\"artwork\" src=\"assets/images/drilling-hero-optimised.webp\" alt=\"\" aria-hidden=\"true\" fetchpriority=\"high\">\n      <section class=\"desktop-accessible\" aria-label=\"Company introduction\">\n        <h1>A Hole in One Drilling — drilling deeper, delivering more.</h1>\n        <p>Specialist drilling solutions. Any terrain. Any challenge. Done right.</p>\n        <p>Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.</p>\n        <h2>Specialist drilling</h2><p>From exploration to production, we deliver precision you can trust.</p>\n        <h2>Experienced professionals</h2><p>Highly skilled teams committed to safety, quality and efficiency.</p>\n        <h2>Safety first</h2><p>Zero compromise. Every job. Everyone goes home safe.</p>\n        <p>Built on precision. Driven by performance.</p>\n      </section>\n\n      <div class=\"mobile-experience\">\n        <section class=\"mobile-hero\">\n          <div class=\"mobile-brand\" aria-label=\"A Hole in One Drilling\">\n            <strong><span>A</span>1</strong>\n            <p>A HOLE IN ONE<br><b>DRILLING</b></p>\n          </div>\n          <div class=\"mobile-hero__copy\">\n            <p class=\"mobile-kicker\">BUILT ON PRECISION</p>\n            <h1>Drilling<br><em>deeper.</em></h1>\n            <h2>Delivering more.</h2>\n            <p>Specialist drilling solutions for any terrain, any challenge—done right.</p>\n            <button class=\"mobile-menu-cta\" type=\"button\">GET IN TOUCH <span aria-hidden=\"true\">›</span></button>\n          </div>\n        </section>\n\n        <section class=\"mobile-proof\" aria-label=\"Company strengths\">\n          <ul>\n            <li>Any terrain.</li>\n            <li>Any challenge.</li>\n            <li>Done right.</li>\n          </ul>\n        </section>\n\n        <section class=\"mobile-services\" aria-label=\"Service highlights\">\n          <article>\n            <span>01</span>\n            <h2><span>Specialist</span><b>drilling</b></h2>\n            <p>From exploration to production, we deliver precision you can trust.</p>\n          </article>\n          <article>\n            <span>02</span>\n            <h2><span>Experienced</span><b>professionals</b></h2>\n            <p>Highly skilled teams committed to safety, quality and efficiency.</p>\n          </article>\n          <article>\n            <span>03</span>\n            <h2><span>Safety</span><b>first</b></h2>\n            <p>Zero compromise. Every job. Everyone goes home safe.</p>\n          </article>\n        </section>\n\n        <p class=\"mobile-signoff\">BUILT ON <b>PRECISION.</b> DRIVEN BY <b>PERFORMANCE.</b></p>\n      </div>\n\n      <button class=\"menu-toggle\" type=\"button\" aria-expanded=\"false\" aria-controls=\"site-menu\">\n        <span class=\"menu-icon\" aria-hidden=\"true\"><i></i><i></i><i></i></span>\n        <span>MENU</span>\n      </button>\n\n      <div class=\"menu-backdrop\" aria-hidden=\"true\"></div>\n\n      <div class=\"menu-drawer\" id=\"site-menu\" role=\"dialog\" aria-modal=\"true\" aria-hidden=\"true\" aria-label=\"Site menu\" inert=\"\">\n        <div class=\"drawer-head\">\n          <p><span class=\"menu-location\">NATIONWIDE NEW ZEALAND</span><span class=\"menu-company\">A HOLE IN ONE DRILLING</span></p>\n          <button class=\"menu-close\" type=\"button\" aria-label=\"Close menu\">×</button>\n        </div>\n\n        <div class=\"drawer-grid\">\n          <nav class=\"drawer-nav\" aria-label=\"Primary navigation\">\n            <button class=\"drawer-link is-active\" type=\"button\" data-panel=\"services\">Our Services</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"about\">About Us</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"projects\">Projects</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"safety\">Safety</button>\n            <button class=\"drawer-link drawer-link--quote\" type=\"button\" data-panel=\"quote\">Get a Quote</button>\n          </nav>\n\n          <div class=\"drawer-content\">\n            <section class=\"drawer-panel is-active\" data-content=\"services\">\n              <p class=\"panel-kicker\">CAPABILITIES</p>\n              <h2>Built for difficult ground.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Geotechnical Drilling</strong><p>Investigation, sampling and site characterisation.</p></article>\n                <article><strong>Water Bore Drilling</strong><p>Reliable groundwater access and bore development.</p></article>\n                <article><strong>Environmental Drilling</strong><p>Monitoring wells, remediation and compliance work.</p></article>\n                <article><strong>Foundation Drilling</strong><p>Piles, anchors and specialist structural solutions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"about\">\n              <p class=\"panel-kicker\">THE COMPANY</p>\n              <h2>Experienced people. Proven systems.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Our Story</strong><p>Built by experienced operators who value precision.</p></article>\n                <article><strong>Our People</strong><p>Specialist crews, project managers and field experts.</p></article>\n                <article><strong>Equipment Fleet</strong><p>Modern rigs selected for demanding conditions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"projects\">\n              <p class=\"panel-kicker\">SELECTED WORK</p>\n              <h2>Real sites. Real constraints. Real results.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Infrastructure</strong><p>Transport, utilities and major civil projects.</p></article>\n                <article><strong>Commercial</strong><p>Complex urban sites and constrained-access drilling.</p></article>\n                <article><strong>Regional</strong><p>Remote terrain, farms and nationwide field programmes.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"safety\">\n              <p class=\"panel-kicker\">ZERO COMPROMISE</p>\n              <h2>Everyone goes home safe.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Safety Systems</strong><p>Planning, permits, controls and field verification.</p></article>\n                <article><strong>Training</strong><p>Competent crews, current certification and leadership.</p></article>\n                <article><strong>Environmental Care</strong><p>Low-impact methods and responsible site management.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"quote\">\n              <p class=\"panel-kicker\">START A PROJECT</p>\n              <h2>Tell us what needs drilling.</h2>\n              <p class=\"quote-copy\">Try the form with a project location, scope and timing.</p>\n              <p class=\"demo-notice\">Demo only — no quote request is sent.</p>\n              <form id=\"quote-form\" aria-label=\"Demo quote request\">\n                <label><span>Name</span><input name=\"name\" autocomplete=\"name\" required=\"\" style=\"\"></label>\n                <label><span>Email</span><input name=\"email\" type=\"email\" autocomplete=\"email\" required=\"\" style=\"\"></label>\n                <label class=\"full\"><span>Project outline</span><textarea name=\"project\" rows=\"4\" required=\"\" style=\"\"></textarea></label>\n                <button type=\"submit\">REQUEST A CALL →</button>\n                <p class=\"form-status\" role=\"status\">Demo complete — no quote request was sent.</p>\n              </form>\n            </section>\n          </div>\n        </div>\n      </div>\n    </section>\n  </main>\n  <script src=\"js/app.js?v=4\"></script>\n\n\n</body>"
+    },
+    {
+      "id": "DR-01",
+      "label": "844x390 no horizontal overflow",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          836,
+          338
+        ],
+        "mobile": true,
+        "overflow": false,
+        "heading": {
+          "x": 14,
+          "y": 54,
+          "right": 220.14999389648438,
+          "bottom": 124.30000305175781,
+          "width": 206.14999389648438,
+          "height": 70.30000305175781,
+          "client": 206,
+          "scroll": 206
+        },
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "right": 836,
+          "bottom": 226.4499969482422,
+          "width": 836,
+          "height": 226.4499969482422
+        },
+        "proof": {
+          "x": 284.23333740234375,
+          "y": 56,
+          "right": 476.5,
+          "bottom": 111.19999694824219,
+          "width": 192.26666259765625,
+          "height": 55.19999694824219
+        },
+        "cta": {
+          "x": 284.23333740234375,
+          "y": 178.4499969482422,
+          "right": 432.23333740234375,
+          "bottom": 222.4499969482422,
+          "width": 148,
+          "height": 44
+        },
+        "brand": {
+          "x": 16,
+          "y": 10,
+          "right": 206.43333435058594,
+          "bottom": 54.80000305175781,
+          "width": 190.43333435058594,
+          "height": 44.80000305175781
+        },
+        "services": [
+          {
+            "text": "SPECIALIST\nDRILLING",
+            "box": {
+              "x": 48,
+              "y": 252.11666870117188,
+              "right": 158.56666564941406,
+              "bottom": 278.51666259765625,
+              "width": 110.56666564941406,
+              "height": 26.399993896484375
+            },
+            "card": {
+              "x": 3,
+              "y": 228.4499969482422,
+              "right": 277.66668701171875,
+              "bottom": 302.18333435058594,
+              "width": 274.66668701171875,
+              "height": 73.73333740234375
+            },
+            "client": 111,
+            "scroll": 111,
+            "font": "12px"
+          },
+          {
+            "text": "EXPERIENCED\nPROFESSIONALS",
+            "box": {
+              "x": 325.66668701171875,
+              "y": 252.11666870117188,
+              "right": 436.2333526611328,
+              "bottom": 278.51666259765625,
+              "width": 110.56666564941406,
+              "height": 26.399993896484375
+            },
+            "card": {
+              "x": 280.66668701171875,
+              "y": 228.4499969482422,
+              "right": 555.3333435058594,
+              "bottom": 302.18333435058594,
+              "width": 274.6666564941406,
+              "height": 73.73333740234375
+            },
+            "client": 111,
+            "scroll": 111,
+            "font": "12px"
+          },
+          {
+            "text": "SAFETY\nFIRST",
+            "box": {
+              "x": 603.3333129882812,
+              "y": 252.11666870117188,
+              "right": 713.8999786376953,
+              "bottom": 278.51666259765625,
+              "width": 110.56666564941406,
+              "height": 26.399993896484375
+            },
+            "card": {
+              "x": 558.3333129882812,
+              "y": 228.4499969482422,
+              "right": 833,
+              "bottom": 302.18333435058594,
+              "width": 274.66668701171875,
+              "height": 73.73333740234375
+            },
+            "client": 111,
+            "scroll": 111,
+            "font": "12px"
+          }
+        ],
+        "title": "A Hole in One Drilling | Specialist Drilling",
+        "landmark": "A Hole in One Drilling",
+        "desktopText": "\n        A Hole in One Drilling — drilling deeper, delivering more.\n        Specialist drilling solutions. Any terrain. Any challenge. Done right.\n        Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.\n        Specialist drillingFrom exploration to production, we deliver precision you can trust.\n        Experienced professionalsHighly skilled teams committed to safety, quality and efficiency.\n        Safety firstZero compromise. Every job. Everyone goes home safe.\n        Built on precision. Driven by performance.\n      "
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "844x390 service labels wrap",
+      "pass": true,
+      "evidence": [
+        {
+          "text": "SPECIALIST\nDRILLING",
+          "box": {
+            "x": 48,
+            "y": 252.11666870117188,
+            "right": 158.56666564941406,
+            "bottom": 278.51666259765625,
+            "width": 110.56666564941406,
+            "height": 26.399993896484375
+          },
+          "card": {
+            "x": 3,
+            "y": 228.4499969482422,
+            "right": 277.66668701171875,
+            "bottom": 302.18333435058594,
+            "width": 274.66668701171875,
+            "height": 73.73333740234375
+          },
+          "client": 111,
+          "scroll": 111,
+          "font": "12px"
+        },
+        {
+          "text": "EXPERIENCED\nPROFESSIONALS",
+          "box": {
+            "x": 325.66668701171875,
+            "y": 252.11666870117188,
+            "right": 436.2333526611328,
+            "bottom": 278.51666259765625,
+            "width": 110.56666564941406,
+            "height": 26.399993896484375
+          },
+          "card": {
+            "x": 280.66668701171875,
+            "y": 228.4499969482422,
+            "right": 555.3333435058594,
+            "bottom": 302.18333435058594,
+            "width": 274.6666564941406,
+            "height": 73.73333740234375
+          },
+          "client": 111,
+          "scroll": 111,
+          "font": "12px"
+        },
+        {
+          "text": "SAFETY\nFIRST",
+          "box": {
+            "x": 603.3333129882812,
+            "y": 252.11666870117188,
+            "right": 713.8999786376953,
+            "bottom": 278.51666259765625,
+            "width": 110.56666564941406,
+            "height": 26.399993896484375
+          },
+          "card": {
+            "x": 558.3333129882812,
+            "y": 228.4499969482422,
+            "right": 833,
+            "bottom": 302.18333435058594,
+            "width": 274.66668701171875,
+            "height": 73.73333740234375
+          },
+          "client": 111,
+          "scroll": 111,
+          "font": "12px"
+        }
+      ]
+    },
+    {
+      "id": "DR-01",
+      "label": "844x390 heading fits",
+      "pass": true,
+      "evidence": {
+        "x": 14,
+        "y": 54,
+        "right": 220.14999389648438,
+        "bottom": 124.30000305175781,
+        "width": 206.14999389648438,
+        "height": 70.30000305175781,
+        "client": 206,
+        "scroll": 206
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "844x390 CTA inside hero",
+      "pass": true,
+      "evidence": {
+        "x": 284.23333740234375,
+        "y": 178.4499969482422,
+        "right": 432.23333740234375,
+        "bottom": 222.4499969482422,
+        "width": 148,
+        "height": 44
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "844x390 heading below brand",
+      "pass": true,
+      "evidence": {
+        "heading": {
+          "x": 14,
+          "y": 54,
+          "right": 220.14999389648438,
+          "bottom": 124.30000305175781,
+          "width": 206.14999389648438,
+          "height": 70.30000305175781,
+          "client": 206,
+          "scroll": 206
+        },
+        "brand": {
+          "x": 16,
+          "y": 10,
+          "right": 206.43333435058594,
+          "bottom": 54.80000305175781,
+          "width": 190.43333435058594,
+          "height": 44.80000305175781
+        }
+      }
+    },
+    {
+      "id": "DR-08",
+      "label": "844x390 correct identity",
+      "pass": true,
+      "evidence": {
+        "title": "A Hole in One Drilling | Specialist Drilling",
+        "landmark": "A Hole in One Drilling"
+      }
+    },
+    {
+      "id": "DR-04",
+      "label": "844x390 closed drawer excluded",
+      "pass": true,
+      "evidence": "<body>\n  <main class=\"viewport\" aria-label=\"A Hole in One Drilling\">\n    <section class=\"site\" id=\"site\">\n      <img class=\"artwork\" src=\"assets/images/drilling-hero-optimised.webp\" alt=\"\" aria-hidden=\"true\" fetchpriority=\"high\">\n      <section class=\"desktop-accessible\" aria-label=\"Company introduction\">\n        <h1>A Hole in One Drilling — drilling deeper, delivering more.</h1>\n        <p>Specialist drilling solutions. Any terrain. Any challenge. Done right.</p>\n        <p>Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.</p>\n        <h2>Specialist drilling</h2><p>From exploration to production, we deliver precision you can trust.</p>\n        <h2>Experienced professionals</h2><p>Highly skilled teams committed to safety, quality and efficiency.</p>\n        <h2>Safety first</h2><p>Zero compromise. Every job. Everyone goes home safe.</p>\n        <p>Built on precision. Driven by performance.</p>\n      </section>\n\n      <div class=\"mobile-experience\">\n        <section class=\"mobile-hero\">\n          <div class=\"mobile-brand\" aria-label=\"A Hole in One Drilling\">\n            <strong><span>A</span>1</strong>\n            <p>A HOLE IN ONE<br><b>DRILLING</b></p>\n          </div>\n          <div class=\"mobile-hero__copy\">\n            <p class=\"mobile-kicker\">BUILT ON PRECISION</p>\n            <h1>Drilling<br><em>deeper.</em></h1>\n            <h2>Delivering more.</h2>\n            <p>Specialist drilling solutions for any terrain, any challenge—done right.</p>\n            <button class=\"mobile-menu-cta\" type=\"button\">GET IN TOUCH <span aria-hidden=\"true\">›</span></button>\n          </div>\n        </section>\n\n        <section class=\"mobile-proof\" aria-label=\"Company strengths\">\n          <ul>\n            <li>Any terrain.</li>\n            <li>Any challenge.</li>\n            <li>Done right.</li>\n          </ul>\n        </section>\n\n        <section class=\"mobile-services\" aria-label=\"Service highlights\">\n          <article>\n            <span>01</span>\n            <h2><span>Specialist</span><b>drilling</b></h2>\n            <p>From exploration to production, we deliver precision you can trust.</p>\n          </article>\n          <article>\n            <span>02</span>\n            <h2><span>Experienced</span><b>professionals</b></h2>\n            <p>Highly skilled teams committed to safety, quality and efficiency.</p>\n          </article>\n          <article>\n            <span>03</span>\n            <h2><span>Safety</span><b>first</b></h2>\n            <p>Zero compromise. Every job. Everyone goes home safe.</p>\n          </article>\n        </section>\n\n        <p class=\"mobile-signoff\">BUILT ON <b>PRECISION.</b> DRIVEN BY <b>PERFORMANCE.</b></p>\n      </div>\n\n      <button class=\"menu-toggle\" type=\"button\" aria-expanded=\"false\" aria-controls=\"site-menu\">\n        <span class=\"menu-icon\" aria-hidden=\"true\"><i></i><i></i><i></i></span>\n        <span>MENU</span>\n      </button>\n\n      <div class=\"menu-backdrop\" aria-hidden=\"true\"></div>\n\n      <div class=\"menu-drawer\" inert=\"\" id=\"site-menu\" role=\"dialog\" aria-modal=\"true\" aria-hidden=\"true\" aria-label=\"Site menu\">\n        <div class=\"drawer-head\">\n          <p><span class=\"menu-location\">NATIONWIDE NEW ZEALAND</span><span class=\"menu-company\">A HOLE IN ONE DRILLING</span></p>\n          <button class=\"menu-close\" type=\"button\" aria-label=\"Close menu\">×</button>\n        </div>\n\n        <div class=\"drawer-grid\">\n          <nav class=\"drawer-nav\" aria-label=\"Primary navigation\">\n            <button class=\"drawer-link is-active\" type=\"button\" data-panel=\"services\">Our Services</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"about\">About Us</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"projects\">Projects</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"safety\">Safety</button>\n            <button class=\"drawer-link drawer-link--quote\" type=\"button\" data-panel=\"quote\">Get a Quote</button>\n          </nav>\n\n          <div class=\"drawer-content\">\n            <section class=\"drawer-panel is-active\" data-content=\"services\">\n              <p class=\"panel-kicker\">CAPABILITIES</p>\n              <h2>Built for difficult ground.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Geotechnical Drilling</strong><p>Investigation, sampling and site characterisation.</p></article>\n                <article><strong>Water Bore Drilling</strong><p>Reliable groundwater access and bore development.</p></article>\n                <article><strong>Environmental Drilling</strong><p>Monitoring wells, remediation and compliance work.</p></article>\n                <article><strong>Foundation Drilling</strong><p>Piles, anchors and specialist structural solutions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"about\">\n              <p class=\"panel-kicker\">THE COMPANY</p>\n              <h2>Experienced people. Proven systems.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Our Story</strong><p>Built by experienced operators who value precision.</p></article>\n                <article><strong>Our People</strong><p>Specialist crews, project managers and field experts.</p></article>\n                <article><strong>Equipment Fleet</strong><p>Modern rigs selected for demanding conditions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"projects\">\n              <p class=\"panel-kicker\">SELECTED WORK</p>\n              <h2>Real sites. Real constraints. Real results.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Infrastructure</strong><p>Transport, utilities and major civil projects.</p></article>\n                <article><strong>Commercial</strong><p>Complex urban sites and constrained-access drilling.</p></article>\n                <article><strong>Regional</strong><p>Remote terrain, farms and nationwide field programmes.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"safety\">\n              <p class=\"panel-kicker\">ZERO COMPROMISE</p>\n              <h2>Everyone goes home safe.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Safety Systems</strong><p>Planning, permits, controls and field verification.</p></article>\n                <article><strong>Training</strong><p>Competent crews, current certification and leadership.</p></article>\n                <article><strong>Environmental Care</strong><p>Low-impact methods and responsible site management.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"quote\">\n              <p class=\"panel-kicker\">START A PROJECT</p>\n              <h2>Tell us what needs drilling.</h2>\n              <p class=\"quote-copy\">Try the form with a project location, scope and timing.</p>\n              <p class=\"demo-notice\">Demo only — no quote request is sent.</p>\n              <form id=\"quote-form\" aria-label=\"Demo quote request\">\n                <label><span>Name</span><input name=\"name\" autocomplete=\"name\" required=\"\" style=\"\"></label>\n                <label><span>Email</span><input name=\"email\" type=\"email\" autocomplete=\"email\" required=\"\" style=\"\"></label>\n                <label class=\"full\"><span>Project outline</span><textarea name=\"project\" rows=\"4\" required=\"\" style=\"\"></textarea></label>\n                <button type=\"submit\">REQUEST A CALL →</button>\n                <p class=\"form-status\" role=\"status\"></p>\n              </form>\n            </section>\n          </div>\n        </div>\n      </div>\n    </section>\n  </main>\n  <script src=\"js/app.js?v=4\"></script>\n\n\n</body>"
+    },
+    {
+      "id": "DR-02",
+      "label": "844x390 Close visible",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          836,
+          338
+        ],
+        "close": {
+          "top": 10,
+          "bottom": 54
+        },
+        "content": {
+          "height": 255,
+          "scroll": 333,
+          "top": 0
+        },
+        "nav": {
+          "height": 255,
+          "scroll": 255,
+          "top": 0
+        },
+        "submit": {
+          "top": 0,
+          "bottom": 0
+        },
+        "fields": [
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "font": "16px"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DR-03",
+      "label": "844x390 notice only inside Quote",
+      "pass": true,
+      "evidence": "Demo only — no quote request is sent."
+    },
+    {
+      "id": "DR-03",
+      "label": "844x390 empty required fields rejected",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "id": "DR-03",
+      "label": "844x390 invalid email rejected",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "id": "DR-03",
+      "label": "844x390 honest local completion",
+      "pass": true,
+      "evidence": "Demo complete — no quote request was sent."
+    },
+    {
+      "id": "DR-02",
+      "label": "844x390 Close remains visible after form scroll",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          836,
+          338
+        ],
+        "close": {
+          "top": 10,
+          "bottom": 54
+        },
+        "content": {
+          "height": 255,
+          "scroll": 536,
+          "top": 281
+        },
+        "nav": {
+          "height": 255,
+          "scroll": 255,
+          "top": 0
+        },
+        "submit": {
+          "top": 237.3000030517578,
+          "bottom": 281.3000030517578
+        },
+        "fields": [
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "font": "16px"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DR-06",
+      "label": "844x390 readable fields",
+      "pass": true,
+      "evidence": [
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "INPUT",
+          "font": "16px"
+        },
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "INPUT",
+          "font": "16px"
+        },
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "TEXTAREA",
+          "font": "16px"
+        }
+      ]
+    },
+    {
+      "id": "DR-04",
+      "label": "844x390 drawer inert after close",
+      "pass": true,
+      "evidence": "<body class=\"\">\n  <main class=\"viewport\" aria-label=\"A Hole in One Drilling\">\n    <section class=\"site\" id=\"site\">\n      <img class=\"artwork\" src=\"assets/images/drilling-hero-optimised.webp\" alt=\"\" aria-hidden=\"true\" fetchpriority=\"high\">\n      <section class=\"desktop-accessible\" aria-label=\"Company introduction\">\n        <h1>A Hole in One Drilling — drilling deeper, delivering more.</h1>\n        <p>Specialist drilling solutions. Any terrain. Any challenge. Done right.</p>\n        <p>Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.</p>\n        <h2>Specialist drilling</h2><p>From exploration to production, we deliver precision you can trust.</p>\n        <h2>Experienced professionals</h2><p>Highly skilled teams committed to safety, quality and efficiency.</p>\n        <h2>Safety first</h2><p>Zero compromise. Every job. Everyone goes home safe.</p>\n        <p>Built on precision. Driven by performance.</p>\n      </section>\n\n      <div class=\"mobile-experience\">\n        <section class=\"mobile-hero\">\n          <div class=\"mobile-brand\" aria-label=\"A Hole in One Drilling\">\n            <strong><span>A</span>1</strong>\n            <p>A HOLE IN ONE<br><b>DRILLING</b></p>\n          </div>\n          <div class=\"mobile-hero__copy\">\n            <p class=\"mobile-kicker\">BUILT ON PRECISION</p>\n            <h1>Drilling<br><em>deeper.</em></h1>\n            <h2>Delivering more.</h2>\n            <p>Specialist drilling solutions for any terrain, any challenge—done right.</p>\n            <button class=\"mobile-menu-cta\" type=\"button\">GET IN TOUCH <span aria-hidden=\"true\">›</span></button>\n          </div>\n        </section>\n\n        <section class=\"mobile-proof\" aria-label=\"Company strengths\">\n          <ul>\n            <li>Any terrain.</li>\n            <li>Any challenge.</li>\n            <li>Done right.</li>\n          </ul>\n        </section>\n\n        <section class=\"mobile-services\" aria-label=\"Service highlights\">\n          <article>\n            <span>01</span>\n            <h2><span>Specialist</span><b>drilling</b></h2>\n            <p>From exploration to production, we deliver precision you can trust.</p>\n          </article>\n          <article>\n            <span>02</span>\n            <h2><span>Experienced</span><b>professionals</b></h2>\n            <p>Highly skilled teams committed to safety, quality and efficiency.</p>\n          </article>\n          <article>\n            <span>03</span>\n            <h2><span>Safety</span><b>first</b></h2>\n            <p>Zero compromise. Every job. Everyone goes home safe.</p>\n          </article>\n        </section>\n\n        <p class=\"mobile-signoff\">BUILT ON <b>PRECISION.</b> DRIVEN BY <b>PERFORMANCE.</b></p>\n      </div>\n\n      <button class=\"menu-toggle\" type=\"button\" aria-expanded=\"false\" aria-controls=\"site-menu\">\n        <span class=\"menu-icon\" aria-hidden=\"true\"><i></i><i></i><i></i></span>\n        <span>MENU</span>\n      </button>\n\n      <div class=\"menu-backdrop\" aria-hidden=\"true\"></div>\n\n      <div class=\"menu-drawer\" id=\"site-menu\" role=\"dialog\" aria-modal=\"true\" aria-hidden=\"true\" aria-label=\"Site menu\" inert=\"\">\n        <div class=\"drawer-head\">\n          <p><span class=\"menu-location\">NATIONWIDE NEW ZEALAND</span><span class=\"menu-company\">A HOLE IN ONE DRILLING</span></p>\n          <button class=\"menu-close\" type=\"button\" aria-label=\"Close menu\">×</button>\n        </div>\n\n        <div class=\"drawer-grid\">\n          <nav class=\"drawer-nav\" aria-label=\"Primary navigation\">\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"services\">Our Services</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"about\">About Us</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"projects\">Projects</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"safety\">Safety</button>\n            <button class=\"drawer-link drawer-link--quote is-active\" type=\"button\" data-panel=\"quote\">Get a Quote</button>\n          </nav>\n\n          <div class=\"drawer-content\">\n            <section class=\"drawer-panel\" data-content=\"services\">\n              <p class=\"panel-kicker\">CAPABILITIES</p>\n              <h2>Built for difficult ground.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Geotechnical Drilling</strong><p>Investigation, sampling and site characterisation.</p></article>\n                <article><strong>Water Bore Drilling</strong><p>Reliable groundwater access and bore development.</p></article>\n                <article><strong>Environmental Drilling</strong><p>Monitoring wells, remediation and compliance work.</p></article>\n                <article><strong>Foundation Drilling</strong><p>Piles, anchors and specialist structural solutions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"about\">\n              <p class=\"panel-kicker\">THE COMPANY</p>\n              <h2>Experienced people. Proven systems.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Our Story</strong><p>Built by experienced operators who value precision.</p></article>\n                <article><strong>Our People</strong><p>Specialist crews, project managers and field experts.</p></article>\n                <article><strong>Equipment Fleet</strong><p>Modern rigs selected for demanding conditions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"projects\">\n              <p class=\"panel-kicker\">SELECTED WORK</p>\n              <h2>Real sites. Real constraints. Real results.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Infrastructure</strong><p>Transport, utilities and major civil projects.</p></article>\n                <article><strong>Commercial</strong><p>Complex urban sites and constrained-access drilling.</p></article>\n                <article><strong>Regional</strong><p>Remote terrain, farms and nationwide field programmes.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"safety\">\n              <p class=\"panel-kicker\">ZERO COMPROMISE</p>\n              <h2>Everyone goes home safe.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Safety Systems</strong><p>Planning, permits, controls and field verification.</p></article>\n                <article><strong>Training</strong><p>Competent crews, current certification and leadership.</p></article>\n                <article><strong>Environmental Care</strong><p>Low-impact methods and responsible site management.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel is-active\" data-content=\"quote\">\n              <p class=\"panel-kicker\">START A PROJECT</p>\n              <h2>Tell us what needs drilling.</h2>\n              <p class=\"quote-copy\">Try the form with a project location, scope and timing.</p>\n              <p class=\"demo-notice\">Demo only — no quote request is sent.</p>\n              <form id=\"quote-form\" aria-label=\"Demo quote request\">\n                <label><span>Name</span><input name=\"name\" autocomplete=\"name\" required=\"\" style=\"\"></label>\n                <label><span>Email</span><input name=\"email\" type=\"email\" autocomplete=\"email\" required=\"\" style=\"\"></label>\n                <label class=\"full\"><span>Project outline</span><textarea name=\"project\" rows=\"4\" required=\"\" style=\"\"></textarea></label>\n                <button type=\"submit\">REQUEST A CALL →</button>\n                <p class=\"form-status\" role=\"status\">Demo complete — no quote request was sent.</p>\n              </form>\n            </section>\n          </div>\n        </div>\n      </div>\n    </section>\n  </main>\n  <script src=\"js/app.js?v=4\"></script>\n\n\n</body>"
+    },
+    {
+      "id": "DR-01",
+      "label": "320x568 no horizontal overflow",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          312,
+          487
+        ],
+        "mobile": true,
+        "overflow": false,
+        "heading": {
+          "x": 7,
+          "y": 58,
+          "right": 191.63333129882812,
+          "bottom": 119.39999389648438,
+          "width": 184.63333129882812,
+          "height": 61.399993896484375,
+          "client": 185,
+          "scroll": 185
+        },
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "right": 312,
+          "bottom": 272.7166748046875,
+          "width": 312,
+          "height": 272.7166748046875
+        },
+        "proof": {
+          "x": 7,
+          "y": 161.11666870117188,
+          "right": 156.75,
+          "bottom": 214.71665954589844,
+          "width": 149.75,
+          "height": 53.59999084472656
+        },
+        "cta": {
+          "x": 0,
+          "y": 224.71665954589844,
+          "right": 134,
+          "bottom": 268.71665954589844,
+          "width": 134,
+          "height": 44
+        },
+        "brand": {
+          "x": 9,
+          "y": 9,
+          "right": 156.98333740234375,
+          "bottom": 41.43333435058594,
+          "width": 147.98333740234375,
+          "height": 32.43333435058594
+        },
+        "services": [
+          {
+            "text": "SPECIALIST\nDRILLING",
+            "box": {
+              "x": 54,
+              "y": 288.20001220703125,
+              "right": 167.25,
+              "bottom": 319.5666809082031,
+              "width": 113.25,
+              "height": 31.366668701171875
+            },
+            "card": {
+              "x": 3,
+              "y": 274.7166748046875,
+              "right": 309,
+              "bottom": 333.0666809082031,
+              "width": 306,
+              "height": 58.350006103515625
+            },
+            "client": 113,
+            "scroll": 113,
+            "font": "14px"
+          },
+          {
+            "text": "EXPERIENCED\nPROFESSIONALS",
+            "box": {
+              "x": 54,
+              "y": 341.7166748046875,
+              "right": 167.25,
+              "bottom": 388.7666778564453,
+              "width": 113.25,
+              "height": 47.05000305175781
+            },
+            "card": {
+              "x": 3,
+              "y": 336.066650390625,
+              "right": 309,
+              "bottom": 394.4166564941406,
+              "width": 306,
+              "height": 58.350006103515625
+            },
+            "client": 113,
+            "scroll": 113,
+            "font": "14px"
+          },
+          {
+            "text": "SAFETY\nFIRST",
+            "box": {
+              "x": 54,
+              "y": 410.8999938964844,
+              "right": 167.25,
+              "bottom": 442.26666259765625,
+              "width": 113.25,
+              "height": 31.366668701171875
+            },
+            "card": {
+              "x": 3,
+              "y": 397.41668701171875,
+              "right": 309,
+              "bottom": 455.7666778564453,
+              "width": 306,
+              "height": 58.34999084472656
+            },
+            "client": 113,
+            "scroll": 113,
+            "font": "14px"
+          }
+        ],
+        "title": "A Hole in One Drilling | Specialist Drilling",
+        "landmark": "A Hole in One Drilling",
+        "desktopText": "\n        A Hole in One Drilling — drilling deeper, delivering more.\n        Specialist drilling solutions. Any terrain. Any challenge. Done right.\n        Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.\n        Specialist drillingFrom exploration to production, we deliver precision you can trust.\n        Experienced professionalsHighly skilled teams committed to safety, quality and efficiency.\n        Safety firstZero compromise. Every job. Everyone goes home safe.\n        Built on precision. Driven by performance.\n      "
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "320x568 service labels wrap",
+      "pass": true,
+      "evidence": [
+        {
+          "text": "SPECIALIST\nDRILLING",
+          "box": {
+            "x": 54,
+            "y": 288.20001220703125,
+            "right": 167.25,
+            "bottom": 319.5666809082031,
+            "width": 113.25,
+            "height": 31.366668701171875
+          },
+          "card": {
+            "x": 3,
+            "y": 274.7166748046875,
+            "right": 309,
+            "bottom": 333.0666809082031,
+            "width": 306,
+            "height": 58.350006103515625
+          },
+          "client": 113,
+          "scroll": 113,
+          "font": "14px"
+        },
+        {
+          "text": "EXPERIENCED\nPROFESSIONALS",
+          "box": {
+            "x": 54,
+            "y": 341.7166748046875,
+            "right": 167.25,
+            "bottom": 388.7666778564453,
+            "width": 113.25,
+            "height": 47.05000305175781
+          },
+          "card": {
+            "x": 3,
+            "y": 336.066650390625,
+            "right": 309,
+            "bottom": 394.4166564941406,
+            "width": 306,
+            "height": 58.350006103515625
+          },
+          "client": 113,
+          "scroll": 113,
+          "font": "14px"
+        },
+        {
+          "text": "SAFETY\nFIRST",
+          "box": {
+            "x": 54,
+            "y": 410.8999938964844,
+            "right": 167.25,
+            "bottom": 442.26666259765625,
+            "width": 113.25,
+            "height": 31.366668701171875
+          },
+          "card": {
+            "x": 3,
+            "y": 397.41668701171875,
+            "right": 309,
+            "bottom": 455.7666778564453,
+            "width": 306,
+            "height": 58.34999084472656
+          },
+          "client": 113,
+          "scroll": 113,
+          "font": "14px"
+        }
+      ]
+    },
+    {
+      "id": "DR-01",
+      "label": "320x568 heading fits",
+      "pass": true,
+      "evidence": {
+        "x": 7,
+        "y": 58,
+        "right": 191.63333129882812,
+        "bottom": 119.39999389648438,
+        "width": 184.63333129882812,
+        "height": 61.399993896484375,
+        "client": 185,
+        "scroll": 185
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "320x568 CTA inside hero",
+      "pass": true,
+      "evidence": {
+        "x": 0,
+        "y": 224.71665954589844,
+        "right": 134,
+        "bottom": 268.71665954589844,
+        "width": 134,
+        "height": 44
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "320x568 heading below brand",
+      "pass": true,
+      "evidence": {
+        "heading": {
+          "x": 7,
+          "y": 58,
+          "right": 191.63333129882812,
+          "bottom": 119.39999389648438,
+          "width": 184.63333129882812,
+          "height": 61.399993896484375,
+          "client": 185,
+          "scroll": 185
+        },
+        "brand": {
+          "x": 9,
+          "y": 9,
+          "right": 156.98333740234375,
+          "bottom": 41.43333435058594,
+          "width": 147.98333740234375,
+          "height": 32.43333435058594
+        }
+      }
+    },
+    {
+      "id": "DR-08",
+      "label": "320x568 correct identity",
+      "pass": true,
+      "evidence": {
+        "title": "A Hole in One Drilling | Specialist Drilling",
+        "landmark": "A Hole in One Drilling"
+      }
+    },
+    {
+      "id": "DR-04",
+      "label": "320x568 closed drawer excluded",
+      "pass": true,
+      "evidence": "<body>\n  <main class=\"viewport\" aria-label=\"A Hole in One Drilling\">\n    <section class=\"site\" id=\"site\">\n      <img class=\"artwork\" src=\"assets/images/drilling-hero-optimised.webp\" alt=\"\" aria-hidden=\"true\" fetchpriority=\"high\">\n      <section class=\"desktop-accessible\" aria-label=\"Company introduction\">\n        <h1>A Hole in One Drilling — drilling deeper, delivering more.</h1>\n        <p>Specialist drilling solutions. Any terrain. Any challenge. Done right.</p>\n        <p>Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.</p>\n        <h2>Specialist drilling</h2><p>From exploration to production, we deliver precision you can trust.</p>\n        <h2>Experienced professionals</h2><p>Highly skilled teams committed to safety, quality and efficiency.</p>\n        <h2>Safety first</h2><p>Zero compromise. Every job. Everyone goes home safe.</p>\n        <p>Built on precision. Driven by performance.</p>\n      </section>\n\n      <div class=\"mobile-experience\">\n        <section class=\"mobile-hero\">\n          <div class=\"mobile-brand\" aria-label=\"A Hole in One Drilling\">\n            <strong><span>A</span>1</strong>\n            <p>A HOLE IN ONE<br><b>DRILLING</b></p>\n          </div>\n          <div class=\"mobile-hero__copy\">\n            <p class=\"mobile-kicker\">BUILT ON PRECISION</p>\n            <h1>Drilling<br><em>deeper.</em></h1>\n            <h2>Delivering more.</h2>\n            <p>Specialist drilling solutions for any terrain, any challenge—done right.</p>\n            <button class=\"mobile-menu-cta\" type=\"button\">GET IN TOUCH <span aria-hidden=\"true\">›</span></button>\n          </div>\n        </section>\n\n        <section class=\"mobile-proof\" aria-label=\"Company strengths\">\n          <ul>\n            <li>Any terrain.</li>\n            <li>Any challenge.</li>\n            <li>Done right.</li>\n          </ul>\n        </section>\n\n        <section class=\"mobile-services\" aria-label=\"Service highlights\">\n          <article>\n            <span>01</span>\n            <h2><span>Specialist</span><b>drilling</b></h2>\n            <p>From exploration to production, we deliver precision you can trust.</p>\n          </article>\n          <article>\n            <span>02</span>\n            <h2><span>Experienced</span><b>professionals</b></h2>\n            <p>Highly skilled teams committed to safety, quality and efficiency.</p>\n          </article>\n          <article>\n            <span>03</span>\n            <h2><span>Safety</span><b>first</b></h2>\n            <p>Zero compromise. Every job. Everyone goes home safe.</p>\n          </article>\n        </section>\n\n        <p class=\"mobile-signoff\">BUILT ON <b>PRECISION.</b> DRIVEN BY <b>PERFORMANCE.</b></p>\n      </div>\n\n      <button class=\"menu-toggle\" type=\"button\" aria-expanded=\"false\" aria-controls=\"site-menu\">\n        <span class=\"menu-icon\" aria-hidden=\"true\"><i></i><i></i><i></i></span>\n        <span>MENU</span>\n      </button>\n\n      <div class=\"menu-backdrop\" aria-hidden=\"true\"></div>\n\n      <div class=\"menu-drawer\" inert=\"\" id=\"site-menu\" role=\"dialog\" aria-modal=\"true\" aria-hidden=\"true\" aria-label=\"Site menu\">\n        <div class=\"drawer-head\">\n          <p><span class=\"menu-location\">NATIONWIDE NEW ZEALAND</span><span class=\"menu-company\">A HOLE IN ONE DRILLING</span></p>\n          <button class=\"menu-close\" type=\"button\" aria-label=\"Close menu\">×</button>\n        </div>\n\n        <div class=\"drawer-grid\">\n          <nav class=\"drawer-nav\" aria-label=\"Primary navigation\">\n            <button class=\"drawer-link is-active\" type=\"button\" data-panel=\"services\">Our Services</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"about\">About Us</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"projects\">Projects</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"safety\">Safety</button>\n            <button class=\"drawer-link drawer-link--quote\" type=\"button\" data-panel=\"quote\">Get a Quote</button>\n          </nav>\n\n          <div class=\"drawer-content\">\n            <section class=\"drawer-panel is-active\" data-content=\"services\">\n              <p class=\"panel-kicker\">CAPABILITIES</p>\n              <h2>Built for difficult ground.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Geotechnical Drilling</strong><p>Investigation, sampling and site characterisation.</p></article>\n                <article><strong>Water Bore Drilling</strong><p>Reliable groundwater access and bore development.</p></article>\n                <article><strong>Environmental Drilling</strong><p>Monitoring wells, remediation and compliance work.</p></article>\n                <article><strong>Foundation Drilling</strong><p>Piles, anchors and specialist structural solutions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"about\">\n              <p class=\"panel-kicker\">THE COMPANY</p>\n              <h2>Experienced people. Proven systems.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Our Story</strong><p>Built by experienced operators who value precision.</p></article>\n                <article><strong>Our People</strong><p>Specialist crews, project managers and field experts.</p></article>\n                <article><strong>Equipment Fleet</strong><p>Modern rigs selected for demanding conditions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"projects\">\n              <p class=\"panel-kicker\">SELECTED WORK</p>\n              <h2>Real sites. Real constraints. Real results.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Infrastructure</strong><p>Transport, utilities and major civil projects.</p></article>\n                <article><strong>Commercial</strong><p>Complex urban sites and constrained-access drilling.</p></article>\n                <article><strong>Regional</strong><p>Remote terrain, farms and nationwide field programmes.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"safety\">\n              <p class=\"panel-kicker\">ZERO COMPROMISE</p>\n              <h2>Everyone goes home safe.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Safety Systems</strong><p>Planning, permits, controls and field verification.</p></article>\n                <article><strong>Training</strong><p>Competent crews, current certification and leadership.</p></article>\n                <article><strong>Environmental Care</strong><p>Low-impact methods and responsible site management.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"quote\">\n              <p class=\"panel-kicker\">START A PROJECT</p>\n              <h2>Tell us what needs drilling.</h2>\n              <p class=\"quote-copy\">Try the form with a project location, scope and timing.</p>\n              <p class=\"demo-notice\">Demo only — no quote request is sent.</p>\n              <form id=\"quote-form\" aria-label=\"Demo quote request\">\n                <label><span>Name</span><input name=\"name\" autocomplete=\"name\" required=\"\" style=\"\"></label>\n                <label><span>Email</span><input name=\"email\" type=\"email\" autocomplete=\"email\" required=\"\" style=\"\"></label>\n                <label class=\"full\"><span>Project outline</span><textarea name=\"project\" rows=\"4\" required=\"\" style=\"\"></textarea></label>\n                <button type=\"submit\">REQUEST A CALL →</button>\n                <p class=\"form-status\" role=\"status\"></p>\n              </form>\n            </section>\n          </div>\n        </div>\n      </div>\n    </section>\n  </main>\n  <script src=\"js/app.js?v=4\"></script>\n\n\n</body>"
+    },
+    {
+      "id": "DR-02",
+      "label": "320x568 Close visible",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          312,
+          487
+        ],
+        "close": {
+          "top": 10,
+          "bottom": 54
+        },
+        "content": {
+          "height": 404,
+          "scroll": 593,
+          "top": 0
+        },
+        "nav": {
+          "height": 404,
+          "scroll": 404,
+          "top": 0
+        },
+        "submit": {
+          "top": 0,
+          "bottom": 0
+        },
+        "fields": [
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "font": "16px"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DR-03",
+      "label": "320x568 notice only inside Quote",
+      "pass": true,
+      "evidence": "Demo only — no quote request is sent."
+    },
+    {
+      "id": "DR-03",
+      "label": "320x568 empty required fields rejected",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "id": "DR-03",
+      "label": "320x568 invalid email rejected",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "id": "DR-03",
+      "label": "320x568 honest local completion",
+      "pass": true,
+      "evidence": "Demo complete — no quote request was sent."
+    },
+    {
+      "id": "DR-02",
+      "label": "320x568 Close remains visible after form scroll",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          312,
+          487
+        ],
+        "close": {
+          "top": 10,
+          "bottom": 54
+        },
+        "content": {
+          "height": 404,
+          "scroll": 619,
+          "top": 215
+        },
+        "nav": {
+          "height": 404,
+          "scroll": 404,
+          "top": 0
+        },
+        "submit": {
+          "top": 351.5,
+          "bottom": 409.8999938964844
+        },
+        "fields": [
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "font": "16px"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DR-06",
+      "label": "320x568 readable fields",
+      "pass": true,
+      "evidence": [
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "INPUT",
+          "font": "16px"
+        },
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "INPUT",
+          "font": "16px"
+        },
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "TEXTAREA",
+          "font": "16px"
+        }
+      ]
+    },
+    {
+      "id": "DR-04",
+      "label": "320x568 drawer inert after close",
+      "pass": true,
+      "evidence": "<body class=\"\">\n  <main class=\"viewport\" aria-label=\"A Hole in One Drilling\">\n    <section class=\"site\" id=\"site\">\n      <img class=\"artwork\" src=\"assets/images/drilling-hero-optimised.webp\" alt=\"\" aria-hidden=\"true\" fetchpriority=\"high\">\n      <section class=\"desktop-accessible\" aria-label=\"Company introduction\">\n        <h1>A Hole in One Drilling — drilling deeper, delivering more.</h1>\n        <p>Specialist drilling solutions. Any terrain. Any challenge. Done right.</p>\n        <p>Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.</p>\n        <h2>Specialist drilling</h2><p>From exploration to production, we deliver precision you can trust.</p>\n        <h2>Experienced professionals</h2><p>Highly skilled teams committed to safety, quality and efficiency.</p>\n        <h2>Safety first</h2><p>Zero compromise. Every job. Everyone goes home safe.</p>\n        <p>Built on precision. Driven by performance.</p>\n      </section>\n\n      <div class=\"mobile-experience\">\n        <section class=\"mobile-hero\">\n          <div class=\"mobile-brand\" aria-label=\"A Hole in One Drilling\">\n            <strong><span>A</span>1</strong>\n            <p>A HOLE IN ONE<br><b>DRILLING</b></p>\n          </div>\n          <div class=\"mobile-hero__copy\">\n            <p class=\"mobile-kicker\">BUILT ON PRECISION</p>\n            <h1>Drilling<br><em>deeper.</em></h1>\n            <h2>Delivering more.</h2>\n            <p>Specialist drilling solutions for any terrain, any challenge—done right.</p>\n            <button class=\"mobile-menu-cta\" type=\"button\">GET IN TOUCH <span aria-hidden=\"true\">›</span></button>\n          </div>\n        </section>\n\n        <section class=\"mobile-proof\" aria-label=\"Company strengths\">\n          <ul>\n            <li>Any terrain.</li>\n            <li>Any challenge.</li>\n            <li>Done right.</li>\n          </ul>\n        </section>\n\n        <section class=\"mobile-services\" aria-label=\"Service highlights\">\n          <article>\n            <span>01</span>\n            <h2><span>Specialist</span><b>drilling</b></h2>\n            <p>From exploration to production, we deliver precision you can trust.</p>\n          </article>\n          <article>\n            <span>02</span>\n            <h2><span>Experienced</span><b>professionals</b></h2>\n            <p>Highly skilled teams committed to safety, quality and efficiency.</p>\n          </article>\n          <article>\n            <span>03</span>\n            <h2><span>Safety</span><b>first</b></h2>\n            <p>Zero compromise. Every job. Everyone goes home safe.</p>\n          </article>\n        </section>\n\n        <p class=\"mobile-signoff\">BUILT ON <b>PRECISION.</b> DRIVEN BY <b>PERFORMANCE.</b></p>\n      </div>\n\n      <button class=\"menu-toggle\" type=\"button\" aria-expanded=\"false\" aria-controls=\"site-menu\">\n        <span class=\"menu-icon\" aria-hidden=\"true\"><i></i><i></i><i></i></span>\n        <span>MENU</span>\n      </button>\n\n      <div class=\"menu-backdrop\" aria-hidden=\"true\"></div>\n\n      <div class=\"menu-drawer\" id=\"site-menu\" role=\"dialog\" aria-modal=\"true\" aria-hidden=\"true\" aria-label=\"Site menu\" inert=\"\">\n        <div class=\"drawer-head\">\n          <p><span class=\"menu-location\">NATIONWIDE NEW ZEALAND</span><span class=\"menu-company\">A HOLE IN ONE DRILLING</span></p>\n          <button class=\"menu-close\" type=\"button\" aria-label=\"Close menu\">×</button>\n        </div>\n\n        <div class=\"drawer-grid\">\n          <nav class=\"drawer-nav\" aria-label=\"Primary navigation\">\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"services\">Our Services</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"about\">About Us</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"projects\">Projects</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"safety\">Safety</button>\n            <button class=\"drawer-link drawer-link--quote is-active\" type=\"button\" data-panel=\"quote\">Get a Quote</button>\n          </nav>\n\n          <div class=\"drawer-content\">\n            <section class=\"drawer-panel\" data-content=\"services\">\n              <p class=\"panel-kicker\">CAPABILITIES</p>\n              <h2>Built for difficult ground.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Geotechnical Drilling</strong><p>Investigation, sampling and site characterisation.</p></article>\n                <article><strong>Water Bore Drilling</strong><p>Reliable groundwater access and bore development.</p></article>\n                <article><strong>Environmental Drilling</strong><p>Monitoring wells, remediation and compliance work.</p></article>\n                <article><strong>Foundation Drilling</strong><p>Piles, anchors and specialist structural solutions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"about\">\n              <p class=\"panel-kicker\">THE COMPANY</p>\n              <h2>Experienced people. Proven systems.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Our Story</strong><p>Built by experienced operators who value precision.</p></article>\n                <article><strong>Our People</strong><p>Specialist crews, project managers and field experts.</p></article>\n                <article><strong>Equipment Fleet</strong><p>Modern rigs selected for demanding conditions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"projects\">\n              <p class=\"panel-kicker\">SELECTED WORK</p>\n              <h2>Real sites. Real constraints. Real results.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Infrastructure</strong><p>Transport, utilities and major civil projects.</p></article>\n                <article><strong>Commercial</strong><p>Complex urban sites and constrained-access drilling.</p></article>\n                <article><strong>Regional</strong><p>Remote terrain, farms and nationwide field programmes.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"safety\">\n              <p class=\"panel-kicker\">ZERO COMPROMISE</p>\n              <h2>Everyone goes home safe.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Safety Systems</strong><p>Planning, permits, controls and field verification.</p></article>\n                <article><strong>Training</strong><p>Competent crews, current certification and leadership.</p></article>\n                <article><strong>Environmental Care</strong><p>Low-impact methods and responsible site management.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel is-active\" data-content=\"quote\">\n              <p class=\"panel-kicker\">START A PROJECT</p>\n              <h2>Tell us what needs drilling.</h2>\n              <p class=\"quote-copy\">Try the form with a project location, scope and timing.</p>\n              <p class=\"demo-notice\">Demo only — no quote request is sent.</p>\n              <form id=\"quote-form\" aria-label=\"Demo quote request\">\n                <label><span>Name</span><input name=\"name\" autocomplete=\"name\" required=\"\" style=\"\"></label>\n                <label><span>Email</span><input name=\"email\" type=\"email\" autocomplete=\"email\" required=\"\" style=\"\"></label>\n                <label class=\"full\"><span>Project outline</span><textarea name=\"project\" rows=\"4\" required=\"\" style=\"\"></textarea></label>\n                <button type=\"submit\">REQUEST A CALL →</button>\n                <p class=\"form-status\" role=\"status\">Demo complete — no quote request was sent.</p>\n              </form>\n            </section>\n          </div>\n        </div>\n      </div>\n    </section>\n  </main>\n  <script src=\"js/app.js?v=4\"></script>\n\n\n</body>"
+    },
+    {
+      "id": "DR-01",
+      "label": "780x300 no horizontal overflow",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          772,
+          248
+        ],
+        "mobile": true,
+        "overflow": false,
+        "heading": {
+          "x": 14,
+          "y": 54,
+          "right": 201.06666564941406,
+          "bottom": 105.56666564941406,
+          "width": 187.06666564941406,
+          "height": 51.56666564941406,
+          "client": 187,
+          "scroll": 187
+        },
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "right": 772,
+          "bottom": 166.14999389648438,
+          "width": 772,
+          "height": 166.14999389648438
+        },
+        "proof": {
+          "x": 262.4666748046875,
+          "y": 56,
+          "right": 440.0166778564453,
+          "bottom": 111.19999694824219,
+          "width": 177.5500030517578,
+          "height": 55.19999694824219
+        },
+        "cta": {
+          "x": 262.4666748046875,
+          "y": 118.14999389648438,
+          "right": 410.4666748046875,
+          "bottom": 162.14999389648438,
+          "width": 148,
+          "height": 44
+        },
+        "brand": {
+          "x": 16,
+          "y": 10,
+          "right": 205.48333740234375,
+          "bottom": 54.46665954589844,
+          "width": 189.48333740234375,
+          "height": 44.46665954589844
+        },
+        "services": [
+          {
+            "text": "SPECIALIST\nDRILLING",
+            "box": {
+              "x": 48,
+              "y": 181.46665954589844,
+              "right": 146.39999389648438,
+              "bottom": 207.86666870117188,
+              "width": 98.39999389648438,
+              "height": 26.400009155273438
+            },
+            "card": {
+              "x": 3,
+              "y": 168.14999389648438,
+              "right": 256.3333282470703,
+              "bottom": 221.18333435058594,
+              "width": 253.3333282470703,
+              "height": 53.03334045410156
+            },
+            "client": 98,
+            "scroll": 98,
+            "font": "12px"
+          },
+          {
+            "text": "EXPERIENCED\nPROFESSIONALS",
+            "box": {
+              "x": 304.33331298828125,
+              "y": 174.86666870117188,
+              "right": 402.7333221435547,
+              "bottom": 214.46665954589844,
+              "width": 98.40000915527344,
+              "height": 39.59999084472656
+            },
+            "card": {
+              "x": 259.33331298828125,
+              "y": 168.14999389648438,
+              "right": 512.6666564941406,
+              "bottom": 221.18333435058594,
+              "width": 253.33334350585938,
+              "height": 53.03334045410156
+            },
+            "client": 98,
+            "scroll": 98,
+            "font": "12px"
+          },
+          {
+            "text": "SAFETY\nFIRST",
+            "box": {
+              "x": 560.6666870117188,
+              "y": 181.46665954589844,
+              "right": 659.0666809082031,
+              "bottom": 207.86666870117188,
+              "width": 98.39999389648438,
+              "height": 26.400009155273438
+            },
+            "card": {
+              "x": 515.6666870117188,
+              "y": 168.14999389648438,
+              "right": 769.0000152587891,
+              "bottom": 221.18333435058594,
+              "width": 253.3333282470703,
+              "height": 53.03334045410156
+            },
+            "client": 98,
+            "scroll": 98,
+            "font": "12px"
+          }
+        ],
+        "title": "A Hole in One Drilling | Specialist Drilling",
+        "landmark": "A Hole in One Drilling",
+        "desktopText": "\n        A Hole in One Drilling — drilling deeper, delivering more.\n        Specialist drilling solutions. Any terrain. Any challenge. Done right.\n        Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.\n        Specialist drillingFrom exploration to production, we deliver precision you can trust.\n        Experienced professionalsHighly skilled teams committed to safety, quality and efficiency.\n        Safety firstZero compromise. Every job. Everyone goes home safe.\n        Built on precision. Driven by performance.\n      "
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "780x300 service labels wrap",
+      "pass": true,
+      "evidence": [
+        {
+          "text": "SPECIALIST\nDRILLING",
+          "box": {
+            "x": 48,
+            "y": 181.46665954589844,
+            "right": 146.39999389648438,
+            "bottom": 207.86666870117188,
+            "width": 98.39999389648438,
+            "height": 26.400009155273438
+          },
+          "card": {
+            "x": 3,
+            "y": 168.14999389648438,
+            "right": 256.3333282470703,
+            "bottom": 221.18333435058594,
+            "width": 253.3333282470703,
+            "height": 53.03334045410156
+          },
+          "client": 98,
+          "scroll": 98,
+          "font": "12px"
+        },
+        {
+          "text": "EXPERIENCED\nPROFESSIONALS",
+          "box": {
+            "x": 304.33331298828125,
+            "y": 174.86666870117188,
+            "right": 402.7333221435547,
+            "bottom": 214.46665954589844,
+            "width": 98.40000915527344,
+            "height": 39.59999084472656
+          },
+          "card": {
+            "x": 259.33331298828125,
+            "y": 168.14999389648438,
+            "right": 512.6666564941406,
+            "bottom": 221.18333435058594,
+            "width": 253.33334350585938,
+            "height": 53.03334045410156
+          },
+          "client": 98,
+          "scroll": 98,
+          "font": "12px"
+        },
+        {
+          "text": "SAFETY\nFIRST",
+          "box": {
+            "x": 560.6666870117188,
+            "y": 181.46665954589844,
+            "right": 659.0666809082031,
+            "bottom": 207.86666870117188,
+            "width": 98.39999389648438,
+            "height": 26.400009155273438
+          },
+          "card": {
+            "x": 515.6666870117188,
+            "y": 168.14999389648438,
+            "right": 769.0000152587891,
+            "bottom": 221.18333435058594,
+            "width": 253.3333282470703,
+            "height": 53.03334045410156
+          },
+          "client": 98,
+          "scroll": 98,
+          "font": "12px"
+        }
+      ]
+    },
+    {
+      "id": "DR-01",
+      "label": "780x300 heading fits",
+      "pass": true,
+      "evidence": {
+        "x": 14,
+        "y": 54,
+        "right": 201.06666564941406,
+        "bottom": 105.56666564941406,
+        "width": 187.06666564941406,
+        "height": 51.56666564941406,
+        "client": 187,
+        "scroll": 187
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "780x300 CTA inside hero",
+      "pass": true,
+      "evidence": {
+        "x": 262.4666748046875,
+        "y": 118.14999389648438,
+        "right": 410.4666748046875,
+        "bottom": 162.14999389648438,
+        "width": 148,
+        "height": 44
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "780x300 heading below brand",
+      "pass": true,
+      "evidence": {
+        "heading": {
+          "x": 14,
+          "y": 54,
+          "right": 201.06666564941406,
+          "bottom": 105.56666564941406,
+          "width": 187.06666564941406,
+          "height": 51.56666564941406,
+          "client": 187,
+          "scroll": 187
+        },
+        "brand": {
+          "x": 16,
+          "y": 10,
+          "right": 205.48333740234375,
+          "bottom": 54.46665954589844,
+          "width": 189.48333740234375,
+          "height": 44.46665954589844
+        }
+      }
+    },
+    {
+      "id": "DR-08",
+      "label": "780x300 correct identity",
+      "pass": true,
+      "evidence": {
+        "title": "A Hole in One Drilling | Specialist Drilling",
+        "landmark": "A Hole in One Drilling"
+      }
+    },
+    {
+      "id": "DR-04",
+      "label": "780x300 closed drawer excluded",
+      "pass": true,
+      "evidence": "<body>\n  <main class=\"viewport\" aria-label=\"A Hole in One Drilling\">\n    <section class=\"site\" id=\"site\">\n      <img class=\"artwork\" src=\"assets/images/drilling-hero-optimised.webp\" alt=\"\" aria-hidden=\"true\" fetchpriority=\"high\">\n      <section class=\"desktop-accessible\" aria-label=\"Company introduction\">\n        <h1>A Hole in One Drilling — drilling deeper, delivering more.</h1>\n        <p>Specialist drilling solutions. Any terrain. Any challenge. Done right.</p>\n        <p>Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.</p>\n        <h2>Specialist drilling</h2><p>From exploration to production, we deliver precision you can trust.</p>\n        <h2>Experienced professionals</h2><p>Highly skilled teams committed to safety, quality and efficiency.</p>\n        <h2>Safety first</h2><p>Zero compromise. Every job. Everyone goes home safe.</p>\n        <p>Built on precision. Driven by performance.</p>\n      </section>\n\n      <div class=\"mobile-experience\">\n        <section class=\"mobile-hero\">\n          <div class=\"mobile-brand\" aria-label=\"A Hole in One Drilling\">\n            <strong><span>A</span>1</strong>\n            <p>A HOLE IN ONE<br><b>DRILLING</b></p>\n          </div>\n          <div class=\"mobile-hero__copy\">\n            <p class=\"mobile-kicker\">BUILT ON PRECISION</p>\n            <h1>Drilling<br><em>deeper.</em></h1>\n            <h2>Delivering more.</h2>\n            <p>Specialist drilling solutions for any terrain, any challenge—done right.</p>\n            <button class=\"mobile-menu-cta\" type=\"button\">GET IN TOUCH <span aria-hidden=\"true\">›</span></button>\n          </div>\n        </section>\n\n        <section class=\"mobile-proof\" aria-label=\"Company strengths\">\n          <ul>\n            <li>Any terrain.</li>\n            <li>Any challenge.</li>\n            <li>Done right.</li>\n          </ul>\n        </section>\n\n        <section class=\"mobile-services\" aria-label=\"Service highlights\">\n          <article>\n            <span>01</span>\n            <h2><span>Specialist</span><b>drilling</b></h2>\n            <p>From exploration to production, we deliver precision you can trust.</p>\n          </article>\n          <article>\n            <span>02</span>\n            <h2><span>Experienced</span><b>professionals</b></h2>\n            <p>Highly skilled teams committed to safety, quality and efficiency.</p>\n          </article>\n          <article>\n            <span>03</span>\n            <h2><span>Safety</span><b>first</b></h2>\n            <p>Zero compromise. Every job. Everyone goes home safe.</p>\n          </article>\n        </section>\n\n        <p class=\"mobile-signoff\">BUILT ON <b>PRECISION.</b> DRIVEN BY <b>PERFORMANCE.</b></p>\n      </div>\n\n      <button class=\"menu-toggle\" type=\"button\" aria-expanded=\"false\" aria-controls=\"site-menu\">\n        <span class=\"menu-icon\" aria-hidden=\"true\"><i></i><i></i><i></i></span>\n        <span>MENU</span>\n      </button>\n\n      <div class=\"menu-backdrop\" aria-hidden=\"true\"></div>\n\n      <div class=\"menu-drawer\" inert=\"\" id=\"site-menu\" role=\"dialog\" aria-modal=\"true\" aria-hidden=\"true\" aria-label=\"Site menu\">\n        <div class=\"drawer-head\">\n          <p><span class=\"menu-location\">NATIONWIDE NEW ZEALAND</span><span class=\"menu-company\">A HOLE IN ONE DRILLING</span></p>\n          <button class=\"menu-close\" type=\"button\" aria-label=\"Close menu\">×</button>\n        </div>\n\n        <div class=\"drawer-grid\">\n          <nav class=\"drawer-nav\" aria-label=\"Primary navigation\">\n            <button class=\"drawer-link is-active\" type=\"button\" data-panel=\"services\">Our Services</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"about\">About Us</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"projects\">Projects</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"safety\">Safety</button>\n            <button class=\"drawer-link drawer-link--quote\" type=\"button\" data-panel=\"quote\">Get a Quote</button>\n          </nav>\n\n          <div class=\"drawer-content\">\n            <section class=\"drawer-panel is-active\" data-content=\"services\">\n              <p class=\"panel-kicker\">CAPABILITIES</p>\n              <h2>Built for difficult ground.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Geotechnical Drilling</strong><p>Investigation, sampling and site characterisation.</p></article>\n                <article><strong>Water Bore Drilling</strong><p>Reliable groundwater access and bore development.</p></article>\n                <article><strong>Environmental Drilling</strong><p>Monitoring wells, remediation and compliance work.</p></article>\n                <article><strong>Foundation Drilling</strong><p>Piles, anchors and specialist structural solutions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"about\">\n              <p class=\"panel-kicker\">THE COMPANY</p>\n              <h2>Experienced people. Proven systems.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Our Story</strong><p>Built by experienced operators who value precision.</p></article>\n                <article><strong>Our People</strong><p>Specialist crews, project managers and field experts.</p></article>\n                <article><strong>Equipment Fleet</strong><p>Modern rigs selected for demanding conditions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"projects\">\n              <p class=\"panel-kicker\">SELECTED WORK</p>\n              <h2>Real sites. Real constraints. Real results.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Infrastructure</strong><p>Transport, utilities and major civil projects.</p></article>\n                <article><strong>Commercial</strong><p>Complex urban sites and constrained-access drilling.</p></article>\n                <article><strong>Regional</strong><p>Remote terrain, farms and nationwide field programmes.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"safety\">\n              <p class=\"panel-kicker\">ZERO COMPROMISE</p>\n              <h2>Everyone goes home safe.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Safety Systems</strong><p>Planning, permits, controls and field verification.</p></article>\n                <article><strong>Training</strong><p>Competent crews, current certification and leadership.</p></article>\n                <article><strong>Environmental Care</strong><p>Low-impact methods and responsible site management.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"quote\">\n              <p class=\"panel-kicker\">START A PROJECT</p>\n              <h2>Tell us what needs drilling.</h2>\n              <p class=\"quote-copy\">Try the form with a project location, scope and timing.</p>\n              <p class=\"demo-notice\">Demo only — no quote request is sent.</p>\n              <form id=\"quote-form\" aria-label=\"Demo quote request\">\n                <label><span>Name</span><input name=\"name\" autocomplete=\"name\" required=\"\" style=\"\"></label>\n                <label><span>Email</span><input name=\"email\" type=\"email\" autocomplete=\"email\" required=\"\" style=\"\"></label>\n                <label class=\"full\"><span>Project outline</span><textarea name=\"project\" rows=\"4\" required=\"\" style=\"\"></textarea></label>\n                <button type=\"submit\">REQUEST A CALL →</button>\n                <p class=\"form-status\" role=\"status\"></p>\n              </form>\n            </section>\n          </div>\n        </div>\n      </div>\n    </section>\n  </main>\n  <script src=\"js/app.js?v=4\"></script>\n\n\n</body>"
+    },
+    {
+      "id": "DR-02",
+      "label": "780x300 Close visible",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          772,
+          248
+        ],
+        "close": {
+          "top": 10,
+          "bottom": 54
+        },
+        "content": {
+          "height": 165,
+          "scroll": 364,
+          "top": 0
+        },
+        "nav": {
+          "height": 165,
+          "scroll": 236,
+          "top": 0
+        },
+        "submit": {
+          "top": 0,
+          "bottom": 0
+        },
+        "fields": [
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "font": "16px"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DR-03",
+      "label": "780x300 notice only inside Quote",
+      "pass": true,
+      "evidence": "Demo only — no quote request is sent."
+    },
+    {
+      "id": "DR-03",
+      "label": "780x300 empty required fields rejected",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "id": "DR-03",
+      "label": "780x300 invalid email rejected",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "id": "DR-03",
+      "label": "780x300 honest local completion",
+      "pass": true,
+      "evidence": "Demo complete — no quote request was sent."
+    },
+    {
+      "id": "DR-02",
+      "label": "780x300 Close remains visible after form scroll",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          772,
+          248
+        ],
+        "close": {
+          "top": 10,
+          "bottom": 54
+        },
+        "content": {
+          "height": 165,
+          "scroll": 536,
+          "top": 371
+        },
+        "nav": {
+          "height": 165,
+          "scroll": 236,
+          "top": 71
+        },
+        "submit": {
+          "top": 147.3000030517578,
+          "bottom": 191.3000030517578
+        },
+        "fields": [
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "font": "16px"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DR-06",
+      "label": "780x300 readable fields",
+      "pass": true,
+      "evidence": [
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "INPUT",
+          "font": "16px"
+        },
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "INPUT",
+          "font": "16px"
+        },
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "TEXTAREA",
+          "font": "16px"
+        }
+      ]
+    },
+    {
+      "id": "DR-04",
+      "label": "780x300 drawer inert after close",
+      "pass": true,
+      "evidence": "<body class=\"\">\n  <main class=\"viewport\" aria-label=\"A Hole in One Drilling\">\n    <section class=\"site\" id=\"site\">\n      <img class=\"artwork\" src=\"assets/images/drilling-hero-optimised.webp\" alt=\"\" aria-hidden=\"true\" fetchpriority=\"high\">\n      <section class=\"desktop-accessible\" aria-label=\"Company introduction\">\n        <h1>A Hole in One Drilling — drilling deeper, delivering more.</h1>\n        <p>Specialist drilling solutions. Any terrain. Any challenge. Done right.</p>\n        <p>Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.</p>\n        <h2>Specialist drilling</h2><p>From exploration to production, we deliver precision you can trust.</p>\n        <h2>Experienced professionals</h2><p>Highly skilled teams committed to safety, quality and efficiency.</p>\n        <h2>Safety first</h2><p>Zero compromise. Every job. Everyone goes home safe.</p>\n        <p>Built on precision. Driven by performance.</p>\n      </section>\n\n      <div class=\"mobile-experience\">\n        <section class=\"mobile-hero\">\n          <div class=\"mobile-brand\" aria-label=\"A Hole in One Drilling\">\n            <strong><span>A</span>1</strong>\n            <p>A HOLE IN ONE<br><b>DRILLING</b></p>\n          </div>\n          <div class=\"mobile-hero__copy\">\n            <p class=\"mobile-kicker\">BUILT ON PRECISION</p>\n            <h1>Drilling<br><em>deeper.</em></h1>\n            <h2>Delivering more.</h2>\n            <p>Specialist drilling solutions for any terrain, any challenge—done right.</p>\n            <button class=\"mobile-menu-cta\" type=\"button\">GET IN TOUCH <span aria-hidden=\"true\">›</span></button>\n          </div>\n        </section>\n\n        <section class=\"mobile-proof\" aria-label=\"Company strengths\">\n          <ul>\n            <li>Any terrain.</li>\n            <li>Any challenge.</li>\n            <li>Done right.</li>\n          </ul>\n        </section>\n\n        <section class=\"mobile-services\" aria-label=\"Service highlights\">\n          <article>\n            <span>01</span>\n            <h2><span>Specialist</span><b>drilling</b></h2>\n            <p>From exploration to production, we deliver precision you can trust.</p>\n          </article>\n          <article>\n            <span>02</span>\n            <h2><span>Experienced</span><b>professionals</b></h2>\n            <p>Highly skilled teams committed to safety, quality and efficiency.</p>\n          </article>\n          <article>\n            <span>03</span>\n            <h2><span>Safety</span><b>first</b></h2>\n            <p>Zero compromise. Every job. Everyone goes home safe.</p>\n          </article>\n        </section>\n\n        <p class=\"mobile-signoff\">BUILT ON <b>PRECISION.</b> DRIVEN BY <b>PERFORMANCE.</b></p>\n      </div>\n\n      <button class=\"menu-toggle\" type=\"button\" aria-expanded=\"false\" aria-controls=\"site-menu\">\n        <span class=\"menu-icon\" aria-hidden=\"true\"><i></i><i></i><i></i></span>\n        <span>MENU</span>\n      </button>\n\n      <div class=\"menu-backdrop\" aria-hidden=\"true\"></div>\n\n      <div class=\"menu-drawer\" id=\"site-menu\" role=\"dialog\" aria-modal=\"true\" aria-hidden=\"true\" aria-label=\"Site menu\" inert=\"\">\n        <div class=\"drawer-head\">\n          <p><span class=\"menu-location\">NATIONWIDE NEW ZEALAND</span><span class=\"menu-company\">A HOLE IN ONE DRILLING</span></p>\n          <button class=\"menu-close\" type=\"button\" aria-label=\"Close menu\">×</button>\n        </div>\n\n        <div class=\"drawer-grid\">\n          <nav class=\"drawer-nav\" aria-label=\"Primary navigation\">\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"services\">Our Services</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"about\">About Us</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"projects\">Projects</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"safety\">Safety</button>\n            <button class=\"drawer-link drawer-link--quote is-active\" type=\"button\" data-panel=\"quote\">Get a Quote</button>\n          </nav>\n\n          <div class=\"drawer-content\">\n            <section class=\"drawer-panel\" data-content=\"services\">\n              <p class=\"panel-kicker\">CAPABILITIES</p>\n              <h2>Built for difficult ground.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Geotechnical Drilling</strong><p>Investigation, sampling and site characterisation.</p></article>\n                <article><strong>Water Bore Drilling</strong><p>Reliable groundwater access and bore development.</p></article>\n                <article><strong>Environmental Drilling</strong><p>Monitoring wells, remediation and compliance work.</p></article>\n                <article><strong>Foundation Drilling</strong><p>Piles, anchors and specialist structural solutions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"about\">\n              <p class=\"panel-kicker\">THE COMPANY</p>\n              <h2>Experienced people. Proven systems.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Our Story</strong><p>Built by experienced operators who value precision.</p></article>\n                <article><strong>Our People</strong><p>Specialist crews, project managers and field experts.</p></article>\n                <article><strong>Equipment Fleet</strong><p>Modern rigs selected for demanding conditions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"projects\">\n              <p class=\"panel-kicker\">SELECTED WORK</p>\n              <h2>Real sites. Real constraints. Real results.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Infrastructure</strong><p>Transport, utilities and major civil projects.</p></article>\n                <article><strong>Commercial</strong><p>Complex urban sites and constrained-access drilling.</p></article>\n                <article><strong>Regional</strong><p>Remote terrain, farms and nationwide field programmes.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"safety\">\n              <p class=\"panel-kicker\">ZERO COMPROMISE</p>\n              <h2>Everyone goes home safe.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Safety Systems</strong><p>Planning, permits, controls and field verification.</p></article>\n                <article><strong>Training</strong><p>Competent crews, current certification and leadership.</p></article>\n                <article><strong>Environmental Care</strong><p>Low-impact methods and responsible site management.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel is-active\" data-content=\"quote\">\n              <p class=\"panel-kicker\">START A PROJECT</p>\n              <h2>Tell us what needs drilling.</h2>\n              <p class=\"quote-copy\">Try the form with a project location, scope and timing.</p>\n              <p class=\"demo-notice\">Demo only — no quote request is sent.</p>\n              <form id=\"quote-form\" aria-label=\"Demo quote request\">\n                <label><span>Name</span><input name=\"name\" autocomplete=\"name\" required=\"\" style=\"\"></label>\n                <label><span>Email</span><input name=\"email\" type=\"email\" autocomplete=\"email\" required=\"\" style=\"\"></label>\n                <label class=\"full\"><span>Project outline</span><textarea name=\"project\" rows=\"4\" required=\"\" style=\"\"></textarea></label>\n                <button type=\"submit\">REQUEST A CALL →</button>\n                <p class=\"form-status\" role=\"status\">Demo complete — no quote request was sent.</p>\n              </form>\n            </section>\n          </div>\n        </div>\n      </div>\n    </section>\n  </main>\n  <script src=\"js/app.js?v=4\"></script>\n\n\n</body>"
+    },
+    {
+      "id": "DR-01",
+      "label": "720x450 no horizontal overflow",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          712,
+          398
+        ],
+        "mobile": true,
+        "overflow": false,
+        "heading": {
+          "x": 14,
+          "y": 54,
+          "right": 207.6666717529297,
+          "bottom": 120.06666564941406,
+          "width": 193.6666717529297,
+          "height": 66.06666564941406,
+          "client": 194,
+          "scroll": 194
+        },
+        "hero": {
+          "x": 0,
+          "y": 0,
+          "right": 712,
+          "bottom": 266.6499938964844,
+          "width": 712,
+          "height": 266.6499938964844
+        },
+        "proof": {
+          "x": 242.06666564941406,
+          "y": 56,
+          "right": 405.81666564941406,
+          "bottom": 111.19999694824219,
+          "width": 163.75,
+          "height": 55.19999694824219
+        },
+        "cta": {
+          "x": 242.06666564941406,
+          "y": 218.64999389648438,
+          "right": 390.06666564941406,
+          "bottom": 262.6499938964844,
+          "width": 148,
+          "height": 44
+        },
+        "brand": {
+          "x": 16,
+          "y": 10,
+          "right": 191.26666259765625,
+          "bottom": 51,
+          "width": 175.26666259765625,
+          "height": 41
+        },
+        "services": [
+          {
+            "text": "SPECIALIST\nDRILLING",
+            "box": {
+              "x": 48,
+              "y": 299.2166748046875,
+              "right": 135,
+              "bottom": 325.61668395996094,
+              "width": 87,
+              "height": 26.400009155273438
+            },
+            "card": {
+              "x": 3,
+              "y": 268.6499938964844,
+              "right": 236.3333282470703,
+              "bottom": 356.18333435058594,
+              "width": 233.3333282470703,
+              "height": 87.53334045410156
+            },
+            "client": 87,
+            "scroll": 87,
+            "font": "12px"
+          },
+          {
+            "text": "EXPERIENCED\nPROFESSIONALS",
+            "box": {
+              "x": 284.33331298828125,
+              "y": 292.6166687011719,
+              "right": 371.33331298828125,
+              "bottom": 332.21665954589844,
+              "width": 87,
+              "height": 39.59999084472656
+            },
+            "card": {
+              "x": 239.3333282470703,
+              "y": 268.6499938964844,
+              "right": 472.6666717529297,
+              "bottom": 356.18333435058594,
+              "width": 233.33334350585938,
+              "height": 87.53334045410156
+            },
+            "client": 87,
+            "scroll": 87,
+            "font": "12px"
+          },
+          {
+            "text": "SAFETY\nFIRST",
+            "box": {
+              "x": 520.6666870117188,
+              "y": 299.2166748046875,
+              "right": 607.6666870117188,
+              "bottom": 325.61668395996094,
+              "width": 87,
+              "height": 26.400009155273438
+            },
+            "card": {
+              "x": 475.66668701171875,
+              "y": 268.6499938964844,
+              "right": 709.0000152587891,
+              "bottom": 356.18333435058594,
+              "width": 233.3333282470703,
+              "height": 87.53334045410156
+            },
+            "client": 87,
+            "scroll": 87,
+            "font": "12px"
+          }
+        ],
+        "title": "A Hole in One Drilling | Specialist Drilling",
+        "landmark": "A Hole in One Drilling",
+        "desktopText": "\n        A Hole in One Drilling — drilling deeper, delivering more.\n        Specialist drilling solutions. Any terrain. Any challenge. Done right.\n        Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.\n        Specialist drillingFrom exploration to production, we deliver precision you can trust.\n        Experienced professionalsHighly skilled teams committed to safety, quality and efficiency.\n        Safety firstZero compromise. Every job. Everyone goes home safe.\n        Built on precision. Driven by performance.\n      "
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "720x450 service labels wrap",
+      "pass": true,
+      "evidence": [
+        {
+          "text": "SPECIALIST\nDRILLING",
+          "box": {
+            "x": 48,
+            "y": 299.2166748046875,
+            "right": 135,
+            "bottom": 325.61668395996094,
+            "width": 87,
+            "height": 26.400009155273438
+          },
+          "card": {
+            "x": 3,
+            "y": 268.6499938964844,
+            "right": 236.3333282470703,
+            "bottom": 356.18333435058594,
+            "width": 233.3333282470703,
+            "height": 87.53334045410156
+          },
+          "client": 87,
+          "scroll": 87,
+          "font": "12px"
+        },
+        {
+          "text": "EXPERIENCED\nPROFESSIONALS",
+          "box": {
+            "x": 284.33331298828125,
+            "y": 292.6166687011719,
+            "right": 371.33331298828125,
+            "bottom": 332.21665954589844,
+            "width": 87,
+            "height": 39.59999084472656
+          },
+          "card": {
+            "x": 239.3333282470703,
+            "y": 268.6499938964844,
+            "right": 472.6666717529297,
+            "bottom": 356.18333435058594,
+            "width": 233.33334350585938,
+            "height": 87.53334045410156
+          },
+          "client": 87,
+          "scroll": 87,
+          "font": "12px"
+        },
+        {
+          "text": "SAFETY\nFIRST",
+          "box": {
+            "x": 520.6666870117188,
+            "y": 299.2166748046875,
+            "right": 607.6666870117188,
+            "bottom": 325.61668395996094,
+            "width": 87,
+            "height": 26.400009155273438
+          },
+          "card": {
+            "x": 475.66668701171875,
+            "y": 268.6499938964844,
+            "right": 709.0000152587891,
+            "bottom": 356.18333435058594,
+            "width": 233.3333282470703,
+            "height": 87.53334045410156
+          },
+          "client": 87,
+          "scroll": 87,
+          "font": "12px"
+        }
+      ]
+    },
+    {
+      "id": "DR-01",
+      "label": "720x450 heading fits",
+      "pass": true,
+      "evidence": {
+        "x": 14,
+        "y": 54,
+        "right": 207.6666717529297,
+        "bottom": 120.06666564941406,
+        "width": 193.6666717529297,
+        "height": 66.06666564941406,
+        "client": 194,
+        "scroll": 194
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "720x450 CTA inside hero",
+      "pass": true,
+      "evidence": {
+        "x": 242.06666564941406,
+        "y": 218.64999389648438,
+        "right": 390.06666564941406,
+        "bottom": 262.6499938964844,
+        "width": 148,
+        "height": 44
+      }
+    },
+    {
+      "id": "DR-01",
+      "label": "720x450 heading below brand",
+      "pass": true,
+      "evidence": {
+        "heading": {
+          "x": 14,
+          "y": 54,
+          "right": 207.6666717529297,
+          "bottom": 120.06666564941406,
+          "width": 193.6666717529297,
+          "height": 66.06666564941406,
+          "client": 194,
+          "scroll": 194
+        },
+        "brand": {
+          "x": 16,
+          "y": 10,
+          "right": 191.26666259765625,
+          "bottom": 51,
+          "width": 175.26666259765625,
+          "height": 41
+        }
+      }
+    },
+    {
+      "id": "DR-08",
+      "label": "720x450 correct identity",
+      "pass": true,
+      "evidence": {
+        "title": "A Hole in One Drilling | Specialist Drilling",
+        "landmark": "A Hole in One Drilling"
+      }
+    },
+    {
+      "id": "DR-04",
+      "label": "720x450 closed drawer excluded",
+      "pass": true,
+      "evidence": "<body>\n  <main class=\"viewport\" aria-label=\"A Hole in One Drilling\">\n    <section class=\"site\" id=\"site\">\n      <img class=\"artwork\" src=\"assets/images/drilling-hero-optimised.webp\" alt=\"\" aria-hidden=\"true\" fetchpriority=\"high\">\n      <section class=\"desktop-accessible\" aria-label=\"Company introduction\">\n        <h1>A Hole in One Drilling — drilling deeper, delivering more.</h1>\n        <p>Specialist drilling solutions. Any terrain. Any challenge. Done right.</p>\n        <p>Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.</p>\n        <h2>Specialist drilling</h2><p>From exploration to production, we deliver precision you can trust.</p>\n        <h2>Experienced professionals</h2><p>Highly skilled teams committed to safety, quality and efficiency.</p>\n        <h2>Safety first</h2><p>Zero compromise. Every job. Everyone goes home safe.</p>\n        <p>Built on precision. Driven by performance.</p>\n      </section>\n\n      <div class=\"mobile-experience\">\n        <section class=\"mobile-hero\">\n          <div class=\"mobile-brand\" aria-label=\"A Hole in One Drilling\">\n            <strong><span>A</span>1</strong>\n            <p>A HOLE IN ONE<br><b>DRILLING</b></p>\n          </div>\n          <div class=\"mobile-hero__copy\">\n            <p class=\"mobile-kicker\">BUILT ON PRECISION</p>\n            <h1>Drilling<br><em>deeper.</em></h1>\n            <h2>Delivering more.</h2>\n            <p>Specialist drilling solutions for any terrain, any challenge—done right.</p>\n            <button class=\"mobile-menu-cta\" type=\"button\">GET IN TOUCH <span aria-hidden=\"true\">›</span></button>\n          </div>\n        </section>\n\n        <section class=\"mobile-proof\" aria-label=\"Company strengths\">\n          <ul>\n            <li>Any terrain.</li>\n            <li>Any challenge.</li>\n            <li>Done right.</li>\n          </ul>\n        </section>\n\n        <section class=\"mobile-services\" aria-label=\"Service highlights\">\n          <article>\n            <span>01</span>\n            <h2><span>Specialist</span><b>drilling</b></h2>\n            <p>From exploration to production, we deliver precision you can trust.</p>\n          </article>\n          <article>\n            <span>02</span>\n            <h2><span>Experienced</span><b>professionals</b></h2>\n            <p>Highly skilled teams committed to safety, quality and efficiency.</p>\n          </article>\n          <article>\n            <span>03</span>\n            <h2><span>Safety</span><b>first</b></h2>\n            <p>Zero compromise. Every job. Everyone goes home safe.</p>\n          </article>\n        </section>\n\n        <p class=\"mobile-signoff\">BUILT ON <b>PRECISION.</b> DRIVEN BY <b>PERFORMANCE.</b></p>\n      </div>\n\n      <button class=\"menu-toggle\" type=\"button\" aria-expanded=\"false\" aria-controls=\"site-menu\">\n        <span class=\"menu-icon\" aria-hidden=\"true\"><i></i><i></i><i></i></span>\n        <span>MENU</span>\n      </button>\n\n      <div class=\"menu-backdrop\" aria-hidden=\"true\"></div>\n\n      <div class=\"menu-drawer\" inert=\"\" id=\"site-menu\" role=\"dialog\" aria-modal=\"true\" aria-hidden=\"true\" aria-label=\"Site menu\">\n        <div class=\"drawer-head\">\n          <p><span class=\"menu-location\">NATIONWIDE NEW ZEALAND</span><span class=\"menu-company\">A HOLE IN ONE DRILLING</span></p>\n          <button class=\"menu-close\" type=\"button\" aria-label=\"Close menu\">×</button>\n        </div>\n\n        <div class=\"drawer-grid\">\n          <nav class=\"drawer-nav\" aria-label=\"Primary navigation\">\n            <button class=\"drawer-link is-active\" type=\"button\" data-panel=\"services\">Our Services</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"about\">About Us</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"projects\">Projects</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"safety\">Safety</button>\n            <button class=\"drawer-link drawer-link--quote\" type=\"button\" data-panel=\"quote\">Get a Quote</button>\n          </nav>\n\n          <div class=\"drawer-content\">\n            <section class=\"drawer-panel is-active\" data-content=\"services\">\n              <p class=\"panel-kicker\">CAPABILITIES</p>\n              <h2>Built for difficult ground.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Geotechnical Drilling</strong><p>Investigation, sampling and site characterisation.</p></article>\n                <article><strong>Water Bore Drilling</strong><p>Reliable groundwater access and bore development.</p></article>\n                <article><strong>Environmental Drilling</strong><p>Monitoring wells, remediation and compliance work.</p></article>\n                <article><strong>Foundation Drilling</strong><p>Piles, anchors and specialist structural solutions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"about\">\n              <p class=\"panel-kicker\">THE COMPANY</p>\n              <h2>Experienced people. Proven systems.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Our Story</strong><p>Built by experienced operators who value precision.</p></article>\n                <article><strong>Our People</strong><p>Specialist crews, project managers and field experts.</p></article>\n                <article><strong>Equipment Fleet</strong><p>Modern rigs selected for demanding conditions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"projects\">\n              <p class=\"panel-kicker\">SELECTED WORK</p>\n              <h2>Real sites. Real constraints. Real results.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Infrastructure</strong><p>Transport, utilities and major civil projects.</p></article>\n                <article><strong>Commercial</strong><p>Complex urban sites and constrained-access drilling.</p></article>\n                <article><strong>Regional</strong><p>Remote terrain, farms and nationwide field programmes.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"safety\">\n              <p class=\"panel-kicker\">ZERO COMPROMISE</p>\n              <h2>Everyone goes home safe.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Safety Systems</strong><p>Planning, permits, controls and field verification.</p></article>\n                <article><strong>Training</strong><p>Competent crews, current certification and leadership.</p></article>\n                <article><strong>Environmental Care</strong><p>Low-impact methods and responsible site management.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"quote\">\n              <p class=\"panel-kicker\">START A PROJECT</p>\n              <h2>Tell us what needs drilling.</h2>\n              <p class=\"quote-copy\">Try the form with a project location, scope and timing.</p>\n              <p class=\"demo-notice\">Demo only — no quote request is sent.</p>\n              <form id=\"quote-form\" aria-label=\"Demo quote request\">\n                <label><span>Name</span><input name=\"name\" autocomplete=\"name\" required=\"\" style=\"\"></label>\n                <label><span>Email</span><input name=\"email\" type=\"email\" autocomplete=\"email\" required=\"\" style=\"\"></label>\n                <label class=\"full\"><span>Project outline</span><textarea name=\"project\" rows=\"4\" required=\"\" style=\"\"></textarea></label>\n                <button type=\"submit\">REQUEST A CALL →</button>\n                <p class=\"form-status\" role=\"status\"></p>\n              </form>\n            </section>\n          </div>\n        </div>\n      </div>\n    </section>\n  </main>\n  <script src=\"js/app.js?v=4\"></script>\n\n\n</body>"
+    },
+    {
+      "id": "DR-02",
+      "label": "720x450 Close visible",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          712,
+          398
+        ],
+        "close": {
+          "top": 10,
+          "bottom": 54
+        },
+        "content": {
+          "height": 315,
+          "scroll": 364,
+          "top": 0
+        },
+        "nav": {
+          "height": 315,
+          "scroll": 315,
+          "top": 0
+        },
+        "submit": {
+          "top": 0,
+          "bottom": 0
+        },
+        "fields": [
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "font": "16px"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DR-03",
+      "label": "720x450 notice only inside Quote",
+      "pass": true,
+      "evidence": "Demo only — no quote request is sent."
+    },
+    {
+      "id": "DR-03",
+      "label": "720x450 empty required fields rejected",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "id": "DR-03",
+      "label": "720x450 invalid email rejected",
+      "pass": true,
+      "evidence": null
+    },
+    {
+      "id": "DR-03",
+      "label": "720x450 honest local completion",
+      "pass": true,
+      "evidence": "Demo complete — no quote request was sent."
+    },
+    {
+      "id": "DR-02",
+      "label": "720x450 Close remains visible after form scroll",
+      "pass": true,
+      "evidence": {
+        "viewport": [
+          712,
+          398
+        ],
+        "close": {
+          "top": 10,
+          "bottom": 54
+        },
+        "content": {
+          "height": 315,
+          "scroll": 536,
+          "top": 221
+        },
+        "nav": {
+          "height": 315,
+          "scroll": 315,
+          "top": 0
+        },
+        "submit": {
+          "top": 297.29998779296875,
+          "bottom": 341.29998779296875
+        },
+        "fields": [
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "INPUT",
+            "font": "16px"
+          },
+          {
+            "tag": "LABEL",
+            "font": "12px"
+          },
+          {
+            "tag": "TEXTAREA",
+            "font": "16px"
+          }
+        ]
+      }
+    },
+    {
+      "id": "DR-06",
+      "label": "720x450 readable fields",
+      "pass": true,
+      "evidence": [
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "INPUT",
+          "font": "16px"
+        },
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "INPUT",
+          "font": "16px"
+        },
+        {
+          "tag": "LABEL",
+          "font": "12px"
+        },
+        {
+          "tag": "TEXTAREA",
+          "font": "16px"
+        }
+      ]
+    },
+    {
+      "id": "DR-04",
+      "label": "720x450 drawer inert after close",
+      "pass": true,
+      "evidence": "<body class=\"\">\n  <main class=\"viewport\" aria-label=\"A Hole in One Drilling\">\n    <section class=\"site\" id=\"site\">\n      <img class=\"artwork\" src=\"assets/images/drilling-hero-optimised.webp\" alt=\"\" aria-hidden=\"true\" fetchpriority=\"high\">\n      <section class=\"desktop-accessible\" aria-label=\"Company introduction\">\n        <h1>A Hole in One Drilling — drilling deeper, delivering more.</h1>\n        <p>Specialist drilling solutions. Any terrain. Any challenge. Done right.</p>\n        <p>Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.</p>\n        <h2>Specialist drilling</h2><p>From exploration to production, we deliver precision you can trust.</p>\n        <h2>Experienced professionals</h2><p>Highly skilled teams committed to safety, quality and efficiency.</p>\n        <h2>Safety first</h2><p>Zero compromise. Every job. Everyone goes home safe.</p>\n        <p>Built on precision. Driven by performance.</p>\n      </section>\n\n      <div class=\"mobile-experience\">\n        <section class=\"mobile-hero\">\n          <div class=\"mobile-brand\" aria-label=\"A Hole in One Drilling\">\n            <strong><span>A</span>1</strong>\n            <p>A HOLE IN ONE<br><b>DRILLING</b></p>\n          </div>\n          <div class=\"mobile-hero__copy\">\n            <p class=\"mobile-kicker\">BUILT ON PRECISION</p>\n            <h1>Drilling<br><em>deeper.</em></h1>\n            <h2>Delivering more.</h2>\n            <p>Specialist drilling solutions for any terrain, any challenge—done right.</p>\n            <button class=\"mobile-menu-cta\" type=\"button\">GET IN TOUCH <span aria-hidden=\"true\">›</span></button>\n          </div>\n        </section>\n\n        <section class=\"mobile-proof\" aria-label=\"Company strengths\">\n          <ul>\n            <li>Any terrain.</li>\n            <li>Any challenge.</li>\n            <li>Done right.</li>\n          </ul>\n        </section>\n\n        <section class=\"mobile-services\" aria-label=\"Service highlights\">\n          <article>\n            <span>01</span>\n            <h2><span>Specialist</span><b>drilling</b></h2>\n            <p>From exploration to production, we deliver precision you can trust.</p>\n          </article>\n          <article>\n            <span>02</span>\n            <h2><span>Experienced</span><b>professionals</b></h2>\n            <p>Highly skilled teams committed to safety, quality and efficiency.</p>\n          </article>\n          <article>\n            <span>03</span>\n            <h2><span>Safety</span><b>first</b></h2>\n            <p>Zero compromise. Every job. Everyone goes home safe.</p>\n          </article>\n        </section>\n\n        <p class=\"mobile-signoff\">BUILT ON <b>PRECISION.</b> DRIVEN BY <b>PERFORMANCE.</b></p>\n      </div>\n\n      <button class=\"menu-toggle\" type=\"button\" aria-expanded=\"false\" aria-controls=\"site-menu\">\n        <span class=\"menu-icon\" aria-hidden=\"true\"><i></i><i></i><i></i></span>\n        <span>MENU</span>\n      </button>\n\n      <div class=\"menu-backdrop\" aria-hidden=\"true\"></div>\n\n      <div class=\"menu-drawer\" id=\"site-menu\" role=\"dialog\" aria-modal=\"true\" aria-hidden=\"true\" aria-label=\"Site menu\" inert=\"\">\n        <div class=\"drawer-head\">\n          <p><span class=\"menu-location\">NATIONWIDE NEW ZEALAND</span><span class=\"menu-company\">A HOLE IN ONE DRILLING</span></p>\n          <button class=\"menu-close\" type=\"button\" aria-label=\"Close menu\">×</button>\n        </div>\n\n        <div class=\"drawer-grid\">\n          <nav class=\"drawer-nav\" aria-label=\"Primary navigation\">\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"services\">Our Services</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"about\">About Us</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"projects\">Projects</button>\n            <button class=\"drawer-link\" type=\"button\" data-panel=\"safety\">Safety</button>\n            <button class=\"drawer-link drawer-link--quote is-active\" type=\"button\" data-panel=\"quote\">Get a Quote</button>\n          </nav>\n\n          <div class=\"drawer-content\">\n            <section class=\"drawer-panel\" data-content=\"services\">\n              <p class=\"panel-kicker\">CAPABILITIES</p>\n              <h2>Built for difficult ground.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Geotechnical Drilling</strong><p>Investigation, sampling and site characterisation.</p></article>\n                <article><strong>Water Bore Drilling</strong><p>Reliable groundwater access and bore development.</p></article>\n                <article><strong>Environmental Drilling</strong><p>Monitoring wells, remediation and compliance work.</p></article>\n                <article><strong>Foundation Drilling</strong><p>Piles, anchors and specialist structural solutions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"about\">\n              <p class=\"panel-kicker\">THE COMPANY</p>\n              <h2>Experienced people. Proven systems.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Our Story</strong><p>Built by experienced operators who value precision.</p></article>\n                <article><strong>Our People</strong><p>Specialist crews, project managers and field experts.</p></article>\n                <article><strong>Equipment Fleet</strong><p>Modern rigs selected for demanding conditions.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"projects\">\n              <p class=\"panel-kicker\">SELECTED WORK</p>\n              <h2>Real sites. Real constraints. Real results.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Infrastructure</strong><p>Transport, utilities and major civil projects.</p></article>\n                <article><strong>Commercial</strong><p>Complex urban sites and constrained-access drilling.</p></article>\n                <article><strong>Regional</strong><p>Remote terrain, farms and nationwide field programmes.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel\" data-content=\"safety\">\n              <p class=\"panel-kicker\">ZERO COMPROMISE</p>\n              <h2>Everyone goes home safe.</h2>\n              <div class=\"panel-list\">\n                <article><strong>Safety Systems</strong><p>Planning, permits, controls and field verification.</p></article>\n                <article><strong>Training</strong><p>Competent crews, current certification and leadership.</p></article>\n                <article><strong>Environmental Care</strong><p>Low-impact methods and responsible site management.</p></article>\n              </div>\n            </section>\n\n            <section class=\"drawer-panel is-active\" data-content=\"quote\">\n              <p class=\"panel-kicker\">START A PROJECT</p>\n              <h2>Tell us what needs drilling.</h2>\n              <p class=\"quote-copy\">Try the form with a project location, scope and timing.</p>\n              <p class=\"demo-notice\">Demo only — no quote request is sent.</p>\n              <form id=\"quote-form\" aria-label=\"Demo quote request\">\n                <label><span>Name</span><input name=\"name\" autocomplete=\"name\" required=\"\" style=\"\"></label>\n                <label><span>Email</span><input name=\"email\" type=\"email\" autocomplete=\"email\" required=\"\" style=\"\"></label>\n                <label class=\"full\"><span>Project outline</span><textarea name=\"project\" rows=\"4\" required=\"\" style=\"\"></textarea></label>\n                <button type=\"submit\">REQUEST A CALL →</button>\n                <p class=\"form-status\" role=\"status\">Demo complete — no quote request was sent.</p>\n              </form>\n            </section>\n          </div>\n        </div>\n      </div>\n    </section>\n  </main>\n  <script src=\"js/app.js?v=4\"></script>\n\n\n</body>"
+    }
+  ],
+  "errors": [],
+  "console": [],
+  "assets": [],
+  "sourceHashes": {
+    "index.html": "eae1a1a3f471544f9ed41c30b00010f3cbf109480d44109cdd5a817f965e15b4",
+    "site.html": "c0d5073b8463c826e62bf435d222c3c1d8e25abf7e3b501c1eac834ad1028395",
+    "css/style.css": "ea68234a8bcb8a2afb669aafd17764e1ad6aeb30f35644a9970eb772d1363ed6",
+    "css/mobile-fluid.css": "4f3cf90513fcd15f1369fb2ec568ead4241b13439878d15d93c3fd151ebad89e",
+    "js/app.js": "73970c0fb15f47ae0aed47aff3bc30892b1402930e5e9b4ac67dac26c2900514",
+    "css/repairs.css": "15dfdae81817c36cdd88076cd76c9e9e73da0886a26f52cd54e6e77c4f3447fe"
+  },
+  "limitations": [
+    "Linux emulation, not physical phones or Safari/iOS.",
+    "No real booking or message delivery."
+  ],
+  "version": "153.0",
+  "failures": []
+}
