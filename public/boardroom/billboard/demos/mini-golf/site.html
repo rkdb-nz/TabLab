@@ -8,11 +8,23 @@
   <title>A Hole in One | Tropical Mini Golf</title>
   <link rel="stylesheet" href="css/style.css?v=grey-final">
   <link rel="stylesheet" href="css/mobile-final.css?v=4">
+  <link rel="stylesheet" href="css/repairs.css?v=1">
 </head>
 <body class="mini-golf-final">
 <main class="viewport" aria-label="A Hole in One tropical mini golf">
     <div class="stage" id="stage">
-      <img class="artwork" src="assets/images/puttputt-hero-text-left.png" alt="Tropical mini golf course with feature cards and Wāperiki map">
+      <picture class="desktop-artwork"><source media="(max-width: 900px), (orientation: landscape) and (max-height: 520px) and (max-width: 1000px)" srcset="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27/%3E"><img class="artwork" src="assets/images/puttputt-hero-text-left-optimised.webp" alt="Tropical mini golf course. Venue information follows."></picture>
+      <section class="desktop-information" aria-label="A Hole in One venue information">
+        <h1>A Hole in One — Wāperiki</h1>
+        <p>Every round an adventure. Fun for everyone! Tropical vibes. Tricky holes. Unforgettable memories.</p>
+        <h2>18 holes of fun</h2><p>A fun and challenging course packed with surprises around every corner.</p>
+        <h2>Perfect for parties</h2><p>Birthdays, group outings, team events and school holidays. We've got you!</p>
+        <h2>Snacks and drinks</h2><p>Ice creams, cold drinks and treats to keep the good times rolling.</p>
+        <h2>Family fun for all ages</h2><p>Putt, laugh, compete and create memories that last a lifetime.</p>
+        <h2>What our players say</h2><blockquote>“The best mini golf in Wāperiki! So much fun for the whole family.” — Sarah M.</blockquote>
+        <h2>Find us here</h2><p>A Hole in One, 15 Palm Drive, Wāperiki. Open 7 days, 9:00am–8:00pm.</p>
+        <p>Tropical vibes: lush landscaping and island feels. Tricky holes: fun challenges for all skill levels. Good times guaranteed: memories made every round.</p>
+      </section>
 
       <section class="mobile-home" aria-label="A Hole in One introduction">
         <header class="mobile-header">
@@ -58,7 +70,7 @@
 
       <section class="overlay overlay--course" id="overlay-course" role="dialog" aria-modal="true" aria-labelledby="course-title" hidden>
         <div class="overlay-panel">
-          <button class="overlay-close" type="button" aria-label="Close">×</button>
+          <div class="dialog-controls"><button class="overlay-close" type="button" aria-label="Close">×</button></div>
           <p class="eyebrow">Eighteen holes. Aim optional.</p>
           <h1 id="course-title">The Course</h1>
           <div class="course-grid">
@@ -73,7 +85,7 @@
 
       <section class="overlay overlay--story" id="overlay-story" role="dialog" aria-modal="true" aria-labelledby="story-title" hidden>
         <div class="overlay-panel overlay-panel--split">
-          <button class="overlay-close" type="button" aria-label="Close">×</button>
+          <div class="dialog-controls"><button class="overlay-close" type="button" aria-label="Close">×</button></div>
           <div>
             <p class="eyebrow">Built for good times</p>
             <h1 id="story-title">Above Par</h1>
@@ -87,7 +99,7 @@
 
       <section class="overlay overlay--events" id="overlay-events" role="dialog" aria-modal="true" aria-labelledby="events-title" hidden>
         <div class="overlay-panel">
-          <button class="overlay-close" type="button" aria-label="Close">×</button>
+          <div class="dialog-controls"><button class="overlay-close" type="button" aria-label="Close">×</button></div>
           <p class="eyebrow">Bring the whole crew</p>
           <h1 id="events-title">Parties & Events</h1>
           <div class="events-grid">
@@ -101,11 +113,11 @@
 
       <section class="overlay overlay--book" id="overlay-book" role="dialog" aria-modal="true" aria-labelledby="book-title" hidden>
         <div class="overlay-panel overlay-panel--booking">
-          <button class="overlay-close" type="button" aria-label="Close">×</button>
+          <div class="dialog-controls"><button class="overlay-close" type="button" aria-label="Close">×</button></div>
           <div>
             <p class="eyebrow">Your next round starts here</p>
             <h1 id="book-title">Book Now</h1>
-            <p class="lead">Send a booking request and we will confirm your tee time.</p>
+            <p class="lead">Try this demo booking form. No booking or message will be sent.</p>
           </div>
           <form id="booking-form">
             <label>Name<input name="name" autocomplete="name" required></label>
@@ -113,13 +125,14 @@
             <label>Players<select name="players"><option>2 players</option><option>3–4 players</option><option>5–8 players</option><option>9+ players / group</option></select></label>
             <label>Preferred date<input name="date" type="date" required></label>
             <label class="wide">Notes<textarea name="notes" rows="2" placeholder="Preferred time, party details, accessibility needs…"></textarea></label>
-            <button class="primary-action wide" type="submit">Send booking request →</button>
+            <button class="primary-action wide" type="submit">Try demo booking →</button>
             <p class="form-status wide" role="status"></p>
           </form>
         </div>
       </section>
     </div>
   </main>
-  <script src="js/app.js?v=4"></script>
+  <p class="demo-notice">Demo purposes only — no bookings are sent.</p>
+  <script src="js/app.js?v=5"></script>
 </body>
 </html>
