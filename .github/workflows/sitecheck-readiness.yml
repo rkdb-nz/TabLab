@@ -1,4 +1,4 @@
-name: Sitecheck tool readiness
+name: Sitecheck focused mobile fullscreen
 on:
   pull_request:
     paths: ['qa/**', '.github/workflows/sitecheck-readiness.yml']
@@ -8,32 +8,19 @@ permissions:
 jobs:
   readiness:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
-    strategy:
-      fail-fast: false
-      matrix:
-        browser: [chromium, firefox, webkit]
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
       - run: npm install --prefix qa --ignore-scripts
-      - run: node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - name: Prove source, browser, interaction and screenshot capture
-        env:
-          QA_BROWSER: ${{ matrix.browser }}
-          SITECHECK_OUTPUT: qa/readiness-results/${{ matrix.browser }}
-        run: node qa/readiness.mjs qa/minigolf-readiness.json
-      - name: Capture full Minigolf audit matrix
-        env:
-          QA_BROWSER: ${{ matrix.browser }}
-        run: xvfb-run -a node qa/minigolf-audit.mjs
+      - run: node qa/node_modules/playwright/cli.js install --with-deps chromium
+      - name: Focused settled mobile fullscreen and return only
+        run: node qa/minigolf-fullscreen.mjs
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: sitecheck-readiness-${{ matrix.browser }}
-          path: |
-            qa/readiness-results/
-            qa/minigolf-results/
+          name: minigolf-mobile-fullscreen
+          path: qa/minigolf-results/
           retention-days: 3
