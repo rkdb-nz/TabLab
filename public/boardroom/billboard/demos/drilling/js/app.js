@@ -66,6 +66,8 @@
 
   document.getElementById('quote-form')?.addEventListener('submit', event => {
     event.preventDefault();
-    event.currentTarget.querySelector('.form-status').textContent = 'Demo complete — no quote request was sent.';
+    const status = event.currentTarget.querySelector('.form-status');
+    status.textContent = 'Demo complete — no quote request was sent.';
+    status.scrollIntoView({block:'nearest', behavior:'instant'});
   });
 })();

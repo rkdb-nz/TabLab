@@ -43,6 +43,7 @@ button:focus-visible,input:focus-visible,textarea:focus-visible{outline:2px soli
   textarea{height:88px;min-height:88px;resize:vertical}
   form button{min-height:44px;font-size:14px;padding:10px}
   .mobile-services h2{font-family:Arial,Helvetica,sans-serif;font-weight:700;letter-spacing:0!important;overflow-wrap:anywhere}
+  .mobile-services h2 span,.mobile-services h2 b{font-family:inherit!important;font-weight:700!important;letter-spacing:0!important}
 }
 
 @media (max-width:900px) and (orientation:portrait){
