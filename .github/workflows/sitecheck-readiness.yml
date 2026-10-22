@@ -1,39 +1,71 @@
-name: Sitecheck tool readiness
+name: Minigolf preview repair audit
 on:
   pull_request:
-    paths: ['qa/**', '.github/workflows/sitecheck-readiness.yml']
+    paths: ['qa/**', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/billboard/demos/mini-golf/**']
   workflow_dispatch:
+concurrency:
+  group: minigolf-audit-${{ github.ref }}
+  cancel-in-progress: true
 permissions:
   contents: read
 jobs:
-  readiness:
+  media:
+    if: github.head_ref == 'preview/minigolf-mg01-08'
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    permissions:
+      contents: write
+    outputs:
+      sha: ${{ steps.version.outputs.sha }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: preview/minigolf-mg01-08
+      - run: python -m pip install Pillow
+      - run: python qa/optimise-minigolf.py
+      - name: Retain optimised original media on preview branch only
+        id: version
+        run: |
+          git config user.name 'Minigolf preview QA'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/boardroom/billboard/demos/mini-golf/assets/images/*-optimised.webp public/boardroom/billboard/demos/mini-golf/assets/images/optimisation.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'perf: optimise existing Minigolf media on preview only'
+            git push origin HEAD:preview/minigolf-mg01-08
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+  audit:
+    needs: media
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
     strategy:
       fail-fast: false
       matrix:
         browser: [chromium, firefox, webkit]
     steps:
       - uses: actions/checkout@v6
+        with:
+          ref: ${{ needs.media.outputs.sha }}
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
       - run: npm install --prefix qa --ignore-scripts
       - run: node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - name: Prove source, browser, interaction and screenshot capture
+      - name: Readiness and full browser matrix
         env:
           QA_BROWSER: ${{ matrix.browser }}
-          SITECHECK_OUTPUT: qa/readiness-results/${{ matrix.browser }}
-        run: node qa/readiness.mjs qa/minigolf-readiness.json
-      - name: Capture full Minigolf audit matrix
-        env:
-          QA_BROWSER: ${{ matrix.browser }}
-        run: xvfb-run -a node qa/minigolf-audit.mjs
+          SITECHECK_OUTPUT: qa/results/${{ matrix.browser }}/readiness
+        run: |
+          export SITECHECK_COMMIT=$(git rev-parse HEAD)
+          unset GITHUB_SHA
+          node qa/readiness.mjs qa/minigolf-readiness.json
+          AUDIT_OUTPUT=qa/results/${{ matrix.browser }}/base node qa/base-audit.mjs
+          AUDIT_OUTPUT=qa/results/${{ matrix.browser }}/completion node qa/completion-audit.mjs
+          AUDIT_OUTPUT=qa/results/${{ matrix.browser }}/zoom xvfb-run -a node qa/minigolf-audit.mjs
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: sitecheck-readiness-${{ matrix.browser }}
+          name: minigolf-repair-${{ matrix.browser }}
           path: |
-            qa/readiness-results/
-            qa/minigolf-results/
+            qa/results/
+            public/boardroom/billboard/demos/mini-golf/assets/images/optimisation.json
           retention-days: 3
