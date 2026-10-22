@@ -68,7 +68,7 @@
  body.mini-golf-final .mobile-home{
   grid-template-columns:1fr!important;
   grid-template-rows:32% 25% 35% 8%!important;
-  background:#032313 url('../assets/images/puttputt-hero.webp') center/cover no-repeat!important
+  background:#032313 url('../assets/images/puttputt-hero-optimised.webp') center/cover no-repeat!important
  }
  body.mini-golf-final .mobile-header{
   position:absolute!important;inset:0 0 auto 0!important;height:13.5%!important;
