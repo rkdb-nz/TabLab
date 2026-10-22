@@ -88,3 +88,5 @@ body.mini-golf-final :is(.hotspot,.mobile-book,.mobile-nav-toggle):focus-visible
 }
 @media(max-width:400px){body.mini-golf-final .course-grid,body.mini-golf-final .overlay form{grid-template-columns:1fr!important}}
 @media(min-width:901px){body.mini-golf-final .hotspot:after{font-size:clamp(12px,1.38vw,19px);letter-spacing:0;white-space:normal;line-height:1.05}}
+/* Keep the orange Story panel; its brightest stop must support white body copy. */
+body.mini-golf-final .overlay--story .overlay-panel{background:linear-gradient(145deg,#854b22,#a85e1e)!important}
