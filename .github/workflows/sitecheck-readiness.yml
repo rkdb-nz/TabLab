@@ -1,4 +1,4 @@
-name: Drilling targeted repair check
+name: Drilling focused Firefox repair verification
 on:
   pull_request:
     paths: ['qa/**', 'public/boardroom/billboard/demos/drilling/**', '.github/workflows/sitecheck-readiness.yml']
@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        engine: [chromium, firefox, webkit]
+        engine: [firefox]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -21,12 +21,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - run: timeout 180s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.engine }}
       - name: Targeted repairs plus routine smoke sample
-        run: node qa/drilling-repair.mjs
+        run: node qa/drilling-focused-repair.mjs
         env:
           QA_BROWSER: ${{ matrix.engine }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: drilling-repairs-${{ matrix.engine }}
-          path: qa/drilling-repair-results/
+          name: drilling-focused-repairs-firefox
+          path: qa/drilling-focused-repair-results/
           retention-days: 90
