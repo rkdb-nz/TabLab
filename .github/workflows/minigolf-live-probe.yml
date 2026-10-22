@@ -21,7 +21,7 @@ jobs:
       - run: node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
       - env:
           QA_BROWSER: ${{ matrix.browser }}
-          PREVIEW_ORIGIN: https://6568400f.foundry-a3k.pages.dev
+          PREVIEW_ORIGIN: https://preview-minigolf-mg01-08.foundry-a3k.pages.dev
         run: SITECHECK_COMMIT=$(git rev-parse HEAD) node sitecheck-tools/minigolf-live.mjs
       - uses: actions/upload-artifact@v5
         if: always()
