@@ -50,7 +50,7 @@ try{for(const [w,h] of sizes){
  await open('course');await page.setViewportSize({width:h,height:w});await cap('dialog-rotated');await page.setViewportSize({width:w,height:h});await cap('dialog-restored');await close();
  await back.click();check(await page.getByRole('button',{name:'Open example in full screen',exact:true}).isVisible(),'Return restores wrapper',{size});
  await page.getByRole('button',{name:'Back to gallery',exact:true}).click();await page.waitForURL('**/boardroom/billboard/index.html');check(await page.title()!=='','Gallery destination rendered',{size,url:page.url(),title:await page.title()});
- await page.goto(origin+path+'site.html',{waitUntil:'load'});frame=page;await cap('direct-home');await homeScroll('direct-home');await page.reload({waitUntil:'load'});check((await page.title()).includes('A Hole in One'),'Direct refresh',{size});
+ await page.goto(origin+path+'site.html',{waitUntil:'load'});frame=page;await page.locator('.artwork').evaluate(async e=>{await e.decode().catch(()=>{});await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));});await cap('direct-home');await homeScroll('direct-home');await page.reload({waitUntil:'load'});check((await page.title()).includes('A Hole in One'),'Direct refresh',{size});
  await page.emulateMedia({reducedMotion:'reduce'});await open('story');await cap('reduced-motion');await close();await page.evaluate(()=>document.documentElement.style.fontSize='200%');await cap('text-200-percent');
  report.screens.push({size,complete:true});
  }catch(e){report.screens.push({size,complete:false,error:e.stack});await page.screenshot({path:resolve(out,size+'-failure.png')}).catch(()=>{});}
