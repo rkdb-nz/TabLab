@@ -1,0 +1,35 @@
+{
+  "branch": "repair/minigolf-routine-20261023",
+  "product_commit": "ea14fb18d910d0c1b7a853c99064996c4b8fde40",
+  "preview": "https://d4ce4c4d.foundry-a3k.pages.dev/boardroom/billboard/demos/mini-golf/",
+  "source_files": {
+    "site.html": {
+      "bytes": 8833,
+      "sha256": "b5326e9d08d138f80fa0f91a786acb4fac6bc944ab13a7b4f5dc2cd8758032a0"
+    },
+    "js/app.js": {
+      "bytes": 5777,
+      "sha256": "bc4a80813a6b0746e0450746329daeeefe2b9b62b5011e99f45a8c1944772196"
+    },
+    "css/mobile-final.css": {
+      "bytes": 27724,
+      "sha256": "1d088b03fd9cad10674461ec39f33ff8c6efa8b792d034b3e4718416430a40cc"
+    },
+    "css/repairs.css": {
+      "bytes": 14249,
+      "sha256": "64493397ae9ada9c2d3f1cc66f917eb571a6aa76b6a731988535f1a3d4d0d6b3"
+    }
+  },
+  "media": {
+    "puttputt-hero-text-left.png": {
+      "before_bytes": 2458782,
+      "after_file": "puttputt-hero-text-left-optimised.webp",
+      "after_bytes": 324776
+    },
+    "puttputt-hero.webp": {
+      "before_bytes": 2761984,
+      "after_file": "puttputt-hero-optimised.webp",
+      "after_bytes": 376980
+    }
+  }
+}
