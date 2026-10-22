@@ -73,3 +73,23 @@ if(engine==='chromium'){
  await cx.close();
 }
 
+if(engine==='chromium'){
+ const fs=await import('node:fs/promises'),os=await import('node:os'),path=await import('node:path');
+ const temp=await fs.mkdtemp(path.join(os.tmpdir(),'drilling-target-zoom-')),extension=path.join(temp,'extension');await fs.mkdir(extension);
+ await fs.writeFile(path.join(extension,'manifest.json'),JSON.stringify({manifest_version:3,name:'Local QA zoom',version:'1.0',permissions:['tabs'],background:{service_worker:'worker.js'}}));
+ await fs.writeFile(path.join(extension,'worker.js'),'chrome.runtime.onInstalled.addListener(()=>{});');
+ let zcx;try{
+ zcx=await pw.chromium.launchPersistentContext(path.join(temp,'profile'),{channel:'chromium',headless:true,args:['--disable-extensions-except='+extension,'--load-extension='+extension],viewport:{width:1440,height:900}});
+ await zcx.route('**/*',r=>r.request().url().startsWith(origin+'/')&&['GET','HEAD'].includes(r.request().method())?r.continue():r.abort());
+ const worker=zcx.serviceWorkers()[0]||await zcx.waitForEvent('serviceworker'),zp=await zcx.newPage();await zp.goto(origin+base+'site.html');
+ const before=await zp.evaluate(()=>[innerWidth,innerHeight,devicePixelRatio]);
+ const level=await worker.evaluate(async url=>{const t=(await chrome.tabs.query({})).find(t=>t.url===url);await chrome.tabs.setZoom(t.id,2);return chrome.tabs.getZoom(t.id);},origin+base+'site.html');
+ await zp.waitForTimeout(500);await settle(zp);
+ const after=await zp.evaluate(()=>({viewport:[innerWidth,innerHeight],dpr:devicePixelRatio,heading:(()=>{const e=document.querySelector('.mobile-hero__copy h1'),r=e.getBoundingClientRect();return{width:e.clientWidth,scroll:e.scrollWidth,left:r.x,right:r.right};})()}));
+ const cd=await zcx.newCDPSession(zp),shot=await cd.send('Page.captureScreenshot',{format:'png',fromSurface:true,captureBeyondViewport:false});
+ await fs.writeFile(resolve(out,'native-200-home.png'),Buffer.from(shot.data,'base64'));
+ report.checks.push({label:'native-200-zoom',level,before,after});report.captures.push({file:'native-200-home.png',viewport:after.viewport,state:'native 200 percent zoom',visuallyInspected:false});
+ }catch(e){report.errors.push({probe:'native zoom',error:e.stack});}finally{await zcx?.close();await fs.rm(temp,{recursive:true,force:true});}
+}
+}finally{await browser.close();await new Promise(r=>server.close(r));await writeFile(resolve(out,'routine-report.json'),JSON.stringify(report,null,2));}
+console.log(JSON.stringify({engine,captures:report.captures.length,errors:report.errors}));
