@@ -49,6 +49,9 @@ jobs:
         with:
           node-version: '22'
       - run: npm install --prefix qa --ignore-scripts
+      - name: Bound package mirror network waits
+        run: |
+          echo 'Acquire::Retries "2"; Acquire::http::Timeout "20"; Acquire::https::Timeout "20";' | sudo tee /etc/apt/apt.conf.d/99sitecheck-timeouts >/dev/null
       - run: node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
       - name: Readiness and full browser matrix
         env:
