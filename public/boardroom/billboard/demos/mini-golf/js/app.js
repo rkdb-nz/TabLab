@@ -97,6 +97,22 @@
     if (e.target.closest('[data-open-book]')) openOverlay('book', e.target.closest('[data-open-book]'));
   });
 
+  // WebKit can keep the previous panel scroll position when Tab follows the
+  // sticky Close control. Keep each newly focused field below that control row.
+  document.addEventListener('focusin', e => {
+    if (!activeOverlay?.contains(e.target) || e.target.closest('.overlay-close')) return;
+    const panel = e.target.closest('.overlay-panel');
+    if (!panel) return;
+    const field = e.target.getBoundingClientRect();
+    const bounds = panel.getBoundingClientRect();
+    const top = bounds.top + Math.min(64, bounds.height / 3);
+    const bottom = bounds.bottom - 12;
+    if (field.top < top || field.bottom > bottom) {
+      const room = Math.max(0, bottom - top - field.height);
+      panel.scrollTop += field.top - top - room / 2;
+    }
+  });
+
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && activeOverlay) closeAll();
     else if (e.key === 'Escape' && document.body.classList.contains('mobile-nav-open')) {
