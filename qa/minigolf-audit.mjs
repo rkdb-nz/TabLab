@@ -13,7 +13,7 @@ const mime={'.html':'text/html','.css':'text/css','.js':'application/javascript'
 const server=createServer(async(req,res)=>{try{let p=resolve(root,'.'+new URL(req.url,'http://local').pathname);if(!p.startsWith(root+'/'))throw Error();if((await stat(p)).isDirectory())p+='/index.html';res.writeHead(200,{'Content-Type':mime[extname(p)]||'application/octet-stream'}).end(await readFile(p));}catch{res.writeHead(404).end('Not found');}});
 await new Promise(r=>server.listen(0,'127.0.0.1',r));
 const origin='http://127.0.0.1:'+server.address().port;
-const browser=await pw[engine].launch({headless:true});report.version=browser.version();
+const browser=await pw[engine].launch({headless:true,executablePath:process.env.QA_CHROME_EXECUTABLE});report.version=browser.version();
 const sizes=engine==='chromium'?[[1440,900],[390,844],[844,390],[320,568],[780,300],[900,600],[901,600]]:[[1440,900],[390,844]];
 async function settle(f){await f.locator('body').evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.images].map(i=>i.decode().catch(()=>{})));await Promise.all(document.getAnimations().filter(a=>a.playState==='running'&&a.effect?.getTiming().iterations!==Infinity).map(a=>a.finished.catch(()=>{})));});}
 async function capture(page,f,label){if(label.endsWith('-book')&&!label.startsWith('320x568'))return;if(/1440x900-(course|story|events)/.test(label)||label==='901x600-course')return;await settle(f);const file=label+'.png';await page.screenshot({path:resolve(out,file)});report.captures.push({file,viewport:await page.evaluate(()=>[innerWidth,innerHeight]),state:label,visuallyInspected:false});}
@@ -45,7 +45,7 @@ if(engine==='chromium'){
  await fs.writeFile(path.join(extension,'manifest.json'),JSON.stringify({manifest_version:3,name:'Local QA zoom',version:'1.0',permissions:['tabs'],background:{service_worker:'worker.js'}}));
  await fs.writeFile(path.join(extension,'worker.js'),'chrome.runtime.onInstalled.addListener(()=>{});');
  let zcx;try{
- zcx=await pw.chromium.launchPersistentContext(path.join(temp,'profile'),{channel:'chromium',headless:true,args:['--disable-extensions-except='+extension,'--load-extension='+extension],viewport:{width:1440,height:900}});
+ zcx=await pw.chromium.launchPersistentContext(path.join(temp,'profile'),{executablePath:process.env.QA_CHROME_EXECUTABLE,headless:true,args:['--disable-extensions-except='+extension,'--load-extension='+extension],viewport:{width:1440,height:900}});
  await zcx.route('**/*',r=>r.request().url().startsWith(origin+'/')&&['GET','HEAD'].includes(r.request().method())?r.continue():r.abort());
  const worker=zcx.serviceWorkers()[0]||await zcx.waitForEvent('serviceworker'),zp=await zcx.newPage();await zp.goto(origin+base+'site.html');
  const before=await zp.evaluate(()=>[innerWidth,innerHeight,devicePixelRatio]);
