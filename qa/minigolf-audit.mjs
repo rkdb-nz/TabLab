@@ -16,7 +16,7 @@ const origin='http://127.0.0.1:'+server.address().port;
 const browser=await pw[engine].launch({headless:true});report.version=browser.version();
 const sizes=engine==='chromium'?[[1440,900],[390,844],[844,390],[320,568],[780,300],[900,600],[901,600]]:[[1440,900],[390,844]];
 async function settle(f){await f.locator('body').evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.images].map(i=>i.decode().catch(()=>{})));await Promise.all(document.getAnimations().filter(a=>a.playState==='running'&&a.effect?.getTiming().iterations!==Infinity).map(a=>a.finished.catch(()=>{})));});}
-async function capture(page,f,label){await settle(f);const file=label+'.png';await page.screenshot({path:resolve(out,file)});report.captures.push({file,viewport:await page.evaluate(()=>[innerWidth,innerHeight]),state:label,visuallyInspected:false});}
+async function capture(page,f,label){if(label.endsWith('-book')&&!label.startsWith('320x568'))return;if(/1440x900-(course|story|events)/.test(label)||label==='901x600-course')return;await settle(f);const file=label+'.png';await page.screenshot({path:resolve(out,file)});report.captures.push({file,viewport:await page.evaluate(()=>[innerWidth,innerHeight]),state:label,visuallyInspected:false});}
 async function geom(f,label){report.checks.push({label,geometry:await f.locator('body').evaluate(()=>({viewport:[innerWidth,innerHeight],overflow:document.documentElement.scrollWidth>innerWidth,visible:[...document.querySelectorAll('.overlay:not([hidden]) .overlay-panel,.overlay:not([hidden]) .overlay-close,.overlay:not([hidden]) input,.overlay:not([hidden]) button,.mobile-hero-copy h1')].filter(e=>e.getClientRects().length).map(e=>{const r=e.getBoundingClientRect(),s=getComputedStyle(e);return{tag:e.tagName,text:(e.innerText||e.name||'').slice(0,70),rect:{x:r.x,y:r.y,right:r.right,bottom:r.bottom},font:s.fontSize,overflow:s.overflowY,scroll:[e.clientHeight,e.scrollHeight]};})}))});}
 try{for(const [width,height] of sizes){
  const cx=await browser.newContext({viewport:{width,height},reducedMotion:'reduce'});await cx.route('**/*',r=>r.request().url().startsWith(origin+'/')&&['GET','HEAD'].includes(r.request().method())?r.continue():r.abort());
@@ -25,7 +25,7 @@ try{for(const [width,height] of sizes){
  await capture(p,f,tag+'-home');await geom(f,tag+'-home');
  async function open(key){const menu=f.locator('.mobile-nav-toggle');if(await menu.isVisible()&&await menu.getAttribute('aria-expanded')!=='true')await menu.click();await f.locator('.hotspots [data-overlay="'+key+'"]').click();await f.locator('#overlay-'+key).waitFor({state:'visible'});await settle(f);}
  async function close(){await f.locator('.overlay:not([hidden]) .overlay-close').press('Escape');}
- await open('book');await capture(p,f,tag+'-book');await geom(f,tag+'-book');report.checks.push({label:tag+'-demo-and-semantics',notice:await f.locator('.demo-notice').innerText(),semantic:await f.getByRole('region',{name:'Venue information'}).innerText()});
+ await open('book');await capture(p,f,tag+'-book');await geom(f,tag+'-book');report.checks.push({label:tag+'-demo-and-semantics',notice:await f.locator('.demo-notice').innerText(),semantic:await f.locator('.sr-only').innerText()});
  await f.locator('button[type="submit"]').click();report.checks.push({label:tag+'-empty-form',valid:await f.locator('form').evaluate(e=>e.checkValidity())});
  await f.locator('[name="name"]').fill('Routine QA');await f.locator('[name="email"]').fill('invalid');await f.locator('[name="date"]').fill('2000-01-01');
  report.checks.push({label:tag+'-invalid-email',valid:await f.locator('[name="email"]').evaluate(e=>e.checkValidity())});
@@ -38,5 +38,24 @@ try{for(const [width,height] of sizes){
  if(engine==='chromium'&&width===390){await open('course');await p.setViewportSize({width:844,height:390});await capture(p,f,'rotation-course');await geom(f,'rotation-course');await close();await p.setViewportSize({width,height});}
  if(engine==='chromium'&&(width===1440||width===390)){await p.getByRole('button',{name:'Open example in full screen',exact:true}).click();await p.getByRole('button',{name:'Exit full screen and return to Tab Lab frame',exact:true}).waitFor({state:'visible'});report.checks.push({label:tag+'-fullscreen',exit:await p.getByRole('button',{name:'Exit full screen and return to Tab Lab frame',exact:true}).isVisible()});await p.getByRole('button',{name:'Exit full screen and return to Tab Lab frame',exact:true}).click();}
  }catch(e){report.errors.push({size:[width,height],error:e.stack});}finally{await cx.close();}
-}}finally{await browser.close();await new Promise(r=>server.close(r));await writeFile(resolve(out,'routine-report.json'),JSON.stringify(report,null,2));}
+}
+if(engine==='chromium'){
+ const fs=await import('node:fs/promises'),os=await import('node:os'),path=await import('node:path');
+ const temp=await fs.mkdtemp(path.join(os.tmpdir(),'minigolf-target-zoom-')),extension=path.join(temp,'extension');await fs.mkdir(extension);
+ await fs.writeFile(path.join(extension,'manifest.json'),JSON.stringify({manifest_version:3,name:'Local QA zoom',version:'1.0',permissions:['tabs'],background:{service_worker:'worker.js'}}));
+ await fs.writeFile(path.join(extension,'worker.js'),'chrome.runtime.onInstalled.addListener(()=>{});');
+ let zcx;try{
+ zcx=await pw.chromium.launchPersistentContext(path.join(temp,'profile'),{channel:'chromium',headless:true,args:['--disable-extensions-except='+extension,'--load-extension='+extension],viewport:{width:1440,height:900}});
+ await zcx.route('**/*',r=>r.request().url().startsWith(origin+'/')&&['GET','HEAD'].includes(r.request().method())?r.continue():r.abort());
+ const worker=zcx.serviceWorkers()[0]||await zcx.waitForEvent('serviceworker'),zp=await zcx.newPage();await zp.goto(origin+base+'site.html');
+ const before=await zp.evaluate(()=>[innerWidth,innerHeight,devicePixelRatio]);
+ const level=await worker.evaluate(async url=>{const t=(await chrome.tabs.query({})).find(t=>t.url===url);await chrome.tabs.setZoom(t.id,2);return chrome.tabs.getZoom(t.id);},origin+base+'site.html');
+ await zp.waitForTimeout(500);await settle(zp);
+ const after=await zp.evaluate(()=>({viewport:[innerWidth,innerHeight],dpr:devicePixelRatio,heading:(()=>{const e=document.querySelector('.mobile-hero-copy h1'),r=e.getBoundingClientRect();return{width:e.clientWidth,scroll:e.scrollWidth,left:r.x,right:r.right};})()}));
+ const cd=await zcx.newCDPSession(zp),shot=await cd.send('Page.captureScreenshot',{format:'png',fromSurface:true,captureBeyondViewport:false});
+ await fs.writeFile(resolve(out,'native-200-home.png'),Buffer.from(shot.data,'base64'));
+ report.checks.push({label:'native-200-zoom',level,before,after});report.captures.push({file:'native-200-home.png',viewport:after.viewport,state:'native 200 percent zoom',visuallyInspected:false});
+ }catch(e){report.errors.push({probe:'native zoom',error:e.stack});}finally{await zcx?.close();await fs.rm(temp,{recursive:true,force:true});}
+}
+}finally{await browser.close();await new Promise(r=>server.close(r));await writeFile(resolve(out,'routine-report.json'),JSON.stringify(report,null,2));}
 console.log(JSON.stringify({engine,captures:report.captures.length,errors:report.errors}));
