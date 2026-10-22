@@ -1,26 +1,32 @@
-name: Sitecheck focused mobile fullscreen
+name: Minigolf targeted routine repair rerun
 on:
   pull_request:
-    paths: ['qa/**', '.github/workflows/sitecheck-readiness.yml']
+    paths: ['qa/**', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/billboard/demos/mini-golf/**']
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
-  readiness:
+  targeted:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
       - run: npm install --prefix qa --ignore-scripts
-      - run: node qa/node_modules/playwright/cli.js install --with-deps chromium
-      - name: Focused settled mobile fullscreen and return only
-        run: node qa/minigolf-fullscreen.mjs
+      - run: node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
+      - name: Target approved findings and nine-combination smoke sample
+        env:
+          QA_BROWSER: ${{ matrix.browser }}
+        run: node qa/minigolf-audit.mjs
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: minigolf-mobile-fullscreen
+          name: minigolf-targeted-${{ matrix.browser }}
           path: qa/minigolf-results/
           retention-days: 3
