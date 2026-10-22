@@ -95,3 +95,5 @@ body.mini-golf-final .overlay--story .overlay-panel{background:linear-gradient(1
 /* Specificity matches legacy phone form rules, including the disabled demo CTA. */
 body.mini-golf-final .overlay form .primary-action{font-size:16px!important;line-height:1.25!important}
 body.mini-golf-final .overlay .course-grid b{width:36px!important;height:36px!important;font-size:16px!important}
+/* This two-column menu is inset from both sides, not centred by a transform. */
+@media(min-width:521px) and (max-width:900px) and (orientation:landscape) and (min-height:521px){body.mini-golf-final .hotspots{transform:none!important}}
