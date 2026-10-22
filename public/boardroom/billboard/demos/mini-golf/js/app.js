@@ -31,7 +31,8 @@
     setBackgroundInactive(false);
     activeOverlay = null;
     if (restoreFocus && lastTrigger?.isConnected) {
-      lastTrigger.focus({ preventScroll: true });
+      const visible = lastTrigger.getClientRects().length && getComputedStyle(lastTrigger).visibility !== 'hidden';
+      (visible ? lastTrigger : navToggle)?.focus({ preventScroll: true });
       lastTrigger = null;
     }
   }
@@ -96,6 +97,22 @@
     if (e.target.closest('[data-open-book]')) openOverlay('book', e.target.closest('[data-open-book]'));
   });
 
+  // WebKit can keep the previous panel scroll position when Tab follows the
+  // sticky Close control. Keep each newly focused field below that control row.
+  document.addEventListener('focusin', e => {
+    if (!activeOverlay?.contains(e.target) || e.target.closest('.overlay-close')) return;
+    const panel = e.target.closest('.overlay-panel');
+    if (!panel) return;
+    const field = e.target.getBoundingClientRect();
+    const bounds = panel.getBoundingClientRect();
+    const top = bounds.top + Math.min(64, bounds.height / 3);
+    const bottom = bounds.bottom - 12;
+    if (field.top < top || field.bottom > bottom) {
+      const room = Math.max(0, bottom - top - field.height);
+      panel.scrollTop += field.top - top - room / 2;
+    }
+  });
+
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && activeOverlay) closeAll();
     else if (e.key === 'Escape' && document.body.classList.contains('mobile-nav-open')) {
@@ -107,10 +124,28 @@
     else trapFocus(e);
   });
 
-  document.getElementById('booking-form')?.addEventListener('submit', e => {
+  const bookingForm = document.getElementById('booking-form');
+  const bookingDate = bookingForm?.querySelector('[name="date"]');
+  function updateDateMinimum() {
+    const today = new Date();
+    const localDate = [today.getFullYear(), String(today.getMonth() + 1).padStart(2, '0'), String(today.getDate()).padStart(2, '0')].join('-');
+    if (bookingDate) bookingDate.min = localDate;
+  }
+  updateDateMinimum();
+  bookingDate?.addEventListener('focus', updateDateMinimum);
+  bookingForm?.addEventListener('click', e => {
+    if (e.target.closest('[type="submit"]')) updateDateMinimum();
+  });
+  window.addEventListener('focus', updateDateMinimum);
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) updateDateMinimum();
+  });
+  bookingForm?.addEventListener('submit', e => {
     e.preventDefault();
+    updateDateMinimum();
+    if (!e.currentTarget.reportValidity()) return;
     const status = e.currentTarget.querySelector('.form-status');
-    status.textContent = 'Thanks for booking with us! We’ll be in touch shortly.';
+    status.textContent = 'Demo complete — no booking or message was sent.';
     e.currentTarget.querySelector('button[type="submit"]').disabled = true;
   });
 

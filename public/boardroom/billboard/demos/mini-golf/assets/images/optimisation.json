@@ -1,0 +1,26 @@
+[
+  {
+    "input": "puttputt-hero-text-left.png",
+    "output": "puttputt-hero-text-left-optimised.webp",
+    "dimensions": [
+      1536,
+      1024
+    ],
+    "originalBytes": 2458782,
+    "optimisedBytes": 489382,
+    "sha256": "cd5d08e2ac89cc62a150e6851622b75ce375b3250e4dbe5c4a14e08b480ac27b",
+    "method": "Same dimensions and artwork; WebP quality94 method6; no crop or text edit"
+  },
+  {
+    "input": "puttputt-hero.webp",
+    "output": "puttputt-hero-optimised.webp",
+    "dimensions": [
+      1535,
+      1024
+    ],
+    "originalBytes": 2761984,
+    "optimisedBytes": 575820,
+    "sha256": "d807eafbf68533eb40591de904de099c5476fc1a9afcda14bea52785c16d2f7b",
+    "method": "Same dimensions and artwork; WebP quality94 method6; no crop or text edit"
+  }
+]

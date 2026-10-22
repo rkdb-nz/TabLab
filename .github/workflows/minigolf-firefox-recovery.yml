@@ -1,0 +1,45 @@
+name: Minigolf Firefox mirror recovery
+on:
+  pull_request:
+    paths: ['.github/workflows/minigolf-firefox-recovery.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  firefox:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: f518201dc2c957086b6feebe6952f759fa34c475
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - name: Use Ubuntu archive instead of stalled Azure mirror
+        run: |
+          for source in /etc/apt/sources.list /etc/apt/sources.list.d/ubuntu.sources; do
+            if [ -f "$source" ]; then
+              sudo sed -i 's|azure.archive.ubuntu.com|archive.ubuntu.com|g' "$source"
+            fi
+          done
+          echo 'Acquire::Retries "1"; Acquire::http::Timeout "20"; Acquire::https::Timeout "20";' | sudo tee /etc/apt/apt.conf.d/99sitecheck-timeouts >/dev/null
+      - run: npm install --prefix qa --ignore-scripts
+      - run: node qa/node_modules/playwright/cli.js install --with-deps firefox
+      - name: Complete final product Firefox matrix
+        env:
+          QA_BROWSER: firefox
+          SITECHECK_OUTPUT: qa/results/firefox/readiness
+        run: |
+          export SITECHECK_COMMIT=$(git rev-parse HEAD)
+          unset GITHUB_SHA
+          node qa/readiness.mjs qa/minigolf-readiness.json
+          AUDIT_OUTPUT=qa/results/firefox/base node qa/base-audit.mjs
+          AUDIT_OUTPUT=qa/results/firefox/completion node qa/completion-audit.mjs
+          AUDIT_OUTPUT=qa/results/firefox/zoom xvfb-run -a node qa/minigolf-audit.mjs
+      - uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: minigolf-repair-firefox-recovery
+          path: qa/results/
+          retention-days: 3
