@@ -32,6 +32,9 @@ try{for(const resource of ['/robots.txt','/sitemap.xml']){
  try{const response=await api.get('https://e0d06aac.foundry-a3k.pages.dev'+resource,{timeout:30000});report.metadata.push({resource,url:response.url(),status:response.status(),headers:response.headers(),body:(await response.text()).slice(0,20000)});}
  catch(e){report.errors.push({resource,error:e.stack});}
 }}finally{await api.dispose();}
+// Recover one initially premature 1920px landing capture with explicit image readiness.
+const readyBrowser=await require('playwright')[engine].launch({headless:true});
+try{const cx=await readyBrowser.newContext({viewport:{width:1920,height:1080}}),pg=await cx.newPage();await cx.route('**/*',r=>r.request().url().startsWith(origin+'/')?r.continue():r.abort());await pg.goto(origin+'/boardroom/billboard/demos/mini-golf/');const fr=pg.frameLocator('iframe');await fr.locator('.artwork').waitFor({state:'visible'});await fr.locator('.artwork').evaluate(async e=>{await e.decode();});await pg.waitForTimeout(500);const measured=await pg.evaluate(()=>[innerWidth,innerHeight]);await pg.screenshot({path:resolve(out,'1920x1080-framed-home-settled.png'),fullPage:true});report.settledLanding={file:'1920x1080-framed-home-settled.png',measured,imageDecoded:true};await cx.close();}finally{await readyBrowser.close();}
 if(engine!=='chromium'){
  report.status='Metadata recovery collected; native Chromium zoom is performed in the Chromium job only';
  await new Promise(r=>server.close(r));await rm(temporary,{recursive:true,force:true});
