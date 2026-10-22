@@ -1,0 +1,321 @@
+[
+  {
+    "file": "chromium/1440x900-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-home",
+    "inspected": true,
+    "observation": "Desktop artwork fits; important raster wording lacks an accessible text equivalent."
+  },
+  {
+    "file": "chromium/1440x900-services.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-services",
+    "inspected": true,
+    "observation": "Services panel and Close fit; small secondary text."
+  },
+  {
+    "file": "chromium/1440x900-about.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-about",
+    "inspected": true,
+    "observation": "About content and Close fit."
+  },
+  {
+    "file": "chromium/1440x900-projects.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-projects",
+    "inspected": true,
+    "observation": "Projects content and Close fit."
+  },
+  {
+    "file": "chromium/1440x900-safety.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-safety",
+    "inspected": true,
+    "observation": "Safety content and Close fit."
+  },
+  {
+    "file": "chromium/1440x900-quote.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-quote",
+    "inspected": true,
+    "observation": "Form fits; 10px input text and insufficient white/orange button contrast."
+  },
+  {
+    "file": "chromium/desktop-confirmation.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "desktop-confirmation",
+    "inspected": true,
+    "observation": "False promise of receipt and follow-up after local-only submission."
+  },
+  {
+    "file": "chromium/1440x900-fullscreen.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-fullscreen",
+    "inspected": true,
+    "observation": "Fullscreen artwork and Tab Lab return control visible; settled proof supersedes immediate geometry."
+  },
+  {
+    "file": "chromium/wrapper-menu.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "wrapper-menu",
+    "inspected": true,
+    "observation": "Tab Lab menu opens; all listed destinations recorded."
+  },
+  {
+    "file": "chromium/390x844-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "inspected": true,
+    "observation": "Service labels encroach onto picture area; labels do not wrap to available space."
+  },
+  {
+    "file": "chromium/390x844-services.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-services",
+    "inspected": true,
+    "observation": "Services, navigation and Close fit; secondary text small."
+  },
+  {
+    "file": "chromium/rotation-services.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      844,
+      390
+    ],
+    "state": "rotation-services",
+    "inspected": true,
+    "observation": "Open services panel survives portrait-to-landscape resize; Close visible."
+  },
+  {
+    "file": "chromium/390x844-fullscreen.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-fullscreen",
+    "inspected": true,
+    "observation": "Fullscreen fills phone viewport; service labels remain crowded."
+  },
+  {
+    "file": "chromium/844x390-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      844,
+      390
+    ],
+    "state": "844x390-home",
+    "inspected": true,
+    "observation": "Service labels overlap image area; header top partially scrolled out of view in captured state."
+  },
+  {
+    "file": "chromium/320x568-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      320,
+      568
+    ],
+    "state": "320x568-home",
+    "inspected": true,
+    "observation": "Heading and menu crowd together; service labels overflow their allotted text area."
+  },
+  {
+    "file": "chromium/320x568-services.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      320,
+      568
+    ],
+    "state": "320x568-services",
+    "inspected": true,
+    "observation": "Services content and navigation fit at narrow size; very small secondary text."
+  },
+  {
+    "file": "chromium/320x568-quote.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      320,
+      568
+    ],
+    "state": "320x568-quote",
+    "inspected": true,
+    "observation": "Form fits narrowly; label and input text is 8px."
+  },
+  {
+    "file": "chromium/780x300-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-home",
+    "inspected": true,
+    "observation": "Contact CTA lower line is obscured by service row."
+  },
+  {
+    "file": "chromium/780x300-services.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-services",
+    "inspected": true,
+    "observation": "Get a Quote extends below embedded viewport; header partly scrolled out of view."
+  },
+  {
+    "file": "chromium/780x300-quote.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-quote",
+    "inspected": true,
+    "observation": "Close scrolls above viewport; submit partially clipped at bottom."
+  },
+  {
+    "file": "chromium/native-200-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      720,
+      450
+    ],
+    "state": "native 200 percent zoom",
+    "inspected": true,
+    "observation": "Reviewed: panel fits within the sampled screen."
+  },
+  {
+    "file": "webkit/1440x900-home.png",
+    "engine": "webkit",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-home",
+    "inspected": true,
+    "observation": "Desktop artwork fits; important raster wording lacks an accessible text equivalent."
+  },
+  {
+    "file": "webkit/1440x900-services.png",
+    "engine": "webkit",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-services",
+    "inspected": true,
+    "observation": "Services panel and Close fit; small secondary text."
+  },
+  {
+    "file": "webkit/390x844-home.png",
+    "engine": "webkit",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "inspected": true,
+    "observation": "Service labels encroach onto picture area; labels do not wrap to available space."
+  },
+  {
+    "file": "webkit/390x844-services.png",
+    "engine": "webkit",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-services",
+    "inspected": true,
+    "observation": "Services, navigation and Close fit; secondary text small."
+  },
+  {
+    "file": "focused/chromium/1440-full.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "full",
+    "inspected": true,
+    "observation": "Native fullscreen and visible return control."
+  },
+  {
+    "file": "focused/chromium/1440-returned.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "returned",
+    "inspected": true,
+    "observation": "Original Tab Lab frame restored; focus returned to Full screen."
+  },
+  {
+    "file": "focused/chromium/390-full.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "full",
+    "inspected": true,
+    "observation": "Native fullscreen and visible return control."
+  },
+  {
+    "file": "focused/chromium/390-returned.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "returned",
+    "inspected": true,
+    "observation": "Original Tab Lab frame restored; focus returned to Full screen."
+  }
+]

@@ -1,0 +1,279 @@
+{
+  "mode": "routine",
+  "engine": "chromium",
+  "commit": "76b98b79ba52606dcee77eddf82df7a339390b9f",
+  "captures": [],
+  "checks": [
+    {
+      "label": "settled-fullscreen-1440",
+      "before": {
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "full": false,
+        "expanded": false
+      },
+      "full": {
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1440,
+          900
+        ],
+        "full": true,
+        "expanded": false
+      },
+      "returned": {
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "full": false,
+        "expanded": false
+      },
+      "exitHidden": true,
+      "focus": "<button type=\"button\" class=\"foundry-global-control demo-fullscreen\" aria-label=\"Open example in full screen\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M9 3H3v6M15 3h6v6M3 15v6h6M21 15v6h-6\"></path></svg><span>Full screen</span></button>"
+    },
+    {
+      "label": "closed-menu-tab",
+      "active": "<button class=\"menu-close\" type=\"button\" aria-label=\"Close menu\">×</button>"
+    },
+    {
+      "label": "destination",
+      "url": "http://127.0.0.1:44995/",
+      "status": 404
+    },
+    {
+      "label": "destination",
+      "url": "http://127.0.0.1:44995/boardroom/",
+      "status": 200
+    },
+    {
+      "label": "destination",
+      "url": "http://127.0.0.1:44995/foundrycare/",
+      "status": 200
+    },
+    {
+      "label": "destination",
+      "url": "http://127.0.0.1:44995/the-foundry/",
+      "status": 200
+    },
+    {
+      "label": "destination",
+      "url": "http://127.0.0.1:44995/whywebsite/",
+      "status": 200
+    },
+    {
+      "label": "destination",
+      "url": "http://127.0.0.1:44995/start/",
+      "status": 200
+    },
+    {
+      "label": "contrast-1440",
+      "styles": [
+        {
+          "text": "START A PROJECT",
+          "font": "11px",
+          "color": "rgb(243, 109, 0)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Share the location, scope and timing. Our project team will respond with the right next step.",
+          "font": "13px",
+          "color": "rgb(197, 197, 197)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "NAME",
+          "font": "10px",
+          "color": "rgb(216, 216, 216)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "",
+          "font": "10px",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(12, 12, 12)"
+        },
+        {
+          "text": "EMAIL",
+          "font": "10px",
+          "color": "rgb(216, 216, 216)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "",
+          "font": "10px",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(12, 12, 12)"
+        },
+        {
+          "text": "PROJECT OUTLINE",
+          "font": "10px",
+          "color": "rgb(216, 216, 216)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "REQUEST A CALL →",
+          "font": "16px",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "",
+          "font": "11px",
+          "color": "rgb(255, 155, 74)",
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "label": "failed-requests-1440",
+      "failed": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        }
+      ]
+    },
+    {
+      "label": "settled-fullscreen-390",
+      "before": {
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "full": false,
+        "expanded": false
+      },
+      "full": {
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          390,
+          844
+        ],
+        "full": true,
+        "expanded": false
+      },
+      "returned": {
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "full": false,
+        "expanded": false
+      },
+      "exitHidden": true,
+      "focus": "<button type=\"button\" class=\"foundry-global-control demo-fullscreen\" aria-label=\"Open example in full screen\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M9 3H3v6M15 3h6v6M3 15v6h6M21 15v6h-6\"></path></svg><span>Full screen</span></button>"
+    },
+    {
+      "label": "contrast-390",
+      "styles": [
+        {
+          "text": "START A PROJECT",
+          "font": "8px",
+          "color": "rgb(243, 109, 0)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "Share the location, scope and timing. Our project team will respond with the right next step.",
+          "font": "11px",
+          "color": "rgb(197, 197, 197)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "NAME",
+          "font": "8px",
+          "color": "rgb(216, 216, 216)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "",
+          "font": "8px",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(12, 12, 12)"
+        },
+        {
+          "text": "EMAIL",
+          "font": "8px",
+          "color": "rgb(216, 216, 216)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "",
+          "font": "8px",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgb(12, 12, 12)"
+        },
+        {
+          "text": "PROJECT OUTLINE",
+          "font": "8px",
+          "color": "rgb(216, 216, 216)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "REQUEST A CALL →",
+          "font": "10px",
+          "color": "rgb(255, 255, 255)",
+          "bg": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "text": "",
+          "font": "11px",
+          "color": "rgb(255, 155, 74)",
+          "bg": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    },
+    {
+      "label": "failed-requests-390",
+      "failed": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "error": {
+            "errorText": "net::ERR_ABORTED"
+          }
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "console": [],
+  "assets": [],
+  "sourceHashes": {
+    "index.html": "eae1a1a3f471544f9ed41c30b00010f3cbf109480d44109cdd5a817f965e15b4",
+    "site.html": "8ebfd5c38f94db7434216db59b87ac2dd82996a04ac4cc0422c72041afbb9638",
+    "css/style.css": "812c3addc768d610a953e95dc0e2e8de4dd56850cce1de8264947434bcc8919b",
+    "css/mobile-fluid.css": "4628e74c8bcc432994582b2d0234fd741122ef523d376b4ccd450f3c9c14e5cc",
+    "js/app.js": "886b7abfedc66e9bc335ed7cf6ea897241607036e66dfc81a5925560ee5ff6f2"
+  },
+  "limitations": [
+    "Linux emulation, not physical phones or Safari/iOS.",
+    "No real booking or message delivery."
+  ],
+  "version": "151.0.7922.34"
+}

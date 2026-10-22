@@ -1,0 +1,6 @@
+{
+  "name":"tablab-sitecheck-readiness",
+  "private":true,
+  "type":"module",
+  "dependencies":{"playwright":"1.62.1","axe-core":"4.11.1"}
+}
