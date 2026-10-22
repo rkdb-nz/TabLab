@@ -81,4 +81,6 @@ for(let repeat=0;repeat<3;repeat++){
 }
 
 }finally{await browser.close();await new Promise(r=>server.close(r));await writeFile(resolve(out,'report.json'),JSON.stringify(report,null,2));}
+report.checks.push({pass:report.screens.length===sizes.length&&report.screens.every(s=>s.complete),label:'Every viewport scenario completed',expected:sizes.length,completed:report.screens.filter(s=>s.complete).length});
+await writeFile(resolve(out,'report.json'),JSON.stringify(report,null,2));
 console.log('Audit evidence captured; visual review pending.');
