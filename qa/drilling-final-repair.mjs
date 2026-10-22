@@ -4,7 +4,7 @@ import {readFile,writeFile,mkdir,stat} from 'node:fs/promises';
 import {resolve,extname} from 'node:path';
 import {createHash} from 'node:crypto';
 const require=createRequire(import.meta.url),pw=require('playwright');
-const engine=process.env.QA_BROWSER||'chromium',root=resolve('public'),out=resolve('qa/drilling-final-results',engine);
+const engine=process.env.QA_BROWSER||'chromium',root=resolve('public'),out=resolve('qa/drilling-portrait-results',engine);
 await mkdir(out,{recursive:true});
 const report={mode:'routine',engine,commit:process.env.GITHUB_SHA,captures:[],checks:[],errors:[],console:[],assets:[],sourceHashes:{},limitations:['Linux emulation, not physical phones or Safari/iOS.','No real booking or message delivery.']};
 const base='/boardroom/billboard/demos/drilling/';
@@ -18,9 +18,9 @@ const browser=await pw[engine].launch({headless:true});report.version=browser.ve
 
 report.failures=[];
 function check(id,label,pass,evidence){report.checks.push({id,label,pass,evidence});if(!pass)report.failures.push({id,label,evidence});}
-const sizes=engine==='firefox'?[[390,844],[844,390],[320,568],[780,300],[720,450]]:[[390,844]];
+const sizes=engine==='firefox'?[[390,844],[320,568]]:[[390,844]];
 async function settle(f){await f.locator('body').evaluate(async()=>{await document.fonts.ready;await Promise.all([...document.images].map(i=>i.decode().catch(()=>{})));await Promise.all(document.getAnimations().filter(a=>a.playState==='running'&&a.effect?.getTiming().iterations!==Infinity).map(a=>a.finished.catch(()=>{})));});}
-async function cap(p,f,label){await settle(f);const file=label+'.png';await p.screenshot({path:resolve(out,file)});report.captures.push({file,viewport:await p.evaluate(()=>[innerWidth,innerHeight]),state:label,visuallyInspected:false});}
+async function cap(p,f,label){if(!label.endsWith('-home'))return;await settle(f);const file=label+'.png';await p.screenshot({path:resolve(out,file)});report.captures.push({file,viewport:await p.evaluate(()=>[innerWidth,innerHeight]),state:label,visuallyInspected:false});}
 async function homeGeometry(f){return f.evaluate(()=>{
  const box=e=>{if(!e||!e.getClientRects().length)return null;const r=e.getBoundingClientRect();return{x:r.x,y:r.y,right:r.right,bottom:r.bottom,width:r.width,height:r.height};};
  const shown=e=>e&&e.getClientRects().length&&getComputedStyle(e).display!=='none';

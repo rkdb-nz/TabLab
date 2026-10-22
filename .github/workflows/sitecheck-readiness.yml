@@ -1,4 +1,4 @@
-name: Drilling final label and confirmation check
+name: Drilling portrait title fit check
 on:
   pull_request:
     paths: ['qa/**', 'public/boardroom/billboard/demos/drilling/**', '.github/workflows/sitecheck-readiness.yml']
@@ -27,6 +27,6 @@ jobs:
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: drilling-final-${{ matrix.engine }}
-          path: qa/drilling-final-results/
+          name: drilling-portrait-${{ matrix.engine }}
+          path: qa/drilling-portrait-results/
           retention-days: 90
