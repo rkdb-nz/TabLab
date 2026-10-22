@@ -1,0 +1,307 @@
+{
+  "kind": "focused mobile fullscreen return",
+  "commit": "883e13bcba5c522b35fa1e4bb70dada37c0ed6bc",
+  "requested": {
+    "width": 390,
+    "height": 844
+  },
+  "captures": [
+    {
+      "file": "mobile-framed-before.png",
+      "state": "mobile-framed-before",
+      "visuallyInspected": false
+    },
+    {
+      "file": "mobile-fullscreen-settled.png",
+      "state": "mobile-fullscreen-settled",
+      "visuallyInspected": false
+    },
+    {
+      "file": "mobile-return-settled.png",
+      "state": "mobile-return-settled",
+      "visuallyInspected": false
+    }
+  ],
+  "states": [
+    {
+      "name": "mobile-framed-before",
+      "outer": {
+        "viewport": [
+          390,
+          844
+        ],
+        "fullscreen": false,
+        "fullscreenTarget": null,
+        "expanded": false,
+        "container": {
+          "x": 3,
+          "y": 76,
+          "width": 384,
+          "height": 765,
+          "right": 387,
+          "bottom": 841
+        },
+        "frame": {
+          "x": 4,
+          "y": 77,
+          "width": 382,
+          "height": 763,
+          "right": 386,
+          "bottom": 840
+        },
+        "returnControl": {
+          "hidden": true,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "display": "none"
+        },
+        "focus": null
+      },
+      "inner": {
+        "viewport": [
+          382,
+          763
+        ],
+        "scroll": [
+          382,
+          763
+        ]
+      }
+    },
+    {
+      "name": "mobile-fullscreen-settled",
+      "outer": {
+        "viewport": [
+          390,
+          844
+        ],
+        "fullscreen": true,
+        "fullscreenTarget": "demo-browser-content",
+        "expanded": false,
+        "container": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "right": 390,
+          "bottom": 844
+        },
+        "frame": {
+          "x": 0,
+          "y": 0,
+          "width": 390,
+          "height": 844,
+          "right": 390,
+          "bottom": 844
+        },
+        "returnControl": {
+          "hidden": false,
+          "rect": {
+            "x": 0,
+            "y": 185.671875,
+            "width": 36,
+            "height": 86.640625,
+            "right": 36,
+            "bottom": 272.3125
+          },
+          "display": "block"
+        },
+        "focus": "Exit full screen and return to Tab Lab frame"
+      },
+      "inner": {
+        "viewport": [
+          390,
+          844
+        ],
+        "scroll": [
+          390,
+          844
+        ]
+      }
+    },
+    {
+      "name": "mobile-return-settled",
+      "outer": {
+        "viewport": [
+          390,
+          844
+        ],
+        "fullscreen": false,
+        "fullscreenTarget": null,
+        "expanded": false,
+        "container": {
+          "x": 3,
+          "y": 76,
+          "width": 384,
+          "height": 765,
+          "right": 387,
+          "bottom": 841
+        },
+        "frame": {
+          "x": 4,
+          "y": 77,
+          "width": 382,
+          "height": 763,
+          "right": 386,
+          "bottom": 840
+        },
+        "returnControl": {
+          "hidden": true,
+          "rect": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0,
+            "right": 0,
+            "bottom": 0
+          },
+          "display": "none"
+        },
+        "focus": "Open example in full screen"
+      },
+      "inner": {
+        "viewport": [
+          382,
+          763
+        ],
+        "scroll": [
+          382,
+          763
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "Linux Chromium viewport emulation; not physical Android/iOS or browser chrome."
+  ],
+  "version": "151.0.7922.34",
+  "before": {
+    "viewport": [
+      390,
+      844
+    ],
+    "fullscreen": false,
+    "fullscreenTarget": null,
+    "expanded": false,
+    "container": {
+      "x": 3,
+      "y": 76,
+      "width": 384,
+      "height": 765,
+      "right": 387,
+      "bottom": 841
+    },
+    "frame": {
+      "x": 4,
+      "y": 77,
+      "width": 382,
+      "height": 763,
+      "right": 386,
+      "bottom": 840
+    },
+    "returnControl": {
+      "hidden": true,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "display": "none"
+    },
+    "focus": null
+  },
+  "entered": {
+    "viewport": [
+      390,
+      844
+    ],
+    "fullscreen": true,
+    "fullscreenTarget": "demo-browser-content",
+    "expanded": false,
+    "container": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 844,
+      "right": 390,
+      "bottom": 844
+    },
+    "frame": {
+      "x": 0,
+      "y": 0,
+      "width": 390,
+      "height": 844,
+      "right": 390,
+      "bottom": 844
+    },
+    "returnControl": {
+      "hidden": false,
+      "rect": {
+        "x": 0,
+        "y": 185.671875,
+        "width": 36,
+        "height": 86.640625,
+        "right": 36,
+        "bottom": 272.3125
+      },
+      "display": "block"
+    },
+    "focus": "Exit full screen and return to Tab Lab frame"
+  },
+  "returned": {
+    "viewport": [
+      390,
+      844
+    ],
+    "fullscreen": false,
+    "fullscreenTarget": null,
+    "expanded": false,
+    "container": {
+      "x": 3,
+      "y": 76,
+      "width": 384,
+      "height": 765,
+      "right": 387,
+      "bottom": 841
+    },
+    "frame": {
+      "x": 4,
+      "y": 77,
+      "width": 382,
+      "height": 763,
+      "right": 386,
+      "bottom": 840
+    },
+    "returnControl": {
+      "hidden": true,
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 0,
+        "height": 0,
+        "right": 0,
+        "bottom": 0
+      },
+      "display": "none"
+    },
+    "focus": "Open example in full screen"
+  },
+  "result": {
+    "entered": true,
+    "mode": "native fullscreen API",
+    "returnWorked": true,
+    "restoredViewport": true,
+    "restoredFrame": true
+  },
+  "status": "Verified within emulated Chromium environment"
+}

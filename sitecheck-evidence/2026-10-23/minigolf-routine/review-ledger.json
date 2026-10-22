@@ -2,7 +2,7 @@
   "source_run": 39836942698,
   "qa_commit": "61c29ed083d6387c798cde418f5f774bad8cee68",
   "product_commit": "2767653f5208cd3b4a5dcbae4a1f28a0068d6be3",
-  "screenshots_reviewed": 26,
+  "screenshots_reviewed": 29,
   "entries": [
     {
       "engine": "chromium",
@@ -259,6 +259,42 @@
       "sha256": "86c16d1e255a15ed2639b1100080c4c165e47123605d903003d38be2f9be528c",
       "inspected": true,
       "review": "Opened with view_image during routine continuation; observations in report."
+    },
+    {
+      "engine": "chromium",
+      "path": "fullscreen/chromium/fullscreen-report.json",
+      "bytes": 6099,
+      "sha256": "3896ba56a718dcb78952fab4305197cba86aeec5b100de2900575a40323a48c8",
+      "inspected": false,
+      "review": "Settled measurements inspected; no errors."
+    },
+    {
+      "engine": "chromium",
+      "path": "fullscreen/chromium/mobile-framed-before.png",
+      "bytes": 325825,
+      "sha256": "7131c92b550af8b224eceb67c1c56cf8b2ae1dfd18cc6b4af4a4b32fbe70971e",
+      "inspected": true,
+      "review": "Opened and visually inspected: frame before, fullscreen with visible Tab Lab return, or restored frame after return."
+    },
+    {
+      "engine": "chromium",
+      "path": "fullscreen/chromium/mobile-fullscreen-settled.png",
+      "bytes": 355179,
+      "sha256": "345a1a29d7e96289f258725660c4effada9fba6c8dc5f3232522ec401b84e988",
+      "inspected": true,
+      "review": "Opened and visually inspected: frame before, fullscreen with visible Tab Lab return, or restored frame after return."
+    },
+    {
+      "engine": "chromium",
+      "path": "fullscreen/chromium/mobile-return-settled.png",
+      "bytes": 325822,
+      "sha256": "cf76cea1678e9e59e2edfadde29d25c5a63a560a3d4c671802dde8bd21ade902",
+      "inspected": true,
+      "review": "Opened and visually inspected: frame before, fullscreen with visible Tab Lab return, or restored frame after return."
     }
-  ]
+  ],
+  "focused_run": 39838449883,
+  "focused_pr_head": "b5da7bbb57e1c361d86ae26880bbac3de2609282",
+  "focused_tested_merge_commit": "883e13bcba5c522b35fa1e4bb70dada37c0ed6bc",
+  "total_routine_screenshots_including_prior_hosted": 35
 }
