@@ -1,0 +1,413 @@
+{
+  "source": "8b095bc1a0f6a03754b4cb738ee9d7f03a10c826",
+  "screenshots": [
+    {
+      "phase": "initial",
+      "engine": "firefox",
+      "file": "initial/firefox/1440x900-home.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Reviewed: desktop composition, imagery and navigation; no new layout fault."
+    },
+    {
+      "phase": "initial",
+      "engine": "firefox",
+      "file": "initial/firefox/390x844-home.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: hero fits sampled phone; no visible scene navigation or gesture hint."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/1440x900-home.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Reviewed: desktop composition, imagery and navigation; no new layout fault."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/desktop-process.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Reviewed: desktop composition, imagery and navigation; no new layout fault."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/desktop-gallery.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Reviewed: desktop composition, imagery and navigation; no new layout fault."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/desktop-contact.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Reviewed: desktop composition, imagery and navigation; no new layout fault."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/desktop-confirmation.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Reviewed: confirmation promises a two-day reply despite no delivery."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/1440x900-fullscreen.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Reviewed: desktop composition, imagery and navigation; no new layout fault."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/css200-surrogate.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Reviewed: CSS-only zoom surrogate; native zoom not proven."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/390x844-home.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: hero fits sampled phone; no visible scene navigation or gesture hint."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/390x844-scene-1.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: attempted scene navigation left hero at scene 0 because the harness focused body. Superseded by explicit brand-focus tests; no product failure inferred."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/844x390-home.png",
+      "viewport": [
+        844,
+        390
+      ],
+      "inspected": true,
+      "observation": "Reviewed: hero fits sampled phone; no visible scene navigation or gesture hint."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/844x390-scene-1.png",
+      "viewport": [
+        844,
+        390
+      ],
+      "inspected": true,
+      "observation": "Reviewed: attempted scene navigation left hero at scene 0 because the harness focused body. Superseded by explicit brand-focus tests; no product failure inferred."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/844x390-scene-2.png",
+      "viewport": [
+        844,
+        390
+      ],
+      "inspected": true,
+      "observation": "Reviewed: attempted scene navigation left hero at scene 0 because the harness focused body. Superseded by explicit brand-focus tests; no product failure inferred."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/320x568-home.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "inspected": true,
+      "observation": "Reviewed: hero fits sampled phone; no visible scene navigation or gesture hint."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/320x568-scene-1.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "inspected": true,
+      "observation": "Reviewed: attempted scene navigation left hero at scene 0 because the harness focused body. Superseded by explicit brand-focus tests; no product failure inferred."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/320x568-scene-2.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "inspected": true,
+      "observation": "Reviewed: attempted scene navigation left hero at scene 0 because the harness focused body. Superseded by explicit brand-focus tests; no product failure inferred."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/780x300-home.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "inspected": true,
+      "observation": "Reviewed: hero fits sampled phone; no visible scene navigation or gesture hint."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/780x300-scene-1.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "inspected": true,
+      "observation": "Reviewed: attempted scene navigation left hero at scene 0 because the harness focused body. Superseded by explicit brand-focus tests; no product failure inferred."
+    },
+    {
+      "phase": "initial",
+      "engine": "chromium",
+      "file": "initial/chromium/780x300-scene-2.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "inspected": true,
+      "observation": "Reviewed: attempted scene navigation left hero at scene 0 because the harness focused body. Superseded by explicit brand-focus tests; no product failure inferred."
+    },
+    {
+      "phase": "initial",
+      "engine": "webkit",
+      "file": "initial/webkit/1440x900-home.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Reviewed: mobile layout loaded in desktop frame, with hidden desktop nav. Focused run subsequently loaded desktop; intermittent routing difference."
+    },
+    {
+      "phase": "initial",
+      "engine": "webkit",
+      "file": "initial/webkit/390x844-home.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: hero fits sampled phone; no visible scene navigation or gesture hint."
+    },
+    {
+      "phase": "focused",
+      "engine": "chromium",
+      "file": "focused/chromium/390x844-scene-1.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: requested scene renders and controls fit. No visible next/previous scene controls or swipe guidance. Short landscape hides supporting contact option."
+    },
+    {
+      "phase": "focused",
+      "engine": "chromium",
+      "file": "focused/chromium/maker-dialog.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: readable dialog; close control visible; longer sheets scroll as measured."
+    },
+    {
+      "phase": "focused",
+      "engine": "chromium",
+      "file": "focused/chromium/390x844-scene-2.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: requested scene renders and controls fit. No visible next/previous scene controls or swipe guidance. Short landscape hides supporting contact option."
+    },
+    {
+      "phase": "focused",
+      "engine": "chromium",
+      "file": "focused/chromium/gallery-dialog.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: readable dialog; close control visible; longer sheets scroll as measured."
+    },
+    {
+      "phase": "focused",
+      "engine": "chromium",
+      "file": "focused/chromium/390x844-scene-3.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: requested scene renders and controls fit. No visible next/previous scene controls or swipe guidance. Short landscape hides supporting contact option."
+    },
+    {
+      "phase": "focused",
+      "engine": "chromium",
+      "file": "focused/chromium/390x844-scene-4.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: requested scene renders and controls fit. No visible next/previous scene controls or swipe guidance. Short landscape hides supporting contact option."
+    },
+    {
+      "phase": "focused",
+      "engine": "chromium",
+      "file": "focused/chromium/workshop-dialog.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: readable dialog; close control visible; longer sheets scroll as measured."
+    },
+    {
+      "phase": "focused",
+      "engine": "chromium",
+      "file": "focused/chromium/contact-dialog.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: readable dialog; close control visible; longer sheets scroll as measured."
+    },
+    {
+      "phase": "focused",
+      "engine": "chromium",
+      "file": "focused/chromium/visit-details-dialog.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: readable dialog; close control visible; longer sheets scroll as measured."
+    },
+    {
+      "phase": "focused",
+      "engine": "chromium",
+      "file": "focused/chromium/phone-fullscreen.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: mixed-scene image captured before transition settled; superseded by settled fullscreen checks."
+    },
+    {
+      "phase": "focused",
+      "engine": "chromium",
+      "file": "focused/chromium/780x300-scene-3.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "inspected": true,
+      "observation": "Reviewed: requested scene renders and controls fit. No visible next/previous scene controls or swipe guidance. Short landscape hides supporting contact option."
+    },
+    {
+      "phase": "focused",
+      "engine": "chromium",
+      "file": "focused/chromium/780x300-scene-4.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "inspected": true,
+      "observation": "Reviewed: requested scene renders and controls fit. No visible next/previous scene controls or swipe guidance. Short landscape hides supporting contact option."
+    },
+    {
+      "phase": "focused",
+      "engine": "webkit",
+      "file": "focused/webkit/webkit-desktop-route.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Reviewed: desktop composition, imagery and navigation; no new layout fault."
+    },
+    {
+      "phase": "settled",
+      "engine": "chromium",
+      "file": "settled/chromium/fullscreen-settled.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: maker scene fills exact measured viewport; fullscreen and frame return correctly restore scene geometry."
+    },
+    {
+      "phase": "settled",
+      "engine": "chromium",
+      "file": "settled/chromium/return-settled.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: maker scene fills exact measured viewport; fullscreen and frame return correctly restore scene geometry."
+    }
+  ],
+  "independent_review": "Not used; optional routine mode."
+}
