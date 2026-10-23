@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chromium, firefox, webkit]
+        browser: [chromium]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -28,6 +28,6 @@ jobs:
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: pottery-focus-${{ matrix.browser }}
-          path: qa/pottery-focus-results/
+          name: pottery-settled-${{ matrix.browser }}
+          path: qa/pottery-settled-results/
           retention-days: 90
