@@ -1,8 +1,7 @@
-name: Pottery targeted repairs
+name: Tailor routine sitecheck
 on:
-  push:
-    branches: ['qa/pottery-routine']
-    paths: ['qa/pottery-routine.mjs', 'public/boardroom/skateboard/demos/pottery/**']
+  pull_request:
+    paths: ['qa/tailor-routine.mjs', '.github/workflows/sitecheck-readiness.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -13,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chromium, webkit]
+        browser: [chromium, firefox, webkit]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -22,12 +21,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - if: matrix.browser != 'chromium'
         run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - run: node qa/pottery-routine.mjs
+      - run: node qa/tailor-routine.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: pottery-repair-${{ matrix.browser }}
-          path: qa/pottery-repair-results/
+          name: tailor-${{ matrix.browser }}
+          path: qa/tailor-results/
           retention-days: 90
