@@ -12,6 +12,14 @@
   <link rel="stylesheet" href="css/landscape-fix.css?v=mug-1">
   <link rel="stylesheet" href="css/landscape-menus.css?v=4">
   <link rel="stylesheet" href="css/landscape-authoritative.css?v=mug-1">
+<style>
+#catering-form[hidden]{display:none}
+#catering-form{margin-top:20px}
+#catering-form label:nth-of-type(4){grid-column:auto}
+#catering-form .catering-wide{grid-column:1/-1}
+#catering-form input,#catering-form select,#catering-form textarea{font-size:16px}
+#catering-form .form-status{padding-top:8px;line-height:1.4}
+</style>
 </head>
 <body>
 <main class="viewport" aria-label="A Hole in One gourmet donuts">
@@ -142,7 +150,18 @@
             <article><span>02</span><strong>Corporate Gifting</strong><p>Branded cards, scheduled delivery and polished presentation.</p></article>
             <article><span>03</span><strong>Events</strong><p>Donut walls, dessert tables and custom flavours for your occasion.</p></article>
           </div>
-          <button class="soft-action" id="catering-enquiry" type="button">Create an enquiry →</button>
+          <button class="soft-action" id="catering-enquiry" type="button" aria-expanded="false" aria-controls="catering-form">Create an enquiry →</button>
+          <form id="catering-form" hidden>
+            <label>Name<input name="name" required autocomplete="name"></label>
+            <label>Email<input name="email" type="email" required autocomplete="email"></label>
+            <label>Phone<input name="phone" type="tel" autocomplete="tel"></label>
+            <label>Event type<select name="event"><option>Celebration</option><option>Corporate gifting</option><option>Other event</option></select></label>
+            <label>Event date<input name="date" type="date" required></label>
+            <label>Number of guests<input name="guests" type="number" min="1" step="1" required></label>
+            <label class="catering-wide">Tell us what you have in mind<textarea name="details" rows="3" required placeholder="Flavours, quantities, venue and any special requirements…"></textarea></label>
+            <button class="submit-button catering-wide" type="submit">Send enquiry →</button>
+            <p class="form-status catering-wide" role="status" tabindex="-1"></p>
+          </form>
         </div>
       </section>
 
@@ -167,6 +186,6 @@
       </section>
     </div>
   </main>
-  <script src="js/app.js?v=slide6"></script>
+  <script src="js/app.js?v=catering-demo-1"></script>
 </body>
 </html>
