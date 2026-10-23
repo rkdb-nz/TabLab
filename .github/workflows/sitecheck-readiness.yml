@@ -1,8 +1,8 @@
-name: Florist targeted repair check
+name: Pottery routine sitecheck
 on:
   push:
-    branches: ['qa/florist-routine']
-    paths: ['qa/florist-routine.mjs', 'public/boardroom/skateboard/demos/florist/**']
+    branches: ['qa/pottery-routine']
+    paths: ['qa/pottery-routine.mjs', 'public/boardroom/skateboard/demos/pottery/**']
   workflow_dispatch:
 permissions:
   contents: read
@@ -22,13 +22,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - if: matrix.browser != 'chromium'
         run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - name: Targeted repairs and nine-combination smoke sample
-        run: node qa/florist-routine.mjs
+      - run: node qa/pottery-routine.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: florist-repair-${{ matrix.browser }}
-          path: qa/florist-repair-results/
+          name: pottery-${{ matrix.browser }}
+          path: qa/pottery-results/
           retention-days: 90
