@@ -10,6 +10,7 @@
 
   function openMenu() {
     menuOpener = document.activeElement;
+    drawer.inert = false;
     body.classList.add('menu-open');
     toggle?.setAttribute('aria-expanded', 'true');
     drawer?.setAttribute('aria-hidden', 'false');
@@ -19,13 +20,15 @@
   function closeMenu() {
     body.classList.remove('menu-open');
     toggle?.setAttribute('aria-expanded', 'false');
-    drawer?.setAttribute('aria-hidden', 'true');
     (menuOpener instanceof HTMLElement ? menuOpener : toggle)?.focus({preventScroll:true});
+    drawer?.setAttribute('aria-hidden', 'true');
+    drawer.inert = true;
   }
 
   function showPanel(name) {
     links.forEach(link => link.classList.toggle('is-active', link.dataset.panel === name));
     panels.forEach(panel => panel.classList.toggle('is-active', panel.dataset.content === name));
+    drawer.querySelector('.drawer-content').scrollTop = 0;
   }
 
   toggle?.addEventListener('click', () => {
@@ -63,6 +66,8 @@
 
   document.getElementById('quote-form')?.addEventListener('submit', event => {
     event.preventDefault();
-    event.currentTarget.querySelector('.form-status').textContent = 'Thanks — your request has been received. We’ll be in touch shortly.';
+    const status = event.currentTarget.querySelector('.form-status');
+    status.textContent = 'Demo complete — no quote request was sent.';
+    status.scrollIntoView({block:'nearest', behavior:'instant'});
   });
 })();

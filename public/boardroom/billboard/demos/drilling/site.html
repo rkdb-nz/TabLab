@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#111111">
-  <meta name="description" content="Deepcore Drilling — specialist drilling, delivered with precision.">
-  <title>Deepcore Drilling | Specialist Drilling</title>
+  <meta name="description" content="A Hole in One Drilling — specialist drilling, delivered with precision.">
+  <title>A Hole in One Drilling | Specialist Drilling</title>
   <script>
     (() => {
       const syncOrientation = () => {
@@ -22,11 +22,21 @@
   </script>
   <link rel="stylesheet" href="css/style.css?v=2">
   <link rel="stylesheet" href="css/mobile-fluid.css?v=8">
+  <link rel="stylesheet" href="css/repairs.css?v=1">
 </head>
 <body>
-  <main class="viewport" aria-label="Deepcore Drilling">
+  <main class="viewport" aria-label="A Hole in One Drilling">
     <section class="site" id="site">
-      <img class="artwork" src="assets/images/drilling-hero.webp" alt="Industrial drilling operation at sunset with specialist crews and equipment">
+      <img class="artwork" src="assets/images/drilling-hero-optimised.webp" alt="" aria-hidden="true" fetchpriority="high">
+      <section class="desktop-accessible" aria-label="Company introduction">
+        <h1>A Hole in One Drilling — drilling deeper, delivering more.</h1>
+        <p>Specialist drilling solutions. Any terrain. Any challenge. Done right.</p>
+        <p>Precision, power and performance. Expert crews, advanced equipment, proven results and nationwide coverage.</p>
+        <h2>Specialist drilling</h2><p>From exploration to production, we deliver precision you can trust.</p>
+        <h2>Experienced professionals</h2><p>Highly skilled teams committed to safety, quality and efficiency.</p>
+        <h2>Safety first</h2><p>Zero compromise. Every job. Everyone goes home safe.</p>
+        <p>Built on precision. Driven by performance.</p>
+      </section>
 
       <div class="mobile-experience">
         <section class="mobile-hero">
@@ -79,7 +89,7 @@
 
       <div class="menu-backdrop" aria-hidden="true"></div>
 
-      <aside class="menu-drawer" id="site-menu" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Site menu">
+      <div class="menu-drawer" inert id="site-menu" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Site menu">
         <div class="drawer-head">
           <p><span class="menu-location">NATIONWIDE NEW ZEALAND</span><span class="menu-company">A HOLE IN ONE DRILLING</span></p>
           <button class="menu-close" type="button" aria-label="Close menu">×</button>
@@ -139,8 +149,9 @@
             <section class="drawer-panel" data-content="quote">
               <p class="panel-kicker">START A PROJECT</p>
               <h2>Tell us what needs drilling.</h2>
-              <p class="quote-copy">Share the location, scope and timing. Our project team will respond with the right next step.</p>
-              <form id="quote-form">
+              <p class="quote-copy">Try the form with a project location, scope and timing.</p>
+              <p class="demo-notice">Demo only — no quote request is sent.</p>
+              <form id="quote-form" aria-label="Demo quote request">
                 <label><span>Name</span><input name="name" autocomplete="name" required></label>
                 <label><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
                 <label class="full"><span>Project outline</span><textarea name="project" rows="4" required></textarea></label>
@@ -150,9 +161,9 @@
             </section>
           </div>
         </div>
-      </aside>
+      </div>
     </section>
   </main>
-  <script src="js/app.js?v=3"></script>
+  <script src="js/app.js?v=4"></script>
 </body>
 </html>

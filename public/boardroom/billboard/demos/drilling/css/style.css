@@ -87,7 +87,7 @@ form button{border:1px solid #ff9a46;padding:11px 14px;color:#fff;background:lin
   .site{width:100%;height:100%;min-height:0;overflow:hidden;box-shadow:none;background:#050706}
   .artwork{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
   .mobile-experience{display:grid;grid-template-rows:minmax(0,1fr) auto auto;width:100%;height:100%;overflow:hidden;background:#090909}
-  .mobile-hero{position:relative;display:flex;min-height:0;flex-direction:column;justify-content:space-between;padding:max(18px,env(safe-area-inset-top)) 20px 18px;background-image:linear-gradient(180deg,rgba(0,0,0,.16) 18%,rgba(0,0,0,.28) 45%,#070707 100%),url('../assets/images/drilling-hero.webp');background-size:auto 108%;background-position:52% center;background-repeat:no-repeat}
+  .mobile-hero{position:relative;display:flex;min-height:0;flex-direction:column;justify-content:space-between;padding:max(18px,env(safe-area-inset-top)) 20px 18px;background-image:linear-gradient(180deg,rgba(0,0,0,.16) 18%,rgba(0,0,0,.28) 45%,#070707 100%),url('../assets/images/drilling-hero-optimised.webp');background-size:auto 108%;background-position:52% center;background-repeat:no-repeat}
   .mobile-brand{display:flex;align-items:center;gap:10px;width:max-content;text-shadow:0 2px 8px #000}
   .mobile-brand>strong{font-family:Impact,"Arial Narrow",sans-serif;font-size:clamp(43px,12vw,54px);line-height:.8;letter-spacing:-.04em}
   .mobile-brand>strong span{color:#fff}.mobile-brand>strong{color:var(--orange)}
@@ -124,7 +124,7 @@ form button{border:1px solid #ff9a46;padding:11px 14px;color:#fff;background:lin
   .site{width:100%;height:100%;min-height:0;overflow:hidden;box-shadow:none}
   .artwork{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
   .mobile-experience{display:grid;grid-template-columns:minmax(0,62%) minmax(0,38%);grid-template-rows:minmax(0,1fr) auto;width:100%;height:100%;overflow:hidden;background:#090909}
-  .mobile-hero{position:relative;grid-row:1/-1;display:grid;align-content:center;min-height:0;padding:20px clamp(24px,5vw,48px);background-image:linear-gradient(90deg,rgba(0,0,0,.96) 0%,rgba(0,0,0,.76) 52%,rgba(0,0,0,.08) 100%),url('../assets/images/drilling-hero.webp');background-size:cover;background-position:54% center}
+  .mobile-hero{position:relative;grid-row:1/-1;display:grid;align-content:center;min-height:0;padding:20px clamp(24px,5vw,48px);background-image:linear-gradient(90deg,rgba(0,0,0,.96) 0%,rgba(0,0,0,.76) 52%,rgba(0,0,0,.08) 100%),url('../assets/images/drilling-hero-optimised.webp');background-size:cover;background-position:54% center}
   .mobile-brand{position:absolute;top:18px;left:clamp(28px,6vw,62px);display:flex;align-items:center;gap:8px}
   .mobile-brand>strong{font-family:Impact,"Arial Narrow",sans-serif;color:var(--orange);font-size:38px;line-height:.8}.mobile-brand>strong span{color:#fff}
   .mobile-brand p{margin:0;font-size:9px;font-weight:900;line-height:1;letter-spacing:.1em}.mobile-brand b{color:var(--orange);font-size:11px}

@@ -1,0 +1,496 @@
+[
+  {
+    "file": "firefox/1440x900-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-home",
+    "source_merge_commit": "e0572cacc5ac94c48256fbb0cdc689bd3c7e0b08",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Reviewed: content fits the sampled viewport."
+  },
+  {
+    "file": "firefox/390x844-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "source_merge_commit": "e0572cacc5ac94c48256fbb0cdc689bd3c7e0b08",
+    "visually_inspected": true,
+    "status": "superseded",
+    "observation": "Portrait landing inspected; later portrait title-width correction supersedes this card composition."
+  },
+  {
+    "file": "webkit/1440x900-home.png",
+    "engine": "webkit",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-home",
+    "source_merge_commit": "e0572cacc5ac94c48256fbb0cdc689bd3c7e0b08",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Reviewed: content fits the sampled viewport."
+  },
+  {
+    "file": "webkit/390x844-home.png",
+    "engine": "webkit",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "source_merge_commit": "e0572cacc5ac94c48256fbb0cdc689bd3c7e0b08",
+    "visually_inspected": true,
+    "status": "superseded",
+    "observation": "Portrait landing inspected; later portrait title-width correction supersedes this card composition."
+  },
+  {
+    "file": "focused/firefox/1440x900-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-home",
+    "source_merge_commit": "22bcce262010fab628962b264c3ba2655885513d",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Reviewed: content fits the sampled viewport."
+  },
+  {
+    "file": "focused/firefox/desktop-quote.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "desktop-quote",
+    "source_merge_commit": "22bcce262010fab628962b264c3ba2655885513d",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Quote-only demo notice, readable fields and dark high-contrast submit button fit."
+  },
+  {
+    "file": "focused/firefox/390x844-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "source_merge_commit": "22bcce262010fab628962b264c3ba2655885513d",
+    "visually_inspected": true,
+    "status": "superseded",
+    "observation": "Portrait landing inspected; later portrait title-width correction supersedes this card composition."
+  },
+  {
+    "file": "focused/firefox/rotation-services.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      844,
+      390
+    ],
+    "state": "rotation-services",
+    "source_merge_commit": "22bcce262010fab628962b264c3ba2655885513d",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Close stays visible; menu/content independently scroll when needed."
+  },
+  {
+    "file": "focused/firefox/844x390-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      844,
+      390
+    ],
+    "state": "844x390-home",
+    "source_merge_commit": "22bcce262010fab628962b264c3ba2655885513d",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Reviewed: content fits the sampled viewport."
+  },
+  {
+    "file": "focused/firefox/320x568-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      320,
+      568
+    ],
+    "state": "320x568-home",
+    "source_merge_commit": "22bcce262010fab628962b264c3ba2655885513d",
+    "visually_inspected": true,
+    "status": "superseded",
+    "observation": "Visual review found vertically clipped service label despite horizontal-only automated check; superseded by final and portrait repairs."
+  },
+  {
+    "file": "focused/firefox/320x568-completed-quote.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      320,
+      568
+    ],
+    "state": "320x568-completed-quote",
+    "source_merge_commit": "22bcce262010fab628962b264c3ba2655885513d",
+    "visually_inspected": true,
+    "status": "superseded",
+    "observation": "Close remains visible and submit is reachable; confirmation partly below fold. Superseded by final scroll-to-status correction."
+  },
+  {
+    "file": "focused/firefox/780x300-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-home",
+    "source_merge_commit": "22bcce262010fab628962b264c3ba2655885513d",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Reviewed: content fits the sampled viewport."
+  },
+  {
+    "file": "focused/firefox/780x300-services.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-services",
+    "source_merge_commit": "22bcce262010fab628962b264c3ba2655885513d",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Close stays visible; menu/content independently scroll when needed."
+  },
+  {
+    "file": "focused/firefox/780x300-completed-quote.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-completed-quote",
+    "source_merge_commit": "22bcce262010fab628962b264c3ba2655885513d",
+    "visually_inspected": true,
+    "status": "superseded",
+    "observation": "Close remains visible and submit is reachable; confirmation partly below fold. Superseded by final scroll-to-status correction."
+  },
+  {
+    "file": "focused/firefox/914x600-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      914,
+      600
+    ],
+    "state": "914x600-home",
+    "source_merge_commit": "22bcce262010fab628962b264c3ba2655885513d",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Nearby desktop composition fits; actual inner widths are 906/907 CSS pixels."
+  },
+  {
+    "file": "focused/firefox/915x600-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      915,
+      600
+    ],
+    "state": "915x600-home",
+    "source_merge_commit": "22bcce262010fab628962b264c3ba2655885513d",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Nearby desktop composition fits; actual inner widths are 906/907 CSS pixels."
+  },
+  {
+    "file": "focused/firefox/720x450-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      720,
+      450
+    ],
+    "state": "720x450-home",
+    "source_merge_commit": "22bcce262010fab628962b264c3ba2655885513d",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "CSS reflow sample: heading/proof separated and service text fits vertically; not native zoom."
+  },
+  {
+    "file": "final/firefox/390x844-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "source_merge_commit": "611663d53ba0b8c39996d5909e14e1418e6483f6",
+    "visually_inspected": true,
+    "status": "superseded",
+    "observation": "Portrait landing inspected; later portrait title-width correction supersedes this card composition."
+  },
+  {
+    "file": "final/firefox/rotation-services.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      844,
+      390
+    ],
+    "state": "rotation-services",
+    "source_merge_commit": "611663d53ba0b8c39996d5909e14e1418e6483f6",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Close stays visible; menu/content independently scroll when needed."
+  },
+  {
+    "file": "final/firefox/844x390-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      844,
+      390
+    ],
+    "state": "844x390-home",
+    "source_merge_commit": "611663d53ba0b8c39996d5909e14e1418e6483f6",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Reviewed: content fits the sampled viewport."
+  },
+  {
+    "file": "final/firefox/320x568-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      320,
+      568
+    ],
+    "state": "320x568-home",
+    "source_merge_commit": "611663d53ba0b8c39996d5909e14e1418e6483f6",
+    "visually_inspected": true,
+    "status": "superseded",
+    "observation": "No clipped text, but isolated final letter in Professionals; superseded by portrait correction."
+  },
+  {
+    "file": "final/firefox/320x568-completed-quote.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      320,
+      568
+    ],
+    "state": "320x568-completed-quote",
+    "source_merge_commit": "611663d53ba0b8c39996d5909e14e1418e6483f6",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Close remains visible; readable typed text, submit and local no-send confirmation reached through internal scrolling."
+  },
+  {
+    "file": "final/firefox/780x300-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-home",
+    "source_merge_commit": "611663d53ba0b8c39996d5909e14e1418e6483f6",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Reviewed: content fits the sampled viewport."
+  },
+  {
+    "file": "final/firefox/780x300-services.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-services",
+    "source_merge_commit": "611663d53ba0b8c39996d5909e14e1418e6483f6",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Close stays visible; menu/content independently scroll when needed."
+  },
+  {
+    "file": "final/firefox/780x300-completed-quote.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-completed-quote",
+    "source_merge_commit": "611663d53ba0b8c39996d5909e14e1418e6483f6",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Close remains visible; readable typed text, submit and local no-send confirmation reached through internal scrolling."
+  },
+  {
+    "file": "final/firefox/720x450-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      720,
+      450
+    ],
+    "state": "720x450-home",
+    "source_merge_commit": "611663d53ba0b8c39996d5909e14e1418e6483f6",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "CSS reflow sample: heading/proof separated and service text fits vertically; not native zoom."
+  },
+  {
+    "file": "final/webkit/390x844-home.png",
+    "engine": "webkit",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "source_merge_commit": "611663d53ba0b8c39996d5909e14e1418e6483f6",
+    "visually_inspected": true,
+    "status": "superseded",
+    "observation": "Portrait landing inspected; later portrait title-width correction supersedes this card composition."
+  },
+  {
+    "file": "portrait/firefox/390x844-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "source_merge_commit": "c5f679b1890d2090c23fde61aad04ec934859df9",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Complete service words fit their cards; no title/image overlap or vertical clipping."
+  },
+  {
+    "file": "portrait/firefox/320x568-home.png",
+    "engine": "firefox",
+    "outer_css_viewport": [
+      320,
+      568
+    ],
+    "state": "320x568-home",
+    "source_merge_commit": "c5f679b1890d2090c23fde61aad04ec934859df9",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Complete service words fit their cards; no title/image overlap or vertical clipping."
+  },
+  {
+    "file": "portrait/webkit/390x844-home.png",
+    "engine": "webkit",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "source_merge_commit": "c5f679b1890d2090c23fde61aad04ec934859df9",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Complete service words fit their cards; no title/image overlap or vertical clipping."
+  },
+  {
+    "file": "chrome-completion/chromium/1440x900-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-home",
+    "source_merge_commit": "95789d3cc8e0a34e9665747d53f2f57f14a17cdb",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Chrome landing composition fits; service text remains within its cards."
+  },
+  {
+    "file": "chrome-completion/chromium/390x844-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "source_merge_commit": "95789d3cc8e0a34e9665747d53f2f57f14a17cdb",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Chrome landing composition fits; service text remains within its cards."
+  },
+  {
+    "file": "chrome-completion/chromium/844x390-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      844,
+      390
+    ],
+    "state": "844x390-home",
+    "source_merge_commit": "95789d3cc8e0a34e9665747d53f2f57f14a17cdb",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Chrome landing composition fits; service text remains within its cards."
+  },
+  {
+    "file": "chrome-completion/chromium/320x568-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      320,
+      568
+    ],
+    "state": "320x568-home",
+    "source_merge_commit": "95789d3cc8e0a34e9665747d53f2f57f14a17cdb",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Chrome landing composition fits; service text remains within its cards."
+  },
+  {
+    "file": "chrome-completion/chromium/780x300-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-home",
+    "source_merge_commit": "95789d3cc8e0a34e9665747d53f2f57f14a17cdb",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Chrome landing composition fits; service text remains within its cards."
+  },
+  {
+    "file": "chrome-completion/chromium/780x300-completed-quote.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-completed-quote",
+    "source_merge_commit": "95789d3cc8e0a34e9665747d53f2f57f14a17cdb",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Short-landscape Close stays visible and the local no-send confirmation is readable after internal scrolling."
+  },
+  {
+    "file": "chrome-completion/chromium/native-200-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      720,
+      450
+    ],
+    "state": "native 200 percent zoom",
+    "source_merge_commit": "95789d3cc8e0a34e9665747d53f2f57f14a17cdb",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Native browser zoom 2.0 confirmed: DPR 1\u21922, viewport 1440\u00d7900\u2192720\u00d7450. Heading and proof separated, CTA inside hero, service text fits vertically."
+  },
+  {
+    "file": "final-preview.jpg",
+    "engine": "hosted Chrome",
+    "outer_css_viewport": [
+      1363,
+      936
+    ],
+    "state": "Final deployed preview, Quote open",
+    "source_product_commit": "c614f19a77c1e298095f6984effa9bb6c5cd876a",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Exact final preview URL opened; menu and Quote respond; Quote-only notice and form fit; Close returns focus to MENU."
+  }
+]
