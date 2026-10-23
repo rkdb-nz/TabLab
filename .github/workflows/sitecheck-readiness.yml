@@ -1,7 +1,7 @@
-name: Charity Walk routine sitecheck
+name: Charity Walk targeted repair checks
 on:
   pull_request:
-    paths: ['qa/charity-routine.mjs', '.github/workflows/sitecheck-readiness.yml']
+    paths: ['qa/charity-repair.mjs', 'public/boardroom/noticeboard/demos/charity-walk/**', '.github/workflows/sitecheck-readiness.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -12,22 +12,21 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chromium]
+        browser: [chromium, firefox, webkit]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
       - run: npm install --prefix qa --ignore-scripts
-      - run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
+      - run: timeout 240s node qa/node_modules/playwright/cli.js install ${{ matrix.browser }}
       - name: Charity Walk routine nine-combination sample
-        run: node qa/charity-routine.mjs
+        run: node qa/charity-repair.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
-          QA_DESKTOP_COMPLETION: 1
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: charity-desktop-completion-${{ matrix.browser }}
-          path: qa/charity-results/
+          name: charity-repair-${{ matrix.browser }}
+          path: qa/charity-repair-results/
           retention-days: 90
