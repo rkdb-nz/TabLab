@@ -1,32 +1,28 @@
-name: Drilling portrait title fit check
+name: Drilling missing Chrome and native zoom only
 on:
   pull_request:
-    paths: ['qa/**', 'public/boardroom/billboard/demos/drilling/**', '.github/workflows/sitecheck-readiness.yml']
+    paths: ['qa/**', '.github/workflows/sitecheck-readiness.yml']
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   readiness:
     runs-on: ubuntu-latest
-    timeout-minutes: 6
-    strategy:
-      fail-fast: false
-      matrix:
-        engine: [firefox, webkit]
+    timeout-minutes: 7
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
       - run: npm install --prefix qa --ignore-scripts
-      - run: timeout 180s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.engine }}
-      - name: Targeted repairs plus routine smoke sample
-        run: node qa/drilling-final-repair.mjs
+      - run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps chromium
+      - name: Only missing Chrome sample and native 200 percent zoom
+        run: node qa/drilling-chrome-completion.mjs
         env:
-          QA_BROWSER: ${{ matrix.engine }}
+          QA_BROWSER: chromium
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: drilling-portrait-${{ matrix.engine }}
-          path: qa/drilling-portrait-results/
+          name: drilling-chrome-completion
+          path: qa/drilling-chrome-completion/
           retention-days: 90
