@@ -1,0 +1,170 @@
+[
+  {
+    "file": "evidence/firefox/390-landing.png",
+    "archived_preview": "evidence/firefox/390-landing.jpg",
+    "reviewed": true,
+    "observation": "Cropped embedded image lettering and duplicated live headline"
+  },
+  {
+    "file": "evidence/firefox/1440-landing.png",
+    "archived_preview": "evidence/firefox/1440-landing.jpg",
+    "reviewed": true,
+    "observation": "Small feature text; no horizontal document overflow"
+  },
+  {
+    "file": "evidence/firefox/390-order.png",
+    "archived_preview": "evidence/firefox/390-order.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  },
+  {
+    "file": "evidence/chromium/1440-fullscreen.png",
+    "archived_preview": "evidence/chromium/1440-fullscreen.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  },
+  {
+    "file": "evidence/chromium/390-fullscreen.png",
+    "archived_preview": "evidence/chromium/390-fullscreen.jpg",
+    "reviewed": true,
+    "observation": "Cropped embedded image lettering and duplicated live headline"
+  },
+  {
+    "file": "evidence/chromium/1440-order.png",
+    "archived_preview": "evidence/chromium/1440-order.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  },
+  {
+    "file": "evidence/chromium/844-landing.png",
+    "archived_preview": "evidence/chromium/844-landing.jpg",
+    "reviewed": true,
+    "observation": "Small feature text; no horizontal document overflow"
+  },
+  {
+    "file": "evidence/chromium/390-landing.png",
+    "archived_preview": "evidence/chromium/390-landing.jpg",
+    "reviewed": true,
+    "observation": "Cropped embedded image lettering and duplicated live headline"
+  },
+  {
+    "file": "evidence/chromium/320-menu.png",
+    "archived_preview": "evidence/chromium/320-menu.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  },
+  {
+    "file": "evidence/chromium/1440-story.png",
+    "archived_preview": "evidence/chromium/1440-story.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  },
+  {
+    "file": "evidence/chromium/1440-landing.png",
+    "archived_preview": "evidence/chromium/1440-landing.jpg",
+    "reviewed": true,
+    "observation": "Small feature text; no horizontal document overflow"
+  },
+  {
+    "file": "evidence/chromium/320-order.png",
+    "archived_preview": "evidence/chromium/320-order.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  },
+  {
+    "file": "evidence/chromium/1440-catering.png",
+    "archived_preview": "evidence/chromium/1440-catering.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  },
+  {
+    "file": "evidence/chromium/confirmation.png",
+    "archived_preview": "evidence/chromium/confirmation.jpg",
+    "reviewed": true,
+    "observation": "False delivery and follow-up confirmation"
+  },
+  {
+    "file": "evidence/chromium/390-order.png",
+    "archived_preview": "evidence/chromium/390-order.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  },
+  {
+    "file": "evidence/chromium/1440-locations.png",
+    "archived_preview": "evidence/chromium/1440-locations.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  },
+  {
+    "file": "evidence/chromium/780-menu.png",
+    "archived_preview": "evidence/chromium/780-menu.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  },
+  {
+    "file": "evidence/chromium/320-landing.png",
+    "archived_preview": "evidence/chromium/320-landing.jpg",
+    "reviewed": true,
+    "observation": "Small feature text; no horizontal document overflow"
+  },
+  {
+    "file": "evidence/chromium/rotated-menu.png",
+    "archived_preview": "evidence/chromium/rotated-menu.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  },
+  {
+    "file": "evidence/chromium/780-landing.png",
+    "archived_preview": "evidence/chromium/780-landing.jpg",
+    "reviewed": true,
+    "observation": "Clipped lower feature content"
+  },
+  {
+    "file": "evidence/chromium/1440-menu.png",
+    "archived_preview": "evidence/chromium/1440-menu.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  },
+  {
+    "file": "evidence/chromium/780-order.png",
+    "archived_preview": "evidence/chromium/780-order.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  },
+  {
+    "file": "focused-evidence/chromium/780-wrapper.png",
+    "archived_preview": "focused-evidence/chromium/780-wrapper.jpg",
+    "reviewed": true,
+    "observation": "Wrapper capture is unsettled; not accepted as a settled navigation pass"
+  },
+  {
+    "file": "focused-evidence/chromium/320-wrapper.png",
+    "archived_preview": "focused-evidence/chromium/320-wrapper.jpg",
+    "reviewed": true,
+    "observation": "Wrapper capture is unsettled; not accepted as a settled navigation pass"
+  },
+  {
+    "file": "focused-evidence/chromium/780-order-scroll-end.png",
+    "archived_preview": "focused-evidence/chromium/780-order-scroll-end.jpg",
+    "reviewed": true,
+    "observation": "Scroll-end: Back to site out of visible panel"
+  },
+  {
+    "file": "focused-evidence/chromium/320-order-scroll-end.png",
+    "archived_preview": "focused-evidence/chromium/320-order-scroll-end.jpg",
+    "reviewed": true,
+    "observation": "Scroll-end: Back to site out of visible panel"
+  },
+  {
+    "file": "focused-evidence/chromium/native-200-order.png",
+    "archived_preview": "focused-evidence/chromium/native-200-order.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  },
+  {
+    "file": "focused-evidence/chromium/native-200-home.png",
+    "archived_preview": "focused-evidence/chromium/native-200-home.jpg",
+    "reviewed": true,
+    "observation": "Panel/state inspected; see report for findings"
+  }
+]
