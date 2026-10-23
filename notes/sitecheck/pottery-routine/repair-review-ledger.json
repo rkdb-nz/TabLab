@@ -1,0 +1,156 @@
+[
+  {
+    "file": "chromium/1440x900-home.webp",
+    "engine": "chromium",
+    "pixels": [
+      1440,
+      900
+    ],
+    "state": "1440x900-home",
+    "inspected": true,
+    "observation": "Landing, brand, scene controls and copy fit."
+  },
+  {
+    "file": "chromium/320x568-home.webp",
+    "engine": "chromium",
+    "pixels": [
+      320,
+      568
+    ],
+    "state": "320x568-home",
+    "inspected": true,
+    "observation": "Landing, brand, scene controls and copy fit."
+  },
+  {
+    "file": "chromium/320x568-visit.webp",
+    "engine": "chromium",
+    "pixels": [
+      320,
+      568
+    ],
+    "state": "320x568-visit",
+    "inspected": true,
+    "observation": "Visit actions, scene controls and final disabled Next fit."
+  },
+  {
+    "file": "chromium/390x844-home.webp",
+    "engine": "chromium",
+    "pixels": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "inspected": true,
+    "observation": "Landing, brand, scene controls and copy fit."
+  },
+  {
+    "file": "chromium/390x844-visit.webp",
+    "engine": "chromium",
+    "pixels": [
+      390,
+      844
+    ],
+    "state": "390x844-visit",
+    "inspected": true,
+    "observation": "Visit actions, scene controls and final disabled Next fit."
+  },
+  {
+    "file": "chromium/780x300-home.webp",
+    "engine": "chromium",
+    "pixels": [
+      780,
+      300
+    ],
+    "state": "780x300-home",
+    "inspected": true,
+    "observation": "Landing, brand, scene controls and copy fit."
+  },
+  {
+    "file": "chromium/780x300-visit.webp",
+    "engine": "chromium",
+    "pixels": [
+      780,
+      300
+    ],
+    "state": "780x300-visit",
+    "inspected": true,
+    "observation": "Visit actions, scene controls and final disabled Next fit."
+  },
+  {
+    "file": "chromium/844x390-home.webp",
+    "engine": "chromium",
+    "pixels": [
+      844,
+      390
+    ],
+    "state": "844x390-home",
+    "inspected": true,
+    "observation": "Landing, brand, scene controls and copy fit."
+  },
+  {
+    "file": "chromium/desktop-result.webp",
+    "engine": "chromium",
+    "pixels": [
+      1440,
+      900
+    ],
+    "state": "desktop-result",
+    "inspected": true,
+    "observation": "Form retains input and displays explicit no-send result; footer demo links are buttons."
+  },
+  {
+    "file": "chromium/maker-paused.webp",
+    "engine": "chromium",
+    "pixels": [
+      390,
+      844
+    ],
+    "state": "maker-paused",
+    "inspected": true,
+    "observation": "Maker copy and Play photos control visible after pause."
+  },
+  {
+    "file": "chromium/phone-fullscreen.webp",
+    "engine": "chromium",
+    "pixels": [
+      390,
+      844
+    ],
+    "state": "phone-fullscreen",
+    "inspected": true,
+    "observation": "Fullscreen making stage and scene controls fit."
+  },
+  {
+    "file": "chromium/workshop-demo.webp",
+    "engine": "chromium",
+    "pixels": [
+      390,
+      844
+    ],
+    "state": "workshop-demo",
+    "inspected": true,
+    "observation": "Scrollable workshop dialog shows honest final no-send result."
+  },
+  {
+    "file": "firefox/1440x900-home.webp",
+    "engine": "firefox",
+    "pixels": [
+      1440,
+      900
+    ],
+    "state": "1440x900-home",
+    "inspected": true,
+    "observation": "Landing, brand, scene controls and copy fit."
+  },
+  {
+    "file": "firefox/390x844-home.webp",
+    "engine": "firefox",
+    "pixels": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "inspected": true,
+    "observation": "Landing, brand, scene controls and copy fit."
+  }
+]

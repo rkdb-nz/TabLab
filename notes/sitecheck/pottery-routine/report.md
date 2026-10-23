@@ -1,3 +1,37 @@
+# Pottery — approved repair verification, 24 October 2026
+
+**PT-01–08 and the studio sign are corrected. Routine check incomplete: browser coverage limited.** Chrome and Firefox passed the targeted rerun; WebKit installation timed out before execution. Publishing authorised by the user's “Yes. Then publisher.”
+
+## Fixes I can make
+All approved items are resolved in the tested product revision `f82c8862713ab9bc9755a4d802f20a19ef5732b2`; `49e607b32f117ef94a3bfa750ce0082f3473c1ef` changes only the test harness to accommodate deliberately deferred images.
+
+| ID | Resolution and evidence |
+|---|---|
+| PT-01 | Restored mobile previous/next, scene counter/name, swipe hint and progress. Chrome verifies all five representative sizes, final disabled Next, previous and all scenes. |
+| PT-02 | Desktop valid enquiries retain their entries and announce an explicit demonstration/no-send result. Required and malformed-email validation passed. Mobile workshop, contact and visit actions now show honest no-send results. |
+| PT-03 | Instagram, Journal and Newsletter no longer have dead fragment links; each presents an honest demonstration status. |
+| PT-04 | Resized/compressed 18 existing assets to 2,062,431 bytes total; deferred nonhero imagery. Chrome normal page transfer was 2,087,503 bytes, down from the original 38,316,240-byte measurement (about 94.6%). Small favicon verified. |
+| PT-05 | Improved text contrast and supporting labels. Desktop/mobile Axe scans returned no violations in the targeted Chrome sample. Visual inspection confirms readable controls and copy at retained sizes. |
+| PT-06 | Added main landmark, corrected heading hierarchy and live result status. Desktop/mobile Axe scans passed. |
+| PT-07 | Reduced motion honoured in both layouts; desktop parallax skips it. Maker photos have Pause/Play; pause verified over an interval longer than a rotation. Reduced-motion scene transition verified. |
+| PT-08 | Responsive route selection now waits for layout and responds to resizing. Chrome checks 980/1000 boundary, five representative viewport routes and wrapper fullscreen/return/gallery. Firefox desktop/portrait route/navigation smoke passed. |
+| Sign | Corrected studio photo reads ASH & OAK / POTTERY STUDIO. Corrected asset retained through compression and visually inspected. |
+
+## Items needing your attention or input
+None for the authorised repairs or publication. Previously unapproved indexing/analytics decisions remain unchanged.
+
+## Coverage and evidence
+- Chrome 155.0.8059.39: 1440x900, 390x844, 844x390, 320x568, 780x300; repaired states, dialogs, rotation with dialog open, keyboard/native validation, reduced motion, wrapper returns, media transfer and two accessibility scans. No runner failures, unexpected console errors or failed product assets recorded.
+- Firefox: desktop 1440x900 and portrait 390x844 landing/navigation and representative interaction passed on identical product code in run39998585163.
+- Chrome passed in run39999262795. Earlier Chrome/WebKit jobs were cancelled when an image-decode test wait was found to include intentionally lazy images; the harness was corrected. WebKit rerun hit the240-second installation limit and its browser tests did not execute. No WebKit pass is claimed.
+- All12 retained Chrome screenshots and2 Firefox screenshots were visually inspected. Repair archive contains original machine reports plus a review ledger and resized-free WebP copies of captures at original pixel dimensions.
+- Deployed preview checked in the signed-in browser: https://467499c2.foundry-a3k.pages.dev/boardroom/skateboard/demos/pottery/ . Harmless form interaction returned the explicit no-send result.
+- Native200% browser zoom remains unverified from the original audit; no physical-device or actual Safari certification. No independent duplicate audit. Shared analytics404 remains outside the approved product repairs.
+- Publication target: https://tablab.rkdb.nz/boardroom/skateboard/demos/pottery/ . Publication authorised; live verification follows the production deployment.
+
+## Original audit and sign evidence (historical)
+The following audit describes the pre-repair source and its findings; its “pending” language is historical and superseded by the resolution table above.
+
 # Pottery — routine sitecheck, 23 October 2026
 
 **Routine check complete with findings within the declared sample. Eight proposed repair groups; product files and production remain unchanged.**
