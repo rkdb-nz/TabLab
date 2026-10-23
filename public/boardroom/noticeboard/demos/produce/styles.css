@@ -879,3 +879,5 @@ button:focus-visible, a:focus-visible, .board ol:focus-visible { outline: 3px so
 
 .page { height: var(--produce-height, 100dvh); }
 .side-panel { height: var(--produce-height, 100dvh); max-height: var(--produce-height, 100dvh); }
+
+@container (max-height: 500px) { .board h1::after { content: "Scroll for all produce"; display: block; font-family: "Nunito Sans", sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; margin-top: 3px; } }
