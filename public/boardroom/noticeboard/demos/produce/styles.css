@@ -876,3 +876,6 @@ button:focus-visible, a:focus-visible, .board ol:focus-visible { outline: 3px so
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+.page { height: var(--produce-height, 100dvh); }
+.side-panel { height: var(--produce-height, 100dvh); max-height: var(--produce-height, 100dvh); }
