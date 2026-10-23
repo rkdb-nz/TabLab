@@ -1,4 +1,4 @@
-name: Produce routine sitecheck
+name: Produce repair sitecheck
 on:
   pull_request:
     paths: ['qa/produce-routine.mjs', '.github/workflows/sitecheck-readiness.yml']
@@ -27,5 +27,5 @@ jobs:
         if: always()
         with:
           name: produce-${{ matrix.browser }}
-          path: qa/produce-results/
+          path: qa/produce-repair-results/
           retention-days: 90
