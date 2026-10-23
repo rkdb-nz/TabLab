@@ -123,14 +123,17 @@
   });
 
   document.getElementById('catering-enquiry')?.addEventListener('click', event => {
-    const button = event.currentTarget;
-    button.classList.remove('is-sending');
-    void button.offsetWidth;
-    button.classList.add('is-sending');
+    const form = document.getElementById('catering-form');
+    form.hidden = false;
+    event.currentTarget.setAttribute('aria-expanded', 'true');
+    form.querySelector('input').focus();
+  });
 
-    setTimeout(() => {
-      window.location.href = 'mailto:aholein1@rkdb.nz?subject=Catering%20Enquiry&body=Hi%20there%2C%0A%0AI%27d%20like%20to%20make%20a%20catering%20enquiry.%0A%0A';
-    }, 320);
+  document.getElementById('catering-form')?.addEventListener('submit', event => {
+    event.preventDefault();
+    const status = event.currentTarget.querySelector('.form-status');
+    status.textContent = 'Demo only — no enquiry has been sent.';
+    status.focus();
   });
 
   document.getElementById('order-form')?.addEventListener('submit', event => {
