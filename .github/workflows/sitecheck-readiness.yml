@@ -1,7 +1,7 @@
 name: Diner targeted sitecheck repairs
 on:
   pull_request:
-    paths: ['qa/**', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/noticeboard/demos/diner/**']
+    paths: ['qa/diner-focused.mjs', 'qa/diner-repair.mjs', 'public/boardroom/noticeboard/demos/diner/**']
   workflow_dispatch:
 permissions:
   contents: read
@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [webkit]
+        browser: [chromium, firefox, webkit]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -21,12 +21,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
       - name: Targeted repairs and nine-combination smoke sample
-        run: node qa/diner-webkit-focus.mjs
+        run: node qa/diner-focused.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
           name: diner-${{ matrix.browser }}
-          path: qa/diner-webkit-diagnostic/
+          path: qa/diner-focused-results/
           retention-days: 90
