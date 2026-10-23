@@ -1,44 +1,59 @@
-const boardZone = document.querySelector('.board-zone');
 const scrim = document.querySelector('.scrim');
-const panels = document.querySelectorAll('.side-panel');
-
+const panels = [...document.querySelectorAll('.side-panel')];
+const background = [...document.querySelector('.page').children].filter(el => !el.matches('.side-panel, .scrim'));
+let activePanel = null;
+let opener = null;
 function closePanels() {
-  panels.forEach((panel) => {
+  const previous = activePanel;
+  activePanel = null;
+  background.forEach(el => { el.inert = false; });
+  if (opener?.isConnected) opener.focus({preventScroll: true});
+  panels.forEach(panel => {
     panel.classList.remove('open');
     panel.setAttribute('aria-hidden', 'true');
+    panel.inert = true;
   });
   scrim.classList.remove('active');
+  document.querySelectorAll('[data-panel]').forEach(button => button.setAttribute('aria-expanded', 'false'));
+  if (previous) previous.scrollTop = 0;
 }
-
-function openPanel(id) {
-  closePanels();
+function openPanel(id, trigger) {
   const panel = document.getElementById(id);
+  if (!panel) return;
+  opener = trigger;
+  panels.forEach(other => { other.inert = other !== panel; });
+  panel.inert = false;
+  panel.removeAttribute('aria-hidden');
   panel.classList.add('open');
-  panel.setAttribute('aria-hidden', 'false');
+  activePanel = panel;
+  panel.scrollTop = 0;
+  panel.querySelector('.panel-close').focus({preventScroll: true});
+  background.forEach(el => { el.inert = true; });
   scrim.classList.add('active');
+  trigger.setAttribute('aria-expanded', 'true');
 }
-
-boardZone.addEventListener('click', () => {
-  boardZone.classList.toggle('active');
+document.querySelectorAll('[data-panel]').forEach(button => {
+  button.setAttribute('aria-controls', button.dataset.panel);
+  button.setAttribute('aria-expanded', 'false');
+  button.setAttribute('aria-haspopup', 'dialog');
+  button.addEventListener('click', () => openPanel(button.dataset.panel, button));
 });
-
-boardZone.addEventListener('keydown', (event) => {
-  if (event.key === 'Enter' || event.key === ' ') {
-    event.preventDefault();
-    boardZone.classList.toggle('active');
+document.querySelectorAll('.panel-close').forEach(button => button.addEventListener('click', closePanels));
+scrim.addEventListener('click', closePanels);
+document.addEventListener('keydown', event => {
+  if (!activePanel) return;
+  if (event.key === 'Escape') { event.preventDefault(); closePanels(); }
+  if (event.key === 'Tab') {
+    const controls = [...activePanel.querySelectorAll('button, a[href], input, textarea, [tabindex="0"]')].filter(el => !el.disabled);
+    const first = controls[0], last = controls[controls.length - 1];
+    if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+    else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
   }
 });
-
-document.querySelectorAll('[data-panel]').forEach((button) => {
-  button.addEventListener('click', () => openPanel(button.dataset.panel));
-});
-
-document.querySelectorAll('.panel-close').forEach((button) => {
-  button.addEventListener('click', closePanels);
-});
-
-scrim.addEventListener('click', closePanels);
-
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape') closePanels();
+document.querySelectorAll('[data-demo-contact]').forEach(button => {
+  button.addEventListener('click', () => {
+    document.querySelector('.demo-result').textContent = button.dataset.demoContact === 'call'
+      ? 'Demo only — no call has been placed.'
+      : 'Demo only — no email has been created or sent.';
+  });
 });
