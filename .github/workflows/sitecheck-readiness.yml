@@ -1,7 +1,8 @@
 name: Florist targeted repair check
 on:
-  pull_request:
-    paths: ['qa/florist-routine.mjs']
+  push:
+    branches: ['qa/florist-routine']
+    paths: ['qa/florist-routine.mjs', 'public/boardroom/skateboard/demos/florist/**']
   workflow_dispatch:
 permissions:
   contents: read

@@ -1,0 +1,167 @@
+{
+  "product_commit": "5150d37056f7064520ed3c428dd9330c550da499",
+  "screenshots": [
+    {
+      "engine": "chromium",
+      "file": "chromium/1440x900-home.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Reviewed: composition preserved, supporting text darkened; navigation fits."
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/1440x900-invalid.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Reviewed: accessible inline email error and focus visible on desktop. 320px capture was during focus-scroll travel; rejection/focus separately passed machine checks."
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/390x844-home.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: composition preserved, supporting text darkened; navigation fits."
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/390x844-success.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: responsive demo result readable; phone button now spans card. Short landscape is scrollable and return click succeeded."
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/390-fullscreen.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: return button occupies brown strip above frame; no heading overlap."
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/844x390-home.png",
+      "viewport": [
+        844,
+        390
+      ],
+      "inspected": true,
+      "observation": "Reviewed: composition preserved, supporting text darkened; navigation fits."
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/320x568-home.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "inspected": true,
+      "observation": "Reviewed: composition preserved, supporting text darkened; navigation fits."
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/320-collections.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "inspected": true,
+      "observation": "Reviewed: collection subtitle stacked below heading at narrow width; clear spacing."
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/320x568-invalid.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "inspected": true,
+      "observation": "Reviewed: accessible inline email error and focus visible on desktop. 320px capture was during focus-scroll travel; rejection/focus separately passed machine checks."
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/320x568-success.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "inspected": true,
+      "observation": "Reviewed: responsive demo result readable; phone button now spans card. Short landscape is scrollable and return click succeeded."
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/780x300-home.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "inspected": true,
+      "observation": "Reviewed: composition preserved, supporting text darkened; navigation fits."
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/780x300-success.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "inspected": true,
+      "observation": "Reviewed: responsive demo result readable; phone button now spans card. Short landscape is scrollable and return click succeeded."
+    },
+    {
+      "engine": "firefox",
+      "file": "firefox/1440x900-home.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Reviewed: composition preserved, supporting text darkened; navigation fits."
+    },
+    {
+      "engine": "firefox",
+      "file": "firefox/390x844-home.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: composition preserved, supporting text darkened; navigation fits."
+    },
+    {
+      "engine": "webkit",
+      "file": "webkit/1440x900-home.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Reviewed: composition preserved, supporting text darkened; navigation fits."
+    },
+    {
+      "engine": "webkit",
+      "file": "webkit/390x844-home.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Reviewed: composition preserved, supporting text darkened; navigation fits."
+    }
+  ],
+  "reused_evidence": "Initial unchanged imagery, collection inventory and full source review; original evidence preserved in parent folder.",
+  "independent_review": "Not used; optional in routine mode."
+}

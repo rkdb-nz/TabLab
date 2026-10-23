@@ -1,6 +1,41 @@
+# Florist — approved repairs verified, 23 October 2026
+
+**Routine targeted rerun passed within the sampled scope. FL-01–08 resolved. No remaining approved repairs or new product findings.**
+
+Product commit: `5150d37056f7064520ed3c428dd9330c550da499`.
+Verified preview: https://3ad54262.foundry-a3k.pages.dev/boardroom/skateboard/demos/florist/
+PR: https://github.com/rkdb-nz/TabLab/pull/75 . Preview only; no production publish or merge.
+
+## Fixes I can make
+- FL-01–08: resolved. Mobile navigation fits at 320px; collection subtitle stacks; mobile success card and button reflow; name/email validation rejects whitespace and malformed addresses; six labels connect; keyboard logo works; both Axe page scans return zero violations; final enquiry/email actions truthfully identify the demo; no enquiry details persist; reduced-motion settings remove smooth scroll/transitions; fullscreen return button has a reserved strip above content.
+- Remaining approved findings: none. New findings: none.
+
+## Items needing your attention or input
+- Production publishing awaits approval.
+- Indexing and analytics remain pending/unchanged, including the original shared tracking configuration errors. No new imagery or visual redesign was introduced.
+
+## Targeted verification and retained limits
+Hosted run 39924944712 passed all three jobs: Chrome 155.0.8059.39, Firefox 153.0 and Linux WebKit 26.5. It checked the nine-combination sample: Chrome 1440x900,390x844,844x390,320x568,780x300; Firefox/WebKit desktop and portrait. All engines exercised landing/navigation, label connections, valid demo submission and return. Chrome added empty/whitespace/invalid email checks and error focus, desktop/phone fullscreen/return and gallery, rotation with entered message preserved, keyboard activation, reduced motion and both accessibility scans. Reports have 85 check records and zero recorded failures or page JavaScript errors. Actual iframe dimensions are included in machine reports.
+
+Sixteen new screenshots were individually opened and inspected. The 320px invalid-state capture occurred during focus-scroll travel; invalid-email rejection and focused field are independently verified in the machine report, and deployed preview validation was checked directly through its accessible error state. Short landscape success remains scrollable, and its return link was reached and clicked successfully.
+
+Live deployed preview was opened directly. Invalid email stayed on the form with a specific accessible error; a corrected reserved test address reached “This is a demonstration. Your enquiry has not been sent, and no response will follow.” No message was delivered.
+
+Unchanged imagery, six-item inventory and source findings reuse the original evidence pinned to main 9c71de33a6be0fef3e62398e79c4d79ecb41c86f. The return-strip repair is local to the florist shell; shared demo-browser files are unchanged, so unrelated demo reruns were not warranted.
+
+Native 200% zoom remains unverified: the original attempt and CSS-only surrogate are retained below; it was not repeated. Emulated phones are not physical-device tests; Linux WebKit is not Safari/iOS. Independent review was not used (optional routine mode).
+
+The `repair/florist-repair-evidence.zip` archive contains 16 inspected WebP exports at original dimensions (quality 85), full reports for all three engines and review-ledger.json, preserved in the repository beyond Actions expiry. PNG originals remain in the 90-day Actions artifacts and downloaded working copies. The historical initial evidence remains alongside it.
+
+The workflow now triggers on relevant pushes to this QA branch, preventing evidence-only commits from launching redundant tests. Its browser/test execution is otherwise unchanged.
+
+---
+
+## Initial inspection — historical record, superseded by repairs above
+
 # Florist — routine sitecheck, 23 October 2026
 
-**Routine check complete with findings, within the declared sample.** No product repairs or production publishing performed.
+Initial check completed with findings before the repairs documented above.
 
 ## Source and runs
 - Repository: rkdb-nz/TabLab, product main `9c71de33a6be0fef3e62398e79c4d79ecb41c86f`.
@@ -20,7 +55,7 @@ Desktop/phone fullscreen and return measured in Chrome: fullscreen 1440x900 / 39
 
 Axe scanned the two distinct inner pages once: site has color-contrast, label, select-name and region findings; success has a decorative landmark-region warning. Visible labels exist, but all six form controls have zero associated label elements. Placeholder text provides some incidental accessible names; it is not an adequate replacement for persistent connected labels.
 
-## Fixes I can make — awaiting approval
+## Original findings — subsequently approved and resolved
 | ID | Impact / evidence | Proposed repair |
 |---|---|---|
 | FL-01 | At 320px Enquire runs off the right edge; brand wraps to three lines. Collection subtitle is squeezed beside its heading at 320/390px. | Reflow mobile navigation and stack the collection heading/subtitle; preserve brand, rail, palette and scroll design. |
