@@ -1,0 +1,26 @@
+name: Donut approved image and catering check
+on:
+  pull_request:
+    paths: ['tools/donut-hero-check.mjs', '.github/workflows/donut-hero-check.yml']
+permissions:
+  contents: read
+jobs:
+  focused:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+      - run: npm install --prefix qa --ignore-scripts
+      - run: node qa/node_modules/playwright/cli.js install --with-deps chromium
+      - run: node tools/donut-hero-check.mjs
+        env:
+          PREVIEW_URL: https://preview-donut-approved-hero.foundry-a3k.pages.dev/boardroom/billboard/demos/donut/
+      - uses: actions/upload-artifact@v5
+        if: always()
+        with:
+          name: donut-approved-hero-check
+          path: qa/donut-hero-results/
+          retention-days: 90
