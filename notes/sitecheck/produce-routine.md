@@ -35,3 +35,26 @@ chromium: 19 captures reviewed (5 home,10 panel,1 rotation,2 fullscreen,1 CSS200
 firefox:4 reviewed (desktop/portrait home and Find).
 webkit:4 reviewed (desktop/portrait home and Find).
 Inspection observations: desktop composition intact; portrait home board fits; About overlaps as PS-01; Find opens consistently with below-fold content on phones; short home text tiny; CSS200 overlaps; fullscreen return functions.
+
+
+# Approved repairs and publication — 23 October 2026
+Robert authorised all necessary repairs and publication, specifying that the board is demo-only.
+PS-01–06 implemented. No editor, data storage, real call or email delivery added. Sample-board wording replaces the misleading editing invitation. Imagery, analytics and indexing remain unchanged.
+
+## Resolved
+PS-01: thank-you text in document flow; all panel bottoms reachable through internal scrolling. Chromium five sizes and Firefox/WebKit desktop+portrait measurements confirm no text overlap.
+PS-02: named modal dialogs, inert closed panels/background, focus entry and containment, Escape and focus restoration. Keyboard checks passed in all three engines (with provenance below).
+PS-03: visible-height fitting plus container queries repair CSS200 overlap. Chromium measured canvas1440x900, brand right529.58, board left720.81/right1412/bottom788. Native200% remains unverified.
+PS-04: short landscape list18px with internal scrolling; scroll hint and keyboard-focusable list added. Fixed outer composition retained; internal list/panel scrolling is intentional.
+PS-05: reduced-motion panel transition0s in Chromium; all transitions/animations disabled by media query.
+PS-06: fictional address/map/stall explicitly labelled. Call/Email buttons show truthful no-action confirmations. No placeholder-recipient links.
+
+## Rerun provenance and limits
+- Run39897527183 / QA4f98eb3: Chromium5 and Firefox2 combinations,19+4 captures reviewed. All panel overlap/focus and bottom-reachability measurements pass; demo confirmations, reduced motion and fullscreen/return pass. CSS200 still failed at this stage and was corrected subsequently.
+- Run39897781983 / QAdca8c79: Chromium5 and Firefox2 combinations after height correction.8 Chromium captures reviewed; magnification geometry above verified. Reuse valid earlier panel evidence. Subsequent product diff only adds list tabindex/label, small short-screen hint and cache version.
+- Run39897887509 / QA958dd72: final WebKit desktop/portrait interaction, scroll, focus restoration and demo-contact checks passed; machine report inspected. Final Chromium/Firefox install --with-deps timed out with exit124 before browser launch; no fresh tests claimed for those jobs. Earlier successful Chromium/Firefox evidence is reused with its exact source version, not represented as final-commit execution.
+- Preview live Chrome desktop inspected; keyboard About action focused Close. One initial cloud click timed out before dispatch; keyboard action subsequently succeeded.
+- 31 repair screenshots inspected (23 initial+8 height correction); original audit evidence remains separate. No independent reviewer. Linux WebKit is not native Safari/iOS; phones emulated. Native browser200% and quantitative photo-background contrast remain unverified.
+- Shared workflow restored to its original main content before publication; no unrelated CI configuration change retained.
+- Original machine reports/PNGs in Actions artifacts retained90 days. Downloaded local evidence under repair-evidence. Only this text report/runner, not binary screenshots, is committed.
+Remaining product findings: none identified within available targeted scope. No new product finding. Testing limits above remain.
