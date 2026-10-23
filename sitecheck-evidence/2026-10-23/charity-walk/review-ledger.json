@@ -1,0 +1,222 @@
+[
+  {
+    "engine": "chromium",
+    "file": "1440x900-home.png",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-home",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "1440x900-form.png",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-form",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "390x844-home.png",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "390x844-diary.png",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-diary",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "rotation-diary.png",
+    "viewport": [
+      844,
+      390
+    ],
+    "state": "rotation-diary",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "390x844-story.png",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-story",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "390x844-trail.png",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-trail",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "390x844-support.png",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-support",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "390x844-fullscreen.png",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-fullscreen",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "844x390-home.png",
+    "viewport": [
+      844,
+      390
+    ],
+    "state": "844x390-home",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "844x390-diary.png",
+    "viewport": [
+      844,
+      390
+    ],
+    "state": "844x390-diary",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "320x568-home.png",
+    "viewport": [
+      320,
+      568
+    ],
+    "state": "320x568-home",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "320x568-diary.png",
+    "viewport": [
+      320,
+      568
+    ],
+    "state": "320x568-diary",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "780x300-home.png",
+    "viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-home",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "780x300-diary.png",
+    "viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-diary",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "chromium",
+    "file": "780x300-story.png",
+    "viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-story",
+    "inspected": true,
+    "observation": "CW-05: wrapper toolbar shifts upwards and clips at top after mobile view navigation."
+  },
+  {
+    "engine": "chromium",
+    "file": "780x300-trail.png",
+    "viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-trail",
+    "inspected": true,
+    "observation": "CW-05: wrapper toolbar shifts upwards and clips at top after mobile view navigation."
+  },
+  {
+    "engine": "chromium",
+    "file": "780x300-support.png",
+    "viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-support",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "firefox",
+    "file": "1440x900-home.png",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-home",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  },
+  {
+    "engine": "firefox",
+    "file": "390x844-home.png",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "inspected": true,
+    "observation": "Layout reviewed; controls and text visible."
+  }
+]

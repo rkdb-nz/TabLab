@@ -1,0 +1,169 @@
+{
+  "engine": "firefox",
+  "commit": "c34ad528b8de7edd6b21bd82c699d5a3a277e523",
+  "checks": [
+    {
+      "label": "1440x900 anchored landing",
+      "pass": true
+    },
+    {
+      "label": "1440x900 actual site viewport",
+      "pass": true,
+      "evidence": [
+        1426,
+        845
+      ]
+    },
+    {
+      "label": "1440x900 no trail mailto",
+      "pass": true
+    },
+    {
+      "label": "1440x900 required name",
+      "pass": true
+    },
+    {
+      "label": "1440x900 invalid email",
+      "pass": true
+    },
+    {
+      "label": "1440x900 desktop demo only",
+      "pass": true
+    },
+    {
+      "label": "1440x900 compose hidden",
+      "pass": true
+    },
+    {
+      "label": "1440x900 desktop focus return",
+      "pass": true
+    },
+    {
+      "label": "390x844 anchored landing",
+      "pass": true
+    },
+    {
+      "label": "390x844 actual site viewport",
+      "pass": true,
+      "evidence": [
+        382,
+        763
+      ]
+    },
+    {
+      "label": "390x844 no trail mailto",
+      "pass": true
+    },
+    {
+      "label": "390x844 story focus",
+      "pass": true
+    },
+    {
+      "label": "390x844 story anchored",
+      "pass": true
+    },
+    {
+      "label": "390x844 story restores tile",
+      "pass": true
+    },
+    {
+      "label": "390x844 diary focus",
+      "pass": true
+    },
+    {
+      "label": "390x844 diary anchored",
+      "pass": true
+    },
+    {
+      "label": "390x844 exactly one accessible diary entry",
+      "pass": true
+    },
+    {
+      "label": "390x844 diary next",
+      "pass": true
+    },
+    {
+      "label": "390x844 diary accessibility sync",
+      "pass": true
+    },
+    {
+      "label": "390x844 diary restores tile",
+      "pass": true
+    },
+    {
+      "label": "390x844 trail focus",
+      "pass": true
+    },
+    {
+      "label": "390x844 trail anchored",
+      "pass": true
+    },
+    {
+      "label": "390x844 trail restores tile",
+      "pass": true
+    },
+    {
+      "label": "390x844 support focus",
+      "pass": true
+    },
+    {
+      "label": "390x844 support anchored",
+      "pass": true
+    },
+    {
+      "label": "390x844 mobile required fields",
+      "pass": true
+    },
+    {
+      "label": "390x844 mobile final demo only",
+      "pass": true
+    },
+    {
+      "label": "390x844 mobile note focus return",
+      "pass": true
+    },
+    {
+      "label": "390x844 support restores tile",
+      "pass": true
+    }
+  ],
+  "captures": [
+    {
+      "file": "1440x900-home.png",
+      "state": "1440x900-home",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Personally inspected: layout intact; text and controls reachable."
+    },
+    {
+      "file": "390x844-home.png",
+      "state": "390x844-home",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Personally inspected: layout intact; text and controls reachable."
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "url": "https://us.i.posthog.com/flags/?v=2&compression=base64",
+      "method": "POST"
+    },
+    {
+      "url": "https://us.i.posthog.com/flags/?v=2&compression=base64",
+      "method": "POST"
+    }
+  ],
+  "scans": [],
+  "limitations": [
+    "Linux browser emulation; native Safari/physical phones not tested. Native 200% zoom unavailable in headless mode."
+  ],
+  "version": "153.0",
+  "failed": []
+}

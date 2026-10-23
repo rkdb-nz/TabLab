@@ -1,7 +1,7 @@
-name: Diner targeted sitecheck repairs
+name: Charity Walk targeted repair checks
 on:
   pull_request:
-    paths: ['qa/diner-focused.mjs', 'qa/diner-repair.mjs', 'public/boardroom/noticeboard/demos/diner/**']
+    paths: ['qa/charity-repair.mjs', 'public/boardroom/noticeboard/demos/charity-walk/**', '.github/workflows/sitecheck-readiness.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,14 +19,14 @@ jobs:
         with:
           node-version: '22'
       - run: npm install --prefix qa --ignore-scripts
-      - run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - name: Targeted repairs and nine-combination smoke sample
-        run: node qa/diner-focused.mjs
+      - run: timeout 240s node qa/node_modules/playwright/cli.js install ${{ matrix.browser }}
+      - name: Charity Walk routine nine-combination sample
+        run: node qa/charity-repair.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: diner-${{ matrix.browser }}
-          path: qa/diner-focused-results/
+          name: charity-repair-${{ matrix.browser }}
+          path: qa/charity-repair-results/
           retention-days: 90

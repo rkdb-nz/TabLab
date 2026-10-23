@@ -8,7 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=charity-landscape-glass-4" />
+  <link rel="stylesheet" href="styles.css?v=charity-repairs-1" />
 </head>
 <body>
   <header class="site-header">
@@ -67,12 +67,12 @@
       <article class="mobile-diary-card">
         <span class="mobile-kicker">Updated from the trail</span>
         <h2 id="mobile-diary-title">Kōkiri's diary</h2>
-        <div class="mobile-diary-stack">
+        <div class="mobile-diary-stack" aria-live="polite" aria-atomic="true">
           <article class="mobile-diary-entry is-current"><time datetime="2025-05-14"><b>14</b> May</time><p>Spent the night listening to moreporks. I could hear them calling long after the hut went quiet.</p></article>
-          <article class="mobile-diary-entry"><time datetime="2025-05-13"><b>13</b> May</time><p>Someone left homemade muffins at the trail shelter. That kindness carried me through the last wet kilometres.</p></article>
-          <article class="mobile-diary-entry"><time datetime="2025-05-12"><b>12</b> May</time><p>The rain finally stopped. The views today were worth every blister and every soaked sock.</p></article>
-          <article class="mobile-diary-entry"><time datetime="2025-05-11"><b>11</b> May</time><p>A family walked beside me and shared their own cancer journey. I carried their story all day.</p></article>
-          <article class="mobile-diary-entry"><time datetime="2025-05-10"><b>10</b> May</time><p>Slow going through the mud, but a bright patch of daffodils beside the road felt like a sign to keep moving.</p></article>
+          <article class="mobile-diary-entry" aria-hidden="true" inert><time datetime="2025-05-13"><b>13</b> May</time><p>Someone left homemade muffins at the trail shelter. That kindness carried me through the last wet kilometres.</p></article>
+          <article class="mobile-diary-entry" aria-hidden="true" inert><time datetime="2025-05-12"><b>12</b> May</time><p>The rain finally stopped. The views today were worth every blister and every soaked sock.</p></article>
+          <article class="mobile-diary-entry" aria-hidden="true" inert><time datetime="2025-05-11"><b>11</b> May</time><p>A family walked beside me and shared their own cancer journey. I carried their story all day.</p></article>
+          <article class="mobile-diary-entry" aria-hidden="true" inert><time datetime="2025-05-10"><b>10</b> May</time><p>Slow going through the mud, but a bright patch of daffodils beside the road felt like a sign to keep moving.</p></article>
         </div>
         <div class="mobile-diary-controls">
           <button type="button" data-diary-step="-1" aria-label="Previous diary entry">←</button>
@@ -109,7 +109,7 @@
         <h2 id="mobile-support-title">Make every<br>step count.</h2>
         <p>Support the Cancer Society or send Kōkiri a note to read after a day on the trail.</p>
         <a class="mobile-support-primary" href="https://www.daffodilday.org.nz/" target="_blank" rel="noopener noreferrer">Support Daffodil Day <span>↗</span></a>
-        <a class="mobile-support-secondary" href="mailto:kokiri_ontheroad@rkdb.nz?subject=A%20trail%20message%20for%20K%C5%8Dkiri">Send a trail note <span>→</span></a>
+        <button class="mobile-support-secondary" type="button" data-compose-note>Send a trail note <span aria-hidden="true">→</span></button>
       </article>
     </section>
   </section>
@@ -224,6 +224,21 @@
       <span aria-hidden="true">Walking Te Araroa for the Cancer Society</span><b aria-hidden="true">On the Road</b><i aria-hidden="true">Next stop: National Park</i>
     </div>
   </footer>
-  <script src="script.js?v=tablab-contact-20261006"></script>
+  <dialog class="trail-note-dialog" id="trail-note-dialog" aria-labelledby="trail-note-title">
+    <button class="trail-note-close" type="button" data-close-note aria-label="Close trail note">×</button>
+    <h2 id="trail-note-title">Leave Kōkiri a trail note.</h2>
+    <form id="mobile-message-form">
+      <label>Your name<input name="name" autocomplete="name" required></label>
+      <label>Email address<input name="email" type="email" autocomplete="email" required></label>
+      <label>Your message<textarea name="message" rows="4" required></textarea></label>
+      <button class="trail-note-send" type="submit">Send trail note →</button>
+      <p class="trail-note-error" aria-live="polite"></p>
+    </form>
+    <div id="trail-note-confirmation" hidden>
+      <p role="status">Demo only — your trail note has not been sent.</p>
+      <button class="trail-note-send" type="button" data-close-note>Done</button>
+    </div>
+  </dialog>
+  <script src="script.js?v=charity-repairs-1"></script>
 </body>
 </html>
