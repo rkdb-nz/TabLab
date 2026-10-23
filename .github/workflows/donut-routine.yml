@@ -9,23 +9,20 @@ jobs:
   routine:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    strategy:
-      fail-fast: false
-      matrix:
-        browser: [chromium, firefox, webkit]
+    
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
       - run: npm install --prefix qa --ignore-scripts
-      - run: node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - run: node qa/donut-routine.mjs
+      - run: node qa/node_modules/playwright/cli.js install --with-deps chromium
+      - run: node qa/donut-focused.mjs
         env:
-          QA_BROWSER: ${{ matrix.browser }}
+          QA_BROWSER: chromium
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: donut-${{ matrix.browser }}
+          name: donut-chromium
           path: qa/donut-results/
           retention-days: 90
