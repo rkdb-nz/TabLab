@@ -60,3 +60,5 @@ Normal image/resource load only; no synthetic cold-load benchmark or slowed-load
 Durable evidence folder: qa/sitecheck/donut/evidence/ on qa/donut-routine. Seven independent ZIPs contain readable JPEG previews of every retained screenshot and complete JSON machine reports. Unzip all into one directory. Original lossless PNGs remain in the original Actions artifacts, with 90-day retention ending 21 January 2027. The persistent JPEG copies preserve reviewed visual evidence beyond that expiry. The ledger maps original names to archived previews and observations.
 
 Do not expand to an exhaustive audit. Product repairs require approval, followed by a targeted routine rerun on a preview branch. Keep design, email, indexing and analytics decisions pending unless separately approved.
+
+WebKit final result: the dependency installation was cancelled at the ten-minute job limit (00:53:13 UTC). The log ends during an Ubuntu package download and reports “The operation was canceled.” Upload warns that qa/donut-results/ contains no files. No WebKit browser launch or test execution occurred; no identical retry was made.
