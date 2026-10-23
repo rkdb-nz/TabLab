@@ -1,4 +1,4 @@
-name: Pottery routine sitecheck
+name: Pottery targeted repairs
 on:
   push:
     branches: ['qa/pottery-routine']
@@ -13,7 +13,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chromium]
+        browser: [chromium, firefox, webkit]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -28,6 +28,6 @@ jobs:
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: pottery-settled-${{ matrix.browser }}
-          path: qa/pottery-settled-results/
+          name: pottery-repair-${{ matrix.browser }}
+          path: qa/pottery-repair-results/
           retention-days: 90

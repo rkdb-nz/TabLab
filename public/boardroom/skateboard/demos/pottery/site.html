@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <script>if(matchMedia('(max-width:980px)').matches){location.replace(new URL('mobile.html',location.href).href+location.hash);}</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ash & Oak Pottery — Handcrafted Ceramics</title>
   <meta name="description" content="Ash & Oak Pottery is an independent artisan studio crafting timeless ceramics from natural clay.">
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png?v=pt-repairs-1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Instrument+Sans:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css?v=pottery-mobile-motion-20261017" />
+  <link rel="stylesheet" href="css/style.css?v=pt-repairs-1" />
+  <script defer src="js/routing.js?v=pt-repairs-1"></script>
 </head>
 <body>
   <div class="progress-bar" id="progressBar"></div>
@@ -18,7 +18,7 @@
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="#" class="nav-logo">
-        <img src="assets/images/logo.png" alt="Ash & Oak Pottery logo" />
+        <img decoding="async" src="assets/images/logo.png?v=pt-repairs-1" alt="Ash & Oak Pottery logo" />
         <span>Ash & Oak Pottery</span>
       </a>
       <div class="nav-links">
@@ -40,9 +40,10 @@
     </div>
   </nav>
 
-  <header class="hero">
+  <main id="main-content">
+  <header class="hero" id="clay">
     <div class="hero-media">
-      <img src="assets/images/hero.webp" alt="Wheel-thrown clay bowl in soft natural light" />
+      <img decoding="async" src="assets/images/hero.webp?v=pt-repairs-1" alt="Wheel-thrown clay bowl in soft natural light" />
       <div class="hero-overlay"></div>
     </div>
     <div class="hero-content">
@@ -95,7 +96,7 @@
   </section>
 
   <section class="section studio split" id="studio">
-    <div class="split-media reveal-img"><img src="assets/images/studio.webp" alt="Interior of Ash & Oak pottery studio with shelves and natural light" /></div>
+    <div class="split-media reveal-img"><img loading="lazy" decoding="async" src="assets/images/studio.webp?v=pt-repairs-1" alt="Interior of Ash & Oak pottery studio with shelves and natural light" /></div>
     <div class="split-content">
       <div class="eyebrow reveal">The Studio</div>
       <h2 class="reveal">A workshop at the edge of the field.</h2>
@@ -113,7 +114,7 @@
   <section class="section artist">
     <div class="container">
       <div class="artist-grid">
-        <div class="artist-media reveal-img"><img src="assets/images/artist.webp" alt="Portrait of the potter at work" /></div>
+        <div class="artist-media reveal-img"><img loading="lazy" decoding="async" src="assets/images/artist.webp?v=pt-repairs-1" alt="Portrait of the potter at work" /></div>
         <div class="artist-content">
           <div class="eyebrow reveal">Meet the Potter</div>
           <h2 class="reveal">Elinor Hart</h2>
@@ -132,15 +133,15 @@
         <div class="eyebrow reveal">The Process</div>
         <h2 class="reveal">Seven hands, seven stages.<br>Every piece passes through all.</h2>
       </div>
-      <div class="process-hero reveal-img"><img src="assets/images/process.webp" alt="Close-up of hands shaping clay on wheel" /></div>
+      <div class="process-hero reveal-img"><img loading="lazy" decoding="async" src="assets/images/process.webp?v=pt-repairs-1" alt="Close-up of hands shaping clay on wheel" /></div>
       <div class="process-steps">
-        <div class="step reveal"><span>01</span><h4>Wedging</h4><p>Removing air, aligning particles, preparing the clay body for the wheel.</p></div>
-        <div class="step reveal"><span>02</span><h4>Throwing</h4><p>Centering and opening on the wheel. Form found through pressure and water.</p></div>
-        <div class="step reveal"><span>03</span><h4>Trimming</h4><p>When leather-hard, feet are turned, walls refined, weight considered.</p></div>
-        <div class="step reveal"><span>04</span><h4>Bisque</h4><p>First firing to 1000°C, transforming soft clay into resilient ceramic.</p></div>
-        <div class="step reveal"><span>05</span><h4>Glazing</h4><p>Dipped, poured, or brushed with ash glazes made from oak, ash, and applewood.</p></div>
-        <div class="step reveal"><span>06</span><h4>Glaze Fire</h4><p>28-hour firing to 1280°C. Reduction atmosphere brings depth and flux.</p></div>
-        <div class="step reveal"><span>07</span><h4>Finishing</h4><p>Feet polished, bases waxed, each piece inspected and held before release.</p></div>
+        <div class="step reveal"><span>01</span><h3>Wedging</h3><p>Removing air, aligning particles, preparing the clay body for the wheel.</p></div>
+        <div class="step reveal"><span>02</span><h3>Throwing</h3><p>Centering and opening on the wheel. Form found through pressure and water.</p></div>
+        <div class="step reveal"><span>03</span><h3>Trimming</h3><p>When leather-hard, feet are turned, walls refined, weight considered.</p></div>
+        <div class="step reveal"><span>04</span><h3>Bisque</h3><p>First firing to 1000°C, transforming soft clay into resilient ceramic.</p></div>
+        <div class="step reveal"><span>05</span><h3>Glazing</h3><p>Dipped, poured, or brushed with ash glazes made from oak, ash, and applewood.</p></div>
+        <div class="step reveal"><span>06</span><h3>Glaze Fire</h3><p>28-hour firing to 1280°C. Reduction atmosphere brings depth and flux.</p></div>
+        <div class="step reveal"><span>07</span><h3>Finishing</h3><p>Feet polished, bases waxed, each piece inspected and held before release.</p></div>
       </div>
     </div>
   </section>
@@ -152,9 +153,9 @@
         <p class="reveal">Small runs. Limited editions. Designed to be mixed, not matched.</p>
       </div>
       <div class="collection-grid">
-        <article class="collection-card reveal"><div class="collection-media"><img src="assets/images/collection1.webp" alt="Morning collection mugs and bowls" /></div><div class="collection-body"><h3>Morning Collection</h3><p>Soft ash white glaze over warm stoneware. For coffee, oats, and quiet starts.</p><span class="price">From $32</span></div></article>
-        <article class="collection-card reveal delay-1"><div class="collection-media"><img src="assets/images/collection2.webp" alt="Gather serving bowls collection" /></div><div class="collection-body"><h3>Gather</h3><p>Large serving forms with iron-speckled shino. Built for shared meals.</p><span class="price">From $85</span></div></article>
-        <article class="collection-card reveal delay-2"><div class="collection-media"><img src="assets/images/collection3.webp" alt="Still vases and vessels" /></div><div class="collection-body"><h3>Still</h3><p>Minimal vessels with unglazed exteriors and satin interior glaze.</p><span class="price">From $58</span></div></article>
+        <article class="collection-card reveal"><div class="collection-media"><img loading="lazy" decoding="async" src="assets/images/collection1.webp?v=pt-repairs-1" alt="Morning collection mugs and bowls" /></div><div class="collection-body"><h3>Morning Collection</h3><p>Soft ash white glaze over warm stoneware. For coffee, oats, and quiet starts.</p><span class="price">From $32</span></div></article>
+        <article class="collection-card reveal delay-1"><div class="collection-media"><img loading="lazy" decoding="async" src="assets/images/collection2.webp?v=pt-repairs-1" alt="Gather serving bowls collection" /></div><div class="collection-body"><h3>Gather</h3><p>Large serving forms with iron-speckled shino. Built for shared meals.</p><span class="price">From $85</span></div></article>
+        <article class="collection-card reveal delay-2"><div class="collection-media"><img loading="lazy" decoding="async" src="assets/images/collection3.webp?v=pt-repairs-1" alt="Still vases and vessels" /></div><div class="collection-body"><h3>Still</h3><p>Minimal vessels with unglazed exteriors and satin interior glaze.</p><span class="price">From $58</span></div></article>
       </div>
     </div>
   </section>
@@ -165,13 +166,13 @@
       <h2 class="reveal">Come and learn with your hands.</h2>
       <p class="reveal">We keep our workshops intentionally small — six people maximum — so you have space, light, and attention. No experience needed, just curiosity.</p>
       <div class="workshop-cards">
-        <div class="wc reveal"><h4>Throwing Taster — Half Day</h4><p>Introduction to the wheel. Clay, tools, and apron provided. Take home your best piece after firing.</p><span>$95 • Saturdays 10am—1pm</span></div>
-        <div class="wc reveal"><h4>Handbuilding Weekend</h4><p>Coil, pinch, and slab techniques to create functional ware. Includes glaze and firing.</p><span>$280 • Monthly</span></div>
-        <div class="wc reveal"><h4>Glaze & Fire Masterclass</h4><p>For potters with experience. Explore ash glazes, slips, and kiln packing with Elinor.</p><span>$320 • Quarterly</span></div>
+        <div class="wc reveal"><h3>Throwing Taster — Half Day</h3><p>Introduction to the wheel. Clay, tools, and apron provided. Take home your best piece after firing.</p><span>$95 • Saturdays 10am—1pm</span></div>
+        <div class="wc reveal"><h3>Handbuilding Weekend</h3><p>Coil, pinch, and slab techniques to create functional ware. Includes glaze and firing.</p><span>$280 • Monthly</span></div>
+        <div class="wc reveal"><h3>Glaze & Fire Masterclass</h3><p>For potters with experience. Explore ash glazes, slips, and kiln packing with Elinor.</p><span>$320 • Quarterly</span></div>
       </div>
       <a href="#contact" class="btn btn-primary reveal">Enquire about workshops</a>
     </div>
-    <div class="split-media reveal-img"><img src="assets/images/workshop.webp" alt="Workshop participants learning pottery" /></div>
+    <div class="split-media reveal-img"><img loading="lazy" decoding="async" src="assets/images/workshop.webp?v=pt-repairs-1" alt="Workshop participants learning pottery" /></div>
   </section>
 
   <section class="section gallery" id="gallery">
@@ -179,18 +180,18 @@
       <div class="eyebrow reveal">Gallery</div>
       <h2 class="reveal">Recent work from the kiln.</h2>
       <div class="gallery-grid">
-        <figure class="g-item g-1 reveal-img"><img src="assets/images/gallery1.webp" alt="Ceramic bowl with ash glaze" /><figcaption>Bowl, ash white — 16cm</figcaption></figure>
-        <figure class="g-item g-2 reveal-img"><img src="assets/images/gallery2.webp" alt="Stacked ceramic cups" /><figcaption>Find Your Mug</figcaption></figure>
-        <figure class="g-item g-3 reveal-img"><img src="assets/images/gallery3.webp" alt="Large serving platter" /><figcaption>Platter, iron shino — 34cm</figcaption></figure>
-        <figure class="g-item g-4 reveal-img"><img src="assets/images/gallery4.webp" alt="Vase with dry glaze" /><figcaption>Vase, Still — 22cm</figcaption></figure>
-        <figure class="g-item g-5 reveal-img"><img src="assets/images/gallery5.webp" alt="Detail of glazed rim" /><figcaption>Rim detail, ASH #5</figcaption></figure>
-        <figure class="g-item g-6 reveal-img"><img src="assets/images/gallery6.webp" alt="Collection of pots on shelf" /><figcaption>Shelf study, studio</figcaption></figure>
+        <figure class="g-item g-1 reveal-img"><img loading="lazy" decoding="async" src="assets/images/gallery1.webp?v=pt-repairs-1" alt="Ceramic bowl with ash glaze" /><figcaption>Bowl, ash white — 16cm</figcaption></figure>
+        <figure class="g-item g-2 reveal-img"><img loading="lazy" decoding="async" src="assets/images/gallery2.webp?v=pt-repairs-1" alt="Stacked ceramic cups" /><figcaption>Find Your Mug</figcaption></figure>
+        <figure class="g-item g-3 reveal-img"><img loading="lazy" decoding="async" src="assets/images/gallery3.webp?v=pt-repairs-1" alt="Large serving platter" /><figcaption>Platter, iron shino — 34cm</figcaption></figure>
+        <figure class="g-item g-4 reveal-img"><img loading="lazy" decoding="async" src="assets/images/gallery4.webp?v=pt-repairs-1" alt="Vase with dry glaze" /><figcaption>Vase, Still — 22cm</figcaption></figure>
+        <figure class="g-item g-5 reveal-img"><img loading="lazy" decoding="async" src="assets/images/gallery5.webp?v=pt-repairs-1" alt="Detail of glazed rim" /><figcaption>Rim detail, ASH #5</figcaption></figure>
+        <figure class="g-item g-6 reveal-img"><img loading="lazy" decoding="async" src="assets/images/gallery6.webp?v=pt-repairs-1" alt="Collection of pots on shelf" /><figcaption>Shelf study, studio</figcaption></figure>
       </div>
     </div>
   </section>
 
   <section class="section visit split" id="visit">
-    <div class="split-media reveal-img"><img src="assets/images/visit.webp?v=sign-20261024" alt="Exterior of pottery studio in natural surroundings" /></div>
+    <div class="split-media reveal-img"><img loading="lazy" decoding="async" src="assets/images/visit.webp?v=pt-repairs-1" alt="Exterior of pottery studio in natural surroundings" /></div>
     <div class="split-content">
       <div class="eyebrow reveal">Visit Us</div>
       <h2 class="reveal">The studio is open for visits.</h2>
@@ -210,30 +211,31 @@
         <div class="eyebrow">Get in touch</div>
         <h2>Have a question, or want to commission a piece?</h2>
         <p>We love making pieces for specific homes and rituals — a set of mugs for a new kitchen, a large bowl for a 40th birthday, a pair of vases for a wedding. Tell us what you have in mind.</p>
-        <form class="form" onsubmit="event.preventDefault(); this.reset(); document.getElementById('formSuccess').classList.add('show');">
+        <form class="form" id="pottery-enquiry">
           <div class="form-row">
             <label><span>Name</span><input type="text" placeholder="Your name" required /></label>
             <label><span>Email</span><input type="email" placeholder="you@example.com" required /></label>
           </div>
           <label><span>Message</span><textarea rows="4" placeholder="Tell us about your space, your needs, or your idea..." required></textarea></label>
           <button type="submit" class="btn btn-primary full">Send message</button>
-          <div class="form-success" id="formSuccess">Thank you — we will reply within two days.</div>
+          <div class="form-success" id="formSuccess" role="status" aria-live="polite" tabindex="-1"></div>
         </form>
       </div>
     </div>
   </section>
 
+</main>
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
-        <div><h5>Studio</h5><a href="#studio">The Studio</a><a href="#process">Process</a><a href="#gallery">Gallery</a></div>
-        <div><h5>Visit</h5><a href="#workshops">Workshops</a><a href="#visit">Find Us</a><a href="#contact">Contact</a></div>
-        <div><h5>Follow</h5><a href="#">Instagram</a><a href="#">Journal</a><a href="#">Newsletter</a></div>
+        <div><h2>Studio</h2><a href="#studio">The Studio</a><a href="#process">Process</a><a href="#gallery">Gallery</a></div>
+        <div><h2>Visit</h2><a href="#workshops">Workshops</a><a href="#visit">Find Us</a><a href="#contact">Contact</a></div>
+        <div><h2>Follow</h2><button type="button" data-demo-social="Instagram">Instagram</button><button type="button" data-demo-social="Journal">Journal</button><button type="button" data-demo-social="Newsletter">Newsletter</button><p id="social-result" role="status"></p></div>
       </div>
       <div class="footer-bottom"><span>© 2026 Ash & Oak Pottery</span><span>Crafted with clay & patience</span></div>
     </div>
   </footer>
 
-  <script src="js/app.js?v=pottery-mobile-motion-20261017"></script>
+  <script src="js/app.js?v=pt-repairs-1"></script>
 </body>
 </html>
