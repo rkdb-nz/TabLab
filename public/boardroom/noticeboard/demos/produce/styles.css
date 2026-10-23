@@ -821,3 +821,63 @@ nav button {
   display: block;
   object-fit: fill;
 }
+
+/* Routine accessibility repairs. Keep the scenic composition and sample board. */
+.page { min-height: 0; container-type: size; }
+.thank-you { position: static; margin: 24px 0 0; }
+.side-panel { position: fixed; height: 100dvh; max-height: 100dvh; overflow-y: auto; overscroll-behavior: contain; visibility: hidden; }
+.side-panel.open { visibility: visible; }
+.board-zone:hover .board, .board-zone:focus-visible .board, .board-zone.active .board { transform: none; filter: none; }
+.board-face { grid-template-rows: auto auto minmax(0, 1fr) auto; }
+.board ol { overflow-y: auto; overscroll-behavior: contain; scrollbar-color: #9bc23f #242924; }
+.board li { min-height: 1.65em; }
+.board li.edit-message { font-size: max(12px, .7em); line-height: 1.3; padding: 7px 0; }
+.board-zone { outline: revert; }
+.contact-card button { border: 1px solid #17381e; border-radius: 8px; color: #17381e; background: #fbf4e4; padding: 10px 14px; text-align: left; cursor: pointer; }
+.demo-note { border-left: 3px solid #789b38; padding-left: 12px; }
+.demo-result { margin: 6px 0 0; line-height: 1.5; }
+.demo-result:empty { display: none; }
+button:focus-visible, a:focus-visible, .board ol:focus-visible { outline: 3px solid #d36f2f; outline-offset: 3px; }
+@media (max-width: 900px) {
+  .board ol { font-size: max(16px, 2.45dvh); grid-template-rows: repeat(10, minmax(min-content, 1fr)); }
+  .board li.edit-message { font-size: 12px; }
+}
+@container (max-height: 500px) and (min-width: 500px) {
+  .header { inset: 0 auto auto 0; width: 46%; height: auto; padding: 16px 22px; display: flex; flex-direction: column; align-items: center; }
+  .brand { align-items: center; width: max-content; }
+  .brand-main { font-size: clamp(28px, 5.5cqw, 44px); line-height: .95; }
+  .brand-sub { font-size: 16px; margin-top: 5px; }
+  .brand-tagline { font-size: 18px; margin-top: 5px; }
+  .brand-tagline::after { height: 3px; }
+  nav { width: auto; margin-top: 14px; gap: 18px; }
+  nav button { font-size: 16px; padding: 6px 2px; }
+  .board-zone { top: 10px; right: 14px; width: 48%; height: calc(100cqh - 66px); transform: none; }
+  .board { padding: 6px; border-width: 3px; }
+  .board-face { padding: 9px 14px; }
+  .board h1 { font-size: 24px; }
+  .board ol { font-size: 18px; line-height: 1.25; grid-template-rows: repeat(10, minmax(min-content, 1fr)); }
+  .board p { font-size: 18px; margin-top: 5px; }
+  .board li.edit-message { font-size: 12px; }
+  .footer { left: 0; right: 0; height: 42px; display: flex; border-radius: 0; overflow: hidden; }
+  .footer div { width: 36%; min-width: 230px; padding: 0 12px; }
+  .footer b { font-size: 14px; }
+  .footer span { display: none; }
+}
+@container (max-width: 499px) and (max-height: 500px) {
+  .header { position: absolute; inset: 8px 0 auto; padding: 0 12px; display: grid; justify-items: center; }
+  .brand-main { font-size: 28px; } .brand-sub { font-size: 13px; margin-top: 3px; }
+  .brand-tagline { display: none; }
+  nav { margin-top: 5px; gap: 20px; } nav button { font-size: 14px; }
+  .board-zone { top: 104px; right: 50%; width: 88%; height: calc(100cqh - 155px); transform: translateX(50%); }
+  .board-face { padding: 7px 12px; }
+  .board h1 { font-size: 22px; } .board ol { font-size: 16px; }
+  .footer { height: 40px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+.page { height: var(--produce-height, 100dvh); }
+.side-panel { height: var(--produce-height, 100dvh); max-height: var(--produce-height, 100dvh); }
+
+@container (max-height: 500px) { .board h1::after { content: "Scroll for all produce"; display: block; font-family: "Nunito Sans", sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; margin-top: 3px; } }
