@@ -57,3 +57,12 @@ document.querySelectorAll('[data-demo-contact]').forEach(button => {
       : 'Demo only — no email has been created or sent.';
   });
 });
+
+/* Keep the fixed canvas within the visible viewport when browser tools magnify it. */
+function fitVisibleHeight() {
+  const scale = parseFloat(getComputedStyle(document.documentElement).zoom) || 1;
+  document.querySelector('.page').style.setProperty('--produce-height', (window.innerHeight / scale) + 'px');
+}
+fitVisibleHeight();
+window.addEventListener('resize', fitVisibleHeight);
+new MutationObserver(fitVisibleHeight).observe(document.documentElement, {attributes: true, attributeFilter: ['style']});
