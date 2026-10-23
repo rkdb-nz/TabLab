@@ -19,7 +19,7 @@ QA branch: qa/pottery-routine; draft PR https://github.com/rkdb-nz/TabLab/pull/7
 | PT-08 | Initial WebKit 1440x900 run was redirected to mobile.html despite final iframe width 1426px. Focused retry loaded site.html and desktop navigation correctly. Inline redirect executes before viewport/layout setup and there is no robust reverse route on resizing. | Make initial responsive routing reliable after layout settles and preserve a sensible section/scene when crossing the breakpoint. Treat the observed routing error as intermittent, not universal. |
 
 ## Items needing your attention or input
-- The visit photograph's baked sign reads “OAK AND ASH”, while the site brand is “ASH & OAK”. Keep that photograph as-is, or explicitly authorise an image edit. PT-04 optimisation does not include changing the sign or masking lettering.
+- Sign correction separately approved on 24 October 2026: the photograph now reads “ASH & OAK / POTTERY STUDIO”. Applied to the preview only. The other PT-01–08 repairs still await approval.
 - Indexing/metadata and shared analytics are unchanged. Shared PostHog configuration requests returned 404 on gallery navigation; any analytics repair/disable decision remains separate.
 
 ## Scope and executed coverage
