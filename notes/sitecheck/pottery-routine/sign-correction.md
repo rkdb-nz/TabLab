@@ -1,0 +1,5 @@
+# Pottery sign correction — 24 October 2026
+
+User authorised correcting the reversed studio name. Built-in imagegen edited the original photograph; the sign now reads ASH & OAK with POTTERY STUDIO retained below. The complete edited photograph and final WebP export were visually inspected. Original dimensions and 4:3 framing retained (1448 × 1086); WebP export 407,674 bytes. Source picture is preserved in Git history. Both desktop and mobile references have a cache version. No CSS masking, production publishing or PT-01–08 product repairs.
+
+Prompt: Change only the large wall-mounted wooden sign to the right of the front door: replace OAK AND ASH with ASH & OAK. Keep POTTERY STUDIO unchanged. Match dark engraved serif lettering, perspective, size, spacing, wood grain, weathering, screw heads, warm light and shadows. Retain sign position and dimensions, building, roof, ivy, trees, door, windows, bench, plants, gravel, hills, framing, colours and smaller OPEN A-board. Do not crop or recompose.

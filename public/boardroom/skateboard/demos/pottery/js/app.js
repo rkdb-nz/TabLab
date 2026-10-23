@@ -39,7 +39,7 @@
 
   const heroImg = document.querySelector('.hero-media img');
   window.addEventListener('scroll', () => {
-    if (!heroImg || mobileMotion.matches) return;
+    if (!heroImg || mobileMotion.matches || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const y = window.scrollY * 0.18;
     heroImg.style.transform = `translateY(${y}px) scale(1.06)`;
     if (window.scrollY < 10) heroImg.style.transform = 'scale(1)';
@@ -143,3 +143,19 @@
   window.addEventListener('resize',scheduleDrift,{passive:true});
   syncMode();
 })();
+
+document.getElementById('pottery-enquiry')?.addEventListener('submit', event => {
+ event.preventDefault();
+ const form=event.currentTarget;
+ const name=form.querySelector('input[type=text]');
+ name.value=name.value.trim();
+ if(!name.value){name.setCustomValidity('Please enter your name.');name.reportValidity();return;}
+ name.setCustomValidity('');
+ const result=document.getElementById('formSuccess');
+ result.textContent='This is a demonstration. Your message has not been sent, and no reply will follow.';
+ result.classList.add('show');
+});
+document.querySelector('#pottery-enquiry input[type=text]')?.addEventListener('input',event=>event.target.setCustomValidity(''));
+document.querySelectorAll('[data-demo-social]').forEach(button=>button.addEventListener('click',()=>{
+ document.getElementById('social-result').textContent=button.dataset.demoSocial+' is shown for demonstration only. No external profile or subscription has been opened.';
+}));
