@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-NZ">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>On the Road Produce</title>
   <meta name="description" content="A Tab Lab Noticeboard example.">
-  <link rel="stylesheet" href="styles.css?v=produce-portrait-board-2">
+  <link rel="stylesheet" href="styles.css?v=produce-repairs-1">
 </head>
 <body>
   <main class="page">
@@ -25,7 +25,7 @@
       </nav>
     </header>
 
-    <section class="board-zone" tabindex="0" aria-describedby="edit-tip">
+    <section class="board-zone" aria-label="Demo produce board">
       <div class="board">
         <div class="board-face">
           <h1>THIS WEEKEND</h1>
@@ -41,17 +41,13 @@
             <li><span>Red Onions</span><strong>$3.00</strong></li>
             <li><span>Cucumbers</span><strong>$2.00</strong></li>
             <li><span>Capsicums</span><strong>$3.00</strong></li>
-            <li class="edit-message"><span>THIS SECTION YOURS TO EDIT, ANYTIME</span></li>
+            <li class="edit-message"><span>DEMO BOARD · SAMPLE PRICES</span></li>
           </ol>
 
           <p>Eat fresh. Eat local. ♡</p>
         </div>
       </div>
 
-      <div class="edit-tip" id="edit-tip">
-        <span>This part is</span>
-        <strong>editable by you.</strong>
-      </div>
     </section>
 
     <footer class="footer">
@@ -71,10 +67,10 @@
 
     <div class="scrim" aria-hidden="true"></div>
 
-    <aside class="side-panel about-panel" id="about-panel" aria-hidden="true">
+    <aside class="side-panel about-panel" id="about-panel" role="dialog" aria-modal="true" aria-labelledby="about-heading" aria-hidden="true" inert>
       <button class="panel-close" type="button" aria-label="Close panel">×</button>
       <p class="eyebrow">ABOUT US</p>
-      <h2>Fresh from just down the road.</h2>
+      <h2 id="about-heading">Fresh from just down the road.</h2>
       <p class="script-line">Fresh. Local. Honest.</p>
       <p>We are a small family-run produce stall with a big love for good food and our local community.</p>
       <p>Everything is grown with care, picked fresh, and brought to the roadside with pride.</p>
@@ -89,10 +85,11 @@
       <p class="thank-you">Thank you for supporting local. It means everything.</p>
     </aside>
 
-    <aside class="side-panel find-panel" id="find-panel" aria-hidden="true">
+    <aside class="side-panel find-panel" id="find-panel" role="dialog" aria-modal="true" aria-labelledby="find-heading" aria-hidden="true" inert>
       <button class="panel-close" type="button" aria-label="Close panel">×</button>
       <p class="eyebrow">FIND US</p>
-      <h2>Take the scenic road.</h2>
+      <h2 id="find-heading">Take the scenic road.</h2>
+      <p class="demo-note">This is a demonstration. The stall, address, map and contact details are fictional.</p>
       <p>You will find us just outside town most weekends.</p>
 
       <div class="directions">
@@ -108,12 +105,13 @@
 
       <div class="contact-card">
         <strong>QUESTIONS?</strong>
-        <span>021 123 4567</span>
-        <span>ontheroad@rkdb.nz</span>
+        <button type="button" data-demo-contact="call">Call the stall</button>
+        <button type="button" data-demo-contact="email">Email the stall</button>
+        <p class="demo-result" role="status" aria-live="polite"></p>
       </div>
     </aside>
   </main>
 
-  <script src="script.js?v=tablab-contact-20261006"></script>
+  <script src="script.js?v=produce-repairs-1"></script>
 </body>
 </html>
