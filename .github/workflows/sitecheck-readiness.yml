@@ -1,7 +1,7 @@
-name: Diner targeted sitecheck repairs
+name: Florist routine sitecheck
 on:
   pull_request:
-    paths: ['qa/diner-focused.mjs', 'qa/diner-repair.mjs', 'public/boardroom/noticeboard/demos/diner/**']
+    paths: ['qa/florist-routine.mjs']
   workflow_dispatch:
 permissions:
   contents: read
@@ -20,13 +20,13 @@ jobs:
           node-version: '22'
       - run: npm install --prefix qa --ignore-scripts
       - run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - name: Targeted repairs and nine-combination smoke sample
-        run: node qa/diner-focused.mjs
+      - name: Routine florist sample
+        run: node qa/florist-routine.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: diner-${{ matrix.browser }}
-          path: qa/diner-focused-results/
+          name: florist-${{ matrix.browser }}
+          path: qa/florist-results/
           retention-days: 90
