@@ -1,4 +1,4 @@
-name: Florist routine sitecheck
+name: Florist targeted repair check
 on:
   pull_request:
     paths: ['qa/florist-routine.mjs']
@@ -12,20 +12,22 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chromium]
+        browser: [chromium, firefox, webkit]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
       - run: npm install --prefix qa --ignore-scripts
-      - name: Routine florist sample
+      - if: matrix.browser != 'chromium'
+        run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
+      - name: Targeted repairs and nine-combination smoke sample
         run: node qa/florist-routine.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: florist-${{ matrix.browser }}
-          path: qa/florist-results/
+          name: florist-repair-${{ matrix.browser }}
+          path: qa/florist-repair-results/
           retention-days: 90

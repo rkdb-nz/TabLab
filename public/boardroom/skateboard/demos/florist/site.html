@@ -5,11 +5,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1"/>
 <title>ASH & OAK — Luxury Floral Design</title>
 <meta name="description" content="ASH & OAK — Luxury floral design studio. Weddings, events, and editorial botanical compositions. Timeless arrangements, quietly made."/>
-<link rel="stylesheet" href="css/style.css?v=florist-upper-cream-4"/>
+<link rel="stylesheet" href="css/style.css?v=florist-repairs-1"/>
 </head>
 <body>
 <div id="layer-bg"></div>
-<div id="layer-logo"><div class="mark"><span>ASH</span><em>&</em><span>OAK</span></div></div>
+<div id="layer-logo" aria-hidden="true"><div class="mark"><span>ASH</span><em>&</em><span>OAK</span></div></div>
 
 <aside id="rail" aria-label="Architectural spine">
   <div id="rail-brand">
@@ -20,7 +20,7 @@
 </aside>
 
 <nav id="topnav">
-  <div class="logo" data-scroll="hero">ASH & OAK</div>
+  <a class="logo" href="#hero" data-scroll="hero">ASH &amp; OAK</a>
   <div class="links">
     <a href="#hero" data-scroll="hero">Ash & Oak</a>
     <a href="#collections" data-scroll="collections">Collections</a>
@@ -88,15 +88,16 @@
       <div class="form-intro">
         <h2>Enquire</h2>
         <p>For weddings, event styling and private commissions. We work with what is in season and most beautiful that week.</p>
-        <p style="margin-top:24px">18 Kowhai Lane, Wāperiki<br>07 555 1842<br><a href="mailto:ashandoak@rkdb.nz" style="color:inherit">ashandoak@rkdb.nz</a></p><p style="margin-top:24px; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--stone)">Response within two working days</p>
+        <p style="margin-top:24px">18 Kowhai Lane, Wāperiki<br>07 555 1842<br><button type="button" class="contact-email" data-demo-contact>ashandoak@rkdb.nz</button></p><p id="contact-result" class="demo-result" role="status" hidden></p><p style="margin-top:24px; font-size:11px; letter-spacing:0.22em; text-transform:uppercase; color:var(--stone)">Response within two working days</p>
       </div>
       <form id="enquiryForm" class="form-grid" novalidate>
-        <div class="field"><label>Name</label><input name="name" type="text" placeholder="Full name" required/></div>
-        <div class="field"><label>Email</label><input name="email" type="email" placeholder="you@studio.com" required/></div>
-        <div class="field"><label>Phone</label><input name="phone" type="tel" placeholder="+64 —"/></div>
-        <div class="field"><label>Event Date</label><input name="date" type="date"/></div>
-        <div class="field full"><label>Event Type</label><select name="type"><option value="">Select type</option><option>Wedding</option><option>Event Styling</option><option>Corporate Flowers</option><option>Sympathy Flowers</option><option>Gift Bouquet</option><option>Other</option></select></div>
-        <div class="field full"><label>Message</label><textarea name="message" placeholder="Tell us about the occasion, palette, venue, number of arrangements..."></textarea></div>
+        <p id="form-error" class="field full field-error" role="alert" hidden></p>
+        <div class="field"><label for="enquiry-name">Name</label><input id="enquiry-name" name="name" type="text" placeholder="Full name" autocomplete="name" aria-describedby="name-error" required/><span id="name-error" class="field-error" hidden></span></div>
+        <div class="field"><label for="enquiry-email">Email</label><input id="enquiry-email" name="email" type="email" placeholder="you@studio.com" autocomplete="email" aria-describedby="email-error" required/><span id="email-error" class="field-error" hidden></span></div>
+        <div class="field"><label for="enquiry-phone">Phone</label><input id="enquiry-phone" name="phone" type="tel" placeholder="+64 —" autocomplete="tel"/></div>
+        <div class="field"><label for="enquiry-date">Event Date</label><input id="enquiry-date" name="date" type="date"/></div>
+        <div class="field full"><label for="enquiry-type">Event Type</label><select id="enquiry-type" name="type"><option value="">Select type</option><option>Wedding</option><option>Event Styling</option><option>Corporate Flowers</option><option>Sympathy Flowers</option><option>Gift Bouquet</option><option>Other</option></select></div>
+        <div class="field full"><label for="enquiry-message">Message</label><textarea id="enquiry-message" name="message" placeholder="Tell us about the occasion, palette, venue, number of arrangements..."></textarea></div>
         <div class="field full"><button class="btn-submit" type="submit">Send Enquiry —</button></div>
       </form>
     </div>
@@ -104,6 +105,6 @@
 
   <footer><span>© Ash & Oak — Floral Design</span><span>Seasonal • Local • Quiet</span></footer>
 </main>
-<script src="js/main.js"></script>
+<script src="js/main.js?v=florist-repairs-1"></script>
 </body>
 </html>
