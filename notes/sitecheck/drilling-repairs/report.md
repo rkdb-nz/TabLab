@@ -1,6 +1,6 @@
 # Drilling repairs — 23 October 2026
 
-Eight approved repairs implemented on `fix/drilling-sitecheck`, draft PR #67. Available targeted Firefox/WebKit checks passed. **Routine check incomplete: Chromium coverage and native 200% zoom retest remain unverified.**
+Eight approved repairs implemented on `fix/drilling-sitecheck`, draft PR #67. Available targeted Firefox/WebKit checks passed. **Routine check passed within the sampled scope. Missing Chrome, native 200% zoom and final deployed-preview checks completed; existing Firefox/WebKit evidence reused.**
 
 Preview: https://f011e2c3.foundry-a3k.pages.dev/boardroom/billboard/demos/drilling/
 
@@ -10,7 +10,7 @@ Product commit: c614f19a77c1e298095f6984effa9bb6c5cd876a. Production main remain
 
 | ID | Result and evidence |
 |---|---|
-| DR-01 | Mobile layout repairs resolved in available samples. Service labels stay inside cards, complete portrait words fit at outer 320×568 and 390×844, and the short-landscape CTA fits above the service row. Heading/proof separation passed Firefox landscape and CSS reflow samples. Native 200% zoom verification remains outstanding; CSS viewport resizing is not a native zoom test. |
+| DR-01 | Mobile layout repairs resolved in available samples. Service labels stay inside cards, complete portrait words fit at outer 320×568 and 390×844, and the short-landscape CTA fits above the service row. Heading/proof separation passed Firefox landscape and CSS reflow samples. Native Chromium 200% zoom now passed: zoom API 2.0, DPR 1 to 2, viewport 1440×900 to 720×450; heading/proof remain separated and text stays within cards. |
 | DR-02 | Resolved in tested conditions. Drawer header/Close remain fixed within the panel while navigation and content scroll independently. At outer 780×300, inner 772×248, Close stays at y10–54 after form completion, content scrolls 371px and navigation 71px. At outer 320×568, inner 312×487, Close also stays y10–54 while form content scrolls 215px. Submit, confirmation and all navigation items are reachable. Portrait-to-landscape with Services open passed. |
 | DR-03 | Resolved. The only `.demo-notice` is inside Quote. Empty fields and malformed email fail native validation. Valid local completion says “Demo complete — no quote request was sent.” The complete status scrolls into view inside the content panel. No backend delivery added or tested. |
 | DR-04 | Resolved in available checks. Closed drawer uses inert; Tab does not enter it. Opening removes inert and closing restores focus before hiding it. A div replaces the aside with unsupported dialog semantics. Firefox landing and quote axe scans report zero violations; incomplete colour checks are not treated as passes. |
@@ -40,16 +40,24 @@ The final CSS change affects portrait service cards only. Valid unchanged landsc
 
 Nearby desktop samples used outer 914×600 and 915×600, with measured inner widths 906/907. These are not claimed as exact 900/901 inner-breakpoint tests. Each report records actual frame sizes in check evidence. All sizes are CSS viewport emulation, not physical phones.
 
-30 retained repair screenshots were opened at readable size and reviewed. `review-ledger.json` records engine, state, outer viewport, source merge commit, observation and whether later evidence supersedes the image. All raw screenshots and reports are retained; passing machine checks never substitute for visual inspection. Two transient live Chrome screenshots were also inspected, one before the Quote transition painted and one settled; they are not counted as retained screenshots. Total repair captures: 32, below the routine ceiling of 40.
+38 retained repair screenshots were opened at readable size and reviewed, including seven new Chrome captures and the final deployed-preview capture. `review-ledger.json` records engine, state, outer viewport, source merge commit, observation and whether later evidence supersedes the image. All raw screenshots and reports are retained; passing machine checks never substitute for visual inspection. Two transient live Chrome screenshots were also inspected, one before the Quote transition painted and one settled; they are not counted as retained screenshots. Total repair captures: 40, comprising 38 retained/inspected images and the two earlier transient Chrome images. No further captures were added.
 
 Source comparison confirms product edits are confined to the Drilling demo. Shared navigation/analytics, indexing configuration and other demos are unchanged. QA runners and evidence do not change production content. No messages, orders, quotes or payments were transmitted. Only safe local form data was used.
 
-## Exact remaining limits
+## Completed missing checks — supersedes earlier execution limits
+
+Only the missing Chrome and final-preview work was run in this continuation; no product file was changed. Run https://github.com/rkdb-nz/TabLab/actions/runs/39878129677 at QA head cc52e8c125556e682aeca4abc99745585f51c445 completed successfully. Chromium 151.0.7922.34 passed the five remaining outer CSS sizes: 1440×900, 390×844, 844×390, 320×568 and 780×300. The report records 77 checks, zero assertion failures, zero page exceptions and no first-party asset HTTP errors. The normal Chrome menu/form smoke sample and native 200% zoom completed; previous Firefox/WebKit results and unchanged wrapper evidence were reused. Together these complete the planned nine browser/viewport combinations.
+
+Native zoom used the existing Chrome extension zoom helper, not CSS magnification. The API returned 2.0; devicePixelRatio changed from 1 to 2; the direct demo CSS viewport changed from 1440×900 to 720×450. Heading width/scroll width are both 193px. Close remains y10–54 in Quote at that zoom. The actual zoom screenshot was inspected.
+
+The exact final deployed preview URL above opened successfully in hosted Chrome at 1363×936. Menu and Quote interactions worked, the Quote-only notice was visible in the inspected final-preview.jpg, and closing returned focus to MENU. Browser logs contained extension metadata errors from a chrome-extension:// URL; they are not site failures. The earlier usage-limit rejection and failed Ctrl+Plus attempt are superseded by these successful checks.
+
+## Historical execution limits (resolved where noted above)
 
 - Chromium's hosted setup hit its 180-second limit during Ubuntu package installation, exit code 124, before launching the repair sample. The planned Chromium five-size sample was not passed. Available Firefox checks covered the failing narrow/short conditions; this does not fill every missing Chromium combination.
 - A direct hosted Chrome Ctrl+Plus attempt left viewport 1363×936 and devicePixelRatio 1 unchanged. Native 200% zoom retesting is unverified. The Firefox outer 720×450 reflow sample is a different test and is not represented as equivalent native zoom evidence.
 - Direct Chrome preview interaction and settled Quote inspection succeeded on earlier repair preview 2220753e; source c614f19's final preview deployment was confirmed by Cloudflare's GitHub check. Opening that final preview in Chrome was rejected by automatic approval review because the usage limit had been reached. It was not executed, and no alternate browser/network route was used to bypass the rejection.
-- Hosted tests served checked-out source locally. The latest preview's deployed commit is established by the deployment check; its final network/browser render was not inspected. Source screenshots are not presented as final deployed-page screenshots.
+- Hosted tests served checked-out source locally. The latest preview's deployed commit is established by the deployment check; its final network/browser render was not inspected at the earlier handoff. The completion above now supplies a separately identified deployed-page screenshot; source screenshots remain labelled as source screenshots.
 - No physical Samsung/iPhone, actual Safari/iOS, virtual-keyboard/safe-area, real screen-reader or delivery certification. No independent second-agent review; optional in routine mode.
 
 Original ZIPs, machine reports and the review ledger are committed beside this report, beyond Actions artifact expiry. PR: https://github.com/rkdb-nz/TabLab/pull/67 .

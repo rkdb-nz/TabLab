@@ -388,5 +388,109 @@
     "visually_inspected": true,
     "status": "pass",
     "observation": "Complete service words fit their cards; no title/image overlap or vertical clipping."
+  },
+  {
+    "file": "chrome-completion/chromium/1440x900-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-home",
+    "source_merge_commit": "95789d3cc8e0a34e9665747d53f2f57f14a17cdb",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Chrome landing composition fits; service text remains within its cards."
+  },
+  {
+    "file": "chrome-completion/chromium/390x844-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "source_merge_commit": "95789d3cc8e0a34e9665747d53f2f57f14a17cdb",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Chrome landing composition fits; service text remains within its cards."
+  },
+  {
+    "file": "chrome-completion/chromium/844x390-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      844,
+      390
+    ],
+    "state": "844x390-home",
+    "source_merge_commit": "95789d3cc8e0a34e9665747d53f2f57f14a17cdb",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Chrome landing composition fits; service text remains within its cards."
+  },
+  {
+    "file": "chrome-completion/chromium/320x568-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      320,
+      568
+    ],
+    "state": "320x568-home",
+    "source_merge_commit": "95789d3cc8e0a34e9665747d53f2f57f14a17cdb",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Chrome landing composition fits; service text remains within its cards."
+  },
+  {
+    "file": "chrome-completion/chromium/780x300-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-home",
+    "source_merge_commit": "95789d3cc8e0a34e9665747d53f2f57f14a17cdb",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Chrome landing composition fits; service text remains within its cards."
+  },
+  {
+    "file": "chrome-completion/chromium/780x300-completed-quote.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-completed-quote",
+    "source_merge_commit": "95789d3cc8e0a34e9665747d53f2f57f14a17cdb",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Short-landscape Close stays visible and the local no-send confirmation is readable after internal scrolling."
+  },
+  {
+    "file": "chrome-completion/chromium/native-200-home.png",
+    "engine": "chromium",
+    "outer_css_viewport": [
+      720,
+      450
+    ],
+    "state": "native 200 percent zoom",
+    "source_merge_commit": "95789d3cc8e0a34e9665747d53f2f57f14a17cdb",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Native browser zoom 2.0 confirmed: DPR 1\u21922, viewport 1440\u00d7900\u2192720\u00d7450. Heading and proof separated, CTA inside hero, service text fits vertically."
+  },
+  {
+    "file": "final-preview.jpg",
+    "engine": "hosted Chrome",
+    "outer_css_viewport": [
+      1363,
+      936
+    ],
+    "state": "Final deployed preview, Quote open",
+    "source_product_commit": "c614f19a77c1e298095f6984effa9bb6c5cd876a",
+    "visually_inspected": true,
+    "status": "pass",
+    "observation": "Exact final preview URL opened; menu and Quote respond; Quote-only notice and form fit; Close returns focus to MENU."
   }
 ]
