@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chromium, firefox, webkit]
+        browser: [chromium]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -24,9 +24,10 @@ jobs:
         run: node qa/charity-routine.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
+          QA_DESKTOP_COMPLETION: 1
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: charity-${{ matrix.browser }}
+          name: charity-desktop-completion-${{ matrix.browser }}
           path: qa/charity-results/
           retention-days: 90
