@@ -1,0 +1,83 @@
+/* Approved MG-01–08 repairs. Background artwork and metadata remain pending. */
+.sr-only{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important;border:0!important}
+.demo-notice{position:absolute;z-index:6;bottom:4px;left:50%;transform:translateX(-50%);margin:0;padding:4px 10px;border-radius:4px;background:#062c22;color:#fff;font:700 12px/1.3 Arial,sans-serif;text-align:center;max-width:95%;width:max-content}
+body.mini-golf-final .overlay{position:fixed!important;inset:0!important;padding:16px!important;display:grid!important;place-items:center!important;overflow:hidden!important;z-index:30!important;width:100%!important;height:100%!important}
+body.mini-golf-final .overlay[hidden]{display:none!important}
+body.mini-golf-final .overlay .overlay-panel{position:relative!important;display:block!important;width:min(1100px,100%)!important;max-height:100%!important;min-height:0!important;margin:0!important;padding:0 24px 24px!important;overflow:auto!important;overscroll-behavior:contain;scrollbar-gutter:stable;border-radius:18px!important}
+body.mini-golf-final .overlay-close{position:sticky!important;top:0!important;left:calc(100% - 44px)!important;right:auto!important;display:grid!important;width:44px!important;height:44px!important;min-height:44px!important;margin:0 0 4px auto!important;z-index:5!important;background:#062c22!important;color:#fff!important;border-radius:0 0 8px 8px!important;opacity:1!important;transform:none!important}
+body.mini-golf-final .overlay .eyebrow{font-size:14px!important;line-height:1.4!important;letter-spacing:.12em!important;opacity:1!important;margin:0 0 8px!important}
+body.mini-golf-final .overlay h1{font-size:clamp(28px,5vw,54px)!important;line-height:1.1!important;margin:0 0 20px!important;overflow-wrap:anywhere}
+body.mini-golf-final .overlay h2{font-size:20px!important;line-height:1.25!important;margin:8px 0!important}
+body.mini-golf-final .overlay p,body.mini-golf-final .overlay .lead,body.mini-golf-final .panel-note{font-size:16px!important;line-height:1.5!important}
+body.mini-golf-final .overlay .course-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important}
+body.mini-golf-final .overlay .events-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:14px!important}
+body.mini-golf-final .overlay .course-grid article,body.mini-golf-final .overlay .events-grid article{display:block!important;padding:16px!important;min-width:0}
+body.mini-golf-final .overlay .course-grid b{width:36px!important;height:36px!important;font-size:16px!important}
+body.mini-golf-final .story-badge{width:min(220px,70%);margin:20px auto!important}
+body.mini-golf-final .overlay label{font-size:16px!important;line-height:1.4!important;gap:6px!important}
+body.mini-golf-final .overlay form{display:grid!important;grid-template-columns:1fr 1fr!important;gap:16px!important}
+body.mini-golf-final .overlay form .wide{grid-column:1/-1!important}
+body.mini-golf-final .overlay input,body.mini-golf-final .overlay select,body.mini-golf-final .overlay textarea{font:16px/1.4 Arial,sans-serif!important;min-height:44px!important;padding:10px!important;max-width:100%;height:auto!important}
+body.mini-golf-final .overlay textarea{min-height:76px!important;resize:vertical!important}
+body.mini-golf-final .primary-action{font-size:16px!important;line-height:1.4!important;min-height:44px!important;padding:12px 18px!important;margin:12px 0 0!important}
+body.mini-golf-final .form-status{font-size:16px!important;line-height:1.4!important;min-height:0!important}
+body.mini-golf-final :is(button,input,select,textarea,a):focus-visible{outline:3px solid #fff!important;outline-offset:2px!important;box-shadow:0 0 0 6px #062c22!important}
+body.mini-golf-final .overlay--story .overlay-panel{background:linear-gradient(145deg,#653917,#814912)!important}
+@media(max-width:1000px){
+ html,body.mini-golf-final,body.mini-golf-final .viewport,body.mini-golf-final .stage{width:100%!important;height:100%!important;min-width:0!important;min-height:0!important;max-height:100%!important;overflow:hidden!important}
+ body.mini-golf-final .stage{aspect-ratio:auto!important;transform:none!important}
+ body.mini-golf-final .artwork,body.mini-golf-final .brand-mask,body.mini-golf-final .stage:before{display:none!important}
+ body.mini-golf-final .mobile-home{position:absolute!important;inset:0!important;display:grid!important;grid-template-columns:1fr!important;grid-template-rows:minmax(70px,1fr) 136px 156px 84px!important;width:100%!important;height:100%!important;min-height:0!important;padding:0!important;gap:0!important;overflow:hidden!important;color:#fff!important;text-shadow:none!important}
+ body.mini-golf-final .mobile-header{position:absolute!important;inset:0 0 auto!important;height:68px!important;display:grid!important;grid-template-columns:minmax(110px,1fr) 42px 48px!important;padding:6px 10px 4px 40px!important;gap:6px!important;align-items:center!important;background:#011b10f5!important;z-index:5}
+ body.mini-golf-final .mobile-identity{height:58px!important;width:100%!important;background-position:left center!important}
+ body.mini-golf-final .mobile-palm{height:50px!important;width:42px!important}
+ body.mini-golf-final .mobile-nav-toggle{display:grid!important;width:48px!important;height:48px!important;min-height:44px!important}
+ body.mini-golf-final .mobile-hero-photo{grid-column:1!important;grid-row:1!important;visibility:visible!important;clip-path:none!important;margin:0!important;background-size:cover!important}
+ body.mini-golf-final .mobile-hero-copy{grid-column:1!important;grid-row:2!important;display:flex!important;justify-content:center!important;align-items:center!important;padding:5px 8px!important;margin:0!important;clip-path:none!important;border-radius:0!important;background:#f5e8c7!important;transform:none!important;overflow:visible!important}
+ body.mini-golf-final .mobile-kicker{font-size:12px!important;color:#205b14!important;line-height:1.2!important;margin:0!important}
+ body.mini-golf-final .mobile-home h1{color:#061b10!important;font-size:clamp(32px,11vw,54px)!important;line-height:1.05!important;letter-spacing:-.045em!important;transform:none!important;width:100%!important;margin:0!important}
+ body.mini-golf-final .mobile-tagline{font-size:15px!important;line-height:1.2!important;background:#28610e!important;color:#fff!important;margin:2px 0!important}
+ body.mini-golf-final .mobile-book{width:min(260px,80%)!important;min-height:44px!important;font-size:17px!important;margin-top:4px!important}
+ body.mini-golf-final .mobile-highlights{grid-column:1!important;grid-row:3!important;display:grid!important;grid-template-columns:1fr!important;grid-template-rows:repeat(3,minmax(0,1fr))!important;padding:4px 12px!important;gap:5px!important}
+ body.mini-golf-final .mobile-highlights article{display:grid!important;grid-template-columns:minmax(0,60%) minmax(0,40%)!important;grid-template-rows:1fr!important;border-radius:12px!important;overflow:hidden!important}
+ body.mini-golf-final .mobile-highlights article>div{grid-column:1!important;grid-row:1!important;display:grid!important;grid-template-columns:30px minmax(0,1fr)!important;padding:4px!important;gap:5px!important;align-items:center!important}
+ body.mini-golf-final .mobile-highlights b{width:28px!important;font-size:14px!important}
+ body.mini-golf-final .mobile-highlights strong{font-size:14px!important;line-height:1.15!important;white-space:normal!important;overflow-wrap:normal!important}
+ body.mini-golf-final .highlight--parties strong,body.mini-golf-final .highlight--parties b{color:#062c22!important}
+ body.mini-golf-final .highlight-photo{grid-column:2!important;grid-row:1!important;margin:3px!important;border-radius:9px!important}
+ body.mini-golf-final .mobile-details{grid-column:1!important;grid-row:4!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;margin:3px 8px 24px!important;overflow:visible!important;padding:2px!important;border-radius:8px!important}
+ body.mini-golf-final .mobile-details>div{display:block!important;padding:2px 4px!important}
+ body.mini-golf-final .mobile-details b{display:none!important}
+ body.mini-golf-final .mobile-details strong,body.mini-golf-final .mobile-details small{font-size:12px!important;line-height:1.2!important;white-space:normal!important;display:block!important}
+ body.mini-golf-final .hotspots{display:none!important;position:absolute!important;inset:64px 8px auto auto!important;transform:none!important;width:min(290px,calc(100% - 16px))!important;height:auto!important;padding:8px!important;grid-template-columns:1fr!important;grid-template-rows:repeat(4,48px)!important;gap:6px!important;background:#03271f!important;border:1px solid #849b3c!important;border-radius:14px!important;z-index:10!important}
+ body.mini-golf-final.mobile-nav-open .hotspots{display:grid!important}
+ body.mini-golf-final .hotspot{position:relative!important;inset:auto!important;width:auto!important;height:48px!important;min-height:44px!important;border-radius:8px!important}
+ body.mini-golf-final .hotspot:after{font-size:14px!important;inset:0!important}
+ body.mini-golf-final .overlay{padding:8px 8px 8px 38px!important}
+ body.mini-golf-final .overlay .overlay-panel{padding:0 14px 20px!important}
+ body.mini-golf-final .overlay .events-grid,body.mini-golf-final .overlay .course-grid{grid-template-columns:1fr!important}
+ body.mini-golf-final .overlay form{grid-template-columns:1fr!important}
+ body.mini-golf-final .overlay .eyebrow{display:block!important}
+ body.mini-golf-final .demo-notice{font-size:12px!important;bottom:2px!important;padding:2px 6px!important}
+}
+@media(max-width:1000px) and (orientation:landscape){
+ body.mini-golf-final .mobile-home{grid-template-columns:46% 54%!important;grid-template-rows:50px minmax(68px,1fr) 62px 68px!important}
+ body.mini-golf-final .mobile-header{height:50px!important;grid-template-columns:150px 36px 48px!important;padding:2px 10px 2px 40px!important}
+ body.mini-golf-final .mobile-identity{height:46px!important}
+ body.mini-golf-final .mobile-palm{height:42px!important;width:36px!important}
+ body.mini-golf-final .mobile-nav-toggle{height:44px!important;width:48px!important;min-height:44px!important}
+ body.mini-golf-final .mobile-hero-copy{grid-column:1!important;grid-row:2!important;padding:2px!important}
+ body.mini-golf-final .mobile-home h1{font-size:clamp(28px,5.3vw,44px)!important}
+ body.mini-golf-final .mobile-book{display:none!important}
+ body.mini-golf-final .mobile-hero-photo{grid-column:2!important;grid-row:2!important}
+ body.mini-golf-final .mobile-highlights{grid-column:1/-1!important;grid-row:3!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;grid-template-rows:1fr!important;padding:3px 8px!important}
+ body.mini-golf-final .mobile-highlights article{grid-template-columns:65% 35%!important}
+ body.mini-golf-final .mobile-details{grid-column:1/-1!important;grid-row:4!important}
+ body.mini-golf-final .hotspots{inset:50px 8px auto auto!important}
+ body.mini-golf-final .overlay .course-grid,body.mini-golf-final .overlay .events-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important}
+ body.mini-golf-final .overlay form{grid-template-columns:1fr 1fr!important}
+}
+@media(min-width:901px) and (max-width:1000px){body.mini-golf-final .mobile-home{background:#032313 url('../assets/images/puttputt-hero-optimised.webp') center/cover no-repeat!important}body.mini-golf-final .mobile-identity{background:url('../assets/images/mobile-logo-transparent.webp') left center/contain no-repeat}body.mini-golf-final .mobile-brand,body.mini-golf-final .mobile-location{opacity:0}body.mini-golf-final .mobile-palm{background:url('../assets/images/mobile-palm-transparent.webp') center/contain no-repeat;color:transparent}body.mini-golf-final .mobile-hero-photo{background:url('../assets/images/mobile-hero.webp') center/cover no-repeat}body.mini-golf-final .mobile-nav-toggle{place-content:center;gap:5px;border:2px solid #d7dc28;border-radius:12px;background:#07110b}body.mini-golf-final .mobile-nav-toggle span{width:26px;height:4px;background:#fff}body.mini-golf-final .highlight--course{background:#075c31}body.mini-golf-final .highlight--parties{background:#f49a08}body.mini-golf-final .highlight--snacks{background:#08788b}body.mini-golf-final .highlight--course .highlight-photo{background:url('../assets/images/mobile-card-course.webp') center/cover}body.mini-golf-final .highlight--parties .highlight-photo{background:url('../assets/images/mobile-card-parties.webp') center/cover}body.mini-golf-final .highlight--snacks .highlight-photo{background:url('../assets/images/mobile-card-snacks.webp') center/cover}body.mini-golf-final .mobile-details{background:#f5e9ca;color:#082c1a}body.mini-golf-final .hotspots .hotspot{background:#07412d}body.mini-golf-final .hotspot:after{display:grid;place-items:center;color:#fff;background:transparent}body.mini-golf-final .hotspot--book:after{content:'BOOK NOW'}body.mini-golf-final .mobile-book{border:0;border-radius:10px;background:#e0ec16;color:#062c22}body.mini-golf-final .mobile-tagline{padding:1px 8px}body.mini-golf-final .mobile-highlights b{border:2px solid #e4df25;border-radius:50%;display:grid;place-items:center}body.mini-golf-final .mobile-highlights strong{color:#fff}body.mini-golf-final .mobile-details small{color:#151515}}
+@media(max-width:1000px){body.mini-golf-final .mobile-hero-photo{align-self:stretch!important;justify-self:stretch!important;width:100%!important;height:100%!important;background-image:url('../assets/images/mobile-hero.webp')!important}body.mini-golf-final .mobile-hero-copy{align-self:stretch!important;height:100%!important}}
+@media(max-width:1000px) and (orientation:landscape){body.mini-golf-final .mobile-hero-copy{background:#f5e8c7!important;clip-path:none!important}}
+@media(max-width:1000px) and (orientation:landscape) and (max-height:350px){body.mini-golf-final .mobile-home{grid-template-rows:50px minmax(78px,1fr) 58px 62px!important}body.mini-golf-final .mobile-home h1{font-size:32px!important}body.mini-golf-final .mobile-tagline{font-size:14px!important}}

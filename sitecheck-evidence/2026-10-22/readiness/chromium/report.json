@@ -1,0 +1,59 @@
+{
+  "kind": "sitecheck-readiness",
+  "target": "Minigolf",
+  "commit": "c4f75994e474c9253a6b8c332bdc98624095a066",
+  "playwrightVersion": "1.62.1",
+  "control": {
+    "role": "button",
+    "name": "Open The Course"
+  },
+  "expected": {
+    "role": "dialog",
+    "name": "The Course"
+  },
+  "requiredEngines": [
+    "chromium",
+    "firefox",
+    "webkit"
+  ],
+  "timestamp": "2026-10-21T19:48:40.600Z",
+  "status": "Machine readiness passed—screenshot inspection pending",
+  "source": {
+    "status": "passed",
+    "file": "/home/runner/work/TabLab/TabLab/public/boardroom/billboard/demos/mini-golf/index.html",
+    "bytes": 884
+  },
+  "browsers": [
+    {
+      "name": "chromium",
+      "status": "machine checks passed; visual inspection pending",
+      "stages": {
+        "launch": "passed",
+        "interaction": "passed",
+        "screenshotCapture": "passed"
+      },
+      "captures": [
+        {
+          "file": "chromium-1366x768.png",
+          "requested": {
+            "width": 1366,
+            "height": 768
+          },
+          "actual": {
+            "width": 1366,
+            "height": 768
+          },
+          "clickVerified": true,
+          "screenshotCaptured": true,
+          "visuallyInspected": false
+        }
+      ],
+      "version": "151.0.7922.34"
+    }
+  ],
+  "screenshotInspection": "pending: a reviewer must open every readiness capture",
+  "limitations": [
+    "Readiness only; not a website audit or physical-device test."
+  ],
+  "testedURL": "http://127.0.0.1:42213/boardroom/billboard/demos/mini-golf/"
+}

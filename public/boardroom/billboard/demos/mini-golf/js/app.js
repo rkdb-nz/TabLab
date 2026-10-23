@@ -31,7 +31,9 @@
     setBackgroundInactive(false);
     activeOverlay = null;
     if (restoreFocus && lastTrigger?.isConnected) {
-      lastTrigger.focus({ preventScroll: true });
+      const visible = el => el && !el.closest('[hidden]') && el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden';
+      const target = visible(lastTrigger) ? lastTrigger : visible(navToggle) ? navToggle : document.querySelector('.mobile-book');
+      target?.focus({ preventScroll: true });
       lastTrigger = null;
     }
   }
@@ -46,6 +48,7 @@
     activeOverlay = overlay;
     setBackgroundInactive(true);
     document.body.classList.add('overlay-open');
+    overlay.querySelector('.overlay-panel').scrollTop = 0;
     overlay.querySelector('.overlay-close')?.focus({ preventScroll: true });
   }
 
@@ -107,11 +110,24 @@
     else trapFocus(e);
   });
 
+  const dateInput = document.querySelector('[name="date"]');
+  function refreshDate() {
+    const now = new Date();
+    const today = [now.getFullYear(), String(now.getMonth()+1).padStart(2,'0'), String(now.getDate()).padStart(2,'0')].join('-');
+    dateInput.min = today;
+    dateInput.setCustomValidity(dateInput.value && dateInput.value < today ? 'Choose today or a future date.' : '');
+  }
+  refreshDate();
+  dateInput.addEventListener('input', refreshDate);
+  dateInput.addEventListener('focus', refreshDate);
+  window.addEventListener('focus', refreshDate);
   document.getElementById('booking-form')?.addEventListener('submit', e => {
     e.preventDefault();
+    refreshDate();
+    if (!e.currentTarget.reportValidity()) return;
     const status = e.currentTarget.querySelector('.form-status');
-    status.textContent = 'Thanks for booking with us! We’ll be in touch shortly.';
-    e.currentTarget.querySelector('button[type="submit"]').disabled = true;
+    status.textContent = 'Demo complete. Nothing was sent and no booking has been made.';
+
   });
 
   window.addEventListener('resize', scaleStage);

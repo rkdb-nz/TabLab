@@ -1,0 +1,48 @@
+{
+  "kind": "tool readiness only",
+  "status": "Passed",
+  "testedCommit": "c4f75994e474c9253a6b8c332bdc98624095a066",
+  "branchHead": "d8f9315f22664e637b492008368e49110202f448",
+  "workflowRun": 39664780881,
+  "sourceBase": "2767653f5208cd3b4a5dcbae4a1f28a0068d6be3",
+  "reviewDateNZ": "2026-10-22",
+  "captures": [
+    {
+      "engine": "chromium",
+      "version": "151.0.7922.34",
+      "capture": "chromium/chromium-1366x768.png",
+      "visuallyInspected": true,
+      "reviewer": "lead",
+      "observations": "Opened and inspected the 1366x768 PNG. The Course dialog is visible with its heading, four numbered course cards, close control and bottom note. Tab Lab frame remains visible. Background is blurred."
+    },
+    {
+      "engine": "firefox",
+      "version": "153.0",
+      "capture": "firefox/firefox-1366x768.png",
+      "visuallyInspected": true,
+      "reviewer": "lead",
+      "observations": "Opened and inspected the 1366x768 PNG. The Course dialog and all four course cards are visible. The background stays recognisable under a dark overlay. This is a rendering difference, not a readiness failure."
+    },
+    {
+      "engine": "webkit",
+      "version": "26.5",
+      "capture": "webkit/webkit-1366x768.png",
+      "visuallyInspected": true,
+      "reviewer": "lead",
+      "observations": "Opened and inspected the 1366x768 PNG. The Course dialog, four cards, close control and bottom note are visible inside the Tab Lab frame. The background remains recognisable under a dark overlay."
+    }
+  ],
+  "limitations": [
+    "Desktop readiness only; full sitecheck checklist and portrait/landscape matrix have not been run.",
+    "Checked-out source served locally on hosted Linux runners, not real phones or actual Safari/iOS.",
+    "Remote requests and non-GET/HEAD traffic were blocked during this proof.",
+    "Raw machine reports intentionally retain their original inspection-pending status; this separate ledger records actual review."
+  ],
+  "independentReview": {
+    "reviewer": "readiness_review",
+    "allThreeReportsRead": true,
+    "allThreeScreenshotsInspected": true,
+    "verdict": "Three-engine target interaction and capture readiness is adequate; no blocking mismatch. Full audit not performed.",
+    "observations": "All screenshots show The Course dialog with four readable cards, close control and bottom note. Chromium blurs the background; Firefox and WebKit retain recognisable darkened artwork."
+  }
+}

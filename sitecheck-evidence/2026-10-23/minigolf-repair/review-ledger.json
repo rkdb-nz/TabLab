@@ -1,0 +1,252 @@
+{
+  "kind": "targeted routine repair review",
+  "product_commit": "ea14fb18d910d0c1b7a853c99064996c4b8fde40",
+  "qa_recovery_head": "fa387108b41ab875ce1db359103880bf2012a17c",
+  "runs": [
+    39840677468,
+    39841306520,
+    39843152637
+  ],
+  "screenshots_captured": 30,
+  "screenshots_inspected": 30,
+  "entries": [
+    {
+      "file": "first/chromium/1440x900-book.png",
+      "sha256": "3677d9fbea63cdb165314247a1f17ab24fbf1d7d827186633409d7d0b27e9e24",
+      "bytes": 309207,
+      "visuallyInspected": true,
+      "observation": "Inspected diagnostic capture; interaction run stopped on an inaccessible-region lookup. Superseded for changed photo layout."
+    },
+    {
+      "file": "first/chromium/1440x900-home.png",
+      "sha256": "f92d70d478f3fc326ccfa7f9e40bbd4e46ceba9ac0c3fd142244c3266f02753e",
+      "bytes": 1621001,
+      "visuallyInspected": true,
+      "observation": "Inspected diagnostic capture; interaction run stopped on an inaccessible-region lookup. Superseded for changed photo layout."
+    },
+    {
+      "file": "first/chromium/320x568-book.png",
+      "sha256": "d5c8c433a2ea5019bd6b118079cbbe126a5ba5765f5c48605c7482712e3c38c5",
+      "bytes": 73261,
+      "visuallyInspected": true,
+      "observation": "Inspected diagnostic capture; interaction run stopped on an inaccessible-region lookup. Superseded for changed photo layout."
+    },
+    {
+      "file": "first/chromium/320x568-home.png",
+      "sha256": "a6e237adb8eaa405acca8094ace2a3500cd5d5ffcfb609d61f789acddc78a86c",
+      "bytes": 143344,
+      "visuallyInspected": true,
+      "observation": "Inspected diagnostic capture; interaction run stopped on an inaccessible-region lookup. Superseded for changed photo layout."
+    },
+    {
+      "file": "first/chromium/390x844-book.png",
+      "sha256": "68d333ea8c2e761fca60c45f7227dd0b2df7072535548ca6b414ab5987f1af60",
+      "bytes": 111231,
+      "visuallyInspected": true,
+      "observation": "Inspected diagnostic capture; interaction run stopped on an inaccessible-region lookup. Superseded for changed photo layout."
+    },
+    {
+      "file": "first/chromium/390x844-home.png",
+      "sha256": "a9b5662f8d3d8c18e4c31f6af501775a7f24b4a25668161993245476e8a177b5",
+      "bytes": 363035,
+      "visuallyInspected": true,
+      "observation": "Inspected diagnostic capture; interaction run stopped on an inaccessible-region lookup. Superseded for changed photo layout."
+    },
+    {
+      "file": "first/chromium/780x300-book.png",
+      "sha256": "e12fb68c3dcd02e4823e328ac621b57cbfbd675e1f1c5911c72f30c924cbbe69",
+      "bytes": 82491,
+      "visuallyInspected": true,
+      "observation": "Inspected diagnostic capture; interaction run stopped on an inaccessible-region lookup. Superseded for changed photo layout."
+    },
+    {
+      "file": "first/chromium/780x300-home.png",
+      "sha256": "7130a0c7f3fc88787ce6a476c5516dfa919478d5daa5b6db13577ebcd056c033",
+      "bytes": 170218,
+      "visuallyInspected": true,
+      "observation": "Inspected diagnostic capture; interaction run stopped on an inaccessible-region lookup. Superseded for changed photo layout."
+    },
+    {
+      "file": "first/chromium/844x390-book.png",
+      "sha256": "81def776cdbc618de9412fa01bbac39cda8855407b0b2486ab61793cb03737d6",
+      "bytes": 100019,
+      "visuallyInspected": true,
+      "observation": "Inspected diagnostic capture; interaction run stopped on an inaccessible-region lookup. Superseded for changed photo layout."
+    },
+    {
+      "file": "first/chromium/844x390-home.png",
+      "sha256": "2d56483034b46c44d3764bba0b20ecafd279e2bcd8720b7dcb42d1ca33c49c99",
+      "bytes": 266439,
+      "visuallyInspected": true,
+      "observation": "Inspected diagnostic capture; interaction run stopped on an inaccessible-region lookup. Superseded for changed photo layout."
+    },
+    {
+      "file": "first/chromium/900x600-book.png",
+      "sha256": "bd16443148dc177a961c5ad85ecc1391b1866c06ec8f2733ccbc49253469627f",
+      "bytes": 136624,
+      "visuallyInspected": true,
+      "observation": "Inspected diagnostic capture; interaction run stopped on an inaccessible-region lookup. Superseded for changed photo layout."
+    },
+    {
+      "file": "first/chromium/900x600-home.png",
+      "sha256": "60ecb9950a70a63883ed724a765037072772bfd5d948ceb6c705c085a7054b53",
+      "bytes": 96643,
+      "visuallyInspected": true,
+      "observation": "Inspected diagnostic capture; interaction run stopped on an inaccessible-region lookup. Superseded for changed photo layout."
+    },
+    {
+      "file": "first/chromium/901x600-book.png",
+      "sha256": "4ee2e7978bd56fb405a2f247204116001da1e094afa35d87172cdab2b76b7e73",
+      "bytes": 137047,
+      "visuallyInspected": true,
+      "observation": "Inspected diagnostic capture; interaction run stopped on an inaccessible-region lookup. Superseded for changed photo layout."
+    },
+    {
+      "file": "first/chromium/901x600-home.png",
+      "sha256": "50b126753bd6c22ed5f2be6178fd1557fbfd6862b029879f3a19f478bcd09c3b",
+      "bytes": 96492,
+      "visuallyInspected": true,
+      "observation": "Inspected diagnostic capture; interaction run stopped on an inaccessible-region lookup. Superseded for changed photo layout."
+    },
+    {
+      "file": "first/chromium/routine-report.json",
+      "sha256": "1ae94273c1672e3566e7919d5897c22916f1562e10427a2819727494e8d1025c",
+      "bytes": 28489,
+      "visuallyInspected": false,
+      "observation": "Machine report retained unchanged."
+    },
+    {
+      "file": "final/firefox/1440x900-home.png",
+      "sha256": "71164de4b17b85ff345e1af88e1e404e14050d8b98cc23479667b87275ba9ed8",
+      "bytes": 2144527,
+      "visuallyInspected": true,
+      "observation": "Inspected final landing: labels and demo notice readable; layout within viewport."
+    },
+    {
+      "file": "final/firefox/390x844-home.png",
+      "sha256": "1f3ea41f8595344b73d5811be033337b7fb38743692279c0e3c63f3888a9a1ad",
+      "bytes": 461416,
+      "visuallyInspected": true,
+      "observation": "Inspected final landing: labels and demo notice readable; layout within viewport."
+    },
+    {
+      "file": "final/firefox/routine-report.json",
+      "sha256": "ca92f5e2ee0dadc9a498b34bc266ea5cd95d1a77d46179040fdb80f646128ac9",
+      "bytes": 10438,
+      "visuallyInspected": false,
+      "observation": "Machine report retained unchanged."
+    },
+    {
+      "file": "final/webkit/1440x900-home.png",
+      "sha256": "38c6c7de3fc38222431e55720d95dfca9975751f81f928fde5b5f9ce3e74996c",
+      "bytes": 1795150,
+      "visuallyInspected": true,
+      "observation": "Inspected final landing: labels and demo notice readable; layout within viewport."
+    },
+    {
+      "file": "final/webkit/390x844-home.png",
+      "sha256": "91f1a213e72049e56f10898b99878b0e81b6142821400452fc649e7ed19cac94",
+      "bytes": 415745,
+      "visuallyInspected": true,
+      "observation": "Inspected final landing: labels and demo notice readable; layout within viewport."
+    },
+    {
+      "file": "final/webkit/routine-report.json",
+      "sha256": "b61529962776e426090ffbcd30edb2432f0cefe5a3f0bde467009b11666897ca",
+      "bytes": 9370,
+      "visuallyInspected": false,
+      "observation": "Machine report retained unchanged."
+    },
+    {
+      "file": "recovery/chromium/1440x900-home.png",
+      "sha256": "f92d70d478f3fc326ccfa7f9e40bbd4e46ceba9ac0c3fd142244c3266f02753e",
+      "bytes": 1621001,
+      "visuallyInspected": true,
+      "observation": "Inspected final landing: labels and demo notice readable; layout within viewport."
+    },
+    {
+      "file": "recovery/chromium/320x568-book.png",
+      "sha256": "14390a0ab541bc46fb004f4bd91047a181d5200435e5eddf36808003213f7a3d",
+      "bytes": 73484,
+      "visuallyInspected": true,
+      "observation": "Inspected readable dialog and sticky Close; additional content is reached by internal scrolling, verified in machine measurements."
+    },
+    {
+      "file": "recovery/chromium/320x568-course.png",
+      "sha256": "a568f1f7b71c3b6eb04cf8a4d42c8f648749302d10fe5ba2a3ca844291f1419b",
+      "bytes": 85982,
+      "visuallyInspected": true,
+      "observation": "Inspected readable dialog and sticky Close; additional content is reached by internal scrolling, verified in machine measurements."
+    },
+    {
+      "file": "recovery/chromium/320x568-home.png",
+      "sha256": "62ab805f58189cc229bc779be553bd31eab0c2ae31ec4d5c75b1fc6787379f66",
+      "bytes": 152656,
+      "visuallyInspected": true,
+      "observation": "Inspected final landing: labels and demo notice readable; layout within viewport."
+    },
+    {
+      "file": "recovery/chromium/390x844-home.png",
+      "sha256": "079484b3c15e8035b46127ea7dfffea6eacd69bbe5a18e0b9fa34f2e3f4a0f7a",
+      "bytes": 379641,
+      "visuallyInspected": true,
+      "observation": "Inspected final landing: labels and demo notice readable; layout within viewport."
+    },
+    {
+      "file": "recovery/chromium/780x300-home.png",
+      "sha256": "657a6b50344707aa293a7490baacdad26421615961eff8b8c3b1a4cdb7100691",
+      "bytes": 173237,
+      "visuallyInspected": true,
+      "observation": "Inspected final landing: labels and demo notice readable; layout within viewport."
+    },
+    {
+      "file": "recovery/chromium/844x390-home.png",
+      "sha256": "e6786e8caa53e5228eb0b889c4580c14324cd98236efc1f99f1d083df446f70c",
+      "bytes": 264624,
+      "visuallyInspected": true,
+      "observation": "Inspected final landing: labels and demo notice readable; layout within viewport."
+    },
+    {
+      "file": "recovery/chromium/900x600-home.png",
+      "sha256": "853d994bc598a05646a722ed30d7e6c386ce52efdd2215cc87055ac5ec97bb03",
+      "bytes": 475791,
+      "visuallyInspected": true,
+      "observation": "Inspected final landing: labels and demo notice readable; layout within viewport."
+    },
+    {
+      "file": "recovery/chromium/901x600-events.png",
+      "sha256": "c5d6b8a14007c6cfdc00ee07dc647cc536b73c51a3ec75142ca4a9e0715a4de4",
+      "bytes": 195206,
+      "visuallyInspected": true,
+      "observation": "Inspected Events at former failing breakpoint; cards and Close reachable, internal scrolling measured."
+    },
+    {
+      "file": "recovery/chromium/901x600-home.png",
+      "sha256": "cdd568c115f367ab7e11b6875fc143108dc784abd72059f085ccde8d1f9613e8",
+      "bytes": 475693,
+      "visuallyInspected": true,
+      "observation": "Inspected final landing: labels and demo notice readable; layout within viewport."
+    },
+    {
+      "file": "recovery/chromium/901x600-story.png",
+      "sha256": "e93e4fa256000127e9bcd9434f9586d1f0ed1f63b427879524979bb9394ece4e",
+      "bytes": 253148,
+      "visuallyInspected": true,
+      "observation": "Inspected Story at former failing breakpoint; text and Close reachable, internal scrolling measured."
+    },
+    {
+      "file": "recovery/chromium/rotation-course.png",
+      "sha256": "4fac4393c47686d5f46595f1cfac45e802b5ee499b687e3885762d83b3b8238a",
+      "bytes": 127310,
+      "visuallyInspected": true,
+      "observation": "Inspected readable dialog and sticky Close; additional content is reached by internal scrolling, verified in machine measurements."
+    },
+    {
+      "file": "recovery/chromium/routine-report.json",
+      "sha256": "a67a1664e6100ad03d89532f625f1c5d5b2ef1e7049385d4e4e93232967adaea",
+      "bytes": 46977,
+      "visuallyInspected": false,
+      "observation": "Machine report retained unchanged."
+    }
+  ]
+}

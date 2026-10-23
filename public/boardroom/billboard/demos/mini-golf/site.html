@@ -8,11 +8,13 @@
   <title>A Hole in One | Tropical Mini Golf</title>
   <link rel="stylesheet" href="css/style.css?v=grey-final">
   <link rel="stylesheet" href="css/mobile-final.css?v=4">
+  <link rel="stylesheet" href="css/repairs.css?v=1">
 </head>
 <body class="mini-golf-final">
 <main class="viewport" aria-label="A Hole in One tropical mini golf">
     <div class="stage" id="stage">
-      <img class="artwork" src="assets/images/puttputt-hero-text-left.png" alt="Tropical mini golf course with feature cards and Wāperiki map">
+      <section class="sr-only" aria-label="Venue information"><h2>A Hole in One, Wāperiki</h2><p>Every round an adventure. Tropical vibes, tricky holes and unforgettable memories. An 18-hole mini golf course for all ages, with parties, snacks and drinks. Open seven days, 9:00am–8:00pm. Find us at 15 Palm Drive, Wāperiki. The illustrated map is decorative; this is a fictional demo venue.</p></section>
+      <img width="1536" height="1024" class="artwork" src="assets/images/puttputt-hero-text-left-optimised.webp" alt="Tropical mini golf course with feature cards and Wāperiki map">
 
       <section class="mobile-home" aria-label="A Hole in One introduction">
         <header class="mobile-header">
@@ -105,7 +107,7 @@
           <div>
             <p class="eyebrow">Your next round starts here</p>
             <h1 id="book-title">Book Now</h1>
-            <p class="lead">Send a booking request and we will confirm your tee time.</p>
+            <p class="lead">Try this demonstration form. Nothing is sent and no booking is made.</p>
           </div>
           <form id="booking-form">
             <label>Name<input name="name" autocomplete="name" required></label>
@@ -113,7 +115,7 @@
             <label>Players<select name="players"><option>2 players</option><option>3–4 players</option><option>5–8 players</option><option>9+ players / group</option></select></label>
             <label>Preferred date<input name="date" type="date" required></label>
             <label class="wide">Notes<textarea name="notes" rows="2" placeholder="Preferred time, party details, accessibility needs…"></textarea></label>
-            <button class="primary-action wide" type="submit">Send booking request →</button>
+            <button class="primary-action wide" type="submit">Try demo booking →</button>
             <p class="form-status wide" role="status"></p>
           </form>
         </div>
