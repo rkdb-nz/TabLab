@@ -1,0 +1,572 @@
+{
+  "engine": "chromium",
+  "commit": "c34ad528b8de7edd6b21bd82c699d5a3a277e523",
+  "checks": [
+    {
+      "label": "1440x900 anchored landing",
+      "pass": true
+    },
+    {
+      "label": "1440x900 actual site viewport",
+      "pass": true,
+      "evidence": [
+        1426,
+        845
+      ]
+    },
+    {
+      "label": "1440x900 no trail mailto",
+      "pass": true
+    },
+    {
+      "label": "1440x900 required name",
+      "pass": true
+    },
+    {
+      "label": "1440x900 invalid email",
+      "pass": true
+    },
+    {
+      "label": "1440x900 desktop demo only",
+      "pass": true
+    },
+    {
+      "label": "1440x900 compose hidden",
+      "pass": true
+    },
+    {
+      "label": "1440x900 desktop focus return",
+      "pass": true
+    },
+    {
+      "label": "1440x900 fullscreen return control visible",
+      "pass": true,
+      "evidence": [
+        1440,
+        900
+      ]
+    },
+    {
+      "label": "1440x900 anchored fullscreen return",
+      "pass": true
+    },
+    {
+      "label": "1440x900 fullscreen restored focus",
+      "pass": true
+    },
+    {
+      "label": "1440x900 gallery works",
+      "pass": true
+    },
+    {
+      "label": "390x844 anchored landing",
+      "pass": true
+    },
+    {
+      "label": "390x844 actual site viewport",
+      "pass": true,
+      "evidence": [
+        382,
+        763
+      ]
+    },
+    {
+      "label": "390x844 no trail mailto",
+      "pass": true
+    },
+    {
+      "label": "390x844 story focus",
+      "pass": true
+    },
+    {
+      "label": "390x844 story anchored",
+      "pass": true
+    },
+    {
+      "label": "390x844 story restores tile",
+      "pass": true
+    },
+    {
+      "label": "390x844 diary focus",
+      "pass": true
+    },
+    {
+      "label": "390x844 diary anchored",
+      "pass": true
+    },
+    {
+      "label": "390x844 exactly one accessible diary entry",
+      "pass": true
+    },
+    {
+      "label": "390x844 diary next",
+      "pass": true
+    },
+    {
+      "label": "390x844 diary accessibility sync",
+      "pass": true
+    },
+    {
+      "label": "rotation diary still active",
+      "pass": true
+    },
+    {
+      "label": "390x844 diary restores tile",
+      "pass": true
+    },
+    {
+      "label": "390x844 trail focus",
+      "pass": true
+    },
+    {
+      "label": "390x844 trail anchored",
+      "pass": true
+    },
+    {
+      "label": "390x844 trail restores tile",
+      "pass": true
+    },
+    {
+      "label": "390x844 support focus",
+      "pass": true
+    },
+    {
+      "label": "390x844 support anchored",
+      "pass": true
+    },
+    {
+      "label": "390x844 mobile required fields",
+      "pass": true
+    },
+    {
+      "label": "390x844 mobile final demo only",
+      "pass": true
+    },
+    {
+      "label": "390x844 mobile note focus return",
+      "pass": true
+    },
+    {
+      "label": "390x844 support restores tile",
+      "pass": true
+    },
+    {
+      "label": "390x844 fullscreen return control visible",
+      "pass": true,
+      "evidence": [
+        390,
+        844
+      ]
+    },
+    {
+      "label": "390x844 anchored fullscreen return",
+      "pass": true
+    },
+    {
+      "label": "390x844 fullscreen restored focus",
+      "pass": true
+    },
+    {
+      "label": "390x844 gallery works",
+      "pass": true
+    },
+    {
+      "label": "844x390 anchored landing",
+      "pass": true
+    },
+    {
+      "label": "844x390 actual site viewport",
+      "pass": true,
+      "evidence": [
+        836,
+        338
+      ]
+    },
+    {
+      "label": "844x390 no trail mailto",
+      "pass": true
+    },
+    {
+      "label": "844x390 story focus",
+      "pass": true
+    },
+    {
+      "label": "844x390 story anchored",
+      "pass": true
+    },
+    {
+      "label": "844x390 story restores tile",
+      "pass": true
+    },
+    {
+      "label": "844x390 diary focus",
+      "pass": true
+    },
+    {
+      "label": "844x390 diary anchored",
+      "pass": true
+    },
+    {
+      "label": "844x390 exactly one accessible diary entry",
+      "pass": true
+    },
+    {
+      "label": "844x390 diary next",
+      "pass": true
+    },
+    {
+      "label": "844x390 diary accessibility sync",
+      "pass": true
+    },
+    {
+      "label": "844x390 diary restores tile",
+      "pass": true
+    },
+    {
+      "label": "844x390 trail focus",
+      "pass": true
+    },
+    {
+      "label": "844x390 trail anchored",
+      "pass": true
+    },
+    {
+      "label": "844x390 trail restores tile",
+      "pass": true
+    },
+    {
+      "label": "844x390 support focus",
+      "pass": true
+    },
+    {
+      "label": "844x390 support anchored",
+      "pass": true
+    },
+    {
+      "label": "844x390 support restores tile",
+      "pass": true
+    },
+    {
+      "label": "320x568 anchored landing",
+      "pass": true
+    },
+    {
+      "label": "320x568 actual site viewport",
+      "pass": true,
+      "evidence": [
+        312,
+        487
+      ]
+    },
+    {
+      "label": "320x568 no trail mailto",
+      "pass": true
+    },
+    {
+      "label": "320x568 story focus",
+      "pass": true
+    },
+    {
+      "label": "320x568 story anchored",
+      "pass": true
+    },
+    {
+      "label": "320x568 story restores tile",
+      "pass": true
+    },
+    {
+      "label": "320x568 diary focus",
+      "pass": true
+    },
+    {
+      "label": "320x568 diary anchored",
+      "pass": true
+    },
+    {
+      "label": "320x568 exactly one accessible diary entry",
+      "pass": true
+    },
+    {
+      "label": "320x568 diary next",
+      "pass": true
+    },
+    {
+      "label": "320x568 diary accessibility sync",
+      "pass": true
+    },
+    {
+      "label": "320x568 diary restores tile",
+      "pass": true
+    },
+    {
+      "label": "320x568 trail focus",
+      "pass": true
+    },
+    {
+      "label": "320x568 trail anchored",
+      "pass": true
+    },
+    {
+      "label": "320x568 trail restores tile",
+      "pass": true
+    },
+    {
+      "label": "320x568 support focus",
+      "pass": true
+    },
+    {
+      "label": "320x568 support anchored",
+      "pass": true
+    },
+    {
+      "label": "320x568 support restores tile",
+      "pass": true
+    },
+    {
+      "label": "780x300 anchored landing",
+      "pass": true
+    },
+    {
+      "label": "780x300 actual site viewport",
+      "pass": true,
+      "evidence": [
+        772,
+        248
+      ]
+    },
+    {
+      "label": "780x300 no trail mailto",
+      "pass": true
+    },
+    {
+      "label": "780x300 story focus",
+      "pass": true
+    },
+    {
+      "label": "780x300 story anchored",
+      "pass": true
+    },
+    {
+      "label": "780x300 story restores tile",
+      "pass": true
+    },
+    {
+      "label": "780x300 diary focus",
+      "pass": true
+    },
+    {
+      "label": "780x300 diary anchored",
+      "pass": true
+    },
+    {
+      "label": "780x300 exactly one accessible diary entry",
+      "pass": true
+    },
+    {
+      "label": "780x300 diary next",
+      "pass": true
+    },
+    {
+      "label": "780x300 diary accessibility sync",
+      "pass": true
+    },
+    {
+      "label": "780x300 diary restores tile",
+      "pass": true
+    },
+    {
+      "label": "780x300 trail focus",
+      "pass": true
+    },
+    {
+      "label": "780x300 trail anchored",
+      "pass": true
+    },
+    {
+      "label": "780x300 trail restores tile",
+      "pass": true
+    },
+    {
+      "label": "780x300 support focus",
+      "pass": true
+    },
+    {
+      "label": "780x300 support anchored",
+      "pass": true
+    },
+    {
+      "label": "780x300 support restores tile",
+      "pass": true
+    }
+  ],
+  "captures": [
+    {
+      "file": "1440x900-home.png",
+      "state": "1440x900-home",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Personally inspected: layout intact; text and controls reachable."
+    },
+    {
+      "file": "desktop-demo-confirmation.png",
+      "state": "desktop-demo-confirmation",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "CW-01: readable final demo-only no-send confirmation."
+    },
+    {
+      "file": "1440x900-fullscreen.png",
+      "state": "1440x900-fullscreen",
+      "viewport": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "observation": "Personally inspected: layout intact; text and controls reachable."
+    },
+    {
+      "file": "390x844-home.png",
+      "state": "390x844-home",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Personally inspected: layout intact; text and controls reachable."
+    },
+    {
+      "file": "390x844-diary.png",
+      "state": "390x844-diary",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Personally inspected: layout intact; text and controls reachable."
+    },
+    {
+      "file": "mobile-compose.png",
+      "state": "mobile-compose",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Personally inspected: layout intact; text and controls reachable."
+    },
+    {
+      "file": "mobile-demo-confirmation.png",
+      "state": "mobile-demo-confirmation",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "CW-01: readable final demo-only no-send confirmation."
+    },
+    {
+      "file": "390x844-fullscreen.png",
+      "state": "390x844-fullscreen",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": true,
+      "observation": "Personally inspected: layout intact; text and controls reachable."
+    },
+    {
+      "file": "844x390-home.png",
+      "state": "844x390-home",
+      "viewport": [
+        844,
+        390
+      ],
+      "inspected": true,
+      "observation": "Personally inspected: layout intact; text and controls reachable."
+    },
+    {
+      "file": "320x568-home.png",
+      "state": "320x568-home",
+      "viewport": [
+        320,
+        568
+      ],
+      "inspected": true,
+      "observation": "Personally inspected: layout intact; text and controls reachable."
+    },
+    {
+      "file": "780x300-home.png",
+      "state": "780x300-home",
+      "viewport": [
+        780,
+        300
+      ],
+      "inspected": true,
+      "observation": "Personally inspected: layout intact; text and controls reachable."
+    },
+    {
+      "file": "780x300-story.png",
+      "state": "780x300-story",
+      "viewport": [
+        780,
+        300
+      ],
+      "inspected": true,
+      "observation": "CW-05 resolved: complete toolbar remains anchored; pixel comparison with landing header confirms no vertical shift."
+    },
+    {
+      "file": "780x300-trail.png",
+      "state": "780x300-trail",
+      "viewport": [
+        780,
+        300
+      ],
+      "inspected": true,
+      "observation": "CW-05 resolved: complete toolbar remains anchored; pixel comparison with landing header confirms no vertical shift."
+    }
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "url": "https://us.i.posthog.com/flags/?v=2&compression=base64",
+      "method": "POST"
+    },
+    {
+      "url": "https://us.i.posthog.com/flags/?v=2&compression=base64",
+      "method": "POST"
+    },
+    {
+      "url": "https://us.i.posthog.com/flags/?v=2&compression=base64",
+      "method": "POST"
+    },
+    {
+      "url": "https://us.i.posthog.com/flags/?v=2&compression=base64",
+      "method": "POST"
+    },
+    {
+      "url": "https://us.i.posthog.com/flags/?v=2&compression=base64",
+      "method": "POST"
+    }
+  ],
+  "scans": [
+    {
+      "label": "desktop confirmation",
+      "violations": []
+    },
+    {
+      "label": "mobile diary",
+      "violations": []
+    }
+  ],
+  "limitations": [
+    "Linux browser emulation; native Safari/physical phones not tested. Native 200% zoom unavailable in headless mode."
+  ],
+  "version": "151.0.7922.34",
+  "failed": []
+}

@@ -1,0 +1,167 @@
+[
+  {
+    "engine": "chromium",
+    "file": "1440x900-home.png",
+    "state": "1440x900-home",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Personally inspected: layout intact; text and controls reachable."
+  },
+  {
+    "engine": "chromium",
+    "file": "desktop-demo-confirmation.png",
+    "state": "desktop-demo-confirmation",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "CW-01: readable final demo-only no-send confirmation."
+  },
+  {
+    "engine": "chromium",
+    "file": "1440x900-fullscreen.png",
+    "state": "1440x900-fullscreen",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Personally inspected: layout intact; text and controls reachable."
+  },
+  {
+    "engine": "chromium",
+    "file": "390x844-home.png",
+    "state": "390x844-home",
+    "viewport": [
+      390,
+      844
+    ],
+    "inspected": true,
+    "observation": "Personally inspected: layout intact; text and controls reachable."
+  },
+  {
+    "engine": "chromium",
+    "file": "390x844-diary.png",
+    "state": "390x844-diary",
+    "viewport": [
+      390,
+      844
+    ],
+    "inspected": true,
+    "observation": "Personally inspected: layout intact; text and controls reachable."
+  },
+  {
+    "engine": "chromium",
+    "file": "mobile-compose.png",
+    "state": "mobile-compose",
+    "viewport": [
+      390,
+      844
+    ],
+    "inspected": true,
+    "observation": "Personally inspected: layout intact; text and controls reachable."
+  },
+  {
+    "engine": "chromium",
+    "file": "mobile-demo-confirmation.png",
+    "state": "mobile-demo-confirmation",
+    "viewport": [
+      390,
+      844
+    ],
+    "inspected": true,
+    "observation": "CW-01: readable final demo-only no-send confirmation."
+  },
+  {
+    "engine": "chromium",
+    "file": "390x844-fullscreen.png",
+    "state": "390x844-fullscreen",
+    "viewport": [
+      390,
+      844
+    ],
+    "inspected": true,
+    "observation": "Personally inspected: layout intact; text and controls reachable."
+  },
+  {
+    "engine": "chromium",
+    "file": "844x390-home.png",
+    "state": "844x390-home",
+    "viewport": [
+      844,
+      390
+    ],
+    "inspected": true,
+    "observation": "Personally inspected: layout intact; text and controls reachable."
+  },
+  {
+    "engine": "chromium",
+    "file": "320x568-home.png",
+    "state": "320x568-home",
+    "viewport": [
+      320,
+      568
+    ],
+    "inspected": true,
+    "observation": "Personally inspected: layout intact; text and controls reachable."
+  },
+  {
+    "engine": "chromium",
+    "file": "780x300-home.png",
+    "state": "780x300-home",
+    "viewport": [
+      780,
+      300
+    ],
+    "inspected": true,
+    "observation": "Personally inspected: layout intact; text and controls reachable."
+  },
+  {
+    "engine": "chromium",
+    "file": "780x300-story.png",
+    "state": "780x300-story",
+    "viewport": [
+      780,
+      300
+    ],
+    "inspected": true,
+    "observation": "CW-05 resolved: complete toolbar remains anchored; pixel comparison with landing header confirms no vertical shift."
+  },
+  {
+    "engine": "chromium",
+    "file": "780x300-trail.png",
+    "state": "780x300-trail",
+    "viewport": [
+      780,
+      300
+    ],
+    "inspected": true,
+    "observation": "CW-05 resolved: complete toolbar remains anchored; pixel comparison with landing header confirms no vertical shift."
+  },
+  {
+    "engine": "firefox",
+    "file": "1440x900-home.png",
+    "state": "1440x900-home",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Personally inspected: layout intact; text and controls reachable."
+  },
+  {
+    "engine": "firefox",
+    "file": "390x844-home.png",
+    "state": "390x844-home",
+    "viewport": [
+      390,
+      844
+    ],
+    "inspected": true,
+    "observation": "Personally inspected: layout intact; text and controls reachable."
+  }
+]
