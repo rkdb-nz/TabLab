@@ -1,28 +1,32 @@
-name: Drilling missing Chrome and native zoom only
+name: Diner targeted sitecheck repairs
 on:
   pull_request:
-    paths: ['qa/**', '.github/workflows/sitecheck-readiness.yml']
+    paths: ['qa/**', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/noticeboard/demos/diner/**']
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   readiness:
     runs-on: ubuntu-latest
-    timeout-minutes: 7
+    timeout-minutes: 10
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
       - run: npm install --prefix qa --ignore-scripts
-      - run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps chromium
-      - name: Only missing Chrome sample and native 200 percent zoom
-        run: node qa/drilling-chrome-completion.mjs
+      - run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
+      - name: Targeted repairs and nine-combination smoke sample
+        run: node qa/diner-repair.mjs
         env:
-          QA_BROWSER: chromium
+          QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: drilling-chrome-completion
-          path: qa/drilling-chrome-completion/
+          name: diner-${{ matrix.browser }}
+          path: qa/diner-results/
           retention-days: 90
