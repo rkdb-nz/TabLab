@@ -72,7 +72,7 @@
       item.setAttribute('aria-pressed', String(item === tab));
     });
     categoryPanels.forEach(panel => panel.classList.toggle('active', panel.dataset.categoryPanel === tab.dataset.category));
-    document.querySelector('.menu-panel')?.scrollTo({ top: 0, behavior: 'smooth' });
+    document.querySelector('.menu-panel')?.scrollTo({ top: 0, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   }));
 
   const ticker = document.querySelector('.ticker');

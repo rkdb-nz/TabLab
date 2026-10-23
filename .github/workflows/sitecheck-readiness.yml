@@ -21,12 +21,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
       - name: Targeted repairs and nine-combination smoke sample
-        run: node qa/diner-repair.mjs
+        run: node qa/diner-focused.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
           name: diner-${{ matrix.browser }}
-          path: qa/diner-results/
+          path: qa/diner-focused-results/
           retention-days: 90
