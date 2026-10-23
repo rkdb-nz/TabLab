@@ -12,7 +12,6 @@ Routine check incomplete: WebKit browser coverage remains unavailable. Product f
 | DN-04 | Medium — The 780×300 landing clips the contents of its compressed feature cards. Recompose the short landscape layout so its meaningful content fits. Preserve the approved artwork; flag any conflict with fixed-screen composition. |
 | DN-05 | Medium — Landing feature descriptions compute to 8–10px; landscape form labels are 10px and fields 11px, including desktop because the landscape rule extends to 900px high. Enlarge these for readability. Also darken small gold eyebrow text: live computed rgb(184,123,61), 12px, on rgba(255,250,246,.984), approximately 3.4:1 rather than 4.5:1. Main submit button white/#b41546 is 6.70:1 and passes. Tiny fonts are a usability finding, not a minimum-font-size WCAG rule. |
 | DN-06 | Low — Remove malformed regex-like text in style.css and restore the intended :root token rule. The opening junk precedes :root, so intended custom properties fail; desktop main heading/body inherit black instead of the intended ink. Source and computed desktop colour confirm this. Retest affected Donut styles. |
-
 | DN-07 | Medium — The map costs approximately 2.22 MB per normal local transfer, even before Locations is opened. Optimise the existing map and defer hidden-panel image loading where appropriate, preserving its lettering and appearance. Other principal images are roughly 9–197 KB each. |
 
 ## Items needing your attention or input
