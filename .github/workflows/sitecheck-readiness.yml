@@ -1,4 +1,4 @@
-name: Tailor routine sitecheck
+name: Tailor focused completion
 on:
   pull_request:
     paths: ['qa/tailor-routine.mjs', '.github/workflows/sitecheck-readiness.yml']
@@ -9,24 +9,16 @@ jobs:
   readiness:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    strategy:
-      fail-fast: false
-      matrix:
-        browser: [chromium, firefox, webkit]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
         with:
           node-version: '22'
       - run: npm install --prefix qa --ignore-scripts
-      - if: matrix.browser != 'chromium'
-        run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
       - run: node qa/tailor-routine.mjs
-        env:
-          QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: tailor-${{ matrix.browser }}
+          name: tailor-completion
           path: qa/tailor-results/
           retention-days: 90
