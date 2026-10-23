@@ -1,0 +1,397 @@
+{
+  "source": "9c71de33a6be0fef3e62398e79c4d79ecb41c86f",
+  "screenshots": [
+    {
+      "engine": "chromium",
+      "file": "chromium/1440x900-home.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "observation": "Reviewed: layout and typography match desktop composition; pale supporting text.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/1440x900-collections.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "observation": "Reviewed: layout and typography match desktop composition; pale supporting text.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/1440x900-enquire.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "observation": "Reviewed: enquiry and form reachable; low-contrast supporting text. Some captures occur during smooth-scroll travel.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/desktop-invalid-success.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "observation": "Reviewed: false received/response claim and grammatical typo; phone return button wraps to multiple lines.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/1440x900-success.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "observation": "Reviewed: false received/response claim and grammatical typo; phone return button wraps to multiple lines.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/1440x900-fullscreen.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "observation": "Reviewed: return control visible; 390px return tab overlaps hero heading.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/desktop-css200.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "observation": "Reviewed: CSS zoom surrogate only; magnified hero wraps, no native zoom certification.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/390x844-home.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "observation": "Reviewed: layout and typography match desktop composition; pale supporting text.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/390x844-collections.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "observation": "Reviewed: collection subtitle cramped beside heading; first arrangement visible.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/390-reveal.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "observation": "Reviewed: intentional navy reveal with decorative watermark; location label crosses ampersand.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/390-lower-collection.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "observation": "Reviewed: lower collection imagery loaded; scrolled top lies behind fixed navigation.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/390x844-enquire.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "observation": "Reviewed: enquiry and form reachable; low-contrast supporting text. Some captures occur during smooth-scroll travel.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/rotation-enquire.png",
+      "viewport": [
+        844,
+        390
+      ],
+      "observation": "Reviewed: enquiry state survives rotation; submit and footer visible.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/390x844-success.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "observation": "Reviewed: false received/response claim and grammatical typo; phone return button wraps to multiple lines.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/390x844-fullscreen.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "observation": "Reviewed: return control visible; 390px return tab overlaps hero heading.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/844x390-home.png",
+      "viewport": [
+        844,
+        390
+      ],
+      "observation": "Reviewed: short landscape remains scrollable; fixed navigation and rail visible.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/844x390-collections.png",
+      "viewport": [
+        844,
+        390
+      ],
+      "observation": "Reviewed: short landscape remains scrollable; fixed navigation and rail visible.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/844x390-enquire.png",
+      "viewport": [
+        844,
+        390
+      ],
+      "observation": "Reviewed: enquiry and form reachable; low-contrast supporting text. Some captures occur during smooth-scroll travel.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/844x390-success.png",
+      "viewport": [
+        844,
+        390
+      ],
+      "observation": "Reviewed: false received/response claim and grammatical typo; phone return button wraps to multiple lines.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/320x568-home.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "observation": "Reviewed: narrow navigation clips Enquire; collection subheading cramped; success card has excessive padding.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/320x568-collections.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "observation": "Reviewed: narrow navigation clips Enquire; collection subheading cramped; success card has excessive padding.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/320x568-enquire.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "observation": "Reviewed: narrow navigation clips Enquire; collection subheading cramped; success card has excessive padding.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/320x568-success.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "observation": "Reviewed: narrow navigation clips Enquire; collection subheading cramped; success card has excessive padding.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/780x300-home.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "observation": "Reviewed: short landscape remains scrollable; fixed navigation and rail visible.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/780x300-collections.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "observation": "Reviewed: short landscape remains scrollable; fixed navigation and rail visible.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/780x300-enquire.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "observation": "Reviewed: enquiry and form reachable; low-contrast supporting text. Some captures occur during smooth-scroll travel.",
+      "inspected": true
+    },
+    {
+      "engine": "chromium",
+      "file": "chromium/780x300-success.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "observation": "Reviewed: false received/response claim and grammatical typo; phone return button wraps to multiple lines.",
+      "inspected": true
+    },
+    {
+      "engine": "firefox",
+      "file": "firefox/1440x900-home.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "observation": "Reviewed: layout and typography match desktop composition; pale supporting text.",
+      "inspected": true
+    },
+    {
+      "engine": "firefox",
+      "file": "firefox/1440x900-enquire.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "observation": "Reviewed: enquiry and form reachable; low-contrast supporting text. Some captures occur during smooth-scroll travel.",
+      "inspected": true
+    },
+    {
+      "engine": "firefox",
+      "file": "firefox/1440x900-success.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "observation": "Reviewed: false received/response claim and grammatical typo; phone return button wraps to multiple lines.",
+      "inspected": true
+    },
+    {
+      "engine": "firefox",
+      "file": "firefox/390x844-home.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "observation": "Reviewed: layout and typography match desktop composition; pale supporting text.",
+      "inspected": true
+    },
+    {
+      "engine": "firefox",
+      "file": "firefox/390x844-enquire.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "observation": "Reviewed: enquiry and form reachable; low-contrast supporting text. Some captures occur during smooth-scroll travel.",
+      "inspected": true
+    },
+    {
+      "engine": "firefox",
+      "file": "firefox/390x844-success.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "observation": "Reviewed: false received/response claim and grammatical typo; phone return button wraps to multiple lines.",
+      "inspected": true
+    },
+    {
+      "engine": "webkit",
+      "file": "webkit/1440x900-home.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "observation": "Reviewed: layout and typography match desktop composition; pale supporting text.",
+      "inspected": true
+    },
+    {
+      "engine": "webkit",
+      "file": "webkit/1440x900-enquire.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "observation": "Reviewed: enquiry and form reachable; low-contrast supporting text. Some captures occur during smooth-scroll travel.",
+      "inspected": true
+    },
+    {
+      "engine": "webkit",
+      "file": "webkit/1440x900-success.png",
+      "viewport": [
+        1440,
+        900
+      ],
+      "observation": "Reviewed: false received/response claim and grammatical typo; phone return button wraps to multiple lines.",
+      "inspected": true
+    },
+    {
+      "engine": "webkit",
+      "file": "webkit/390x844-home.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "observation": "Reviewed: layout and typography match desktop composition; pale supporting text.",
+      "inspected": true
+    },
+    {
+      "engine": "webkit",
+      "file": "webkit/390x844-enquire.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "observation": "Reviewed: enquiry and form reachable; low-contrast supporting text. Some captures occur during smooth-scroll travel.",
+      "inspected": true
+    },
+    {
+      "engine": "webkit",
+      "file": "webkit/390x844-success.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "observation": "Reviewed: false received/response claim and grammatical typo; phone return button wraps to multiple lines.",
+      "inspected": true
+    }
+  ],
+  "supplemental": "One live cloud Chrome fullscreen screenshot inspected inline; no exported original. Total captures 40.",
+  "independent_review": "Not used; optional routine mode."
+}

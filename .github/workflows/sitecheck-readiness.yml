@@ -1,7 +1,8 @@
-name: Diner targeted sitecheck repairs
+name: Florist targeted repair check
 on:
-  pull_request:
-    paths: ['qa/diner-focused.mjs', 'qa/diner-repair.mjs', 'public/boardroom/noticeboard/demos/diner/**']
+  push:
+    branches: ['qa/florist-routine']
+    paths: ['qa/florist-routine.mjs', 'public/boardroom/skateboard/demos/florist/**']
   workflow_dispatch:
 permissions:
   contents: read
@@ -19,14 +20,15 @@ jobs:
         with:
           node-version: '22'
       - run: npm install --prefix qa --ignore-scripts
-      - run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
+      - if: matrix.browser != 'chromium'
+        run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
       - name: Targeted repairs and nine-combination smoke sample
-        run: node qa/diner-focused.mjs
+        run: node qa/florist-routine.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: diner-${{ matrix.browser }}
-          path: qa/diner-focused-results/
+          name: florist-repair-${{ matrix.browser }}
+          path: qa/florist-repair-results/
           retention-days: 90
