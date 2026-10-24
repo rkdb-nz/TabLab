@@ -38,10 +38,10 @@ try{
  browser=await pw[engine].launch(engine==='chromium'?{channel:'chrome'}:{headless:true});
  const c=await browser.newContext({viewport:{width:320,height:568},reducedMotion:'reduce'}),p=await c.newPage();
  await p.goto(origin+base);const f=p.frames().find(f=>f.url().includes('site.html'));await settle(f);
- check('footer fits',await f.locator('.home-footer-tag').evaluate(e=>e.scrollWidth<=e.clientWidth));await cap(p,f,'narrow-home-final');
+ check('footer fits',await f.locator('.home-footer-tag').evaluate(e=>e.scrollWidth<=e.clientWidth));
  await f.goto(origin+base+'clementine-street.html#hire');
  await f.locator('#fName').fill('QA Example');await f.locator('#fEmail').fill('qa@example.invalid');await f.locator('#fType').selectOption({label:'Rehearsal'});await f.locator('#fMsg').fill('Demo only');await f.locator('#hireForm [type=submit]').click();
- await f.locator('#sendAnotherBtn').scrollIntoViewIfNeeded();await cap(p,f,'hire-final');await scan(f,'Hire success');
+ await f.locator('#sendAnotherBtn').scrollIntoViewIfNeeded();await scan(f,'Hire success');
  await f.locator('#sendAnotherBtn').click();check('reset focused',await f.locator('#fName').evaluate(e=>e===document.activeElement));await scan(f,'Hire form');
  await c.close();
 }catch(e){report.errors.push(e.stack);}finally{await browser?.close();server.close();await writeFile(resolve(out,'report.json'),JSON.stringify(report,null,2));}
