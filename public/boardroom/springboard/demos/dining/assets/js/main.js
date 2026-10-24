@@ -204,6 +204,21 @@ document.querySelectorAll('.faq-q').forEach(button => {
       dialog.showModal();
     });
   });
+  // Keep keyboard focus inside the active dialog, including inside the demo iframe.
+  document.querySelectorAll('dialog').forEach(modal => {
+    modal.addEventListener('keydown', event => {
+      if (event.key !== 'Tab' || !modal.open) return;
+      const controls = [...modal.querySelectorAll('button,input,select,textarea,a[href],[tabindex]')]
+        .filter(element => !element.disabled && element.tabIndex >= 0 && element.getClientRects().length);
+      const first = controls[0], last = controls[controls.length - 1];
+      if (!first) { event.preventDefault(); return; }
+      if (event.shiftKey && (document.activeElement === first || !modal.contains(document.activeElement))) {
+        event.preventDefault(); last.focus();
+      } else if (!event.shiftKey && (document.activeElement === last || !modal.contains(document.activeElement))) {
+        event.preventDefault(); first.focus();
+      }
+    });
+  });
   dialog.querySelector('.booking-confirmation-close').addEventListener('click', () => dialog.close());
   dialog.addEventListener('close', () => {
     dialog.classList.remove('is-open');
