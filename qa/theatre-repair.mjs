@@ -41,7 +41,7 @@ try{
   const c=await browser.newContext({viewport:{width,height},reducedMotion:'reduce'}),p=await c.newPage(),tag=width+'x'+height;
   await c.route('**/*',r=>['GET','HEAD'].includes(r.request().method())?r.continue():r.abort());
   p.on('pageerror',e=>report.errors.push({tag,error:e.message}));
-  await p.goto(origin+base);const f=p.frames().find(f=>f.url().includes('site.html'));await settle(f);await cap(p,f,tag+'-home');await layout(f,tag+' home');
+  await p.goto(origin+base);const f=p.frames().find(f=>f.url().includes('site.html'));await settle(f);if(width!==1440)await cap(p,f,tag+'-home');await layout(f,tag+' home');
   if(width<981){await f.locator('#menuBtn').click();if(engine==='chromium'&&width===390){await p.setViewportSize({width:844,height:390});await f.locator('#mobilePanel a').last().scrollIntoViewIfNeeded();await cap(p,f,'rotated-menu');await p.setViewportSize({width,height});}await f.locator('#mobilePanel a[href*="now-playing"]').click();}
   else await f.locator('.nav a[href*="now-playing"]').click();
   await f.waitForURL('**/now-playing.html*');assert(tag+' navigation',f.url().includes('now-playing'));
@@ -51,16 +51,16 @@ try{
     assert(tag+' hire fits',await f.locator('.clem-main').evaluate(e=>e.scrollWidth<=e.clientWidth+1));
     await f.locator('#hireForm [type=submit]').click();assert(tag+' first invalid focused',await f.locator('#fName').evaluate(e=>e===document.activeElement));
     await f.locator('#fName').fill('QA Example');await f.locator('#fEmail').fill('qa@example.invalid');await f.locator('#fType').selectOption({label:'Rehearsal'});await f.locator('#fMsg').fill('Safe demo test');await f.locator('#fAtt').fill('999');await f.locator('#hireForm [type=submit]').click();assert(tag+' max rejected',await f.locator('#fAtt').getAttribute('aria-invalid')==='true');
-    if(engine==='chromium')await cap(p,f,tag+'-hire-errors');
+    if(engine==='chromium'&&width===390)await cap(p,f,tag+'-hire-errors');
     await f.locator('#fAtt').fill('200');await f.locator('#hireForm [type=submit]').click();assert(tag+' truthful hire', (await f.locator('#formSuccess').innerText()).includes('No enquiry or email has been sent'));
     if(width===390)await cap(p,f,tag+'-hire-result');
     await f.locator('a[href="clementine-street.html#email"]').click();await f.locator('.demo-email-dialog input[type=email]').fill('qa@example.invalid');await f.locator('.demo-email-dialog input').nth(1).fill('Test');await f.locator('.demo-email-dialog textarea').fill('Demo only');await f.locator('.demo-email-dialog [type=submit]').click();assert(tag+' truthful email',await f.locator('[data-result]').isVisible());if(engine==='chromium'&&width===390)await cap(p,f,'email-result');await f.locator('[data-result] [data-close]').click();
   }
   if(engine==='chromium'&&width===1440){
-   for(const file of ['now-playing.html','coming-soon.html','book-tickets.html','clementine-street.html']){await f.goto(origin+base+file);await settle(f);await scan(f,file);await cap(p,f,file.replace('.html',''));}
-   await f.goto(origin+base+'site.html');await p.emulateMedia({reducedMotion:'no-preference'});await f.locator('#sequencePause').click();const frame=await f.locator('.home-hero-image.is-active').getAttribute('data-seq');await p.waitForTimeout(3000);assert('paused still',frame===await f.locator('.home-hero-image.is-active').getAttribute('data-seq'));await f.locator('#sequencePause').click();assert('resume label',await f.locator('#sequencePause').innerText()==='Pause slideshow');await p.emulateMedia({reducedMotion:'reduce'});assert('reduced static',await f.locator('#sequencePause').isHidden());
+   for(const file of ['now-playing.html','coming-soon.html','book-tickets.html','clementine-street.html']){await f.goto(origin+base+file);await settle(f);await scan(f,file);if(file==='clementine-street.html')await cap(p,f,'venue-final');}
+   await f.goto(origin+base+'site.html');await p.emulateMedia({reducedMotion:'no-preference'});await f.locator('#sequencePause').click();const frame=await f.locator('.home-hero-image.is-active').getAttribute('data-seq');await p.waitForTimeout(3000);assert('paused still',frame===await f.locator('.home-hero-image.is-active').getAttribute('data-seq'));await f.locator('#sequencePause').click();assert('resume label',await f.locator('#sequencePause').innerText()==='Pause slideshow');await p.waitForTimeout(2600);assert('resume advances',frame!==await f.locator('.home-hero-image.is-active').getAttribute('data-seq'));await p.emulateMedia({reducedMotion:'reduce'});await f.locator('#sequencePause').waitFor({state:'hidden'});assert('reduced static',await f.locator('#sequencePause').isHidden());
   }
-  if(engine==='chromium'&&width===320){await booking(f,p,tag,true);await layout(f,'narrow booking');}
+  if(engine==='chromium'&&width===320){await booking(f,p,tag,true);await layout(f,'narrow booking');assert('narrow tickets fit',await f.locator('.book-left').evaluate(e=>e.scrollWidth<=e.clientWidth+1));}
   if(engine==='chromium'&&(width===844||width===780)){await f.goto(origin+base+'clementine-street.html#hire');await layout(f,tag+' hire neighbour');assert(tag+' hire fits',await f.locator('.clem-main').evaluate(e=>e.scrollWidth<=e.clientWidth+1));}
   await c.close();
  }

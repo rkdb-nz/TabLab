@@ -336,3 +336,5 @@ body.overlay-open{overflow:hidden!important}
 :focus-visible{outline:3px solid #c8a96a;outline-offset:3px}
 .demo-email-dialog form[hidden]{display:none}
 .field-error{font-size:.8rem;color:#8a1a1a;min-height:1em}
+
+.site-footer .foot-right{flex-wrap:wrap}.site-footer .foot-right a{white-space:nowrap;overflow-wrap:normal}
