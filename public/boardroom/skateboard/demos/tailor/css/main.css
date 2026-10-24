@@ -1503,3 +1503,5 @@ button.btn { font-family:inherit;cursor:pointer;background:transparent; }
 @media(min-width:901px) { .lookbook-kicker { top:84px !important; } }
 .visit-dialog-heading { position:sticky;top:0;z-index:2;background:#f7f3ee;padding-bottom:8px; }
 @media(max-height:500px) { #visit-dialog { padding:16px; }.visit-dialog-heading h2 { font-size:32px; } }
+
+.ch1 .ch1-passage { background:#292824;color:#fff;padding:6px 8px;text-shadow:none; }
