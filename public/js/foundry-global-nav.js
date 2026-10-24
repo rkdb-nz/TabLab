@@ -64,7 +64,7 @@
   backdrop.className = 'foundry-global-backdrop';
   backdrop.setAttribute('aria-hidden', 'true');
 
-  const drawer = document.createElement('aside');
+  const drawer = document.createElement('div');
   drawer.className = 'foundry-global-drawer';
   drawer.setAttribute('aria-hidden', 'true');
   drawer.setAttribute('aria-label', 'Site navigation');
