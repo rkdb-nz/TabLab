@@ -1,18 +1,18 @@
-name: Retreat focused evidence check
+name: Retreat WebKit recovery
 on:
   pull_request:
-    paths: ['qa/retreat-focus.mjs', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/springboard/demos/retreat/**']
+    paths: ['qa/retreat-routine.mjs', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/springboard/demos/retreat/**']
   workflow_dispatch:
 permissions:
   contents: read
 jobs:
   readiness:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     strategy:
       fail-fast: false
       matrix:
-        browser: [chromium]
+        browser: [webkit]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -21,12 +21,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - if: matrix.browser != 'chromium'
         run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - run: node qa/retreat-focus.mjs
+      - run: node qa/retreat-routine.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: retreat-focus-${{ matrix.browser }}
-          path: qa/retreat-focus-results/
+          name: retreat-recovered-${{ matrix.browser }}
+          path: qa/retreat-results/
           retention-days: 90
