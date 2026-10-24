@@ -706,7 +706,7 @@ body.home-page .header:not(.scrolled){background:rgba(20,20,18,.78);color:#fff;m
 .clementine-confirmation-ok{color:#17251c}
 :focus-visible{outline:3px solid #765e47;outline-offset:4px}
 .input:focus-visible{outline:2px solid #765e47;outline-offset:4px}
-.input,#clementine-book-form,[id]{scroll-margin-top:110px}
+.input,#clementine-book-form{scroll-margin-top:110px}
 .field-error,.enquiry-errors{color:#8a2431;font-size:.85rem;line-height:1.5}
 .field-error:empty,.enquiry-errors:empty{display:none}
 .booking-location{background:var(--stone)}

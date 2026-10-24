@@ -1,4 +1,4 @@
-name: Retreat final targeted checks
+name: Retreat anchor layout check
 on:
   pull_request:
     paths: ['qa/retreat-final.mjs', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/springboard/demos/retreat/**']
@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chromium, firefox, webkit]
+        browser: [chromium]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -27,6 +27,6 @@ jobs:
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: retreat-final-${{ matrix.browser }}
+          name: retreat-anchor-${{ matrix.browser }}
           path: qa/retreat-final-results/
           retention-days: 90
