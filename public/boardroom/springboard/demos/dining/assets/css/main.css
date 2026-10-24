@@ -1240,3 +1240,7 @@ img{display:block; max-width:100%}
 .booking-email-card .btn{letter-spacing:.08em;padding-inline:12px}
 
 .booking-fields .input{min-width:0}
+
+@media(max-width:360px){
+  .booking-email-card .booking-fields,.booking-email-card .time-request-row{grid-template-columns:minmax(0,1fr)}
+}
