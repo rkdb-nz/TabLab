@@ -1,0 +1,634 @@
+{
+  "site": "Theatre",
+  "mode": "routine",
+  "sourceCommit": "877e2541e0976e6302615d4a23a25f10a1035ec7",
+  "productChanges": false,
+  "engines": [
+    "Chrome",
+    "Firefox",
+    "Linux WebKit"
+  ],
+  "plannedOuterViewports": {
+    "chromium": [
+      [
+        1440,
+        900
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        320,
+        568
+      ],
+      [
+        780,
+        300
+      ]
+    ],
+    "firefox": [
+      [
+        1440,
+        900
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "webkit": [
+      [
+        1440,
+        900
+      ],
+      [
+        390,
+        844
+      ]
+    ]
+  },
+  "captures": [
+    {
+      "file": "1440x900-home.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "firefox",
+      "observation": "Homepage renders within sampled frame; short landscape continues vertically below fold."
+    },
+    {
+      "file": "390x844-home.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "firefox",
+      "observation": "Homepage renders within sampled frame; short landscape continues vertically below fold."
+    },
+    {
+      "file": "390x844-booking.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "firefox",
+      "observation": "Mixed tickets and seating selection render; small-screen footer wraps poorly."
+    },
+    {
+      "file": "390x844-booking-result.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "firefox",
+      "observation": "Ticket result truthfully states demo, no payment and no seat reservation; total $106."
+    },
+    {
+      "file": "1440x900-home.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "webkit",
+      "observation": "Homepage renders within sampled frame; short landscape continues vertically below fold."
+    },
+    {
+      "file": "390x844-home.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "webkit",
+      "observation": "Homepage renders within sampled frame; short landscape continues vertically below fold."
+    },
+    {
+      "file": "390x844-booking.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "webkit",
+      "observation": "Mixed tickets and seating selection render; small-screen footer wraps poorly."
+    },
+    {
+      "file": "390x844-booking-result.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "webkit",
+      "observation": "Ticket result truthfully states demo, no payment and no seat reservation; total $106."
+    },
+    {
+      "file": "venue-theatre.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Venue copy/photos render; first image is exterior sign, not an interior."
+    },
+    {
+      "file": "venue-accessibility.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Accessibility section displays correct selected-tab state."
+    },
+    {
+      "file": "venue-find.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Find Us section/map renders within desktop content region."
+    },
+    {
+      "file": "venue-hire.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Desktop hire layout present; long form requires internal scrolling."
+    },
+    {
+      "file": "hire-errors.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Visible required-field errors; focus remains on Send rather than invalid input."
+    },
+    {
+      "file": "hire-result.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "False response promise shown after dummy 999-person enquiry; no send occurred."
+    },
+    {
+      "file": "390x844-home.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Homepage renders within sampled frame; short landscape continues vertically below fold."
+    },
+    {
+      "file": "phone-menu.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Portrait navigation opens; items visible at normal phone height."
+    },
+    {
+      "file": "rotated-menu.png",
+      "outer": [
+        844,
+        390
+      ],
+      "frame": [
+        836,
+        338
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Last menu row clipped after rotation; overlay lacks internal scrolling."
+    },
+    {
+      "file": "390x844-booking.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Mixed tickets and seating selection render; small-screen footer wraps poorly."
+    },
+    {
+      "file": "390x844-booking-result.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Ticket result truthfully states demo, no payment and no seat reservation; total $106."
+    },
+    {
+      "file": "coming-soon-phone.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Posters/copy render; Quiet Hours date in artwork conflicts with accompanying February label."
+    },
+    {
+      "file": "venue-hire-phone.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Severe phone venue layout clipping: desktop-width grid remains and form runs offscreen."
+    },
+    {
+      "file": "844x390-home.png",
+      "outer": [
+        844,
+        390
+      ],
+      "frame": [
+        836,
+        338
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Homepage renders within sampled frame; short landscape continues vertically below fold."
+    },
+    {
+      "file": "320x568-home.png",
+      "outer": [
+        320,
+        568
+      ],
+      "frame": [
+        312,
+        487
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Narrow heading splits Clementine mid-word and lower content continues below fold."
+    },
+    {
+      "file": "780x300-home.png",
+      "outer": [
+        780,
+        300
+      ],
+      "frame": [
+        772,
+        248
+      ],
+      "inspected": true,
+      "phase": "continuation",
+      "engine": "chromium",
+      "observation": "Homepage renders within sampled frame; short landscape continues vertically below fold."
+    },
+    {
+      "file": "1440x900-booking.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "recovered",
+      "engine": "chromium",
+      "observation": "Mixed tickets and seating selection render; small-screen footer wraps poorly."
+    },
+    {
+      "file": "1440x900-booking-result.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "recovered",
+      "engine": "chromium",
+      "observation": "Ticket result truthfully states demo, no payment and no seat reservation; total $106."
+    },
+    {
+      "file": "now-playing-details.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "recovered",
+      "engine": "chromium",
+      "observation": "Production details render; Coming Soon action has near-white text on pale background."
+    },
+    {
+      "file": "now-poster.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "recovered",
+      "engine": "chromium",
+      "observation": "Poster enlargement renders; lightbox keyboard focus escape recorded separately."
+    },
+    {
+      "file": "coming-soon.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "recovered",
+      "engine": "chromium",
+      "observation": "Posters/copy render; Quiet Hours date in artwork conflicts with accompanying February label."
+    },
+    {
+      "file": "coming-poster.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "recovered",
+      "engine": "chromium",
+      "observation": "Poster enlargement renders; lightbox keyboard focus escape recorded separately."
+    }
+  ],
+  "sourceAssetsInspected": [
+    {
+      "path": "images/poster1.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c94c0433f088237aff2ebbbbb15165d2b40b29fe",
+      "size": 111228,
+      "url": "https://api.github.com/repos/rkdb-nz/TabLab/git/blobs/c94c0433f088237aff2ebbbbb15165d2b40b29fe"
+    },
+    {
+      "path": "images/poster2.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c1d476bd70c0f1f2b02016bb641433878ee85070",
+      "size": 198322,
+      "url": "https://api.github.com/repos/rkdb-nz/TabLab/git/blobs/c1d476bd70c0f1f2b02016bb641433878ee85070"
+    },
+    {
+      "path": "images/poster3.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0908a7ceb5a0b0515c75ee72e9ac5d5373cd7f5",
+      "size": 2554815,
+      "url": "https://api.github.com/repos/rkdb-nz/TabLab/git/blobs/d0908a7ceb5a0b0515c75ee72e9ac5d5373cd7f5"
+    }
+  ],
+  "findings": [
+    {
+      "id": "TH-01",
+      "impact": "High",
+      "problem": "Venue Hire retains a wide desktop grid on phones; the form is clipped and the centre copy collapses into a 64px column.",
+      "correction": "Use a genuine single-column mobile venue layout and preserve reachable controls at neighbouring sizes.",
+      "evidence": "venue-hire-phone.png; main scrollWidth 640 at a 382px frame; centre width 64 and page height 9,376px."
+    },
+    {
+      "id": "TH-02",
+      "impact": "High",
+      "problem": "Hire confirmation falsely promises a response within two working days; no enquiry is sent. Fictional email links also open a real mail client.",
+      "correction": "Keep the enquiry/email process realistic, ending with an explicit demo-only/no-send confirmation.",
+      "evidence": "hire-result.png; live dummy submission observed; venue-form.js prevents default and makes no request; README confirms fictional contacts."
+    },
+    {
+      "id": "TH-03",
+      "impact": "Medium",
+      "problem": "Venue Hire accepts 999 attendees despite max=200; errors leave focus on Send and are not associated with their fields.",
+      "correction": "Respect range/type validity, associate error text, focus the first invalid field and announce errors.",
+      "evidence": "Live and hosted submission with 999 succeeded; hire invalid focus remained submit button; novalidate custom code only tests required/email."
+    },
+    {
+      "id": "TH-04",
+      "impact": "High",
+      "problem": "Coming Soon button on Now Playing is almost invisible; Coming Soon footer text also fails contrast.",
+      "correction": "Use palette-consistent foreground/background contrast of at least 4.5:1 for normal text.",
+      "evidence": "Axe: button 1.07:1; footer 4.13:1; now-playing-details.png and coming-soon.png."
+    },
+    {
+      "id": "TH-05",
+      "impact": "Medium",
+      "problem": "Poster lightbox allows Tab into background content; landscape menu content extends below its unscrollable overlay.",
+      "correction": "Contain/restore overlay focus, make background inert where appropriate, and allow menu scrolling in short viewports.",
+      "evidence": "poster tab focus contained=false; rotated-menu.png; short-landscape menu clientHeight190 versus scrollHeight283, overflow visible."
+    },
+    {
+      "id": "TH-06",
+      "impact": "Medium",
+      "problem": "Venue scroll region is not keyboard-focusable; seating buttons use unsupported aria-selected and booking summary skips heading level.",
+      "correction": "Make internal venue scrolling keyboard-accessible and correct seating state/heading semantics.",
+      "evidence": "Axe scrollable-region-focusable, aria-allowed-attr on three zone cards, and heading-order on Booking Summary."
+    },
+    {
+      "id": "TH-07",
+      "impact": "Medium",
+      "problem": "Narrow-phone heading splits Clementine mid-word, footer links break into fragments, and the ticket column overflows internally.",
+      "correction": "Tune narrow breakpoints and footer wrapping without reducing readable text unnecessarily.",
+      "evidence": "320x568-home.png; phone booking/result captures; book-left scrollWidth332 versus clientWidth312."
+    },
+    {
+      "id": "TH-08",
+      "impact": "Medium",
+      "problem": "Homepage imagery cycles automatically for longer than five seconds with no pause control; reduced-motion fallback alone does not provide a general pause.",
+      "correction": "Add an accessible pause/resume control while preserving the existing sequence and reduced-motion static image.",
+      "evidence": "main.js repeating hold/fade timers; normal motion controls contain only Menu; reduced sequence correctly selects hero-exterior2."
+    },
+    {
+      "id": "TH-09",
+      "impact": "Low",
+      "problem": "Location alternates between Wāperiki and Wāpereki; a venue image labelled theatre interior actually shows the exterior sign.",
+      "correction": "Use consistent location spelling and accurate image alternatives.",
+      "evidence": "now-playing-details.png versus venue-find.png; venue-theatre.png and theatre1.webp alt."
+    },
+    {
+      "id": "TH-10",
+      "impact": "Low",
+      "problem": "The Family Group Chat poster is 2,554,815 bytes, much larger than the other posters.",
+      "correction": "Optimise the existing asset with a visually checked re-encode; preserve the artwork and lettering.",
+      "evidence": "Pinned source asset tree; poster3.webp Git blob d0908a7ceb5a0b0515c75ee72e9ac5d5373cd7f5."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-01",
+      "issue": "Poster dates conflict with page copy or are now in the past.",
+      "recommendation": "Preserve the existing artwork; label seasons/productions as illustrative samples and align surrounding copy with poster dates. Regeneration would require separate approval."
+    }
+  ],
+  "limitations": [
+    "Native zoom Ctrl-plus attempt left viewport1440x900 and DPR1 unchanged; native 200% zoom is unverified.",
+    "Linux WebKit is not native Safari/iOS. All phone sizes are emulated.",
+    "Original Chrome job stalled on a lazy image in a hidden venue tab and was later cancelled. Its provisional captures/report were unavailable. They are not marked inspected or treated as evidence. Six missing desktop captures were recovered without repeating the whole audit.",
+    "The first capture-recovery script missed helpers and failed before any captures; corrected with the same authorised scope.",
+    "At most eight captures could have preceded the original lazy-image stall; with 30 retained machine captures and two manual live inspections, the routine capture ceiling of40 was respected conservatively.",
+    "No independent agent review used."
+  ],
+  "runs": {
+    "initial": 40073858141,
+    "continuation": 40074255781,
+    "recovered": 40074600756
+  },
+  "liveInspection": {
+    "url": "https://tablab.rkdb.nz/boardroom/springboard/demos/theatre/",
+    "observations": [
+      "Chrome live homepage and Now Playing images inspected.",
+      "Navigation to production and venue pages works.",
+      "Back to Springboard gallery and reopening Theatre work.",
+      "Safe dummy hire enquiry with999 attendees displayed false response promise."
+    ]
+  }
+}
