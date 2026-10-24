@@ -1210,3 +1210,31 @@ img{display:block; max-width:100%}
 @media (max-width:1000px) and (orientation:landscape){
   .sign-page .mobile-booking{grid-row:1 / 3}
 }
+
+/* Routine accessibility repairs: preserve the approved composition. */
+.booking-fields{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px}
+.booking-label{display:block;margin:0 0 6px;font-size:12px;font-weight:500;color:#51483f}
+.booking-form .time-request-row{align-items:end}
+.booking-form .time-request-row .btn{margin-bottom:16px;min-height:46px}
+.booking-form .booking-time{padding-right:16px}
+.faq-q{width:100%;padding:0;border:0;background:transparent;color:inherit;font:inherit;font-size:13px;font-weight:500;text-align:left;line-height:1.6}
+.faq-answer{margin-top:8px;font-size:13px;color:#666}
+.faq-answer[hidden]{display:none}
+.faq-q:focus-visible,.input:focus-visible,.btn:focus-visible,.booking-confirmation-close:focus-visible{outline:2px solid #6b1d23;outline-offset:3px}
+.time-wheel-hint{color:#665d55}
+.avatar{background:#805c32}
+.booking-confirmation{width:100%;height:100%;max-width:none;max-height:none;margin:0;border:0;overflow-y:auto;color:var(--charcoal)}
+.booking-confirmation:not([open]){display:none}
+.booking-confirmation::backdrop{background:transparent}
+.booking-confirmation-card{max-height:calc(100dvh - 48px);overflow-y:auto;flex-shrink:0}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+  .fade-in,.fade-up{opacity:1;transform:none}
+}
+
+.booking-email-card{text-align:left}
+.booking-email-card .booking-form{display:block}
+.booking-email-card .email-cancel{margin-top:0}
+.booking-email-card .time-request-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.booking-email-card .time-request-row > div{min-width:0}
+.booking-email-card .btn{letter-spacing:.08em;padding-inline:12px}

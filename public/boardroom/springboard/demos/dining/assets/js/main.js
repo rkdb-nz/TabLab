@@ -2,8 +2,14 @@
 // Nav show/hide on home
 const nav = document.querySelector('.nav');
 const hero = document.querySelector('.hero');
+function setNavHidden(hidden) {
+  if (!nav) return;
+  nav.classList.toggle('hidden', hidden);
+  nav.inert = hidden;
+  nav.setAttribute('aria-hidden', String(hidden));
+}
 if(hero && nav){
-  nav.classList.add('hidden');
+  setNavHidden(true);
 }
 // Trifold scroll
 const wrap = document.querySelector('.trifold-wrap');
@@ -31,7 +37,7 @@ if(wrap && !mobileLanding.matches){
 
     window.setTimeout(()=>{
       if(hero && nav){
-        nav.classList.remove('hidden');
+        setNavHidden(false);
       }
     }, revealDurationMs);
   }
@@ -145,40 +151,64 @@ if(wrap && !mobileLanding.matches){
     onScroll();
   }
 }
-// FAQ
-document.querySelectorAll('.faq-q').forEach(q=>{
-  q.addEventListener('click',()=>{
-    const a = q.nextElementSibling;
-    if(a) a.style.display = a.style.display==='none' ? 'block' : 'none';
+// FAQ buttons work with pointer, Enter and Space.
+document.querySelectorAll('.faq-q').forEach(button => {
+  button.addEventListener('click', () => {
+    const answer = document.getElementById(button.getAttribute('aria-controls'));
+    if (!answer) return;
+    const open = button.getAttribute('aria-expanded') !== 'true';
+    button.setAttribute('aria-expanded', String(open));
+    answer.hidden = !open;
+    button.querySelector('span').textContent = open ? '−' : '+';
   });
 });
 
-/* Clementine's — mousewheel dinner time field */
+// Requests stay in this browser; final confirmation clearly identifies the demo.
 (() => {
-  const field = document.querySelector('.time-wheel');
-  if (!field) return;
-
-  const times = [];
-  for (let mins = 17 * 60; mins <= 22 * 60; mins += 15) {
-    const hour24 = Math.floor(mins / 60);
-    const minute = mins % 60;
-    const hour12 = hour24 > 12 ? hour24 - 12 : hour24;
-    times.push(`${hour12}:${String(minute).padStart(2, '0')} pm`);
-  }
-
-  let index = Math.max(0, times.indexOf(field.value));
-
-  field.addEventListener('wheel', (event) => {
-    event.preventDefault();
-
-    if (event.deltaY > 0) {
-      index = Math.min(times.length - 1, index + 1);
-    } else {
-      index = Math.max(0, index - 1);
+  const dialog = document.querySelector('#booking-confirmation');
+  if (!dialog) return;
+  const emailDialog = document.querySelector('#booking-email');
+  const emailButton = document.querySelector('#open-email-request');
+  let opener;
+  emailButton?.addEventListener('click', () => {
+    emailDialog.classList.add('is-open');
+    emailDialog.showModal();
+  });
+  emailDialog?.querySelector('.email-cancel').addEventListener('click', () => emailDialog.close());
+  emailDialog?.addEventListener('close', () => {
+    emailDialog.classList.remove('is-open');
+    emailButton?.focus({preventScroll:true});
+  });
+  document.querySelectorAll('.booking-form').forEach(form => {
+    const date = form.elements.date;
+    const name = form.elements.name;
+    const now = new Date();
+    date.min = [now.getFullYear(), String(now.getMonth() + 1).padStart(2, '0'), String(now.getDate()).padStart(2, '0')].join('-');
+    function validate() {
+      name.setCustomValidity(name.value.trim() ? '' : 'Please enter your name.');
+      date.setCustomValidity('');
+      if (date.value) {
+        const day = new Date(date.value + 'T12:00:00').getDay();
+        if (day === 1 || day === 2) date.setCustomValidity('Please choose a date from Wednesday to Sunday.');
+      }
     }
-
-    field.value = times[index];
-  }, { passive:false });
+    form.addEventListener('input', validate);
+    form.addEventListener('submit', event => {
+      event.preventDefault();
+      validate();
+      if (!form.reportValidity()) return;
+      const isEmail = form.id === 'email-request-form';
+      opener = isEmail ? emailButton : form.querySelector('[type="submit"]');
+      if (isEmail) emailDialog.close();
+      dialog.classList.add('is-open');
+      dialog.showModal();
+    });
+  });
+  dialog.querySelector('.booking-confirmation-close').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('close', () => {
+    dialog.classList.remove('is-open');
+    opener?.focus({preventScroll:true});
+  });
 })();
 
 // Home cards: finish the image crossfade before opening the selected page.
@@ -187,7 +217,7 @@ document.querySelectorAll('.faq-q').forEach(q=>{
   if (!panels.length) return;
 
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const navigationDelay = reducedMotion ? 120 : 1050;
+  const navigationDelay = reducedMotion ? 0 : 1050;
   let navigating = false;
 
   function openPanel(panel) {
@@ -222,13 +252,14 @@ document.querySelectorAll('.faq-q').forEach(q=>{
 (() => {
   const track = document.querySelector('.home-track');
   if (!track) return;
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   let scene = 0, moving = false, touch = null, revealTimer, settleTimer, lastSwipe = 0;
   function revealAfterRest() {
     moving = false;
     clearTimeout(revealTimer);
     if (scene === 1) revealTimer = setTimeout(() => {
       if (mobileLanding.matches && scene === 1) wrap.classList.add('cards-revealed');
-    }, 2000);
+    }, reducedMotion.matches ? 0 : 2000);
   }
   function go(next) {
     if (!mobileLanding.matches || moving || next === scene || next < 0 || next > 1) return;
@@ -238,13 +269,13 @@ document.querySelectorAll('.faq-q').forEach(q=>{
     clearTimeout(settleTimer);
     wrap.classList.remove('cards-revealed');
     // Match pottery: set the glide explicitly for every scene change.
-    track.style.transition = 'transform 1.5s cubic-bezier(.65,0,.35,1)';
+    track.style.transition = reducedMotion.matches ? 'none' : 'transform 1.5s cubic-bezier(.65,0,.35,1)';
     track.classList.toggle('show-cards', scene === 1);
-    nav.classList.toggle('hidden', scene === 0);
+    setNavHidden(scene === 0);
     hero.inert = scene !== 0;
     wrap.inert = scene !== 1;
     // The timer starts only after the glide has finished.
-    settleTimer = setTimeout(revealAfterRest, 1500);
+    settleTimer = setTimeout(revealAfterRest, reducedMotion.matches ? 0 : 1500);
   }
   track.addEventListener('touchstart', event => {
     touch = event.touches.length === 1 ? {x:event.touches[0].clientX,y:event.touches[0].clientY} : null;
