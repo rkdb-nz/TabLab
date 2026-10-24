@@ -338,3 +338,4 @@ body.overlay-open{overflow:hidden!important}
 .field-error{font-size:.8rem;color:#8a1a1a;min-height:1em}
 
 .site-footer .foot-right{flex-wrap:wrap}.site-footer .foot-right a{white-space:nowrap;overflow-wrap:normal}
+.form-success .btn{color:#211c17;border-color:#655446}

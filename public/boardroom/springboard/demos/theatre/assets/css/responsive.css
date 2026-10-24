@@ -261,3 +261,4 @@
  .np-actions{padding:16px;flex-wrap:wrap}
  .np-actions .btn{min-width:0}
 }
+@media(max-width:980px){.home-footer-tag{white-space:normal;line-height:1.6;max-width:100%}}
