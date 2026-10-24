@@ -1,7 +1,7 @@
-name: Donut targeted repair check
+name: Tab Lab targeted repair check
 on:
   pull_request:
-    paths: ['qa/donut-repair.mjs', '.github/workflows/sitecheck-readiness.yml']
+    paths: ['qa/tablab-repair.mjs', '.github/workflows/sitecheck-readiness.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [webkit]
+        browser: [chromium, firefox, webkit]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -21,13 +21,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - if: matrix.browser != 'chromium'
         run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - run: node qa/donut-repair.mjs
+      - run: node qa/tablab-repair.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
-          QA_NO_CAPTURES: 1
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: donut-repair-${{ matrix.browser }}
-          path: qa/donut-repair-results/
+          name: tablab-repair-${{ matrix.browser }}
+          path: qa/tablab-repair-results/
           retention-days: 90

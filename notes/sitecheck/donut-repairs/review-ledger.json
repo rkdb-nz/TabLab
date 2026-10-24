@@ -1,0 +1,461 @@
+{
+  "productSource": "c0c7e9fcb51f31571dd051a6a6f1db913c26b1b6",
+  "run": 40101567253,
+  "images": [
+    {
+      "file": "1440x900-home.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "inner": [
+        1426,
+        845
+      ],
+      "state": "1440x900-home",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/1440x900-home.png",
+      "observation": "Landing: approved artwork retained; feature text readable and contained.",
+      "originalSHA256": "5e1296c0111a81884f5a7880e4c7fe765678a70b4bc0915fcb68e46bde4bcb02",
+      "retainedWebP": "evidence/chromium/1440x900-home.webp"
+    },
+    {
+      "file": "css200-order.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "inner": [
+        1426,
+        845
+      ],
+      "state": "css200-order",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/css200-order.png",
+      "observation": "CSS magnification surrogate only: close remains reachable and form scrolls; top brand is clipped. Not native browser zoom proof or a whole-page reflow pass.",
+      "originalSHA256": "6baa9bf1fa76378bb28ba5802d6a8297f22b98b67040a0d99410aeabee10b8d8",
+      "retainedWebP": "evidence/chromium/css200-order.webp"
+    },
+    {
+      "file": "390x844-home.png",
+      "outer": [
+        390,
+        844
+      ],
+      "inner": [
+        382,
+        763
+      ],
+      "state": "390x844-home",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/390x844-home.png",
+      "observation": "Landing: approved artwork retained; feature text readable and contained.",
+      "originalSHA256": "62cdb15d46b2a3a5655bfee657e6dbdc4e98036e342116dc1a52e92cd4b86239",
+      "retainedWebP": "evidence/chromium/390x844-home.webp"
+    },
+    {
+      "file": "390x844-order-result.png",
+      "outer": [
+        390,
+        844
+      ],
+      "inner": [
+        382,
+        763
+      ],
+      "state": "390x844-order-result",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/390x844-order-result.png",
+      "observation": "Close remains in the separate toolbar; panel content scrolls independently. Form completion clearly states no delivery; content can be scrolled to the end.",
+      "originalSHA256": "cf74d21f9c13ae19ee8313f6670c2ef09536847fb7c12b4217c3b4f87e7b9c78",
+      "retainedWebP": "evidence/chromium/390x844-order-result.webp"
+    },
+    {
+      "file": "rotated-story.png",
+      "outer": [
+        844,
+        390
+      ],
+      "inner": [
+        836,
+        338
+      ],
+      "state": "rotated-story",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/rotated-story.png",
+      "observation": "Close remains in the separate toolbar; panel content scrolls independently.",
+      "originalSHA256": "b0c7ae3578e6d37aad7087152b32305021da57f8d0e51d6fdce22208eb4e379d",
+      "retainedWebP": "evidence/chromium/rotated-story.webp"
+    },
+    {
+      "file": "844x390-home.png",
+      "outer": [
+        844,
+        390
+      ],
+      "inner": [
+        836,
+        338
+      ],
+      "state": "844x390-home",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/844x390-home.png",
+      "observation": "Landing: approved artwork retained; feature text readable and contained.",
+      "originalSHA256": "3af4682ce32a4094c4ab14772037a48d2f46f4f1d3d9faefa550116c82a187b5",
+      "retainedWebP": "evidence/chromium/844x390-home.webp"
+    },
+    {
+      "file": "320x568-home.png",
+      "outer": [
+        320,
+        568
+      ],
+      "inner": [
+        312,
+        487
+      ],
+      "state": "320x568-home",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/320x568-home.png",
+      "observation": "Landing: approved artwork retained; feature text readable and contained.",
+      "originalSHA256": "3fb8a026cd61e3df8801d31fa0f0b3c96380a11418dc9243e673ac14ba4e849d",
+      "retainedWebP": "evidence/chromium/320x568-home.webp"
+    },
+    {
+      "file": "320x568-menu-scrolled.png",
+      "outer": [
+        320,
+        568
+      ],
+      "inner": [
+        312,
+        487
+      ],
+      "state": "320x568-menu-scrolled",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/320x568-menu-scrolled.png",
+      "observation": "Close remains in the separate toolbar; panel content scrolls independently.",
+      "originalSHA256": "1868bd22ef2bd0985c5e048f20de24d3f000e657d40808e6336e402519b005ba",
+      "retainedWebP": "evidence/chromium/320x568-menu-scrolled.webp"
+    },
+    {
+      "file": "320x568-story-scrolled.png",
+      "outer": [
+        320,
+        568
+      ],
+      "inner": [
+        312,
+        487
+      ],
+      "state": "320x568-story-scrolled",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/320x568-story-scrolled.png",
+      "observation": "Close remains in the separate toolbar; panel content scrolls independently.",
+      "originalSHA256": "201e3eb6afc3b6ebfe2a18adcacd8487b6e17555512cb68cb2d97a3303d7da44",
+      "retainedWebP": "evidence/chromium/320x568-story-scrolled.webp"
+    },
+    {
+      "file": "320x568-locations-scrolled.png",
+      "outer": [
+        320,
+        568
+      ],
+      "inner": [
+        312,
+        487
+      ],
+      "state": "320x568-locations-scrolled",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/320x568-locations-scrolled.png",
+      "observation": "Close remains in the separate toolbar; panel content scrolls independently.",
+      "originalSHA256": "0e35e760a8f5076a84d96cccca36c1e1d505974934f6b9b8c2567ada237428b3",
+      "retainedWebP": "evidence/chromium/320x568-locations-scrolled.webp"
+    },
+    {
+      "file": "320x568-catering-scrolled.png",
+      "outer": [
+        320,
+        568
+      ],
+      "inner": [
+        312,
+        487
+      ],
+      "state": "320x568-catering-scrolled",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/320x568-catering-scrolled.png",
+      "observation": "Close remains in the separate toolbar; panel content scrolls independently. Form completion clearly states no delivery; content can be scrolled to the end.",
+      "originalSHA256": "f06dc490d42313af6f89d13a3a56fb956f6bc211df2d28bff7496f87f441c4fe",
+      "retainedWebP": "evidence/chromium/320x568-catering-scrolled.webp"
+    },
+    {
+      "file": "320x568-order-scrolled.png",
+      "outer": [
+        320,
+        568
+      ],
+      "inner": [
+        312,
+        487
+      ],
+      "state": "320x568-order-scrolled",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/320x568-order-scrolled.png",
+      "observation": "Close remains in the separate toolbar; panel content scrolls independently. Form completion clearly states no delivery; content can be scrolled to the end.",
+      "originalSHA256": "37a9c9fd07279dfa22d347430cc3a61b9755dfad8c5afe3cbf6c6c41dd610798",
+      "retainedWebP": "evidence/chromium/320x568-order-scrolled.webp"
+    },
+    {
+      "file": "780x300-home.png",
+      "outer": [
+        780,
+        300
+      ],
+      "inner": [
+        772,
+        248
+      ],
+      "state": "780x300-home",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/780x300-home.png",
+      "observation": "Landing: approved artwork retained; feature text readable and contained.",
+      "originalSHA256": "40ff2f0e0d4f4d95d6ed6cbd8da4fdd4ad75c3c35fdf386fe6983d7c3af83988",
+      "retainedWebP": "evidence/chromium/780x300-home.webp"
+    },
+    {
+      "file": "short-features-bottom.png",
+      "outer": [
+        780,
+        300
+      ],
+      "inner": [
+        772,
+        248
+      ],
+      "state": "short-features-bottom",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/short-features-bottom.png",
+      "observation": "Short landscape: third feature card is reachable through internal scrolling; landing stays fixed.",
+      "originalSHA256": "a17f5ef9b6ff6b5116f3d97e7062887f81c0589876619388766d0d66b5caa2a3",
+      "retainedWebP": "evidence/chromium/short-features-bottom.webp"
+    },
+    {
+      "file": "780x300-menu-scrolled.png",
+      "outer": [
+        780,
+        300
+      ],
+      "inner": [
+        772,
+        248
+      ],
+      "state": "780x300-menu-scrolled",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/780x300-menu-scrolled.png",
+      "observation": "Close remains in the separate toolbar; panel content scrolls independently.",
+      "originalSHA256": "60706bca5d0bffb899774302d34c93b2403f7373753737e4d7023bee1994498b",
+      "retainedWebP": "evidence/chromium/780x300-menu-scrolled.webp"
+    },
+    {
+      "file": "780x300-story-scrolled.png",
+      "outer": [
+        780,
+        300
+      ],
+      "inner": [
+        772,
+        248
+      ],
+      "state": "780x300-story-scrolled",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/780x300-story-scrolled.png",
+      "observation": "Close remains in the separate toolbar; panel content scrolls independently.",
+      "originalSHA256": "82eba7272237c8fe315d1160e8b0f82d6a95f60961c45b09b906605c365922a0",
+      "retainedWebP": "evidence/chromium/780x300-story-scrolled.webp"
+    },
+    {
+      "file": "780x300-locations-scrolled.png",
+      "outer": [
+        780,
+        300
+      ],
+      "inner": [
+        772,
+        248
+      ],
+      "state": "780x300-locations-scrolled",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/780x300-locations-scrolled.png",
+      "observation": "Close remains in the separate toolbar; panel content scrolls independently.",
+      "originalSHA256": "c3e9cd8d8f0f48321a8c50b7386795ff215ec30ac4bd7b7698bd0571eec8e642",
+      "retainedWebP": "evidence/chromium/780x300-locations-scrolled.webp"
+    },
+    {
+      "file": "780x300-catering-scrolled.png",
+      "outer": [
+        780,
+        300
+      ],
+      "inner": [
+        772,
+        248
+      ],
+      "state": "780x300-catering-scrolled",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/780x300-catering-scrolled.png",
+      "observation": "Close remains in the separate toolbar; panel content scrolls independently. Form completion clearly states no delivery; content can be scrolled to the end.",
+      "originalSHA256": "131edfa74a35f3b5d0b98c5453c550e4de10b9f13356f97f500d631609207bff",
+      "retainedWebP": "evidence/chromium/780x300-catering-scrolled.webp"
+    },
+    {
+      "file": "780x300-order-scrolled.png",
+      "outer": [
+        780,
+        300
+      ],
+      "inner": [
+        772,
+        248
+      ],
+      "state": "780x300-order-scrolled",
+      "inspected": true,
+      "engine": "chromium",
+      "path": "evidence/chromium/780x300-order-scrolled.png",
+      "observation": "Close remains in the separate toolbar; panel content scrolls independently. Form completion clearly states no delivery; content can be scrolled to the end.",
+      "originalSHA256": "7a0f6e5a62f7c389cda0a57365514de9afa71ae6b9e11f70c0e444a1348a76f7",
+      "retainedWebP": "evidence/chromium/780x300-order-scrolled.webp"
+    },
+    {
+      "file": "1440x900-home.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "inner": [
+        1426,
+        845
+      ],
+      "state": "1440x900-home",
+      "inspected": true,
+      "engine": "firefox",
+      "path": "evidence/firefox/1440x900-home.png",
+      "observation": "Landing: approved artwork retained; feature text readable and contained.",
+      "originalSHA256": "3ddb1f96f3a20960bc4ed26a6505b43a0a5f2b0a41abb2a4adef3482c6c2e5ba",
+      "retainedWebP": "evidence/firefox/1440x900-home.webp"
+    },
+    {
+      "file": "390x844-home.png",
+      "outer": [
+        390,
+        844
+      ],
+      "inner": [
+        382,
+        763
+      ],
+      "state": "390x844-home",
+      "inspected": true,
+      "engine": "firefox",
+      "path": "evidence/firefox/390x844-home.png",
+      "observation": "Landing: approved artwork retained; feature text readable and contained.",
+      "originalSHA256": "12b3ae9f6486ecc5c1aaeb9f4de4762a5ce2c7375ee2d2505133f239680da511",
+      "retainedWebP": "evidence/firefox/390x844-home.webp"
+    },
+    {
+      "file": "390x844-order-result.png",
+      "outer": [
+        390,
+        844
+      ],
+      "inner": [
+        382,
+        763
+      ],
+      "state": "390x844-order-result",
+      "inspected": true,
+      "engine": "firefox",
+      "path": "evidence/firefox/390x844-order-result.png",
+      "observation": "Close remains in the separate toolbar; panel content scrolls independently. Form completion clearly states no delivery; content can be scrolled to the end.",
+      "originalSHA256": "15524699731e5b12d640f26d37804892c24e3c61d3fe00a2f0c6ba4f17c27d5b",
+      "retainedWebP": "evidence/firefox/390x844-order-result.webp"
+    },
+    {
+      "file": "1440x900-home.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "inner": [
+        1426,
+        845
+      ],
+      "state": "1440x900-home",
+      "inspected": true,
+      "engine": "webkit",
+      "path": "evidence/webkit/1440x900-home.png",
+      "observation": "Landing: approved artwork retained; feature text readable and contained.",
+      "originalSHA256": "41ed2026ded5112caea0390a2b3cc9c6615edab955e5a90ec937206126831b01",
+      "retainedWebP": "evidence/webkit/1440x900-home.webp"
+    },
+    {
+      "file": "390x844-home.png",
+      "outer": [
+        390,
+        844
+      ],
+      "inner": [
+        382,
+        763
+      ],
+      "state": "390x844-home",
+      "inspected": true,
+      "engine": "webkit",
+      "path": "evidence/webkit/390x844-home.png",
+      "observation": "Landing: approved artwork retained; feature text readable and contained.",
+      "originalSHA256": "5c53fc632519a99d61470105fcd30de2858dc6e3a80af1ec4d91bcda8cd165be",
+      "retainedWebP": "evidence/webkit/390x844-home.webp"
+    },
+    {
+      "file": "390x844-order-result.png",
+      "outer": [
+        390,
+        844
+      ],
+      "inner": [
+        382,
+        763
+      ],
+      "state": "390x844-order-result",
+      "inspected": true,
+      "engine": "webkit",
+      "path": "evidence/webkit/390x844-order-result.png",
+      "observation": "Close remains in the separate toolbar; panel content scrolls independently. Form completion clearly states no delivery; content can be scrolled to the end.",
+      "originalSHA256": "5136ee849f4e1770a8f143442d4caafb90238d08c86697b918d2a30588f5e819",
+      "retainedWebP": "evidence/webkit/390x844-order-result.webp"
+    }
+  ],
+  "limitations": [
+    "25 final-run screenshots were inspected. Earlier retry captures are not marked as reviewed here.",
+    "The first attempt plus corrected-source run generated 50 machine captures cumulatively, exceeding the routine ceiling of40. The correction was a scoped CSS precedence fix, not an audit expansion; the final WebKit settlement check took no new screenshots.",
+    "Two live browser readiness/preview interactions were inspected. Native200% remains unverified; CSS zoom is only a surrogate."
+  ]
+}
