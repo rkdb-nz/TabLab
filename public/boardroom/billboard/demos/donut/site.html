@@ -20,6 +20,7 @@
 #catering-form input,#catering-form select,#catering-form textarea{font-size:16px}
 #catering-form .form-status{padding-top:8px;line-height:1.4}
 </style>
+<link rel="stylesheet" href="css/repairs.css?v=donut-repairs-1">
 </head>
 <body>
 <main class="viewport" aria-label="A Hole in One gourmet donuts">
@@ -61,7 +62,7 @@
         <button class="mobile-order-button" data-overlay="order" type="button"><span>Order Now</span><span aria-hidden="true">→</span></button>
       </section>
 
-      <section class="features" aria-label="Our promises">
+      <section class="features" aria-label="Our promises — scroll for more" tabindex="0">
         <article class="feature-card">
           <div class="feature-icon" aria-hidden="true">♧</div>
           <div class="feature-copy">
@@ -95,7 +96,8 @@
 
       <section class="overlay overlay--menu" id="overlay-menu" role="dialog" aria-modal="true" aria-labelledby="menu-title" hidden>
         <div class="overlay-panel">
-          <button class="overlay-close" type="button" aria-label="Close overlay">×</button>
+          <div class="overlay-toolbar"><button class="overlay-close" type="button" aria-label="Back to site">Back to site</button></div>
+          <div class="overlay-content">
           <p class="eyebrow">Fresh today</p>
           <h2 id="menu-title">The Menu</h2>
           <div class="menu-grid">
@@ -107,11 +109,13 @@
             <article><strong>Six-piece Atelier Box</strong><span>A curated selection, beautifully boxed</span><b>$42</b></article>
           </div>
         </div>
+        </div>
       </section>
 
       <section class="overlay overlay--story" id="overlay-story" role="dialog" aria-modal="true" aria-labelledby="story-title" hidden>
         <div class="overlay-panel overlay-panel--split">
-          <button class="overlay-close" type="button" aria-label="Close overlay">×</button>
+          <div class="overlay-toolbar"><button class="overlay-close" type="button" aria-label="Back to site">Back to site</button></div>
+          <div class="overlay-content">
           <div>
             <p class="eyebrow">Made with patience</p>
             <h2 id="story-title">Our Story</h2>
@@ -121,11 +125,13 @@
           </div>
           <div class="story-seal"><span>Handcrafted</span><strong>Fresh<br>Daily</strong><small>with love</small></div>
         </div>
+        </div>
       </section>
 
       <section class="overlay overlay--locations" id="overlay-locations" role="dialog" aria-modal="true" aria-labelledby="locations-title" hidden>
         <div class="overlay-panel overlay-panel--split">
-          <button class="overlay-close" type="button" aria-label="Close overlay">×</button>
+          <div class="overlay-toolbar"><button class="overlay-close" type="button" aria-label="Back to site">Back to site</button></div>
+          <div class="overlay-content">
           <div>
             <p class="eyebrow">Come say hello</p>
             <h2 id="locations-title">Locations</h2>
@@ -135,14 +141,16 @@
             </div>
           </div>
           <div class="map-card" aria-label="Map of Wāperiki showing our two locations">
-            <img src="assets/images/locationmap.png" alt="Map of Wāperiki showing the two Donut locations">
+            <img data-src="assets/images/locationmap-optimised.webp" width="1200" height="1200" decoding="async" alt="Map of Wāperiki showing the two Donut locations">
           </div>
+        </div>
         </div>
       </section>
 
       <section class="overlay overlay--catering" id="overlay-catering" role="dialog" aria-modal="true" aria-labelledby="catering-title" hidden>
         <div class="overlay-panel">
-          <button class="overlay-close" type="button" aria-label="Close overlay">×</button>
+          <div class="overlay-toolbar"><button class="overlay-close" type="button" aria-label="Back to site">Back to site</button></div>
+          <div class="overlay-content">
           <p class="eyebrow">Make it memorable</p>
           <h2 id="catering-title">Catering</h2>
           <div class="catering-grid">
@@ -163,11 +171,13 @@
             <p class="form-status catering-wide" role="status" tabindex="-1"></p>
           </form>
         </div>
+        </div>
       </section>
 
       <section class="overlay overlay--order" id="overlay-order" role="dialog" aria-modal="true" aria-labelledby="order-title" hidden>
         <div class="overlay-panel overlay-panel--order">
-          <button class="overlay-close" type="button" aria-label="Close overlay">×</button>
+          <div class="overlay-toolbar"><button class="overlay-close" type="button" aria-label="Back to site">Back to site</button></div>
+          <div class="overlay-content">
           <div>
             <p class="eyebrow">Your box awaits</p>
             <h2 id="order-title">Order Now</h2>
@@ -180,12 +190,13 @@
             <label>Box size<select name="box"><option>Six donuts</option><option>Twelve donuts</option><option>Twenty-four donuts</option></select></label>
             <label>Notes<textarea name="notes" rows="3" placeholder="Flavours, occasion, collection time…"></textarea></label>
             <button class="submit-button" type="submit">Send order request →</button>
-            <p class="form-status" role="status"></p>
+            <p class="form-status" role="status" tabindex="-1"></p>
           </form>
+        </div>
         </div>
       </section>
     </div>
   </main>
-  <script src="js/app.js?v=catering-demo-1"></script>
+  <script src="js/app.js?v=donut-repairs-1"></script>
 </body>
 </html>

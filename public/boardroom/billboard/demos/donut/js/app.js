@@ -6,6 +6,16 @@
   const mobileMenuPanel = document.getElementById('mobile-menu-panel');
   let lastTrigger = null;
   let closeTimer = null;
+  let openTimer = null;
+  const reducedMotion = () => matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const background = [...site.children].filter(el => !el.classList.contains('overlay'));
+  const isVisible = el => el && !el.closest('[hidden],[inert]') && el.getClientRects().length && getComputedStyle(el).visibility !== 'hidden';
+  function restoreTriggerFocus() {
+    const target = isVisible(lastTrigger) ? lastTrigger :
+      isVisible(mobileMenuToggle) ? mobileMenuToggle :
+      triggers.find(el => el.dataset.overlay === lastTrigger?.dataset.overlay && isVisible(el));
+    target?.focus();
+  }
 
   function closeMobileMenu() {
     if (!mobileMenuToggle || !mobileMenuPanel) return;
@@ -37,6 +47,7 @@
 
     closeMobileMenu();
     clearTimeout(closeTimer);
+    clearTimeout(openTimer);
     overlays.forEach(other => {
       if (other !== overlay) hideImmediately(other);
     });
@@ -44,16 +55,23 @@
     lastTrigger = trigger;
     resetOverlay(overlay);
     overlay.hidden = false;
+    overlay.querySelector('.overlay-content').scrollTop = 0;
+    overlay.querySelectorAll('img[data-src]').forEach(img => {
+      img.src = img.dataset.src;
+      delete img.dataset.src;
+    });
+    background.forEach(el => { el.inert = true; });
     document.body.classList.add('overlay-open');
 
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         overlay.classList.add('is-opening');
-        setTimeout(() => {
+        openTimer = setTimeout(() => {
+          if (overlay.hidden || overlay.classList.contains('is-closing')) return;
           overlay.classList.remove('is-opening');
           overlay.classList.add('is-open');
           overlay.querySelector('.overlay-close')?.focus();
-        }, 620);
+        }, reducedMotion() ? 0 : 620);
       });
     });
   }
@@ -66,14 +84,16 @@
     }
 
     clearTimeout(closeTimer);
+    clearTimeout(openTimer);
     active.classList.remove('is-opening', 'is-open');
     active.classList.add('is-closing');
     document.body.classList.remove('overlay-open');
 
     closeTimer = setTimeout(() => {
       hideImmediately(active);
-      if (restoreFocus && lastTrigger) lastTrigger.focus();
-    }, 500);
+      background.forEach(el => { el.inert = false; });
+      if (restoreFocus) restoreTriggerFocus();
+    }, reducedMotion() ? 0 : 500);
   }
 
   mobileMenuToggle?.addEventListener('click', toggleMobileMenu);
@@ -139,8 +159,8 @@
   document.getElementById('order-form')?.addEventListener('submit', event => {
     event.preventDefault();
     const status = event.currentTarget.querySelector('.form-status');
-    status.textContent = 'Got it! Consider your message freshly glazed and delivered.';
-    status.append(document.createElement('br'), document.createTextNode('One of our team will contact you shortly!'));
+    status.textContent = 'Demo complete — no order request has been sent, no order has been placed and no reply will follow.';
+    status.focus();
   });
 
   site.querySelector('.brand')?.addEventListener('click', event => {

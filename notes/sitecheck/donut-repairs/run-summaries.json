@@ -1,0 +1,349 @@
+{
+  "initialChromeLogs": [
+    {
+      "engine": "chromium",
+      "failed": [
+        {
+          "label": "1440x900 DN05 readable labels/fields",
+          "pass": false,
+          "data": [
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "INPUT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "INPUT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "INPUT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "SELECT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "TEXTAREA",
+              "size": 11
+            }
+          ]
+        },
+        {
+          "label": "rotation story dismissal after scroll",
+          "pass": false,
+          "data": {
+            "close": [
+              903.296875,
+              947.296875,
+              418.28125,
+              573.921875
+            ],
+            "viewport": [
+              836,
+              338
+            ],
+            "scroll": [
+              1736,
+              1736,
+              0
+            ],
+            "contentWidth": [
+              199,
+              239
+            ]
+          }
+        },
+        {
+          "label": "rotation story no horizontal content overflow",
+          "pass": false,
+          "data": {
+            "close": [
+              903.296875,
+              947.296875,
+              418.28125,
+              573.921875
+            ],
+            "viewport": [
+              836,
+              338
+            ],
+            "scroll": [
+              1736,
+              1736,
+              0
+            ],
+            "contentWidth": [
+              199,
+              239
+            ]
+          }
+        },
+        {
+          "label": "844x390 DN05 readable labels/fields",
+          "pass": false,
+          "data": [
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "INPUT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "INPUT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "INPUT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "SELECT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "TEXTAREA",
+              "size": 11
+            }
+          ]
+        },
+        {
+          "label": "780x300 story no horizontal content overflow",
+          "pass": false,
+          "data": {
+            "close": [
+              127.09375,
+              171.09375,
+              372.328125,
+              527.96875
+            ],
+            "viewport": [
+              772,
+              248
+            ],
+            "scroll": [
+              1853,
+              1853,
+              0
+            ],
+            "contentWidth": [
+              182,
+              219
+            ]
+          }
+        },
+        {
+          "label": "780x300 locations dismissal after scroll",
+          "pass": false,
+          "data": {
+            "close": [
+              57,
+              307.375,
+              230.28125,
+              385.921875
+            ],
+            "viewport": [
+              772,
+              248
+            ],
+            "scroll": [
+              263,
+              263,
+              0
+            ],
+            "contentWidth": [
+              326,
+              326
+            ]
+          }
+        },
+        {
+          "label": "780x300 order dismissal after scroll",
+          "pass": false,
+          "data": {
+            "close": [
+              -51,
+              -7,
+              121.921875,
+              277.5625
+            ],
+            "viewport": [
+              772,
+              248
+            ],
+            "scroll": [
+              298,
+              298,
+              0
+            ],
+            "contentWidth": [
+              432,
+              432
+            ]
+          }
+        },
+        {
+          "label": "780x300 DN05 readable labels/fields",
+          "pass": false,
+          "data": [
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "INPUT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "INPUT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "INPUT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "SELECT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "TEXTAREA",
+              "size": 11
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "assets": [],
+      "captures": 19
+    }
+  ],
+  "initialFFLogs": [
+    {
+      "engine": "firefox",
+      "failed": [
+        {
+          "label": "1440x900 DN05 readable labels/fields",
+          "pass": false,
+          "data": [
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "INPUT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "INPUT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "INPUT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "SELECT",
+              "size": 11
+            },
+            {
+              "tag": "LABEL",
+              "size": 10
+            },
+            {
+              "tag": "TEXTAREA",
+              "size": 11
+            }
+          ]
+        }
+      ],
+      "errors": [],
+      "assets": [],
+      "captures": 3
+    }
+  ],
+  "secondChromeLogs": [
+    {
+      "engine": "chromium",
+      "failed": [],
+      "errors": [],
+      "assets": [],
+      "captures": 19
+    }
+  ],
+  "settledWKLogs": [
+    {
+      "engine": "webkit",
+      "failed": [],
+      "errors": [],
+      "assets": [],
+      "captures": 0
+    }
+  ]
+}
