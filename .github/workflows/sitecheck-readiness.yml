@@ -1,7 +1,7 @@
 name: Tailor targeted repair check
 on:
   pull_request:
-    paths: ['qa/tailor-repair.mjs', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/skateboard/demos/tailor/**']
+    paths: ['qa/tailor-repair-final.mjs', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/skateboard/demos/tailor/**']
   workflow_dispatch:
 permissions:
   contents: read
@@ -21,12 +21,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - if: matrix.browser != 'chromium'
         run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - run: node qa/tailor-repair.mjs
+      - run: node qa/tailor-repair-final.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: tailor-repair-${{ matrix.browser }}
-          path: qa/tailor-repair-results/
+          name: tailor-final-${{ matrix.browser }}
+          path: qa/tailor-final-results/
           retention-days: 90

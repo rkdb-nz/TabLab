@@ -73,7 +73,7 @@ lookSlides.forEach((slide,index)=>{
   const description=copy.cloneNode(true);description.className='mobile-look-copy';
   description.querySelectorAll('br').forEach(br=>br.replaceWith(document.createTextNode(' ')));
   card.append(photo,description);slide.append(card);
-  slide.setAttribute('role','group');slide.setAttribute('aria-label',`Look ${index+1} of ${lookSlides.length}`);
+  slide.setAttribute('aria-label',`Look ${index+1} of ${lookSlides.length}`);
 });
 function showLook(index,announce=false){
   lookIndex=(index+lookSlides.length)%lookSlides.length;

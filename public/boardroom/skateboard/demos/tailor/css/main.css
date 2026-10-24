@@ -36,7 +36,7 @@ nav#topnav .links a.is-current{opacity:1;font-weight:800}
 .ch1 .hero{position:absolute;inset:0 0 0 28vw}
 .ch1 .hero img{object-position:60% center}
 .ch1 .type{position:absolute;left:5vw;top:22vh;z-index:2}
-.ch1 .type h1{font-size:11vw;line-height:0.85;letter-spacing:-0.03em}
+.ch1 .type h2{font-size:11vw;line-height:0.85;letter-spacing:-0.03em}
 .ch1 .type .tag{margin-top:5vh;max-width:22ch;font-size:14px;line-height:1.7;opacity:0.6}
 .ch1 .floating-num{position:absolute;right:4vw;top:14vh;font-family:'Instrument Serif';font-size:18vw;opacity:0.04;line-height:1;pointer-events:none}
 .ch1 .ch1-passage{position:absolute;left:30vw;bottom:4vh;max-width:24ch;line-height:1.6;text-wrap:balance;z-index:3;color:var(--cream);text-shadow:0 1px 10px rgba(0,0,0,0.35)}
@@ -643,7 +643,7 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
     transform:none !important;
   }
 
-  .ch1 .type h1 {
+  .ch1 .type h2 {
     font-size:clamp(62px,18vw,112px);
   }
 
@@ -849,7 +849,7 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
     width:42vw;
   }
 
-  .ch1 .type h1 {
+  .ch1 .type h2 {
     font-size:clamp(54px,12vw,88px);
   }
 
@@ -926,7 +926,7 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
     position:absolute !important;z-index:2 !important;left:max(24px,7vw) !important;top:18dvh !important;
     width:min(54vw,360px) !important;padding:0 !important;color:var(--cream);transform:none !important
   }
-  .ch1 .type h1{font-size:clamp(58px,17vw,108px) !important;line-height:.78 !important}
+  .ch1 .type h2{font-size:clamp(58px,17vw,108px) !important;line-height:.78 !important}
   .ch1 .type .tag{font-size:clamp(10px,2.6vw,13px) !important;line-height:1.5 !important;opacity:.8 !important;max-width:25ch}
   .ch1 .type .tiny{opacity:.86 !important}
   .ch1 .type .btn{padding:11px 16px;border-color:rgba(247,243,238,.7)}
@@ -1013,7 +1013,7 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
   .ch1::after{background:linear-gradient(0deg,rgba(20,17,14,.9) 0%,rgba(20,17,14,.22) 62%,rgba(20,17,14,.02) 100%)}
   .ch1 .hero img{object-position:58% center}
   .ch1 .type{left:7vw !important;top:auto !important;bottom:13dvh !important;width:86vw !important}
-  .ch1 .type h1{font-size:clamp(72px,22vw,110px) !important}
+  .ch1 .type h2{font-size:clamp(72px,22vw,110px) !important}
   .ch1 .type .tag{max-width:36ch;margin-top:2.4dvh !important}
   .ch1 .type .reveal[style*="margin-top:36px"]{margin-top:2.2dvh !important}
 
@@ -1036,7 +1036,7 @@ body.page-scroll, body.shop-page, html.page-scroll{overflow:auto !important;heig
   nav#topnav{height:52px !important}
   #chapter-ind .meta,#counter{display:none}
   .ch1 .type{top:15dvh !important;width:43vw !important}
-  .ch1 .type h1{font-size:clamp(54px,11vw,82px) !important}
+  .ch1 .type h2{font-size:clamp(54px,11vw,82px) !important}
   .ch1 .type .tag{margin-top:2dvh !important;font-size:10px !important}
   .ch1 .type .reveal[style*="margin-top:36px"]{margin-top:2dvh !important}
   .ch2 .left-img{width:48vw !important;height:100dvh !important}
@@ -1468,7 +1468,7 @@ button.btn { font-family:inherit;cursor:pointer;background:transparent; }
     width:48vw !important;overflow-y:auto;padding:4px 8px 20px 0 !important;
     overscroll-behavior-y:contain;touch-action:pan-y;
   }
-  .ch1 .type h1 { font-size:58px !important;line-height:.85 !important; }
+  .ch1 .type h2 { font-size:58px !important;line-height:.85 !important; }
   .ch1 .type .tag { font-size:14px !important;max-width:38ch;margin-top:16px !important; }
   .ch1 .type>.tiny { font-size:11px; }
   .ch1 .type>.reveal:last-child { margin-top:18px !important; }
@@ -1478,7 +1478,7 @@ button.btn { font-family:inherit;cursor:pointer;background:transparent; }
 }
 @media(max-width:600px) and (orientation:portrait) {
   .ch1 .type { top:28dvh !important;bottom:76px !important;overflow-y:auto;padding:6px 8px 18px 0 !important;touch-action:pan-y; }
-  .ch1 .type h1 { font-size:clamp(64px,21vw,96px) !important; }
+  .ch1 .type h2 { font-size:clamp(64px,21vw,96px) !important; }
   .ch1 .type .tag { max-width:36ch; }
 }
 #visit-dialog { position:fixed;inset:0;margin:auto;width:min(580px,calc(100vw - 32px));max-height:calc(100dvh - 32px);overflow:auto;padding:28px;border:1px solid #b6aa98;background:#f7f3ee;color:#292824; }
