@@ -1,0 +1,458 @@
+[
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/1440x900-home.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-home",
+    "inspected": true,
+    "observation": "Landing artwork and controls render; portrait supporting type and navigation are small."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/1440x900-house.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-house",
+    "inspected": true,
+    "observation": "Atelier image, copy and craftsmanship action render."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/look-0.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "look-0",
+    "inspected": true,
+    "observation": "Captured during a page-turn transition; superseded by settled completion captures. Do not treat blended spreads as a product defect."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/look-1.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "look-1",
+    "inspected": true,
+    "observation": "Captured during a page-turn transition; superseded by settled completion captures. Do not treat blended spreads as a product defect."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/look-2.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "look-2",
+    "inspected": true,
+    "observation": "Captured during a page-turn transition; superseded by settled completion captures. Do not treat blended spreads as a product defect."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/look-3.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "look-3",
+    "inspected": true,
+    "observation": "Captured during a page-turn transition; superseded by settled completion captures. Do not treat blended spreads as a product defect."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/look-4.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "look-4",
+    "inspected": true,
+    "observation": "Captured during a page-turn transition; superseded by settled completion captures. Do not treat blended spreads as a product defect."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/look-5.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "look-5",
+    "inspected": true,
+    "observation": "Captured during a page-turn transition; superseded by settled completion captures. Do not treat blended spreads as a product defect."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/1440x900-craft.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-craft",
+    "inspected": true,
+    "observation": "Craft accordion renders with last item open; short landscape/rotation requires internal scrolling."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/1440x900-visit.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-visit",
+    "inspected": true,
+    "observation": "Boutique image and visible controls render; short landscape requires internal text scrolling. Fullscreen return visible where shown."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/1440x900-fullscreen.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-fullscreen",
+    "inspected": true,
+    "observation": "Boutique image and visible controls render; short landscape requires internal text scrolling. Fullscreen return visible where shown."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/390x844-home.webp",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "inspected": true,
+    "observation": "Landing artwork and controls render; portrait supporting type and navigation are small."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/844x390-home.webp",
+    "viewport": [
+      844,
+      390
+    ],
+    "state": "844x390-home",
+    "inspected": true,
+    "observation": "Landscape landing copy and Enter the Atelier action extend below the locked viewport."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/320x568-home.webp",
+    "viewport": [
+      320,
+      568
+    ],
+    "state": "320x568-home",
+    "inspected": true,
+    "observation": "Landing artwork and controls render; portrait supporting type and navigation are small."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/780x300-home.webp",
+    "viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-home",
+    "inspected": true,
+    "observation": "Landscape landing copy and Enter the Atelier action extend below the locked viewport."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/780x300-house.webp",
+    "viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-house",
+    "inspected": true,
+    "observation": "Atelier image, copy and craftsmanship action render."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/780x300-collection.webp",
+    "viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-collection",
+    "inspected": true,
+    "observation": "Collection page controls and photo render; narrow and short viewports require internal card scrolling."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/780x300-craft.webp",
+    "viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-craft",
+    "inspected": true,
+    "observation": "Craft accordion renders with last item open; short landscape/rotation requires internal scrolling."
+  },
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "file": "initial/chromium/780x300-visit.webp",
+    "viewport": [
+      780,
+      300
+    ],
+    "state": "780x300-visit",
+    "inspected": true,
+    "observation": "Boutique image and visible controls render; short landscape requires internal text scrolling. Fullscreen return visible where shown."
+  },
+  {
+    "phase": "initial",
+    "engine": "firefox",
+    "file": "initial/firefox/1440x900-home.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-home",
+    "inspected": true,
+    "observation": "Landing artwork and controls render; portrait supporting type and navigation are small."
+  },
+  {
+    "phase": "initial",
+    "engine": "firefox",
+    "file": "initial/firefox/390x844-home.webp",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "inspected": true,
+    "observation": "Landing artwork and controls render; portrait supporting type and navigation are small."
+  },
+  {
+    "phase": "initial",
+    "engine": "webkit",
+    "file": "initial/webkit/1440x900-home.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "1440x900-home",
+    "inspected": true,
+    "observation": "Landing artwork and controls render; portrait supporting type and navigation are small."
+  },
+  {
+    "phase": "initial",
+    "engine": "webkit",
+    "file": "initial/webkit/390x844-home.webp",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-home",
+    "inspected": true,
+    "observation": "Landing artwork and controls render; portrait supporting type and navigation are small."
+  },
+  {
+    "phase": "focused",
+    "engine": "chromium",
+    "file": "focused/chromium/390x844-house.webp",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-house",
+    "inspected": true,
+    "observation": "Atelier image, copy and craftsmanship action render."
+  },
+  {
+    "phase": "focused",
+    "engine": "chromium",
+    "file": "focused/chromium/390x844-collection.webp",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-collection",
+    "inspected": true,
+    "observation": "Collection page controls and photo render; narrow and short viewports require internal card scrolling."
+  },
+  {
+    "phase": "focused",
+    "engine": "chromium",
+    "file": "focused/chromium/390x844-craft.webp",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-craft",
+    "inspected": true,
+    "observation": "Craft accordion renders with last item open; short landscape/rotation requires internal scrolling."
+  },
+  {
+    "phase": "focused",
+    "engine": "chromium",
+    "file": "focused/chromium/rotated-craft.webp",
+    "viewport": [
+      844,
+      390
+    ],
+    "state": "rotated-craft",
+    "inspected": true,
+    "observation": "Craft accordion renders with last item open; short landscape/rotation requires internal scrolling."
+  },
+  {
+    "phase": "focused",
+    "engine": "chromium",
+    "file": "focused/chromium/390x844-visit.webp",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-visit",
+    "inspected": true,
+    "observation": "Boutique image and visible controls render; short landscape requires internal text scrolling. Fullscreen return visible where shown."
+  },
+  {
+    "phase": "focused",
+    "engine": "chromium",
+    "file": "focused/chromium/390x844-fullscreen.webp",
+    "viewport": [
+      390,
+      844
+    ],
+    "state": "390x844-fullscreen",
+    "inspected": true,
+    "observation": "Boutique image and visible controls render; short landscape requires internal text scrolling. Fullscreen return visible where shown."
+  },
+  {
+    "phase": "focused",
+    "engine": "chromium",
+    "file": "focused/chromium/320x568-collection.webp",
+    "viewport": [
+      320,
+      568
+    ],
+    "state": "320x568-collection",
+    "inspected": true,
+    "observation": "Collection page controls and photo render; narrow and short viewports require internal card scrolling."
+  },
+  {
+    "phase": "completion",
+    "engine": "chromium",
+    "file": "completion/chromium/settled-look-0.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "settled-look-0",
+    "inspected": true,
+    "observation": "Stable magazine spread reviewed; copy approaches/overlaps photo on the first two looks."
+  },
+  {
+    "phase": "completion",
+    "engine": "chromium",
+    "file": "completion/chromium/settled-look-1.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "settled-look-1",
+    "inspected": true,
+    "observation": "Stable magazine spread reviewed; copy approaches/overlaps photo on the first two looks."
+  },
+  {
+    "phase": "completion",
+    "engine": "chromium",
+    "file": "completion/chromium/settled-look-2.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "settled-look-2",
+    "inspected": true,
+    "observation": "Stable magazine spread reviewed; copy approaches/overlaps photo on the first two looks."
+  },
+  {
+    "phase": "completion",
+    "engine": "chromium",
+    "file": "completion/chromium/settled-look-3.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "settled-look-3",
+    "inspected": true,
+    "observation": "Stable magazine spread reviewed; copy approaches/overlaps photo on the first two looks."
+  },
+  {
+    "phase": "completion",
+    "engine": "chromium",
+    "file": "completion/chromium/settled-look-4.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "settled-look-4",
+    "inspected": true,
+    "observation": "Stable magazine spread reviewed; copy approaches/overlaps photo on the first two looks."
+  },
+  {
+    "phase": "completion",
+    "engine": "chromium",
+    "file": "completion/chromium/settled-look-5.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "settled-look-5",
+    "inspected": true,
+    "observation": "Stable magazine spread reviewed; copy approaches/overlaps photo on the first two looks."
+  },
+  {
+    "phase": "completion",
+    "engine": "chromium",
+    "file": "completion/chromium/keyboard-tab.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "keyboard-tab",
+    "inspected": true,
+    "observation": "Tab focuses inactive chapter controls, scrolling the hidden parent while chapter indicator stays at Arrival."
+  },
+  {
+    "phase": "completion",
+    "engine": "chromium",
+    "file": "completion/chromium/cta-collection-drift.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "state": "cta-collection-drift",
+    "inspected": true,
+    "observation": "Fresh Atelier CTA to Collection sequence remains aligned; earlier drift is not claimed as a universal pointer bug."
+  }
+]
