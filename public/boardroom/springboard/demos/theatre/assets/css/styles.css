@@ -150,7 +150,7 @@ img{display:block;max-width:100%}
 .dot.sel{background:var(--black)}
 .dot.un{background:repeating-linear-gradient(45deg,#ddd,#ddd 2px,#fff 2px,#fff 4px)}
 .summary{background:#111;color:var(--off);padding:18px;border:1px solid rgba(247,243,239,.12)}
-.summary h3{margin:0 0 12px;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase}
+.summary h2{margin:0 0 12px;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase}
 .summary-line{display:flex;justify-content:space-between;font-size:.84rem;padding:6px 0;border-bottom:1px solid rgba(247,243,239,.08)}
 .summary-total{display:flex;justify-content:space-between;align-items:baseline;font-weight:600;padding-top:14px;font-size:1.08rem}
 .summary-total span:last-child{font-size:1.48rem;line-height:1;color:#f7f1e4;letter-spacing:.02em}
@@ -317,3 +317,25 @@ img{display:block;max-width:100%}
 .np-media-overlay{
   pointer-events:none;
 }
+
+
+/* Approved Theatre accessibility repairs */
+.np-actions .btn:not(.btn-primary){color:#30271f;border-color:#655446}
+.coming-soon-page .site-footer,.coming-soon-page .site-footer > div:first-child{opacity:1}
+.sequence-pause{position:absolute;z-index:3;top:76px;right:20px;padding:10px 14px;border:1px solid #c8a96a;background:#111;color:#f7f3ef;cursor:pointer}
+.sequence-pause[hidden]{display:none}
+body.overlay-open{overflow:hidden!important}
+.sample-note{font-size:.85rem;line-height:1.5}
+.demo-email-dialog{max-width:560px;width:calc(100% - 32px);max-height:90vh;overflow:auto;padding:24px;background:#f7f3ef;color:#211c17;border:1px solid #c8a96a}
+.demo-email-dialog::backdrop{background:rgba(0,0,0,.8)}
+.demo-email-dialog form{display:grid;gap:14px}
+.demo-email-dialog label{display:grid;gap:6px}
+.demo-email-dialog input,.demo-email-dialog textarea{width:100%;padding:10px;font:inherit}
+.demo-email-dialog .btn{color:#211c17;border-color:#655446}
+.demo-email-dialog .btn-primary{color:white}
+:focus-visible{outline:3px solid #c8a96a;outline-offset:3px}
+.demo-email-dialog form[hidden]{display:none}
+.field-error{font-size:.8rem;color:#8a1a1a;min-height:1em}
+
+.site-footer .foot-right{flex-wrap:wrap}.site-footer .foot-right a{white-space:nowrap;overflow-wrap:normal}
+.form-success .btn{color:#211c17;border-color:#655446}

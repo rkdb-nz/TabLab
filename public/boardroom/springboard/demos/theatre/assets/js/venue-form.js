@@ -1,43 +1,29 @@
-
 (function(){
-  const form = document.getElementById('hireForm');
-  const success = document.getElementById('formSuccess');
-  const sendAnother = document.getElementById('sendAnotherBtn');
-  if(!form) return;
-  form.addEventListener('submit', function(e){
-    e.preventDefault();
-    let valid=true;
-    const required = form.querySelectorAll('[required]');
-    required.forEach(function(inp){
-      const err = inp.parentElement.querySelector('.field-error');
-      const isEmpty = inp.type==='checkbox' ? !inp.checked : !inp.value.trim();
-      if(isEmpty){
-        valid=false;
-        inp.setAttribute('aria-invalid','true');
-        if(err) err.textContent='This field is required.';
-      } else {
-        inp.removeAttribute('aria-invalid');
-        if(err) err.textContent='';
-      }
-      if(inp.type==='email' && inp.value && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(inp.value)){
-        valid=false;
-        inp.setAttribute('aria-invalid','true');
-        if(err) err.textContent='Enter a valid email.';
-      }
-    });
-    if(!valid) return;
-    form.style.display='none';
-    if(success){ success.classList.add('show'); success.style.display='block'; success.focus(); }
+  const form=document.getElementById('hireForm'), success=document.getElementById('formSuccess'), again=document.getElementById('sendAnotherBtn');
+  if(!form)return;
+  const fields=Array.from(form.querySelectorAll('input,select,textarea'));
+  fields.forEach(function(input){
+    let error=input.parentElement.querySelector('.field-error');
+    if(!error){error=document.createElement('div');error.className='field-error';input.after(error);}
+    error.id=input.id+'Error';error.setAttribute('aria-live','polite');input.setAttribute('aria-describedby',error.id);
   });
-  if(sendAnother){
-    sendAnother.addEventListener('click', function(){
-      if(success){ success.classList.remove('show'); success.style.display='none'; }
-      form.style.display='grid';
-      form.reset();
-      form.querySelectorAll('[aria-invalid]').forEach(function(el){ el.removeAttribute('aria-invalid'); });
-      form.querySelectorAll('.field-error').forEach(function(el){ el.textContent=''; });
-      const first = form.querySelector('input, select, textarea');
-      if(first) first.focus();
+  form.addEventListener('submit',function(e){
+    e.preventDefault();let first=null;
+    fields.forEach(function(input){
+      const error=document.getElementById(input.id+'Error');
+      let message='';
+      if(input.required&&!input.value.trim())message='This field is required.';
+      else if(!input.validity.valid){
+        message=input.type==='email'?'Enter a valid email address.':input.type==='number'?'Enter a whole number from 1 to 200.':'Enter a valid value.';
+      }
+      error.textContent=message;
+      if(message){input.setAttribute('aria-invalid','true');if(!first)first=input;}else input.removeAttribute('aria-invalid');
     });
-  }
+    if(first){first.focus();return;}
+    form.hidden=true;form.style.display='none';success.classList.add('show');success.style.display='block';success.focus();
+  });
+  again.addEventListener('click',function(){
+    success.classList.remove('show');success.style.display='none';form.hidden=false;form.style.display='grid';form.reset();
+    fields.forEach(function(input){input.removeAttribute('aria-invalid');document.getElementById(input.id+'Error').textContent='';});fields[0].focus();
+  });
 })();

@@ -3,21 +3,32 @@
   const btn = document.getElementById('menuBtn');
   const panel = document.getElementById('mobilePanel');
   let lastFocus = null;
+  let inerted=[];
+  function containOverlay(overlay, open){
+    if(open){
+      inerted=Array.from(document.body.children).filter(el=>el!==overlay&&!el.contains(overlay)&&!el.inert);
+      inerted.forEach(el=>el.inert=true);document.body.classList.add('overlay-open');
+    }else{inerted.forEach(el=>el.inert=false);inerted=[];document.body.classList.remove('overlay-open');}
+  }
+  if(panel){
+    const close=document.createElement('button');close.type='button';close.className='btn';close.textContent='Close menu';
+    close.addEventListener('click',closeMenu);panel.prepend(close);
+  }
   function openMenu(){
     if(!panel) return;
     lastFocus = document.activeElement;
     panel.classList.add('open');
     panel.style.display='flex';
-    document.body.style.overflow='hidden';
+    containOverlay(panel,true);
     btn.setAttribute('aria-expanded','true');
-    const first = panel.querySelector('a'); if(first) first.focus();
+    const first = panel.querySelector('button,a'); if(first) first.focus();
     document.addEventListener('keydown', onKey);
   }
   function closeMenu(){
     if(!panel) return;
     panel.classList.remove('open');
     panel.style.display='none';
-    document.body.style.overflow='';
+    containOverlay(panel,false);
     btn.setAttribute('aria-expanded','false');
     if(lastFocus) lastFocus.focus();
     document.removeEventListener('keydown', onKey);
@@ -44,6 +55,8 @@
     const frames = Array.from(sequenceRoot.querySelectorAll('.home-hero-image'));
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let currentIndex = 0;
+    let paused=false;
+    const pause=document.getElementById('sequencePause');
     let holdTimer = null;
     let fadeTimer = null;
     const steps = [
@@ -75,6 +88,7 @@
     }
 
     function runStep(){
+      if(paused || reduceMotion.matches)return;
       const step = steps[currentIndex % steps.length];
       holdTimer = setTimeout(function(){
         const nextIndex = (currentIndex + 1) % frames.length;
@@ -99,7 +113,13 @@
       showOnly(nightIndex);
     }
 
+    if(pause)pause.addEventListener('click',function(){
+      paused=!paused;clearTimers();showOnly(currentIndex);
+      pause.setAttribute('aria-pressed',String(paused));pause.textContent=paused?'Resume slideshow':'Pause slideshow';
+      if(!paused)runStep();
+    });
     function syncMotionPreference(){
+      if(pause)pause.hidden=reduceMotion.matches;
       if(reduceMotion.matches){
         setReducedMotionStatic();
       } else {
@@ -201,6 +221,20 @@
     });
   }
 
+  document.querySelectorAll('a[href="clementine-street.html#email"]').forEach(function(link){
+    link.addEventListener('click',function(e){e.preventDefault();openEmail();});
+  });
+  function openEmail(){
+    const dialog=document.createElement('dialog');dialog.className='demo-email-dialog';
+    dialog.setAttribute('aria-labelledby','demoEmailTitle');
+    dialog.innerHTML='<h2 id="demoEmailTitle">Email Clementine Street Theatre</h2><form><p>To: clementinesttheatre@rkdb.nz</p><label>Your email<input type="email" required autocomplete="email"></label><label>Subject<input required></label><label>Message<textarea required rows="5"></textarea></label><button class="btn btn-primary" type="submit">Send email</button><button class="btn" type="button" data-close>Cancel</button></form><div hidden tabindex="-1" data-result><h3>Demo complete</h3><p>This is a demonstration. No email has been sent.</p><button class="btn" type="button" data-close>Close</button></div>';
+    const previous=document.activeElement;document.body.append(dialog);
+    dialog.querySelectorAll('[data-close]').forEach(el=>el.addEventListener('click',()=>dialog.close()));
+    dialog.querySelector('form').addEventListener('submit',function(e){e.preventDefault();this.hidden=true;const result=dialog.querySelector('[data-result]');result.hidden=false;result.focus();});
+    dialog.addEventListener('close',function(){dialog.remove();previous.focus();});dialog.showModal();
+  }
+  if(location.hash==='#email')openEmail();
+
   // Coming Soon hover
   document.querySelectorAll('.cs-prod').forEach(function(p){
     p.addEventListener('mouseenter',function(){document.querySelectorAll('.cs-prod').forEach(function(x){x.classList.remove('active');});p.classList.add('active');});
@@ -220,7 +254,7 @@
       lightbox.setAttribute('aria-hidden', 'true');
       lightboxImage.src = '';
       lightboxImage.alt = '';
-      document.body.style.overflow = '';
+      containOverlay(lightbox,false);
       document.removeEventListener('keydown', onLightboxKeydown);
       if(lastPosterTrigger){
         lastPosterTrigger.focus();
@@ -228,6 +262,7 @@
     }
 
     function onLightboxKeydown(e){
+      if(e.key==='Tab'){e.preventDefault();lightboxClose.focus();}
       if(e.key === 'Escape'){
         closeLightbox();
       }
@@ -242,7 +277,7 @@
       lightboxImage.alt = posterImage.alt;
       lightbox.hidden = false;
       lightbox.setAttribute('aria-hidden', 'false');
-      document.body.style.overflow = 'hidden';
+      containOverlay(lightbox,true);
       lightboxClose.focus();
       document.addEventListener('keydown', onLightboxKeydown);
     }
@@ -261,3 +296,4 @@
     });
   }
 })();
+

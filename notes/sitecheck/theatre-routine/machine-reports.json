@@ -1,0 +1,2443 @@
+[
+  {
+    "phase": "initial",
+    "engine": "firefox",
+    "report": {
+      "engine": "firefox",
+      "commit": "210596d74a63339b5a7815d33d1599da348486e0",
+      "checks": [
+        {
+          "label": "1440x900 home",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "document": [
+              1426,
+              845
+            ],
+            "main": [
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  1426,
+                  793
+                ],
+                "scroll": [
+                  1426,
+                  793
+                ],
+                "overflow": "hidden",
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 1426,
+                  "h": 793,
+                  "bottom": 793
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "1440x900 nav result",
+          "evidence": "http://127.0.0.1:41277/boardroom/springboard/demos/theatre/now-playing.html?v=theatre-mobile-lock-1"
+        },
+        {
+          "label": "1440x900 booking",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "document": [
+              1426,
+              845
+            ],
+            "main": [
+              {
+                "class": "book-main",
+                "id": "main",
+                "client": [
+                  1426,
+                  729
+                ],
+                "scroll": [
+                  1426,
+                  729
+                ],
+                "overflow": "hidden",
+                "rect": {
+                  "x": 0,
+                  "y": 64,
+                  "w": 1426,
+                  "h": 729,
+                  "bottom": 793
+                }
+              },
+              {
+                "class": "book-left",
+                "id": "",
+                "client": [
+                  784,
+                  729
+                ],
+                "scroll": [
+                  784,
+                  729
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 64,
+                  "w": 784.2999877929688,
+                  "h": 729,
+                  "bottom": 793
+                }
+              },
+              {
+                "class": "book-right",
+                "id": "",
+                "client": [
+                  642,
+                  729
+                ],
+                "scroll": [
+                  642,
+                  743
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 784.2999877929688,
+                  "y": 64,
+                  "w": 641.7000122070312,
+                  "h": 729,
+                  "bottom": 793
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "1440x900 empty checkout disabled",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 quantity floor",
+          "evidence": "0"
+        },
+        {
+          "label": "1440x900 mixed price $106",
+          "evidence": "$106"
+        },
+        {
+          "label": "1440x900 truthful no payment result",
+          "evidence": "This was a demonstration. No payment was taken and no seats have been reserved."
+        },
+        {
+          "label": "1440x900 reset",
+          "evidence": "$0"
+        },
+        {
+          "label": "390x844 home",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "document": [
+              382,
+              763
+            ],
+            "main": [
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  382,
+                  549
+                ],
+                "scroll": [
+                  382,
+                  549
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 549.3499755859375,
+                  "bottom": 607.3499755859375
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "390x844 menu opened",
+          "evidence": "true"
+        },
+        {
+          "label": "390x844 open menu",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "document": [
+              382,
+              763
+            ],
+            "main": [
+              {
+                "class": "mobile-panel open",
+                "id": "mobilePanel",
+                "client": [
+                  382,
+                  705
+                ],
+                "scroll": [
+                  382,
+                  705
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 705,
+                  "bottom": 763
+                }
+              },
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  382,
+                  549
+                ],
+                "scroll": [
+                  382,
+                  549
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 549.3499755859375,
+                  "bottom": 607.3499755859375
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "390x844 nav result",
+          "evidence": "http://127.0.0.1:41277/boardroom/springboard/demos/theatre/now-playing.html?v=theatre-mobile-lock-1"
+        },
+        {
+          "label": "390x844 booking",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "document": [
+              382,
+              1802
+            ],
+            "main": [
+              {
+                "class": "book-main",
+                "id": "main",
+                "client": [
+                  382,
+                  1621
+                ],
+                "scroll": [
+                  382,
+                  1621
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 1621.050048828125,
+                  "bottom": 1679.050048828125
+                }
+              },
+              {
+                "class": "book-left",
+                "id": "",
+                "client": [
+                  382,
+                  799
+                ],
+                "scroll": [
+                  382,
+                  799
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 880.0499877929688,
+                  "w": 382,
+                  "h": 799,
+                  "bottom": 1679.0499877929688
+                }
+              },
+              {
+                "class": "book-right",
+                "id": "",
+                "client": [
+                  382,
+                  822
+                ],
+                "scroll": [
+                  382,
+                  822
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 822.0499877929688,
+                  "bottom": 880.0499877929688
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "390x844 empty checkout disabled",
+          "evidence": true
+        },
+        {
+          "label": "390x844 quantity floor",
+          "evidence": "0"
+        },
+        {
+          "label": "390x844 mixed price $106",
+          "evidence": "$106"
+        },
+        {
+          "label": "390x844 truthful no payment result",
+          "evidence": "This was a demonstration. No payment was taken and no seats have been reserved."
+        },
+        {
+          "label": "390x844 reset",
+          "evidence": "$0"
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-home.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-home.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-booking.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-booking-result.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [],
+      "scans": [],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "153.0"
+    }
+  },
+  {
+    "phase": "initial",
+    "engine": "webkit",
+    "report": {
+      "engine": "webkit",
+      "commit": "210596d74a63339b5a7815d33d1599da348486e0",
+      "checks": [
+        {
+          "label": "1440x900 home",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "document": [
+              1426,
+              845
+            ],
+            "main": [
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  1426,
+                  793
+                ],
+                "scroll": [
+                  1426,
+                  793
+                ],
+                "overflow": "hidden",
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 1426,
+                  "h": 793,
+                  "bottom": 793
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "1440x900 nav result",
+          "evidence": "http://127.0.0.1:40139/boardroom/springboard/demos/theatre/now-playing.html?v=theatre-mobile-lock-1"
+        },
+        {
+          "label": "1440x900 booking",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "document": [
+              1426,
+              845
+            ],
+            "main": [
+              {
+                "class": "book-main",
+                "id": "main",
+                "client": [
+                  1426,
+                  729
+                ],
+                "scroll": [
+                  1426,
+                  729
+                ],
+                "overflow": "hidden",
+                "rect": {
+                  "x": 0,
+                  "y": 64,
+                  "w": 1426,
+                  "h": 729,
+                  "bottom": 793
+                }
+              },
+              {
+                "class": "book-left",
+                "id": "",
+                "client": [
+                  784,
+                  729
+                ],
+                "scroll": [
+                  784,
+                  729
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 64,
+                  "w": 784.296875,
+                  "h": 729,
+                  "bottom": 793
+                }
+              },
+              {
+                "class": "book-right",
+                "id": "",
+                "client": [
+                  642,
+                  729
+                ],
+                "scroll": [
+                  642,
+                  736
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 784.296875,
+                  "y": 64,
+                  "w": 641.703125,
+                  "h": 729,
+                  "bottom": 793
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "1440x900 empty checkout disabled",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 quantity floor",
+          "evidence": "0"
+        },
+        {
+          "label": "1440x900 mixed price $106",
+          "evidence": "$106"
+        },
+        {
+          "label": "1440x900 truthful no payment result",
+          "evidence": "This was a demonstration. No payment was taken and no seats have been reserved."
+        },
+        {
+          "label": "1440x900 reset",
+          "evidence": "$0"
+        },
+        {
+          "label": "390x844 home",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "document": [
+              382,
+              763
+            ],
+            "main": [
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  382,
+                  549
+                ],
+                "scroll": [
+                  382,
+                  549
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 549.359375,
+                  "bottom": 607.359375
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "390x844 menu opened",
+          "evidence": "true"
+        },
+        {
+          "label": "390x844 open menu",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "document": [
+              382,
+              763
+            ],
+            "main": [
+              {
+                "class": "mobile-panel open",
+                "id": "mobilePanel",
+                "client": [
+                  382,
+                  705
+                ],
+                "scroll": [
+                  382,
+                  705
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 705,
+                  "bottom": 763
+                }
+              },
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  382,
+                  549
+                ],
+                "scroll": [
+                  382,
+                  549
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 549.359375,
+                  "bottom": 607.359375
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "390x844 nav result",
+          "evidence": "http://127.0.0.1:40139/boardroom/springboard/demos/theatre/now-playing.html?v=theatre-mobile-lock-1"
+        },
+        {
+          "label": "390x844 booking",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "document": [
+              382,
+              1769
+            ],
+            "main": [
+              {
+                "class": "book-main",
+                "id": "main",
+                "client": [
+                  382,
+                  1594
+                ],
+                "scroll": [
+                  382,
+                  1594
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 1593.765625,
+                  "bottom": 1651.765625
+                }
+              },
+              {
+                "class": "book-left",
+                "id": "",
+                "client": [
+                  382,
+                  779
+                ],
+                "scroll": [
+                  382,
+                  779
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 872.765625,
+                  "w": 382,
+                  "h": 779,
+                  "bottom": 1651.765625
+                }
+              },
+              {
+                "class": "book-right",
+                "id": "",
+                "client": [
+                  382,
+                  815
+                ],
+                "scroll": [
+                  382,
+                  815
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 814.765625,
+                  "bottom": 872.765625
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "390x844 empty checkout disabled",
+          "evidence": true
+        },
+        {
+          "label": "390x844 quantity floor",
+          "evidence": "0"
+        },
+        {
+          "label": "390x844 mixed price $106",
+          "evidence": "$106"
+        },
+        {
+          "label": "390x844 truthful no payment result",
+          "evidence": "This was a demonstration. No payment was taken and no seats have been reserved."
+        },
+        {
+          "label": "390x844 reset",
+          "evidence": "$0"
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-home.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-home.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-booking.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-booking-result.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [],
+      "scans": [],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "26.5"
+    }
+  },
+  {
+    "phase": "continuation",
+    "engine": "chromium",
+    "report": {
+      "engine": "chromium",
+      "commit": "e6aba75085e8282f8f34f55f62980e41017f39d1",
+      "checks": [
+        {
+          "label": "1440x900 home",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "document": [
+              1426,
+              845
+            ],
+            "main": [
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  1426,
+                  793
+                ],
+                "scroll": [
+                  1426,
+                  793
+                ],
+                "overflow": "hidden",
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 1426,
+                  "h": 793,
+                  "bottom": 793
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "reused now-playing capture",
+          "evidence": "Initial Chrome capture retained separately"
+        },
+        {
+          "label": "now tab note",
+          "evidence": true
+        },
+        {
+          "label": "now tab cast",
+          "evidence": true
+        },
+        {
+          "label": "now tab details",
+          "evidence": true
+        },
+        {
+          "label": "now tab syn",
+          "evidence": true
+        },
+        {
+          "label": "reused now-playing-details capture",
+          "evidence": "Initial Chrome capture retained separately"
+        },
+        {
+          "label": "reused now-poster capture",
+          "evidence": "Initial Chrome capture retained separately"
+        },
+        {
+          "label": "poster tab focus contained",
+          "evidence": false
+        },
+        {
+          "label": "reused coming-soon capture",
+          "evidence": "Initial Chrome capture retained separately"
+        },
+        {
+          "label": "poster 0 image",
+          "evidence": {
+            "src": "http://127.0.0.1:41961/boardroom/springboard/demos/theatre/assets/images/poster1.webp",
+            "ok": true
+          }
+        },
+        {
+          "label": "poster 1 image",
+          "evidence": {
+            "src": "http://127.0.0.1:41961/boardroom/springboard/demos/theatre/assets/images/poster2.webp",
+            "ok": true
+          }
+        },
+        {
+          "label": "poster 2 image",
+          "evidence": {
+            "src": "http://127.0.0.1:41961/boardroom/springboard/demos/theatre/assets/images/poster3.webp",
+            "ok": true
+          }
+        },
+        {
+          "label": "reused coming-poster capture",
+          "evidence": "Initial Chrome capture retained separately"
+        },
+        {
+          "label": "venue tab hire",
+          "evidence": {
+            "visible": true,
+            "hash": "#hire"
+          }
+        },
+        {
+          "label": "venue tab technical",
+          "evidence": {
+            "visible": true,
+            "hash": "#technical"
+          }
+        },
+        {
+          "label": "venue tab accessibility",
+          "evidence": {
+            "visible": true,
+            "hash": "#accessibility"
+          }
+        },
+        {
+          "label": "venue tab find",
+          "evidence": {
+            "visible": true,
+            "hash": "#find"
+          }
+        },
+        {
+          "label": "hire invalid focus",
+          "evidence": "<button class=\"btn btn-primary\" type=\"submit\">Send enquiry</button>"
+        },
+        {
+          "label": "hire bad email error",
+          "evidence": "true"
+        },
+        {
+          "label": "hire result and invalid attendance",
+          "evidence": "Thank you.\n\nThank you for your enquiry. Our team will respond within 2 working days.\n\nSEND ANOTHER"
+        },
+        {
+          "label": "hire reset",
+          "evidence": ""
+        },
+        {
+          "label": "reduced sequence static",
+          "evidence": "hero-exterior2"
+        },
+        {
+          "label": "normal motion controls",
+          "evidence": [
+            "Menu"
+          ]
+        },
+        {
+          "label": "1440x900 fullscreen",
+          "evidence": {
+            "frame": [
+              1440,
+              900
+            ],
+            "return": true
+          }
+        },
+        {
+          "label": "1440x900 fullscreen return",
+          "evidence": true
+        },
+        {
+          "label": "native zoom shortcut attempt",
+          "evidence": {
+            "before": [
+              1440,
+              900,
+              1
+            ],
+            "after": [
+              1440,
+              900,
+              1
+            ]
+          }
+        },
+        {
+          "label": "390x844 home",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "document": [
+              382,
+              763
+            ],
+            "main": [
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  382,
+                  549
+                ],
+                "scroll": [
+                  382,
+                  549
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 549.359375,
+                  "bottom": 607.359375
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "390x844 menu opened",
+          "evidence": "true"
+        },
+        {
+          "label": "390x844 open menu",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "document": [
+              382,
+              763
+            ],
+            "main": [
+              {
+                "class": "mobile-panel open",
+                "id": "mobilePanel",
+                "client": [
+                  382,
+                  705
+                ],
+                "scroll": [
+                  382,
+                  705
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 705,
+                  "bottom": 763
+                }
+              },
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  382,
+                  549
+                ],
+                "scroll": [
+                  382,
+                  549
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 549.359375,
+                  "bottom": 607.359375
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "rotated menu",
+          "evidence": {
+            "viewport": [
+              836,
+              338
+            ],
+            "document": [
+              836,
+              573
+            ],
+            "main": [
+              {
+                "class": "mobile-panel open",
+                "id": "mobilePanel",
+                "client": [
+                  836,
+                  280
+                ],
+                "scroll": [
+                  836,
+                  283
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 836,
+                  "h": 280,
+                  "bottom": 338
+                }
+              },
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  836,
+                  421
+                ],
+                "scroll": [
+                  836,
+                  421
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 836,
+                  "h": 420.78125,
+                  "bottom": 478.78125
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "390x844 nav result",
+          "evidence": "http://127.0.0.1:41961/boardroom/springboard/demos/theatre/now-playing.html?v=theatre-mobile-lock-1"
+        },
+        {
+          "label": "390x844 booking",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "document": [
+              382,
+              1768
+            ],
+            "main": [
+              {
+                "class": "book-main",
+                "id": "main",
+                "client": [
+                  382,
+                  1593
+                ],
+                "scroll": [
+                  382,
+                  1593
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 1592.828125,
+                  "bottom": 1650.828125
+                }
+              },
+              {
+                "class": "book-left",
+                "id": "",
+                "client": [
+                  382,
+                  778
+                ],
+                "scroll": [
+                  382,
+                  778
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 872.828125,
+                  "w": 382,
+                  "h": 778,
+                  "bottom": 1650.828125
+                }
+              },
+              {
+                "class": "book-right",
+                "id": "",
+                "client": [
+                  382,
+                  815
+                ],
+                "scroll": [
+                  382,
+                  815
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 382,
+                  "h": 814.828125,
+                  "bottom": 872.828125
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "390x844 empty checkout disabled",
+          "evidence": true
+        },
+        {
+          "label": "390x844 quantity floor",
+          "evidence": "0"
+        },
+        {
+          "label": "390x844 mixed price $106",
+          "evidence": "$106"
+        },
+        {
+          "label": "390x844 truthful no payment result",
+          "evidence": "This was a demonstration. No payment was taken and no seats have been reserved."
+        },
+        {
+          "label": "390x844 reset",
+          "evidence": "$0"
+        },
+        {
+          "label": "phone hire",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "document": [
+              382,
+              9376
+            ],
+            "main": [
+              {
+                "class": "clem-main clem-theatre-page",
+                "id": "main",
+                "client": [
+                  382,
+                  9201
+                ],
+                "scroll": [
+                  640,
+                  9201
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": -22,
+                  "w": 382,
+                  "h": 9200.578125,
+                  "bottom": 9178.578125
+                }
+              },
+              {
+                "class": "clem-center",
+                "id": "",
+                "client": [
+                  64,
+                  9201
+                ],
+                "scroll": [
+                  223,
+                  9201
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 280,
+                  "y": -22,
+                  "w": 64,
+                  "h": 9200.578125,
+                  "bottom": 9178.578125
+                }
+              },
+              {
+                "class": "clem-right",
+                "id": "",
+                "client": [
+                  359,
+                  9201
+                ],
+                "scroll": [
+                  359,
+                  9201
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 280,
+                  "y": -22,
+                  "w": 360,
+                  "h": 9200.578125,
+                  "bottom": 9178.578125
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "390x844 fullscreen",
+          "evidence": {
+            "frame": [
+              390,
+              844
+            ],
+            "return": true
+          }
+        },
+        {
+          "label": "390x844 fullscreen return",
+          "evidence": true
+        },
+        {
+          "label": "844x390 home",
+          "evidence": {
+            "viewport": [
+              836,
+              338
+            ],
+            "document": [
+              836,
+              573
+            ],
+            "main": [
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  836,
+                  421
+                ],
+                "scroll": [
+                  836,
+                  421
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 836,
+                  "h": 420.78125,
+                  "bottom": 478.78125
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "844x390 menu opened",
+          "evidence": "true"
+        },
+        {
+          "label": "844x390 open menu",
+          "evidence": {
+            "viewport": [
+              836,
+              338
+            ],
+            "document": [
+              836,
+              573
+            ],
+            "main": [
+              {
+                "class": "mobile-panel open",
+                "id": "mobilePanel",
+                "client": [
+                  836,
+                  280
+                ],
+                "scroll": [
+                  836,
+                  283
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 836,
+                  "h": 280,
+                  "bottom": 338
+                }
+              },
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  836,
+                  421
+                ],
+                "scroll": [
+                  836,
+                  421
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 836,
+                  "h": 420.78125,
+                  "bottom": 478.78125
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "844x390 nav result",
+          "evidence": "http://127.0.0.1:41961/boardroom/springboard/demos/theatre/now-playing.html?v=theatre-mobile-lock-1"
+        },
+        {
+          "label": "844x390 booking",
+          "evidence": {
+            "viewport": [
+              836,
+              338
+            ],
+            "document": [
+              836,
+              1416
+            ],
+            "main": [
+              {
+                "class": "book-main",
+                "id": "main",
+                "client": [
+                  836,
+                  1293
+                ],
+                "scroll": [
+                  836,
+                  1293
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 836,
+                  "h": 1293.15625,
+                  "bottom": 1351.15625
+                }
+              },
+              {
+                "class": "book-left",
+                "id": "",
+                "client": [
+                  836,
+                  553
+                ],
+                "scroll": [
+                  836,
+                  553
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 798.15625,
+                  "w": 836,
+                  "h": 553,
+                  "bottom": 1351.15625
+                }
+              },
+              {
+                "class": "book-right",
+                "id": "",
+                "client": [
+                  836,
+                  740
+                ],
+                "scroll": [
+                  836,
+                  740
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 836,
+                  "h": 740.15625,
+                  "bottom": 798.15625
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "844x390 empty checkout disabled",
+          "evidence": true
+        },
+        {
+          "label": "844x390 quantity floor",
+          "evidence": "0"
+        },
+        {
+          "label": "844x390 mixed price $106",
+          "evidence": "$106"
+        },
+        {
+          "label": "844x390 truthful no payment result",
+          "evidence": "This was a demonstration. No payment was taken and no seats have been reserved."
+        },
+        {
+          "label": "844x390 reset",
+          "evidence": "$0"
+        },
+        {
+          "label": "320x568 home",
+          "evidence": {
+            "viewport": [
+              312,
+              487
+            ],
+            "document": [
+              312,
+              665
+            ],
+            "main": [
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  312,
+                  475
+                ],
+                "scroll": [
+                  312,
+                  475
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 312,
+                  "h": 474.515625,
+                  "bottom": 532.515625
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "320x568 menu opened",
+          "evidence": "true"
+        },
+        {
+          "label": "320x568 open menu",
+          "evidence": {
+            "viewport": [
+              312,
+              487
+            ],
+            "document": [
+              312,
+              665
+            ],
+            "main": [
+              {
+                "class": "mobile-panel open",
+                "id": "mobilePanel",
+                "client": [
+                  312,
+                  429
+                ],
+                "scroll": [
+                  312,
+                  429
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 312,
+                  "h": 429,
+                  "bottom": 487
+                }
+              },
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  312,
+                  475
+                ],
+                "scroll": [
+                  312,
+                  475
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 312,
+                  "h": 474.515625,
+                  "bottom": 532.515625
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "320x568 nav result",
+          "evidence": "http://127.0.0.1:41961/boardroom/springboard/demos/theatre/now-playing.html?v=theatre-mobile-lock-1"
+        },
+        {
+          "label": "320x568 booking",
+          "evidence": {
+            "viewport": [
+              312,
+              487
+            ],
+            "document": [
+              312,
+              1967
+            ],
+            "main": [
+              {
+                "class": "book-main",
+                "id": "main",
+                "client": [
+                  312,
+                  1779
+                ],
+                "scroll": [
+                  312,
+                  1779
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 312,
+                  "h": 1778.90625,
+                  "bottom": 1836.90625
+                }
+              },
+              {
+                "class": "book-left",
+                "id": "",
+                "client": [
+                  312,
+                  896
+                ],
+                "scroll": [
+                  332,
+                  896
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 940.90625,
+                  "w": 312,
+                  "h": 896,
+                  "bottom": 1836.90625
+                }
+              },
+              {
+                "class": "book-right",
+                "id": "",
+                "client": [
+                  312,
+                  883
+                ],
+                "scroll": [
+                  312,
+                  883
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 312,
+                  "h": 882.90625,
+                  "bottom": 940.90625
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "320x568 empty checkout disabled",
+          "evidence": true
+        },
+        {
+          "label": "320x568 quantity floor",
+          "evidence": "0"
+        },
+        {
+          "label": "320x568 mixed price $106",
+          "evidence": "$106"
+        },
+        {
+          "label": "320x568 truthful no payment result",
+          "evidence": "This was a demonstration. No payment was taken and no seats have been reserved."
+        },
+        {
+          "label": "320x568 reset",
+          "evidence": "$0"
+        },
+        {
+          "label": "780x300 home",
+          "evidence": {
+            "viewport": [
+              772,
+              248
+            ],
+            "document": [
+              772,
+              573
+            ],
+            "main": [
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  772,
+                  421
+                ],
+                "scroll": [
+                  772,
+                  421
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 772,
+                  "h": 420.78125,
+                  "bottom": 478.78125
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "780x300 menu opened",
+          "evidence": "true"
+        },
+        {
+          "label": "780x300 open menu",
+          "evidence": {
+            "viewport": [
+              772,
+              248
+            ],
+            "document": [
+              772,
+              573
+            ],
+            "main": [
+              {
+                "class": "mobile-panel open",
+                "id": "mobilePanel",
+                "client": [
+                  772,
+                  190
+                ],
+                "scroll": [
+                  772,
+                  283
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 772,
+                  "h": 190,
+                  "bottom": 248
+                }
+              },
+              {
+                "class": "home-main",
+                "id": "main",
+                "client": [
+                  772,
+                  421
+                ],
+                "scroll": [
+                  772,
+                  421
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 772,
+                  "h": 420.78125,
+                  "bottom": 478.78125
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "780x300 nav result",
+          "evidence": "http://127.0.0.1:41961/boardroom/springboard/demos/theatre/now-playing.html?v=theatre-mobile-lock-1"
+        },
+        {
+          "label": "780x300 booking",
+          "evidence": {
+            "viewport": [
+              772,
+              248
+            ],
+            "document": [
+              772,
+              1489
+            ],
+            "main": [
+              {
+                "class": "book-main",
+                "id": "main",
+                "client": [
+                  772,
+                  1353
+                ],
+                "scroll": [
+                  772,
+                  1353
+                ],
+                "overflow": "visible",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 772,
+                  "h": 1353.15625,
+                  "bottom": 1411.15625
+                }
+              },
+              {
+                "class": "book-left",
+                "id": "",
+                "client": [
+                  772,
+                  613
+                ],
+                "scroll": [
+                  772,
+                  613
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 798.15625,
+                  "w": 772,
+                  "h": 613,
+                  "bottom": 1411.15625
+                }
+              },
+              {
+                "class": "book-right",
+                "id": "",
+                "client": [
+                  772,
+                  740
+                ],
+                "scroll": [
+                  772,
+                  740
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 58,
+                  "w": 772,
+                  "h": 740.15625,
+                  "bottom": 798.15625
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "780x300 empty checkout disabled",
+          "evidence": true
+        },
+        {
+          "label": "780x300 quantity floor",
+          "evidence": "0"
+        },
+        {
+          "label": "780x300 mixed price $106",
+          "evidence": "$106"
+        },
+        {
+          "label": "780x300 truthful no payment result",
+          "evidence": "This was a demonstration. No payment was taken and no seats have been reserved."
+        },
+        {
+          "label": "780x300 reset",
+          "evidence": "$0"
+        }
+      ],
+      "captures": [
+        {
+          "file": "venue-theatre.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "venue-accessibility.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "venue-find.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "venue-hire.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "hire-errors.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "hire-result.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-home.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "phone-menu.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "rotated-menu.png",
+          "outer": [
+            844,
+            390
+          ],
+          "frame": [
+            836,
+            338
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-booking.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-booking-result.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "coming-soon-phone.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "venue-hire-phone.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "844x390-home.png",
+          "outer": [
+            844,
+            390
+          ],
+          "frame": [
+            836,
+            338
+          ],
+          "inspected": false
+        },
+        {
+          "file": "320x568-home.png",
+          "outer": [
+            320,
+            568
+          ],
+          "frame": [
+            312,
+            487
+          ],
+          "inspected": false
+        },
+        {
+          "file": "780x300-home.png",
+          "outer": [
+            780,
+            300
+          ],
+          "frame": [
+            772,
+            248
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [],
+      "scans": [
+        {
+          "label": "Now Playing default",
+          "violations": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "html": "<a class=\"btn\" href=\"coming-soon.html?v=theatre-mobile-lock-1\">Coming Soon</a>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.07 (foreground color: #f7f3ef, background color: #efebe6, font size: 8.6pt (11.52px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Coming Soon",
+          "violations": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "html": "<div>Clementine Street Theatre — 18 Clementine Street, Wāpereki — <a href=\"mailto:clementinesttheatre@rkdb.nz\">clementinesttheatre@rkdb.nz</a> (07) 555 0148</div>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.13 (foreground color: #747271, background color: #0a0a0a, font size: 8.2pt (10.88px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<a href=\"mailto:clementinesttheatre@rkdb.nz\">clementinesttheatre@rkdb.nz</a>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.13 (foreground color: #747271, background color: #0a0a0a, font size: 8.2pt (10.88px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Venue default",
+          "violations": [
+            {
+              "id": "scrollable-region-focusable",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "html": "<div class=\"clem-center\">",
+                  "summary": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Booking default",
+          "violations": [
+            {
+              "id": "aria-allowed-attr",
+              "impact": "critical",
+              "nodes": [
+                {
+                  "html": "<button class=\"zone-card\" data-zone=\"Stalls — Front 4 rows\" aria-selected=\"false\"><small>Stalls</small><strong>Closest to the actors.</strong><span style=\"display:block;font-size:.76rem;opacity:.7;margin-top:6px\">Every expression. Every whisper.</span></button>",
+                  "summary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-selected=\"false\""
+                },
+                {
+                  "html": "<button class=\"zone-card\" data-zone=\"Centre — Mid theatre\" aria-selected=\"false\"><small>Centre</small><strong>Balanced sightlines.</strong><span style=\"display:block;font-size:.76rem;opacity:.7;margin-top:6px\">Our most popular seats.</span></button>",
+                  "summary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-selected=\"false\""
+                },
+                {
+                  "html": "<button class=\"zone-card\" data-zone=\"Rear — Back rows + boxes\" aria-selected=\"false\"><small>Rear</small><strong>Elevated perspective.</strong><span style=\"display:block;font-size:.76rem;opacity:.7;margin-top:6px\">See the whole stage unfold.</span></button>",
+                  "summary": "Fix all of the following:\n  ARIA attribute is not allowed: aria-selected=\"false\""
+                }
+              ]
+            },
+            {
+              "id": "heading-order",
+              "impact": "moderate",
+              "nodes": [
+                {
+                  "html": "<h3>Booking Summary</h3>",
+                  "summary": "Fix any of the following:\n  Heading order invalid"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Home reduced motion",
+          "violations": []
+        }
+      ],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "155.0.8059.39"
+    }
+  },
+  {
+    "phase": "recovered",
+    "engine": "chromium",
+    "report": {
+      "engine": "chromium",
+      "commit": "36874c61f913077322b457603ded8090dbbcca66",
+      "checks": [
+        {
+          "label": "1440x900 booking",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "document": [
+              1426,
+              845
+            ],
+            "main": [
+              {
+                "class": "book-main",
+                "id": "main",
+                "client": [
+                  1426,
+                  729
+                ],
+                "scroll": [
+                  1426,
+                  729
+                ],
+                "overflow": "hidden",
+                "rect": {
+                  "x": 0,
+                  "y": 64,
+                  "w": 1426,
+                  "h": 729,
+                  "bottom": 793
+                }
+              },
+              {
+                "class": "book-left",
+                "id": "",
+                "client": [
+                  784,
+                  729
+                ],
+                "scroll": [
+                  784,
+                  729
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 0,
+                  "y": 64,
+                  "w": 784.296875,
+                  "h": 729,
+                  "bottom": 793
+                }
+              },
+              {
+                "class": "book-right",
+                "id": "",
+                "client": [
+                  642,
+                  729
+                ],
+                "scroll": [
+                  642,
+                  736
+                ],
+                "overflow": "auto",
+                "rect": {
+                  "x": 784.296875,
+                  "y": 64,
+                  "w": 641.703125,
+                  "h": 729,
+                  "bottom": 793
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "1440x900 empty checkout disabled",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 quantity floor",
+          "evidence": "0"
+        },
+        {
+          "label": "1440x900 mixed price $106",
+          "evidence": "$106"
+        },
+        {
+          "label": "1440x900 truthful no payment result",
+          "evidence": "This was a demonstration. No payment was taken and no seats have been reserved."
+        },
+        {
+          "label": "1440x900 reset",
+          "evidence": "$0"
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-booking.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "1440x900-booking-result.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "now-playing-details.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "now-poster.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "coming-soon.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "coming-poster.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [],
+      "scans": [],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": []
+    }
+  }
+]
