@@ -654,5 +654,480 @@
     "routine": 40093632753,
     "focus": 40093956956,
     "webkitRecovery": 40094020893
+  },
+  "repairs": {
+    "approved": "RT-01–09 and D-01 corrected sign artwork",
+    "productCommit": "8623a35a2698d0c4fc6cd2095423d83b92b300f1",
+    "preview": "https://cded487e.foundry-a3k.pages.dev/boardroom/springboard/demos/retreat/",
+    "resolved": [
+      "RT-01",
+      "RT-02",
+      "RT-03",
+      "RT-04",
+      "RT-05",
+      "RT-06",
+      "RT-07",
+      "RT-08",
+      "RT-09",
+      "D-01"
+    ],
+    "remaining": [],
+    "newFindings": [],
+    "captures": [
+      {
+        "file": "1440x900-home.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "engine": "webkit",
+        "phase": "repairs",
+        "observation": "Landing renders within sampled viewport; normal vertical scrolling remains available."
+      },
+      {
+        "file": "390x844-home.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "engine": "webkit",
+        "phase": "repairs",
+        "observation": "Landing renders within sampled viewport; normal vertical scrolling remains available."
+      },
+      {
+        "file": "390x844-form-result.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "engine": "webkit",
+        "phase": "repairs",
+        "observation": "Truthful demo-only/no-send/no-booking confirmation; keyboard focus and Escape passed."
+      },
+      {
+        "file": "1440x900-home.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "engine": "firefox",
+        "phase": "repairs",
+        "observation": "Landing renders within sampled viewport; normal vertical scrolling remains available."
+      },
+      {
+        "file": "390x844-home.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "engine": "firefox",
+        "phase": "repairs",
+        "observation": "Landing renders within sampled viewport; normal vertical scrolling remains available."
+      },
+      {
+        "file": "390x844-form-result.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "engine": "firefox",
+        "phase": "repairs",
+        "observation": "Truthful demo-only/no-send/no-booking confirmation; keyboard focus and Escape passed."
+      },
+      {
+        "file": "1440x900-home.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Landing renders within sampled viewport; normal vertical scrolling remains available."
+      },
+      {
+        "file": "1440x900-form-errors.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "999 rejected; visible associated error and focused field below header."
+      },
+      {
+        "file": "1440x900-form-result.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Truthful demo-only/no-send/no-booking confirmation; keyboard focus and Escape passed."
+      },
+      {
+        "file": "town-copy.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Corrected Town copy matches imagery; final column arrangement supersedes this capture."
+      },
+      {
+        "file": "location-copy.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Location information is exposed beneath the image."
+      },
+      {
+        "file": "reviews-optimised.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Optimised portraits and sample journal wording render."
+      },
+      {
+        "file": "corrected-sign-desktop.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Corrected Wāperiki lettering is visible; existing sign design retained."
+      },
+      {
+        "file": "390x844-home.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Landing renders within sampled viewport; normal vertical scrolling remains available."
+      },
+      {
+        "file": "rotated-menu.png",
+        "outer": [
+          844,
+          390
+        ],
+        "frame": [
+          836,
+          338
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Rotated navigation fits and contains keyboard focus."
+      },
+      {
+        "file": "phone-gallery.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Native image dialog renders and contains/restores focus."
+      },
+      {
+        "file": "390x844-form-errors.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "999 rejected; visible associated error and focused field below header."
+      },
+      {
+        "file": "390x844-form-result.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Truthful demo-only/no-send/no-booking confirmation; keyboard focus and Escape passed."
+      },
+      {
+        "file": "corrected-sign-phone.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Corrected Wāperiki lettering is visible; existing sign design retained."
+      },
+      {
+        "file": "discover-closing-phone.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Scene navigation reaches closing CTA; short layout uses internal panel scrolling."
+      },
+      {
+        "file": "844x390-home.png",
+        "outer": [
+          844,
+          390
+        ],
+        "frame": [
+          836,
+          338
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Landing renders within sampled viewport; normal vertical scrolling remains available."
+      },
+      {
+        "file": "320x568-home.png",
+        "outer": [
+          320,
+          568
+        ],
+        "frame": [
+          312,
+          487
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Landing renders within sampled viewport; normal vertical scrolling remains available."
+      },
+      {
+        "file": "780x300-home.png",
+        "outer": [
+          780,
+          300
+        ],
+        "frame": [
+          772,
+          248
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Landing renders within sampled viewport; normal vertical scrolling remains available."
+      },
+      {
+        "file": "discover-closing-short.png",
+        "outer": [
+          780,
+          300
+        ],
+        "frame": [
+          772,
+          248
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repairs",
+        "observation": "Scene navigation reaches closing CTA; short layout uses internal panel scrolling."
+      },
+      {
+        "file": "woodland-layout-final.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repair-final",
+        "observation": "Original alternating column order retained; anchor pass supersedes earlier margin capture."
+      },
+      {
+        "file": "town-layout-final.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repair-final",
+        "observation": "Original alternating column order retained; anchor pass supersedes earlier margin capture."
+      },
+      {
+        "file": "woodland-layout-final.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repair-anchor",
+        "observation": "Original alternating column order retained; anchor pass supersedes earlier margin capture."
+      },
+      {
+        "file": "town-layout-final.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "engine": "chromium",
+        "phase": "repair-anchor",
+        "observation": "Original alternating column order retained; anchor pass supersedes earlier margin capture."
+      }
+    ],
+    "captureCount": 28,
+    "runs": {
+      "targeted": 40095014376,
+      "final": 40095229505,
+      "anchor": 40095452831
+    },
+    "reuse": [
+      "Unchanged initial fullscreen/return/gallery evidence at source5ed744e.",
+      "Initial repaired form, motion, gallery and page-scan results reused after scoped Farm label/column-order/anchor corrections.",
+      "Native200% zoom remains unverified; no new claim made."
+    ],
+    "assets": [
+      {
+        "path": "assets/icons/discover-hero-corrected.webp",
+        "bytes": 290784,
+        "sourceBytes": 2622752,
+        "inspection": "Corrected Wāperiki spelling; design and setting retained."
+      },
+      {
+        "path": "assets/images/review-guest-01.webp",
+        "bytes": 131418,
+        "sourceBytes": 2916599
+      },
+      {
+        "path": "assets/images/review-guest-04.webp",
+        "bytes": 86490,
+        "sourceBytes": 2408668
+      },
+      {
+        "path": "assets/images/review-guest-07.webp",
+        "bytes": 111850,
+        "sourceBytes": 2315265
+      }
+    ]
   }
 }

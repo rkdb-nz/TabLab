@@ -40,3 +40,28 @@ Machine reports and ledger are retained alongside this report. Two original repr
 Native200% zoom remains unverified: Ctrl-plus did not change1440×900/DPR1. WebKit is Linux emulation, not native Safari/iOS; no physical devices were certified. No independent agent review used. No real messages or reservations sent.
 
 Page titles/branding checked; descriptions are absent on the five inner pages. Indexing intent is not changed. Shared wrapper PostHog config404s were observed and left outside this product audit. No product metadata, analytics, background or imagery changes have been made.
+
+## Approved repairs — complete, awaiting publication
+
+Product commit: `8623a35a2698d0c4fc6cd2095423d83b92b300f1`.
+[Reviewed preview](https://cded487e.foundry-a3k.pages.dev/boardroom/springboard/demos/retreat/).
+
+**Fixes I can make**
+- RT-01–09 resolved. Enquiry/contact completion is truthfully demo-only. Coastal/Farm/Town/Undecided selection is preserved by whitelisted URL values. All fields have associated labels/errors; first invalid field is focused and visible below the header. Menus and native gallery/confirmation dialogs contain and restore focus, hide inactive content and support Escape. Discover has keyboard-accessible Previous/Next controls, reduced-motion support, working post-menu PageDown and return-to-top; short scenes allow internal copy scrolling. Contrast, main landmarks, current navigation, journal wording, alternatives and Town copy are corrected. Booking Location copy is visible.
+- D-01 resolved: approved existing-design sign edit now reads **Wāperiki**. The four replacement/optimised assets were individually inspected.
+
+**Items needing your attention or input**
+- None. Publication awaits user approval.
+
+Nine browser/viewport landing/navigation combinations completed. Original failing conditions for form labels/errors, guest range, selection, modal/menu/gallery focus, Escape/restoration, Discover keyboard/motion, short closing CTA and Location clipping pass. Five page scans have zero remaining reported violations, using the final Retreats scan for the last Farm contrast correction. Original column order was measured for all four retreats and visually checked on Woodland/Town. Native200% zoom remains unverified; Linux WebKit/phone emulation is not physical Safari/iOS certification. No independent agent review used.
+
+28 retained repair screenshots were opened and inspected. Two representative original phone captures are retained in `repair-evidence/`. Full machine evidence is in `repair-machine-reports.json` and the following90-day Actions artifacts:
+- [Targeted repairs](https://github.com/rkdb-nz/TabLab/actions/runs/40095014376): functional states passed; hidden-mobile-nav innerText assertions were false because invisible rendered text is empty, corrected to textContent. A remaining Farm eyebrow contrast4.24:1 was corrected.
+- [Final checks](https://github.com/rkdb-nz/TabLab/actions/runs/40095229505): all three engines passed; Farm contrast clear; original alternating columns restored.
+- [Anchor check](https://github.com/rkdb-nz/TabLab/actions/runs/40095452831): Chrome passed; limited validation scroll margin to fields/form so collection anchors preserve their original spacing. Other unaffected evidence reused.
+
+Portrait byte sizes changed from2,916,599/2,408,668/2,315,265 to131,418/86,490/111,850 (96.6% reduction combined). Corrected sign delivered as290,784B instead of the2,622,752B original. Suitable below-fold images lazy-load. Script/style/image versions are refreshed for returning visitors. The old sign asset remains unreferenced for provenance.
+
+Sign asset: `public/boardroom/springboard/demos/retreat/assets/icons/discover-hero-corrected.webp`. Built-in image-generation editing was used, then WebP conversion/optimisation. Prompt: “Correct ONLY the large carved place name from WĀPEREKI to exactly WĀPERIKI. Exact letters: W, Ā, P, E, R, I, K, I. Preserve the same serif carved lettering, centred placement, wooden sign shape/texture, ornaments, posts, small line beneath, lighting, sunset, landscape and composition. Keep every other element unchanged; do not overlay a label or mask lettering.” Generated master remains in the workspace; the deployed asset is committed with the project.
+
+Live-style preview navigation from Enquire—Coastal was checked through Cloudflare's extensionless redirect and retained Coastal Retreat. Unchanged wrapper fullscreen/return/gallery proof is reused. No real enquiries, emails, payments or reservations were sent. Production, indexing and analytics remain unchanged. Shared QA workflow restored.

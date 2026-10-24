@@ -1,0 +1,1265 @@
+[
+  {
+    "phase": "repairs",
+    "engine": "webkit",
+    "report": {
+      "engine": "webkit",
+      "commit": "ea935b9d3361ccdd0a08bfc07df600973679c68e",
+      "checks": [
+        {
+          "label": "1440x900 Home current",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 landing fits",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 navigation",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 gallery focus contained",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 gallery closes",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 hidden gallery absent",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 selection preserved",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 first invalid focus",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 email invalid",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 range invalid",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 invalid field below header",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 truthful result",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 result focus contained",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 Escape closes",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 focus restored",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 location copy visible",
+          "evidence": true
+        },
+        {
+          "label": "390x844 Home current",
+          "evidence": false
+        },
+        {
+          "label": "390x844 landing fits",
+          "evidence": true
+        },
+        {
+          "label": "390x844 menu focus contained",
+          "evidence": true
+        },
+        {
+          "label": "390x844 navigation",
+          "evidence": false
+        },
+        {
+          "label": "390x844 gallery focus contained",
+          "evidence": true
+        },
+        {
+          "label": "390x844 gallery closes",
+          "evidence": true
+        },
+        {
+          "label": "390x844 hidden gallery absent",
+          "evidence": true
+        },
+        {
+          "label": "390x844 selection preserved",
+          "evidence": true
+        },
+        {
+          "label": "390x844 first invalid focus",
+          "evidence": true
+        },
+        {
+          "label": "390x844 email invalid",
+          "evidence": true
+        },
+        {
+          "label": "390x844 range invalid",
+          "evidence": true
+        },
+        {
+          "label": "390x844 invalid field below header",
+          "evidence": true
+        },
+        {
+          "label": "390x844 truthful result",
+          "evidence": true
+        },
+        {
+          "label": "390x844 result focus contained",
+          "evidence": true
+        },
+        {
+          "label": "390x844 Escape closes",
+          "evidence": true
+        },
+        {
+          "label": "390x844 focus restored",
+          "evidence": true
+        },
+        {
+          "label": "390x844 location copy visible",
+          "evidence": true
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-home.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-home.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-form-result.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        }
+      ],
+      "errors": [],
+      "scans": [],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "failures": [
+        "390x844 Home current",
+        "390x844 navigation"
+      ],
+      "version": "26.5"
+    }
+  },
+  {
+    "phase": "repairs",
+    "engine": "firefox",
+    "report": {
+      "engine": "firefox",
+      "commit": "ea935b9d3361ccdd0a08bfc07df600973679c68e",
+      "checks": [
+        {
+          "label": "1440x900 Home current",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 landing fits",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 navigation",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 gallery focus contained",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 gallery closes",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 hidden gallery absent",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 selection preserved",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 first invalid focus",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 email invalid",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 range invalid",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 invalid field below header",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 truthful result",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 result focus contained",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 Escape closes",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 focus restored",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 location copy visible",
+          "evidence": true
+        },
+        {
+          "label": "390x844 Home current",
+          "evidence": false
+        },
+        {
+          "label": "390x844 landing fits",
+          "evidence": true
+        },
+        {
+          "label": "390x844 menu focus contained",
+          "evidence": true
+        },
+        {
+          "label": "390x844 navigation",
+          "evidence": false
+        },
+        {
+          "label": "390x844 gallery focus contained",
+          "evidence": true
+        },
+        {
+          "label": "390x844 gallery closes",
+          "evidence": true
+        },
+        {
+          "label": "390x844 hidden gallery absent",
+          "evidence": true
+        },
+        {
+          "label": "390x844 selection preserved",
+          "evidence": true
+        },
+        {
+          "label": "390x844 first invalid focus",
+          "evidence": true
+        },
+        {
+          "label": "390x844 email invalid",
+          "evidence": true
+        },
+        {
+          "label": "390x844 range invalid",
+          "evidence": true
+        },
+        {
+          "label": "390x844 invalid field below header",
+          "evidence": true
+        },
+        {
+          "label": "390x844 truthful result",
+          "evidence": true
+        },
+        {
+          "label": "390x844 result focus contained",
+          "evidence": true
+        },
+        {
+          "label": "390x844 Escape closes",
+          "evidence": true
+        },
+        {
+          "label": "390x844 focus restored",
+          "evidence": true
+        },
+        {
+          "label": "390x844 location copy visible",
+          "evidence": true
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-home.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-home.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-form-result.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        }
+      ],
+      "errors": [],
+      "scans": [],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "failures": [
+        "390x844 Home current",
+        "390x844 navigation"
+      ],
+      "version": "153.0"
+    }
+  },
+  {
+    "phase": "repairs",
+    "engine": "chromium",
+    "report": {
+      "engine": "chromium",
+      "commit": "ea935b9d3361ccdd0a08bfc07df600973679c68e",
+      "checks": [
+        {
+          "label": "1440x900 Home current",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 landing fits",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 navigation",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 gallery focus contained",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 gallery closes",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 hidden gallery absent",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 selection preserved",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 first invalid focus",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 email invalid",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 range invalid",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 invalid field below header",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 truthful result",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 result focus contained",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 Escape closes",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 focus restored",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 location copy visible",
+          "evidence": true
+        },
+        {
+          "label": "site.html main",
+          "evidence": true
+        },
+        {
+          "label": "retreats.html main",
+          "evidence": true
+        },
+        {
+          "label": "book.html main",
+          "evidence": true
+        },
+        {
+          "label": "reviews.html main",
+          "evidence": true
+        },
+        {
+          "label": "reviews sample wording",
+          "evidence": true
+        },
+        {
+          "label": "discover.html main",
+          "evidence": true
+        },
+        {
+          "label": "corrected sign decoded",
+          "evidence": true
+        },
+        {
+          "label": "390x844 Home current",
+          "evidence": false
+        },
+        {
+          "label": "390x844 landing fits",
+          "evidence": true
+        },
+        {
+          "label": "390x844 menu focus contained",
+          "evidence": true
+        },
+        {
+          "label": "390x844 navigation",
+          "evidence": false
+        },
+        {
+          "label": "390x844 gallery focus contained",
+          "evidence": true
+        },
+        {
+          "label": "390x844 gallery closes",
+          "evidence": true
+        },
+        {
+          "label": "390x844 hidden gallery absent",
+          "evidence": true
+        },
+        {
+          "label": "390x844 selection preserved",
+          "evidence": true
+        },
+        {
+          "label": "390x844 first invalid focus",
+          "evidence": true
+        },
+        {
+          "label": "390x844 email invalid",
+          "evidence": true
+        },
+        {
+          "label": "390x844 range invalid",
+          "evidence": true
+        },
+        {
+          "label": "390x844 invalid field below header",
+          "evidence": true
+        },
+        {
+          "label": "390x844 truthful result",
+          "evidence": true
+        },
+        {
+          "label": "390x844 result focus contained",
+          "evidence": true
+        },
+        {
+          "label": "390x844 Escape closes",
+          "evidence": true
+        },
+        {
+          "label": "390x844 focus restored",
+          "evidence": true
+        },
+        {
+          "label": "390x844 location copy visible",
+          "evidence": true
+        },
+        {
+          "label": "390x844 PageDown after menu",
+          "evidence": true
+        },
+        {
+          "label": "390x844 reduced no slide",
+          "evidence": true
+        },
+        {
+          "label": "390x844 closing CTA reachable",
+          "evidence": true
+        },
+        {
+          "label": "390x844 return top",
+          "evidence": true
+        },
+        {
+          "label": "normal motion preserved",
+          "evidence": true
+        },
+        {
+          "label": "844x390 Home current",
+          "evidence": false
+        },
+        {
+          "label": "844x390 landing fits",
+          "evidence": true
+        },
+        {
+          "label": "844x390 menu focus contained",
+          "evidence": true
+        },
+        {
+          "label": "844x390 navigation",
+          "evidence": false
+        },
+        {
+          "label": "844x390 gallery focus contained",
+          "evidence": true
+        },
+        {
+          "label": "844x390 gallery closes",
+          "evidence": true
+        },
+        {
+          "label": "844x390 hidden gallery absent",
+          "evidence": true
+        },
+        {
+          "label": "844x390 booking fits",
+          "evidence": true
+        },
+        {
+          "label": "320x568 Home current",
+          "evidence": false
+        },
+        {
+          "label": "320x568 landing fits",
+          "evidence": true
+        },
+        {
+          "label": "320x568 menu focus contained",
+          "evidence": true
+        },
+        {
+          "label": "320x568 navigation",
+          "evidence": false
+        },
+        {
+          "label": "320x568 gallery focus contained",
+          "evidence": true
+        },
+        {
+          "label": "320x568 gallery closes",
+          "evidence": true
+        },
+        {
+          "label": "320x568 hidden gallery absent",
+          "evidence": true
+        },
+        {
+          "label": "320x568 selection preserved",
+          "evidence": true
+        },
+        {
+          "label": "320x568 first invalid focus",
+          "evidence": true
+        },
+        {
+          "label": "320x568 email invalid",
+          "evidence": true
+        },
+        {
+          "label": "320x568 range invalid",
+          "evidence": true
+        },
+        {
+          "label": "320x568 invalid field below header",
+          "evidence": true
+        },
+        {
+          "label": "320x568 truthful result",
+          "evidence": true
+        },
+        {
+          "label": "320x568 result focus contained",
+          "evidence": true
+        },
+        {
+          "label": "320x568 Escape closes",
+          "evidence": true
+        },
+        {
+          "label": "320x568 focus restored",
+          "evidence": true
+        },
+        {
+          "label": "320x568 location copy visible",
+          "evidence": true
+        },
+        {
+          "label": "320x568 booking fits",
+          "evidence": true
+        },
+        {
+          "label": "780x300 Home current",
+          "evidence": false
+        },
+        {
+          "label": "780x300 landing fits",
+          "evidence": true
+        },
+        {
+          "label": "780x300 menu focus contained",
+          "evidence": true
+        },
+        {
+          "label": "780x300 navigation",
+          "evidence": false
+        },
+        {
+          "label": "780x300 gallery focus contained",
+          "evidence": true
+        },
+        {
+          "label": "780x300 gallery closes",
+          "evidence": true
+        },
+        {
+          "label": "780x300 hidden gallery absent",
+          "evidence": true
+        },
+        {
+          "label": "780x300 PageDown after menu",
+          "evidence": true
+        },
+        {
+          "label": "780x300 reduced no slide",
+          "evidence": true
+        },
+        {
+          "label": "780x300 closing CTA reachable",
+          "evidence": true
+        },
+        {
+          "label": "780x300 return top",
+          "evidence": true
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-home.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "1440x900-form-errors.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "1440x900-form-result.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "town-copy.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "location-copy.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "reviews-optimised.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "corrected-sign-desktop.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-home.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "rotated-menu.png",
+          "outer": [
+            844,
+            390
+          ],
+          "frame": [
+            836,
+            338
+          ],
+          "inspected": true
+        },
+        {
+          "file": "phone-gallery.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-form-errors.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-form-result.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "corrected-sign-phone.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "discover-closing-phone.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "844x390-home.png",
+          "outer": [
+            844,
+            390
+          ],
+          "frame": [
+            836,
+            338
+          ],
+          "inspected": true
+        },
+        {
+          "file": "320x568-home.png",
+          "outer": [
+            320,
+            568
+          ],
+          "frame": [
+            312,
+            487
+          ],
+          "inspected": true
+        },
+        {
+          "file": "780x300-home.png",
+          "outer": [
+            780,
+            300
+          ],
+          "frame": [
+            772,
+            248
+          ],
+          "inspected": true
+        },
+        {
+          "file": "discover-closing-short.png",
+          "outer": [
+            780,
+            300
+          ],
+          "frame": [
+            772,
+            248
+          ],
+          "inspected": true
+        }
+      ],
+      "errors": [],
+      "scans": [
+        {
+          "label": "site.html",
+          "violations": []
+        },
+        {
+          "label": "retreats.html",
+          "violations": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "html": "<span class=\"eyebrow\">Farm — Sleeps 6</span>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.24 (foreground color: #816749, background color: #eee5d8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "book.html",
+          "violations": []
+        },
+        {
+          "label": "reviews.html",
+          "violations": []
+        },
+        {
+          "label": "discover.html",
+          "violations": []
+        }
+      ],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "failures": [
+        "390x844 Home current",
+        "390x844 navigation",
+        "844x390 Home current",
+        "844x390 navigation",
+        "320x568 Home current",
+        "320x568 navigation",
+        "780x300 Home current",
+        "780x300 navigation"
+      ],
+      "version": "155.0.8059.39"
+    }
+  },
+  {
+    "phase": "repair-final",
+    "engine": "webkit",
+    "report": {
+      "engine": "webkit",
+      "commit": "a1cc95527d10fe45edaebab600d16149160f32cd",
+      "checks": [
+        {
+          "label": "1440 Home current",
+          "evidence": true
+        },
+        {
+          "label": "1440 Retreats current",
+          "evidence": true
+        },
+        {
+          "label": "390 Home current",
+          "evidence": true
+        },
+        {
+          "label": "390 Retreats current",
+          "evidence": true
+        }
+      ],
+      "captures": [],
+      "errors": [],
+      "scans": [],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "failures": []
+    }
+  },
+  {
+    "phase": "repair-final",
+    "engine": "firefox",
+    "report": {
+      "engine": "firefox",
+      "commit": "a1cc95527d10fe45edaebab600d16149160f32cd",
+      "checks": [
+        {
+          "label": "1440 Home current",
+          "evidence": true
+        },
+        {
+          "label": "1440 Retreats current",
+          "evidence": true
+        },
+        {
+          "label": "390 Home current",
+          "evidence": true
+        },
+        {
+          "label": "390 Retreats current",
+          "evidence": true
+        }
+      ],
+      "captures": [],
+      "errors": [],
+      "scans": [],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "failures": []
+    }
+  },
+  {
+    "phase": "repair-final",
+    "engine": "chromium",
+    "report": {
+      "engine": "chromium",
+      "commit": "a1cc95527d10fe45edaebab600d16149160f32cd",
+      "checks": [
+        {
+          "label": "1440 Home current",
+          "evidence": true
+        },
+        {
+          "label": "1440 Retreats current",
+          "evidence": true
+        },
+        {
+          "label": "woodland original image side",
+          "evidence": true
+        },
+        {
+          "label": "coastal original image side",
+          "evidence": true
+        },
+        {
+          "label": "farm original image side",
+          "evidence": true
+        },
+        {
+          "label": "town original image side",
+          "evidence": true
+        },
+        {
+          "label": "390 Home current",
+          "evidence": true
+        },
+        {
+          "label": "390 Retreats current",
+          "evidence": true
+        },
+        {
+          "label": "844 Home current",
+          "evidence": true
+        },
+        {
+          "label": "844 Retreats current",
+          "evidence": true
+        },
+        {
+          "label": "320 Home current",
+          "evidence": true
+        },
+        {
+          "label": "320 Retreats current",
+          "evidence": true
+        },
+        {
+          "label": "780 Home current",
+          "evidence": true
+        },
+        {
+          "label": "780 Retreats current",
+          "evidence": true
+        }
+      ],
+      "captures": [
+        {
+          "file": "woodland-layout-final.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "town-layout-final.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        }
+      ],
+      "errors": [],
+      "scans": [
+        {
+          "label": "Retreats final",
+          "violations": []
+        }
+      ],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "failures": []
+    }
+  },
+  {
+    "phase": "repair-anchor",
+    "engine": "chromium",
+    "report": {
+      "engine": "chromium",
+      "commit": "5c747bbbff6a445de08b752cfcb543df0a52d27c",
+      "checks": [
+        {
+          "label": "1440 Home current",
+          "evidence": true
+        },
+        {
+          "label": "1440 Retreats current",
+          "evidence": true
+        },
+        {
+          "label": "woodland original image side",
+          "evidence": true
+        },
+        {
+          "label": "coastal original image side",
+          "evidence": true
+        },
+        {
+          "label": "farm original image side",
+          "evidence": true
+        },
+        {
+          "label": "town original image side",
+          "evidence": true
+        },
+        {
+          "label": "390 Home current",
+          "evidence": true
+        },
+        {
+          "label": "390 Retreats current",
+          "evidence": true
+        },
+        {
+          "label": "844 Home current",
+          "evidence": true
+        },
+        {
+          "label": "844 Retreats current",
+          "evidence": true
+        },
+        {
+          "label": "320 Home current",
+          "evidence": true
+        },
+        {
+          "label": "320 Retreats current",
+          "evidence": true
+        },
+        {
+          "label": "780 Home current",
+          "evidence": true
+        },
+        {
+          "label": "780 Retreats current",
+          "evidence": true
+        }
+      ],
+      "captures": [
+        {
+          "file": "woodland-layout-final.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "town-layout-final.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        }
+      ],
+      "errors": [],
+      "scans": [
+        {
+          "label": "Retreats final",
+          "violations": []
+        }
+      ],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "failures": []
+    }
+  }
+]
