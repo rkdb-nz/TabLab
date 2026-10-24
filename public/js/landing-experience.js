@@ -62,6 +62,14 @@ document.fonts?.ready.then(() => {
     if (sortPanel.classList.contains('is-active')) alignSortAction();
 });
 
+function focusLandingContent(container, selector) {
+    const target = [...container.querySelectorAll(selector)].find(element =>
+        element.getClientRects().length && getComputedStyle(element).visibility !== 'hidden');
+    if (!target) return;
+    if (!target.matches('a,button')) target.tabIndex = -1;
+    target.focus({ preventScroll: true });
+}
+
 function activateSortPanel({ preserveForge = false } = {}) {
     alignSortAction();
     if (!preserveForge) {
@@ -80,6 +88,7 @@ function activateSortPanel({ preserveForge = false } = {}) {
 
     sortPanel.classList.add('is-active');
     sortPanel.setAttribute('aria-hidden', 'false');
+    focusLandingContent(sortPanel, '.sort-title');
 }
 
 function activateIntroPanel() {
@@ -95,6 +104,7 @@ function activateIntroPanel() {
 
     introPanel.classList.add('is-active');
     introPanel.setAttribute('aria-hidden', 'false');
+    focusLandingContent(introPanel, '#sortButton');
 }
 
 function activateExploreScreen() {
@@ -111,6 +121,7 @@ function activateExploreScreen() {
     sortPanel.setAttribute('aria-hidden', 'true');
 
     exploreScreen?.setAttribute('aria-hidden', 'false');
+    focusLandingContent(exploreScreen, 'h2');
 }
 
 function activeContent() {

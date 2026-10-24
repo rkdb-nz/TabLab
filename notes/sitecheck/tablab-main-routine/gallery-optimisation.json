@@ -1,0 +1,122 @@
+[
+  {
+    "source": "boardroom/billboard/assets/images/donut-preview.webp",
+    "derivative": "boardroom/billboard/assets/images/donut-preview-gallery.webp",
+    "before": 197114,
+    "after": 77334,
+    "size": [
+      1000,
+      401
+    ]
+  },
+  {
+    "source": "boardroom/billboard/assets/images/golf-preview.webp",
+    "derivative": "boardroom/billboard/assets/images/golf-preview-gallery.webp",
+    "before": 480730,
+    "after": 160572,
+    "size": [
+      975,
+      650
+    ]
+  },
+  {
+    "source": "boardroom/billboard/assets/images/drilling-preview.webp",
+    "derivative": "boardroom/billboard/assets/images/drilling-preview-gallery.webp",
+    "before": 426002,
+    "after": 126732,
+    "size": [
+      975,
+      650
+    ]
+  },
+  {
+    "source": "boardroom/noticeboard/assets/images/diner-preview.webp",
+    "derivative": "boardroom/noticeboard/assets/images/diner-preview-gallery.webp",
+    "before": 2427073,
+    "after": 113326,
+    "size": [
+      1000,
+      417
+    ]
+  },
+  {
+    "source": "boardroom/noticeboard/assets/images/produce-preview.png",
+    "derivative": "boardroom/noticeboard/assets/images/produce-preview-gallery.webp",
+    "before": 2199022,
+    "after": 102830,
+    "size": [
+      1000,
+      563
+    ]
+  },
+  {
+    "source": "boardroom/noticeboard/assets/images/charity-walk-preview.jpg",
+    "derivative": "boardroom/noticeboard/assets/images/charity-walk-preview-gallery.webp",
+    "before": 2222173,
+    "after": 61212,
+    "size": [
+      550,
+      650
+    ]
+  },
+  {
+    "source": "boardroom/skateboard/assets/images/florist-preview.jpg",
+    "derivative": "boardroom/skateboard/assets/images/florist-preview-gallery.webp",
+    "before": 175288,
+    "after": 15370,
+    "size": [
+      975,
+      650
+    ]
+  },
+  {
+    "source": "boardroom/skateboard/assets/images/pottery-preview.webp",
+    "derivative": "boardroom/skateboard/assets/images/pottery-preview-gallery.webp",
+    "before": 2004748,
+    "after": 47434,
+    "size": [
+      975,
+      650
+    ]
+  },
+  {
+    "source": "boardroom/skateboard/assets/images/tailor-preview.webp",
+    "derivative": "boardroom/skateboard/assets/images/tailor-preview-gallery.webp",
+    "before": 418708,
+    "after": 80936,
+    "size": [
+      975,
+      650
+    ]
+  },
+  {
+    "source": "boardroom/springboard/assets/images/dining-preview.webp",
+    "derivative": "boardroom/springboard/assets/images/dining-preview-gallery.webp",
+    "before": 239352,
+    "after": 103400,
+    "size": [
+      975,
+      650
+    ]
+  },
+  {
+    "source": "boardroom/springboard/assets/images/retreat-preview.webp",
+    "derivative": "boardroom/springboard/assets/images/retreat-preview-gallery.webp",
+    "before": 227240,
+    "after": 121840,
+    "size": [
+      975,
+      650
+    ]
+  },
+  {
+    "source": "boardroom/springboard/assets/images/theatre-preview.webp",
+    "derivative": "boardroom/springboard/assets/images/theatre-preview-gallery.webp",
+    "before": 39178,
+    "after": 21316,
+    "size": [
+      1000,
+      563
+    ]
+  }
+]
