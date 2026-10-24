@@ -18,6 +18,11 @@ async function cap(p,f,label){await settle(f);await p.screenshot({path:resolve(o
 async function measure(f,label){check(label,await f.evaluate(()=>({viewport:[innerWidth,innerHeight],scroll:[document.documentElement.scrollWidth,document.documentElement.scrollHeight],controls:[...document.querySelectorAll('a,button,input,select,.faq-q')].filter(e=>e.getClientRects().length).map(e=>({text:e.textContent.trim().slice(0,45),tag:e.tagName,tab:e.tabIndex,rect:(()=>{let r=e.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,h:r.height}})()}))})));}
 
 
+let browser;
+
+async function probe(label,fn){try{await fn();}catch(e){report.errors.push({label,error:e.stack});}}
+async function layout(f,label){check(label,await f.evaluate(()=>({viewport:[innerWidth,innerHeight],document:[document.documentElement.scrollWidth,document.documentElement.scrollHeight],main:[...document.querySelectorAll('main,.np-pane,.clem-center,.clem-right,.book-left,.book-right,#mobilePanel')].filter(e=>e.getClientRects().length).map(e=>({class:e.className,id:e.id,client:[e.clientWidth,e.clientHeight],scroll:[e.scrollWidth,e.scrollHeight],overflow:getComputedStyle(e).overflow,rect:(()=>{const r=e.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,h:r.height,bottom:r.bottom};})()}))})));}
+async function scan(f,label){await f.addScriptTag({path:require.resolve('axe-core/axe.min.js')});report.scans.push({label,violations:await f.evaluate(async()=>{const r=await axe.run();return r.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>({html:n.html,summary:n.failureSummary}))}));})});}
 async function booking(f,p,tag,capture){
  await f.goto(origin+base+'book-tickets.html');await settle(f);await layout(f,tag+' booking');
  check(tag+' empty checkout disabled',await f.locator('#checkoutBtn').isDisabled());
@@ -31,7 +36,6 @@ async function booking(f,p,tag,capture){
  if(capture)await cap(p,f,tag+'-booking-result');
  await f.locator('#anotherBooking').click();check(tag+' reset',await f.locator('#sumTotal').innerText());
 }
-let browser;
 try{
  browser=await pw.chromium.launch({channel:'chrome'});const c=await browser.newContext({viewport:{width:1440,height:900},reducedMotion:'reduce'}),p=await c.newPage();
  await c.route('**/*',r=>['GET','HEAD'].includes(r.request().method())?r.continue():r.abort());
