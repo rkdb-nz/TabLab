@@ -1,0 +1,665 @@
+{
+  "site": "Restaurant",
+  "mode": "targeted routine repair rerun",
+  "approved": "RT-01–09; mobile email explicitly demo-only",
+  "finalProductCommit": "5b767160151752f84953520f3d6267fca87148a5",
+  "sourceProvenance": [
+    {
+      "phase": "repair",
+      "engine": "chromium",
+      "commit": "84729822cc81218a21c4768f7b48d167cfe3fac3"
+    },
+    {
+      "phase": "repair",
+      "engine": "firefox",
+      "commit": "84729822cc81218a21c4768f7b48d167cfe3fac3"
+    },
+    {
+      "phase": "repair",
+      "engine": "webkit",
+      "commit": "84729822cc81218a21c4768f7b48d167cfe3fac3"
+    },
+    {
+      "phase": "focusfix",
+      "engine": "chromium",
+      "commit": "1a3c6f20032110dd69b87904d9433ac0e956a6fd"
+    },
+    {
+      "phase": "focusfix",
+      "engine": "firefox",
+      "commit": "1a3c6f20032110dd69b87904d9433ac0e956a6fd"
+    },
+    {
+      "phase": "focusfix",
+      "engine": "webkit",
+      "commit": "1a3c6f20032110dd69b87904d9433ac0e956a6fd"
+    },
+    {
+      "phase": "final-layout",
+      "engine": "chromium",
+      "commit": "791f685a4f39f10aba2b0a74ccd555e9fc36caa0"
+    },
+    {
+      "phase": "final-layout",
+      "engine": "firefox",
+      "commit": "791f685a4f39f10aba2b0a74ccd555e9fc36caa0"
+    },
+    {
+      "phase": "final-layout",
+      "engine": "webkit",
+      "commit": "791f685a4f39f10aba2b0a74ccd555e9fc36caa0"
+    },
+    {
+      "phase": "network",
+      "engine": "chromium",
+      "commit": "1257502575b2507b4e5ccaa56942ddce7f6ae2be"
+    },
+    {
+      "phase": "network",
+      "engine": "firefox",
+      "commit": "1257502575b2507b4e5ccaa56942ddce7f6ae2be"
+    },
+    {
+      "phase": "network",
+      "engine": "webkit",
+      "commit": "1257502575b2507b4e5ccaa56942ddce7f6ae2be"
+    },
+    {
+      "phase": "narrow",
+      "engine": "chromium",
+      "commit": "af20f7a907258abc02dbe9b3bc5f49404c4fc9ae"
+    }
+  ],
+  "resolved": [
+    "RT-01",
+    "RT-02",
+    "RT-03",
+    "RT-04",
+    "RT-05",
+    "RT-06",
+    "RT-07",
+    "RT-08",
+    "RT-09"
+  ],
+  "remainingProductFindings": [],
+  "newProductFindings": [],
+  "captures": [
+    {
+      "file": "1440x900-dine.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "repair",
+      "engine": "chromium",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "1440x900-request-form.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "repair",
+      "engine": "chromium",
+      "observation": "Labels, phone/date/time controls and demo email draft render; superseded tall button corrected in final layout."
+    },
+    {
+      "file": "390x844-dine.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "repair",
+      "engine": "chromium",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "390x844-request-form.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "repair",
+      "engine": "chromium",
+      "observation": "Labels, phone/date/time controls and demo email draft render; superseded tall button corrected in final layout."
+    },
+    {
+      "file": "email-rotated.png",
+      "outer": [
+        844,
+        390
+      ],
+      "frame": [
+        836,
+        338
+      ],
+      "inspected": true,
+      "phase": "repair",
+      "engine": "chromium",
+      "observation": "Rotated email modal remains within viewport with internal vertical scrolling."
+    },
+    {
+      "file": "844x390-dine.png",
+      "outer": [
+        844,
+        390
+      ],
+      "frame": [
+        836,
+        338
+      ],
+      "inspected": true,
+      "phase": "repair",
+      "engine": "chromium",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "320x568-dine.png",
+      "outer": [
+        320,
+        568
+      ],
+      "frame": [
+        312,
+        487
+      ],
+      "inspected": true,
+      "phase": "repair",
+      "engine": "chromium",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "780x300-dine.png",
+      "outer": [
+        780,
+        300
+      ],
+      "frame": [
+        772,
+        248
+      ],
+      "inspected": true,
+      "phase": "repair",
+      "engine": "chromium",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "1440x900-dine.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "repair",
+      "engine": "firefox",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "390x844-dine.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "repair",
+      "engine": "firefox",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "1440x900-dine.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "repair",
+      "engine": "webkit",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "390x844-dine.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "repair",
+      "engine": "webkit",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "1440x900-dine.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "chromium",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "1440x900-request-form.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "chromium",
+      "observation": "Labels, phone/date/time controls and demo email draft render; superseded tall button corrected in final layout."
+    },
+    {
+      "file": "1440x900-confirmation.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "chromium",
+      "observation": "Visible confirmation explicitly states demonstration and no request/booking; close focus ring visible."
+    },
+    {
+      "file": "reviews-contrast.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "chromium",
+      "observation": "Sample review wording and darker metadata/initials verified."
+    },
+    {
+      "file": "390x844-dine.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "chromium",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "390x844-request-form.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "chromium",
+      "observation": "Labels, phone/date/time controls and demo email draft render; superseded tall button corrected in final layout."
+    },
+    {
+      "file": "email-rotated.png",
+      "outer": [
+        844,
+        390
+      ],
+      "frame": [
+        836,
+        338
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "chromium",
+      "observation": "Rotated email modal remains within viewport with internal vertical scrolling."
+    },
+    {
+      "file": "390x844-confirmation.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "chromium",
+      "observation": "Visible confirmation explicitly states demonstration and no request/booking; close focus ring visible."
+    },
+    {
+      "file": "reduced-motion-cards.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "chromium",
+      "observation": "Three phone navigation cards render with reduced-motion transition disabled."
+    },
+    {
+      "file": "844x390-dine.png",
+      "outer": [
+        844,
+        390
+      ],
+      "frame": [
+        836,
+        338
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "chromium",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "320x568-dine.png",
+      "outer": [
+        320,
+        568
+      ],
+      "frame": [
+        312,
+        487
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "chromium",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "780x300-dine.png",
+      "outer": [
+        780,
+        300
+      ],
+      "frame": [
+        772,
+        248
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "chromium",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "1440x900-dine.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "firefox",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "390x844-dine.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "firefox",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "1440x900-dine.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "webkit",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "390x844-dine.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "focusfix",
+      "engine": "webkit",
+      "observation": "Dine menu and navigation render without horizontal overflow at the measured viewport."
+    },
+    {
+      "file": "1440x900-booking-final.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "final-layout",
+      "engine": "chromium",
+      "observation": "Final request button height/alignment is correct. Modal content scrolls internally on short screens. Narrow truncation in the 320px pre-stack capture is superseded by narrow completion."
+    },
+    {
+      "file": "390x844-booking-final.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "final-layout",
+      "engine": "chromium",
+      "observation": "Final request button height/alignment is correct. Modal content scrolls internally on short screens. Narrow truncation in the 320px pre-stack capture is superseded by narrow completion."
+    },
+    {
+      "file": "320x568-booking-final.png",
+      "outer": [
+        320,
+        568
+      ],
+      "frame": [
+        312,
+        487
+      ],
+      "inspected": true,
+      "phase": "final-layout",
+      "engine": "chromium",
+      "observation": "Final request button height/alignment is correct. Modal content scrolls internally on short screens. Narrow truncation in the 320px pre-stack capture is superseded by narrow completion."
+    },
+    {
+      "file": "844x390-booking-final.png",
+      "outer": [
+        844,
+        390
+      ],
+      "frame": [
+        836,
+        338
+      ],
+      "inspected": true,
+      "phase": "final-layout",
+      "engine": "chromium",
+      "observation": "Final request button height/alignment is correct. Modal content scrolls internally on short screens. Narrow truncation in the 320px pre-stack capture is superseded by narrow completion."
+    },
+    {
+      "file": "1440x900-booking-final.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "final-layout",
+      "engine": "firefox",
+      "observation": "Final request button height/alignment is correct. Modal content scrolls internally on short screens. Narrow truncation in the 320px pre-stack capture is superseded by narrow completion."
+    },
+    {
+      "file": "390x844-booking-final.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "final-layout",
+      "engine": "firefox",
+      "observation": "Final request button height/alignment is correct. Modal content scrolls internally on short screens. Narrow truncation in the 320px pre-stack capture is superseded by narrow completion."
+    },
+    {
+      "file": "1440x900-booking-final.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "final-layout",
+      "engine": "webkit",
+      "observation": "Final request button height/alignment is correct. Modal content scrolls internally on short screens. Narrow truncation in the 320px pre-stack capture is superseded by narrow completion."
+    },
+    {
+      "file": "390x844-booking-final.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "final-layout",
+      "engine": "webkit",
+      "observation": "Final request button height/alignment is correct. Modal content scrolls internally on short screens. Narrow truncation in the 320px pre-stack capture is superseded by narrow completion."
+    },
+    {
+      "file": "320x568-narrow-fields-final.png",
+      "outer": [
+        320,
+        568
+      ],
+      "frame": [
+        312,
+        487
+      ],
+      "inspected": true,
+      "phase": "narrow",
+      "engine": "chromium",
+      "observation": "Narrow email fields now stack; guest/date/time values fit and Send request remains reachable."
+    }
+  ],
+  "limitations": [
+    "Native 200% zoom remains unverified from initial attempt; not rerun because platform limitations and source provenance are unchanged.",
+    "Linux WebKit is not actual Safari/iOS; all phones emulated.",
+    "Shared analytics returns errors and remains unchanged. A known wrapper flags POST initially caused an over-broad no-send assertion to fail. Corrected test attributes requests to originating frame and excludes only that known wrapper endpoint; booking frames make no send attempts.",
+    "Initial focus containment failure was repaired; failed machine records retained and superseded by successful three-engine checks.",
+    "No independent agent review; routine mode does not require it."
+  ],
+  "runs": {
+    "initialRepair": 40071633164,
+    "focusCompletion": 40071788439,
+    "finalLayout": 40071953788,
+    "requestAttribution": 40072122621,
+    "narrowCompletion": 40072167553
+  },
+  "manualPreview": {
+    "url": "https://qa-sitecheck-restaurant.foundry-a3k.pages.dev/boardroom/springboard/demos/dining/",
+    "observations": [
+      "Preview served repaired landmarks and fields.",
+      "Safe dummy booking produced explicit no-send dialog.",
+      "Back to gallery returned to Springboard; Dining link reopened the demo."
+    ]
+  }
+}

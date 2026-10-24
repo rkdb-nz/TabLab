@@ -41,3 +41,29 @@ Titles exist; descriptions and page-level noindex are absent. No metadata or ind
 - review-ledger.json maps every image, engine, actual viewport, phase and observation.
 - machine-reports.json preserves raw results and initial runner errors. Raw screenshot inspected flags are superseded only by the separate human-reviewed ledger.
 - Product source is unchanged from 489a557f5e1c139acdeb1f8913724775131b05d1; workflow merge commits are recorded in raw machine reports.
+
+
+## Approved repair outcome — 24 October 2026
+
+**Routine repair check passed within the sampled scope**, subject to the native-zoom and platform limits above.
+
+### Fixes I can make
+- **Resolved RT-01–09:** desktop booking now validates name, phone and a future opening date, uses labelled native time/guest controls, and ends with a truthful no-send confirmation. Mobile email now opens an in-page request draft and never opens a mail client or sends email, as explicitly requested.
+- FAQ buttons support keyboard and expanded state; dialog Tab/Shift+Tab containment, Escape and focus return pass inside the demo iframe.
+- Contrast, hidden-nav inert handling, reduced motion, main landmarks, portrait alt text and sample-review wording repaired. Six targeted Axe scans (five pages plus mobile email dialog) returned zero violations.
+- No remaining or new product findings in the targeted sample.
+
+### Items needing your attention or input
+- Publishing approval only. Shared analytics, metadata and indexing remain unchanged.
+
+### Targeted evidence and reuse
+Product commit: 5b767160151752f84953520f3d6267fca87148a5. Branch: qa/sitecheck-restaurant. Preview: https://qa-sitecheck-restaurant.foundry-a3k.pages.dev/boardroom/springboard/demos/dining/
+- Nine landing/navigation browser/viewport smoke combinations completed, with desktop and phone booking/keyboard checks in all three engines. Reused unchanged fullscreen/return evidence from the initial routine audit; gallery return/open was additionally verified on the deployed preview.
+- Focus completion run https://github.com/rkdb-nz/TabLab/actions/runs/40071788439 passed in Chrome, Firefox and Linux WebKit (115 recorded assertions, 16 captures; six clean Axe scans).
+- Final button layout run https://github.com/rkdb-nz/TabLab/actions/runs/40071953788 verified button height/reachability and modal layout at desktop, phone, narrow phone and landscape. Its only failures were an overly broad network assertion counting existing wrapper analytics as a booking send; raw results retained.
+- Request-attribution continuation https://github.com/rkdb-nz/TabLab/actions/runs/40072122621 passed all three engines. It records and excludes only the known top-frame PostHog flags request; no booking-frame non-GET requests were attempted.
+- Narrow completion https://github.com/rkdb-nz/TabLab/actions/runs/40072167553 passed after stacking fields at <=360px, preserving selected guest/time/date values.
+- 37 repair-phase screenshots were opened and inspected in total, within the 40-capture routine ceiling. Reused audit images remain separately catalogued.
+- repair-review-ledger.json records every repair image and observation, source provenance, superseded failures and limitations. repair-machine-reports.json preserves all raw results. The associated Actions ZIPs retain screenshots for 90 days.
+- Original product-repair run https://github.com/rkdb-nz/TabLab/actions/runs/40071633164 exposed iframe modal focus escape; corrected before successful rerun.
+- Changes are confined to Restaurant product files and Restaurant QA/evidence files. The shared workflow is restored to its main-branch version before review, so publication does not replace the existing shared checker.
