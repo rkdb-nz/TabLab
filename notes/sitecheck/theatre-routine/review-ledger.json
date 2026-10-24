@@ -630,5 +630,478 @@
       "Back to Springboard gallery and reopening Theatre work.",
       "Safe dummy hire enquiry with999 attendees displayed false response promise."
     ]
+  },
+  "repairs": {
+    "approved": "TH-01–TH-10 and D-01",
+    "productCommit": "4d111c4895352b95998e8423b01befa7b83448c4",
+    "runs": [
+      40076484001,
+      40076633827,
+      40076713312,
+      40076848402
+    ],
+    "resolved": [
+      "TH-01",
+      "TH-02",
+      "TH-03",
+      "TH-04",
+      "TH-05",
+      "TH-06",
+      "TH-07",
+      "TH-08",
+      "TH-09",
+      "TH-10"
+    ],
+    "remaining": [],
+    "newFindings": [
+      {
+        "issue": "Nested complementary landmark, missing heading in hire state, reset contrast and footer clipping",
+        "status": "resolved within approved semantics/layout/demo corrections"
+      }
+    ],
+    "captures": [
+      {
+        "file": "1440x900-home.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "phase": "repair",
+        "engine": "webkit",
+        "observation": "Responsive landing renders; final footer wrapping supersedes earlier captures."
+      },
+      {
+        "file": "390x844-home.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "phase": "repair",
+        "engine": "webkit",
+        "observation": "Responsive landing renders; final footer wrapping supersedes earlier captures."
+      },
+      {
+        "file": "390x844-hire-result.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "phase": "repair",
+        "engine": "webkit",
+        "observation": "No-send confirmation visible; final reset contrast supersedes earlier capture."
+      },
+      {
+        "file": "1440x900-home.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "phase": "repair",
+        "engine": "chromium",
+        "observation": "Responsive landing renders; final footer wrapping supersedes earlier captures."
+      },
+      {
+        "file": "1440x900-hire-errors.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "phase": "repair",
+        "engine": "chromium",
+        "observation": "Reviewed targeted layout/state; final report records passing conditions."
+      },
+      {
+        "file": "now-playing.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "phase": "repair",
+        "engine": "chromium",
+        "observation": "Reviewed targeted layout/state; final report records passing conditions."
+      },
+      {
+        "file": "coming-soon.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "phase": "repair",
+        "engine": "chromium",
+        "observation": "Reviewed targeted layout/state; final report records passing conditions."
+      },
+      {
+        "file": "book-tickets.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "phase": "repair",
+        "engine": "chromium",
+        "observation": "Reviewed targeted layout/state; final report records passing conditions."
+      },
+      {
+        "file": "clementine-street.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "phase": "repair",
+        "engine": "chromium",
+        "observation": "Reviewed targeted layout/state; final report records passing conditions."
+      },
+      {
+        "file": "1440x900-home.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "phase": "repair",
+        "engine": "firefox",
+        "observation": "Responsive landing renders; final footer wrapping supersedes earlier captures."
+      },
+      {
+        "file": "390x844-home.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "phase": "repair",
+        "engine": "firefox",
+        "observation": "Responsive landing renders; final footer wrapping supersedes earlier captures."
+      },
+      {
+        "file": "390x844-hire-result.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "phase": "repair",
+        "engine": "firefox",
+        "observation": "No-send confirmation visible; final reset contrast supersedes earlier capture."
+      },
+      {
+        "file": "venue-final.png",
+        "outer": [
+          1440,
+          900
+        ],
+        "frame": [
+          1426,
+          845
+        ],
+        "inspected": true,
+        "phase": "repair-complete",
+        "engine": "chromium",
+        "observation": "Reviewed targeted layout/state; final report records passing conditions."
+      },
+      {
+        "file": "390x844-home.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "phase": "repair-complete",
+        "engine": "chromium",
+        "observation": "Responsive landing renders; final footer wrapping supersedes earlier captures."
+      },
+      {
+        "file": "rotated-menu.png",
+        "outer": [
+          844,
+          390
+        ],
+        "frame": [
+          836,
+          338
+        ],
+        "inspected": true,
+        "phase": "repair-complete",
+        "engine": "chromium",
+        "observation": "Last navigation link reachable after rotation using internal scrolling."
+      },
+      {
+        "file": "390x844-hire-errors.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "phase": "repair-complete",
+        "engine": "chromium",
+        "observation": "Reviewed targeted layout/state; final report records passing conditions."
+      },
+      {
+        "file": "390x844-hire-result.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "phase": "repair-complete",
+        "engine": "chromium",
+        "observation": "No-send confirmation visible; final reset contrast supersedes earlier capture."
+      },
+      {
+        "file": "email-result.png",
+        "outer": [
+          390,
+          844
+        ],
+        "frame": [
+          382,
+          763
+        ],
+        "inspected": true,
+        "phase": "repair-complete",
+        "engine": "chromium",
+        "observation": "Reviewed targeted layout/state; final report records passing conditions."
+      },
+      {
+        "file": "844x390-home.png",
+        "outer": [
+          844,
+          390
+        ],
+        "frame": [
+          836,
+          338
+        ],
+        "inspected": true,
+        "phase": "repair-complete",
+        "engine": "chromium",
+        "observation": "Responsive landing renders; final footer wrapping supersedes earlier captures."
+      },
+      {
+        "file": "320x568-home.png",
+        "outer": [
+          320,
+          568
+        ],
+        "frame": [
+          312,
+          487
+        ],
+        "inspected": true,
+        "phase": "repair-complete",
+        "engine": "chromium",
+        "observation": "Responsive landing renders; final footer wrapping supersedes earlier captures."
+      },
+      {
+        "file": "320x568-booking.png",
+        "outer": [
+          320,
+          568
+        ],
+        "frame": [
+          312,
+          487
+        ],
+        "inspected": true,
+        "phase": "repair-complete",
+        "engine": "chromium",
+        "observation": "Reviewed targeted layout/state; final report records passing conditions."
+      },
+      {
+        "file": "320x568-booking-result.png",
+        "outer": [
+          320,
+          568
+        ],
+        "frame": [
+          312,
+          487
+        ],
+        "inspected": true,
+        "phase": "repair-complete",
+        "engine": "chromium",
+        "observation": "Reviewed targeted layout/state; final report records passing conditions."
+      },
+      {
+        "file": "780x300-home.png",
+        "outer": [
+          780,
+          300
+        ],
+        "frame": [
+          772,
+          248
+        ],
+        "inspected": true,
+        "phase": "repair-complete",
+        "engine": "chromium",
+        "observation": "Responsive landing renders; final footer wrapping supersedes earlier captures."
+      },
+      {
+        "file": "narrow-home-final.png",
+        "outer": [
+          320,
+          568
+        ],
+        "frame": [
+          312,
+          487
+        ],
+        "inspected": true,
+        "phase": "polish",
+        "engine": "webkit",
+        "observation": "Responsive landing renders; final footer wrapping supersedes earlier captures."
+      },
+      {
+        "file": "hire-final.png",
+        "outer": [
+          320,
+          568
+        ],
+        "frame": [
+          312,
+          487
+        ],
+        "inspected": true,
+        "phase": "polish",
+        "engine": "webkit",
+        "observation": "Demo confirmation and reset control clearly visible."
+      },
+      {
+        "file": "narrow-home-final.png",
+        "outer": [
+          320,
+          568
+        ],
+        "frame": [
+          312,
+          487
+        ],
+        "inspected": true,
+        "phase": "polish",
+        "engine": "chromium",
+        "observation": "Responsive landing renders; final footer wrapping supersedes earlier captures."
+      },
+      {
+        "file": "hire-final.png",
+        "outer": [
+          320,
+          568
+        ],
+        "frame": [
+          312,
+          487
+        ],
+        "inspected": true,
+        "phase": "polish",
+        "engine": "chromium",
+        "observation": "Demo confirmation and reset control clearly visible."
+      },
+      {
+        "file": "narrow-home-final.png",
+        "outer": [
+          320,
+          568
+        ],
+        "frame": [
+          312,
+          487
+        ],
+        "inspected": true,
+        "phase": "polish",
+        "engine": "firefox",
+        "observation": "Responsive landing renders; final footer wrapping supersedes earlier captures."
+      },
+      {
+        "file": "hire-final.png",
+        "outer": [
+          320,
+          568
+        ],
+        "frame": [
+          312,
+          487
+        ],
+        "inspected": true,
+        "phase": "polish",
+        "engine": "firefox",
+        "observation": "Demo confirmation and reset control clearly visible."
+      }
+    ],
+    "captureCount": 29,
+    "limitations": [
+      "Native 200% browser zoom remains unverified.",
+      "Linux WebKit is not physical Safari/iOS; phone sizes are emulated.",
+      "Unchanged wrapper fullscreen/return/gallery evidence reused from initial audit.",
+      "Independent agent review not used."
+    ]
   }
 }

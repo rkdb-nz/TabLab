@@ -48,3 +48,28 @@ Branch: qa/sitecheck-theatre. Draft PR: https://github.com/rkdb-nz/TabLab/pull/7
 - Actions screenshots are retained for90 days; source-control report, machine reports and ledger persist in this branch.
 - Existing fixed desktop composition requires internal scrolling for long venue content; the scroll region must become keyboard-accessible. Phone content must reflow instead of being clipped.
 - Shared workflow restored to its main-branch version before review. QA/evidence changes only.
+
+## Approved repairs — complete, awaiting publication
+
+Product source: `4d111c4895352b95998e8423b01befa7b83448c4`.
+[Reviewed preview](https://9aa5a4ca.foundry-a3k.pages.dev/boardroom/springboard/demos/theatre/).
+
+**Fixes I can make**
+- TH-01–TH-10 resolved: phone hire reflow; truthful local enquiry and email composer; range validation, associated errors and first-invalid focus; contrast; menu/poster focus containment and scrolling; keyboard scroll access, seating states and headings; narrow headings/tickets/footer; slideshow pause/resume; location/alt copy; existing poster optimisation.
+- D-01 applied: preserve artwork and label productions/seasons as illustrative samples. Quiet Hours and Ashes copy matches printed dates; booking dates omit conflicting weekdays.
+- Related findings from repair scans/screenshots resolved: nested complementary landmark, missing heading in hire state, enquiry reset contrast, homepage footer tagline clipping.
+
+**Items needing your attention or input**
+- None. Publication awaits the user's next instruction.
+
+Nine engine/viewport landing/navigation combinations passed, reusing Firefox/WebKit checks on unchanged behaviour after small scoped corrections. Chromium checked the five default outer sizes; Firefox/WebKit desktop and portrait. Final form scans at narrow-phone size also passed in all three engines. Four default page scans and the final form/success scans have zero reported violations. All 29 retained repair screenshots were inspected; one additional live preview screenshot was inspected. Three representative originals are retained in `repair-evidence/`; complete captures are in the linked 90-day Actions artifacts.
+
+Hire rejects 999 attendees and focuses the attendance field; 200 proceeds to an explicit no-send/no-reservation result. Required-field focus and reset focus pass. Email composition ends in an explicit no-send result. Poster focus remains contained, landscape menu reaches its last link, narrow tickets fit, reduced motion stays static, and pause/resume was tested through an advancing frame. Existing Family Group Chat artwork re-encoded from 2,554,815 to 269,004 bytes (89.5% smaller) and visually inspected.
+
+Runs:
+- [Initial repair sample](https://github.com/rkdb-nz/TabLab/actions/runs/40076484001): Firefox/WebKit passed. Chrome's immediate reduced-motion assertion raced the media event; retained valid results reused.
+- [Focused Chrome completion](https://github.com/rkdb-nz/TabLab/actions/runs/40076633827): passed.
+- [Phone visual polish](https://github.com/rkdb-nz/TabLab/actions/runs/40076713312): all three engines passed.
+- [Final form semantics](https://github.com/rkdb-nz/TabLab/actions/runs/40076848402): all three engines passed, zero form/success scan violations. No duplicate screenshots needed for an invisible heading.
+
+Limits: native 200% browser zoom remains unverified; WebKit on Linux is not native Safari/iOS and phone viewports are emulated. Unchanged wrapper fullscreen/return/gallery evidence is reused from the audit. No independent agent review used. Background, indexing and analytics are unchanged. No real messages, payments or reservations were sent. Production has not been changed.

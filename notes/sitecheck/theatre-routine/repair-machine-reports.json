@@ -1,0 +1,2181 @@
+{
+  "repairs": [
+    {
+      "phase": "repair",
+      "engine": "webkit",
+      "report": {
+        "engine": "webkit",
+        "commit": "4fedf35c7c14fe2f0689b321045b0dffbc48919e",
+        "checks": [
+          {
+            "label": "1440x900 home",
+            "evidence": {
+              "viewport": [
+                1426,
+                845
+              ],
+              "document": [
+                1426,
+                845
+              ],
+              "main": [
+                {
+                  "class": "home-main",
+                  "id": "main",
+                  "client": [
+                    1426,
+                    793
+                  ],
+                  "scroll": [
+                    1426,
+                    793
+                  ],
+                  "overflow": "hidden",
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "w": 1426,
+                    "h": 793,
+                    "bottom": 793
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "1440x900 navigation",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 poster focus contained",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 hire",
+            "evidence": {
+              "viewport": [
+                1426,
+                845
+              ],
+              "document": [
+                1426,
+                845
+              ],
+              "main": [
+                {
+                  "class": "clem-main clem-theatre-page",
+                  "id": "main",
+                  "client": [
+                    1426,
+                    729
+                  ],
+                  "scroll": [
+                    1426,
+                    729
+                  ],
+                  "overflow": "hidden",
+                  "rect": {
+                    "x": 0,
+                    "y": 64,
+                    "w": 1426,
+                    "h": 729,
+                    "bottom": 793
+                  }
+                },
+                {
+                  "class": "clem-center",
+                  "id": "",
+                  "client": [
+                    786,
+                    729
+                  ],
+                  "scroll": [
+                    786,
+                    729
+                  ],
+                  "overflow": "auto",
+                  "rect": {
+                    "x": 280,
+                    "y": 64,
+                    "w": 786,
+                    "h": 729,
+                    "bottom": 793
+                  }
+                },
+                {
+                  "class": "clem-right",
+                  "id": "",
+                  "client": [
+                    359,
+                    729
+                  ],
+                  "scroll": [
+                    359,
+                    834
+                  ],
+                  "overflow": "auto",
+                  "rect": {
+                    "x": 1066,
+                    "y": 64,
+                    "w": 360,
+                    "h": 729,
+                    "bottom": 793
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "1440x900 hire fits",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 first invalid focused",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 max rejected",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 truthful hire",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 truthful email",
+            "evidence": true
+          },
+          {
+            "label": "390x844 home",
+            "evidence": {
+              "viewport": [
+                382,
+                763
+              ],
+              "document": [
+                382,
+                763
+              ],
+              "main": [
+                {
+                  "class": "home-main",
+                  "id": "main",
+                  "client": [
+                    382,
+                    549
+                  ],
+                  "scroll": [
+                    382,
+                    549
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 58,
+                    "w": 382,
+                    "h": 549.359375,
+                    "bottom": 607.359375
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "390x844 navigation",
+            "evidence": true
+          },
+          {
+            "label": "390x844 poster focus contained",
+            "evidence": true
+          },
+          {
+            "label": "390x844 hire",
+            "evidence": {
+              "viewport": [
+                382,
+                763
+              ],
+              "document": [
+                382,
+                1637
+              ],
+              "main": [
+                {
+                  "class": "clem-main clem-theatre-page",
+                  "id": "main",
+                  "client": [
+                    382,
+                    1450
+                  ],
+                  "scroll": [
+                    382,
+                    1450
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 33,
+                    "w": 382,
+                    "h": 1449.671875,
+                    "bottom": 1482.671875
+                  }
+                },
+                {
+                  "class": "clem-center",
+                  "id": "",
+                  "client": [
+                    382,
+                    528
+                  ],
+                  "scroll": [
+                    382,
+                    528
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 109,
+                    "w": 382,
+                    "h": 527.546875,
+                    "bottom": 636.546875
+                  }
+                },
+                {
+                  "class": "clem-right",
+                  "id": "",
+                  "client": [
+                    381,
+                    846
+                  ],
+                  "scroll": [
+                    381,
+                    846
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 636.546875,
+                    "w": 382,
+                    "h": 846.125,
+                    "bottom": 1482.671875
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "390x844 hire fits",
+            "evidence": true
+          },
+          {
+            "label": "390x844 first invalid focused",
+            "evidence": true
+          },
+          {
+            "label": "390x844 max rejected",
+            "evidence": true
+          },
+          {
+            "label": "390x844 truthful hire",
+            "evidence": true
+          },
+          {
+            "label": "390x844 truthful email",
+            "evidence": true
+          }
+        ],
+        "captures": [
+          {
+            "file": "1440x900-home.png",
+            "outer": [
+              1440,
+              900
+            ],
+            "frame": [
+              1426,
+              845
+            ],
+            "inspected": true
+          },
+          {
+            "file": "390x844-home.png",
+            "outer": [
+              390,
+              844
+            ],
+            "frame": [
+              382,
+              763
+            ],
+            "inspected": true
+          },
+          {
+            "file": "390x844-hire-result.png",
+            "outer": [
+              390,
+              844
+            ],
+            "frame": [
+              382,
+              763
+            ],
+            "inspected": true
+          }
+        ],
+        "errors": [],
+        "scans": [],
+        "assets": [],
+        "console": [],
+        "links": [],
+        "limits": [],
+        "version": "26.5"
+      }
+    },
+    {
+      "phase": "repair",
+      "engine": "chromium",
+      "report": {
+        "engine": "chromium",
+        "commit": "4fedf35c7c14fe2f0689b321045b0dffbc48919e",
+        "checks": [
+          {
+            "label": "1440x900 home",
+            "evidence": {
+              "viewport": [
+                1426,
+                845
+              ],
+              "document": [
+                1426,
+                845
+              ],
+              "main": [
+                {
+                  "class": "home-main",
+                  "id": "main",
+                  "client": [
+                    1426,
+                    793
+                  ],
+                  "scroll": [
+                    1426,
+                    793
+                  ],
+                  "overflow": "hidden",
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "w": 1426,
+                    "h": 793,
+                    "bottom": 793
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "1440x900 navigation",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 poster focus contained",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 hire",
+            "evidence": {
+              "viewport": [
+                1426,
+                845
+              ],
+              "document": [
+                1426,
+                845
+              ],
+              "main": [
+                {
+                  "class": "clem-main clem-theatre-page",
+                  "id": "main",
+                  "client": [
+                    1426,
+                    729
+                  ],
+                  "scroll": [
+                    1426,
+                    729
+                  ],
+                  "overflow": "hidden",
+                  "rect": {
+                    "x": 0,
+                    "y": 64,
+                    "w": 1426,
+                    "h": 729,
+                    "bottom": 793
+                  }
+                },
+                {
+                  "class": "clem-center",
+                  "id": "",
+                  "client": [
+                    786,
+                    729
+                  ],
+                  "scroll": [
+                    786,
+                    729
+                  ],
+                  "overflow": "auto",
+                  "rect": {
+                    "x": 280,
+                    "y": 64,
+                    "w": 786,
+                    "h": 729,
+                    "bottom": 793
+                  }
+                },
+                {
+                  "class": "clem-right",
+                  "id": "",
+                  "client": [
+                    359,
+                    729
+                  ],
+                  "scroll": [
+                    359,
+                    820
+                  ],
+                  "overflow": "auto",
+                  "rect": {
+                    "x": 1066,
+                    "y": 64,
+                    "w": 360,
+                    "h": 729,
+                    "bottom": 793
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "1440x900 hire fits",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 first invalid focused",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 max rejected",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 truthful hire",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 truthful email",
+            "evidence": true
+          },
+          {
+            "label": "paused still",
+            "evidence": true
+          },
+          {
+            "label": "resume label",
+            "evidence": true
+          },
+          {
+            "label": "reduced static",
+            "evidence": false
+          }
+        ],
+        "captures": [
+          {
+            "file": "1440x900-home.png",
+            "outer": [
+              1440,
+              900
+            ],
+            "frame": [
+              1426,
+              845
+            ],
+            "inspected": true
+          },
+          {
+            "file": "1440x900-hire-errors.png",
+            "outer": [
+              1440,
+              900
+            ],
+            "frame": [
+              1426,
+              845
+            ],
+            "inspected": true
+          },
+          {
+            "file": "now-playing.png",
+            "outer": [
+              1440,
+              900
+            ],
+            "frame": [
+              1426,
+              845
+            ],
+            "inspected": true
+          },
+          {
+            "file": "coming-soon.png",
+            "outer": [
+              1440,
+              900
+            ],
+            "frame": [
+              1426,
+              845
+            ],
+            "inspected": true
+          },
+          {
+            "file": "book-tickets.png",
+            "outer": [
+              1440,
+              900
+            ],
+            "frame": [
+              1426,
+              845
+            ],
+            "inspected": true
+          },
+          {
+            "file": "clementine-street.png",
+            "outer": [
+              1440,
+              900
+            ],
+            "frame": [
+              1426,
+              845
+            ],
+            "inspected": true
+          }
+        ],
+        "errors": [
+          "Error: reduced static\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/theatre-repair.mjs:37:65)\n    at file:///home/runner/work/TabLab/TabLab/qa/theatre-repair.mjs:61:530"
+        ],
+        "scans": [
+          {
+            "label": "now-playing.html",
+            "violations": []
+          },
+          {
+            "label": "coming-soon.html",
+            "violations": []
+          },
+          {
+            "label": "book-tickets.html",
+            "violations": []
+          },
+          {
+            "label": "clementine-street.html",
+            "violations": [
+              {
+                "id": "landmark-complementary-is-top-level",
+                "impact": "moderate",
+                "nodes": [
+                  {
+                    "html": "<aside class=\"theatre-fact\" aria-label=\"Clementine Street fact\">\n        <h3>Did You Know?</h3>\n        <p>Actors often hear audience reactions as clearly as the audience hears them.</p>\n      </aside>",
+                    "summary": "Fix any of the following:\n  The complementary landmark is contained in another landmark."
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "assets": [],
+        "console": [],
+        "links": [],
+        "limits": [],
+        "version": "155.0.8059.39"
+      }
+    },
+    {
+      "phase": "repair",
+      "engine": "firefox",
+      "report": {
+        "engine": "firefox",
+        "commit": "4fedf35c7c14fe2f0689b321045b0dffbc48919e",
+        "checks": [
+          {
+            "label": "1440x900 home",
+            "evidence": {
+              "viewport": [
+                1426,
+                845
+              ],
+              "document": [
+                1426,
+                845
+              ],
+              "main": [
+                {
+                  "class": "home-main",
+                  "id": "main",
+                  "client": [
+                    1426,
+                    793
+                  ],
+                  "scroll": [
+                    1426,
+                    793
+                  ],
+                  "overflow": "hidden",
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "w": 1426,
+                    "h": 793,
+                    "bottom": 793
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "1440x900 navigation",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 poster focus contained",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 hire",
+            "evidence": {
+              "viewport": [
+                1426,
+                845
+              ],
+              "document": [
+                1426,
+                845
+              ],
+              "main": [
+                {
+                  "class": "clem-main clem-theatre-page",
+                  "id": "main",
+                  "client": [
+                    1426,
+                    729
+                  ],
+                  "scroll": [
+                    1426,
+                    729
+                  ],
+                  "overflow": "hidden",
+                  "rect": {
+                    "x": 0,
+                    "y": 64,
+                    "w": 1426,
+                    "h": 729,
+                    "bottom": 793
+                  }
+                },
+                {
+                  "class": "clem-center",
+                  "id": "",
+                  "client": [
+                    786,
+                    729
+                  ],
+                  "scroll": [
+                    786,
+                    729
+                  ],
+                  "overflow": "auto",
+                  "rect": {
+                    "x": 280,
+                    "y": 64,
+                    "w": 786,
+                    "h": 729,
+                    "bottom": 793
+                  }
+                },
+                {
+                  "class": "clem-right",
+                  "id": "",
+                  "client": [
+                    359,
+                    729
+                  ],
+                  "scroll": [
+                    359,
+                    831
+                  ],
+                  "overflow": "auto",
+                  "rect": {
+                    "x": 1066,
+                    "y": 64,
+                    "w": 360,
+                    "h": 729,
+                    "bottom": 793
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "1440x900 hire fits",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 first invalid focused",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 max rejected",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 truthful hire",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 truthful email",
+            "evidence": true
+          },
+          {
+            "label": "390x844 home",
+            "evidence": {
+              "viewport": [
+                382,
+                763
+              ],
+              "document": [
+                382,
+                763
+              ],
+              "main": [
+                {
+                  "class": "home-main",
+                  "id": "main",
+                  "client": [
+                    382,
+                    549
+                  ],
+                  "scroll": [
+                    382,
+                    549
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 58,
+                    "w": 382,
+                    "h": 549.3499755859375,
+                    "bottom": 607.3499755859375
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "390x844 navigation",
+            "evidence": true
+          },
+          {
+            "label": "390x844 poster focus contained",
+            "evidence": true
+          },
+          {
+            "label": "390x844 hire",
+            "evidence": {
+              "viewport": [
+                382,
+                763
+              ],
+              "document": [
+                382,
+                1643
+              ],
+              "main": [
+                {
+                  "class": "clem-main clem-theatre-page",
+                  "id": "main",
+                  "client": [
+                    382,
+                    1450
+                  ],
+                  "scroll": [
+                    382,
+                    1450
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": -100,
+                    "w": 382,
+                    "h": 1450,
+                    "bottom": 1350
+                  }
+                },
+                {
+                  "class": "clem-center",
+                  "id": "",
+                  "client": [
+                    382,
+                    531
+                  ],
+                  "scroll": [
+                    382,
+                    531
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": -24,
+                    "w": 382,
+                    "h": 530.7999877929688,
+                    "bottom": 506.79998779296875
+                  }
+                },
+                {
+                  "class": "clem-right",
+                  "id": "",
+                  "client": [
+                    381,
+                    843
+                  ],
+                  "scroll": [
+                    381,
+                    843
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 506.79998779296875,
+                    "w": 382,
+                    "h": 843.2000122070312,
+                    "bottom": 1350
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "390x844 hire fits",
+            "evidence": true
+          },
+          {
+            "label": "390x844 first invalid focused",
+            "evidence": true
+          },
+          {
+            "label": "390x844 max rejected",
+            "evidence": true
+          },
+          {
+            "label": "390x844 truthful hire",
+            "evidence": true
+          },
+          {
+            "label": "390x844 truthful email",
+            "evidence": true
+          }
+        ],
+        "captures": [
+          {
+            "file": "1440x900-home.png",
+            "outer": [
+              1440,
+              900
+            ],
+            "frame": [
+              1426,
+              845
+            ],
+            "inspected": true
+          },
+          {
+            "file": "390x844-home.png",
+            "outer": [
+              390,
+              844
+            ],
+            "frame": [
+              382,
+              763
+            ],
+            "inspected": true
+          },
+          {
+            "file": "390x844-hire-result.png",
+            "outer": [
+              390,
+              844
+            ],
+            "frame": [
+              382,
+              763
+            ],
+            "inspected": true
+          }
+        ],
+        "errors": [],
+        "scans": [],
+        "assets": [],
+        "console": [],
+        "links": [],
+        "limits": [],
+        "version": "153.0"
+      }
+    },
+    {
+      "phase": "repair-complete",
+      "engine": "chromium",
+      "report": {
+        "engine": "chromium",
+        "commit": "bcebc992388e9b756a143811d02862a2291a7996",
+        "checks": [
+          {
+            "label": "1440x900 home",
+            "evidence": {
+              "viewport": [
+                1426,
+                845
+              ],
+              "document": [
+                1426,
+                845
+              ],
+              "main": [
+                {
+                  "class": "home-main",
+                  "id": "main",
+                  "client": [
+                    1426,
+                    793
+                  ],
+                  "scroll": [
+                    1426,
+                    793
+                  ],
+                  "overflow": "hidden",
+                  "rect": {
+                    "x": 0,
+                    "y": 0,
+                    "w": 1426,
+                    "h": 793,
+                    "bottom": 793
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "1440x900 navigation",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 poster focus contained",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 hire",
+            "evidence": {
+              "viewport": [
+                1426,
+                845
+              ],
+              "document": [
+                1426,
+                845
+              ],
+              "main": [
+                {
+                  "class": "clem-main clem-theatre-page",
+                  "id": "main",
+                  "client": [
+                    1426,
+                    729
+                  ],
+                  "scroll": [
+                    1426,
+                    729
+                  ],
+                  "overflow": "hidden",
+                  "rect": {
+                    "x": 0,
+                    "y": 64,
+                    "w": 1426,
+                    "h": 729,
+                    "bottom": 793
+                  }
+                },
+                {
+                  "class": "clem-center",
+                  "id": "",
+                  "client": [
+                    786,
+                    729
+                  ],
+                  "scroll": [
+                    786,
+                    729
+                  ],
+                  "overflow": "auto",
+                  "rect": {
+                    "x": 280,
+                    "y": 64,
+                    "w": 786,
+                    "h": 729,
+                    "bottom": 793
+                  }
+                },
+                {
+                  "class": "clem-right",
+                  "id": "",
+                  "client": [
+                    359,
+                    729
+                  ],
+                  "scroll": [
+                    359,
+                    820
+                  ],
+                  "overflow": "auto",
+                  "rect": {
+                    "x": 1066,
+                    "y": 64,
+                    "w": 360,
+                    "h": 729,
+                    "bottom": 793
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "1440x900 hire fits",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 first invalid focused",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 max rejected",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 truthful hire",
+            "evidence": true
+          },
+          {
+            "label": "1440x900 truthful email",
+            "evidence": true
+          },
+          {
+            "label": "paused still",
+            "evidence": true
+          },
+          {
+            "label": "resume label",
+            "evidence": true
+          },
+          {
+            "label": "resume advances",
+            "evidence": true
+          },
+          {
+            "label": "reduced static",
+            "evidence": true
+          },
+          {
+            "label": "390x844 home",
+            "evidence": {
+              "viewport": [
+                382,
+                763
+              ],
+              "document": [
+                382,
+                763
+              ],
+              "main": [
+                {
+                  "class": "home-main",
+                  "id": "main",
+                  "client": [
+                    382,
+                    549
+                  ],
+                  "scroll": [
+                    382,
+                    549
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 58,
+                    "w": 382,
+                    "h": 549.359375,
+                    "bottom": 607.359375
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "390x844 navigation",
+            "evidence": true
+          },
+          {
+            "label": "390x844 poster focus contained",
+            "evidence": true
+          },
+          {
+            "label": "390x844 hire",
+            "evidence": {
+              "viewport": [
+                382,
+                763
+              ],
+              "document": [
+                382,
+                1623
+              ],
+              "main": [
+                {
+                  "class": "clem-main clem-theatre-page",
+                  "id": "main",
+                  "client": [
+                    382,
+                    1436
+                  ],
+                  "scroll": [
+                    382,
+                    1436
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 55,
+                    "w": 382,
+                    "h": 1435.859375,
+                    "bottom": 1490.859375
+                  }
+                },
+                {
+                  "class": "clem-center",
+                  "id": "",
+                  "client": [
+                    382,
+                    528
+                  ],
+                  "scroll": [
+                    382,
+                    528
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 131,
+                    "w": 382,
+                    "h": 527.734375,
+                    "bottom": 658.734375
+                  }
+                },
+                {
+                  "class": "clem-right",
+                  "id": "",
+                  "client": [
+                    381,
+                    832
+                  ],
+                  "scroll": [
+                    381,
+                    832
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 658.734375,
+                    "w": 382,
+                    "h": 832.125,
+                    "bottom": 1490.859375
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "390x844 hire fits",
+            "evidence": true
+          },
+          {
+            "label": "390x844 first invalid focused",
+            "evidence": true
+          },
+          {
+            "label": "390x844 max rejected",
+            "evidence": true
+          },
+          {
+            "label": "390x844 truthful hire",
+            "evidence": true
+          },
+          {
+            "label": "390x844 truthful email",
+            "evidence": true
+          },
+          {
+            "label": "844x390 home",
+            "evidence": {
+              "viewport": [
+                836,
+                338
+              ],
+              "document": [
+                836,
+                573
+              ],
+              "main": [
+                {
+                  "class": "home-main",
+                  "id": "main",
+                  "client": [
+                    836,
+                    421
+                  ],
+                  "scroll": [
+                    836,
+                    421
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 58,
+                    "w": 836,
+                    "h": 420.78125,
+                    "bottom": 478.78125
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "844x390 navigation",
+            "evidence": true
+          },
+          {
+            "label": "844x390 hire neighbour",
+            "evidence": {
+              "viewport": [
+                836,
+                338
+              ],
+              "document": [
+                836,
+                1452
+              ],
+              "main": [
+                {
+                  "class": "clem-main clem-theatre-page",
+                  "id": "main",
+                  "client": [
+                    836,
+                    1329
+                  ],
+                  "scroll": [
+                    836,
+                    1329
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 58,
+                    "w": 836,
+                    "h": 1329.109375,
+                    "bottom": 1387.109375
+                  }
+                },
+                {
+                  "class": "clem-center",
+                  "id": "",
+                  "client": [
+                    836,
+                    421
+                  ],
+                  "scroll": [
+                    836,
+                    421
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 134,
+                    "w": 836,
+                    "h": 420.984375,
+                    "bottom": 554.984375
+                  }
+                },
+                {
+                  "class": "clem-right",
+                  "id": "",
+                  "client": [
+                    835,
+                    832
+                  ],
+                  "scroll": [
+                    835,
+                    832
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 554.984375,
+                    "w": 836,
+                    "h": 832.125,
+                    "bottom": 1387.109375
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "844x390 hire fits",
+            "evidence": true
+          },
+          {
+            "label": "320x568 home",
+            "evidence": {
+              "viewport": [
+                312,
+                487
+              ],
+              "document": [
+                312,
+                611
+              ],
+              "main": [
+                {
+                  "class": "home-main",
+                  "id": "main",
+                  "client": [
+                    312,
+                    421
+                  ],
+                  "scroll": [
+                    312,
+                    421
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 58,
+                    "w": 312,
+                    "h": 420.5,
+                    "bottom": 478.5
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "320x568 navigation",
+            "evidence": true
+          },
+          {
+            "label": "320x568 booking",
+            "evidence": {
+              "viewport": [
+                312,
+                487
+              ],
+              "document": [
+                312,
+                1993
+              ],
+              "main": [
+                {
+                  "class": "book-main",
+                  "id": "main",
+                  "client": [
+                    312,
+                    1793
+                  ],
+                  "scroll": [
+                    312,
+                    1793
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 58,
+                    "w": 312,
+                    "h": 1792.5625,
+                    "bottom": 1850.5625
+                  }
+                },
+                {
+                  "class": "book-left",
+                  "id": "",
+                  "client": [
+                    312,
+                    944
+                  ],
+                  "scroll": [
+                    312,
+                    944
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 906.59375,
+                    "w": 312,
+                    "h": 943.96875,
+                    "bottom": 1850.5625
+                  }
+                },
+                {
+                  "class": "book-right",
+                  "id": "",
+                  "client": [
+                    312,
+                    849
+                  ],
+                  "scroll": [
+                    312,
+                    849
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 58,
+                    "w": 312,
+                    "h": 848.59375,
+                    "bottom": 906.59375
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "320x568 empty checkout disabled",
+            "evidence": true
+          },
+          {
+            "label": "320x568 quantity floor",
+            "evidence": "0"
+          },
+          {
+            "label": "320x568 mixed price $106",
+            "evidence": "$106"
+          },
+          {
+            "label": "320x568 truthful no payment result",
+            "evidence": "This was a demonstration. No payment was taken and no seats have been reserved."
+          },
+          {
+            "label": "320x568 reset",
+            "evidence": "$0"
+          },
+          {
+            "label": "narrow booking",
+            "evidence": {
+              "viewport": [
+                312,
+                487
+              ],
+              "document": [
+                312,
+                1993
+              ],
+              "main": [
+                {
+                  "class": "book-main",
+                  "id": "main",
+                  "client": [
+                    312,
+                    1793
+                  ],
+                  "scroll": [
+                    312,
+                    1793
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": -1355,
+                    "w": 312,
+                    "h": 1792.5625,
+                    "bottom": 437.5625
+                  }
+                },
+                {
+                  "class": "book-left",
+                  "id": "",
+                  "client": [
+                    312,
+                    944
+                  ],
+                  "scroll": [
+                    312,
+                    944
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": -506.40625,
+                    "w": 312,
+                    "h": 943.96875,
+                    "bottom": 437.5625
+                  }
+                },
+                {
+                  "class": "book-right",
+                  "id": "",
+                  "client": [
+                    312,
+                    849
+                  ],
+                  "scroll": [
+                    312,
+                    849
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": -1355,
+                    "w": 312,
+                    "h": 848.59375,
+                    "bottom": -506.40625
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "narrow tickets fit",
+            "evidence": true
+          },
+          {
+            "label": "780x300 home",
+            "evidence": {
+              "viewport": [
+                772,
+                248
+              ],
+              "document": [
+                772,
+                573
+              ],
+              "main": [
+                {
+                  "class": "home-main",
+                  "id": "main",
+                  "client": [
+                    772,
+                    421
+                  ],
+                  "scroll": [
+                    772,
+                    421
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 58,
+                    "w": 772,
+                    "h": 420.78125,
+                    "bottom": 478.78125
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "780x300 navigation",
+            "evidence": true
+          },
+          {
+            "label": "780x300 hire neighbour",
+            "evidence": {
+              "viewport": [
+                772,
+                248
+              ],
+              "document": [
+                772,
+                1465
+              ],
+              "main": [
+                {
+                  "class": "clem-main clem-theatre-page",
+                  "id": "main",
+                  "client": [
+                    772,
+                    1329
+                  ],
+                  "scroll": [
+                    772,
+                    1329
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 58,
+                    "w": 772,
+                    "h": 1329.109375,
+                    "bottom": 1387.109375
+                  }
+                },
+                {
+                  "class": "clem-center",
+                  "id": "",
+                  "client": [
+                    772,
+                    421
+                  ],
+                  "scroll": [
+                    772,
+                    421
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 134,
+                    "w": 772,
+                    "h": 420.984375,
+                    "bottom": 554.984375
+                  }
+                },
+                {
+                  "class": "clem-right",
+                  "id": "",
+                  "client": [
+                    771,
+                    832
+                  ],
+                  "scroll": [
+                    771,
+                    832
+                  ],
+                  "overflow": "visible",
+                  "rect": {
+                    "x": 0,
+                    "y": 554.984375,
+                    "w": 772,
+                    "h": 832.125,
+                    "bottom": 1387.109375
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "label": "780x300 hire fits",
+            "evidence": true
+          }
+        ],
+        "captures": [
+          {
+            "file": "venue-final.png",
+            "outer": [
+              1440,
+              900
+            ],
+            "frame": [
+              1426,
+              845
+            ],
+            "inspected": true
+          },
+          {
+            "file": "390x844-home.png",
+            "outer": [
+              390,
+              844
+            ],
+            "frame": [
+              382,
+              763
+            ],
+            "inspected": true
+          },
+          {
+            "file": "rotated-menu.png",
+            "outer": [
+              844,
+              390
+            ],
+            "frame": [
+              836,
+              338
+            ],
+            "inspected": true
+          },
+          {
+            "file": "390x844-hire-errors.png",
+            "outer": [
+              390,
+              844
+            ],
+            "frame": [
+              382,
+              763
+            ],
+            "inspected": true
+          },
+          {
+            "file": "390x844-hire-result.png",
+            "outer": [
+              390,
+              844
+            ],
+            "frame": [
+              382,
+              763
+            ],
+            "inspected": true
+          },
+          {
+            "file": "email-result.png",
+            "outer": [
+              390,
+              844
+            ],
+            "frame": [
+              382,
+              763
+            ],
+            "inspected": true
+          },
+          {
+            "file": "844x390-home.png",
+            "outer": [
+              844,
+              390
+            ],
+            "frame": [
+              836,
+              338
+            ],
+            "inspected": true
+          },
+          {
+            "file": "320x568-home.png",
+            "outer": [
+              320,
+              568
+            ],
+            "frame": [
+              312,
+              487
+            ],
+            "inspected": true
+          },
+          {
+            "file": "320x568-booking.png",
+            "outer": [
+              320,
+              568
+            ],
+            "frame": [
+              312,
+              487
+            ],
+            "inspected": true
+          },
+          {
+            "file": "320x568-booking-result.png",
+            "outer": [
+              320,
+              568
+            ],
+            "frame": [
+              312,
+              487
+            ],
+            "inspected": true
+          },
+          {
+            "file": "780x300-home.png",
+            "outer": [
+              780,
+              300
+            ],
+            "frame": [
+              772,
+              248
+            ],
+            "inspected": true
+          }
+        ],
+        "errors": [],
+        "scans": [
+          {
+            "label": "now-playing.html",
+            "violations": []
+          },
+          {
+            "label": "coming-soon.html",
+            "violations": []
+          },
+          {
+            "label": "book-tickets.html",
+            "violations": []
+          },
+          {
+            "label": "clementine-street.html",
+            "violations": []
+          }
+        ],
+        "assets": [],
+        "console": [],
+        "links": [],
+        "limits": [],
+        "version": "155.0.8059.39"
+      }
+    },
+    {
+      "phase": "polish",
+      "engine": "webkit",
+      "report": {
+        "engine": "webkit",
+        "commit": "d70c38ef85c5101146bc06e04bd5c4b6e9ad7219",
+        "checks": [
+          {
+            "label": "footer fits",
+            "evidence": true
+          },
+          {
+            "label": "reset focused",
+            "evidence": true
+          }
+        ],
+        "captures": [
+          {
+            "file": "narrow-home-final.png",
+            "outer": [
+              320,
+              568
+            ],
+            "frame": [
+              312,
+              487
+            ],
+            "inspected": true
+          },
+          {
+            "file": "hire-final.png",
+            "outer": [
+              320,
+              568
+            ],
+            "frame": [
+              312,
+              487
+            ],
+            "inspected": true
+          }
+        ],
+        "errors": [],
+        "scans": [
+          {
+            "label": "Hire success",
+            "violations": [
+              {
+                "id": "page-has-heading-one",
+                "impact": "moderate",
+                "nodes": [
+                  {
+                    "html": "<html lang=\"en\">",
+                    "summary": "Fix all of the following:\n  Page must have a level-one heading"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Hire form",
+            "violations": [
+              {
+                "id": "page-has-heading-one",
+                "impact": "moderate",
+                "nodes": [
+                  {
+                    "html": "<html lang=\"en\">",
+                    "summary": "Fix all of the following:\n  Page must have a level-one heading"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "assets": [],
+        "console": [],
+        "links": [],
+        "limits": []
+      }
+    },
+    {
+      "phase": "polish",
+      "engine": "chromium",
+      "report": {
+        "engine": "chromium",
+        "commit": "d70c38ef85c5101146bc06e04bd5c4b6e9ad7219",
+        "checks": [
+          {
+            "label": "footer fits",
+            "evidence": true
+          },
+          {
+            "label": "reset focused",
+            "evidence": true
+          }
+        ],
+        "captures": [
+          {
+            "file": "narrow-home-final.png",
+            "outer": [
+              320,
+              568
+            ],
+            "frame": [
+              312,
+              487
+            ],
+            "inspected": true
+          },
+          {
+            "file": "hire-final.png",
+            "outer": [
+              320,
+              568
+            ],
+            "frame": [
+              312,
+              487
+            ],
+            "inspected": true
+          }
+        ],
+        "errors": [],
+        "scans": [
+          {
+            "label": "Hire success",
+            "violations": [
+              {
+                "id": "page-has-heading-one",
+                "impact": "moderate",
+                "nodes": [
+                  {
+                    "html": "<html lang=\"en\">",
+                    "summary": "Fix all of the following:\n  Page must have a level-one heading"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Hire form",
+            "violations": [
+              {
+                "id": "page-has-heading-one",
+                "impact": "moderate",
+                "nodes": [
+                  {
+                    "html": "<html lang=\"en\">",
+                    "summary": "Fix all of the following:\n  Page must have a level-one heading"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "assets": [],
+        "console": [],
+        "links": [],
+        "limits": []
+      }
+    },
+    {
+      "phase": "polish",
+      "engine": "firefox",
+      "report": {
+        "engine": "firefox",
+        "commit": "d70c38ef85c5101146bc06e04bd5c4b6e9ad7219",
+        "checks": [
+          {
+            "label": "footer fits",
+            "evidence": true
+          },
+          {
+            "label": "reset focused",
+            "evidence": true
+          }
+        ],
+        "captures": [
+          {
+            "file": "narrow-home-final.png",
+            "outer": [
+              320,
+              568
+            ],
+            "frame": [
+              312,
+              487
+            ],
+            "inspected": true
+          },
+          {
+            "file": "hire-final.png",
+            "outer": [
+              320,
+              568
+            ],
+            "frame": [
+              312,
+              487
+            ],
+            "inspected": true
+          }
+        ],
+        "errors": [],
+        "scans": [
+          {
+            "label": "Hire success",
+            "violations": [
+              {
+                "id": "page-has-heading-one",
+                "impact": "moderate",
+                "nodes": [
+                  {
+                    "html": "<html lang=\"en\">",
+                    "summary": "Fix all of the following:\n  Page must have a level-one heading"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "label": "Hire form",
+            "violations": [
+              {
+                "id": "page-has-heading-one",
+                "impact": "moderate",
+                "nodes": [
+                  {
+                    "html": "<html lang=\"en\">",
+                    "summary": "Fix all of the following:\n  Page must have a level-one heading"
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "assets": [],
+        "console": [],
+        "links": [],
+        "limits": []
+      }
+    }
+  ],
+  "final": [
+    {
+      "engine": "webkit",
+      "commit": "bce24605bccb4747ed2a47048699c7557e127a5e",
+      "checks": [
+        {
+          "label": "footer fits",
+          "evidence": true
+        },
+        {
+          "label": "reset focused",
+          "evidence": true
+        }
+      ],
+      "captures": [],
+      "errors": [],
+      "scans": [
+        {
+          "label": "Hire success",
+          "violations": []
+        },
+        {
+          "label": "Hire form",
+          "violations": []
+        }
+      ],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": []
+    },
+    {
+      "engine": "chromium",
+      "commit": "bce24605bccb4747ed2a47048699c7557e127a5e",
+      "checks": [
+        {
+          "label": "footer fits",
+          "evidence": true
+        },
+        {
+          "label": "reset focused",
+          "evidence": true
+        }
+      ],
+      "captures": [],
+      "errors": [],
+      "scans": [
+        {
+          "label": "Hire success",
+          "violations": []
+        },
+        {
+          "label": "Hire form",
+          "violations": []
+        }
+      ],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": []
+    },
+    {
+      "engine": "firefox",
+      "commit": "bce24605bccb4747ed2a47048699c7557e127a5e",
+      "checks": [
+        {
+          "label": "footer fits",
+          "evidence": true
+        },
+        {
+          "label": "reset focused",
+          "evidence": true
+        }
+      ],
+      "captures": [],
+      "errors": [],
+      "scans": [
+        {
+          "label": "Hire success",
+          "violations": []
+        },
+        {
+          "label": "Hire form",
+          "violations": []
+        }
+      ],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": []
+    }
+  ]
+}
