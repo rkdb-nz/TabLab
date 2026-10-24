@@ -387,7 +387,8 @@
 
   #boardroom-title {
     max-width: 6.2em !important;
-    font-size: clamp(34px, min(6.2vw, 13dvh), 58px) !important;
+    /* Keep the heading steady while mobile browser controls hide on scroll. */
+    font-size: clamp(34px, min(6.2vw, 13svh), 58px) !important;
   }
 
   .boardroom-mobile-intro {
