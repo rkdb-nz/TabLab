@@ -1,7 +1,7 @@
-name: Restaurant routine check
+name: Restaurant remaining phone checks
 on:
   pull_request:
-    paths: ['qa/restaurant-routine.mjs', '.github/workflows/sitecheck-readiness.yml']
+    paths: ['qa/restaurant-remaining.mjs', '.github/workflows/sitecheck-readiness.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -21,12 +21,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - if: matrix.browser != 'chromium'
         run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - run: node qa/restaurant-routine.mjs
+      - run: node qa/restaurant-remaining.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: restaurant-${{ matrix.browser }}
+          name: restaurant-remaining-${{ matrix.browser }}
           path: qa/restaurant-results/
           retention-days: 90
