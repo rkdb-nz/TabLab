@@ -1,7 +1,7 @@
-name: Retreat targeted repair check
+name: Retreat final targeted checks
 on:
   pull_request:
-    paths: ['qa/retreat-repair.mjs', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/springboard/demos/retreat/**']
+    paths: ['qa/retreat-final.mjs', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/springboard/demos/retreat/**']
   workflow_dispatch:
 permissions:
   contents: read
@@ -21,12 +21,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - if: matrix.browser != 'chromium'
         run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - run: node qa/retreat-repair.mjs
+      - run: node qa/retreat-final.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: retreat-repair-${{ matrix.browser }}
-          path: qa/retreat-repair-results/
+          name: retreat-final-${{ matrix.browser }}
+          path: qa/retreat-final-results/
           retention-days: 90

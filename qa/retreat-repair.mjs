@@ -44,13 +44,13 @@ try{
   await c.route('**/*',r=>['GET','HEAD'].includes(r.request().method())?r.continue():r.abort());
   try{
    await p.goto(origin+base);const f=p.frames().find(f=>f.url().includes('site.html'));await settle(f);await cap(p,f,tag+'-home');
-   ensure(tag+' Home current',(await f.locator('.nav a[aria-current=page]').innerText()).toLowerCase()==='home');ensure(tag+' landing fits',await f.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
+   ensure(tag+' Home current',(await f.locator('.nav a[aria-current=page]').textContent()).trim().toLowerCase()==='home');ensure(tag+' landing fits',await f.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1));
    if(width<1001){
     await f.locator('.menu-btn').click();for(let i=0;i<7;i++)await p.keyboard.press('Tab');ensure(tag+' menu focus contained',await f.locator('.header').evaluate(e=>e.contains(document.activeElement)));
     if(engine==='chromium'&&width===390){await p.setViewportSize({width:844,height:390});await cap(p,f,'rotated-menu');await p.setViewportSize({width,height});}
     await f.locator('.nav a[href*=retreats]').click();
    }else await f.locator('.nav a[href*=retreats]').click();
-   await f.waitForURL('**/retreats.html*');ensure(tag+' navigation',(await f.locator('.nav a[aria-current=page]').innerText()).toLowerCase()==='retreats');
+   await f.waitForURL('**/retreats.html*');ensure(tag+' navigation',(await f.locator('.nav a[aria-current=page]').textContent()).trim().toLowerCase()==='retreats');
    await f.locator('.retreat-thumb-btn').first().click();await f.locator('.lightbox-close').press('Tab');await p.keyboard.press('Tab');ensure(tag+' gallery focus contained',await f.locator('#retreat-lightbox').evaluate(e=>e.contains(document.activeElement)));
    if(engine==='chromium'&&width===390)await cap(p,f,'phone-gallery');await p.keyboard.press('Escape');ensure(tag+' gallery closes',await f.locator('#retreat-lightbox').evaluate(e=>!e.open));ensure(tag+' hidden gallery absent',await f.locator('#retreat-lightbox').evaluate(e=>getComputedStyle(e).display==='none'));
    if(width===1440||width===390||engine==='chromium'&&width===320)await repairForm(f,p,tag,width===390||engine==='chromium'&&width===1440);
