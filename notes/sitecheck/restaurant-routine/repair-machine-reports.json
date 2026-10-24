@@ -1,0 +1,3193 @@
+[
+  {
+    "phase": "repair",
+    "engine": "chromium",
+    "report": {
+      "engine": "chromium",
+      "commit": "84729822cc81218a21c4768f7b48d167cfe3fac3",
+      "checks": [
+        {
+          "label": "1440x900 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              1426,
+              845
+            ]
+          }
+        },
+        {
+          "label": "1440x900 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "1440x900 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 modal focus contained",
+          "evidence": {
+            "pass": false
+          }
+        },
+        {
+          "label": "390x844 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              382,
+              763
+            ]
+          }
+        },
+        {
+          "label": "390x844 menu open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "rotated send reachable",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 modal focus contained",
+          "evidence": {
+            "pass": false
+          }
+        },
+        {
+          "label": "844x390 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "844x390 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              836,
+              338
+            ]
+          }
+        },
+        {
+          "label": "844x390 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "844x390 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "844x390 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "844x390 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "844x390 modal focus contained",
+          "evidence": {
+            "pass": false
+          }
+        },
+        {
+          "label": "320x568 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "320x568 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              312,
+              487
+            ]
+          }
+        },
+        {
+          "label": "320x568 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "320x568 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "320x568 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "320x568 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "320x568 modal focus contained",
+          "evidence": {
+            "pass": false
+          }
+        },
+        {
+          "label": "780x300 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "780x300 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              772,
+              248
+            ]
+          }
+        },
+        {
+          "label": "780x300 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "780x300 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "780x300 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "780x300 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "780x300 modal focus contained",
+          "evidence": {
+            "pass": false
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-dine.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "1440x900-request-form.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-dine.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-request-form.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "email-rotated.png",
+          "outer": [
+            844,
+            390
+          ],
+          "frame": [
+            836,
+            338
+          ],
+          "inspected": false
+        },
+        {
+          "file": "844x390-dine.png",
+          "outer": [
+            844,
+            390
+          ],
+          "frame": [
+            836,
+            338
+          ],
+          "inspected": false
+        },
+        {
+          "file": "320x568-dine.png",
+          "outer": [
+            320,
+            568
+          ],
+          "frame": [
+            312,
+            487
+          ],
+          "inspected": false
+        },
+        {
+          "file": "780x300-dine.png",
+          "outer": [
+            780,
+            300
+          ],
+          "frame": [
+            772,
+            248
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [
+        {
+          "tag": "1440x900",
+          "error": "Error: 1440x900 modal focus contained: {}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:16:85)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:55:46"
+        },
+        {
+          "tag": "390x844",
+          "error": "Error: 390x844 modal focus contained: {}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:16:85)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:55:46"
+        },
+        {
+          "tag": "844x390",
+          "error": "Error: 844x390 modal focus contained: {}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:16:85)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:55:46"
+        },
+        {
+          "tag": "320x568",
+          "error": "Error: 320x568 modal focus contained: {}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:16:85)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:55:46"
+        },
+        {
+          "tag": "780x300",
+          "error": "Error: 780x300 modal focus contained: {}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:16:85)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:55:46"
+        }
+      ],
+      "scans": [],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "155.0.8059.39"
+    }
+  },
+  {
+    "phase": "repair",
+    "engine": "firefox",
+    "report": {
+      "engine": "firefox",
+      "commit": "84729822cc81218a21c4768f7b48d167cfe3fac3",
+      "checks": [
+        {
+          "label": "1440x900 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              1426,
+              845
+            ]
+          }
+        },
+        {
+          "label": "1440x900 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "1440x900 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 modal focus contained",
+          "evidence": {
+            "pass": false
+          }
+        },
+        {
+          "label": "390x844 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              382,
+              763
+            ]
+          }
+        },
+        {
+          "label": "390x844 menu open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "390x844 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 modal focus contained",
+          "evidence": {
+            "pass": false
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-dine.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-dine.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [
+        {
+          "tag": "1440x900",
+          "error": "Error: 1440x900 modal focus contained: {}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:16:85)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:55:46"
+        },
+        {
+          "tag": "390x844",
+          "error": "Error: 390x844 modal focus contained: {}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:16:85)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:55:46"
+        }
+      ],
+      "scans": [],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "153.0"
+    }
+  },
+  {
+    "phase": "repair",
+    "engine": "webkit",
+    "report": {
+      "engine": "webkit",
+      "commit": "84729822cc81218a21c4768f7b48d167cfe3fac3",
+      "checks": [
+        {
+          "label": "1440x900 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              1426,
+              845
+            ]
+          }
+        },
+        {
+          "label": "1440x900 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "1440x900 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 modal focus contained",
+          "evidence": {
+            "pass": false
+          }
+        },
+        {
+          "label": "390x844 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              382,
+              763
+            ]
+          }
+        },
+        {
+          "label": "390x844 menu open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "390x844 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 modal focus contained",
+          "evidence": {
+            "pass": false
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-dine.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-dine.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [
+        {
+          "tag": "1440x900",
+          "error": "Error: 1440x900 modal focus contained: {}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:16:85)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:55:46\n    at runNextTicks (node:internal/process/task_queues:64:5)\n    at process.processImmediate (node:internal/timers:452:9)\n    at process.callbackTrampoline (node:internal/async_hooks:130:17)"
+        },
+        {
+          "tag": "390x844",
+          "error": "Error: 390x844 modal focus contained: {}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:16:85)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-repair.mjs:55:46"
+        }
+      ],
+      "scans": [],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "26.5"
+    }
+  },
+  {
+    "phase": "focusfix",
+    "engine": "chromium",
+    "report": {
+      "engine": "chromium",
+      "commit": "1a3c6f20032110dd69b87904d9433ac0e956a6fd",
+      "checks": [
+        {
+          "label": "1440x900 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              1426,
+              845
+            ]
+          }
+        },
+        {
+          "label": "1440x900 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "1440x900 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 modal focus contained",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 focus restored",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 FAQ keyboard open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 FAQ keyboard close",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 no real email links",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "past date rejected",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "blank name rejected",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "site.html axe clean",
+          "evidence": {
+            "pass": true,
+            "violations": []
+          }
+        },
+        {
+          "label": "dine.html axe clean",
+          "evidence": {
+            "pass": true,
+            "violations": []
+          }
+        },
+        {
+          "label": "wine.html axe clean",
+          "evidence": {
+            "pass": true,
+            "violations": []
+          }
+        },
+        {
+          "label": "sign.html axe clean",
+          "evidence": {
+            "pass": true,
+            "violations": []
+          }
+        },
+        {
+          "label": "reviews.html axe clean",
+          "evidence": {
+            "pass": true,
+            "violations": []
+          }
+        },
+        {
+          "label": "sample reviews stated",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              382,
+              763
+            ]
+          }
+        },
+        {
+          "label": "390x844 menu open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "rotated send reachable",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 modal focus contained",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 focus restored",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 FAQ keyboard open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 FAQ keyboard close",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 no real email links",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "mobile-email-dialog axe clean",
+          "evidence": {
+            "pass": true,
+            "violations": []
+          }
+        },
+        {
+          "label": "reduced animation stopped",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "reduced glide stopped",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "revealed nav usable",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "844x390 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "844x390 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              836,
+              338
+            ]
+          }
+        },
+        {
+          "label": "844x390 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "844x390 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "844x390 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "844x390 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "844x390 modal focus contained",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "844x390 focus restored",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "844x390 FAQ keyboard open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "844x390 FAQ keyboard close",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "844x390 no real email links",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "320x568 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "320x568 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              312,
+              487
+            ]
+          }
+        },
+        {
+          "label": "320x568 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "320x568 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "320x568 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "320x568 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "320x568 modal focus contained",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "320x568 focus restored",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "320x568 FAQ keyboard open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "320x568 FAQ keyboard close",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "320x568 no real email links",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "780x300 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "780x300 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              772,
+              248
+            ]
+          }
+        },
+        {
+          "label": "780x300 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "780x300 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "780x300 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "780x300 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "780x300 modal focus contained",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "780x300 focus restored",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "780x300 FAQ keyboard open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "780x300 FAQ keyboard close",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "780x300 no real email links",
+          "evidence": {
+            "pass": true
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-dine.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "1440x900-request-form.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "1440x900-confirmation.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "reviews-contrast.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-dine.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-request-form.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "email-rotated.png",
+          "outer": [
+            844,
+            390
+          ],
+          "frame": [
+            836,
+            338
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-confirmation.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "reduced-motion-cards.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "844x390-dine.png",
+          "outer": [
+            844,
+            390
+          ],
+          "frame": [
+            836,
+            338
+          ],
+          "inspected": false
+        },
+        {
+          "file": "320x568-dine.png",
+          "outer": [
+            320,
+            568
+          ],
+          "frame": [
+            312,
+            487
+          ],
+          "inspected": false
+        },
+        {
+          "file": "780x300-dine.png",
+          "outer": [
+            780,
+            300
+          ],
+          "frame": [
+            772,
+            248
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [],
+      "scans": [
+        {
+          "label": "site.html",
+          "violations": []
+        },
+        {
+          "label": "dine.html",
+          "violations": []
+        },
+        {
+          "label": "wine.html",
+          "violations": []
+        },
+        {
+          "label": "sign.html",
+          "violations": []
+        },
+        {
+          "label": "reviews.html",
+          "violations": []
+        },
+        {
+          "label": "mobile-email-dialog",
+          "violations": []
+        }
+      ],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "155.0.8059.39"
+    }
+  },
+  {
+    "phase": "focusfix",
+    "engine": "firefox",
+    "report": {
+      "engine": "firefox",
+      "commit": "1a3c6f20032110dd69b87904d9433ac0e956a6fd",
+      "checks": [
+        {
+          "label": "1440x900 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              1426,
+              845
+            ]
+          }
+        },
+        {
+          "label": "1440x900 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "1440x900 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 modal focus contained",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 focus restored",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 FAQ keyboard open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 FAQ keyboard close",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 no real email links",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              382,
+              763
+            ]
+          }
+        },
+        {
+          "label": "390x844 menu open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "390x844 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 modal focus contained",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 focus restored",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 FAQ keyboard open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 FAQ keyboard close",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 no real email links",
+          "evidence": {
+            "pass": true
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-dine.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-dine.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [],
+      "scans": [],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "153.0"
+    }
+  },
+  {
+    "phase": "focusfix",
+    "engine": "webkit",
+    "report": {
+      "engine": "webkit",
+      "commit": "1a3c6f20032110dd69b87904d9433ac0e956a6fd",
+      "checks": [
+        {
+          "label": "1440x900 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              1426,
+              845
+            ]
+          }
+        },
+        {
+          "label": "1440x900 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "1440x900 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 modal focus contained",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 focus restored",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 FAQ keyboard open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 FAQ keyboard close",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "1440x900 no real email links",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 hidden nav inert",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 dine no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "viewport": [
+              382,
+              763
+            ]
+          }
+        },
+        {
+          "label": "390x844 menu open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 required validation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 time keyboard",
+          "evidence": {
+            "pass": true,
+            "before": "19:00",
+            "after": "19:15"
+          }
+        },
+        {
+          "label": "390x844 no-send confirmation",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 modal focus",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 modal focus contained",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 focus restored",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 FAQ keyboard open",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 FAQ keyboard close",
+          "evidence": {
+            "pass": true
+          }
+        },
+        {
+          "label": "390x844 no real email links",
+          "evidence": {
+            "pass": true
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-dine.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-dine.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [],
+      "scans": [],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "26.5"
+    }
+  },
+  {
+    "phase": "final-layout",
+    "engine": "chromium",
+    "report": {
+      "engine": "chromium",
+      "commit": "791f685a4f39f10aba2b0a74ccd555e9fc36caa0",
+      "checks": [
+        {
+          "label": "1440x900 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 700.734375,
+              "viewport": 845
+            }
+          }
+        },
+        {
+          "label": "1440x900 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 700.734375,
+              "viewport": 845
+            }
+          }
+        },
+        {
+          "label": "1440x900 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 no send attempts",
+          "evidence": {
+            "pass": false,
+            "evidence": {
+              "outbound": [
+                "https://us.i.posthog.com/flags/?v=2&compression=base64"
+              ]
+            }
+          }
+        },
+        {
+          "label": "390x844 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 655.71875,
+              "viewport": 763
+            }
+          }
+        },
+        {
+          "label": "390x844 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 655.71875,
+              "viewport": 763
+            }
+          }
+        },
+        {
+          "label": "390x844 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 dialog no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 no send attempts",
+          "evidence": {
+            "pass": false,
+            "evidence": {
+              "outbound": [
+                "https://us.i.posthog.com/flags/?v=2&compression=base64"
+              ]
+            }
+          }
+        },
+        {
+          "label": "320x568 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 367.71875,
+              "viewport": 487
+            }
+          }
+        },
+        {
+          "label": "320x568 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 367.71875,
+              "viewport": 487
+            }
+          }
+        },
+        {
+          "label": "320x568 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "320x568 dialog no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "320x568 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "320x568 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "320x568 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "320x568 no send attempts",
+          "evidence": {
+            "pass": false,
+            "evidence": {
+              "outbound": [
+                "https://us.i.posthog.com/flags/?v=2&compression=base64"
+              ]
+            }
+          }
+        },
+        {
+          "label": "844x390 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 218.71875,
+              "viewport": 338
+            }
+          }
+        },
+        {
+          "label": "844x390 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 218.71875,
+              "viewport": 338
+            }
+          }
+        },
+        {
+          "label": "844x390 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "844x390 dialog no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "844x390 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "844x390 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "844x390 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "844x390 no send attempts",
+          "evidence": {
+            "pass": false,
+            "evidence": {
+              "outbound": [
+                "https://us.i.posthog.com/flags/?v=2&compression=base64"
+              ]
+            }
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-booking-final.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-booking-final.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "320x568-booking-final.png",
+          "outer": [
+            320,
+            568
+          ],
+          "frame": [
+            312,
+            487
+          ],
+          "inspected": false
+        },
+        {
+          "file": "844x390-booking-final.png",
+          "outer": [
+            844,
+            390
+          ],
+          "frame": [
+            836,
+            338
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [
+        {
+          "tag": "1440x900",
+          "error": "Error: 1440x900 no send attempts: {\"outbound\":[\"https://us.i.posthog.com/flags/?v=2&compression=base64\"]}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:17:82)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:44:51"
+        },
+        {
+          "tag": "390x844",
+          "error": "Error: 390x844 no send attempts: {\"outbound\":[\"https://us.i.posthog.com/flags/?v=2&compression=base64\"]}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:17:82)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:44:51"
+        },
+        {
+          "tag": "320x568",
+          "error": "Error: 320x568 no send attempts: {\"outbound\":[\"https://us.i.posthog.com/flags/?v=2&compression=base64\"]}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:17:82)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:44:51"
+        },
+        {
+          "tag": "844x390",
+          "error": "Error: 844x390 no send attempts: {\"outbound\":[\"https://us.i.posthog.com/flags/?v=2&compression=base64\"]}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:17:82)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:44:51"
+        }
+      ],
+      "scans": [],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "155.0.8059.39"
+    }
+  },
+  {
+    "phase": "final-layout",
+    "engine": "firefox",
+    "report": {
+      "engine": "firefox",
+      "commit": "791f685a4f39f10aba2b0a74ccd555e9fc36caa0",
+      "checks": [
+        {
+          "label": "1440x900 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 696.7999877929688,
+              "viewport": 845
+            }
+          }
+        },
+        {
+          "label": "1440x900 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 696.7999877929688,
+              "viewport": 845
+            }
+          }
+        },
+        {
+          "label": "1440x900 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 no send attempts",
+          "evidence": {
+            "pass": false,
+            "evidence": {
+              "outbound": [
+                "https://us.i.posthog.com/flags/?v=2&compression=base64"
+              ]
+            }
+          }
+        },
+        {
+          "label": "390x844 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 651.7999877929688,
+              "viewport": 763
+            }
+          }
+        },
+        {
+          "label": "390x844 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 651.7999877929688,
+              "viewport": 763
+            }
+          }
+        },
+        {
+          "label": "390x844 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 dialog no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 no send attempts",
+          "evidence": {
+            "pass": false,
+            "evidence": {
+              "outbound": [
+                "https://us.i.posthog.com/flags/?v=2&compression=base64"
+              ]
+            }
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-booking-final.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-booking-final.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [
+        {
+          "tag": "1440x900",
+          "error": "Error: 1440x900 no send attempts: {\"outbound\":[\"https://us.i.posthog.com/flags/?v=2&compression=base64\"]}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:17:82)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:44:51"
+        },
+        {
+          "tag": "390x844",
+          "error": "Error: 390x844 no send attempts: {\"outbound\":[\"https://us.i.posthog.com/flags/?v=2&compression=base64\"]}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:17:82)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:44:51"
+        }
+      ],
+      "scans": [],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "153.0"
+    }
+  },
+  {
+    "phase": "final-layout",
+    "engine": "webkit",
+    "report": {
+      "engine": "webkit",
+      "commit": "791f685a4f39f10aba2b0a74ccd555e9fc36caa0",
+      "checks": [
+        {
+          "label": "1440x900 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 716.734375,
+              "viewport": 845
+            }
+          }
+        },
+        {
+          "label": "1440x900 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 716.734375,
+              "viewport": 845
+            }
+          }
+        },
+        {
+          "label": "1440x900 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 no send attempts",
+          "evidence": {
+            "pass": false,
+            "evidence": {
+              "outbound": [
+                "https://us.i.posthog.com/flags/?v=2&compression=base64"
+              ]
+            }
+          }
+        },
+        {
+          "label": "390x844 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 671.71875,
+              "viewport": 763
+            }
+          }
+        },
+        {
+          "label": "390x844 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 671.71875,
+              "viewport": 763
+            }
+          }
+        },
+        {
+          "label": "390x844 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 dialog no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 no send attempts",
+          "evidence": {
+            "pass": false,
+            "evidence": {
+              "outbound": [
+                "https://us.i.posthog.com/flags/?v=2&compression=base64"
+              ]
+            }
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-booking-final.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-booking-final.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [
+        {
+          "tag": "1440x900",
+          "error": "Error: 1440x900 no send attempts: {\"outbound\":[\"https://us.i.posthog.com/flags/?v=2&compression=base64\"]}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:17:82)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:44:51\n    at runNextTicks (node:internal/process/task_queues:64:5)\n    at process.processImmediate (node:internal/timers:452:9)\n    at process.callbackTrampoline (node:internal/async_hooks:130:17)"
+        },
+        {
+          "tag": "390x844",
+          "error": "Error: 390x844 no send attempts: {\"outbound\":[\"https://us.i.posthog.com/flags/?v=2&compression=base64\"]}\n    at assert (file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:17:82)\n    at file:///home/runner/work/TabLab/TabLab/qa/restaurant-final.mjs:44:51"
+        }
+      ],
+      "scans": [],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "26.5"
+    }
+  },
+  {
+    "phase": "network",
+    "engine": "chromium",
+    "report": {
+      "engine": "chromium",
+      "commit": "1257502575b2507b4e5ccaa56942ddce7f6ae2be",
+      "checks": [
+        {
+          "label": "1440x900 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 700.734375,
+              "viewport": 845
+            }
+          }
+        },
+        {
+          "label": "1440x900 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 700.734375,
+              "viewport": 845
+            }
+          }
+        },
+        {
+          "label": "1440x900 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 pre-existing wrapper telemetry",
+          "evidence": {
+            "ignored": [
+              {
+                "url": "https://us.i.posthog.com/flags/?v=2&compression=base64",
+                "frame": "http://127.0.0.1:40459/boardroom/springboard/demos/dining/",
+                "method": "POST"
+              }
+            ]
+          }
+        },
+        {
+          "label": "1440x900 no booking send attempts",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "requests": []
+            }
+          }
+        },
+        {
+          "label": "390x844 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 655.71875,
+              "viewport": 763
+            }
+          }
+        },
+        {
+          "label": "390x844 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 655.71875,
+              "viewport": 763
+            }
+          }
+        },
+        {
+          "label": "390x844 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 dialog no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 pre-existing wrapper telemetry",
+          "evidence": {
+            "ignored": [
+              {
+                "url": "https://us.i.posthog.com/flags/?v=2&compression=base64",
+                "frame": "http://127.0.0.1:40459/boardroom/springboard/demos/dining/",
+                "method": "POST"
+              }
+            ]
+          }
+        },
+        {
+          "label": "390x844 no booking send attempts",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "requests": []
+            }
+          }
+        }
+      ],
+      "captures": [],
+      "errors": [],
+      "scans": [],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "155.0.8059.39"
+    }
+  },
+  {
+    "phase": "network",
+    "engine": "firefox",
+    "report": {
+      "engine": "firefox",
+      "commit": "1257502575b2507b4e5ccaa56942ddce7f6ae2be",
+      "checks": [
+        {
+          "label": "1440x900 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 696.7999877929688,
+              "viewport": 845
+            }
+          }
+        },
+        {
+          "label": "1440x900 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 696.7999877929688,
+              "viewport": 845
+            }
+          }
+        },
+        {
+          "label": "1440x900 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 pre-existing wrapper telemetry",
+          "evidence": {
+            "ignored": [
+              {
+                "url": "https://us.i.posthog.com/flags/?v=2&compression=base64",
+                "frame": "http://127.0.0.1:35685/boardroom/springboard/demos/dining/",
+                "method": "POST"
+              }
+            ]
+          }
+        },
+        {
+          "label": "1440x900 no booking send attempts",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "requests": []
+            }
+          }
+        },
+        {
+          "label": "390x844 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 651.7999877929688,
+              "viewport": 763
+            }
+          }
+        },
+        {
+          "label": "390x844 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 651.7999877929688,
+              "viewport": 763
+            }
+          }
+        },
+        {
+          "label": "390x844 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 dialog no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 pre-existing wrapper telemetry",
+          "evidence": {
+            "ignored": [
+              {
+                "url": "https://us.i.posthog.com/flags/?v=2&compression=base64",
+                "frame": "http://127.0.0.1:35685/boardroom/springboard/demos/dining/",
+                "method": "POST"
+              }
+            ]
+          }
+        },
+        {
+          "label": "390x844 no booking send attempts",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "requests": []
+            }
+          }
+        }
+      ],
+      "captures": [],
+      "errors": [],
+      "scans": [],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "153.0"
+    }
+  },
+  {
+    "phase": "network",
+    "engine": "webkit",
+    "report": {
+      "engine": "webkit",
+      "commit": "1257502575b2507b4e5ccaa56942ddce7f6ae2be",
+      "checks": [
+        {
+          "label": "1440x900 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 716.734375,
+              "viewport": 845
+            }
+          }
+        },
+        {
+          "label": "1440x900 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 716.734375,
+              "viewport": 845
+            }
+          }
+        },
+        {
+          "label": "1440x900 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "1440x900 pre-existing wrapper telemetry",
+          "evidence": {
+            "ignored": [
+              {
+                "url": "https://us.i.posthog.com/flags/?v=2&compression=base64",
+                "frame": "http://127.0.0.1:44505/boardroom/springboard/demos/dining/",
+                "method": "POST"
+              }
+            ]
+          }
+        },
+        {
+          "label": "1440x900 no booking send attempts",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "requests": []
+            }
+          }
+        },
+        {
+          "label": "390x844 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 671.71875,
+              "viewport": 763
+            }
+          }
+        },
+        {
+          "label": "390x844 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 671.71875,
+              "viewport": 763
+            }
+          }
+        },
+        {
+          "label": "390x844 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 dialog no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "390x844 pre-existing wrapper telemetry",
+          "evidence": {
+            "ignored": [
+              {
+                "url": "https://us.i.posthog.com/flags/?v=2&compression=base64",
+                "frame": "http://127.0.0.1:44505/boardroom/springboard/demos/dining/",
+                "method": "POST"
+              }
+            ]
+          }
+        },
+        {
+          "label": "390x844 no booking send attempts",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "requests": []
+            }
+          }
+        }
+      ],
+      "captures": [],
+      "errors": [],
+      "scans": [],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "26.5"
+    }
+  },
+  {
+    "phase": "narrow",
+    "engine": "chromium",
+    "report": {
+      "engine": "chromium",
+      "commit": "af20f7a907258abc02dbe9b3bc5f49404c4fc9ae",
+      "checks": [
+        {
+          "label": "320x568 button height",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 367.90625,
+              "viewport": 487
+            }
+          }
+        },
+        {
+          "label": "320x568 button reachable",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "height": 46,
+              "bottom": 367.90625,
+              "viewport": 487
+            }
+          }
+        },
+        {
+          "label": "320x568 no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "320x568 dialog no horizontal overflow",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "320x568 demo only",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "320x568 tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "320x568 reverse tab contained",
+          "evidence": {
+            "pass": true,
+            "evidence": {}
+          }
+        },
+        {
+          "label": "320x568 pre-existing wrapper telemetry",
+          "evidence": {
+            "ignored": [
+              {
+                "url": "https://us.i.posthog.com/flags/?v=2&compression=base64",
+                "frame": "http://127.0.0.1:41223/boardroom/springboard/demos/dining/",
+                "method": "POST"
+              }
+            ]
+          }
+        },
+        {
+          "label": "320x568 no booking send attempts",
+          "evidence": {
+            "pass": true,
+            "evidence": {
+              "requests": []
+            }
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "320x568-narrow-fields-final.png",
+          "outer": [
+            320,
+            568
+          ],
+          "frame": [
+            312,
+            487
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [],
+      "scans": [],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "155.0.8059.39"
+    }
+  }
+]
