@@ -1,7 +1,7 @@
-name: Restaurant targeted repair check
+name: Restaurant final booking layout check
 on:
   pull_request:
-    paths: ['qa/restaurant-repair.mjs', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/springboard/demos/dining/**']
+    paths: ['qa/restaurant-final.mjs', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/springboard/demos/dining/**']
   workflow_dispatch:
 permissions:
   contents: read
@@ -21,12 +21,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - if: matrix.browser != 'chromium'
         run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - run: node qa/restaurant-repair.mjs
+      - run: node qa/restaurant-final.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: restaurant-repair-${{ matrix.browser }}
-          path: qa/restaurant-repair-results/
+          name: restaurant-final-${{ matrix.browser }}
+          path: qa/restaurant-final-results/
           retention-days: 90
