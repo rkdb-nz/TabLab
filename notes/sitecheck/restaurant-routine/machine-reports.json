@@ -1,0 +1,2981 @@
+[
+  {
+    "phase": "initial",
+    "engine": "chromium",
+    "report": {
+      "engine": "chromium",
+      "commit": "d64e6a77c3d48205c33881c2b56bd5f7d21db4aa",
+      "checks": [
+        {
+          "label": "1440x900 navigation",
+          "evidence": "http://127.0.0.1:45753/boardroom/springboard/demos/dining/dine.html?v=dining-portrait-menu-1"
+        },
+        {
+          "label": "1440x900 dine",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "scroll": [
+              1426,
+              1832
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 22,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "Dine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1133.53125,
+                  "y": 26.59375,
+                  "w": 33.8125,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Wine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1195.34375,
+                  "y": 26.59375,
+                  "w": 36.90625,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Sign",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1260.25,
+                  "y": 26.59375,
+                  "w": 34.578125,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Reviews",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1322.828125,
+                  "y": 26.59375,
+                  "w": 63.171875,
+                  "h": 19.59375
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "1440x900 sign",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "scroll": [
+              1426,
+              1262
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 22,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "Dine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1133.53125,
+                  "y": 26.59375,
+                  "w": 33.8125,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Wine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1195.34375,
+                  "y": 26.59375,
+                  "w": 36.90625,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Sign",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1260.25,
+                  "y": 26.59375,
+                  "w": 34.578125,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Reviews",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1322.828125,
+                  "y": 26.59375,
+                  "w": 63.171875,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Dress code? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 133,
+                  "y": 862.953125,
+                  "w": 540,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Children? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 133,
+                  "y": 916.75,
+                  "w": 540,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Dietary? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 133,
+                  "y": 970.546875,
+                  "w": 540,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Corkage? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 133,
+                  "y": 1024.34375,
+                  "w": 540,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "",
+                "tag": "INPUT",
+                "tab": 0,
+                "rect": {
+                  "x": 753,
+                  "y": 363.984375,
+                  "w": 540,
+                  "h": 46
+                }
+              },
+              {
+                "text": "2 guests3 guests4 guests5 guests6 guests",
+                "tag": "SELECT",
+                "tab": 0,
+                "rect": {
+                  "x": 753,
+                  "y": 425.984375,
+                  "w": 264,
+                  "h": 48
+                }
+              },
+              {
+                "text": "",
+                "tag": "INPUT",
+                "tab": 0,
+                "rect": {
+                  "x": 1029,
+                  "y": 425.984375,
+                  "w": 264,
+                  "h": 48
+                }
+              },
+              {
+                "text": "",
+                "tag": "INPUT",
+                "tab": 0,
+                "rect": {
+                  "x": 753,
+                  "y": 489.984375,
+                  "w": 264,
+                  "h": 46
+                }
+              },
+              {
+                "text": "Request Table",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 1029,
+                  "y": 489.984375,
+                  "w": 264,
+                  "h": 46
+                }
+              },
+              {
+                "text": "Close",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 665.625,
+                  "y": 510.6875,
+                  "w": 94.75,
+                  "h": 38
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "empty form invalid",
+          "evidence": true
+        },
+        {
+          "label": "booking result",
+          "evidence": {
+            "visible": "flex",
+            "text": "CLEMENTINE'S\nThank you.\n\nYour table request has been received.\nWe’ll confirm your booking shortly.\n\nCLOSE",
+            "focus": "<button class=\"btn\" type=\"submit\">Request Table</button>"
+          }
+        },
+        {
+          "label": "time keyboard",
+          "evidence": {
+            "before": "7:00 pm",
+            "after": "7:00 pm"
+          }
+        },
+        {
+          "label": "FAQ response",
+          "evidence": {
+            "tab": -1,
+            "answer": "block"
+          }
+        },
+        {
+          "label": "wine.html",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "scroll": [
+              1426,
+              2460
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 22,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "Dine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1121.53125,
+                  "y": 26.59375,
+                  "w": 33.8125,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Wine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1187.34375,
+                  "y": 26.59375,
+                  "w": 36.90625,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Sign",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1256.25,
+                  "y": 26.59375,
+                  "w": 34.578125,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Reviews",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1322.828125,
+                  "y": 26.59375,
+                  "w": 63.171875,
+                  "h": 19.59375
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "reviews.html",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "scroll": [
+              1426,
+              1328
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 22,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "Dine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1133.53125,
+                  "y": 26.59375,
+                  "w": 33.8125,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Wine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1195.34375,
+                  "y": 26.59375,
+                  "w": 36.90625,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Sign",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1260.25,
+                  "y": 26.59375,
+                  "w": 34.578125,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Reviews",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1322.828125,
+                  "y": 26.59375,
+                  "w": 63.171875,
+                  "h": 19.59375
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "1440x900 fullscreen",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 return",
+          "evidence": true
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-home.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "1440x900-dine.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "1440x900-booking.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "booking-confirmation.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "wine-desktop.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "reviews-desktop.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "1440x900-fullscreen.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1440,
+            900
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-home.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "844x390-home.png",
+          "outer": [
+            844,
+            390
+          ],
+          "frame": [
+            836,
+            338
+          ],
+          "inspected": false
+        },
+        {
+          "file": "320x568-home.png",
+          "outer": [
+            320,
+            568
+          ],
+          "frame": [
+            312,
+            487
+          ],
+          "inspected": false
+        },
+        {
+          "file": "780x300-home.png",
+          "outer": [
+            780,
+            300
+          ],
+          "frame": [
+            772,
+            248
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [
+        {
+          "tag": "390x844",
+          "error": "locator.click: Timeout 6000ms exceeded.\nCall log:\n  - waiting for locator('[data-panel=dine]')\n    - locator resolved to <div tabindex=\"0\" class=\"panel\" role=\"button\" data-panel=\"dine\" aria-label=\"Dine\" data-href=\"dine.html?v=dining-portrait-menu-1\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <body class=\"home-page\">…</body> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <body class=\"home-page\">…</body> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    11 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <body class=\"home-page\">…</body> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n\n    at /home/runner/work/TabLab/TabLab/qa/restaurant-routine.mjs:25:39"
+        },
+        {
+          "tag": "844x390",
+          "error": "locator.click: Timeout 6000ms exceeded.\nCall log:\n  - waiting for locator('[data-panel=dine]')\n    - locator resolved to <div tabindex=\"0\" class=\"panel\" role=\"button\" data-panel=\"dine\" aria-label=\"Dine\" data-href=\"dine.html?v=dining-portrait-menu-1\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <body class=\"home-page\">…</body> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <body class=\"home-page\">…</body> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    11 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <body class=\"home-page\">…</body> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n\n    at /home/runner/work/TabLab/TabLab/qa/restaurant-routine.mjs:25:39"
+        },
+        {
+          "tag": "320x568",
+          "error": "locator.click: Timeout 6000ms exceeded.\nCall log:\n  - waiting for locator('[data-panel=dine]')\n    - locator resolved to <div tabindex=\"0\" class=\"panel\" role=\"button\" data-panel=\"dine\" aria-label=\"Dine\" data-href=\"dine.html?v=dining-portrait-menu-1\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <body class=\"home-page\">…</body> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <body class=\"home-page\">…</body> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    11 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <body class=\"home-page\">…</body> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n\n    at /home/runner/work/TabLab/TabLab/qa/restaurant-routine.mjs:25:39"
+        },
+        {
+          "tag": "780x300",
+          "error": "locator.click: Timeout 6000ms exceeded.\nCall log:\n  - waiting for locator('[data-panel=dine]')\n    - locator resolved to <div tabindex=\"0\" class=\"panel\" role=\"button\" data-panel=\"dine\" aria-label=\"Dine\" data-href=\"dine.html?v=dining-portrait-menu-1\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <body class=\"home-page\">…</body> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <body class=\"home-page\">…</body> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    11 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <body class=\"home-page\">…</body> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n\n    at /home/runner/work/TabLab/TabLab/qa/restaurant-routine.mjs:25:39"
+        }
+      ],
+      "scans": [
+        {
+          "page": "site.html",
+          "violations": [
+            {
+              "id": "region",
+              "impact": "moderate",
+              "nodes": [
+                {
+                  "html": "<section class=\"hero\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "page": "dine.html",
+          "violations": [
+            {
+              "id": "region",
+              "impact": "moderate",
+              "nodes": [
+                {
+                  "html": "<div class=\"meet meet-editorial\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "page": "wine.html",
+          "violations": [
+            {
+              "id": "region",
+              "impact": "moderate",
+              "nodes": [
+                {
+                  "html": "<section class=\"wine-philosophy\">\n  <p class=\"serif fade-up\" style=\"--delay: 80ms\">We don't collect bottles. We collect evenings worth remembering.</p>\n</section>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "page": "sign.html",
+          "violations": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "html": "<span class=\"time-wheel-hint\">↕ scroll to choose</span>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.99 (foreground color: #9b948d, background color: #ffffff, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<p class=\"booking-note\" style=\"margin-top:16px; font-size:11px; color:#999\">We confirm by text. No deposit for tables under six.</p>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.75 (foreground color: #999999, background color: #fdfbf7, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              ]
+            },
+            {
+              "id": "label",
+              "impact": "critical",
+              "nodes": [
+                {
+                  "html": "<input class=\"input\" type=\"date\">",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                },
+                {
+                  "html": "<input class=\"input time-wheel\" type=\"text\" name=\"time\" value=\"7:00 pm\" readonly=\"\" required=\"\">",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ]
+            },
+            {
+              "id": "landmark-one-main",
+              "impact": "moderate",
+              "nodes": [
+                {
+                  "html": "<html lang=\"en\">",
+                  "summary": "Fix all of the following:\n  Document does not have a main landmark"
+                }
+              ]
+            },
+            {
+              "id": "region",
+              "impact": "moderate",
+              "nodes": [
+                {
+                  "html": "<div class=\"page-head\"><h1 class=\"serif\">Join us.</h1><p>Booking is simple. We hold the table. You come hungry.</p></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<p class=\"venue-details\" style=\"font-size:13px; letter-spacing:0.08em; line-height:2.2\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"sign-map\" style=\"margin-top:32px; background:#E9E6DE; height:260px; border-radius:2px; position:relative; overflow:hidden\">\n  <img src=\"assets/images/map.webp\" alt=\"Map to Clementines at 38 kenya rd, wāperiki\" style=\"width:100%; height:100%; object-fit:cover; display:block\">\n</div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"faq-q\">Dress code? <span>+</span></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"faq-q\">Children? <span>+</span></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"faq-q\">Dietary? <span>+</span></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"faq-q\">Corkage? <span>+</span></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<input class=\"input\" placeholder=\"Name\" required=\"\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div style=\"display:grid; grid-template-columns:1fr 1fr; gap:12px\"><select class=\"input\"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option></select><input class=\"input\" type=\"date\"></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"time-wheel-wrap\"><input class=\"input time-wheel\" type=\"text\" name=\"time\" value=\"7:00 pm\" readonly=\"\" required=\"\"><span class=\"time-wheel-hint\">↕ scroll to choose</span></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<p class=\"booking-note\" style=\"margin-top:16px; font-size:11px; color:#999\">We confirm by text. No deposit for tables under six.</p>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<img class=\"reservation-photo\" src=\"assets/images/clemwall.webp\" alt=\"Reservation book\" style=\"margin-top:32px; border-radius:2px\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                }
+              ]
+            },
+            {
+              "id": "select-name",
+              "impact": "critical",
+              "nodes": [
+                {
+                  "html": "<select class=\"input\"><option>2 guests</option><option>3 guests</option><option>4 guests</option><option>5 guests</option><option>6 guests</option></select>",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "page": "reviews.html",
+          "violations": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "html": "<div style=\"font-size:12px; color:#777\"><span class=\"avatar\">AL</span>Anna &amp; Liam — Couple — October 2025</div>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<span class=\"avatar\">AL</span>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.01 (foreground color: #ffffff, background color: #b48e5c, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<div style=\"font-size:12px; color:#777\"><span class=\"avatar\">MR</span>Marcus R. — Business dinner — September 2025</div>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<span class=\"avatar\">MR</span>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.01 (foreground color: #ffffff, background color: #b48e5c, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<div style=\"font-size:12px; color:#777\"><span class=\"avatar\">SP</span>Sarah Patel — Family — August 2025</div>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<span class=\"avatar\">SP</span>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.01 (foreground color: #ffffff, background color: #b48e5c, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<div style=\"font-size:12px; color:#777\"><span class=\"avatar\">JC</span>James C. — Friends — November 2025</div>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<span class=\"avatar\">JC</span>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.01 (foreground color: #ffffff, background color: #b48e5c, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<div style=\"font-size:12px; color:#777\"><span class=\"avatar\">KT</span>Kate T. — Solo — July 2025</div>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.47 (foreground color: #777777, background color: #ffffff, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<span class=\"avatar\">KT</span>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.01 (foreground color: #ffffff, background color: #b48e5c, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              ]
+            },
+            {
+              "id": "landmark-one-main",
+              "impact": "moderate",
+              "nodes": [
+                {
+                  "html": "<html lang=\"en\">",
+                  "summary": "Fix all of the following:\n  Document does not have a main landmark"
+                }
+              ]
+            },
+            {
+              "id": "region",
+              "impact": "moderate",
+              "nodes": [
+                {
+                  "html": "<div class=\"page-head\"><h1 class=\"serif\">Good evenings.</h1><p>Couples, friends, families, business dinners. Real words from real tables.</p></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"reviews\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [
+        {
+          "page": "site.html",
+          "links": [
+            {
+              "text": "CLEMENTINES",
+              "href": "site.html"
+            },
+            {
+              "text": "Dine",
+              "href": "dine.html"
+            },
+            {
+              "text": "Wine",
+              "href": "wine.html"
+            },
+            {
+              "text": "Sign",
+              "href": "sign.html"
+            },
+            {
+              "text": "Reviews",
+              "href": "reviews.html"
+            }
+          ]
+        },
+        {
+          "page": "dine.html",
+          "links": [
+            {
+              "text": "CLEMENTINES",
+              "href": "site.html"
+            },
+            {
+              "text": "Dine",
+              "href": "dine.html"
+            },
+            {
+              "text": "Wine",
+              "href": "wine.html"
+            },
+            {
+              "text": "Sign",
+              "href": "sign.html"
+            },
+            {
+              "text": "Reviews",
+              "href": "reviews.html"
+            }
+          ]
+        },
+        {
+          "page": "wine.html",
+          "links": [
+            {
+              "text": "CLEMENTINES",
+              "href": "site.html"
+            },
+            {
+              "text": "Dine",
+              "href": "dine.html"
+            },
+            {
+              "text": "Wine",
+              "href": "wine.html"
+            },
+            {
+              "text": "Sign",
+              "href": "sign.html"
+            },
+            {
+              "text": "Reviews",
+              "href": "reviews.html"
+            }
+          ]
+        },
+        {
+          "page": "sign.html",
+          "links": [
+            {
+              "text": "CLEMENTINES",
+              "href": "site.html"
+            },
+            {
+              "text": "Dine",
+              "href": "dine.html"
+            },
+            {
+              "text": "Wine",
+              "href": "wine.html"
+            },
+            {
+              "text": "Sign",
+              "href": "sign.html"
+            },
+            {
+              "text": "Reviews",
+              "href": "reviews.html"
+            },
+            {
+              "text": "Request a table",
+              "href": "mailto:clementinesdining@rkdb.nz?subject=Table%20request%20%E2%80%94%20Clementines&body=Hello%20Clementines%2C%0D%0A%0D%0AI%20would%20like%20to%20request%20a%20table%2C%20please.%0D%0A%0D%0AName%3A%20%0D%0ADate%3A%20%0D%0ATime%3A%20%0D%0ANumber%20of%20guests%3A%20%0D%0APhone%20number%3A%20%0D%0ADietary%20needs%20or%20other%20requests%3A%20%0D%0A%0D%0AThank%20you.%0D%0A%0D%0AWe%20aim%20to%20respond%20within%2018%20hours%20via%20text%20message."
+            }
+          ]
+        },
+        {
+          "page": "reviews.html",
+          "links": [
+            {
+              "text": "CLEMENTINES",
+              "href": "site.html"
+            },
+            {
+              "text": "Dine",
+              "href": "dine.html"
+            },
+            {
+              "text": "Wine",
+              "href": "wine.html"
+            },
+            {
+              "text": "Sign",
+              "href": "sign.html"
+            },
+            {
+              "text": "Reviews",
+              "href": "reviews.html"
+            }
+          ]
+        }
+      ],
+      "limits": [],
+      "version": "155.0.8059.39"
+    }
+  },
+  {
+    "phase": "initial",
+    "engine": "firefox",
+    "report": {
+      "engine": "firefox",
+      "commit": "d64e6a77c3d48205c33881c2b56bd5f7d21db4aa",
+      "checks": [
+        {
+          "label": "1440x900 navigation",
+          "evidence": "http://127.0.0.1:43917/boardroom/springboard/demos/dining/dine.html?v=dining-portrait-menu-1"
+        },
+        {
+          "label": "1440x900 dine",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "scroll": [
+              1426,
+              1833
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 22,
+                  "w": 163.63333129882812,
+                  "h": 28.800003051757812
+                }
+              },
+              {
+                "text": "Dine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1133.5,
+                  "y": 26.600006103515625,
+                  "w": 33.81666564941406,
+                  "h": 19.599990844726562
+                }
+              },
+              {
+                "text": "Wine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1195.316650390625,
+                  "y": 26.600006103515625,
+                  "w": 36.91667175292969,
+                  "h": 19.599990844726562
+                }
+              },
+              {
+                "text": "Sign",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1260.2333984375,
+                  "y": 26.600006103515625,
+                  "w": 34.56666564941406,
+                  "h": 19.599990844726562
+                }
+              },
+              {
+                "text": "Reviews",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1322.800048828125,
+                  "y": 26.600006103515625,
+                  "w": 63.19999694824219,
+                  "h": 19.599990844726562
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "1440x900 sign",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "scroll": [
+              1426,
+              1260
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 22,
+                  "w": 163.63333129882812,
+                  "h": 28.800003051757812
+                }
+              },
+              {
+                "text": "Dine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1133.5,
+                  "y": 26.600006103515625,
+                  "w": 33.81666564941406,
+                  "h": 19.599990844726562
+                }
+              },
+              {
+                "text": "Wine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1195.316650390625,
+                  "y": 26.600006103515625,
+                  "w": 36.91667175292969,
+                  "h": 19.599990844726562
+                }
+              },
+              {
+                "text": "Sign",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1260.2333984375,
+                  "y": 26.600006103515625,
+                  "w": 34.56666564941406,
+                  "h": 19.599990844726562
+                }
+              },
+              {
+                "text": "Reviews",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1322.800048828125,
+                  "y": 26.600006103515625,
+                  "w": 63.19999694824219,
+                  "h": 19.599990844726562
+                }
+              },
+              {
+                "text": "Dress code? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 133,
+                  "y": 863,
+                  "w": 540,
+                  "h": 20.800003051757812
+                }
+              },
+              {
+                "text": "Children? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 133,
+                  "y": 916.7999877929688,
+                  "w": 540,
+                  "h": 20.800003051757812
+                }
+              },
+              {
+                "text": "Dietary? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 133,
+                  "y": 970.5999755859375,
+                  "w": 540,
+                  "h": 20.79998779296875
+                }
+              },
+              {
+                "text": "Corkage? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 133,
+                  "y": 1024.4000244140625,
+                  "w": 540,
+                  "h": 20.800003051757812
+                }
+              },
+              {
+                "text": "",
+                "tag": "INPUT",
+                "tab": 0,
+                "rect": {
+                  "x": 753,
+                  "y": 364,
+                  "w": 540,
+                  "h": 46
+                }
+              },
+              {
+                "text": "2 guests3 guests4 guests5 guests6 guests",
+                "tag": "SELECT",
+                "tab": 0,
+                "rect": {
+                  "x": 753,
+                  "y": 426,
+                  "w": 264,
+                  "h": 46
+                }
+              },
+              {
+                "text": "",
+                "tag": "INPUT",
+                "tab": 0,
+                "rect": {
+                  "x": 1029,
+                  "y": 426,
+                  "w": 264,
+                  "h": 46
+                }
+              },
+              {
+                "text": "",
+                "tag": "INPUT",
+                "tab": 0,
+                "rect": {
+                  "x": 753,
+                  "y": 488,
+                  "w": 264,
+                  "h": 46
+                }
+              },
+              {
+                "text": "Request Table",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 1029,
+                  "y": 488,
+                  "w": 264,
+                  "h": 46
+                }
+              },
+              {
+                "text": "Close",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 665.61669921875,
+                  "y": 510.70001220703125,
+                  "w": 94.75,
+                  "h": 38
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-home.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "1440x900-dine.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "1440x900-booking.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-home.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [
+        {
+          "tag": "390x844",
+          "error": "locator.click: Timeout 6000ms exceeded.\nCall log:\n  - waiting for locator('[data-panel=dine]')\n    - locator resolved to <div tabindex=\"0\" class=\"panel\" role=\"button\" data-panel=\"dine\" aria-label=\"Dine\" data-href=\"dine.html?v=dining-portrait-menu-1\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <body class=\"home-page\">…</body> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <body class=\"home-page\">…</body> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    11 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <body class=\"home-page\">…</body> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n\n    at /home/runner/work/TabLab/TabLab/qa/restaurant-routine.mjs:25:39"
+        }
+      ],
+      "scans": [],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "153.0"
+    }
+  },
+  {
+    "phase": "initial",
+    "engine": "webkit",
+    "report": {
+      "engine": "webkit",
+      "commit": "d64e6a77c3d48205c33881c2b56bd5f7d21db4aa",
+      "checks": [
+        {
+          "label": "1440x900 navigation",
+          "evidence": "http://127.0.0.1:44347/boardroom/springboard/demos/dining/dine.html?v=dining-portrait-menu-1"
+        },
+        {
+          "label": "1440x900 dine",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "scroll": [
+              1426,
+              1832
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 22,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "Dine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1133.53125,
+                  "y": 26.59375,
+                  "w": 33.8125,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Wine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1195.34375,
+                  "y": 26.59375,
+                  "w": 36.90625,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Sign",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1260.25,
+                  "y": 26.59375,
+                  "w": 34.578125,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Reviews",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1322.828125,
+                  "y": 26.59375,
+                  "w": 63.171875,
+                  "h": 19.59375
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "1440x900 sign",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "scroll": [
+              1426,
+              1270
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 22,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "Dine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1133.53125,
+                  "y": 26.59375,
+                  "w": 33.8125,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Wine",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1195.34375,
+                  "y": 26.59375,
+                  "w": 36.90625,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Sign",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1260.25,
+                  "y": 26.59375,
+                  "w": 34.578125,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Reviews",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 1322.828125,
+                  "y": 26.59375,
+                  "w": 63.171875,
+                  "h": 19.59375
+                }
+              },
+              {
+                "text": "Dress code? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 133,
+                  "y": 862.953125,
+                  "w": 540,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Children? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 133,
+                  "y": 916.75,
+                  "w": 540,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Dietary? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 133,
+                  "y": 970.546875,
+                  "w": 540,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Corkage? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 133,
+                  "y": 1024.34375,
+                  "w": 540,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "",
+                "tag": "INPUT",
+                "tab": 0,
+                "rect": {
+                  "x": 753,
+                  "y": 363.984375,
+                  "w": 540,
+                  "h": 46
+                }
+              },
+              {
+                "text": "2 guests3 guests4 guests5 guests6 guests",
+                "tag": "SELECT",
+                "tab": 0,
+                "rect": {
+                  "x": 753,
+                  "y": 425.984375,
+                  "w": 264,
+                  "h": 56
+                }
+              },
+              {
+                "text": "",
+                "tag": "INPUT",
+                "tab": 0,
+                "rect": {
+                  "x": 1029,
+                  "y": 425.984375,
+                  "w": 264,
+                  "h": 56
+                }
+              },
+              {
+                "text": "",
+                "tag": "INPUT",
+                "tab": 0,
+                "rect": {
+                  "x": 753,
+                  "y": 497.984375,
+                  "w": 264,
+                  "h": 46
+                }
+              },
+              {
+                "text": "Request Table",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 1029,
+                  "y": 497.984375,
+                  "w": 264,
+                  "h": 46
+                }
+              },
+              {
+                "text": "Close",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 665.625,
+                  "y": 510.6875,
+                  "w": 94.75,
+                  "h": 38
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-home.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "1440x900-dine.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "1440x900-booking.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-home.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [
+        {
+          "tag": "390x844",
+          "error": "locator.click: Timeout 6000ms exceeded.\nCall log:\n  - waiting for locator('[data-panel=dine]')\n    - locator resolved to <div tabindex=\"0\" class=\"panel\" role=\"button\" data-panel=\"dine\" aria-label=\"Dine\" data-href=\"dine.html?v=dining-portrait-menu-1\">…</div>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <body class=\"home-page\">…</body> intercepts pointer events\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is visible, enabled and stable\n      - scrolling into view if needed\n      - done scrolling\n      - <body class=\"home-page\">…</body> intercepts pointer events\n    - retrying click action\n      - waiting 100ms\n    11 × waiting for element to be visible, enabled and stable\n       - element is visible, enabled and stable\n       - scrolling into view if needed\n       - done scrolling\n       - <body class=\"home-page\">…</body> intercepts pointer events\n     - retrying click action\n       - waiting 500ms\n\n    at /home/runner/work/TabLab/TabLab/qa/restaurant-routine.mjs:25:39"
+        }
+      ],
+      "scans": [],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "26.5"
+    }
+  },
+  {
+    "phase": "remaining",
+    "engine": "chromium",
+    "report": {
+      "engine": "chromium",
+      "commit": "fac2d94be0af015ebdd440743c3aa9fa333f1d7d",
+      "checks": [
+        {
+          "label": "390x844 wheel scene",
+          "evidence": "home-track show-cards"
+        },
+        {
+          "label": "390x844 navigation",
+          "evidence": "http://127.0.0.1:37003/boardroom/springboard/demos/dining/dine.html?v=dining-portrait-menu-1"
+        },
+        {
+          "label": "390x844 dine",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "scroll": [
+              382,
+              3469
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 22,
+                  "y": 27.59375,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "☰",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 316,
+                  "y": 20,
+                  "w": 44,
+                  "h": 44
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "rotation menu",
+          "evidence": "true"
+        },
+        {
+          "label": "390x844 sign",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "scroll": [
+              382,
+              1870
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 29.59375,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "☰",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 298,
+                  "y": 22,
+                  "w": 44,
+                  "h": 44
+                }
+              },
+              {
+                "text": "Dress code? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1028.125,
+                  "w": 302,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Children? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1081.921875,
+                  "w": 302,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Dietary? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1135.71875,
+                  "w": 302,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Corkage? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1189.515625,
+                  "w": 302,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Request a table",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 1307.3125,
+                  "w": 302,
+                  "h": 52
+                }
+              },
+              {
+                "text": "Close",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 143.625,
+                  "y": 469.6875,
+                  "w": 94.75,
+                  "h": 38
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "reduced motion",
+          "evidence": {
+            "scrollAnimation": "scrollDot",
+            "trackTransition": "1.5s"
+          }
+        },
+        {
+          "label": "reduced scene",
+          "evidence": "home-track show-cards"
+        },
+        {
+          "label": "wine.html phone",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "scroll": [
+              382,
+              3207
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 22,
+                  "y": 27.59375,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "☰",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 316,
+                  "y": 20,
+                  "w": 44,
+                  "h": 44
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "reviews.html phone",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "scroll": [
+              382,
+              1676
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 29.59375,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "☰",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 298,
+                  "y": 22,
+                  "w": 44,
+                  "h": 44
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "fullscreen frame size",
+          "evidence": [
+            390,
+            844
+          ]
+        },
+        {
+          "label": "390x844 fullscreen",
+          "evidence": true
+        },
+        {
+          "label": "390x844 return",
+          "evidence": true
+        },
+        {
+          "label": "844x390 wheel scene",
+          "evidence": "home-track show-cards"
+        },
+        {
+          "label": "844x390 navigation",
+          "evidence": "http://127.0.0.1:37003/boardroom/springboard/demos/dining/dine.html?v=dining-portrait-menu-1"
+        },
+        {
+          "label": "844x390 dine",
+          "evidence": {
+            "viewport": [
+              836,
+              338
+            ],
+            "scroll": [
+              836,
+              2171
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 22,
+                  "y": 27.59375,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "☰",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 770,
+                  "y": 20,
+                  "w": 44,
+                  "h": 44
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "844x390 sign",
+          "evidence": {
+            "viewport": [
+              836,
+              338
+            ],
+            "scroll": [
+              836,
+              985
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 32,
+                  "y": 21.59375,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "☰",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 760,
+                  "y": 14,
+                  "w": 44,
+                  "h": 44
+                }
+              },
+              {
+                "text": "Dress code? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 44,
+                  "y": 730.21875,
+                  "w": 748,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Children? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 44,
+                  "y": 784.015625,
+                  "w": 748,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Dietary? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 44,
+                  "y": 837.8125,
+                  "w": 748,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Corkage? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 44,
+                  "y": 891.609375,
+                  "w": 748,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Request a table",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 442,
+                  "y": 186.796875,
+                  "w": 350,
+                  "h": 52
+                }
+              },
+              {
+                "text": "Close",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 370.625,
+                  "y": 257.1875,
+                  "w": 94.75,
+                  "h": 38
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "320x568 wheel scene",
+          "evidence": "home-track show-cards"
+        },
+        {
+          "label": "320x568 navigation",
+          "evidence": "http://127.0.0.1:37003/boardroom/springboard/demos/dining/dine.html?v=dining-portrait-menu-1"
+        },
+        {
+          "label": "320x568 dine",
+          "evidence": {
+            "viewport": [
+              312,
+              487
+            ],
+            "scroll": [
+              312,
+              3600
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 22,
+                  "y": 27.59375,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "☰",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 246,
+                  "y": 20,
+                  "w": 44,
+                  "h": 44
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "320x568 sign",
+          "evidence": {
+            "viewport": [
+              312,
+              487
+            ],
+            "scroll": [
+              312,
+              1822
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 29.59375,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "☰",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 228,
+                  "y": 22,
+                  "w": 44,
+                  "h": 44
+                }
+              },
+              {
+                "text": "Dress code? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1028.125,
+                  "w": 232,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Children? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1081.921875,
+                  "w": 232,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Dietary? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1135.71875,
+                  "w": 232,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Corkage? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1189.515625,
+                  "w": 232,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Request a table",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 1307.3125,
+                  "w": 232,
+                  "h": 52
+                }
+              },
+              {
+                "text": "Close",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 108.625,
+                  "y": 355.078125,
+                  "w": 94.75,
+                  "h": 38
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "780x300 wheel scene",
+          "evidence": "home-track show-cards"
+        },
+        {
+          "label": "780x300 navigation",
+          "evidence": "http://127.0.0.1:37003/boardroom/springboard/demos/dining/dine.html?v=dining-portrait-menu-1"
+        },
+        {
+          "label": "780x300 dine",
+          "evidence": {
+            "viewport": [
+              772,
+              248
+            ],
+            "scroll": [
+              772,
+              2243
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 22,
+                  "y": 27.59375,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "☰",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 706,
+                  "y": 20,
+                  "w": 44,
+                  "h": 44
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "780x300 sign",
+          "evidence": {
+            "viewport": [
+              772,
+              248
+            ],
+            "scroll": [
+              772,
+              985
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 32,
+                  "y": 21.59375,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "☰",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 696,
+                  "y": 14,
+                  "w": 44,
+                  "h": 44
+                }
+              },
+              {
+                "text": "Dress code? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 44,
+                  "y": 730.21875,
+                  "w": 684,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Children? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 44,
+                  "y": 784.015625,
+                  "w": 684,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Dietary? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 44,
+                  "y": 837.8125,
+                  "w": 684,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Corkage? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 44,
+                  "y": 891.609375,
+                  "w": 684,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Request a table",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 410,
+                  "y": 186.796875,
+                  "w": 318,
+                  "h": 52
+                }
+              },
+              {
+                "text": "Close",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 338.625,
+                  "y": 212.1875,
+                  "w": 94.75,
+                  "h": 38
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "native zoom shortcut attempt",
+          "evidence": {
+            "before": [
+              1440,
+              900,
+              1
+            ],
+            "after": [
+              1440,
+              900,
+              1
+            ]
+          }
+        },
+        {
+          "label": "landing first focus",
+          "evidence": {
+            "active": "<a href=\"site.html\" class=\"nav-logo\">CLEMENTINES</a>",
+            "opacity": "0"
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "390x844-dine.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-menu.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-booking.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "wine-phone.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "reviews-phone.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "320x568-dine.png",
+          "outer": [
+            320,
+            568
+          ],
+          "frame": [
+            312,
+            487
+          ],
+          "inspected": false
+        },
+        {
+          "file": "780x300-dine.png",
+          "outer": [
+            780,
+            300
+          ],
+          "frame": [
+            772,
+            248
+          ],
+          "inspected": false
+        },
+        {
+          "file": "780x300-booking.png",
+          "outer": [
+            780,
+            300
+          ],
+          "frame": [
+            772,
+            248
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [],
+      "scans": [],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "155.0.8059.39"
+    }
+  },
+  {
+    "phase": "remaining",
+    "engine": "firefox",
+    "report": {
+      "engine": "firefox",
+      "commit": "fac2d94be0af015ebdd440743c3aa9fa333f1d7d",
+      "checks": [
+        {
+          "label": "390x844 wheel scene",
+          "evidence": "home-track show-cards"
+        },
+        {
+          "label": "390x844 navigation",
+          "evidence": "http://127.0.0.1:42485/boardroom/springboard/demos/dining/dine.html?v=dining-portrait-menu-1"
+        },
+        {
+          "label": "390x844 dine",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "scroll": [
+              382,
+              3470
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 22,
+                  "y": 27.600006103515625,
+                  "w": 163.63333129882812,
+                  "h": 28.79998779296875
+                }
+              },
+              {
+                "text": "☰",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 316,
+                  "y": 20,
+                  "w": 44,
+                  "h": 44
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "rotation menu",
+          "evidence": "true"
+        },
+        {
+          "label": "390x844 sign",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "scroll": [
+              382,
+              1870
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 29.600006103515625,
+                  "w": 163.63333129882812,
+                  "h": 28.79998779296875
+                }
+              },
+              {
+                "text": "☰",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 298,
+                  "y": 22,
+                  "w": 44,
+                  "h": 44
+                }
+              },
+              {
+                "text": "Dress code? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1028.25,
+                  "w": 302,
+                  "h": 20.800003051757812
+                }
+              },
+              {
+                "text": "Children? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1082.050048828125,
+                  "w": 302,
+                  "h": 20.800003051757812
+                }
+              },
+              {
+                "text": "Dietary? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1135.8499755859375,
+                  "w": 302,
+                  "h": 20.79998779296875
+                }
+              },
+              {
+                "text": "Corkage? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1189.6500244140625,
+                  "w": 302,
+                  "h": 20.800003051757812
+                }
+              },
+              {
+                "text": "Request a table",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 1307.449951171875,
+                  "w": 302,
+                  "h": 52
+                }
+              },
+              {
+                "text": "Close",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 143.61666870117188,
+                  "y": 469.70001220703125,
+                  "w": 94.75,
+                  "h": 38
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "390x844-dine.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-menu.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-booking.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [],
+      "scans": [],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "153.0"
+    }
+  },
+  {
+    "phase": "remaining",
+    "engine": "webkit",
+    "report": {
+      "engine": "webkit",
+      "commit": "fac2d94be0af015ebdd440743c3aa9fa333f1d7d",
+      "checks": [
+        {
+          "label": "390x844 wheel scene",
+          "evidence": "home-track show-cards"
+        },
+        {
+          "label": "390x844 navigation",
+          "evidence": "http://127.0.0.1:38337/boardroom/springboard/demos/dining/dine.html?v=dining-portrait-menu-1"
+        },
+        {
+          "label": "390x844 dine",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "scroll": [
+              382,
+              3469
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 22,
+                  "y": 27.59375,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "☰",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 316,
+                  "y": 20,
+                  "w": 44,
+                  "h": 44
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "rotation menu",
+          "evidence": "true"
+        },
+        {
+          "label": "390x844 sign",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "scroll": [
+              382,
+              1870
+            ],
+            "controls": [
+              {
+                "text": "CLEMENTINES",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 29.59375,
+                  "w": 163.53125,
+                  "h": 28.796875
+                }
+              },
+              {
+                "text": "☰",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 298,
+                  "y": 22,
+                  "w": 44,
+                  "h": 44
+                }
+              },
+              {
+                "text": "Dress code? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1028.125,
+                  "w": 302,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Children? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1081.921875,
+                  "w": 302,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Dietary? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1135.71875,
+                  "w": 302,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Corkage? +",
+                "tag": "DIV",
+                "tab": -1,
+                "rect": {
+                  "x": 40,
+                  "y": 1189.515625,
+                  "w": 302,
+                  "h": 20.796875
+                }
+              },
+              {
+                "text": "Request a table",
+                "tag": "A",
+                "tab": 0,
+                "rect": {
+                  "x": 40,
+                  "y": 1307.3125,
+                  "w": 302,
+                  "h": 52
+                }
+              },
+              {
+                "text": "Close",
+                "tag": "BUTTON",
+                "tab": 0,
+                "rect": {
+                  "x": 143.625,
+                  "y": 469.6875,
+                  "w": 94.75,
+                  "h": 38
+                }
+              }
+            ]
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "390x844-dine.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-menu.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        },
+        {
+          "file": "390x844-booking.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": false
+        }
+      ],
+      "errors": [],
+      "scans": [],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "26.5"
+    }
+  }
+]

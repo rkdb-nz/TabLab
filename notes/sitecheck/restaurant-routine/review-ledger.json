@@ -1,0 +1,624 @@
+{
+  "site": "Restaurant / Dining / Clementines",
+  "sourceCommit": "489a557f5e1c139acdeb1f8913724775131b05d1",
+  "productSourceUnchanged": true,
+  "mode": "routine",
+  "plannedOuterViewports": {
+    "chromium": [
+      [
+        1440,
+        900
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        320,
+        568
+      ],
+      [
+        780,
+        300
+      ]
+    ],
+    "firefox": [
+      [
+        1440,
+        900
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "webkit": [
+      [
+        1440,
+        900
+      ],
+      [
+        390,
+        844
+      ]
+    ]
+  },
+  "captures": [
+    {
+      "file": "1440x900-home.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "chromium",
+      "observation": "Landing renders within frame; no obvious horizontal overflow."
+    },
+    {
+      "file": "1440x900-dine.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "chromium",
+      "observation": "Dine heading/menu render at sampled width; scroll continues below fold."
+    },
+    {
+      "file": "1440x900-booking.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "chromium",
+      "observation": "Booking page fits sampled width; desktop form or mobile details; portrait image alternative mismatches content."
+    },
+    {
+      "file": "booking-confirmation.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "chromium",
+      "observation": "False successful request receipt; dialog visible."
+    },
+    {
+      "file": "wine-desktop.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "chromium",
+      "observation": "Wine hero/copy render within frame; document continues below fold."
+    },
+    {
+      "file": "reviews-desktop.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "chromium",
+      "observation": "Reviews render; small pale metadata and initials match contrast failures."
+    },
+    {
+      "file": "1440x900-fullscreen.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1440,
+        900
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "chromium",
+      "observation": "Fullscreen removes wrapper and exposes Tab Lab return control."
+    },
+    {
+      "file": "390x844-home.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "chromium",
+      "observation": "Landing renders within frame; no obvious horizontal overflow."
+    },
+    {
+      "file": "844x390-home.png",
+      "outer": [
+        844,
+        390
+      ],
+      "frame": [
+        836,
+        338
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "chromium",
+      "observation": "Landing renders within frame; no obvious horizontal overflow."
+    },
+    {
+      "file": "320x568-home.png",
+      "outer": [
+        320,
+        568
+      ],
+      "frame": [
+        312,
+        487
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "chromium",
+      "observation": "Landing renders within frame; no obvious horizontal overflow."
+    },
+    {
+      "file": "780x300-home.png",
+      "outer": [
+        780,
+        300
+      ],
+      "frame": [
+        772,
+        248
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "chromium",
+      "observation": "Landing renders within frame; no obvious horizontal overflow."
+    },
+    {
+      "file": "1440x900-home.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "firefox",
+      "observation": "Landing renders within frame; no obvious horizontal overflow."
+    },
+    {
+      "file": "1440x900-dine.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "firefox",
+      "observation": "Dine heading/menu render at sampled width; scroll continues below fold."
+    },
+    {
+      "file": "1440x900-booking.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "firefox",
+      "observation": "Booking page fits sampled width; desktop form or mobile details; portrait image alternative mismatches content."
+    },
+    {
+      "file": "390x844-home.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "firefox",
+      "observation": "Landing renders within frame; no obvious horizontal overflow."
+    },
+    {
+      "file": "1440x900-home.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "webkit",
+      "observation": "Landing renders within frame; no obvious horizontal overflow."
+    },
+    {
+      "file": "1440x900-dine.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "webkit",
+      "observation": "Dine heading/menu render at sampled width; scroll continues below fold."
+    },
+    {
+      "file": "1440x900-booking.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "webkit",
+      "observation": "Booking page fits sampled width; desktop form or mobile details; portrait image alternative mismatches content."
+    },
+    {
+      "file": "390x844-home.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "initial",
+      "engine": "webkit",
+      "observation": "Landing renders within frame; no obvious horizontal overflow."
+    },
+    {
+      "file": "390x844-dine.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "remaining",
+      "engine": "chromium",
+      "observation": "Dine heading/menu render at sampled width; scroll continues below fold."
+    },
+    {
+      "file": "390x844-menu.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "remaining",
+      "engine": "chromium",
+      "observation": "Mobile menu visible above page; close control visible."
+    },
+    {
+      "file": "390x844-booking.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "remaining",
+      "engine": "chromium",
+      "observation": "Booking page fits sampled width; desktop form or mobile details; portrait image alternative mismatches content."
+    },
+    {
+      "file": "wine-phone.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "remaining",
+      "engine": "chromium",
+      "observation": "Wine hero/copy render within frame; document continues below fold."
+    },
+    {
+      "file": "reviews-phone.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "remaining",
+      "engine": "chromium",
+      "observation": "Reviews render; small pale metadata and initials match contrast failures."
+    },
+    {
+      "file": "320x568-dine.png",
+      "outer": [
+        320,
+        568
+      ],
+      "frame": [
+        312,
+        487
+      ],
+      "inspected": true,
+      "phase": "remaining",
+      "engine": "chromium",
+      "observation": "Dine heading/menu render at sampled width; scroll continues below fold."
+    },
+    {
+      "file": "780x300-dine.png",
+      "outer": [
+        780,
+        300
+      ],
+      "frame": [
+        772,
+        248
+      ],
+      "inspected": true,
+      "phase": "remaining",
+      "engine": "chromium",
+      "observation": "Dine heading/menu render at sampled width; scroll continues below fold."
+    },
+    {
+      "file": "780x300-booking.png",
+      "outer": [
+        780,
+        300
+      ],
+      "frame": [
+        772,
+        248
+      ],
+      "inspected": true,
+      "phase": "remaining",
+      "engine": "chromium",
+      "observation": "Booking page fits sampled width; desktop form or mobile details; portrait image alternative mismatches content."
+    },
+    {
+      "file": "390x844-dine.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "remaining",
+      "engine": "firefox",
+      "observation": "Dine heading/menu render at sampled width; scroll continues below fold."
+    },
+    {
+      "file": "390x844-menu.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "remaining",
+      "engine": "firefox",
+      "observation": "Mobile menu visible above page; close control visible."
+    },
+    {
+      "file": "390x844-booking.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "remaining",
+      "engine": "firefox",
+      "observation": "Booking page fits sampled width; desktop form or mobile details; portrait image alternative mismatches content."
+    },
+    {
+      "file": "390x844-dine.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "remaining",
+      "engine": "webkit",
+      "observation": "Dine heading/menu render at sampled width; scroll continues below fold."
+    },
+    {
+      "file": "390x844-menu.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "remaining",
+      "engine": "webkit",
+      "observation": "Mobile menu visible above page; close control visible."
+    },
+    {
+      "file": "390x844-booking.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "phase": "remaining",
+      "engine": "webkit",
+      "observation": "Booking page fits sampled width; desktop form or mobile details; portrait image alternative mismatches content."
+    }
+  ],
+  "limitations": [
+    "Linux WebKit is not Safari/iOS; emulation is not a physical phone.",
+    "Native zoom keyboard attempt had no effect: 1440x900 DPR1 before and after. Native 200% zoom remains unverified; narrow viewport checks are not a substitute.",
+    "Initial keyboard-driven phone scene test failed; pointer wheel-based continuation successfully navigated all phone cases. Initial failures retained as runner evidence, not claimed as a touch-navigation site defect.",
+    "Rotation kept open menu state; no rotation screenshot retained.",
+    "Gallery destination reviewed in source, not clicked in this run; real email delivery and mail-app launch were not tested.",
+    "No independent second-agent review used."
+  ],
+  "findings": [
+    {
+      "id": "RT-01",
+      "impact": "High",
+      "issue": "Desktop booking claims receipt although nothing is sent; name alone opens success with no date or contact.",
+      "fix": "Keep a realistic booking flow, validate date/contact details, and end with an explicit demo-only/no-request-sent confirmation.",
+      "evidence": "initial/chromium/booking-confirmation.png; booking result; sign.html inline submit handler."
+    },
+    {
+      "id": "RT-02",
+      "impact": "High",
+      "issue": "Guest count, date and time have no accessible labels.",
+      "fix": "Add persistent labels to all booking fields.",
+      "evidence": "Axe select-name and label findings on sign.html."
+    },
+    {
+      "id": "RT-03",
+      "impact": "High",
+      "issue": "Time field ignores ArrowDown; FAQs are divs with tabIndex -1.",
+      "fix": "Provide a keyboard-operable time selector and FAQ buttons with expanded state.",
+      "evidence": "Chromium time keyboard remained 7:00 pm; FAQ tab -1."
+    },
+    {
+      "id": "RT-04",
+      "impact": "High",
+      "issue": "Booking modal leaves focus on the submit button and has no accessible name, Escape handling or focus containment.",
+      "fix": "Name dialog; move/trap/restore focus; allow Escape and reachable close.",
+      "evidence": "booking result activeElement is Request Table; source confirmation markup/handlers."
+    },
+    {
+      "id": "RT-05",
+      "impact": "Medium",
+      "issue": "Booking hints and review labels/initials fail normal-text contrast.",
+      "fix": "Darken foregrounds/backgrounds while preserving the palette.",
+      "evidence": "Axe ratios: time hint 2.99, note 2.75, review meta 4.47, initials 3.01; requirement 4.5."
+    },
+    {
+      "id": "RT-06",
+      "impact": "Medium",
+      "issue": "Home navigation is visually hidden but its links remain keyboard-focusable.",
+      "fix": "Make the hidden navigation inert until shown.",
+      "evidence": "Remaining Chromium landing first focus is nav-logo while nav opacity 0."
+    },
+    {
+      "id": "RT-07",
+      "impact": "Medium",
+      "issue": "Reduced-motion preference still runs scrolling animation and a 1.5-second mobile screen transition.",
+      "fix": "Disable nonessential animation and screen glides when reduced motion is requested.",
+      "evidence": "Remaining Chromium: scrollDot; track transition 1.5s; inline transition set by JS."
+    },
+    {
+      "id": "RT-08",
+      "impact": "Medium",
+      "issue": "Pages omit main landmarks or leave content outside them; reservation portrait is described as a book.",
+      "fix": "Correct landmarks and image alternatives without changing artwork.",
+      "evidence": "Axe region/main findings on five pages; booking screenshots show portrait where alt says Reservation book."
+    },
+    {
+      "id": "RT-09",
+      "impact": "Medium",
+      "issue": "Reviews explicitly claim Real words from real tables without a demo/sample indication.",
+      "fix": "Label fictional testimonial content as sample reviews.",
+      "evidence": "reviews.html; reviews-desktop.png and reviews-phone.png."
+    }
+  ],
+  "runs": [
+    40070911778,
+    40071063460
+  ]
+}
