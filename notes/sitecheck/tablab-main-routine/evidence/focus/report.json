@@ -1,0 +1,1488 @@
+{
+  "commit": "172f27f89e4a97a15e7c0f63323dfade508709d2",
+  "checks": [
+    {
+      "label": "short boardroom initial",
+      "data": {
+        "viewport": [
+          780,
+          300
+        ],
+        "scroll": [
+          780,
+          375
+        ],
+        "body": "hidden auto",
+        "windowY": 0,
+        "cards": [
+          {
+            "text": "01\nBILLBOARD\nOne glance and you get the idea.\n→",
+            "rect": [
+              92,
+              222
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "02\nNOTICEBOARD\nStories with room to unfold.\n→",
+            "rect": [
+              92,
+              222
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "03\nSKATEBOARD\nThey see me scrollin'\n→",
+            "rect": [
+              232.90625,
+              362.90625
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "04\nSPRINGBOARD\nA richer world to explore.\n→",
+            "rect": [
+              232.90625,
+              362.90625
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ],
+        "visibleText": [
+          {
+            "text": "Tab \nLab",
+            "rect": [
+              14,
+              58
+            ]
+          },
+          {
+            "text": "THE BOARDROOM",
+            "rect": [
+              163.28125,
+              173.03125
+            ]
+          },
+          {
+            "text": "Choose a direction.",
+            "rect": [
+              180.03125,
+              248.65625
+            ]
+          },
+          {
+            "text": "Four ways your website can take shape.",
+            "rect": [
+              257.65625,
+              291.625
+            ]
+          },
+          {
+            "text": "01\nBILLBOARD\nOne glance and you get the idea.\n→",
+            "rect": [
+              92,
+              222
+            ]
+          },
+          {
+            "text": "02\nNOTICEBOARD\nStories with room to unfold.\n→",
+            "rect": [
+              92,
+              222
+            ]
+          },
+          {
+            "text": "03\nSKATEBOARD\nThey see me scrollin'\n→",
+            "rect": [
+              232.90625,
+              362.90625
+            ]
+          },
+          {
+            "text": "04\nSPRINGBOARD\nA richer world to explore.\n→",
+            "rect": [
+              232.90625,
+              362.90625
+            ]
+          },
+          {
+            "text": "",
+            "rect": [
+              14,
+              58
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "short boardroom wheel",
+      "data": {
+        "viewport": [
+          780,
+          300
+        ],
+        "scroll": [
+          780,
+          375
+        ],
+        "body": "hidden auto",
+        "windowY": 0,
+        "cards": [
+          {
+            "text": "01\nBILLBOARD\nOne glance and you get the idea.\n→",
+            "rect": [
+              92,
+              222
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "02\nNOTICEBOARD\nStories with room to unfold.\n→",
+            "rect": [
+              92,
+              222
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "03\nSKATEBOARD\nThey see me scrollin'\n→",
+            "rect": [
+              232.90625,
+              362.90625
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "04\nSPRINGBOARD\nA richer world to explore.\n→",
+            "rect": [
+              232.90625,
+              362.90625
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ],
+        "visibleText": [
+          {
+            "text": "Tab \nLab",
+            "rect": [
+              14,
+              58
+            ]
+          },
+          {
+            "text": "THE BOARDROOM",
+            "rect": [
+              163.28125,
+              173.03125
+            ]
+          },
+          {
+            "text": "Choose a direction.",
+            "rect": [
+              180.03125,
+              248.65625
+            ]
+          },
+          {
+            "text": "Four ways your website can take shape.",
+            "rect": [
+              257.65625,
+              291.625
+            ]
+          },
+          {
+            "text": "01\nBILLBOARD\nOne glance and you get the idea.\n→",
+            "rect": [
+              92,
+              222
+            ]
+          },
+          {
+            "text": "02\nNOTICEBOARD\nStories with room to unfold.\n→",
+            "rect": [
+              92,
+              222
+            ]
+          },
+          {
+            "text": "03\nSKATEBOARD\nThey see me scrollin'\n→",
+            "rect": [
+              232.90625,
+              362.90625
+            ]
+          },
+          {
+            "text": "04\nSPRINGBOARD\nA richer world to explore.\n→",
+            "rect": [
+              232.90625,
+              362.90625
+            ]
+          },
+          {
+            "text": "",
+            "rect": [
+              14,
+              58
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "card keyboard focus",
+      "data": {
+        "text": "01\nBILLBOARD\nOne glance and you get the idea.\n→",
+        "rect": [
+          92,
+          222
+        ],
+        "active": true,
+        "windowY": 0
+      }
+    },
+    {
+      "label": "card keyboard focus",
+      "data": {
+        "text": "02\nNOTICEBOARD\nStories with room to unfold.\n→",
+        "rect": [
+          92,
+          222
+        ],
+        "active": true,
+        "windowY": 0
+      }
+    },
+    {
+      "label": "card keyboard focus",
+      "data": {
+        "text": "03\nSKATEBOARD\nThey see me scrollin'\n→",
+        "rect": [
+          170.90625,
+          300.90625
+        ],
+        "active": true,
+        "windowY": 62
+      }
+    },
+    {
+      "label": "card keyboard focus",
+      "data": {
+        "text": "04\nSPRINGBOARD\nA richer world to explore.\n→",
+        "rect": [
+          170.90625,
+          300.90625
+        ],
+        "active": true,
+        "windowY": 62
+      }
+    },
+    {
+      "label": "short menu contact position",
+      "data": {
+        "x": 393,
+        "y": 221.5625,
+        "width": 348,
+        "height": 45.59375
+      }
+    },
+    {
+      "label": "menu complete focus trace",
+      "data": [
+        {
+          "tag": "BUTTON",
+          "text": "Home",
+          "drawer": true
+        },
+        {
+          "tag": "A",
+          "text": "The Boardroom",
+          "drawer": true
+        },
+        {
+          "tag": "A",
+          "text": "TabLabCare",
+          "drawer": true
+        },
+        {
+          "tag": "A",
+          "text": "About Tab Lab",
+          "drawer": true
+        },
+        {
+          "tag": "A",
+          "text": "Why own a website?",
+          "drawer": true
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Make me a site",
+          "drawer": true
+        },
+        {
+          "tag": "A",
+          "text": "Contact",
+          "drawer": true
+        },
+        {
+          "tag": "BODY",
+          "text": "if (location.hash === \"#explore\") document.bo",
+          "drawer": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Make me a site",
+          "drawer": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Let me choose",
+          "drawer": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "",
+          "drawer": false
+        },
+        {
+          "tag": "BUTTON",
+          "text": "Home",
+          "drawer": true
+        },
+        {
+          "tag": "A",
+          "text": "The Boardroom",
+          "drawer": true
+        },
+        {
+          "tag": "A",
+          "text": "TabLabCare",
+          "drawer": true
+        },
+        {
+          "tag": "A",
+          "text": "About Tab Lab",
+          "drawer": true
+        }
+      ]
+    },
+    {
+      "label": "enquiry keyboard transition focus",
+      "data": {
+        "active": "<body class=\"homepage page-loaded page-ready home-ui-ready sort-open\" id=\"tablabMobile\">\n    <script>\n        if (location.hash === \"#explore\") document.body.classList.add(\"explore-open\");\n        if (location.hash === \"#make-site\") document.body.classList.add(\"sort-open\");\n\n        const revealHomeUI = () => {\n            const fontsReady = document.fonts?.ready || Promise.resolve();\n            Promise.resolve(fontsReady).catch(() => {}).then(() => {\n                requestAnimationFrame(() => requestAnimationFrame(() => {\n                    document.body.classList.add(\"home-ui-ready\");\n                    document.documentElement.classList.remove(\"foundry-ui-cloak\");\n                }));\n            });\n        };\n\n        if (document.readyState === \"complete\") {\n            revealHomeUI();\n        } else {\n            window.addEventListener(\"load\", revealHomeUI, { once: true });\n        }\n\n        window.addEventListener(\"pagehide\", () => {\n            document.documentElement.classList.add(\"foundry-ui-cloak\");\n            document.body.classList.remove(\"home-ui-ready\");\n        });\n\n        window.addEventListener(\"pageshow\", event => {\n            if (event.persisted) revealHomeUI();\n        });\n    </script>\n\n    <header class=\"tablab-browserbar\" aria-label=\"TabLab\">\n        <div class=\"tablab-window-dots\" aria-hidden=\"true\">\n            <span></span><span></span><span></span>\n        </div>\n        <svg class=\"tablab-reference-tabs\" viewBox=\"0 0 220 34\" role=\"img\" aria-label=\"Tab Lab browser tabs\" xmlns=\"http://www.w3.org/2000/svg\">\n            <defs>\n                <linearGradient id=\"tablab-brown-face\" x2=\"0\" y2=\"1\"><stop stop-color=\"#624638\"></stop><stop offset=\"1\" stop-color=\"#4b3329\"></stop></linearGradient>\n                <linearGradient id=\"tablab-cream-face\" x2=\"0\" y2=\"1\"><stop stop-color=\"#fffdf8\"></stop><stop offset=\"1\" stop-color=\"#eee7df\"></stop></linearGradient>\n                <filter id=\"tablab-tab-shadow\" x=\"-15%\" y=\"-25%\" width=\"135%\" height=\"155%\"><feDropShadow dx=\"0\" dy=\"1\" stdDeviation=\"1.2\" flood-color=\"#332016\" flood-opacity=\".28\"></feDropShadow></filter>\n            </defs>\n            <path d=\"M120 33 C127 26 130 8 142 4 Q146 2 151 2 H184 C204 2 217 15 219 33 Z\" fill=\"url(#tablab-brown-face)\" stroke=\"#38271f\" stroke-opacity=\".48\" filter=\"url(#tablab-tab-shadow)\"></path>\n            <path d=\"M1 33 C1 16 16 2 34 1 H111 Q121 1 126 11 L145 33 Z\" fill=\"url(#tablab-cream-face)\" stroke=\"#eee9e2\" stroke-width=\"1.4\" filter=\"url(#tablab-tab-shadow)\"></path>\n            <path d=\"M5 24 C9 11 21 4 35 3 H110 Q119 3 123 12\" fill=\"none\" stroke=\"#fff\" stroke-opacity=\".85\" stroke-width=\"1\"></path>\n            <text x=\"24\" y=\"25\" fill=\"#3e3029\" font-family=\"Georgia, 'Times New Roman', serif\" font-size=\"24\">Tab <tspan font-style=\"italic\">Lab</tspan></text>\n            <text x=\"173\" y=\"27\" text-anchor=\"middle\" fill=\"#e9d4b8\" font-family=\"Georgia, serif\" font-size=\"27\">+</text>\n        </svg>\n    </header>\n\n    <div class=\"mobile-browser-brand\" aria-hidden=\"true\"><div class=\"mobile-lights\"><i></i><i></i><i></i></div><div class=\"mobile-brand-name\"><span><strong>Tab </strong><em>Lab</em></span></div><div class=\"mobile-brand-plus\">+</div></div>\n    <main class=\"landing\">\n        <div class=\"tablab-monitor-shadow\" aria-hidden=\"true\"></div>\n        <div class=\"tablab-monitor-peek\" aria-hidden=\"true\"></div>\n\n        <div class=\"hero\">\n            <section class=\"hero-panel\" id=\"introPanel\" aria-hidden=\"true\">\n                <h1 class=\"hero-title\">TabLab</h1>\n                <div class=\"mobile-tagline\" aria-label=\"Designed. Delivered. Dependable.\"><div>Designed.</div><div>Delivered.</div><div>Dependable.</div></div>\n                <div class=\"hero-lines\" aria-label=\"Designed. Delivered. Dependable.\">\n                    <div>Designed.</div>\n                    <div>Delivered.</div>\n                    <div>Dependable.</div>\n                </div>\n                <div class=\"hero-actions\">\n                    <button id=\"sortButton\" class=\"hero-button\" type=\"button\" style=\"\">Make me a site</button>\n                    <button id=\"exploreButton\" class=\"hero-button\" type=\"button\">Let me choose</button>\n                </div>\n            </section>\n\n            <section class=\"hero-panel is-active\" id=\"sortPanel\" aria-hidden=\"false\" style=\"--next-action-top: 477.03125px; --next-action-left: 581px; --next-action-width: 278px; --next-action-height: 54px;\">\n                <div class=\"sort-copy\">\n                    <h2 class=\"sort-title\">Need a website?</h2>\n                    <div class=\"sort-lines\">Leave it with me.</div>\n                    <div class=\"hero-actions sort-actions\">\n                        <a class=\"hero-button email-start\" href=\"mailto:tablab@rkdb.nz?subject=Hand%20Me%20The%20Problem&amp;body=Hi%2C%20I'm%20Rob.%0A%0ATab%20Lab%20was%20built%20to%20make%20having%20a%20website%20effortless.%0A%0AIn%20a%20few%20sentences%2C%20tell%20me%20who%20you%20are%2C%20where%20you%20are%2C%20and%20what%20you'd%20like%20your%20customers%20to%20know.%0A%0AI'll%20do%20some%20homework%2C%20think%20about%20what%20might%20work%20for%20you%2C%20and%20come%20back%20with%20a%20few%20different%20mockups%20of%20your%20new%20site.%0A%0AIf%20one%20feels%20right%2C%20we'll%20refine%20it%20together.%0A%0AIf%20not%2C%20tell%20me%20why.%20We'll%20go%20from%20there.%0A%0A---\">Hand me the problem</a>\n                    </div>\n                </div>\n            </section>\n        </div>\n\n        <section class=\"explore-screen\" id=\"exploreScreen\" aria-hidden=\"true\">\n            <div class=\"explore-wordmark\">TAB LAB</div>\n            <svg class=\"explore-blueprint\" viewBox=\"0 0 1000 700\" aria-hidden=\"true\" focusable=\"false\">\n                <g class=\"explore-blueprint-guides\" fill=\"none\">\n                    <path d=\"M32 76H968M32 624H968M116 28V672M884 28V672\"></path>\n                    <path d=\"M116 350H884M500 76V624\" stroke-dasharray=\"3 12\"></path>\n                    <circle cx=\"116\" cy=\"76\" r=\"7\"></circle><circle cx=\"884\" cy=\"624\" r=\"7\"></circle>\n                    <path d=\"M92 76H140M116 52V100M860 624H908M884 600V648\"></path>\n                </g>\n                <g class=\"explore-blueprint-form\" fill=\"none\">\n                    <path d=\"M570 168H840V532H570Z\"></path>\n                    <path d=\"M596 198H814V502H596Z\"></path>\n                    <path d=\"M570 260H840M570 350H840M570 440H840\"></path>\n                    <path d=\"M542 168H520V532H542M570 142V120H840V142\"></path>\n                    <circle cx=\"570\" cy=\"168\" r=\"4\"></circle><circle cx=\"840\" cy=\"532\" r=\"4\"></circle>\n                </g>\n            </svg>\n            <div class=\"explore-boardroom\">\n                <div class=\"explore-kicker\">EXPLORE TAB LAB</div>\n                <div class=\"explore-boardroom-desktop-copy\">\n                    <h2>See what’s possible first.</h2>\n                    <p>Step into the Boardroom,<br>then explore the thinking behind Tab Lab.</p>\n                </div>\n                <div class=\"explore-boardroom-mobile-copy\">\n                    <h2>See what’s<br>possible first.</h2>\n                    <p>Step into the Boardroom,<br>then explore the thinking behind Tab Lab.</p>\n                </div>\n            </div>\n            <div class=\"explore-choices\">\n                <a class=\"explore-choice\" href=\"./boardroom/\">The Boardroom</a>\n                <a class=\"explore-choice\" href=\"./the-foundry/\">About Tab Lab</a>\n                <a class=\"explore-choice\" href=\"./foundrycare/\">TabLabCare</a>\n                <a class=\"explore-choice\" href=\"./whywebsite/\">Why do I need a website?</a>\n            </div>\n            <div class=\"explore-anvil-rule\" aria-hidden=\"true\">\n                <span></span>\n                <svg viewBox=\"0 0 180 95\" focusable=\"false\">\n                    <path d=\"M10 17H59V11H165V18C150 19 137 23 127 30C117 37 112 45 113 53C114 62 120 69 131 73L139 76V88H48V79L61 75C70 72 76 66 77 59C78 52 73 47 66 45C49 42 36 38 26 33C18 29 13 24 10 17Z\"></path>\n                </svg>\n                <span></span>\n            </div>\n        </section>\n\n        <div class=\"forge-transition\" aria-hidden=\"true\">\n            <span class=\"forge-transition-line\"></span><span class=\"forge-transition-core\"></span>\n        </div>\n    </main>\n\n    <div id=\"landingStateBlackout\" class=\"landing-state-blackout\" aria-hidden=\"true\"></div>\n\n    <script src=\"./script.js?v=tablab-contact-20261006\"></script>\n    <script src=\"./js/foundry-global-nav.js?v=tablab-contact-20261006\" data-root=\"./\" data-landing-actions=\"true\"></script><nav class=\"foundry-global-nav\" aria-label=\"Tab Lab navigation\">\n    <button class=\"foundry-global-control foundry-global-back\" type=\"button\" aria-label=\"Back\" title=\"Back\">\n      <svg viewBox=\"0 0 48 48\" aria-hidden=\"true\">\n        <path d=\"M38 24H12\"></path>\n        <path d=\"M22 14 12 24l10 10\"></path>\n      </svg>\n    </button>\n\n    <a class=\"foundry-global-control foundry-global-home\" href=\"./\" aria-label=\"Home\" title=\"Home\">\n      <svg viewBox=\"0 0 48 48\" aria-hidden=\"true\">\n        <defs>\n          <linearGradient id=\"foundry-home-metal\" x1=\"0\" y1=\"0\" x2=\"0\" y2=\"1\">\n            <stop offset=\"0\" stop-color=\"#d5a25d\"></stop>\n            <stop offset=\".42\" stop-color=\"#a76e35\"></stop>\n            <stop offset=\"1\" stop-color=\"#64391e\"></stop>\n          </linearGradient>\n        </defs>\n        <path d=\"M8 23.5 24 10l16 13.5h-5V39H27V28h-6v11h-8V23.5Z\"></path>\n      </svg>\n    </a>\n\n    <button class=\"foundry-global-control foundry-global-menu\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\" title=\"Menu\">\n      <span></span><span></span><span></span>\n    </button>\n  </nav><div class=\"foundry-global-backdrop\" aria-hidden=\"true\"></div><aside class=\"foundry-global-drawer\" aria-hidden=\"true\" aria-label=\"Site navigation\">\n    <div class=\"foundry-global-drawer-inner\">\n      <div class=\"foundry-global-kicker\">TAB LAB</div>\n      <nav aria-label=\"Main navigation\">\n        <button class=\"foundry-global-link\" type=\"button\" data-drawer-action=\"home\"><span>Home</span></button>\n\n        <div class=\"foundry-global-menu-divider\" aria-hidden=\"true\"></div>\n\n        <a class=\"foundry-global-link\" href=\"./boardroom/\"><span>The Boardroom</span></a>\n        <a class=\"foundry-global-link\" href=\"./foundrycare/\"><span>TabLabCare</span></a>\n\n        <div class=\"foundry-global-menu-divider\" aria-hidden=\"true\"></div>\n\n        <a class=\"foundry-global-link\" href=\"./the-foundry/\"><span>About Tab Lab</span></a>\n        <a class=\"foundry-global-link\" href=\"./whywebsite/\"><span>Why own a website?</span></a>\n\n        <div class=\"foundry-global-menu-divider\" aria-hidden=\"true\"></div>\n\n        <button class=\"foundry-global-link\" type=\"button\" data-drawer-action=\"site\"><span>Make me a site</span></button>\n        <a class=\"foundry-global-link\" href=\"mailto:tablab@rkdb.nz\"><span>Contact</span></a>\n      </nav>\n      <div class=\"foundry-global-footer\">WEB DESIGN · TABLABCARE</div>\n    </div>\n  </aside>\n    <script src=\"./js/landing-experience.js?v=opening-flow-1\"></script>\n\n\n</body>"
+      }
+    },
+    {
+      "label": "enquiry next focus",
+      "data": "<a class=\"hero-button email-start\" href=\"mailto:tablab@rkdb.nz?subject=Hand%20Me%20The%20Problem&amp;body=Hi%2C%20I'm%20Rob.%0A%0ATab%20Lab%20was%20built%20to%20make%20having%20a%20website%20effortless.%0A%0AIn%20a%20few%20sentences%2C%20tell%20me%20who%20you%20are%2C%20where%20you%20are%2C%20and%20what%20you'd%20like%20your%20customers%20to%20know.%0A%0AI'll%20do%20some%20homework%2C%20think%20about%20what%20might%20work%20for%20you%2C%20and%20come%20back%20with%20a%20few%20different%20mockups%20of%20your%20new%20site.%0A%0AIf%20one%20feels%20right%2C%20we'll%20refine%20it%20together.%0A%0AIf%20not%2C%20tell%20me%20why.%20We'll%20go%20from%20there.%0A%0A---\">Hand me the problem</a>"
+    },
+    {
+      "label": "desktop boardroom overlapping descriptions",
+      "data": [
+        {
+          "card": {
+            "x": 712.890625,
+            "y": 134,
+            "width": 691,
+            "height": 158.859375,
+            "top": 134,
+            "right": 1403.890625,
+            "bottom": 292.859375,
+            "left": 712.890625
+          },
+          "desc": {
+            "x": 1146.890625,
+            "y": 120.25,
+            "width": 190,
+            "height": 186.375,
+            "top": 120.25,
+            "right": 1336.890625,
+            "bottom": 306.625,
+            "left": 1146.890625
+          }
+        },
+        {
+          "card": {
+            "x": 712.890625,
+            "y": 309.046875,
+            "width": 691,
+            "height": 158.859375,
+            "top": 309.046875,
+            "right": 1403.890625,
+            "bottom": 467.90625,
+            "left": 712.890625
+          },
+          "desc": {
+            "x": 1146.890625,
+            "y": 295.296875,
+            "width": 190,
+            "height": 186.375,
+            "top": 295.296875,
+            "right": 1336.890625,
+            "bottom": 481.671875,
+            "left": 1146.890625
+          }
+        },
+        {
+          "card": {
+            "x": 712.890625,
+            "y": 484.09375,
+            "width": 691,
+            "height": 158.859375,
+            "top": 484.09375,
+            "right": 1403.890625,
+            "bottom": 642.953125,
+            "left": 712.890625
+          },
+          "desc": {
+            "x": 1146.890625,
+            "y": 458.6875,
+            "width": 190,
+            "height": 209.671875,
+            "top": 458.6875,
+            "right": 1336.890625,
+            "bottom": 668.359375,
+            "left": 1146.890625
+          }
+        },
+        {
+          "card": {
+            "x": 712.890625,
+            "y": 659.140625,
+            "width": 691,
+            "height": 158.859375,
+            "top": 659.140625,
+            "right": 1403.890625,
+            "bottom": 818,
+            "left": 712.890625
+          },
+          "desc": {
+            "x": 1146.890625,
+            "y": 657.03125,
+            "width": 190,
+            "height": 163.078125,
+            "top": 657.03125,
+            "right": 1336.890625,
+            "bottom": 820.109375,
+            "left": 1146.890625
+          }
+        }
+      ]
+    },
+    {
+      "label": "narrow boardroom",
+      "data": {
+        "viewport": [
+          320,
+          568
+        ],
+        "scroll": [
+          320,
+          568
+        ],
+        "body": "hidden auto",
+        "windowY": 0,
+        "cards": [
+          {
+            "text": "01\nBILLBOARD\nOne glance and you get the idea.\n→",
+            "rect": [
+              220.046875,
+              375.046875
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "02\nNOTICEBOARD\nStories with room to unfold.\n→",
+            "rect": [
+              220.046875,
+              375.046875
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "03\nSKATEBOARD\nThey see me scrollin'\n→",
+            "rect": [
+              385.046875,
+              540.046875
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "04\nSPRINGBOARD\nA richer world to explore.\n→",
+            "rect": [
+              385.046875,
+              540.046875
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ],
+        "visibleText": [
+          {
+            "text": "Tab \nLab",
+            "rect": [
+              14,
+              58
+            ]
+          },
+          {
+            "text": "THE BOARDROOM",
+            "rect": [
+              107.9375,
+              116.9375
+            ]
+          },
+          {
+            "text": "Choose a direction.",
+            "rect": [
+              122.9375,
+              155.3125
+            ]
+          },
+          {
+            "text": "Four ways your website can take shape.",
+            "rect": [
+              162.3125,
+              178.140625
+            ]
+          },
+          {
+            "text": "01\nBILLBOARD\nOne glance and you get the idea.\n→",
+            "rect": [
+              220.046875,
+              375.046875
+            ]
+          },
+          {
+            "text": "02\nNOTICEBOARD\nStories with room to unfold.\n→",
+            "rect": [
+              220.046875,
+              375.046875
+            ]
+          },
+          {
+            "text": "03\nSKATEBOARD\nThey see me scrollin'\n→",
+            "rect": [
+              385.046875,
+              540.046875
+            ]
+          },
+          {
+            "text": "04\nSPRINGBOARD\nA richer world to explore.\n→",
+            "rect": [
+              385.046875,
+              540.046875
+            ]
+          },
+          {
+            "text": "",
+            "rect": [
+              14,
+              58
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "short /the-foundry/",
+      "data": {
+        "viewport": [
+          780,
+          300
+        ],
+        "scroll": [
+          780,
+          1059
+        ],
+        "body": "hidden auto",
+        "windowY": 0,
+        "cards": [],
+        "visibleText": [
+          {
+            "text": "Tab \nLab",
+            "rect": [
+              14,
+              58
+            ]
+          },
+          {
+            "text": "Tab Lab is a Tauranga web design studio\nshaped by one idea:",
+            "rect": [
+              145,
+              196.8125
+            ]
+          },
+          {
+            "text": "Simplicity.\nDone well.",
+            "rect": [
+              220.8125,
+              348.9375
+            ]
+          },
+          {
+            "text": "Our small print matches our large print.\nOur work follows four key principles.",
+            "rect": [
+              377.9375,
+              428.75
+            ]
+          },
+          {
+            "text": "Simple Launch.",
+            "rect": [
+              608.5625,
+              632.40625
+            ]
+          },
+          {
+            "text": "Focus on your business.\nWe'll handle the website.",
+            "rect": [
+              642.40625,
+              687
+            ]
+          },
+          {
+            "text": "Clear Pricing.",
+            "rect": [
+              608.5625,
+              632.40625
+            ]
+          },
+          {
+            "text": "$800. Website launched.\nSix months of TabLabCare.",
+            "rect": [
+              642.40625,
+              687
+            ]
+          },
+          {
+            "text": "Fair Ownership.",
+            "rect": [
+              840,
+              863.84375
+            ]
+          },
+          {
+            "text": "You paid for it.\nThe site is yours.",
+            "rect": [
+              873.84375,
+              918.4375
+            ]
+          },
+          {
+            "text": "TabLabCare.",
+            "rect": [
+              840,
+              863.84375
+            ]
+          },
+          {
+            "text": "Ongoing website care.\nYou're never on your own.",
+            "rect": [
+              873.84375,
+              918.4375
+            ]
+          },
+          {
+            "text": "DISCOVER TABLABCARE\n→",
+            "rect": [
+              932.4375,
+              943.640625
+            ]
+          },
+          {
+            "text": "",
+            "rect": [
+              14,
+              58
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "short bottom /the-foundry/",
+      "data": {
+        "viewport": [
+          780,
+          300
+        ],
+        "scroll": [
+          780,
+          1059
+        ],
+        "body": "hidden auto",
+        "windowY": 759,
+        "cards": [],
+        "visibleText": [
+          {
+            "text": "Tab \nLab",
+            "rect": [
+              14,
+              58
+            ]
+          },
+          {
+            "text": "Tab Lab is a Tauranga web design studio\nshaped by one idea:",
+            "rect": [
+              -614,
+              -562.1875
+            ]
+          },
+          {
+            "text": "Simplicity.\nDone well.",
+            "rect": [
+              -538.1875,
+              -410.0625
+            ]
+          },
+          {
+            "text": "Our small print matches our large print.\nOur work follows four key principles.",
+            "rect": [
+              -381.0625,
+              -330.25
+            ]
+          },
+          {
+            "text": "Simple Launch.",
+            "rect": [
+              -150.4375,
+              -126.59375
+            ]
+          },
+          {
+            "text": "Focus on your business.\nWe'll handle the website.",
+            "rect": [
+              -116.59375,
+              -72
+            ]
+          },
+          {
+            "text": "Clear Pricing.",
+            "rect": [
+              -150.4375,
+              -126.59375
+            ]
+          },
+          {
+            "text": "$800. Website launched.\nSix months of TabLabCare.",
+            "rect": [
+              -116.59375,
+              -72
+            ]
+          },
+          {
+            "text": "Fair Ownership.",
+            "rect": [
+              81,
+              104.84375
+            ]
+          },
+          {
+            "text": "You paid for it.\nThe site is yours.",
+            "rect": [
+              114.84375,
+              159.4375
+            ]
+          },
+          {
+            "text": "TabLabCare.",
+            "rect": [
+              81,
+              104.84375
+            ]
+          },
+          {
+            "text": "Ongoing website care.\nYou're never on your own.",
+            "rect": [
+              114.84375,
+              159.4375
+            ]
+          },
+          {
+            "text": "DISCOVER TABLABCARE\n→",
+            "rect": [
+              173.4375,
+              184.640625
+            ]
+          },
+          {
+            "text": "",
+            "rect": [
+              14,
+              58
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "short /foundrycare/",
+      "data": {
+        "viewport": [
+          780,
+          300
+        ],
+        "scroll": [
+          780,
+          947
+        ],
+        "body": "hidden auto",
+        "windowY": 0,
+        "cards": [],
+        "visibleText": [
+          {
+            "text": "Tab \nLab",
+            "rect": [
+              14,
+              58
+            ]
+          },
+          {
+            "text": "TABLABCARE",
+            "rect": [
+              204,
+              214.71875
+            ]
+          },
+          {
+            "text": "Care beyond launch.",
+            "rect": [
+              223.71875,
+              292.171875
+            ]
+          },
+          {
+            "text": "Every Tab Lab website includes six months of TabLabCare.\nAfter that, TabLabCare ",
+            "rect": [
+              310.171875,
+              358.796875
+            ]
+          },
+          {
+            "text": "Measured. Made. Maintained.",
+            "rect": [
+              368.796875,
+              382.1875
+            ]
+          },
+          {
+            "text": "Hosting",
+            "rect": [
+              413.1875,
+              432.890625
+            ]
+          },
+          {
+            "text": "We handle the hosting and the technical details that keep your website online.",
+            "rect": [
+              436.890625,
+              454.609375
+            ]
+          },
+          {
+            "text": "Security & Maintenance",
+            "rect": [
+              495.1875,
+              514.890625
+            ]
+          },
+          {
+            "text": "Forms break. Certificates expire. Technology changes. We work at keeping your we",
+            "rect": [
+              518.890625,
+              554.328125
+            ]
+          },
+          {
+            "text": "Content Updates",
+            "rect": [
+              581.328125,
+              601.03125
+            ]
+          },
+          {
+            "text": "Your website can evolve with you — from important changes and events to seasonal",
+            "rect": [
+              605.03125,
+              640.46875
+            ]
+          },
+          {
+            "text": "Search & Reviews",
+            "rect": [
+              667.46875,
+              687.171875
+            ]
+          },
+          {
+            "text": "We check the places customers use to find you and help make sure they point towa",
+            "rect": [
+              691.171875,
+              726.609375
+            ]
+          },
+          {
+            "text": "Regular Check-ins",
+            "rect": [
+              753.609375,
+              773.3125
+            ]
+          },
+          {
+            "text": "We don't disappear after launch. We periodically check that your website remains",
+            "rect": [
+              777.3125,
+              812.75
+            ]
+          },
+          {
+            "text": "Website Archive",
+            "rect": [
+              839.75,
+              859.453125
+            ]
+          },
+          {
+            "text": "You paid for your website. It’s yours. Every six months, we'll provide an up-to-",
+            "rect": [
+              863.453125,
+              898.890625
+            ]
+          },
+          {
+            "text": "",
+            "rect": [
+              14,
+              58
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "short bottom /foundrycare/",
+      "data": {
+        "viewport": [
+          780,
+          300
+        ],
+        "scroll": [
+          780,
+          947
+        ],
+        "body": "hidden auto",
+        "windowY": 647,
+        "cards": [],
+        "visibleText": [
+          {
+            "text": "Tab \nLab",
+            "rect": [
+              14,
+              58
+            ]
+          },
+          {
+            "text": "TABLABCARE",
+            "rect": [
+              -443,
+              -432.28125
+            ]
+          },
+          {
+            "text": "Care beyond launch.",
+            "rect": [
+              -423.28125,
+              -354.828125
+            ]
+          },
+          {
+            "text": "Every Tab Lab website includes six months of TabLabCare.\nAfter that, TabLabCare ",
+            "rect": [
+              -336.828125,
+              -288.203125
+            ]
+          },
+          {
+            "text": "Measured. Made. Maintained.",
+            "rect": [
+              -278.203125,
+              -264.8125
+            ]
+          },
+          {
+            "text": "Hosting",
+            "rect": [
+              -233.8125,
+              -214.109375
+            ]
+          },
+          {
+            "text": "We handle the hosting and the technical details that keep your website online.",
+            "rect": [
+              -210.109375,
+              -192.390625
+            ]
+          },
+          {
+            "text": "Security & Maintenance",
+            "rect": [
+              -151.8125,
+              -132.109375
+            ]
+          },
+          {
+            "text": "Forms break. Certificates expire. Technology changes. We work at keeping your we",
+            "rect": [
+              -128.109375,
+              -92.671875
+            ]
+          },
+          {
+            "text": "Content Updates",
+            "rect": [
+              -65.671875,
+              -45.96875
+            ]
+          },
+          {
+            "text": "Your website can evolve with you — from important changes and events to seasonal",
+            "rect": [
+              -41.96875,
+              -6.53125
+            ]
+          },
+          {
+            "text": "Search & Reviews",
+            "rect": [
+              20.46875,
+              40.171875
+            ]
+          },
+          {
+            "text": "We check the places customers use to find you and help make sure they point towa",
+            "rect": [
+              44.171875,
+              79.609375
+            ]
+          },
+          {
+            "text": "Regular Check-ins",
+            "rect": [
+              106.609375,
+              126.3125
+            ]
+          },
+          {
+            "text": "We don't disappear after launch. We periodically check that your website remains",
+            "rect": [
+              130.3125,
+              165.75
+            ]
+          },
+          {
+            "text": "Website Archive",
+            "rect": [
+              192.75,
+              212.453125
+            ]
+          },
+          {
+            "text": "You paid for your website. It’s yours. Every six months, we'll provide an up-to-",
+            "rect": [
+              216.453125,
+              251.890625
+            ]
+          },
+          {
+            "text": "",
+            "rect": [
+              14,
+              58
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "short /whywebsite/",
+      "data": {
+        "viewport": [
+          780,
+          300
+        ],
+        "scroll": [
+          780,
+          300
+        ],
+        "body": "hidden",
+        "windowY": 0,
+        "cards": [],
+        "visibleText": [
+          {
+            "text": "Tab \nLab",
+            "rect": [
+              14,
+              58
+            ]
+          },
+          {
+            "text": "Why have a website?\nBecause people\nexpect one.",
+            "rect": [
+              100,
+              212.125
+            ]
+          },
+          {
+            "text": "Today your next customer\nstarts online.",
+            "rect": [
+              246.125,
+              296.125
+            ]
+          },
+          {
+            "text": "They Google you.",
+            "rect": [
+              326.296875,
+              345.9375
+            ]
+          },
+          {
+            "text": "They find your website.",
+            "rect": [
+              372.296875,
+              391.9375
+            ]
+          },
+          {
+            "text": "They see you’re the real deal.",
+            "rect": [
+              418.296875,
+              437.9375
+            ]
+          },
+          {
+            "text": "They get in touch.",
+            "rect": [
+              464.296875,
+              483.9375
+            ]
+          },
+          {
+            "text": "For the cost of a single newspaper ad, you get an always-on presence that works ",
+            "rect": [
+              514.125,
+              536.515625
+            ]
+          },
+          {
+            "text": "It gets on with the job\nwhile you get on with yours.",
+            "rect": [
+              569.515625,
+              614.515625
+            ]
+          },
+          {
+            "text": "",
+            "rect": [
+              14,
+              58
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "short bottom /whywebsite/",
+      "data": {
+        "viewport": [
+          780,
+          300
+        ],
+        "scroll": [
+          780,
+          300
+        ],
+        "body": "hidden",
+        "windowY": 0,
+        "cards": [],
+        "visibleText": [
+          {
+            "text": "Tab \nLab",
+            "rect": [
+              14,
+              58
+            ]
+          },
+          {
+            "text": "Why have a website?\nBecause people\nexpect one.",
+            "rect": [
+              100,
+              212.125
+            ]
+          },
+          {
+            "text": "Today your next customer\nstarts online.",
+            "rect": [
+              246.125,
+              296.125
+            ]
+          },
+          {
+            "text": "They Google you.",
+            "rect": [
+              326.296875,
+              345.9375
+            ]
+          },
+          {
+            "text": "They find your website.",
+            "rect": [
+              372.296875,
+              391.9375
+            ]
+          },
+          {
+            "text": "They see you’re the real deal.",
+            "rect": [
+              418.296875,
+              437.9375
+            ]
+          },
+          {
+            "text": "They get in touch.",
+            "rect": [
+              464.296875,
+              483.9375
+            ]
+          },
+          {
+            "text": "For the cost of a single newspaper ad, you get an always-on presence that works ",
+            "rect": [
+              514.125,
+              536.515625
+            ]
+          },
+          {
+            "text": "It gets on with the job\nwhile you get on with yours.",
+            "rect": [
+              569.515625,
+              614.515625
+            ]
+          },
+          {
+            "text": "",
+            "rect": [
+              14,
+              58
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "200 percent CSS text enlargement (not native zoom)",
+      "data": {
+        "viewport": [
+          720,
+          450
+        ],
+        "scroll": [
+          720,
+          450
+        ],
+        "body": "hidden",
+        "windowY": 0,
+        "cards": [],
+        "visibleText": [
+          {
+            "text": "",
+            "rect": [
+              4,
+              48
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "board card navigation",
+      "data": "/boardroom/billboard/"
+    },
+    {
+      "label": "board tab navigation",
+      "data": "/boardroom/billboard/"
+    },
+    {
+      "label": "notice gallery computed colours",
+      "data": [
+        {
+          "selector": "board-kicker",
+          "color": "rgb(207, 143, 57)",
+          "background": "rgba(0, 0, 0, 0)",
+          "parent": "rgb(246, 241, 230)"
+        },
+        {
+          "selector": "gallery-head",
+          "color": "rgb(33, 27, 22)",
+          "background": "rgba(0, 0, 0, 0)",
+          "parent": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "selector": "P",
+          "color": "rgb(33, 27, 22)",
+          "background": "rgba(0, 0, 0, 0)",
+          "parent": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "selector": "H2",
+          "color": "rgb(33, 27, 22)",
+          "background": "rgba(0, 0, 0, 0)",
+          "parent": "rgba(0, 0, 0, 0)"
+        }
+      ]
+    }
+  ],
+  "captures": [
+    {
+      "file": "short-boardroom-scrolled.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "inspected": false
+    },
+    {
+      "file": "short-menu-contact-reachable.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "inspected": false
+    },
+    {
+      "file": "narrow-boardroom.png",
+      "viewport": [
+        320,
+        568
+      ],
+      "inspected": false
+    },
+    {
+      "file": "css-text-enlargement.png",
+      "viewport": [
+        720,
+        450
+      ],
+      "inspected": false
+    }
+  ],
+  "errors": []
+}
