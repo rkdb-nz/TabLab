@@ -1,0 +1,350 @@
+[
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "chromium",
+    "file": "repair/chromium/1440x900-home.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "chromium",
+    "file": "repair/chromium/look-0.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Magazine copy/photo separation inspected. Label height is superseded by the polish capture."
+  },
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "chromium",
+    "file": "repair/chromium/look-1.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Magazine copy/photo separation inspected. Label height is superseded by the polish capture."
+  },
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "chromium",
+    "file": "repair/chromium/look-5.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Magazine copy/photo separation inspected. Label height is superseded by the polish capture."
+  },
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "chromium",
+    "file": "repair/chromium/1440x900-result.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Enquiry form/result inspected. This historical capture predates the polish of result scrolling/sticky close heading; superseded by polish result captures."
+  },
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "chromium",
+    "file": "repair/chromium/390x844-home.webp",
+    "viewport": [
+      390,
+      844
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "chromium",
+    "file": "repair/chromium/phone-enquiry.webp",
+    "viewport": [
+      390,
+      844
+    ],
+    "inspected": true,
+    "observation": "Enquiry form/result inspected. This historical capture predates the polish of result scrolling/sticky close heading; superseded by polish result captures."
+  },
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "chromium",
+    "file": "repair/chromium/844x390-home.webp",
+    "viewport": [
+      844,
+      390
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "chromium",
+    "file": "repair/chromium/320x568-home.webp",
+    "viewport": [
+      320,
+      568
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "chromium",
+    "file": "repair/chromium/780x300-home.webp",
+    "viewport": [
+      780,
+      300
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "chromium",
+    "file": "repair/chromium/780x300-result.webp",
+    "viewport": [
+      780,
+      300
+    ],
+    "inspected": true,
+    "observation": "Enquiry form/result inspected. This historical capture predates the polish of result scrolling/sticky close heading; superseded by polish result captures."
+  },
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "firefox",
+    "file": "repair/firefox/1440x900-home.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "firefox",
+    "file": "repair/firefox/390x844-home.webp",
+    "viewport": [
+      390,
+      844
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "webkit",
+    "file": "repair/webkit/1440x900-home.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "repair",
+    "productRevision": "55c513136e297abacc742e0422236c19a6f71c9b",
+    "engine": "webkit",
+    "file": "repair/webkit/390x844-home.webp",
+    "viewport": [
+      390,
+      844
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "semantics",
+    "productRevision": "99e7ba892add326972690bf6dfb7ff2a39a4793d",
+    "engine": "chromium",
+    "file": "semantics/chromium/1440x900-home.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "semantics",
+    "productRevision": "99e7ba892add326972690bf6dfb7ff2a39a4793d",
+    "engine": "chromium",
+    "file": "semantics/chromium/collection-final.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Magazine copy/photo separation inspected. Label height is superseded by the polish capture."
+  },
+  {
+    "phase": "semantics",
+    "productRevision": "99e7ba892add326972690bf6dfb7ff2a39a4793d",
+    "engine": "chromium",
+    "file": "semantics/chromium/390x844-home.webp",
+    "viewport": [
+      390,
+      844
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "semantics",
+    "productRevision": "99e7ba892add326972690bf6dfb7ff2a39a4793d",
+    "engine": "chromium",
+    "file": "semantics/chromium/844x390-home.webp",
+    "viewport": [
+      844,
+      390
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "semantics",
+    "productRevision": "99e7ba892add326972690bf6dfb7ff2a39a4793d",
+    "engine": "chromium",
+    "file": "semantics/chromium/320x568-home.webp",
+    "viewport": [
+      320,
+      568
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "semantics",
+    "productRevision": "99e7ba892add326972690bf6dfb7ff2a39a4793d",
+    "engine": "chromium",
+    "file": "semantics/chromium/780x300-home.webp",
+    "viewport": [
+      780,
+      300
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "semantics",
+    "productRevision": "99e7ba892add326972690bf6dfb7ff2a39a4793d",
+    "engine": "chromium",
+    "file": "semantics/chromium/short-landscape-action.webp",
+    "viewport": [
+      780,
+      300
+    ],
+    "inspected": true,
+    "observation": "Scrolled landing action visible. A transitional horizontal edge is not used to infer a lasting layout defect; reachability separately measured."
+  },
+  {
+    "phase": "polish",
+    "productRevision": "a96d9f8cf51439a203511685998912a0a46b9bab",
+    "engine": "chromium",
+    "file": "polish/chromium/collection-final.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Final label or enquiry result inspected; Close fully visible at all captured sizes, no-send status readable."
+  },
+  {
+    "phase": "polish",
+    "productRevision": "a96d9f8cf51439a203511685998912a0a46b9bab",
+    "engine": "chromium",
+    "file": "polish/chromium/1440x900-result-final.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Final label or enquiry result inspected; Close fully visible at all captured sizes, no-send status readable."
+  },
+  {
+    "phase": "polish",
+    "productRevision": "a96d9f8cf51439a203511685998912a0a46b9bab",
+    "engine": "chromium",
+    "file": "polish/chromium/390x844-result-final.webp",
+    "viewport": [
+      390,
+      844
+    ],
+    "inspected": true,
+    "observation": "Final label or enquiry result inspected; Close fully visible at all captured sizes, no-send status readable."
+  },
+  {
+    "phase": "polish",
+    "productRevision": "a96d9f8cf51439a203511685998912a0a46b9bab",
+    "engine": "chromium",
+    "file": "polish/chromium/780x300-result-final.webp",
+    "viewport": [
+      780,
+      300
+    ],
+    "inspected": true,
+    "observation": "Final label or enquiry result inspected; Close fully visible at all captured sizes, no-send status readable."
+  },
+  {
+    "phase": "contrast",
+    "productRevision": "cc8eec5c1d4fd6c493ee75f8926bb4f3fd9c418d",
+    "engine": "chromium",
+    "file": "contrast/chromium/arrival-final.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Landing image, typography and navigation inspected. Short/narrow screens use a measured internal reading region."
+  },
+  {
+    "phase": "assets",
+    "productRevision": "9697225c768c284b735a93ee662609f6af0bf3c9",
+    "engine": "chromium",
+    "file": "assets/chromium/arrival-final.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Final image/caption inspected; restored Walnut spread displays both photographs. Meaningful caption contrast corrected; decorative watermark warning manually reviewed."
+  },
+  {
+    "phase": "assets",
+    "productRevision": "9697225c768c284b735a93ee662609f6af0bf3c9",
+    "engine": "chromium",
+    "file": "assets/chromium/walnut-restored.webp",
+    "viewport": [
+      1440,
+      900
+    ],
+    "inspected": true,
+    "observation": "Final image/caption inspected; restored Walnut spread displays both photographs. Meaningful caption contrast corrected; decorative watermark warning manually reviewed."
+  }
+]
