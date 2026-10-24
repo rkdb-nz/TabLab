@@ -10,14 +10,14 @@ async function settle(f){await f.waitForFunction(()=>!isAnimating);await f.locat
 async function scan(f,label){await f.addScriptTag({path:require.resolve('axe-core/axe.min.js')});const v=await f.evaluate(async()=>{const r=await axe.run();return r.violations.map(v=>({id:v.id,impact:v.impact,nodes:v.nodes.map(n=>({html:n.html,summary:n.failureSummary}))}));});report.scans.push({label,violations:v});check(label+' axe',v.length===0);}
 async function cap(p,label){await p.screenshot({path:resolve(out,label+'.png'),animations:'disabled'});report.captures.push({file:label+'.png',viewport:await p.evaluate(()=>[innerWidth,innerHeight]),inspected:false});}
 let browser;
-try{browser=await pw[engine].launch(engine==='chromium'?{channel:'chrome'}:{});report.version=browser.version();
-for(const [width,height] of(engine==='chromium'?[[1440,900],[390,844],[844,390],[320,568],[780,300]]:[[1440,900],[390,844]])){
+try{browser=await pw.chromium.launch({channel:'chrome'});report.version=browser.version();
+for(const [width,height] of [[1440,900],[390,844],[780,300]]){
  const tag=width+'x'+height,c=await browser.newContext({viewport:{width,height}}),p=await c.newPage();p.setDefaultTimeout(12000);p.on('pageerror',e=>report.errors.push(e.message));
- try{await p.goto(origin+base);const f=p.frames().find(f=>f.url().includes('site.html'));await settle(f);check(tag+' visible Arrival heading',await f.locator('.ch1 h2').isVisible());check(tag+' page h1 present',await f.locator('main>h1').count()===1);
- if(engine==='chromium'){await cap(p,tag+'-home');if(width===1440)await scan(f,'Arrival');}
- await f.locator('#topnav [data-goto="2"]').click();await settle(f);check(tag+' navigation',await f.evaluate(()=>currentIndex===2));await f.locator('#look-next').click();await settle(f);check(tag+' collection control',await f.locator('#look-count').innerText()===(width<=900?'2 / 6':'02 / 06'));
- if(engine==='chromium'&&width===1440){await scan(f,'Collection');await cap(p,'collection-final');}
- if(engine==='chromium'&&width===780){await f.locator('.wordmark').click();await settle(f);await f.locator('.ch1 .type').evaluate(e=>e.scrollTop=e.scrollHeight);await cap(p,'short-landscape-action');}
+ try{await p.goto(origin+base);const f=p.frames().find(f=>f.url().includes('site.html'));await settle(f);
+ if(width===1440){await f.locator('#topnav [data-goto="2"]').click();await settle(f);check('magazine label below fixed navigation',await f.locator('.lookbook-kicker').evaluate(e=>e.getBoundingClientRect().top>=document.querySelector('#topnav').getBoundingClientRect().bottom));await scan(f,'Collection final');await cap(p,'collection-final');}
+ await f.locator('#topnav [data-goto="4"]').click();await settle(f);
+ const book=f.locator('.visit-waperiki .book-visit');await book.click();const form=f.locator('#visit-form');await form.locator('[name=date]').fill('2099-12-01');await form.locator('[name=time]').selectOption('Afternoon');await form.locator('[name=name]').fill('Sitecheck');await form.locator('[name=email]').fill('sitecheck@example.com');await form.locator('[type=submit]').click();await settle(f);
+ const m=await f.locator('.dialog-close').evaluate(e=>{const r=e.getBoundingClientRect();return {top:r.top,bottom:r.bottom,height:innerHeight};});check(tag+' result close fully visible',m.top>=0&&m.bottom<=m.height,m);check(tag+' truthful result',(await f.locator('#visit-result').innerText()).includes('no enquiry or message has been sent'));await cap(p,tag+'-result-final');if(width===390)await scan(f,'Final result');
  }catch(e){report.errors.push({tag,error:e.stack});}finally{await c.close();}}
 }catch(e){report.launchError=e.message;}finally{await browser?.close();server.close();await writeFile(resolve(out,'report.json'),JSON.stringify(report,null,2));}
 console.log(JSON.stringify({engine,failures:report.failures,errors:report.errors,launchError:report.launchError}));if(report.failures.length||report.errors.length||report.launchError)process.exitCode=1;

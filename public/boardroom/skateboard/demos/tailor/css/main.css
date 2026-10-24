@@ -1498,3 +1498,8 @@ button.btn { font-family:inherit;cursor:pointer;background:transparent; }
   *,*::before,*::after { animation:none !important;transition:none !important;scroll-behavior:auto !important; }
   .reveal,.img-reveal img { transform:none !important; }
 }
+
+/* Keep the magazine label and enquiry close control clear at short heights. */
+@media(min-width:901px) { .lookbook-kicker { top:84px !important; } }
+.visit-dialog-heading { position:sticky;top:0;z-index:2;background:#f7f3ee;padding-bottom:8px; }
+@media(max-height:500px) { #visit-dialog { padding:16px; }.visit-dialog-heading h2 { font-size:32px; } }

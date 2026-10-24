@@ -163,13 +163,13 @@ let visitTrigger;
 const dateField=visitForm.elements.date;
 const today=new Date();today.setMinutes(today.getMinutes()-today.getTimezoneOffset());dateField.min=today.toISOString().slice(0,10);
 document.querySelectorAll('.book-visit').forEach(button=>button.addEventListener('click',()=>{
-  visitTrigger=button;visitForm.reset();visitForm.hidden=false;visitResult.hidden=true;visitResult.textContent='';visitForm.elements.boutique.value=button.dataset.boutique;visitDialog.showModal();
+  visitTrigger=button;visitForm.reset();visitForm.hidden=false;visitDialog.querySelector('.visit-dialog-intro').hidden=false;visitResult.hidden=true;visitResult.textContent='';visitForm.elements.boutique.value=button.dataset.boutique;visitDialog.showModal();visitDialog.scrollTop=0;
 }));
 visitDialog.querySelector('.dialog-close').addEventListener('click',()=>visitDialog.close());
 visitDialog.addEventListener('close',()=>visitTrigger?.focus({preventScroll:true}));
 visitForm.addEventListener('submit',e=>{
   e.preventDefault();if(!visitForm.reportValidity())return;
-  visitForm.hidden=true;visitResult.hidden=false;visitResult.textContent='Demonstration only. No visit has been booked and no enquiry or message has been sent.';visitResult.focus({preventScroll:true});
+  visitForm.hidden=true;visitDialog.querySelector('.visit-dialog-intro').hidden=true;visitResult.hidden=false;visitResult.textContent='Demonstration only. No visit has been booked and no enquiry or message has been sent.';visitResult.focus({preventScroll:true});visitDialog.scrollTop=0;
 });
 document.querySelectorAll('.ch1 .type,.ch2 .right-content,.mobile-look-card,.ch4 .details,.visit-intro').forEach(region=>{region.tabIndex=0;});
 showLook(0);syncVisit(0);currentIndex=targetIndex=hashChapter();updateUI(currentIndex,false);positionChapter(false);
