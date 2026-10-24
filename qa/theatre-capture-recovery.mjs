@@ -18,6 +18,19 @@ async function cap(p,f,label){await settle(f);await p.screenshot({path:resolve(o
 async function measure(f,label){check(label,await f.evaluate(()=>({viewport:[innerWidth,innerHeight],scroll:[document.documentElement.scrollWidth,document.documentElement.scrollHeight],controls:[...document.querySelectorAll('a,button,input,select,.faq-q')].filter(e=>e.getClientRects().length).map(e=>({text:e.textContent.trim().slice(0,45),tag:e.tagName,tab:e.tabIndex,rect:(()=>{let r=e.getBoundingClientRect();return {x:r.x,y:r.y,w:r.width,h:r.height}})()}))})));}
 
 
+async function booking(f,p,tag,capture){
+ await f.goto(origin+base+'book-tickets.html');await settle(f);await layout(f,tag+' booking');
+ check(tag+' empty checkout disabled',await f.locator('#checkoutBtn').isDisabled());
+ await f.locator('[data-type=adult] [data-dec]').click();check(tag+' quantity floor',await f.locator('[data-type=adult] [data-val]').innerText());
+ await f.locator('.perf-btn').first().click();await f.locator('.zone-card').first().click();
+ for(const type of ['adult','concession','under25'])await f.locator('[data-type='+type+'] [data-inc]').click();
+ check(tag+' mixed price $106',await f.locator('#sumTotal').innerText());
+ if(capture)await cap(p,f,tag+'-booking');
+ await f.locator('#checkoutBtn').click();await f.locator('#completeDemoBooking').click();
+ check(tag+' truthful no payment result',await f.locator('#demoBookingResult').innerText());
+ if(capture)await cap(p,f,tag+'-booking-result');
+ await f.locator('#anotherBooking').click();check(tag+' reset',await f.locator('#sumTotal').innerText());
+}
 let browser;
 try{
  browser=await pw.chromium.launch({channel:'chrome'});const c=await browser.newContext({viewport:{width:1440,height:900},reducedMotion:'reduce'}),p=await c.newPage();
