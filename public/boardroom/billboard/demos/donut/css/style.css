@@ -1,4 +1,4 @@
-site {s*transition: filter .*?}s*site {s*transition: filter .*?}s*:root {
+:root {
   --wine: #5f0f20;
   --rose: #e95d78;
   --blush: #fff1ed;
