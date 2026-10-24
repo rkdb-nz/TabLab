@@ -1,5 +1,5 @@
 /* Approved DN-01–07 repairs. Keep the artwork and the fixed landing composition. */
-.overlay .overlay-panel {
+#site .overlay .overlay-panel {
   display: flex !important;
   flex-direction: column !important;
   align-items: stretch !important;
@@ -17,7 +17,7 @@
   background: #fffaf6;
   border-bottom: 1px solid #e9cbc7;
 }
-.overlay .overlay-close {
+#site .overlay .overlay-close {
   position: static !important;
   margin: 0 !important;
   min-height: 44px !important;
@@ -43,22 +43,22 @@
   align-items: start;
   gap: 24px;
 }
-.overlay .eyebrow { color: #855123 !important; font-size: 14px !important; line-height: 1.4 !important; }
-.overlay .overlay-content p,
-.overlay .overlay-content .lead,
-.overlay .catering-grid p,
-.overlay .form-status { font-size: 16px !important; line-height: 1.5 !important; }
-.overlay form label { font-size: 14px !important; line-height: 1.4 !important; }
-.overlay input, .overlay select, .overlay textarea { font-size: 16px !important; min-height: 44px !important; padding: 10px 12px !important; }
-.overlay textarea { height: auto !important; min-height: 88px !important; resize: vertical !important; }
-.overlay .submit-button, .overlay .soft-action { font-size: 16px !important; min-height: 44px; }
-.overlay .form-status { grid-column: 1 / -1 !important; overflow-wrap: anywhere; }
-.overlay .overlay-content h2 { font-size: clamp(32px, 4vw, 60px) !important; line-height: 1.05 !important; }
-.overlay .menu-grid article { font-size: 16px !important; line-height: 1.4 !important; }
-.overlay .catering-grid strong { font-size: 20px !important; }
-.overlay .catering-grid > article > span { color: #855123; }
-.overlay .location-list span, .overlay .location-list small { font-size: 14px !important; line-height: 1.5 !important; }
-.overlay .location-list strong { font-size: 22px !important; }
+#site .overlay .eyebrow { color: #855123 !important; font-size: 14px !important; line-height: 1.4 !important; }
+#site .overlay .overlay-content p,
+#site .overlay .overlay-content .lead,
+#site .overlay .catering-grid p,
+#site .overlay .form-status { font-size: 16px !important; line-height: 1.5 !important; }
+#site .overlay form label { font-size: 14px !important; line-height: 1.4 !important; }
+#site .overlay input, #site .overlay select, #site .overlay textarea { font-size: 16px !important; min-height: 44px !important; padding: 10px 12px !important; }
+#site .overlay textarea { height: auto !important; min-height: 88px !important; resize: vertical !important; }
+#site .overlay .submit-button, #site .overlay .soft-action { font-size: 16px !important; min-height: 44px; }
+#site .overlay .form-status { grid-column: 1 / -1 !important; overflow-wrap: anywhere; }
+#site .overlay .overlay-content h2 { font-size: clamp(32px, 4vw, 60px) !important; line-height: 1.05 !important; }
+#site .overlay .menu-grid article { font-size: 16px !important; line-height: 1.4 !important; }
+#site .overlay .catering-grid strong { font-size: 20px !important; }
+#site .overlay .catering-grid > article > span { color: #855123; }
+#site .overlay .location-list span, #site .overlay .location-list small { font-size: 14px !important; line-height: 1.5 !important; }
+#site .overlay .location-list strong { font-size: 22px !important; }
 #overlay-locations .map-card { transform: none !important; height: auto !important; max-height: none !important; min-height: 0 !important; }
 #overlay-locations .map-card img { display: block; width: 100%; height: auto; aspect-ratio: 1; object-fit: contain; }
 :focus-visible { outline: 3px solid #7c2143 !important; outline-offset: 3px; }
@@ -73,7 +73,7 @@
   .overlay-panel--split > .overlay-content,
   .overlay-panel--order > .overlay-content { display: block; }
   .overlay-content > form, .overlay-content > .story-seal, .overlay-content > .map-card { margin-top: 24px; }
-  .overlay .menu-grid, .overlay .catering-grid, .overlay form { grid-template-columns: minmax(0, 1fr) !important; }
+  #site .overlay .menu-grid, #site .overlay .catering-grid, #site .overlay form { grid-template-columns: minmax(0, 1fr) !important; }
 }
 
 /* Give the existing landscape cards the full right column, rather than
@@ -93,7 +93,7 @@
   .site .feature-copy { overflow: visible !important; padding: 0 !important; }
   .site .feature-copy h2 { font-size: 14px !important; line-height: 1.15 !important; white-space: normal !important; overflow: visible !important; }
   .site .feature-copy p { display: block !important; font-size: 13px !important; line-height: 1.25 !important; overflow: visible !important; }
-  .overlay .menu-grid, .overlay .catering-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
+  #site .overlay .menu-grid, #site .overlay .catering-grid { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
   .overlay-content { padding: 16px; }
   .overlay-toolbar { padding: 6px 12px; }
   .site .mobile-message { width: 56% !important; height: auto !important; }
