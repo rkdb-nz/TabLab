@@ -15,6 +15,11 @@ if(actionable.length!==v.length)report.reviewedExceptions=[{selector:'.floating-
 check(label+' actionable axe',actionable.length===0);}
 async function cap(p,label){await p.screenshot({path:resolve(out,label+'.png'),animations:'disabled'});report.captures.push({file:label+'.png',viewport:await p.evaluate(()=>[innerWidth,innerHeight]),inspected:false});}
 let browser;
-try{browser=await pw.chromium.launch({channel:'chrome'});report.version=browser.version();const c=await browser.newContext({viewport:{width:1440,height:900}}),p=await c.newPage();await p.goto(origin+base);const f=p.frames().find(f=>f.url().includes('site.html'));await settle(f);await scan(f,'Arrival contrast completion');await cap(p,'arrival-final');await c.close();
+try{browser=await pw.chromium.launch({channel:'chrome'});report.version=browser.version();const c=await browser.newContext({viewport:{width:1440,height:900}}),p=await c.newPage();await p.goto(origin+base);const f=p.frames().find(f=>f.url().includes('site.html'));await settle(f);await scan(f,'Arrival contrast completion');await cap(p,'arrival-final');
+await f.locator('#topnav [data-goto="2"]').click();await settle(f);
+for(let i=0;i<6;i++){
+ await settle(f);const images=await f.locator('.lookbook-slide.active .book-page img').evaluateAll(async es=>{await Promise.all(es.map(i=>i.decode().catch(()=>{})));return es.map(i=>({src:i.getAttribute('src'),ok:i.complete&&i.naturalWidth>0}));});check('look '+i+' images decoded',images.every(i=>i.ok),images);
+ if(i===3)await cap(p,'walnut-restored');await f.locator('#look-next').click();}
+await c.close();
 }catch(e){report.errors.push(e.stack);}finally{await browser?.close();server.close();await writeFile(resolve(out,'report.json'),JSON.stringify(report,null,2));}
 console.log(JSON.stringify({failures:report.failures,errors:report.errors}));if(report.failures.length||report.errors.length)process.exitCode=1;
