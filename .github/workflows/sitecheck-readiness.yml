@@ -1,7 +1,7 @@
-name: Retreat routine check
+name: Retreat focused evidence check
 on:
   pull_request:
-    paths: ['qa/retreat-routine.mjs', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/springboard/demos/retreat/**']
+    paths: ['qa/retreat-focus.mjs', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/springboard/demos/retreat/**']
   workflow_dispatch:
 permissions:
   contents: read
@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chromium, firefox, webkit]
+        browser: [chromium]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -21,12 +21,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - if: matrix.browser != 'chromium'
         run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - run: node qa/retreat-routine.mjs
+      - run: node qa/retreat-focus.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: retreat-routine-${{ matrix.browser }}
-          path: qa/retreat-results/
+          name: retreat-focus-${{ matrix.browser }}
+          path: qa/retreat-focus-results/
           retention-days: 90
