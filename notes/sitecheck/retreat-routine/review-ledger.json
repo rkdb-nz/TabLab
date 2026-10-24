@@ -1,0 +1,658 @@
+{
+  "mode": "routine",
+  "site": "Retreat",
+  "sourceCommit": "5ed744e399c0af9c68e2ed7119fa017f087344a0",
+  "branch": "qa/sitecheck-retreat",
+  "url": "https://tablab.rkdb.nz/boardroom/springboard/demos/retreat/",
+  "sample": {
+    "chromium": [
+      [
+        1440,
+        900
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        844,
+        390
+      ],
+      [
+        320,
+        568
+      ],
+      [
+        780,
+        300
+      ]
+    ],
+    "firefox": [
+      [
+        1440,
+        900
+      ],
+      [
+        390,
+        844
+      ]
+    ],
+    "webkit": [
+      [
+        1440,
+        900
+      ],
+      [
+        390,
+        844
+      ]
+    ]
+  },
+  "readiness": {
+    "source": true,
+    "liveNavigation": true,
+    "liveScreenshotInspected": true,
+    "localFailure": "Chromium distribution 'chrome' is not found at /opt/google/chrome/chrome",
+    "hostedFallback": true
+  },
+  "features": [
+    "All five pages",
+    "All four retreat galleries and twelve enlarged images; boundaries and Escape",
+    "Required/email/guest range validation and false success confirmation",
+    "Coastal enquiry selection loss",
+    "Nine Discover scenes; closing booking link; phone return top",
+    "Eight review entries",
+    "Navigation, rotated menu, keyboard boundaries",
+    "Desktop and phone wrapper fullscreen, return and gallery",
+    "Native zoom attempt",
+    "Five default Axe scans plus open booking dialog"
+  ],
+  "captures": [
+    {
+      "file": "1440x900-home.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Landing fits width; short/narrow viewports continue vertically by scrolling."
+    },
+    {
+      "file": "retreat-0.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Collection imagery/gallery/enquiry visible; Town description conflicts with modern building."
+    },
+    {
+      "file": "lightbox.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Gallery image/caption and controls render; keyboard containment/closed controls need repair."
+    },
+    {
+      "file": "retreat-3.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Collection imagery/gallery/enquiry visible; Town description conflicts with modern building."
+    },
+    {
+      "file": "1440x900-book-invalid.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Native max-6 guest validation rejects999; fixed header obscures target in Firefox/WebKit."
+    },
+    {
+      "file": "1440x900-book-result.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "False sent-enquiry promise visible; focus escape confirmed by machine checks."
+    },
+    {
+      "file": "review-0.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Guest images and quotes render; small metadata/header contrast and copy issues recorded."
+    },
+    {
+      "file": "review-7.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Guest images and quotes render; small metadata/header contrast and copy issues recorded."
+    },
+    {
+      "file": "discover-0.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Discover imagery and copy render; reduced-motion and post-menu keyboard faults recorded."
+    },
+    {
+      "file": "discover-1.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Discover imagery and copy render; reduced-motion and post-menu keyboard faults recorded."
+    },
+    {
+      "file": "discover-8.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Discover imagery and copy render; reduced-motion and post-menu keyboard faults recorded."
+    },
+    {
+      "file": "390x844-home.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Landing fits width; short/narrow viewports continue vertically by scrolling."
+    },
+    {
+      "file": "rotated-menu.png",
+      "outer": [
+        844,
+        390
+      ],
+      "frame": [
+        836,
+        338
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "All navigation items visible in rotated layout; keyboard containment fails separately."
+    },
+    {
+      "file": "390x844-book-invalid.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Native max-6 guest validation rejects999; fixed header obscures target in Firefox/WebKit."
+    },
+    {
+      "file": "390x844-book-result.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "False sent-enquiry promise visible; focus escape confirmed by machine checks."
+    },
+    {
+      "file": "phone-gallery.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Gallery image/caption and controls render; keyboard containment/closed controls need repair."
+    },
+    {
+      "file": "phone-review.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Guest images and quotes render; small metadata/header contrast and copy issues recorded."
+    },
+    {
+      "file": "phone-discover.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Discover imagery and copy render; reduced-motion and post-menu keyboard faults recorded."
+    },
+    {
+      "file": "844x390-home.png",
+      "outer": [
+        844,
+        390
+      ],
+      "frame": [
+        836,
+        338
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Landing fits width; short/narrow viewports continue vertically by scrolling."
+    },
+    {
+      "file": "320x568-home.png",
+      "outer": [
+        320,
+        568
+      ],
+      "frame": [
+        312,
+        487
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Landing fits width; short/narrow viewports continue vertically by scrolling."
+    },
+    {
+      "file": "780x300-home.png",
+      "outer": [
+        780,
+        300
+      ],
+      "frame": [
+        772,
+        248
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Landing fits width; short/narrow viewports continue vertically by scrolling."
+    },
+    {
+      "file": "short-discover.png",
+      "outer": [
+        780,
+        300
+      ],
+      "frame": [
+        772,
+        248
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "routine",
+      "observation": "Discover imagery and copy render; reduced-motion and post-menu keyboard faults recorded."
+    },
+    {
+      "file": "1440x900-home.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "engine": "firefox",
+      "phase": "routine",
+      "observation": "Landing fits width; short/narrow viewports continue vertically by scrolling."
+    },
+    {
+      "file": "390x844-home.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "engine": "firefox",
+      "phase": "routine",
+      "observation": "Landing fits width; short/narrow viewports continue vertically by scrolling."
+    },
+    {
+      "file": "390x844-book-invalid.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "engine": "firefox",
+      "phase": "routine",
+      "observation": "Native max-6 guest validation rejects999; fixed header obscures target in Firefox/WebKit."
+    },
+    {
+      "file": "390x844-book-result.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "engine": "firefox",
+      "phase": "routine",
+      "observation": "False sent-enquiry promise visible; focus escape confirmed by machine checks."
+    },
+    {
+      "file": "1440x900-home.png",
+      "outer": [
+        1440,
+        900
+      ],
+      "frame": [
+        1426,
+        845
+      ],
+      "inspected": true,
+      "engine": "webkit",
+      "phase": "routine",
+      "observation": "Landing fits width; short/narrow viewports continue vertically by scrolling."
+    },
+    {
+      "file": "390x844-home.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "engine": "webkit",
+      "phase": "routine",
+      "observation": "Landing fits width; short/narrow viewports continue vertically by scrolling."
+    },
+    {
+      "file": "390x844-book-invalid.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "engine": "webkit",
+      "phase": "routine",
+      "observation": "Native max-6 guest validation rejects999; fixed header obscures target in Firefox/WebKit."
+    },
+    {
+      "file": "390x844-book-result.png",
+      "outer": [
+        390,
+        844
+      ],
+      "frame": [
+        382,
+        763
+      ],
+      "inspected": true,
+      "engine": "webkit",
+      "phase": "routine",
+      "observation": "False sent-enquiry promise visible; focus escape confirmed by machine checks."
+    },
+    {
+      "file": "short-discover-closing.png",
+      "outer": [
+        780,
+        300
+      ],
+      "frame": [
+        772,
+        248
+      ],
+      "inspected": true,
+      "engine": "chromium",
+      "phase": "focus",
+      "observation": "Attempt to reach closing scene remained on hero: confirmed PageDown blocked by menu-button focus. Not evidence of the closing layout."
+    }
+  ],
+  "captureCount": 31,
+  "manualCaptures": 1,
+  "sourceImagesInspected": [
+    {
+      "path": "assets/icons/discover-hero.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "685052897404b117ff34f466909acd4e85fa0837",
+      "size": 2622752,
+      "url": "https://api.github.com/repos/rkdb-nz/TabLab/git/blobs/685052897404b117ff34f466909acd4e85fa0837"
+    },
+    {
+      "path": "assets/images/review-guest-01.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d7adf3b0e17e511e1fbfb1bd1df227f9bb94d2e",
+      "size": 2916599,
+      "url": "https://api.github.com/repos/rkdb-nz/TabLab/git/blobs/9d7adf3b0e17e511e1fbfb1bd1df227f9bb94d2e"
+    },
+    {
+      "path": "assets/images/review-guest-04.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba0229b49d1a99201bf0426f24d6edecf979db48",
+      "size": 2408668,
+      "url": "https://api.github.com/repos/rkdb-nz/TabLab/git/blobs/ba0229b49d1a99201bf0426f24d6edecf979db48"
+    },
+    {
+      "path": "assets/images/review-guest-07.webp",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d20876081b3b4f0f0356490d475b002c3725cf4",
+      "size": 2315265,
+      "url": "https://api.github.com/repos/rkdb-nz/TabLab/git/blobs/8d20876081b3b4f0f0356490d475b002c3725cf4"
+    }
+  ],
+  "findings": [
+    {
+      "id": "RT-01",
+      "impact": "High",
+      "problem": "The enquiry falsely says it was sent; the contact link is a malformed mailto address, and the journal claims real guests without sample wording.",
+      "correction": "Keep realistic enquiry/contact flows, finish with an explicit demo-only/no-send result, and use truthful sample-content wording.",
+      "evidence": "All three engines show 'Your enquiry has been sent — we’ll be in touch soon'; book.html only prevents submission and opens a local overlay. mailto:Clementines.rkdb.nz has no @. Reviews says 'Real guests. Real memories.'"
+    },
+    {
+      "id": "RT-02",
+      "impact": "Medium",
+      "problem": "Property-specific Enquire buttons lose the chosen retreat.",
+      "correction": "Carry the selected retreat into the booking form.",
+      "evidence": "Clicking Enquire — Coastal arrives with Woodland Retreat selected; all four source links share the same unqualified booking URL."
+    },
+    {
+      "id": "RT-03",
+      "impact": "High",
+      "problem": "Booking fields have unassociated labels, and native validation can scroll the invalid field behind the fixed header.",
+      "correction": "Associate all labels, give useful accessible errors and keep invalid/focused fields visible below the header.",
+      "evidence": "Axe label on guests/name/email and select-name on Retreat. Firefox/WebKit phone invalid-guest screenshots show 999 behind the header. Native required/email/max=6 validation does work."
+    },
+    {
+      "id": "RT-04",
+      "impact": "High",
+      "problem": "Menu and gallery focus can reach background content; closed gallery controls remain tabbable; enquiry dialog does not contain/restore focus or close with Escape.",
+      "correction": "Use correct dialog semantics, hide/inert inactive content, contain and restore focus, and support Escape without losing existing gallery controls.",
+      "evidence": "Axe aria-hidden-focus. Menu Tab reaches a home card. Gallery Tab 1 reaches Back to top. Enquiry focus contained=false and Escape closes=false in all three engines."
+    },
+    {
+      "id": "RT-05",
+      "impact": "Medium",
+      "problem": "Discover ignores reduced-motion preference and can stop responding to keyboard navigation after the menu is used.",
+      "correction": "Respect reduced motion, provide accessible scene navigation and reliable keyboard focus; retain the working return-to-top flow.",
+      "evidence": "Reduced-motion context records transform transition 1.5s. PageDown on the menu button after closing leaves the Discover track unchanged; follow-up remains on hero. Source key handler excludes every button/link."
+    },
+    {
+      "id": "RT-06",
+      "impact": "High",
+      "problem": "Several small labels, non-home header links and the enquiry OK button fail contrast.",
+      "correction": "Use palette-consistent foreground/background colours that meet contrast requirements, including header states and confirmation controls.",
+      "evidence": "Axe: white header on warm white approximately 1.01–1.02:1; labels/card metadata3.91:1; eyebrow4.35:1; OK white on #91a68f2.60:1. Four default pages report contrast findings."
+    },
+    {
+      "id": "RT-07",
+      "impact": "Medium",
+      "problem": "Several pages lack a main landmark, and current-page navigation indicators never activate.",
+      "correction": "Add semantic main regions and reliable current-page state/aria-current without changing the composition.",
+      "evidence": "Axe landmark-one-main/region on collection/booking and uncontained Home content. Inline nav checks compare bare filenames with query-bearing hrefs; activeNav inventory empty."
+    },
+    {
+      "id": "RT-08",
+      "impact": "Medium",
+      "problem": "Four existing images are 2.3–2.9MB each, including the Discover hero and three guest portraits.",
+      "correction": "Optimise the existing assets with visual checking, lazy-load suitable below-fold imagery and version repaired assets.",
+      "evidence": "Pinned blobs: discover-hero2622752B, review-guest-01 2916599B,04 2408668B,07 2315265B. Entire WebP asset set18,223,312B. All four originals inspected and hashes matched."
+    },
+    {
+      "id": "RT-09",
+      "impact": "Medium",
+      "problem": "Some descriptions/alternatives conflict with the imagery, and the booking Location copy is entirely clipped.",
+      "correction": "Align copy and alternatives with existing artwork, correct name/NZ spelling inconsistencies, and expose the Location information.",
+      "evidence": "Town described as a limestone cottage but shown as a modern multi-storey building. Home alt describes a woodland cabin while image shows a scenic sign. Booking photo labelled map; Location copy begins at card bottom1590.45 and ends1785.89 with overflow hidden. Hannah & Will alt versus Hannah & Jewel caption; favorite instead of favourite."
+    }
+  ],
+  "decisions": [
+    {
+      "id": "D-01",
+      "problem": "Discover sign artwork says Wāpereki; page copy says Wāperiki.",
+      "recommendation": "Approve a corrected version of the sign artwork preserving the existing design. No masking or new image is authorised yet."
+    }
+  ],
+  "limitations": [
+    "Native 200% zoom shortcut left1440x900 DPR1 unchanged; native zoom unverified.",
+    "Linux WebKit is not native Safari/iOS; phone sizes emulated.",
+    "WebKit dependency install on ubuntu-latest26.04 timed out after240s with exit124. Recovery on pinned ubuntu24.04 passed the two missing WebKit combinations.",
+    "Focused short-closing screenshot remained on hero because keyboard focus stayed on menu button. It is labelled accordingly; portrait closing geometry and desktop closing link were checked successfully.",
+    "No independent agent review used.",
+    "No real enquiries, messages, bookings or payments sent. No product changes."
+  ],
+  "runs": {
+    "routine": 40093632753,
+    "focus": 40093956956,
+    "webkitRecovery": 40094020893
+  }
+}
