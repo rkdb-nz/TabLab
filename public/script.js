@@ -12,19 +12,20 @@ function setStartEmailLinks() {
 
   const subject = "Hand Me The Problem";
 
-  const body = `Hi, I'm Rob.
+  const body = `Hi Rob,
 
-Tab Lab was built to make having a website effortless.
+I'd like to talk about a website for my business.
 
-In a few sentences, tell me who you are, where you are, and what you'd like your customers to know.
+Business name:
+Location:
+What we do:
+What I'd like customers to know or do:
+Existing website (if any):
 
-I'll do some homework, think about what might work for you, and come back with a few different mockups of your new site.
+My name:
+Best way to contact me:
 
-If one feels right, we'll refine it together.
-
-If not, tell me why. We'll go from there.
-
----`;
+Thanks!`;
 
   links.forEach((link) => {
     link.href = `mailto:${EMAIL}?subject=${encodeMail(subject)}&body=${encodeMail(body)}`;
@@ -238,30 +239,7 @@ function setupPageTransitions() {
     document.body.classList.add("page-loaded");
   });
 
-  document.querySelectorAll("a[href]").forEach((link) => {
-    const href = link.getAttribute("href");
 
-    if (
-      !href ||
-      href.startsWith("#") ||
-      href.startsWith("mailto:") ||
-      href.startsWith("tel:") ||
-      href.startsWith("javascript:") ||
-      link.hasAttribute("target")
-    ) {
-      return;
-    }
-
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-
-      document.body.classList.add("page-exit");
-
-      setTimeout(() => {
-        window.location.href = href;
-      }, 300);
-    });
-  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -284,10 +262,11 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('click', (event) => {
+    if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     const link = event.target.closest('a[href]');
 
     if (!link) return;
-    if (link.target === '_blank') return;
+    if (link.target && link.target !== '_self') return;
     if (link.hasAttribute('download')) return;
 
     const href = link.getAttribute('href');

@@ -62,6 +62,17 @@ document.fonts?.ready.then(() => {
     if (sortPanel.classList.contains('is-active')) alignSortAction();
 });
 
+function focusLandingContent(container, selector) {
+    requestAnimationFrame(() => {
+        if (container.getAttribute('aria-hidden') === 'true') return;
+        const target = [...container.querySelectorAll(selector)].find(element =>
+            element.getClientRects().length && getComputedStyle(element).visibility !== 'hidden');
+        if (!target) return;
+        if (!target.matches('a,button')) target.tabIndex = -1;
+        target.focus({ preventScroll: true });
+    });
+}
+
 function activateSortPanel({ preserveForge = false } = {}) {
     alignSortAction();
     if (!preserveForge) {
@@ -80,6 +91,7 @@ function activateSortPanel({ preserveForge = false } = {}) {
 
     sortPanel.classList.add('is-active');
     sortPanel.setAttribute('aria-hidden', 'false');
+    focusLandingContent(sortPanel, '.sort-title');
 }
 
 function activateIntroPanel() {
@@ -95,6 +107,7 @@ function activateIntroPanel() {
 
     introPanel.classList.add('is-active');
     introPanel.setAttribute('aria-hidden', 'false');
+    focusLandingContent(introPanel, '#sortButton');
 }
 
 function activateExploreScreen() {
@@ -111,6 +124,7 @@ function activateExploreScreen() {
     sortPanel.setAttribute('aria-hidden', 'true');
 
     exploreScreen?.setAttribute('aria-hidden', 'false');
+    focusLandingContent(exploreScreen, 'h2');
 }
 
 function activeContent() {
@@ -166,6 +180,10 @@ async function transitionTo(activateState) {
     } finally {
         animations.forEach(animation => animation.cancel());
         isTransitioning = false;
+        // WebKit can defer visibility while the incoming panel animates.
+        if (document.body.classList.contains('explore-open')) focusLandingContent(exploreScreen, 'h2');
+        else if (sortPanel.classList.contains('is-active')) focusLandingContent(sortPanel, '.sort-title');
+        else focusLandingContent(introPanel, '#sortButton');
         if (pendingState) {
             const next = pendingState;
             pendingState = null;

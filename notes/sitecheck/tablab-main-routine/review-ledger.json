@@ -1,0 +1,447 @@
+{
+  "productSource": "78c07ca431cd2e0c15e22b51884470dfabb2e4a1",
+  "reviewedCount": 40,
+  "scope": "Main site only; all 12 demo contents excluded",
+  "captures": [
+    {
+      "file": "evidence/chromium/1440x900-landing.png",
+      "engine": "chromium",
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "1440x900-landing",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/1440x900-enquiry.png",
+      "engine": "chromium",
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "1440x900-enquiry",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/1440x900-explore.png",
+      "engine": "chromium",
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "1440x900-explore",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/1440x900-boardroom.png",
+      "engine": "chromium",
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "1440x900-boardroom",
+      "inspected": true,
+      "observation": "TL-01: descriptions overflow neighbouring cards."
+    },
+    {
+      "file": "evidence/chromium/1440x900-start.png",
+      "engine": "chromium",
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "1440x900-start",
+      "inspected": true,
+      "observation": "Working enquiry CTA; older header composition noted without redesign proposal."
+    },
+    {
+      "file": "evidence/chromium/1440x900-the-foundry.png",
+      "engine": "chromium",
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "1440x900-the-foundry",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/1440x900-foundrycare.png",
+      "engine": "chromium",
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "1440x900-foundrycare",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/1440x900-whywebsite.png",
+      "engine": "chromium",
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "1440x900-whywebsite",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/1440x900-boardroom-billboard.png",
+      "engine": "chromium",
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "1440x900-boardroom-billboard",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/1440x900-boardroom-noticeboard.png",
+      "engine": "chromium",
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "1440x900-boardroom-noticeboard",
+      "inspected": true,
+      "observation": "TL-04 kicker contrast; gallery heading is visibly dark on light, contrary to axe background inference."
+    },
+    {
+      "file": "evidence/chromium/1440x900-boardroom-skateboard.png",
+      "engine": "chromium",
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "1440x900-boardroom-skateboard",
+      "inspected": true,
+      "observation": "TL-04 kicker and paragraph contrast."
+    },
+    {
+      "file": "evidence/chromium/1440x900-boardroom-springboard.png",
+      "engine": "chromium",
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "1440x900-boardroom-springboard",
+      "inspected": true,
+      "observation": "TL-04 active tab contrast."
+    },
+    {
+      "file": "evidence/chromium/390x844-landing.png",
+      "engine": "chromium",
+      "viewport": [
+        390,
+        844
+      ],
+      "state": "390x844-landing",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/390x844-menu.png",
+      "engine": "chromium",
+      "viewport": [
+        390,
+        844
+      ],
+      "state": "390x844-menu",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/rotation-menu.png",
+      "engine": "chromium",
+      "viewport": [
+        844,
+        390
+      ],
+      "state": "rotation-menu",
+      "inspected": true,
+      "observation": "Open menu survives rotation; lower links require internal scrolling."
+    },
+    {
+      "file": "evidence/chromium/390x844-boardroom.png",
+      "engine": "chromium",
+      "viewport": [
+        390,
+        844
+      ],
+      "state": "390x844-boardroom",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/390x844-the-foundry.png",
+      "engine": "chromium",
+      "viewport": [
+        390,
+        844
+      ],
+      "state": "390x844-the-foundry",
+      "inspected": true,
+      "observation": "Long About content continues below viewport; later bottom measurements confirm scrolling."
+    },
+    {
+      "file": "evidence/chromium/390x844-foundrycare.png",
+      "engine": "chromium",
+      "viewport": [
+        390,
+        844
+      ],
+      "state": "390x844-foundrycare",
+      "inspected": true,
+      "observation": "Care content continues below viewport; bottom measurements confirm scrolling."
+    },
+    {
+      "file": "evidence/chromium/390x844-whywebsite.png",
+      "engine": "chromium",
+      "viewport": [
+        390,
+        844
+      ],
+      "state": "390x844-whywebsite",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/390x844-boardroom-springboard.png",
+      "engine": "chromium",
+      "viewport": [
+        390,
+        844
+      ],
+      "state": "390x844-boardroom-springboard",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/844x390-landing.png",
+      "engine": "chromium",
+      "viewport": [
+        844,
+        390
+      ],
+      "state": "844x390-landing",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/320x568-landing.png",
+      "engine": "chromium",
+      "viewport": [
+        320,
+        568
+      ],
+      "state": "320x568-landing",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/320x568-enquiry.png",
+      "engine": "chromium",
+      "viewport": [
+        320,
+        568
+      ],
+      "state": "320x568-enquiry",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/320x568-explore.png",
+      "engine": "chromium",
+      "viewport": [
+        320,
+        568
+      ],
+      "state": "320x568-explore",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/780x300-landing.png",
+      "engine": "chromium",
+      "viewport": [
+        780,
+        300
+      ],
+      "state": "780x300-landing",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/780x300-menu.png",
+      "engine": "chromium",
+      "viewport": [
+        780,
+        300
+      ],
+      "state": "780x300-menu",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/780x300-enquiry.png",
+      "engine": "chromium",
+      "viewport": [
+        780,
+        300
+      ],
+      "state": "780x300-enquiry",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/780x300-explore.png",
+      "engine": "chromium",
+      "viewport": [
+        780,
+        300
+      ],
+      "state": "780x300-explore",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/chromium/780x300-boardroom.png",
+      "engine": "chromium",
+      "viewport": [
+        780,
+        300
+      ],
+      "state": "780x300-boardroom",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/final/short-boardroom-wheel-content.png",
+      "engine": "chromium",
+      "viewport": [
+        780,
+        300
+      ],
+      "state": "short-boardroom-wheel-content",
+      "inspected": true,
+      "observation": "TL-03 confirmed: wheel over content leaves bottom cards clipped."
+    },
+    {
+      "file": "evidence/final/short-why-scrolled.png",
+      "engine": "chromium",
+      "viewport": [
+        780,
+        300
+      ],
+      "state": "short-why-scrolled",
+      "inspected": true,
+      "observation": "Last content reachable through internal scroller."
+    },
+    {
+      "file": "evidence/final/phone-skateboard.png",
+      "engine": "chromium",
+      "viewport": [
+        390,
+        844
+      ],
+      "state": "phone-skateboard",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/firefox/1440x900-landing.png",
+      "engine": "firefox",
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "1440x900-landing",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/firefox/390x844-landing.png",
+      "engine": "firefox",
+      "viewport": [
+        390,
+        844
+      ],
+      "state": "390x844-landing",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/focus/short-boardroom-scrolled.png",
+      "engine": "chromium",
+      "viewport": [
+        780,
+        300
+      ],
+      "state": "short-boardroom-scrolled",
+      "inspected": true,
+      "observation": "TL-03: wheel did not expose bottom cards."
+    },
+    {
+      "file": "evidence/focus/short-menu-contact-reachable.png",
+      "engine": "chromium",
+      "viewport": [
+        780,
+        300
+      ],
+      "state": "short-menu-contact-reachable",
+      "inspected": true,
+      "observation": "Contact reachable after internal menu scroll."
+    },
+    {
+      "file": "evidence/focus/narrow-boardroom.png",
+      "engine": "chromium",
+      "viewport": [
+        320,
+        568
+      ],
+      "state": "narrow-boardroom",
+      "inspected": true,
+      "observation": "TL-02: long board names visibly clipped."
+    },
+    {
+      "file": "evidence/focus/css-text-enlargement.png",
+      "engine": "chromium",
+      "viewport": [
+        720,
+        450
+      ],
+      "state": "css-text-enlargement",
+      "inspected": true,
+      "observation": "CSS enlargement only: awkward word wrapping but text/actions visible; not native zoom."
+    },
+    {
+      "file": "evidence/webkit/1440x900-landing.png",
+      "engine": "webkit",
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "1440x900-landing",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    },
+    {
+      "file": "evidence/webkit/390x844-landing.png",
+      "engine": "webkit",
+      "viewport": [
+        390,
+        844
+      ],
+      "state": "390x844-landing",
+      "inspected": true,
+      "observation": "Inspected: no additional visual defect in the captured state; broader keyboard/semantics/contrast findings recorded separately."
+    }
+  ]
+}

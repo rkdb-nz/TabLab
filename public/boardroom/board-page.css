@@ -2281,3 +2281,11 @@ html.board-transition-preview body.dual-board-page .demo-meta > span::after,
 html.board-transition-preview body.dual-board-page .billboard-example small::after {
   animation: none;
 }
+
+/* TL-04: retain the approved gallery palettes with readable text. */
+@media (min-width:981px) {
+  body.noticeboard .board-kicker {color:#835016;}
+  body.skateboard .board-kicker {color:#fff2d8;}
+  body.skateboard .board-copy {color:#ffffff;}
+  body.springboard .board-tabs a.active {background:#506b67;color:#ffffff;}
+}

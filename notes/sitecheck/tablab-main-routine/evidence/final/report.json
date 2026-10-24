@@ -1,0 +1,547 @@
+{
+  "commit": "d9b01e416f072b6c3b9b3b3498eaaaffc340b668",
+  "checks": [
+    {
+      "label": "short boardroom wheel over content",
+      "data": {
+        "viewport": [
+          780,
+          300
+        ],
+        "scroll": [
+          780,
+          375
+        ],
+        "body": "hidden auto",
+        "windowY": 0,
+        "cards": [
+          {
+            "text": "01\nBILLBOARD\nOne glance and you get the idea.\n→",
+            "rect": [
+              92,
+              222
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "02\nNOTICEBOARD\nStories with room to unfold.\n→",
+            "rect": [
+              92,
+              222
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "03\nSKATEBOARD\nThey see me scrollin'\n→",
+            "rect": [
+              232.90625,
+              362.90625
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "text": "04\nSPRINGBOARD\nA richer world to explore.\n→",
+            "rect": [
+              232.90625,
+              362.90625
+            ],
+            "description": {
+              "x": 0,
+              "y": 0,
+              "width": 0,
+              "height": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          }
+        ],
+        "visibleText": [
+          {
+            "text": "Tab \nLab",
+            "rect": [
+              14,
+              58
+            ]
+          },
+          {
+            "text": "THE BOARDROOM",
+            "rect": [
+              163.28125,
+              173.03125
+            ]
+          },
+          {
+            "text": "Choose a direction.",
+            "rect": [
+              180.03125,
+              248.65625
+            ]
+          },
+          {
+            "text": "Four ways your website can take shape.",
+            "rect": [
+              257.65625,
+              291.625
+            ]
+          },
+          {
+            "text": "01\nBILLBOARD\nOne glance and you get the idea.\n→",
+            "rect": [
+              92,
+              222
+            ]
+          },
+          {
+            "text": "02\nNOTICEBOARD\nStories with room to unfold.\n→",
+            "rect": [
+              92,
+              222
+            ]
+          },
+          {
+            "text": "03\nSKATEBOARD\nThey see me scrollin'\n→",
+            "rect": [
+              232.90625,
+              362.90625
+            ]
+          },
+          {
+            "text": "04\nSPRINGBOARD\nA richer world to explore.\n→",
+            "rect": [
+              232.90625,
+              362.90625
+            ]
+          },
+          {
+            "text": "",
+            "rect": [
+              14,
+              58
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "scroll containers boardroom",
+      "data": [
+        {
+          "tag": "HTML",
+          "class": "",
+          "client": 300,
+          "scroll": 375,
+          "top": 0,
+          "overflow": "hidden"
+        },
+        {
+          "tag": "BODY",
+          "class": "",
+          "client": 375,
+          "scroll": 375,
+          "top": 0,
+          "overflow": "auto"
+        },
+        {
+          "tag": "MAIN",
+          "class": "boardroom",
+          "client": 375,
+          "scroll": 375,
+          "top": 0,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SECTION",
+          "class": "boards",
+          "client": 271,
+          "scroll": 271,
+          "top": 0,
+          "overflow": "visible"
+        }
+      ]
+    },
+    {
+      "label": "short why wheel",
+      "data": {
+        "viewport": [
+          780,
+          300
+        ],
+        "scroll": [
+          780,
+          300
+        ],
+        "body": "hidden",
+        "windowY": 0,
+        "cards": [],
+        "visibleText": [
+          {
+            "text": "Tab \nLab",
+            "rect": [
+              14,
+              58
+            ]
+          },
+          {
+            "text": "Why have a website?\nBecause people\nexpect one.",
+            "rect": [
+              -262,
+              -149.875
+            ]
+          },
+          {
+            "text": "Today your next customer\nstarts online.",
+            "rect": [
+              -115.875,
+              -65.875
+            ]
+          },
+          {
+            "text": "They Google you.",
+            "rect": [
+              -35.703125,
+              -16.0625
+            ]
+          },
+          {
+            "text": "They find your website.",
+            "rect": [
+              10.296875,
+              29.9375
+            ]
+          },
+          {
+            "text": "They see you’re the real deal.",
+            "rect": [
+              56.296875,
+              75.9375
+            ]
+          },
+          {
+            "text": "They get in touch.",
+            "rect": [
+              102.296875,
+              121.9375
+            ]
+          },
+          {
+            "text": "For the cost of a single newspaper ad, you get an always-on presence that works ",
+            "rect": [
+              152.125,
+              174.515625
+            ]
+          },
+          {
+            "text": "It gets on with the job\nwhile you get on with yours.",
+            "rect": [
+              207.515625,
+              252.515625
+            ]
+          },
+          {
+            "text": "",
+            "rect": [
+              14,
+              58
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "scroll containers why",
+      "data": [
+        {
+          "tag": "HTML",
+          "class": "",
+          "client": 300,
+          "scroll": 300,
+          "top": 0,
+          "overflow": "hidden"
+        },
+        {
+          "tag": "BODY",
+          "class": "whywebsite-page page-loaded page-ready",
+          "client": 300,
+          "scroll": 300,
+          "top": 0,
+          "overflow": "hidden"
+        },
+        {
+          "tag": "MAIN",
+          "class": "whywebsite-photo-page whywebsite-desktop",
+          "client": 0,
+          "scroll": 0,
+          "top": 0,
+          "overflow": "visible"
+        },
+        {
+          "tag": "SECTION",
+          "class": "whywebsite-photo-hero",
+          "client": 0,
+          "scroll": 0,
+          "top": 0,
+          "overflow": "visible"
+        },
+        {
+          "tag": "MAIN",
+          "class": "whywebsite-mobile-story",
+          "client": 224,
+          "scroll": 586,
+          "top": 362,
+          "overflow": "auto"
+        },
+        {
+          "tag": "SECTION",
+          "class": "whywebsite-mobile-inner",
+          "client": 586,
+          "scroll": 586,
+          "top": 0,
+          "overflow": "visible"
+        }
+      ]
+    },
+    {
+      "label": "narrow board labels",
+      "data": [
+        {
+          "text": "BILLBOARD",
+          "rect": {
+            "x": 34,
+            "y": 324.21875,
+            "width": 93,
+            "height": 13.640625,
+            "top": 324.21875,
+            "right": 127,
+            "bottom": 337.859375,
+            "left": 34
+          },
+          "parent": {
+            "x": 22,
+            "y": 220.046875,
+            "width": 133,
+            "height": 155,
+            "top": 220.046875,
+            "right": 155,
+            "bottom": 375.046875,
+            "left": 22
+          },
+          "scroll": 99,
+          "client": 93,
+          "overflow": "hidden"
+        },
+        {
+          "text": "NOTICEBOARD",
+          "rect": {
+            "x": 177,
+            "y": 324.21875,
+            "width": 93,
+            "height": 13.640625,
+            "top": 324.21875,
+            "right": 270,
+            "bottom": 337.859375,
+            "left": 177
+          },
+          "parent": {
+            "x": 165,
+            "y": 220.046875,
+            "width": 133,
+            "height": 155,
+            "top": 220.046875,
+            "right": 298,
+            "bottom": 375.046875,
+            "left": 165
+          },
+          "scroll": 126,
+          "client": 93,
+          "overflow": "hidden"
+        },
+        {
+          "text": "SKATEBOARD",
+          "rect": {
+            "x": 34,
+            "y": 489.21875,
+            "width": 93,
+            "height": 13.640625,
+            "top": 489.21875,
+            "right": 127,
+            "bottom": 502.859375,
+            "left": 34
+          },
+          "parent": {
+            "x": 22,
+            "y": 385.046875,
+            "width": 133,
+            "height": 155,
+            "top": 385.046875,
+            "right": 155,
+            "bottom": 540.046875,
+            "left": 22
+          },
+          "scroll": 116,
+          "client": 93,
+          "overflow": "hidden"
+        },
+        {
+          "text": "SPRINGBOARD",
+          "rect": {
+            "x": 177,
+            "y": 489.21875,
+            "width": 93,
+            "height": 13.640625,
+            "top": 489.21875,
+            "right": 270,
+            "bottom": 502.859375,
+            "left": 177
+          },
+          "parent": {
+            "x": 165,
+            "y": 385.046875,
+            "width": 133,
+            "height": 155,
+            "top": 385.046875,
+            "right": 298,
+            "bottom": 540.046875,
+            "left": 165
+          },
+          "scroll": 127,
+          "client": 93,
+          "overflow": "hidden"
+        }
+      ]
+    },
+    {
+      "label": "settled tab navigation",
+      "data": "/boardroom/noticeboard/"
+    },
+    {
+      "label": "normal load resource sample",
+      "data": {
+        "navigation": [
+          {
+            "duration": 114.29999999999563,
+            "dom": 77.69999999999709,
+            "load": 114.29999999999563
+          }
+        ],
+        "resources": [
+          {
+            "name": "boardroom/board-page.css?v=desktop-restore-mobile-v2",
+            "bytes": 626972,
+            "duration": 27
+          },
+          {
+            "name": "boardroom/board-buttons.css?v=20261015-5",
+            "bytes": 3497,
+            "duration": 23.799999999995634
+          },
+          {
+            "name": "css/foundry-global-nav.css",
+            "bytes": 30560,
+            "duration": 29.599999999998545
+          },
+          {
+            "name": "css/foundry-mobile-nav-uniform.css?v=mobile-nav-uniform-v1",
+            "bytes": 4013,
+            "duration": 30.69999999999709
+          },
+          {
+            "name": "boardroom/mobile-demo-launcher.css?v=1",
+            "bytes": 1704,
+            "duration": 30.5
+          },
+          {
+            "name": "images/diner-preview.webp",
+            "bytes": 2427373,
+            "duration": 73.90000000000146
+          },
+          {
+            "name": "images/produce-preview.png",
+            "bytes": 2199322,
+            "duration": 77
+          },
+          {
+            "name": "js/foundry-global-nav.js?v=tablab-contact-20261006",
+            "bytes": 6777,
+            "duration": 39.099999999998545
+          },
+          {
+            "name": "images/charity-walk-preview.jpg",
+            "bytes": 2222473,
+            "duration": 79.69999999999709
+          },
+          {
+            "name": "boardroom/board-crossfade.js?v=20261014-fade1",
+            "bytes": 2797,
+            "duration": 42.900000000001455
+          },
+          {
+            "name": "boardroom/mobile-demo-launcher.js?v=2",
+            "bytes": 3550,
+            "duration": 43
+          },
+          {
+            "name": "static/array.js",
+            "bytes": 0,
+            "duration": 5.299999999995634
+          }
+        ]
+      }
+    }
+  ],
+  "captures": [
+    {
+      "file": "short-boardroom-wheel-content.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "inspected": false
+    },
+    {
+      "file": "short-why-scrolled.png",
+      "viewport": [
+        780,
+        300
+      ],
+      "inspected": false
+    },
+    {
+      "file": "phone-skateboard.png",
+      "viewport": [
+        390,
+        844
+      ],
+      "inspected": false
+    }
+  ],
+  "errors": []
+}
