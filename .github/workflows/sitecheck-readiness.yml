@@ -1,7 +1,7 @@
-name: Tailor targeted repair check
+name: Retreat routine check
 on:
   pull_request:
-    paths: ['qa/tailor-repair-final.mjs', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/skateboard/demos/tailor/**']
+    paths: ['qa/retreat-routine.mjs', '.github/workflows/sitecheck-readiness.yml', 'public/boardroom/springboard/demos/retreat/**']
   workflow_dispatch:
 permissions:
   contents: read
@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chromium]
+        browser: [chromium, firefox, webkit]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -21,12 +21,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - if: matrix.browser != 'chromium'
         run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - run: node qa/tailor-repair-final.mjs
+      - run: node qa/retreat-routine.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: tailor-final-${{ matrix.browser }}
-          path: qa/tailor-final-results/
+          name: retreat-routine-${{ matrix.browser }}
+          path: qa/retreat-results/
           retention-days: 90
