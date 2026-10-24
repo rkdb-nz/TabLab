@@ -29,7 +29,7 @@
     <button role="tab" id="tab-find" data-panel="find" aria-controls="find" aria-selected="false" tabindex="-1">Find Us</button>
   </nav>
 
-  <div class="clem-center">
+  <div class="clem-center" tabindex="0" role="region" aria-label="Venue information">
     <section data-section="theatre" id="theatre" role="tabpanel" aria-labelledby="tab-theatre" class="theatre-editorial">
       <h1>Small theatre.<br>Live performance.<br>Bold storytelling.</h1>
 
@@ -38,7 +38,7 @@
 
       <div class="theatre-photo-row">
         <figure class="theatre-photo">
-          <img src="assets/images/theatre1.webp" alt="The interior of Clementine Street Theatre with close audience seating" loading="lazy">
+          <img src="assets/images/theatre1.webp" alt="Clementine Street Theatre exterior sign and entrance plaque" loading="lazy">
         </figure>
         <figure class="theatre-photo theatre-photo-secondary">
           <img src="assets/images/theatre2.webp" alt="Evening atmosphere inside Clementine Street Theatre" loading="lazy">
@@ -103,8 +103,8 @@
         <button class="btn btn-primary" type="submit">Send enquiry</button>
       </form>
       <div id="formSuccess" class="form-success" tabindex="-1" aria-live="polite">
-        <strong>Thank you.</strong>
-        <p style="margin:8px 0 0;font-size:.84rem;line-height:1.5">Thank you for your enquiry. Our team will respond within 2 working days.</p>
+        <strong>Demo complete.</strong>
+        <p style="margin:8px 0 0;font-size:.84rem;line-height:1.5">This is a demonstration. No enquiry or email has been sent and no venue has been reserved.</p>
         <button id="sendAnotherBtn" class="btn" style="margin-top:10px">Send another</button>
       </div>
     </div>
@@ -112,7 +112,7 @@
 </main>
 
 <footer class="site-footer">
-  <div>Clementine Street Theatre - 18 Clementine Street, W&#257;periki - <a href="mailto:clementinesttheatre@rkdb.nz">clementinesttheatre@rkdb.nz</a> (07) 555 0148</div>
+  <div>Clementine Street Theatre - 18 Clementine Street, W&#257;periki - <a href="clementine-street.html#email">clementinesttheatre@rkdb.nz</a> (07) 555 0148</div>
   <div class="foot-right"><a href="book-tickets.html?v=theatre-mobile-lock-1">Book Tickets</a><a href="clementine-street.html?v=theatre-mobile-lock-1#accessibility">Accessibility</a><span>© 2026 Clementine Street Theatre. All rights reserved.</span></div>
 </footer>
 <script src="assets/js/main.js"></script><script src="assets/js/venue-form.js"></script>
@@ -164,3 +164,4 @@
   gap: 9px !important;
 }
 </style>
+

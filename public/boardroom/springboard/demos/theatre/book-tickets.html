@@ -26,18 +26,18 @@
 <main id="main" class="book-main"><h1 class="visually-hidden">Book Tickets</h1>
   <div class="book-left">
     <div><div class="section-label">Production</div><div style="font-family:Bodoni Moda,serif;font-size:1.8rem;text-transform:uppercase;margin-top:6px">The Glass Room</div><div style="font-size:.76rem;opacity:.6;margin-top:4px">By Mara Vale · Directed by Elias North · 1h 45m incl. interval</div></div>
-    <div><div class="section-label">1. Choose performance</div><div class="perf-list" style="margin-top:10px" role="group" aria-label="Performance dates">
-        <button class="perf-btn" data-perf="Tue 6 Nov — 7:30pm" type="button" aria-pressed="false">Tue 6 Nov<br><b>7:30pm</b></button>
-        <button class="perf-btn" data-perf="Wed 7 Nov — 7:30pm" type="button" aria-pressed="false">Wed 7 Nov<br><b>7:30pm</b></button>
-        <button class="perf-btn" data-perf="Thu 8 Nov — 7:30pm" type="button" aria-pressed="false">Thu 8 Nov<br><b>7:30pm</b></button>
-        <button class="perf-btn" data-perf="Fri 9 Nov — 7:30pm" type="button" aria-pressed="false">Fri 9 Nov<br><b>7:30pm</b></button>
-        <button class="perf-btn" data-perf="Sat 10 Nov — 2:00pm" type="button" aria-pressed="false">Sat 10 Nov<br><b>2:00pm matinee</b></button>
-        <button class="perf-btn" data-perf="Sat 10 Nov — 7:30pm" type="button" aria-pressed="false">Sat 10 Nov<br><b>7:30pm</b></button>
+    <div><div class="section-label">1. Choose performance</div><p class="sample-note">Illustrative sample schedule. These are not live performances.</p><div class="perf-list" style="margin-top:10px" role="group" aria-label="Performance dates">
+        <button class="perf-btn" data-perf="6 Nov — 7:30pm" type="button" aria-pressed="false">6 Nov<br><b>7:30pm</b></button>
+        <button class="perf-btn" data-perf="7 Nov — 7:30pm" type="button" aria-pressed="false">7 Nov<br><b>7:30pm</b></button>
+        <button class="perf-btn" data-perf="8 Nov — 7:30pm" type="button" aria-pressed="false">8 Nov<br><b>7:30pm</b></button>
+        <button class="perf-btn" data-perf="9 Nov — 7:30pm" type="button" aria-pressed="false">9 Nov<br><b>7:30pm</b></button>
+        <button class="perf-btn" data-perf="10 Nov — 2:00pm" type="button" aria-pressed="false">10 Nov<br><b>2:00pm matinee</b></button>
+        <button class="perf-btn" data-perf="10 Nov — 7:30pm" type="button" aria-pressed="false">10 Nov<br><b>7:30pm</b></button>
       </div></div>
     <div><div class="section-label">2. Seating area — intimate 200 seats</div><div class="zone-grid" style="margin-top:10px">
-        <button class="zone-card" data-zone="Stalls — Front 4 rows" aria-selected="false"><small>Stalls</small><strong>Closest to the actors.</strong><span style="display:block;font-size:.76rem;opacity:.7;margin-top:6px">Every expression. Every whisper.</span></button>
-        <button class="zone-card" data-zone="Centre — Mid theatre" aria-selected="false"><small>Centre</small><strong>Balanced sightlines.</strong><span style="display:block;font-size:.76rem;opacity:.7;margin-top:6px">Our most popular seats.</span></button>
-        <button class="zone-card" data-zone="Rear — Back rows + boxes" aria-selected="false"><small>Rear</small><strong>Elevated perspective.</strong><span style="display:block;font-size:.76rem;opacity:.7;margin-top:6px">See the whole stage unfold.</span></button>
+        <button class="zone-card" data-zone="Stalls — Front 4 rows" aria-pressed="false"><small>Stalls</small><strong>Closest to the actors.</strong><span style="display:block;font-size:.76rem;opacity:.7;margin-top:6px">Every expression. Every whisper.</span></button>
+        <button class="zone-card" data-zone="Centre — Mid theatre" aria-pressed="false"><small>Centre</small><strong>Balanced sightlines.</strong><span style="display:block;font-size:.76rem;opacity:.7;margin-top:6px">Our most popular seats.</span></button>
+        <button class="zone-card" data-zone="Rear — Back rows + boxes" aria-pressed="false"><small>Rear</small><strong>Elevated perspective.</strong><span style="display:block;font-size:.76rem;opacity:.7;margin-top:6px">See the whole stage unfold.</span></button>
       </div><div class="seat-legend" style="margin-top:10px"><span><i class="dot av"></i>Available</span><span><i class="dot sel"></i>Selected</span><span><i class="dot un"></i>Unavailable</span></div></div>
     <div><div class="section-label">3. Tickets — Adult $42 · Concession $36 · Under 25 $28</div><div style="margin-top:8px">
         <div class="qty-row"><span>Adult — $42</span><span class="qty-controls" data-type="adult"><button data-dec aria-label="Decrease adult">−</button><span data-val>0</span><button data-inc aria-label="Increase adult">+</button></span></div>
@@ -45,7 +45,7 @@
         <div class="qty-row"><span>Under 25 — $28</span><span class="qty-controls" data-type="under25"><button data-dec aria-label="Decrease under 25">−</button><span data-val>0</span><button data-inc aria-label="Increase under 25">+</button></span></div>
       </div></div>
   </div>
-  <div class="book-right"><div class="summary" aria-live="polite"><h3>Booking Summary</h3><div class="summary-line"><span>Performance</span><span id="sumPerf">—</span></div><div class="summary-line"><span>Zone</span><span id="sumZone">—</span></div><div class="summary-line"><span>Tickets</span><span id="sumTickets">—</span></div><div class="summary-total"><span>Total</span><span id="sumTotal">$0</span></div><p id="bookingHint" class="booking-hint">Select a performance, seating area and at least one ticket to continue.</p><div id="bookingError" class="error" role="alert" style="margin-top:10px"></div><button id="checkoutBtn" class="btn btn-primary checkout" style="width:100%;margin-top:12px" disabled>Proceed to checkout</button><button id="resetBooking" class="btn" style="width:100%;margin-top:8px;background:transparent;border-color:rgba(247,243,239,.2);color:var(--off)">Reset</button><div style="font-size:.68rem;opacity:.5;margin-top:14px;line-height:1.5">Demo booking — sample payment details are supplied. No payment is taken.</div></div>
+  <div class="book-right"><div class="summary" aria-live="polite"><h2>Booking Summary</h2><div class="summary-line"><span>Performance</span><span id="sumPerf">—</span></div><div class="summary-line"><span>Zone</span><span id="sumZone">—</span></div><div class="summary-line"><span>Tickets</span><span id="sumTickets">—</span></div><div class="summary-total"><span>Total</span><span id="sumTotal">$0</span></div><p id="bookingHint" class="booking-hint">Select a sample performance, seating area and at least one ticket to continue.</p><div id="bookingError" class="error" role="alert" style="margin-top:10px"></div><button id="checkoutBtn" class="btn btn-primary checkout" style="width:100%;margin-top:12px" disabled>Proceed to checkout</button><button id="resetBooking" class="btn" style="width:100%;margin-top:8px;background:transparent;border-color:rgba(247,243,239,.2);color:var(--off)">Reset</button><div style="font-size:.68rem;opacity:.5;margin-top:14px;line-height:1.5">Demo booking — sample payment details are supplied. No payment is taken.</div></div>
     <div id="bookingConfirm" hidden tabindex="-1" style="border:2px solid var(--brass);padding:20px;background:#111;color:var(--off);">
       <h2 id="checkoutHeading" style="font-size:1rem;letter-spacing:.14em;text-transform:uppercase;margin:0 0 12px">Complete your booking</h2>
       <div id="confirmDetails" style="margin-top:12px"></div>
@@ -67,10 +67,11 @@
 </main>
 
 <footer class="site-footer">
-  <div>Clementine Street Theatre — 18 Clementine Street, W&#257;pereki — <a href="mailto:clementinesttheatre@rkdb.nz">clementinesttheatre@rkdb.nz</a> (07) 555 0148</div>
+  <div>Clementine Street Theatre — 18 Clementine Street, W&#257;periki — <a href="clementine-street.html#email">clementinesttheatre@rkdb.nz</a> (07) 555 0148</div>
   <div class="foot-right"><a href="book-tickets.html?v=theatre-mobile-lock-1">Book Tickets</a><a href="clementine-street.html?v=theatre-mobile-lock-1#accessibility">Accessibility</a><span>© 2026 Clementine Street Theatre. All rights reserved.</span></div>
 </footer>
 <script src="assets/js/main.js"></script><script src="assets/js/booking.js?v=demo-payment-1"></script></body></html>
+
 
 
 
