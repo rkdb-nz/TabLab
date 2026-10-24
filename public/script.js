@@ -239,30 +239,7 @@ function setupPageTransitions() {
     document.body.classList.add("page-loaded");
   });
 
-  document.querySelectorAll("a[href]").forEach((link) => {
-    const href = link.getAttribute("href");
 
-    if (
-      !href ||
-      href.startsWith("#") ||
-      href.startsWith("mailto:") ||
-      href.startsWith("tel:") ||
-      href.startsWith("javascript:") ||
-      link.hasAttribute("target")
-    ) {
-      return;
-    }
-
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-
-      document.body.classList.add("page-exit");
-
-      setTimeout(() => {
-        window.location.href = href;
-      }, 300);
-    });
-  });
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -285,10 +262,11 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 document.addEventListener('click', (event) => {
+    if (event.defaultPrevented || event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
     const link = event.target.closest('a[href]');
 
     if (!link) return;
-    if (link.target === '_blank') return;
+    if (link.target && link.target !== '_self') return;
     if (link.hasAttribute('download')) return;
 
     const href = link.getAttribute('href');

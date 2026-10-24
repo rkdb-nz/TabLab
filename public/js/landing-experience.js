@@ -63,11 +63,14 @@ document.fonts?.ready.then(() => {
 });
 
 function focusLandingContent(container, selector) {
-    const target = [...container.querySelectorAll(selector)].find(element =>
-        element.getClientRects().length && getComputedStyle(element).visibility !== 'hidden');
-    if (!target) return;
-    if (!target.matches('a,button')) target.tabIndex = -1;
-    target.focus({ preventScroll: true });
+    requestAnimationFrame(() => {
+        if (container.getAttribute('aria-hidden') === 'true') return;
+        const target = [...container.querySelectorAll(selector)].find(element =>
+            element.getClientRects().length && getComputedStyle(element).visibility !== 'hidden');
+        if (!target) return;
+        if (!target.matches('a,button')) target.tabIndex = -1;
+        target.focus({ preventScroll: true });
+    });
 }
 
 function activateSortPanel({ preserveForge = false } = {}) {
@@ -177,6 +180,10 @@ async function transitionTo(activateState) {
     } finally {
         animations.forEach(animation => animation.cancel());
         isTransitioning = false;
+        // WebKit can defer visibility while the incoming panel animates.
+        if (document.body.classList.contains('explore-open')) focusLandingContent(exploreScreen, 'h2');
+        else if (sortPanel.classList.contains('is-active')) focusLandingContent(sortPanel, '.sort-title');
+        else focusLandingContent(introPanel, '#sortButton');
         if (pendingState) {
             const next = pendingState;
             pendingState = null;
