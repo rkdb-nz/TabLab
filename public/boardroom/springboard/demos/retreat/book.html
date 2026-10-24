@@ -5,62 +5,44 @@
 <title>Book — Clementine's</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Inter:wght@300;400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css?v=retreat-tablab-return-5">
+<link rel="stylesheet" href="css/style.css?v=retreat-repairs-20261025">
 <link rel="icon" href="assets/icons/favicon.svg">
 </head>
-<body>
-<header class="header"><a class="logo" href="site.html?v=retreat-landscape-header-1">Clementine's</a>
-<nav class="nav"><a href="site.html?v=retreat-landscape-header-1">Home</a><a href="retreats.html?v=retreat-landscape-header-1">Retreats</a><a href="discover.html?v=retreat-landscape-header-1">Discover</a><a href="reviews.html?v=retreat-landscape-header-1">Reviews</a><a href="book.html?v=retreat-landscape-header-1">Book</a></nav>
-<button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false"><span class="menu-word">Menu</span><svg class="menu-grid-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="3" y="15" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path class="menu-close-mark" d="M5 5L19 19M19 5L5 19"/></svg></button>
+<body class="book-page">
+<a class="retreat-skip" href="#main">Skip to content</a><header class="header"><a class="logo" href="site.html?v=retreat-landscape-header-1">Clementine's</a>
+<nav class="nav" aria-label="Primary" id="retreat-navigation"><a href="site.html?v=retreat-landscape-header-1">Home</a><a href="retreats.html?v=retreat-landscape-header-1">Retreats</a><a href="discover.html?v=retreat-landscape-header-1">Discover</a><a href="reviews.html?v=retreat-landscape-header-1">Reviews</a><a aria-current="page" href="book.html?v=retreat-landscape-header-1">Book</a></nav>
+<button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="retreat-navigation"><span class="menu-word">Menu</span><svg class="menu-grid-icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="6" height="6" rx="1"/><rect x="15" y="3" width="6" height="6" rx="1"/><rect x="3" y="15" width="6" height="6" rx="1"/><rect x="15" y="15" width="6" height="6" rx="1"/><path class="menu-close-mark" d="M5 5L19 19M19 5L5 19"/></svg></button>
 </header>
+<main id="main" tabindex="-1">
 
 <section class="section wrap" style="padding-top:22vh"><span class="eyebrow">Book</span><h1 class="h2">Simple. Calm. Beautiful.</h1></section>
 <div class="wrap book-grid">
-<div><p style="margin-bottom:5vh;max-width:40ch;color:rgba(43,43,40,.75)">Rates are tailored to the season and length of stay. We'd love to prepare a personalised quote for your visit.</p><form id="clementine-book-form" style="max-width:520px">
-<label>Retreat</label><select class="input"><option>Woodland Retreat</option><option>Coastal Retreat</option><option>Farm Retreat</option><option>Town Retreat</option><option>Undecided</option></select>
-<label>Dates</label><input class="input" type="text" placeholder="Exact dates or flexible plans welcome">
-<label>Guests</label><input class="input" type="number" min="1" max="6" value="2">
-<label>Name</label><input class="input" required>
-<label>Email</label><input class="input" type="email" required>
-<label>Message</label><textarea class="input" rows="4" placeholder="Tell us about your stay..."></textarea>
-<br><br><button class="btn btn-dark" type="submit">Send Enquiry</button>
+<div><p style="margin-bottom:5vh;max-width:40ch;color:rgba(43,43,40,.75)">Rates are tailored to the season and length of stay. We'd love to prepare a personalised quote for your visit.</p><form id="clementine-book-form" novalidate style="max-width:520px">
+<label for="retreat-choice">Retreat</label><select id="retreat-choice" class="input"><option>Woodland Retreat</option><option>Coastal Retreat</option><option>Farm Retreat</option><option>Town Retreat</option><option>Undecided</option></select>
+<label for="stay-dates">Dates</label><input id="stay-dates" class="input" type="text" placeholder="Exact dates or flexible plans welcome">
+<label for="guest-count">Guests</label><input id="guest-count" class="input" type="number" min="1" max="6" value="2">
+<label for="guest-name">Name</label><input id="guest-name" class="input" required>
+<label for="guest-email">Email</label><input id="guest-email" class="input" type="email" required>
+<label for="guest-message">Message</label><textarea id="guest-message" class="input" rows="4" placeholder="Tell us about your stay..."></textarea>
+<p id="enquiry-errors" role="alert" class="enquiry-errors"></p><br><button class="btn btn-dark" type="submit">Send Enquiry</button>
 </form>
 
-<div id="clementine-confirmation" class="clementine-confirmation" hidden>
-  <div class="clementine-confirmation-card" role="dialog" aria-modal="true" aria-labelledby="clementine-confirmation-title">
+<dialog id="clementine-confirmation" class="clementine-confirmation" aria-labelledby="clementine-confirmation-title">
+  <div class="clementine-confirmation-card">
     <div class="clementine-confirmation-flower" aria-hidden="true">❀</div>
-    <h2 id="clementine-confirmation-title">Thanks, beautiful.</h2>
-    <p>Your enquiry has been sent — we’ll be in touch soon.</p>
+    <h2 id="clementine-confirmation-title">Demo complete.</h2>
+    <p>This is a demonstration. No enquiry has been sent and no stay has been booked.</p>
     <button type="button" class="clementine-confirmation-ok">OK</button>
   </div>
+</dialog>
 </div>
-</div>
-<div><div style="background:var(--stone);aspect-ratio:1;overflow:hidden"><img src="assets/images/book-map-fallback.webp" alt="Map of Clementines locations"><div style="padding:24px"><span class="eyebrow">Location</span><p>Thirty minutes apart, all within an hour of the city. Exact addresses shared on booking. Forest to coast in one afternoon.</p></div></div>
+<div><div class="booking-location"><img loading="lazy" decoding="async" src="assets/images/book-map-fallback.webp" alt="An invitation to book a Clementine’s escape beside a coastal view"><div style="padding:24px"><span class="eyebrow">Location</span><p>Thirty minutes apart, all within an hour of the city. Exact addresses shared on booking. Forest to coast in one afternoon.</p></div></div>
 </div>
 </div>
 
-<footer class="footer"><div><strong class="serif" style="font-size:20px;letter-spacing:.2em">CLEMENTINE'S</strong><br>A collection of distinctive retreats.<br><a href="mailto:Clementines.rkdb.nz">Clementines.rkdb.nz</a><br>© 2026 Clementine's</div></footer>
-<script src="js/main.js?v=retreat-tablab-return-5"></script>
-<script>
-const clementineForm=document.getElementById("clementine-book-form");
-const clementineModal=document.getElementById("clementine-confirmation");
-const clementineOK=clementineModal.querySelector(".clementine-confirmation-ok");
+</main>
+<footer class="footer"><div><strong class="serif" style="font-size:20px;letter-spacing:.2em">CLEMENTINE'S</strong><br>A collection of distinctive retreats.<br><a href="book.html?retreat=undecided#clementine-book-form">Contact Clementine’s</a><br>© 2026 Clementine's</div></footer>
+<script src="js/main.js?v=retreat-repairs-20261025"></script>
+<script src="js/booking.js?v=retreat-repairs-20261025"></script>
 
-clementineForm.addEventListener("submit",e=>{
-  e.preventDefault();
-  clementineModal.hidden=false;
-  requestAnimationFrame(()=>clementineModal.classList.add("is-open"));
-  clementineOK.focus();
-});
-
-clementineOK.addEventListener("click",()=>{
-  clementineModal.classList.remove("is-open");
-  setTimeout(()=>{clementineModal.hidden=true;},220);
-});
-
-clementineModal.addEventListener("click",e=>{
-  if(e.target===clementineModal)clementineOK.click();
-});
-</script>
-<script>document.querySelectorAll('.nav a').forEach(a=>{if(a.getAttribute('href')==='book.html')a.classList.add('active')})</script>
 </body></html>

@@ -689,3 +689,46 @@ body:has(.hero) .header:not(.scrolled){
   .retreat-tablab-return:focus-visible{outline:2px solid white;outline-offset:2px}
   body:has(.nav.open) .retreat-tablab-return{visibility:hidden;pointer-events:none}
 }
+
+
+/* Approved routine sitecheck repairs */
+.retreat-skip{position:fixed;left:12px;top:-100px;z-index:20000;padding:10px 16px;background:#fffcf8;color:#2b2b28;border:2px solid #2f3d34}
+.retreat-skip:focus{top:12px}
+body:not(.home-page) .header,body .header.scrolled{background:rgba(255,252,248,.97);color:#2b2b28;mix-blend-mode:normal}
+body.home-page .header:not(.scrolled){background:rgba(20,20,18,.78);color:#fff;mix-blend-mode:normal}
+.nav a[aria-current=page]{opacity:1}
+.nav a[aria-current=page]:after{width:100%}
+.eyebrow{color:#765e47}
+.d-hero-eyebrow{color:#fff;text-shadow:0 1px 4px #000}
+.d-text .eyebrow{color:#765e47}
+.card-meta,label,.testimonial-meta{opacity:1;color:#5c5c53}
+.footer{opacity:1;color:#5c5c53}
+.clementine-confirmation-ok{color:#17251c}
+:focus-visible{outline:3px solid #765e47;outline-offset:4px}
+.input:focus-visible{outline:2px solid #765e47;outline-offset:4px}
+.input,#clementine-book-form{scroll-margin-top:110px}
+.field-error,.enquiry-errors{color:#8a2431;font-size:.85rem;line-height:1.5}
+.field-error:empty,.enquiry-errors:empty{display:none}
+.booking-location{background:var(--stone)}
+.booking-location>img{width:100%;height:auto;aspect-ratio:1;object-fit:cover}
+body.retreat-menu-open,body.retreat-modal-open{overflow:hidden!important}
+.lightbox:not([open]),.clementine-confirmation:not([open]){display:none}
+dialog.lightbox,dialog.clementine-confirmation{margin:0;border:0;width:100vw;height:100dvh;max-width:none;max-height:none;box-sizing:border-box}
+dialog.lightbox{color:white}
+dialog::backdrop{background:rgba(8,8,8,.5)}
+.clementine-confirmation-card{max-height:calc(100dvh - 40px);overflow:auto}
+.retreats-snap main>.section:first-of-type,.retreats-snap main>.retreat-full{scroll-snap-align:start;scroll-snap-stop:always}
+@media(prefers-reduced-motion:reduce){
+ html{scroll-behavior:auto}
+ *,*::before,*::after{animation:none!important;transition:none!important}
+ .reveal{opacity:1;transform:none}
+ .img-reveal:after{transform:translateY(100%)}
+ .d-bg,.d-bg img,.d-text,.d-hero-copy{transform:none!important}
+}
+#farm .eyebrow{color:#715537}
+@media(min-width:901px){
+ .retreats-page main>#woodland,.retreats-page main>#farm{grid-template-columns:1.15fr .85fr}
+ .retreats-page main>#coastal,.retreats-page main>#town{grid-template-columns:.85fr 1.15fr}
+ .retreats-page #woodland>.retreat-media,.retreats-page #farm>.retreat-media{order:0}
+ .retreats-page #coastal>.retreat-media,.retreats-page #town>.retreat-media{order:2}
+}

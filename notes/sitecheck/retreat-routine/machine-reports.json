@@ -1,0 +1,2094 @@
+[
+  {
+    "phase": "routine",
+    "report": {
+      "engine": "chromium",
+      "commit": "32dfcc2c240fcf7b1189d307a5759e9a82afad07",
+      "checks": [
+        {
+          "label": "1440x900 home",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "document": [
+              1426,
+              2835
+            ],
+            "activeNav": [],
+            "focus": "<body>\n<header class=\"header\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-reviews-portrait-identity-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"hero loaded\"><img src=\"assets/images/home-he [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "metadata/link inventory",
+          "evidence": {
+            "title": "Home — Clementine's",
+            "links": [
+              "site.html?v=retreat-landscape-header-1",
+              "site.html?v=retreat-landscape-header-1",
+              "retreats.html?v=retreat-landscape-header-1",
+              "discover.html?v=retreat-landscape-header-1",
+              "reviews.html?v=retreat-reviews-portrait-identity-1",
+              "book.html?v=retreat-landscape-header-1",
+              "retreats.html?v=retreat-landscape-header-1#woodland",
+              "retreats.html?v=retreat-landscape-header-1#coastal",
+              "retreats.html?v=retreat-landscape-header-1#farm",
+              "retreats.html?v=retreat-landscape-header-1#town",
+              "book.html?v=retreat-landscape-header-1"
+            ]
+          }
+        },
+        {
+          "label": "1440x900 navigated",
+          "evidence": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/retreats.html?v=retreat-landscape-header-1"
+        },
+        {
+          "label": "closed lightbox tabbable",
+          "evidence": [
+            {
+              "tab": 0,
+              "display": "block",
+              "visibility": "visible"
+            },
+            {
+              "tab": 0,
+              "display": "block",
+              "visibility": "visible"
+            },
+            {
+              "tab": 0,
+              "display": "block",
+              "visibility": "visible"
+            }
+          ]
+        },
+        {
+          "label": "gallery 0 previous disabled",
+          "evidence": true
+        },
+        {
+          "label": "gallery 0 image 0",
+          "evidence": {
+            "src": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/assets/images/woodland-living.webp",
+            "decoded": true,
+            "alt": "Woodland living area with fireplace"
+          }
+        },
+        {
+          "label": "gallery 0 image 1",
+          "evidence": {
+            "src": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/assets/images/woodland-bedroom.webp",
+            "decoded": true,
+            "alt": "Woodland bedroom with linen bedding"
+          }
+        },
+        {
+          "label": "gallery 0 image 2",
+          "evidence": {
+            "src": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/assets/images/woodland-detail.webp",
+            "decoded": true,
+            "alt": "Timber detail"
+          }
+        },
+        {
+          "label": "gallery 0 next disabled",
+          "evidence": true
+        },
+        {
+          "label": "lightbox focus contained",
+          "evidence": true
+        },
+        {
+          "label": "lightbox Escape restores trigger",
+          "evidence": true
+        },
+        {
+          "label": "gallery 1 previous disabled",
+          "evidence": true
+        },
+        {
+          "label": "gallery 1 image 0",
+          "evidence": {
+            "src": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/assets/images/coastal-living.webp",
+            "decoded": true,
+            "alt": "Coastal living space"
+          }
+        },
+        {
+          "label": "gallery 1 image 1",
+          "evidence": {
+            "src": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/assets/images/coastal-bedroom.webp",
+            "decoded": true,
+            "alt": "Coastal bedroom with ocean view"
+          }
+        },
+        {
+          "label": "gallery 1 image 2",
+          "evidence": {
+            "src": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/assets/images/coastal-detail.webp",
+            "decoded": true,
+            "alt": "Coastal detail"
+          }
+        },
+        {
+          "label": "gallery 1 next disabled",
+          "evidence": true
+        },
+        {
+          "label": "lightbox focus contained",
+          "evidence": true
+        },
+        {
+          "label": "lightbox Escape restores trigger",
+          "evidence": true
+        },
+        {
+          "label": "gallery 2 previous disabled",
+          "evidence": true
+        },
+        {
+          "label": "gallery 2 image 0",
+          "evidence": {
+            "src": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/assets/images/farm-living.webp",
+            "decoded": true,
+            "alt": "Farm living"
+          }
+        },
+        {
+          "label": "gallery 2 image 1",
+          "evidence": {
+            "src": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/assets/images/farm-bedroom.webp",
+            "decoded": true,
+            "alt": "Farm bedroom"
+          }
+        },
+        {
+          "label": "gallery 2 image 2",
+          "evidence": {
+            "src": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/assets/images/farm-detail.webp",
+            "decoded": true,
+            "alt": "Farm detail"
+          }
+        },
+        {
+          "label": "gallery 2 next disabled",
+          "evidence": true
+        },
+        {
+          "label": "lightbox focus contained",
+          "evidence": true
+        },
+        {
+          "label": "lightbox Escape restores trigger",
+          "evidence": true
+        },
+        {
+          "label": "gallery 3 previous disabled",
+          "evidence": true
+        },
+        {
+          "label": "gallery 3 image 0",
+          "evidence": {
+            "src": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/assets/images/village-living.webp",
+            "decoded": true,
+            "alt": "Town living"
+          }
+        },
+        {
+          "label": "gallery 3 image 1",
+          "evidence": {
+            "src": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/assets/images/village-bedroom.webp",
+            "decoded": true,
+            "alt": "Town bedroom"
+          }
+        },
+        {
+          "label": "gallery 3 image 2",
+          "evidence": {
+            "src": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/assets/images/village-detail.webp",
+            "decoded": true,
+            "alt": "Town detail"
+          }
+        },
+        {
+          "label": "gallery 3 next disabled",
+          "evidence": true
+        },
+        {
+          "label": "lightbox focus contained",
+          "evidence": true
+        },
+        {
+          "label": "lightbox Escape restores trigger",
+          "evidence": true
+        },
+        {
+          "label": "coastal selected on arrival",
+          "evidence": "Woodland Retreat"
+        },
+        {
+          "label": "1440x900 invalid required",
+          "evidence": 2
+        },
+        {
+          "label": "1440x900 invalid email",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 invalid guest limit",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 result",
+          "evidence": "❀\nThanks, beautiful.\n\nYour enquiry has been sent — we’ll be in touch soon.\n\nOK"
+        },
+        {
+          "label": "1440x900 modal focus",
+          "evidence": false
+        },
+        {
+          "label": "1440x900 Escape closes",
+          "evidence": false
+        },
+        {
+          "label": "1440x900 modal close focus",
+          "evidence": "<body>\n<header class=\"header scrolled\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-landscape-header-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"section wrap\" style=\"padding-top:22vh\"><span [truncated for compact report]"
+        },
+        {
+          "label": "book links",
+          "evidence": [
+            "site.html?v=retreat-landscape-header-1",
+            "site.html?v=retreat-landscape-header-1",
+            "retreats.html?v=retreat-landscape-header-1",
+            "discover.html?v=retreat-landscape-header-1",
+            "reviews.html?v=retreat-landscape-header-1",
+            "book.html?v=retreat-landscape-header-1",
+            "mailto:Clementines.rkdb.nz"
+          ]
+        },
+        {
+          "label": "review 0",
+          "evidence": "\"The rain started and we never touched our phones again. Fire, tea, and a long conversation.\"\n\nAMELIA & JOSH\nKIRIKIRIROA HAMILTON\nWOODLAND RETREAT"
+        },
+        {
+          "label": "review 1",
+          "evidence": "\"Early light through the trees, coffee in blankets. It felt private and kind.\"\n\nNINA R.\nTE WHANGANUI-A-TARA WELLINGTON\nWOODLAND RETREAT"
+        },
+        {
+          "label": "review 2",
+          "evidence": "\"Farm gave us three generations at one table without anyone rushing away.\"\n\nTHE REYNOLDS FAMILY\nTĀMAKI MAKAURAU AUCKLAND\nFARM RETREAT"
+        },
+        {
+          "label": "review 3",
+          "evidence": "\"Sunset in the vines, children still in the pool, dinner drifting later than planned. Perfect.\"\n\nCLAIRE & TOM\nŌTAUTAHI CHRISTCHURCH\nFARM RETREAT"
+        },
+        {
+          "label": "review 4",
+          "evidence": "\"You can hear the tide all night. We slept deeper than we have in months.\"\n\nPRIYA S.\nTE PAPAIOEA PALMERSTON NORTH\nCOASTAL RETREAT"
+        },
+        {
+          "label": "review 5",
+          "evidence": "\"Coffee on the deck, then straight to the water barefoot. We repeated the same perfect day twice.\"\n\nHANNAH & JEWEL\nWĀPERIKI\nCOASTAL RETREAT"
+        },
+        {
+          "label": "review 6",
+          "evidence": "\"Town gave us our favorite rhythm: market pastries, flowers, then a quiet afternoon behind the gate.\"\n\nEVA & DANIEL\nWHANGĀREI\nTOWN RETREAT"
+        },
+        {
+          "label": "review 7",
+          "evidence": "\"Right in town, yet wonderfully quiet. We settled in straight away.\"\n\nKATE M.\nNEW PLYMOUTH\nTOWN RETREAT"
+        },
+        {
+          "label": "discover scene 0",
+          "evidence": {
+            "text": "DISCOVER WĀPERIKI\nSlow time returns here.",
+            "img": 1448,
+            "rect": [
+              0,
+              845
+            ],
+            "motion": "0.9s"
+          }
+        },
+        {
+          "label": "discover scene 1",
+          "evidence": {
+            "text": "MORNING\nForest walks\n\nPrivate tracks through kanuka and rimu. Mist sits low until ten.",
+            "img": 1513,
+            "rect": [
+              0,
+              845
+            ],
+            "motion": "0.9s"
+          }
+        },
+        {
+          "label": "discover scene 2",
+          "evidence": {
+            "text": "MIDDAY\nHidden waterfall\n\nA twenty minute walk from Woodland. Cold, clear, completely yours.",
+            "img": 1513,
+            "rect": [
+              0,
+              845
+            ],
+            "motion": "0.9s"
+          }
+        },
+        {
+          "label": "discover scene 3",
+          "evidence": {
+            "text": "AFTERNOON\nCoastal cliffs\n\nWind-shaped, salt-worn. Gannets turning far below.",
+            "img": 1536,
+            "rect": [
+              0,
+              845
+            ],
+            "motion": "0.9s"
+          }
+        },
+        {
+          "label": "discover scene 4",
+          "evidence": {
+            "text": "LOW TIDE\nQuiet beach\n\nNo footprints but yours. Driftwood, breezes, afternoon light",
+            "img": 1513,
+            "rect": [
+              0,
+              845
+            ],
+            "motion": "0.9s"
+          }
+        },
+        {
+          "label": "discover scene 5",
+          "evidence": {
+            "text": "Vineyard\n\nOrganic chardonnay. Pick a bottle, carry it back to the farm",
+            "img": 1513,
+            "rect": [
+              0,
+              845
+            ],
+            "motion": "0.9s"
+          }
+        },
+        {
+          "label": "discover scene 6",
+          "evidence": {
+            "text": "Saturday market\n\nBread still warm. Oysters, citrus, honey.",
+            "img": 1513,
+            "rect": [
+              0,
+              845
+            ],
+            "motion": "0.9s"
+          }
+        },
+        {
+          "label": "discover scene 7",
+          "evidence": {
+            "text": "Town cafés\n\nEspresso, newsprint, neighbours who nod.",
+            "img": 1512,
+            "rect": [
+              0,
+              845
+            ],
+            "motion": "0.9s"
+          }
+        },
+        {
+          "label": "discover scene 8",
+          "evidence": {
+            "text": "Night beneath the stars\n\nNo streetlights for miles. The Milky Way as you forgot it.\n\n\nRESERVE YOUR STAY",
+            "img": 1513,
+            "rect": [
+              0,
+              845
+            ],
+            "motion": "0.9s"
+          }
+        },
+        {
+          "label": "discover reserve destination",
+          "evidence": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/book.html?v=retreat-landscape-header-1"
+        },
+        {
+          "label": "native zoom attempt",
+          "evidence": {
+            "before": [
+              1440,
+              900,
+              1
+            ],
+            "after": [
+              1440,
+              900,
+              1
+            ]
+          }
+        },
+        {
+          "label": "1440x900 fullscreen",
+          "evidence": {
+            "frame": [
+              1440,
+              900
+            ],
+            "returnVisible": true
+          }
+        },
+        {
+          "label": "1440x900 return",
+          "evidence": true
+        },
+        {
+          "label": "1440x900 gallery",
+          "evidence": "http://127.0.0.1:34153/boardroom/springboard/index.html"
+        },
+        {
+          "label": "390x844 home",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "document": [
+              382,
+              3284
+            ],
+            "activeNav": [],
+            "focus": "<body>\n<header class=\"header\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-reviews-portrait-identity-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"hero loaded\"><img src=\"assets/images/home-he [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "390x844 menu expanded",
+          "evidence": "true"
+        },
+        {
+          "label": "rotated menu",
+          "evidence": {
+            "viewport": [
+              836,
+              338
+            ],
+            "document": [
+              836,
+              4045
+            ],
+            "activeNav": [],
+            "focus": "<button class=\"menu-btn\" type=\"button\" aria-label=\"Close menu\" aria-expanded=\"true\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>",
+            "overflows": []
+          }
+        },
+        {
+          "label": "390x844 navigated",
+          "evidence": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/retreats.html?v=retreat-landscape-header-1"
+        },
+        {
+          "label": "390x844 invalid required",
+          "evidence": 2
+        },
+        {
+          "label": "390x844 invalid email",
+          "evidence": true
+        },
+        {
+          "label": "390x844 invalid guest limit",
+          "evidence": true
+        },
+        {
+          "label": "390x844 result",
+          "evidence": "❀\nThanks, beautiful.\n\nYour enquiry has been sent — we’ll be in touch soon.\n\nOK"
+        },
+        {
+          "label": "390x844 modal focus",
+          "evidence": false
+        },
+        {
+          "label": "390x844 Escape closes",
+          "evidence": false
+        },
+        {
+          "label": "390x844 modal close focus",
+          "evidence": "<body>\n<header class=\"header scrolled\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-landscape-header-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"section wrap\" style=\"padding-top:22vh\"><span [truncated for compact report]"
+        },
+        {
+          "label": "phone discover",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "document": [
+              382,
+              763
+            ],
+            "activeNav": [],
+            "focus": "<body class=\"discover-page\">\n<header class=\"header scrolled\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-landscape-header-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<div class=\"progress\" style=\"width: 12 [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "phone discover transition in reduced motion",
+          "evidence": "transition: transform 1.5s cubic-bezier(0.65, 0, 0.35, 1); transform: translateY(-100%);"
+        },
+        {
+          "label": "phone discover step 1",
+          "evidence": "transition: transform 1.5s cubic-bezier(0.65, 0, 0.35, 1); transform: translateY(-200%);"
+        },
+        {
+          "label": "phone discover step 2",
+          "evidence": "transition: transform 1.5s cubic-bezier(0.65, 0, 0.35, 1); transform: translateY(-300%);"
+        },
+        {
+          "label": "phone discover step 3",
+          "evidence": "transition: transform 1.5s cubic-bezier(0.65, 0, 0.35, 1); transform: translateY(-400%);"
+        },
+        {
+          "label": "phone discover step 4",
+          "evidence": "transition: transform 1.5s cubic-bezier(0.65, 0, 0.35, 1); transform: translateY(-500%);"
+        },
+        {
+          "label": "phone discover step 5",
+          "evidence": "transition: transform 1.5s cubic-bezier(0.65, 0, 0.35, 1); transform: translateY(-600%);"
+        },
+        {
+          "label": "phone discover step 6",
+          "evidence": "transition: transform 1.5s cubic-bezier(0.65, 0, 0.35, 1); transform: translateY(-700%);"
+        },
+        {
+          "label": "phone discover step 7",
+          "evidence": "transition: transform 1.5s cubic-bezier(0.65, 0, 0.35, 1); transform: translateY(-800%);"
+        },
+        {
+          "label": "phone reserve reachable",
+          "evidence": {
+            "rect": [
+              87.671875,
+              610.3125,
+              206.640625,
+              48.6875
+            ],
+            "inert": false
+          }
+        },
+        {
+          "label": "Discover return top",
+          "evidence": "transition: transform 1.5s cubic-bezier(0.65, 0, 0.35, 1); transform: translateY(0%);"
+        },
+        {
+          "label": "390x844 fullscreen",
+          "evidence": {
+            "frame": [
+              390,
+              844
+            ],
+            "returnVisible": true
+          }
+        },
+        {
+          "label": "390x844 return",
+          "evidence": true
+        },
+        {
+          "label": "390x844 gallery",
+          "evidence": "http://127.0.0.1:34153/boardroom/springboard/index.html"
+        },
+        {
+          "label": "844x390 home",
+          "evidence": {
+            "viewport": [
+              836,
+              338
+            ],
+            "document": [
+              836,
+              4045
+            ],
+            "activeNav": [],
+            "focus": "<body>\n<header class=\"header\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-reviews-portrait-identity-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"hero loaded\"><img src=\"assets/images/home-he [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "844x390 menu expanded",
+          "evidence": "true"
+        },
+        {
+          "label": "844x390 navigated",
+          "evidence": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/retreats.html?v=retreat-landscape-header-1"
+        },
+        {
+          "label": "844x390 Discover",
+          "evidence": {
+            "viewport": [
+              836,
+              338
+            ],
+            "document": [
+              836,
+              338
+            ],
+            "activeNav": [],
+            "focus": "<body class=\"discover-page\">\n<header class=\"header scrolled\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-landscape-header-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<div class=\"progress\" style=\"width: 12 [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "844x390 Book",
+          "evidence": {
+            "viewport": [
+              836,
+              338
+            ],
+            "document": [
+              836,
+              2065
+            ],
+            "activeNav": [],
+            "focus": "<body>\n<header class=\"header\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-landscape-header-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"section wrap\" style=\"padding-top:22vh\"><span class=\"e [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "320x568 home",
+          "evidence": {
+            "viewport": [
+              312,
+              487
+            ],
+            "document": [
+              312,
+              3043
+            ],
+            "activeNav": [],
+            "focus": "<body>\n<header class=\"header\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-reviews-portrait-identity-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"hero loaded\"><img src=\"assets/images/home-he [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "320x568 menu expanded",
+          "evidence": "true"
+        },
+        {
+          "label": "320x568 navigated",
+          "evidence": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/retreats.html?v=retreat-landscape-header-1"
+        },
+        {
+          "label": "320x568 Discover",
+          "evidence": {
+            "viewport": [
+              312,
+              487
+            ],
+            "document": [
+              312,
+              487
+            ],
+            "activeNav": [],
+            "focus": "<body class=\"discover-page\">\n<header class=\"header scrolled\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-landscape-header-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<div class=\"progress\" style=\"width: 12 [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "320x568 Book",
+          "evidence": {
+            "viewport": [
+              312,
+              487
+            ],
+            "document": [
+              312,
+              1682
+            ],
+            "activeNav": [],
+            "focus": "<body>\n<header class=\"header\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-landscape-header-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"section wrap\" style=\"padding-top:22vh\"><span class=\"e [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "780x300 home",
+          "evidence": {
+            "viewport": [
+              772,
+              248
+            ],
+            "document": [
+              772,
+              3828
+            ],
+            "activeNav": [],
+            "focus": "<body>\n<header class=\"header\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-reviews-portrait-identity-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"hero loaded\"><img src=\"assets/images/home-he [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "780x300 menu expanded",
+          "evidence": "true"
+        },
+        {
+          "label": "780x300 navigated",
+          "evidence": "http://127.0.0.1:34153/boardroom/springboard/demos/retreat/retreats.html?v=retreat-landscape-header-1"
+        },
+        {
+          "label": "780x300 Discover",
+          "evidence": {
+            "viewport": [
+              772,
+              248
+            ],
+            "document": [
+              772,
+              248
+            ],
+            "activeNav": [],
+            "focus": "<body class=\"discover-page\">\n<header class=\"header scrolled\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-landscape-header-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<div class=\"progress\" style=\"width: 12 [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "780x300 Book",
+          "evidence": {
+            "viewport": [
+              772,
+              248
+            ],
+            "document": [
+              772,
+              1942
+            ],
+            "activeNav": [],
+            "focus": "<body>\n<header class=\"header\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-landscape-header-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"section wrap\" style=\"padding-top:22vh\"><span class=\"e [truncated for compact report]",
+            "overflows": []
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-home.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "retreat-0.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "lightbox.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "retreat-3.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "1440x900-book-invalid.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "1440x900-book-result.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "review-0.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "review-7.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "discover-0.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "discover-1.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "discover-8.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-home.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "rotated-menu.png",
+          "outer": [
+            844,
+            390
+          ],
+          "frame": [
+            836,
+            338
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-book-invalid.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-book-result.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "phone-gallery.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "phone-review.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "phone-discover.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "844x390-home.png",
+          "outer": [
+            844,
+            390
+          ],
+          "frame": [
+            836,
+            338
+          ],
+          "inspected": true
+        },
+        {
+          "file": "320x568-home.png",
+          "outer": [
+            320,
+            568
+          ],
+          "frame": [
+            312,
+            487
+          ],
+          "inspected": true
+        },
+        {
+          "file": "780x300-home.png",
+          "outer": [
+            780,
+            300
+          ],
+          "frame": [
+            772,
+            248
+          ],
+          "inspected": true
+        },
+        {
+          "file": "short-discover.png",
+          "outer": [
+            780,
+            300
+          ],
+          "frame": [
+            772,
+            248
+          ],
+          "inspected": true
+        }
+      ],
+      "errors": [],
+      "scans": [
+        {
+          "label": "Home",
+          "violations": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "html": "<span class=\"eyebrow reveal in\">Clementine's, Aotearoa</span>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #8c735a, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<div class=\"card-meta\">01 / Forest edge</div>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<div class=\"card-meta\">02 / Ocean bluff</div>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<div class=\"card-meta\">03 / Vineyard row</div>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<div class=\"card-meta\">04 / Town lane</div>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              ]
+            },
+            {
+              "id": "region",
+              "impact": "moderate",
+              "nodes": [
+                {
+                  "html": "<section class=\"hero loaded\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<section class=\"section wrap\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Retreats",
+          "violations": [
+            {
+              "id": "aria-hidden-focus",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "html": "<div class=\"lightbox\" id=\"retreat-lightbox\" aria-hidden=\"true\">",
+                  "summary": "Fix all of the following:\n  Focusable content should be disabled or be removed from the DOM"
+                }
+              ]
+            },
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "html": "<a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #ffffff, background color: #fffcf8, font size: 19.5pt (26px), font weight: normal). Expected contrast ratio of 3:1"
+                },
+                {
+                  "html": "<a href=\"site.html?v=retreat-landscape-header-1\">Home</a>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fffefe, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #fffffe, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fffefe, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<a href=\"reviews.html?v=retreat-landscape-header-1\">Reviews</a>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fffefe, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<a href=\"book.html?v=retreat-landscape-header-1\">Book</a>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fffefe, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<span class=\"eyebrow\">The Collection</span>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #8c735a, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<span class=\"eyebrow\">Farm — Sleeps 6</span>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.24 (foreground color: #816749, background color: #eee5d8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<span class=\"eyebrow\">Thoughtfully included in each retreat</span>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #8c735a, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              ]
+            },
+            {
+              "id": "landmark-one-main",
+              "impact": "moderate",
+              "nodes": [
+                {
+                  "html": "<html lang=\"en\" class=\"retreats-snap\">",
+                  "summary": "Fix all of the following:\n  Document does not have a main landmark"
+                }
+              ]
+            },
+            {
+              "id": "region",
+              "impact": "moderate",
+              "nodes": [
+                {
+                  "html": "<section class=\"section wrap\" style=\"padding-top:22vh\"><span class=\"eyebrow\">The Collection</span><h1 class=\"h2\">Four houses. One ethos.</h1><p class=\"lead\">Material, proportion, light. Each house has its own palette but shares the same quiet conviction.</p></section>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"retreat-media img-reveal in\"><img src=\"assets/images/woodland-exterior.webp\" alt=\"Woodland Retreat exterior\"></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<span class=\"eyebrow\">Woodland — Sleeps 6</span>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<h2>Woodland Retreat</h2>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<p>Set in regenerating kanuka. Blackened larch cladding, oak floors, a fireplace that burns all winter. Outdoor bath beneath ferns.</p>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"retreat-highlights\"><span class=\"hl\">Outdoor bath</span><span class=\"hl\">Fireplace</span><span class=\"hl\">Forest access</span></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<a class=\"btn\" href=\"book.html?v=retreat-landscape-header-1\">Enquire — Woodland</a>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"retreat-media img-reveal\"><img src=\"assets/images/coastal-exterior.webp\" alt=\"Coastal Retreat exterior on cliff\"></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<span class=\"eyebrow\">Coastal — Sleeps 6</span>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<h2>Coastal Retreat</h2>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<p>Two pavilions linked by glass. North facing decks, tidal pool below. Limestone, raw oak, sand-coloured linen. Weather as entertainment.</p>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"retreat-highlights\"><span class=\"hl\">Tidal access</span><span class=\"hl\">Chef's kitchen</span><span class=\"hl\">30m cliff deck</span></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<a class=\"btn\" href=\"book.html?v=retreat-landscape-header-1\">Enquire — Coastal</a>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"retreat-media img-reveal\"><img src=\"assets/images/farm-exterior.webp\" alt=\"Farm Retreat barn exterior\"></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<span class=\"eyebrow\">Farm — Sleeps 6</span>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<h2>Farm Retreat</h2>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<p>1880s milking shed rebuilt around a courtyard. Vineyard beyond, pool at centre. Stone walls, poured concrete, long oak table.</p>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"retreat-highlights\"><span class=\"hl\">Courtyard pool</span><span class=\"hl\">Vineyard</span><span class=\"hl\">Wood-fired oven</span></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<a class=\"btn\" href=\"book.html?v=retreat-landscape-header-1\">Enquire — Farm</a>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"retreat-media img-reveal\"><img src=\"assets/images/village-exterior.webp\" alt=\"Town Retreat cottage lane\"></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<span class=\"eyebrow\">Town — Sleeps 6</span>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<h2>Town Retreat</h2>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<p>Behind a grocer on the high street. Limestone cottage, secret garden, espresso machine always on. Walk to market, return to silence.</p>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div class=\"retreat-highlights\"><span class=\"hl\">Garden</span><span class=\"hl\">Town centre</span><span class=\"hl\">Record player</span></div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<a class=\"btn\" href=\"book.html?v=retreat-landscape-header-1\">Enquire — Town</a>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Book",
+          "violations": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "html": "<span class=\"eyebrow\">Book</span>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #8c735a, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<label>Retreat</label>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<label>Dates</label>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<label>Guests</label>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<label>Name</label>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<label>Email</label>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<label>Message</label>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              ]
+            },
+            {
+              "id": "label",
+              "impact": "critical",
+              "nodes": [
+                {
+                  "html": "<input class=\"input\" type=\"number\" min=\"1\" max=\"6\" value=\"2\" style=\"\">",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                },
+                {
+                  "html": "<input class=\"input\" required=\"\" style=\"\">",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                },
+                {
+                  "html": "<input class=\"input\" type=\"email\" required=\"\" style=\"\">",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ]
+            },
+            {
+              "id": "landmark-one-main",
+              "impact": "moderate",
+              "nodes": [
+                {
+                  "html": "<html lang=\"en\">",
+                  "summary": "Fix all of the following:\n  Document does not have a main landmark"
+                }
+              ]
+            },
+            {
+              "id": "region",
+              "impact": "moderate",
+              "nodes": [
+                {
+                  "html": "<section class=\"section wrap\" style=\"padding-top:22vh\"><span class=\"eyebrow\">Book</span><h1 class=\"h2\">Simple. Calm. Beautiful.</h1></section>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<p style=\"margin-bottom:5vh;max-width:40ch;color:rgba(43,43,40,.75)\">Rates are tailored to the season and length of stay. We'd love to prepare a personalised quote for your visit.</p>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<label>Retreat</label>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<select class=\"input\"><option>Woodland Retreat</option><option>Coastal Retreat</option><option>Farm Retreat</option><option>Town Retreat</option><option>Undecided</option></select>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<label>Dates</label>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<input class=\"input\" type=\"text\" placeholder=\"Exact dates or flexible plans welcome\" style=\"\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<label>Guests</label>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<input class=\"input\" type=\"number\" min=\"1\" max=\"6\" value=\"2\" style=\"\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<label>Name</label>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<input class=\"input\" required=\"\" style=\"\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<label>Email</label>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<input class=\"input\" type=\"email\" required=\"\" style=\"\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<label>Message</label>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<textarea class=\"input\" rows=\"4\" placeholder=\"Tell us about your stay...\" style=\"\"></textarea>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                }
+              ]
+            },
+            {
+              "id": "select-name",
+              "impact": "critical",
+              "nodes": [
+                {
+                  "html": "<select class=\"input\"><option>Woodland Retreat</option><option>Coastal Retreat</option><option>Farm Retreat</option><option>Town Retreat</option><option>Undecided</option></select>",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Reviews",
+          "violations": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "html": "<a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.02 (foreground color: #ffffff, background color: #fffcf8, font size: 19.5pt (26px), font weight: normal). Expected contrast ratio of 3:1"
+                },
+                {
+                  "html": "<a href=\"site.html?v=retreat-landscape-header-1\">Home</a>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fffefe, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fffefe, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fffefe, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<a href=\"reviews.html?v=retreat-landscape-header-1\">Reviews</a>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fffefe, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<a href=\"book.html?v=retreat-landscape-header-1\">Book</a>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 1.01 (foreground color: #fffefe, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<span class=\"eyebrow\">Guest Journal</span>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #8c735a, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Discover",
+          "violations": []
+        }
+      ],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "155.0.8059.39"
+    }
+  },
+  {
+    "phase": "routine",
+    "report": {
+      "engine": "firefox",
+      "commit": "32dfcc2c240fcf7b1189d307a5759e9a82afad07",
+      "checks": [
+        {
+          "label": "1440x900 home",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "document": [
+              1426,
+              2835
+            ],
+            "activeNav": [],
+            "focus": "<body>\n<header class=\"header\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-reviews-portrait-identity-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"hero loaded\"><img src=\"assets/images/home-he [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "1440x900 navigated",
+          "evidence": "http://127.0.0.1:40767/boardroom/springboard/demos/retreat/retreats.html?v=retreat-landscape-header-1"
+        },
+        {
+          "label": "390x844 home",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "document": [
+              382,
+              3284
+            ],
+            "activeNav": [],
+            "focus": "<body>\n<header class=\"header\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-reviews-portrait-identity-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"hero loaded\"><img src=\"assets/images/home-he [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "390x844 menu expanded",
+          "evidence": "true"
+        },
+        {
+          "label": "390x844 navigated",
+          "evidence": "http://127.0.0.1:40767/boardroom/springboard/demos/retreat/retreats.html?v=retreat-landscape-header-1"
+        },
+        {
+          "label": "390x844 invalid required",
+          "evidence": 2
+        },
+        {
+          "label": "390x844 invalid email",
+          "evidence": true
+        },
+        {
+          "label": "390x844 invalid guest limit",
+          "evidence": true
+        },
+        {
+          "label": "390x844 result",
+          "evidence": "❀\nThanks, beautiful.\n\nYour enquiry has been sent — we’ll be in touch soon.\n\nOK"
+        },
+        {
+          "label": "390x844 modal focus",
+          "evidence": false
+        },
+        {
+          "label": "390x844 Escape closes",
+          "evidence": false
+        },
+        {
+          "label": "390x844 modal close focus",
+          "evidence": "<body>\n<header class=\"header scrolled\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-landscape-header-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"section wrap\" style=\"padding-top:22vh\"><span [truncated for compact report]"
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-home.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-home.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-book-invalid.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-book-result.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        }
+      ],
+      "errors": [],
+      "scans": [],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "153.0"
+    }
+  },
+  {
+    "phase": "routine",
+    "report": {
+      "engine": "webkit",
+      "commit": "a5db0144e45916d8547d0bcd068f3caddce23202",
+      "checks": [
+        {
+          "label": "1440x900 home",
+          "evidence": {
+            "viewport": [
+              1426,
+              845
+            ],
+            "document": [
+              1426,
+              2835
+            ],
+            "activeNav": [],
+            "focus": "<body>\n<header class=\"header\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-reviews-portrait-identity-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"hero loaded\"><img src=\"assets/images/home-he [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "1440x900 navigated",
+          "evidence": "http://127.0.0.1:43935/boardroom/springboard/demos/retreat/retreats.html?v=retreat-landscape-header-1"
+        },
+        {
+          "label": "390x844 home",
+          "evidence": {
+            "viewport": [
+              382,
+              763
+            ],
+            "document": [
+              382,
+              3284
+            ],
+            "activeNav": [],
+            "focus": "<body>\n<header class=\"header\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-reviews-portrait-identity-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"hero loaded\"><img src=\"assets/images/home-he [truncated for compact report]",
+            "overflows": []
+          }
+        },
+        {
+          "label": "390x844 menu expanded",
+          "evidence": "true"
+        },
+        {
+          "label": "390x844 navigated",
+          "evidence": "http://127.0.0.1:43935/boardroom/springboard/demos/retreat/retreats.html?v=retreat-landscape-header-1"
+        },
+        {
+          "label": "390x844 invalid required",
+          "evidence": 2
+        },
+        {
+          "label": "390x844 invalid email",
+          "evidence": true
+        },
+        {
+          "label": "390x844 invalid guest limit",
+          "evidence": true
+        },
+        {
+          "label": "390x844 result",
+          "evidence": "❀\nThanks, beautiful.\n\nYour enquiry has been sent — we’ll be in touch soon.\n\nOK"
+        },
+        {
+          "label": "390x844 modal focus",
+          "evidence": false
+        },
+        {
+          "label": "390x844 Escape closes",
+          "evidence": false
+        },
+        {
+          "label": "390x844 modal close focus",
+          "evidence": "<body>\n<header class=\"header scrolled\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-header-1\">Home</a><a href=\"retreats.html?v=retreat-landscape-header-1\">Retreats</a><a href=\"discover.html?v=retreat-landscape-header-1\">Discover</a><a href=\"reviews.html?v=retreat-landscape-header-1\">Reviews</a><a href=\"book.html?v=retreat-landscape-header-1\">Book</a></nav>\n<button class=\"menu-btn\" type=\"button\" aria-label=\"Open menu\" aria-expanded=\"false\"><span class=\"menu-word\">Menu</span><svg class=\"menu-grid-icon\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><rect x=\"3\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"3\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"3\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><rect x=\"15\" y=\"15\" width=\"6\" height=\"6\" rx=\"1\"></rect><path class=\"menu-close-mark\" d=\"M5 5L19 19M19 5L5 19\"></path></svg></button>\n</header>\n\n<section class=\"section wrap\" style=\"padding-top:22vh\"><span [truncated for compact report]"
+        }
+      ],
+      "captures": [
+        {
+          "file": "1440x900-home.png",
+          "outer": [
+            1440,
+            900
+          ],
+          "frame": [
+            1426,
+            845
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-home.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-book-invalid.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        },
+        {
+          "file": "390x844-book-result.png",
+          "outer": [
+            390,
+            844
+          ],
+          "frame": [
+            382,
+            763
+          ],
+          "inspected": true
+        }
+      ],
+      "errors": [],
+      "scans": [],
+      "assets": [
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config.js",
+          "status": 404
+        },
+        {
+          "url": "https://us-assets.i.posthog.com/array/phc_oANcwiU5t9xumCPf3juV9b4vcpnuaPvr7uPe6dTfHhde/config",
+          "status": 404
+        }
+      ],
+      "console": [],
+      "links": [],
+      "limits": [],
+      "version": "26.5"
+    }
+  },
+  {
+    "phase": "focus",
+    "report": {
+      "engine": "chromium",
+      "commit": "24e40a64ddd19ab2166499ebfe3aebbc55e8e3eb",
+      "checks": [
+        {
+          "label": "menu Tab focus",
+          "evidence": "<a class=\"card\" href=\"retreats.html?v=retreat-landscape-header-1#woodland\"><div class=\"card-img img-reveal\"><img src=\"assets/images/home-woodland.webp\" alt=\"Woodland Retreat exterior among native bush\"></div><div class=\"card-meta\">01 / Forest edge</div><h3>Woodland Retreat</h3><p>Charred timber cabi"
+        },
+        {
+          "label": "gallery Tab 0",
+          "evidence": {
+            "contained": true,
+            "active": "<button class=\"lightbox-arrow lightbox-next\" type=\"button\" aria-label=\"Next image\" aria-disabled=\"false\">❯</button>"
+          }
+        },
+        {
+          "label": "gallery Tab 1",
+          "evidence": {
+            "contained": false,
+            "active": "<button type=\"button\" class=\"retreat-back-top\" aria-label=\"Back to top\"><svg viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path d=\"M5 11l7-7 7 7M12 4v16\"></path></svg></button>"
+          }
+        },
+        {
+          "label": "gallery Tab 2",
+          "evidence": {
+            "contained": false,
+            "active": "<body style=\"overflow: hidden;\">\n<header class=\"header scrolled\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-"
+          }
+        },
+        {
+          "label": "gallery Tab 3",
+          "evidence": {
+            "contained": false,
+            "active": "<body style=\"overflow: hidden;\">\n<header class=\"header scrolled\"><a class=\"logo\" href=\"site.html?v=retreat-landscape-header-1\">Clementine's</a>\n<nav class=\"nav\"><a href=\"site.html?v=retreat-landscape-"
+          }
+        },
+        {
+          "label": "location card clipping",
+          "evidence": {
+            "card": {
+              "x": 19.09375,
+              "y": 1246.65625,
+              "width": 343.796875,
+              "height": 343.796875,
+              "top": 1246.65625,
+              "right": 362.890625,
+              "bottom": 1590.453125,
+              "left": 19.09375
+            },
+            "image": {
+              "x": 19.09375,
+              "y": 1246.65625,
+              "width": 343.796875,
+              "height": 343.796875,
+              "top": 1246.65625,
+              "right": 362.890625,
+              "bottom": 1590.453125,
+              "left": 19.09375
+            },
+            "copy": {
+              "x": 19.09375,
+              "y": 1590.453125,
+              "width": 343.796875,
+              "height": 195.4375,
+              "top": 1590.453125,
+              "right": 362.890625,
+              "bottom": 1785.890625,
+              "left": 19.09375
+            },
+            "overflow": "hidden"
+          }
+        },
+        {
+          "label": "Discover PageDown after menu",
+          "evidence": null
+        },
+        {
+          "label": "short closing geometry",
+          "evidence": {
+            "viewport": [
+              772,
+              248
+            ],
+            "header": {
+              "x": 0,
+              "y": 0,
+              "width": 772,
+              "height": 60,
+              "top": 0,
+              "right": 772,
+              "bottom": 60,
+              "left": 0
+            },
+            "copy": {
+              "x": 126,
+              "y": 2049.015625,
+              "width": 520,
+              "height": 175.984375,
+              "top": 2049.015625,
+              "right": 646,
+              "bottom": 2225,
+              "left": 126
+            },
+            "button": {
+              "x": 288.671875,
+              "y": 2170.3125,
+              "width": 194.640625,
+              "height": 40.6875,
+              "top": 2170.3125,
+              "right": 483.3125,
+              "bottom": 2211,
+              "left": 288.671875
+            },
+            "scene": {
+              "x": 0,
+              "y": 1984,
+              "width": 772,
+              "height": 248,
+              "top": 1984,
+              "right": 772,
+              "bottom": 2232,
+              "left": 0
+            }
+          }
+        }
+      ],
+      "captures": [
+        {
+          "file": "short-discover-closing.png",
+          "outer": [
+            780,
+            300
+          ],
+          "frame": [
+            772,
+            248
+          ],
+          "inspected": true
+        }
+      ],
+      "errors": [],
+      "scans": [
+        {
+          "label": "Book open confirmation",
+          "violations": [
+            {
+              "id": "color-contrast",
+              "impact": "serious",
+              "nodes": [
+                {
+                  "html": "<span class=\"eyebrow\">Book</span>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 4.35 (foreground color: #8c735a, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<label>Retreat</label>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<label>Dates</label>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<label>Guests</label>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<label>Name</label>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<label>Email</label>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<label>Message</label>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 3.91 (foreground color: #807f7b, background color: #fffcf8, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1"
+                },
+                {
+                  "html": "<button type=\"button\" class=\"clementine-confirmation-ok\">OK</button>",
+                  "summary": "Fix any of the following:\n  Element has insufficient color contrast of 2.6 (foreground color: #ffffff, background color: #91a68f, font size: 12.8pt (17px), font weight: bold). Expected contrast ratio of 4.5:1"
+                }
+              ]
+            },
+            {
+              "id": "label",
+              "impact": "critical",
+              "nodes": [
+                {
+                  "html": "<input class=\"input\" type=\"number\" min=\"1\" max=\"6\" value=\"2\">",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                },
+                {
+                  "html": "<input class=\"input\" required=\"\">",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                },
+                {
+                  "html": "<input class=\"input\" type=\"email\" required=\"\">",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element has no placeholder attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ]
+            },
+            {
+              "id": "region",
+              "impact": "moderate",
+              "nodes": [
+                {
+                  "html": "<section class=\"section wrap\" style=\"padding-top:22vh\"><span class=\"eyebrow\">Book</span><h1 class=\"h2\">Simple. Calm. Beautiful.</h1></section>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<p style=\"margin-bottom:5vh;max-width:40ch;color:rgba(43,43,40,.75)\">Rates are tailored to the season and length of stay. We'd love to prepare a personalised quote for your visit.</p>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<label>Retreat</label>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<select class=\"input\"><option>Woodland Retreat</option><option>Coastal Retreat</option><option>Farm Retreat</option><option>Town Retreat</option><option>Undecided</option></select>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<label>Dates</label>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<input class=\"input\" type=\"text\" placeholder=\"Exact dates or flexible plans welcome\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<label>Guests</label>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<input class=\"input\" type=\"number\" min=\"1\" max=\"6\" value=\"2\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<label>Name</label>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<input class=\"input\" required=\"\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<label>Email</label>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<input class=\"input\" type=\"email\" required=\"\">",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<label>Message</label>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<textarea class=\"input\" rows=\"4\" placeholder=\"Tell us about your stay...\"></textarea>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                },
+                {
+                  "html": "<div>",
+                  "summary": "Fix any of the following:\n  Some page content is not contained by landmarks"
+                }
+              ]
+            },
+            {
+              "id": "select-name",
+              "impact": "critical",
+              "nodes": [
+                {
+                  "html": "<select class=\"input\"><option>Woodland Retreat</option><option>Coastal Retreat</option><option>Farm Retreat</option><option>Town Retreat</option><option>Undecided</option></select>",
+                  "summary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\""
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "assets": [],
+      "console": [],
+      "links": [],
+      "limits": []
+    }
+  }
+]

@@ -1,26 +1,41 @@
 
 const header=document.querySelector('.header');
 window.addEventListener('scroll',()=>{ header.classList.toggle('scrolled', scrollY>40); });
-const retreatMobileHeader = matchMedia('(max-width:900px), (max-width:1000px) and (orientation:landscape)');
-const retreatNav = document.querySelector('.nav');
-const retreatMenu = document.querySelector('.menu-btn');
-function closeRetreatMenu(){
-  retreatNav.classList.remove('open');
-  retreatMenu.setAttribute('aria-expanded','false');
-  retreatMenu.setAttribute('aria-label','Open menu');
+const reduceRetreatMotion=matchMedia('(prefers-reduced-motion: reduce)');
+const retreatMobileHeader=matchMedia('(max-width:900px), (max-width:1000px) and (orientation:landscape)');
+const retreatNav=document.querySelector('.nav'), retreatMenu=document.querySelector('.menu-btn');
+let menuInert=[];
+function closeRetreatMenu(restore=true){
+  const wasOpen=retreatNav.classList.contains('open');
+  retreatNav.classList.remove('open');retreatMenu.setAttribute('aria-expanded','false');retreatMenu.setAttribute('aria-label','Open menu');
+  menuInert.forEach(e=>e.inert=false);menuInert=[];document.querySelector('.logo').inert=false;
+  header.removeAttribute('role');header.removeAttribute('aria-modal');header.removeAttribute('aria-label');document.body.classList.remove('retreat-menu-open');
+  if(restore&&wasOpen)retreatMenu.focus();
 }
 retreatMenu?.addEventListener('click',()=>{
-  const open=retreatNav.classList.toggle('open');
-  retreatMenu.setAttribute('aria-expanded',String(open));
-  retreatMenu.setAttribute('aria-label',open?'Close menu':'Open menu');
+  if(retreatNav.classList.contains('open')){closeRetreatMenu();return;}
+  retreatNav.classList.add('open');retreatMenu.setAttribute('aria-expanded','true');retreatMenu.setAttribute('aria-label','Close menu');
+  header.setAttribute('role','dialog');header.setAttribute('aria-modal','true');header.setAttribute('aria-label','Navigation');
+  menuInert=[...document.body.children].filter(e=>e!==header&&!e.inert&&!['SCRIPT','STYLE','LINK'].includes(e.tagName));menuInert.forEach(e=>e.inert=true);
+  document.querySelector('.logo').inert=true;document.body.classList.add('retreat-menu-open');retreatNav.querySelector('a').focus();
 });
-retreatNav?.addEventListener('click',event=>{if(event.target.closest('a'))closeRetreatMenu();});
-document.addEventListener('keydown',event=>{if(event.key==='Escape'&&retreatNav?.classList.contains('open')){closeRetreatMenu();retreatMenu.focus();}});
+retreatNav?.addEventListener('click',e=>{if(e.target.closest('a'))closeRetreatMenu(false);});
+document.addEventListener('keydown',e=>{
+  if(!retreatNav?.classList.contains('open'))return;
+  if(e.key==='Escape'){e.preventDefault();closeRetreatMenu();}
+  if(e.key==='Tab'){
+    const focusable=[...retreatNav.querySelectorAll('a'),retreatMenu],first=focusable[0],last=focusable.at(-1);
+    if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+    else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+  }
+});
+retreatMobileHeader.addEventListener('change',()=>{if(!retreatMobileHeader.matches)closeRetreatMenu(false);});
 function returnRetreatToTop(){
   closeRetreatMenu();
   if(document.querySelector('.discover-track') && matchMedia('(max-width:700px) and (orientation:portrait), (max-width:1000px) and (orientation:landscape)').matches){
     document.dispatchEvent(new Event('retreat-return-top'));
   }else{
+    if(reduceRetreatMotion.matches){window.scrollTo({top:0,behavior:'instant'});return;}
     const start=window.scrollY, began=performance.now();
     const step=now=>{
       const t=Math.min(1,(now-began)/1500);
@@ -56,6 +71,10 @@ const scenes=document.querySelectorAll('.d-bg img');
 const sceneBlocks=document.querySelectorAll('.d-scene');
 const progress=document.querySelector('.progress');
 const updateDiscoverMotion=()=>{
+  if(reduceRetreatMotion.matches){
+    scenes.forEach(img=>{img.style.setProperty('--img-scale','1');img.style.setProperty('--img-opacity','1');});
+    sceneBlocks.forEach(scene=>{for(const key of ['--scene-shift','--scene-float','--text-lift'])scene.style.setProperty(key,'0px');scene.style.setProperty('--scene-scale','0');});return;
+  }
   const sc=scrollY/(document.body.scrollHeight-innerHeight);
   if(progress) progress.style.width=sc*100+'%';
   sceneBlocks.forEach((scene,index)=>{
@@ -136,17 +155,18 @@ if(thumbButtons.length && lightbox){
     lastTrigger=trigger;
     activeGallery=gallery;
     showImage(index);
+    lightbox.showModal();
     lightbox.classList.add('open');
-    lightbox.setAttribute('aria-hidden','false');
+
     document.body.style.overflow='hidden';
     closeBtn.focus();
   };
 
   const closeLightbox=()=>{
     lightbox.classList.remove('open');
-    lightbox.setAttribute('aria-hidden','true');
+    lightbox.close();
     document.body.style.overflow='';
-    lightboxImage.src='';
+    lightboxImage.removeAttribute('src');
     activeGallery=[];
     if(lastTrigger) lastTrigger.focus();
   };
@@ -168,6 +188,7 @@ if(thumbButtons.length && lightbox){
   prevBtn.addEventListener('click',()=>showImage(activeIndex-1));
   nextBtn.addEventListener('click',()=>showImage(activeIndex+1));
   closeBtn.addEventListener('click',closeLightbox);
+  lightbox.addEventListener('cancel',e=>{e.preventDefault();closeLightbox();});
 
   lightbox.addEventListener('click',(e)=>{
     if(e.target===lightbox) closeLightbox();
@@ -175,7 +196,7 @@ if(thumbButtons.length && lightbox){
 
   document.addEventListener('keydown',(e)=>{
     if(!lightbox.classList.contains('open')) return;
-    if(e.key==='Escape') closeLightbox();
+    if(e.key==='Escape'){e.preventDefault();closeLightbox();}
     if(e.key==='ArrowLeft' && !prevBtn.disabled) showImage(activeIndex-1);
     if(e.key==='ArrowRight' && !nextBtn.disabled) showImage(activeIndex+1);
   });
@@ -191,3 +212,14 @@ if(window.self===window.top){
   tab.setAttribute('aria-label','Back to Tab Lab gallery');
   document.body.append(tab);
 }
+
+
+// Keep Tab cycling inside native dialogs, including when the only control is OK.
+document.querySelectorAll('dialog').forEach(dialog=>dialog.addEventListener('keydown',e=>{
+ if(e.key!=='Tab')return;
+ const controls=[...dialog.querySelectorAll('a[href],button,input,select,textarea,[tabindex="0"]')].filter(el=>!el.disabled&&el.getClientRects().length);
+ if(!controls.length){e.preventDefault();return;}
+ const first=controls[0],last=controls.at(-1);
+ if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}
+ else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+}));
