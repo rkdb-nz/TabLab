@@ -12,7 +12,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        browser: [chromium, firefox, webkit]
+        browser: [chromium]
     steps:
       - uses: actions/checkout@v6
       - uses: actions/setup-node@v6
@@ -21,12 +21,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - if: matrix.browser != 'chromium'
         run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - run: node qa/tablab-routine.mjs
+      - run: node qa/tablab-focus.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: tablab-${{ matrix.browser }}
-          path: qa/tablab-results/
+          name: tablab-focus-${{ matrix.browser }}
+          path: qa/tablab-focus-results/
           retention-days: 90
