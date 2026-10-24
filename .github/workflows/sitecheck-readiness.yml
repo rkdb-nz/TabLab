@@ -1,7 +1,7 @@
-name: Theatre missing Chrome checks
+name: Theatre missing capture recovery
 on:
   pull_request:
-    paths: ['qa/theatre-continuation.mjs', '.github/workflows/sitecheck-readiness.yml']
+    paths: ['qa/theatre-capture-recovery.mjs', '.github/workflows/sitecheck-readiness.yml']
   workflow_dispatch:
 permissions:
   contents: read
@@ -21,12 +21,12 @@ jobs:
       - run: npm install --prefix qa --ignore-scripts
       - if: matrix.browser != 'chromium'
         run: timeout 240s node qa/node_modules/playwright/cli.js install --with-deps ${{ matrix.browser }}
-      - run: node qa/theatre-continuation.mjs
+      - run: node qa/theatre-capture-recovery.mjs
         env:
           QA_BROWSER: ${{ matrix.browser }}
       - uses: actions/upload-artifact@v5
         if: always()
         with:
-          name: theatre-continuation-${{ matrix.browser }}
+          name: theatre-recovered-${{ matrix.browser }}
           path: qa/theatre-results/
           retention-days: 90
