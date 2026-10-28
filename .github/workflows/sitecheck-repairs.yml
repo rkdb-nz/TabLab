@@ -1,0 +1,24 @@
+name: Sitewide targeted repairs
+on:
+  push:
+    branches: ['repair/sitewide-2026-10-28']
+    paths: ['public/**', 'qa/sitewide/**', '.github/workflows/sitecheck-repairs.yml']
+permissions:
+  contents: read
+jobs:
+  image:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update -qq && sudo apt-get install -y webp
+      - run: |
+          mkdir -p repair-image
+          cp public/assets/backgrounds/tablab-mobile-portrait.png repair-image/original.png
+          cwebp -lossless -z 9 -exact repair-image/original.png -o repair-image/tablab-mobile-portrait.webp
+          dwebp repair-image/tablab-mobile-portrait.webp -o repair-image/decoded.png
+          node -e "const fs=require('fs');const a=fs.statSync('repair-image/original.png').size,b=fs.statSync('repair-image/tablab-mobile-portrait.webp').size;if(b>=a)throw Error('No size improvement');fs.writeFileSync('repair-image/size.json',JSON.stringify({original:a,webp:b,reduction:1-b/a},null,2))"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: sitewide-repair-image
+          path: repair-image/
+          retention-days: 90

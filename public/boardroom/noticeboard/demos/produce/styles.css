@@ -881,3 +881,17 @@ button:focus-visible, a:focus-visible, .board ol:focus-visible { outline: 3px so
 .side-panel { height: var(--produce-height, 100dvh); max-height: var(--produce-height, 100dvh); }
 
 @container (max-height: 500px) { .board h1::after { content: "Scroll for all produce"; display: block; font-family: "Nunito Sans", sans-serif; font-weight: 600; font-size: 12px; letter-spacing: 0; margin-top: 3px; } }
+
+
+/* Keep every footer message available without a moving ticker. */
+@media (max-width:900px) {
+  .footer { height:84px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:0; overflow:visible; }
+  .footer div { width:auto; min-width:0; padding:6px; white-space:normal; text-align:center; animation:none; transform:none; }
+  .footer b { font-size:13px; line-height:1.15; }
+  .footer span { display:block; font-size:11px; line-height:1.2; margin-top:3px; }
+  .board-zone { bottom:96px; height:auto; }
+}
+@media (max-width:900px) and (orientation:landscape) {
+  .footer { height:64px; }
+  .board-zone { bottom:76px; height:auto; }
+}
