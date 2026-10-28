@@ -28,7 +28,7 @@ module.exports=async h=>{
  // Nine representative combinations: five Chromium sizes, two Firefox and two WebKit.
  for(const engine of ['chromium','firefox','webkit']){let b;try{b=await pw[engine].launch({headless:true});const {c,p}=await ctx(b,[1440,900]);const sizes=engine==='chromium'?[[1440,900],[390,844],[844,390],[320,568],[780,300]]:[[1440,900],[390,844]];
  for(const size of sizes){await go(p,'/index.html',size);await p.locator('#exploreButton').click();await p.getByRole('link',{name:'The Boardroom',exact:true}).waitFor({state:'visible'});check(engine+' '+size+' main navigation',await p.getByRole('link',{name:'The Boardroom',exact:true}).isVisible());const m=await metrics(p);R.visits.push({engine,size,file:'/index.html',metrics:m});check(engine+' '+size+' main no overflow',m.document[0]<=size[0]+2,m.document);if(size[0]===390||engine==='chromium'&&size[0]===1440)await shot(p,'landing-'+engine+'-'+size.join('x'),false);
- if(size[0]===390){const bg=await p.locator('#tablabMobile .landing').evaluate(e=>getComputedStyle(e).backgroundImage);check(engine+' optimised phone background active',bg.includes('tablab-mobile-portrait.webp'),bg);}}
+ if(size[0]===390){const bg=await p.locator('#tablabMobile .landing').evaluate(e=>({base:getComputedStyle(e).backgroundImage,before:getComputedStyle(e,'::before').backgroundImage}));check(engine+' Explore background retained',bg.base.includes('tablab-mobile-landscape.png')&&bg.before==='none',bg);}}
  await go(p,retreat+'book.html',[390,844]);await formTests(p,engine+' representative unchanged form');await c.close();}catch(e){error('smoke '+engine,e)}finally{if(b)await b.close()}}
  save();
 };
