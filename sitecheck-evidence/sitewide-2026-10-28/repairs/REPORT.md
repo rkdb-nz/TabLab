@@ -1,6 +1,6 @@
 # Tab Lab sitewide repair verification — 28 October 2026
 
-**Targeted routine repair check complete within the sampled scope. SW01–SW08 resolved on the repair branch. Production unchanged; publication awaits Robert's approval.**
+**Targeted routine repair check complete within the sampled scope. SW01–SW08 resolved on the repair branch. Published with Robert's approval on 29 October 2026; live smoke verification complete.**
 
 Baseline website: `7410e040214f7369013a41d47aa3422e4c4bd6e0`. Product repairs tested at `050482bd7cbee74993414f8a54ffbea3c705ded6`. Follow-ups `a12e546e2d67b6cf0961425bd8d653d6edb42c3c` and `28e98d1d28b9744572b3a12bb1b94b10e4222359` change only test infrastructure; their website tree is unchanged. The parent sitewide audit and its 82-image review ledger remain preserved, and provide unchanged-page evidence rather than being claimed as freshly rerun.
 
@@ -25,7 +25,7 @@ No new product findings were confirmed in this targeted sample.
 
 ## Items needing your attention or input
 
-- Approve production publication when ready. No further checking input or visual inspection from Robert is required.
+None. Publication and live smoke verification are complete.
 
 ## Verification and evidence
 
@@ -54,4 +54,8 @@ A focused independent source reviewer was used after the two incorrect image-lay
 
 ## Limits
 
-This is a targeted repair rerun, not another whole-site crawl or full WCAG certification. Physical phones, actual Safari/iOS, assistive-technology sessions, live delivery/backends and production field performance remain outside the sample. The baseline native-zoom platform limitation remains. No new Lighthouse score is claimed; lossless optimisation proves fewer bytes and identical pixels, not a guaranteed real-user loading time. Existing imagery, branding, analytics and metadata policies were retained. No production merge or real form delivery occurred.
+This is a targeted repair rerun, not another whole-site crawl or full WCAG certification. Physical phones, actual Safari/iOS, assistive-technology sessions, live delivery/backends and production field performance remain outside the sample. The baseline native-zoom platform limitation remains. No new Lighthouse score is claimed; lossless optimisation proves fewer bytes and identical pixels, not a guaranteed real-user loading time. Existing imagery, branding, analytics and metadata policies were retained. Production publication occurred on 29 October 2026 after explicit approval. No real form delivery occurred.
+
+## Publication completed — 29 October 2026
+
+Production commit `e95dcb6059a2a2a49b13de84d69cbf274e2bc0ce` publishes only the seven approved product files (eight repair groups), retaining the audit infrastructure on its separate branch. Cloudflare deployment succeeded. Six deployed resources match Git blob hashes exactly, including the lossless image; Pottery HTML matches after reversing Cloudflare email protection. Live landing navigation, Tailor Shop structure/wording and Retreat appearance were checked. See `publication.json`. No outstanding repair or publication action remains within the declared scope.

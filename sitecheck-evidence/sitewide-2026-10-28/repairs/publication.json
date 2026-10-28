@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-29",
+  "productionCommit": "e95dcb6059a2a2a49b13de84d69cbf274e2bc0ce",
+  "cloudflareDeployment": "61d6837b-3065-4f22-a2e3-37e3a26aa213",
+  "deploymentStatus": "success",
+  "changedFiles": [
+    {
+      "path": "public/assets/backgrounds/tablab-mobile-portrait.webp",
+      "sha": "0d4695b008c81de3e2a8ee53affff41bcab7da64",
+      "bytes": 1212976,
+      "deployedSha": "0d4695b008c81de3e2a8ee53affff41bcab7da64",
+      "match": true
+    },
+    {
+      "path": "public/boardroom/noticeboard/demos/charity-walk/styles.css",
+      "sha": "4e1060b769233187257b9a0553bd6f293ed12124",
+      "bytes": 29285,
+      "deployedSha": "4e1060b769233187257b9a0553bd6f293ed12124",
+      "match": true
+    },
+    {
+      "path": "public/boardroom/noticeboard/demos/produce/styles.css",
+      "sha": "f219b01bf1b767feabaed0db90e3f0020ac08347",
+      "bytes": 22463,
+      "deployedSha": "f219b01bf1b767feabaed0db90e3f0020ac08347",
+      "match": true
+    },
+    {
+      "path": "public/boardroom/skateboard/demos/pottery/mobile.html",
+      "sha": "eb11c56677f939b2adf50202f640c857ee6a5514",
+      "bytes": 33877,
+      "deployedSha": "89033a441c0f3bc1868e5f4986b18abcb5496338",
+      "match": false,
+      "normalisedMatch": true
+    },
+    {
+      "path": "public/boardroom/skateboard/demos/tailor/shop/index.html",
+      "sha": "cfd05507ade8d498bda37ded5c7be23f7c582fd5",
+      "bytes": 4994,
+      "deployedSha": "cfd05507ade8d498bda37ded5c7be23f7c582fd5",
+      "match": true
+    },
+    {
+      "path": "public/boardroom/springboard/demos/retreat/css/style.css",
+      "sha": "51049c11ecfecc031169ca389a003241f80cad14",
+      "bytes": 32734,
+      "deployedSha": "51049c11ecfecc031169ca389a003241f80cad14",
+      "match": true
+    },
+    {
+      "path": "public/css/tablab-mobile.css",
+      "sha": "5d98cf88e85768a46db40d7a0c86b5d3dbd1ab90",
+      "bytes": 28983,
+      "deployedSha": "5d98cf88e85768a46db40d7a0c86b5d3dbd1ab90",
+      "match": true
+    }
+  ],
+  "normalisation": "Pottery HTML matches after reversing Cloudflare email obfuscation/removing inserted email-decode script and normalising whitespace.",
+  "browserChecks": [
+    "Main Explore opened; four destinations visible; screenshot inspected.",
+    "Tailor Shop language en-NZ, one main, nine products, revised wording and .75 paragraph opacity confirmed live.",
+    "Retreat Home repaired backing visually inspected live."
+  ],
+  "status": "PUBLISHED_AND_LIVE_SMOKE_VERIFIED",
+  "limits": "Reuses targeted pre-publication evidence on byte-identical source; no new full audit or certification."
+}

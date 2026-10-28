@@ -2063,5 +2063,7 @@
     "pixelDifferences": 0,
     "gitBlob": "0d4695b008c81de3e2a8ee53affff41bcab7da64"
   },
-  "productionPublished": false
+  "productionPublished": true,
+  "productionCommit": "e95dcb6059a2a2a49b13de84d69cbf274e2bc0ce",
+  "publicationStatus": "PUBLISHED_AND_LIVE_SMOKE_VERIFIED"
 }
