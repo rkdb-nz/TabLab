@@ -1,0 +1,62 @@
+[
+  {
+    "url": "https://tablab.rkdb.nz/boardroom/billboard/index.html",
+    "match": true
+  },
+  {
+    "url": "https://tablab.rkdb.nz/boardroom/noticeboard/index.html",
+    "match": true
+  },
+  {
+    "url": "https://tablab.rkdb.nz/boardroom/skateboard/demos/florist/site.html",
+    "match": true
+  },
+  {
+    "url": "https://tablab.rkdb.nz/boardroom/skateboard/demos/pottery/site.html",
+    "match": true
+  },
+  {
+    "url": "https://tablab.rkdb.nz/boardroom/skateboard/demos/pottery/mobile.html",
+    "match": true
+  },
+  {
+    "url": "https://tablab.rkdb.nz/boardroom/skateboard/index.html",
+    "match": true
+  },
+  {
+    "url": "https://tablab.rkdb.nz/boardroom/springboard/demos/dining/sign.html",
+    "match": true
+  },
+  {
+    "url": "https://tablab.rkdb.nz/boardroom/springboard/demos/theatre/book-tickets.html",
+    "match": true
+  },
+  {
+    "url": "https://tablab.rkdb.nz/boardroom/springboard/demos/theatre/coming-soon.html",
+    "match": true
+  },
+  {
+    "url": "https://tablab.rkdb.nz/boardroom/springboard/demos/theatre/clementine-street.html",
+    "match": true
+  },
+  {
+    "url": "https://tablab.rkdb.nz/boardroom/springboard/index.html",
+    "match": true
+  },
+  {
+    "url": "https://tablab.rkdb.nz/boardroom/springboard/demos/theatre/now-playing.html",
+    "match": true
+  },
+  {
+    "url": "https://tablab.rkdb.nz/boardroom/springboard/demos/theatre/site.html",
+    "match": true
+  },
+  {
+    "url": "https://tablab.rkdb.nz/index.html",
+    "match": true
+  },
+  {
+    "url": "https://tablab.rkdb.nz/foundrycare/index.html",
+    "match": true
+  }
+]

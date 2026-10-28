@@ -1,0 +1,2025 @@
+{
+  "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0",
+  "status": "SITEWIDE_ROUTINE_COMPLETE_WITH_FINDINGS",
+  "repairGroups": [
+    "SW01",
+    "SW02",
+    "SW03",
+    "SW04",
+    "SW05",
+    "SW06",
+    "SW07",
+    "SW08"
+  ],
+  "counts": {
+    "declaredChromiumVisits": 97,
+    "declaredSecondaryVisits": 52,
+    "initialAxeScans": 38,
+    "confirmationAxeScans": 4,
+    "lighthouseRuns": 5,
+    "inspectedCaptures": 82,
+    "stableCaptures": 79,
+    "supersededUnstableCaptures": 3,
+    "internalDestinations": 64,
+    "textParity": {
+      "exact": 137,
+      "cloudflareEmailNormalised": 15,
+      "total": 152
+    }
+  },
+  "tasks": {
+    "census": {
+      "runnerCommit": "96ee0232fe0a9f9849bfa4abd537fe8a1f9a1f28",
+      "started": "2026-10-28T01:26:25.246Z",
+      "finished": "2026-10-28T01:29:59.195Z",
+      "rawStatus": "COLLECTION_INCOMPLETE_REVIEW_REQUIRED",
+      "executionErrors": [
+        "capture chromium_1440x900__boardroom_noticeboard_demos_diner_site_html",
+        "capture chromium_390x844__boardroom_noticeboard_demos_diner_site_html",
+        "capture chromium_390x844__boardroom_noticeboard_demos_produce_site_html",
+        "chromium:1440x900:/boardroom/skateboard/demos/pottery/mobile.html",
+        "chromium:390x844:/boardroom/springboard/demos/dining/site.html"
+      ],
+      "failedChecks": [],
+      "visits": 95,
+      "scans": 38,
+      "screens": 50,
+      "forms": [],
+      "checks": [
+        {
+          "name": "Snapshot rejects POST",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/billboard/demos/donut/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/billboard/demos/donut/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/billboard/demos/drilling/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/billboard/demos/drilling/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/billboard/demos/mini-golf/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/billboard/demos/mini-golf/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/billboard/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/billboard/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/noticeboard/demos/charity-walk/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/noticeboard/demos/charity-walk/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/noticeboard/demos/diner/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/noticeboard/demos/diner/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/noticeboard/demos/produce/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/noticeboard/demos/produce/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/noticeboard/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/noticeboard/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/skateboard/demos/florist/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/skateboard/demos/florist/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/skateboard/demos/florist/success.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/skateboard/demos/florist/success.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/skateboard/demos/pottery/mobile.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/skateboard/demos/pottery/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/skateboard/demos/pottery/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/skateboard/demos/tailor/shop/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/skateboard/demos/tailor/shop/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/skateboard/demos/tailor/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/skateboard/demos/tailor/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/skateboard/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/skateboard/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/dining/dine.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/dining/dine.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/dining/reviews.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/dining/reviews.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/dining/sign.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/dining/sign.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/dining/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/dining/wine.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/dining/wine.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/retreat/book.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/retreat/book.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/retreat/discover.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/retreat/discover.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/retreat/retreats.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/retreat/retreats.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/retreat/reviews.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/retreat/reviews.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/retreat/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/retreat/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/theatre/book-tickets.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/theatre/book-tickets.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/theatre/clementine-street.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/theatre/clementine-street.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/theatre/coming-soon.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/theatre/coming-soon.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/theatre/now-playing.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/theatre/now-playing.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/theatre/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/theatre/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/foundrycare/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/foundrycare/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/maintenance/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/maintenance/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/start/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/start/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/the-foundry/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/the-foundry/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/whywebsite/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/whywebsite/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/billboard/demos/donut/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/billboard/demos/drilling/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/billboard/demos/mini-golf/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/noticeboard/demos/charity-walk/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/noticeboard/demos/diner/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/noticeboard/demos/produce/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/skateboard/demos/florist/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/skateboard/demos/pottery/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/skateboard/demos/tailor/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/dining/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/retreat/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/springboard/demos/theatre/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:844x390:/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:844x390:/boardroom/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:844x390:/boardroom/springboard/demos/theatre/book-tickets.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:320x568:/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:320x568:/boardroom/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:320x568:/boardroom/springboard/demos/theatre/book-tickets.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:780x300:/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:780x300:/boardroom/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:780x300:/boardroom/springboard/demos/theatre/book-tickets.html no document horizontal overflow",
+          "ok": true
+        }
+      ]
+    },
+    "features": {
+      "runnerCommit": "96ee0232fe0a9f9849bfa4abd537fe8a1f9a1f28",
+      "started": "2026-10-28T01:26:21.297Z",
+      "finished": "2026-10-28T01:33:42.376Z",
+      "rawStatus": "COLLECTION_INCOMPLETE_REVIEW_REQUIRED",
+      "executionErrors": [
+        "Control /boardroom/skateboard/demos/pottery/mobile.html button[data-dialog=\"elinor\"]",
+        "Control /boardroom/skateboard/demos/pottery/mobile.html button[data-dialog=\"gallery\"]",
+        "Control /boardroom/skateboard/demos/pottery/mobile.html button[data-step=\"0\"]",
+        "Control /boardroom/skateboard/demos/pottery/mobile.html button[data-step=\"1\"]",
+        "Control /boardroom/skateboard/demos/pottery/mobile.html button[data-step=\"2\"]",
+        "Control /boardroom/skateboard/demos/pottery/mobile.html button[data-step=\"3\"]",
+        "Control /boardroom/skateboard/demos/pottery/mobile.html button[data-step=\"4\"]",
+        "Control /boardroom/skateboard/demos/pottery/mobile.html button[data-step=\"5\"]",
+        "Control /boardroom/skateboard/demos/pottery/mobile.html button[data-step=\"6\"]",
+        "Control /boardroom/skateboard/demos/pottery/mobile.html button[data-dialog=\"workshops\"]",
+        "Control /boardroom/skateboard/demos/pottery/mobile.html button[data-dialog=\"contact\"]",
+        "Control /boardroom/skateboard/demos/pottery/mobile.html button[data-dialog=\"visit-details\"]"
+      ],
+      "failedChecks": [
+        {
+          "name": "Rendered Home contrast .hero h1",
+          "ok": false,
+          "details": {
+            "selector": ".hero h1",
+            "text": "A collection of distinctive retreats.",
+            "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+            "color": [
+              255,
+              255,
+              255
+            ],
+            "opacity": 1,
+            "threshold": 3,
+            "minRatio": 1.2197277995967148,
+            "maxRatio": 19.902465562907537,
+            "samples": 15980,
+            "belowThreshold": 7328,
+            "worst": {
+              "x": 111,
+              "y": 191,
+              "background": [
+                239,
+                233,
+                206
+              ]
+            },
+            "viewport": [
+              1440,
+              900
+            ],
+            "state": "settled normal-motion Home at top; includes rendered image and pseudo-element backgrounds"
+          }
+        }
+      ],
+      "visits": 0,
+      "scans": 0,
+      "screens": 7,
+      "forms": [
+        {
+          "key": "control:http://127.0.0.1:39463/boardroom/billboard/demos/drilling/site.html#quote-form",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "control:http://127.0.0.1:39463/boardroom/billboard/demos/drilling/site.html#quote-form",
+          "state": "filled-submit"
+        },
+        {
+          "key": "control:http://127.0.0.1:39463/boardroom/noticeboard/demos/diner/site.html#form-0",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "control:http://127.0.0.1:39463/boardroom/noticeboard/demos/diner/site.html#form-0",
+          "state": "filled-submit"
+        },
+        {
+          "key": "initial:http://127.0.0.1:39463/boardroom/skateboard/demos/florist/site.html#enquiryForm",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "initial:http://127.0.0.1:39463/boardroom/skateboard/demos/florist/site.html#enquiryForm",
+          "state": "filled-submit"
+        },
+        {
+          "key": "control:http://127.0.0.1:39463/boardroom/skateboard/demos/florist/site.html#enquiryForm",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "control:http://127.0.0.1:39463/boardroom/skateboard/demos/florist/site.html#enquiryForm",
+          "state": "filled-submit"
+        },
+        {
+          "key": "initial:http://127.0.0.1:39463/boardroom/skateboard/demos/pottery/site.html#pottery-enquiry",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "initial:http://127.0.0.1:39463/boardroom/skateboard/demos/pottery/site.html#pottery-enquiry",
+          "state": "filled-submit"
+        },
+        {
+          "key": "control:http://127.0.0.1:39463/boardroom/skateboard/demos/tailor/site.html#visit-form",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "initial:http://127.0.0.1:39463/boardroom/springboard/demos/dining/sign.html#form-0",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "initial:http://127.0.0.1:39463/boardroom/springboard/demos/dining/sign.html#form-0",
+          "state": "filled-submit"
+        },
+        {
+          "key": "control:http://127.0.0.1:39463/boardroom/springboard/demos/dining/sign.html#form-0",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "control:http://127.0.0.1:39463/boardroom/springboard/demos/dining/sign.html#form-0",
+          "state": "filled-submit"
+        },
+        {
+          "key": "initial:http://127.0.0.1:39463/boardroom/springboard/demos/retreat/book.html#clementine-book-form",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "initial:http://127.0.0.1:39463/boardroom/springboard/demos/retreat/book.html#clementine-book-form",
+          "state": "filled-submit"
+        },
+        {
+          "key": "control:http://127.0.0.1:39463/boardroom/springboard/demos/theatre/clementine-street.html#hireForm",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "control:http://127.0.0.1:39463/boardroom/springboard/demos/theatre/clementine-street.html#hireForm",
+          "state": "filled-submit"
+        }
+      ],
+      "checks": [
+        {
+          "name": "Snapshot rejects POST",
+          "ok": true
+        },
+        {
+          "name": "Wrapper fullscreen 1440,900",
+          "ok": true
+        },
+        {
+          "name": "Wrapper fullscreen return 1440,900",
+          "ok": true
+        },
+        {
+          "name": "Wrapper back gallery 1440,900",
+          "ok": true
+        },
+        {
+          "name": "Wrapper fullscreen 390,844",
+          "ok": true
+        },
+        {
+          "name": "Wrapper fullscreen return 390,844",
+          "ok": true
+        },
+        {
+          "name": "Wrapper back gallery 390,844",
+          "ok": true
+        },
+        {
+          "name": "Pottery scene index 0 no-preference",
+          "ok": true
+        },
+        {
+          "name": "Pottery scene index 1 no-preference",
+          "ok": true
+        },
+        {
+          "name": "Pottery scene index 2 no-preference",
+          "ok": true
+        },
+        {
+          "name": "Pottery scene index 3 no-preference",
+          "ok": true
+        },
+        {
+          "name": "Pottery scene index 4 no-preference",
+          "ok": true
+        },
+        {
+          "name": "Pottery returns first no-preference",
+          "ok": true
+        },
+        {
+          "name": "Pottery scene index 0 reduce",
+          "ok": true
+        },
+        {
+          "name": "Pottery scene index 1 reduce",
+          "ok": true
+        },
+        {
+          "name": "Pottery scene index 2 reduce",
+          "ok": true
+        },
+        {
+          "name": "Pottery scene index 3 reduce",
+          "ok": true
+        },
+        {
+          "name": "Pottery scene index 4 reduce",
+          "ok": true
+        },
+        {
+          "name": "Pottery returns first reduce",
+          "ok": true
+        },
+        {
+          "name": "Theatre checkout initially disabled",
+          "ok": true
+        },
+        {
+          "name": "Theatre checkout enabled with selection",
+          "ok": true
+        },
+        {
+          "name": "Theatre reset disables checkout",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 0 first boundary",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 0 image 0",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 0 image 1",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 0 image 2",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 0 next boundary",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 0 returns first",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 0 focus stays inside",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 0 closes",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 0 focus returns",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 1 first boundary",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 1 image 0",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 1 image 1",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 1 image 2",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 1 next boundary",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 1 returns first",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 1 focus stays inside",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 1 closes",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 1 focus returns",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 2 first boundary",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 2 image 0",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 2 image 1",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 2 image 2",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 2 next boundary",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 2 returns first",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 2 focus stays inside",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 2 closes",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 2 focus returns",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 3 first boundary",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 3 image 0",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 3 image 1",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 3 image 2",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 3 next boundary",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 3 returns first",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 3 focus stays inside",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 3 closes",
+          "ok": true
+        },
+        {
+          "name": "normal gallery 3 focus returns",
+          "ok": true
+        },
+        {
+          "name": "normal scene previous first boundary",
+          "ok": true
+        },
+        {
+          "name": "normal scene 0 active",
+          "ok": true
+        },
+        {
+          "name": "normal scene 1 active",
+          "ok": true
+        },
+        {
+          "name": "normal scene 2 active",
+          "ok": true
+        },
+        {
+          "name": "normal scene 3 active",
+          "ok": true
+        },
+        {
+          "name": "normal scene 4 active",
+          "ok": true
+        },
+        {
+          "name": "normal scene 5 active",
+          "ok": true
+        },
+        {
+          "name": "normal scene 6 active",
+          "ok": true
+        },
+        {
+          "name": "normal scene 7 active",
+          "ok": true
+        },
+        {
+          "name": "normal scene 8 active",
+          "ok": true
+        },
+        {
+          "name": "normal scene next last boundary",
+          "ok": true
+        },
+        {
+          "name": "normal scenes return first",
+          "ok": true
+        },
+        {
+          "name": "normal scene keyboard navigation",
+          "ok": true
+        },
+        {
+          "name": "normal scene back to top",
+          "ok": true
+        },
+        {
+          "name": "Invalid variant missing name blocks completion",
+          "ok": true
+        },
+        {
+          "name": "Invalid variant malformed email blocks completion",
+          "ok": true
+        },
+        {
+          "name": "Invalid variant zero guests blocks completion",
+          "ok": true
+        },
+        {
+          "name": "Invalid variant too many guests blocks completion",
+          "ok": true
+        },
+        {
+          "name": "Invalid variant fractional guests blocks completion",
+          "ok": true
+        },
+        {
+          "name": "Form keyboard order",
+          "ok": true
+        },
+        {
+          "name": "Enquiry preselection woodland",
+          "ok": true
+        },
+        {
+          "name": "Enquiry fragment woodland",
+          "ok": true
+        },
+        {
+          "name": "Enquiry preselection coastal",
+          "ok": true
+        },
+        {
+          "name": "Enquiry fragment coastal",
+          "ok": true
+        },
+        {
+          "name": "Enquiry preselection farm",
+          "ok": true
+        },
+        {
+          "name": "Enquiry fragment farm",
+          "ok": true
+        },
+        {
+          "name": "Enquiry preselection town",
+          "ok": true
+        },
+        {
+          "name": "Enquiry fragment town",
+          "ok": true
+        },
+        {
+          "name": "Enquiry preselection undecided",
+          "ok": true
+        },
+        {
+          "name": "Enquiry fragment undecided",
+          "ok": true
+        },
+        {
+          "name": "Skip link reaches main",
+          "ok": true
+        },
+        {
+          "name": "Home back to top",
+          "ok": true
+        },
+        {
+          "name": "Menu Tab stays inside",
+          "ok": true
+        },
+        {
+          "name": "Menu Escape returns focus",
+          "ok": true
+        },
+        {
+          "name": "Rendered Home contrast .logo",
+          "ok": true
+        },
+        {
+          "name": "Rendered Home contrast #retreat-navigation > a:nth-child(1)",
+          "ok": true
+        },
+        {
+          "name": "Rendered Home contrast #retreat-navigation > a:nth-child(2)",
+          "ok": true
+        },
+        {
+          "name": "Rendered Home contrast #retreat-navigation > a:nth-child(3)",
+          "ok": true
+        },
+        {
+          "name": "Rendered Home contrast #retreat-navigation > a:nth-child(4)",
+          "ok": true
+        },
+        {
+          "name": "Rendered Home contrast #retreat-navigation > a:nth-child(5)",
+          "ok": true
+        },
+        {
+          "name": "Rendered Home contrast .hero h1",
+          "ok": false
+        },
+        {
+          "name": "Rendered Home contrast .hero-content > p",
+          "ok": true
+        },
+        {
+          "name": "Reduced-motion media honoured",
+          "ok": true
+        },
+        {
+          "name": "Reduced Home transitions disabled",
+          "ok": true
+        },
+        {
+          "name": "reduce gallery 0 first boundary",
+          "ok": true
+        },
+        {
+          "name": "reduce gallery 0 image 0",
+          "ok": true
+        },
+        {
+          "name": "reduce gallery 0 image 1",
+          "ok": true
+        },
+        {
+          "name": "reduce gallery 0 image 2",
+          "ok": true
+        },
+        {
+          "name": "reduce gallery 0 next boundary",
+          "ok": true
+        },
+        {
+          "name": "reduce gallery 0 returns first",
+          "ok": true
+        },
+        {
+          "name": "reduce gallery 0 focus stays inside",
+          "ok": true
+        },
+        {
+          "name": "reduce gallery 0 closes",
+          "ok": true
+        },
+        {
+          "name": "reduce gallery 0 focus returns",
+          "ok": true
+        },
+        {
+          "name": "reduce scene previous first boundary",
+          "ok": true
+        },
+        {
+          "name": "reduce scene 0 active",
+          "ok": true
+        },
+        {
+          "name": "Reduced scene 0 has no transition",
+          "ok": true
+        },
+        {
+          "name": "reduce scene 1 active",
+          "ok": true
+        },
+        {
+          "name": "Reduced scene 1 has no transition",
+          "ok": true
+        },
+        {
+          "name": "reduce scene 2 active",
+          "ok": true
+        },
+        {
+          "name": "Reduced scene 2 has no transition",
+          "ok": true
+        },
+        {
+          "name": "reduce scene 3 active",
+          "ok": true
+        },
+        {
+          "name": "Reduced scene 3 has no transition",
+          "ok": true
+        },
+        {
+          "name": "reduce scene 4 active",
+          "ok": true
+        },
+        {
+          "name": "Reduced scene 4 has no transition",
+          "ok": true
+        },
+        {
+          "name": "reduce scene 5 active",
+          "ok": true
+        },
+        {
+          "name": "Reduced scene 5 has no transition",
+          "ok": true
+        },
+        {
+          "name": "reduce scene 6 active",
+          "ok": true
+        },
+        {
+          "name": "Reduced scene 6 has no transition",
+          "ok": true
+        },
+        {
+          "name": "reduce scene 7 active",
+          "ok": true
+        },
+        {
+          "name": "Reduced scene 7 has no transition",
+          "ok": true
+        },
+        {
+          "name": "reduce scene 8 active",
+          "ok": true
+        },
+        {
+          "name": "Reduced scene 8 has no transition",
+          "ok": true
+        },
+        {
+          "name": "reduce scene next last boundary",
+          "ok": true
+        },
+        {
+          "name": "reduce scenes return first",
+          "ok": true
+        },
+        {
+          "name": "reduce scene keyboard navigation",
+          "ok": true
+        },
+        {
+          "name": "reduce scene back to top",
+          "ok": true
+        },
+        {
+          "name": "Reduced form focus trapped",
+          "ok": true
+        },
+        {
+          "name": "Reduced form focus returns",
+          "ok": true
+        }
+      ]
+    },
+    "secondary": {
+      "runnerCommit": "96ee0232fe0a9f9849bfa4abd537fe8a1f9a1f28",
+      "started": "2026-10-28T01:26:30.813Z",
+      "finished": "2026-10-28T01:28:04.616Z",
+      "rawStatus": "COLLECTION_FINISHED_REVIEW_REQUIRED",
+      "executionErrors": [],
+      "failedChecks": [],
+      "visits": 52,
+      "scans": 0,
+      "screens": 4,
+      "forms": [
+        {
+          "key": "firefox:http://127.0.0.1:39863/boardroom/springboard/demos/retreat/book.html#clementine-book-form",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "firefox:http://127.0.0.1:39863/boardroom/springboard/demos/retreat/book.html#clementine-book-form",
+          "state": "filled-submit"
+        },
+        {
+          "key": "webkit:http://127.0.0.1:39863/boardroom/springboard/demos/retreat/book.html#clementine-book-form",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "webkit:http://127.0.0.1:39863/boardroom/springboard/demos/retreat/book.html#clementine-book-form",
+          "state": "filled-submit"
+        }
+      ],
+      "checks": [
+        {
+          "name": "Snapshot rejects POST",
+          "ok": true
+        },
+        {
+          "name": "firefox:1440x900:/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:1440x900:/boardroom/billboard/demos/donut/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:1440x900:/boardroom/billboard/demos/drilling/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:1440x900:/boardroom/billboard/demos/mini-golf/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:1440x900:/boardroom/noticeboard/demos/charity-walk/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:1440x900:/boardroom/noticeboard/demos/diner/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:1440x900:/boardroom/noticeboard/demos/produce/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:1440x900:/boardroom/skateboard/demos/florist/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:1440x900:/boardroom/skateboard/demos/pottery/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:1440x900:/boardroom/skateboard/demos/tailor/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:1440x900:/boardroom/springboard/demos/dining/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:1440x900:/boardroom/springboard/demos/retreat/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:1440x900:/boardroom/springboard/demos/theatre/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:390x844:/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:390x844:/boardroom/billboard/demos/donut/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:390x844:/boardroom/billboard/demos/drilling/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:390x844:/boardroom/billboard/demos/mini-golf/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:390x844:/boardroom/noticeboard/demos/charity-walk/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:390x844:/boardroom/noticeboard/demos/diner/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:390x844:/boardroom/noticeboard/demos/produce/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:390x844:/boardroom/skateboard/demos/florist/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:390x844:/boardroom/skateboard/demos/pottery/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:390x844:/boardroom/skateboard/demos/tailor/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:390x844:/boardroom/springboard/demos/dining/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:390x844:/boardroom/springboard/demos/retreat/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox:390x844:/boardroom/springboard/demos/theatre/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "firefox 1440,900 landing interaction",
+          "ok": true
+        },
+        {
+          "name": "firefox 390,844 landing interaction",
+          "ok": true
+        },
+        {
+          "name": "webkit:1440x900:/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:1440x900:/boardroom/billboard/demos/donut/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:1440x900:/boardroom/billboard/demos/drilling/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:1440x900:/boardroom/billboard/demos/mini-golf/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:1440x900:/boardroom/noticeboard/demos/charity-walk/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:1440x900:/boardroom/noticeboard/demos/diner/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:1440x900:/boardroom/noticeboard/demos/produce/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:1440x900:/boardroom/skateboard/demos/florist/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:1440x900:/boardroom/skateboard/demos/pottery/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:1440x900:/boardroom/skateboard/demos/tailor/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:1440x900:/boardroom/springboard/demos/dining/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:1440x900:/boardroom/springboard/demos/retreat/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:1440x900:/boardroom/springboard/demos/theatre/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:390x844:/index.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:390x844:/boardroom/billboard/demos/donut/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:390x844:/boardroom/billboard/demos/drilling/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:390x844:/boardroom/billboard/demos/mini-golf/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:390x844:/boardroom/noticeboard/demos/charity-walk/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:390x844:/boardroom/noticeboard/demos/diner/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:390x844:/boardroom/noticeboard/demos/produce/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:390x844:/boardroom/skateboard/demos/florist/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:390x844:/boardroom/skateboard/demos/pottery/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:390x844:/boardroom/skateboard/demos/tailor/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:390x844:/boardroom/springboard/demos/dining/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:390x844:/boardroom/springboard/demos/retreat/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit:390x844:/boardroom/springboard/demos/theatre/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "webkit 1440,900 landing interaction",
+          "ok": true
+        },
+        {
+          "name": "webkit 390,844 landing interaction",
+          "ok": true
+        }
+      ]
+    },
+    "lighthouse": {
+      "runnerCommit": "96ee0232fe0a9f9849bfa4abd537fe8a1f9a1f28",
+      "started": "2026-10-28T01:26:14.913Z",
+      "finished": "2026-10-28T01:27:10.911Z",
+      "rawStatus": "COLLECTION_FINISHED_REVIEW_REQUIRED",
+      "executionErrors": [],
+      "failedChecks": [],
+      "visits": 0,
+      "scans": 0,
+      "screens": 0,
+      "forms": [],
+      "checks": [
+        {
+          "name": "Snapshot rejects POST",
+          "ok": true
+        }
+      ]
+    },
+    "recovery": {
+      "runnerCommit": "b8e39a2c62252fe12e3f6a2407746346cf97ae11",
+      "started": "2026-10-28T02:33:28.243Z",
+      "finished": "2026-10-28T02:38:12.794Z",
+      "rawStatus": "COLLECTION_INCOMPLETE_REVIEW_REQUIRED",
+      "executionErrors": [
+        "Nested recovery /boardroom/billboard/demos/donut/site.html #catering-enquiry",
+        "Nested recovery /boardroom/noticeboard/demos/diner/site.html button[data-demo-complete=\"call\"]",
+        "Nested recovery /boardroom/noticeboard/demos/diner/site.html button[data-demo-complete=\"directions\"]"
+      ],
+      "failedChecks": [],
+      "visits": 2,
+      "scans": 0,
+      "screens": 10,
+      "forms": [
+        {
+          "key": "recovery:http://127.0.0.1:46309/boardroom/billboard/demos/donut/site.html#order-form",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "recovery:http://127.0.0.1:46309/boardroom/billboard/demos/donut/site.html#order-form",
+          "state": "filled-submit"
+        },
+        {
+          "key": "recovery:http://127.0.0.1:46309/boardroom/billboard/demos/mini-golf/site.html#booking-form",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "recovery:http://127.0.0.1:46309/boardroom/billboard/demos/mini-golf/site.html#booking-form",
+          "state": "filled-submit"
+        },
+        {
+          "key": "recovery:http://127.0.0.1:46309/boardroom/skateboard/demos/tailor/site.html#visit-form",
+          "state": "empty-submit",
+          "valid": false
+        }
+      ],
+      "checks": [
+        {
+          "name": "Snapshot rejects POST",
+          "ok": true
+        },
+        {
+          "name": "Diner ticker paused 1440,900",
+          "ok": true
+        },
+        {
+          "name": "Diner ticker paused 390,844",
+          "ok": true
+        },
+        {
+          "name": "chromium:1440x900:/boardroom/skateboard/demos/pottery/mobile.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "chromium:390x844:/boardroom/springboard/demos/dining/site.html no document horizontal overflow",
+          "ok": true
+        },
+        {
+          "name": "Pottery active scene 1 button[data-dialog=\"elinor\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery dialog Escape button[data-dialog=\"elinor\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery active scene 2 button[data-dialog=\"gallery\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery dialog Escape button[data-dialog=\"gallery\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery active scene 2 #collection-next",
+          "ok": true
+        },
+        {
+          "name": "Pottery active scene 2 #collection-prev",
+          "ok": true
+        },
+        {
+          "name": "Pottery active scene 3 button[data-step=\"0\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery active scene 3 button[data-step=\"1\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery active scene 3 button[data-step=\"2\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery active scene 3 button[data-step=\"3\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery active scene 3 button[data-step=\"4\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery active scene 3 button[data-step=\"5\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery active scene 3 button[data-step=\"6\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery active scene 4 button[data-dialog=\"workshops\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery dialog Escape button[data-dialog=\"workshops\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery active scene 4 button[data-dialog=\"contact\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery dialog Escape button[data-dialog=\"contact\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery active scene 4 button[data-dialog=\"visit-details\"]",
+          "ok": true
+        },
+        {
+          "name": "Pottery dialog Escape button[data-dialog=\"visit-details\"]",
+          "ok": true
+        }
+      ]
+    },
+    "focus": {
+      "runnerCommit": "fd7bbcd0f81ec547bf53012196cfe5f54ff62cdb",
+      "started": "2026-10-28T02:38:53.262Z",
+      "finished": "2026-10-28T02:39:27.526Z",
+      "rawStatus": "COLLECTION_INCOMPLETE_REVIEW_REQUIRED",
+      "executionErrors": [
+        "form focus:http://127.0.0.1:40011/boardroom/springboard/demos/dining/sign.html#email-request-form"
+      ],
+      "failedChecks": [],
+      "visits": 0,
+      "scans": 4,
+      "screens": 6,
+      "forms": [
+        {
+          "key": "focus:http://127.0.0.1:40011/boardroom/noticeboard/demos/charity-walk/site.html#message-form",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "focus:http://127.0.0.1:40011/boardroom/noticeboard/demos/charity-walk/site.html#message-form",
+          "state": "filled-submit"
+        },
+        {
+          "key": "focus:http://127.0.0.1:40011/boardroom/noticeboard/demos/charity-walk/site.html#mobile-message-form",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "focus:http://127.0.0.1:40011/boardroom/noticeboard/demos/charity-walk/site.html#mobile-message-form",
+          "state": "filled-submit"
+        },
+        {
+          "key": "focus:http://127.0.0.1:40011/boardroom/springboard/demos/dining/sign.html#email-request-form",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "focus:http://127.0.0.1:40011/boardroom/skateboard/demos/tailor/site.html#visit-form",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "focus:http://127.0.0.1:40011/boardroom/skateboard/demos/tailor/site.html#visit-form",
+          "state": "filled-submit"
+        }
+      ],
+      "checks": [
+        {
+          "name": "Snapshot rejects POST",
+          "ok": true
+        }
+      ]
+    },
+    "nested": {
+      "runnerCommit": "88b069166cfd0ef20b1c51edaad5c417ae21f662",
+      "started": "2026-10-28T02:49:18.784Z",
+      "finished": "2026-10-28T02:50:35.676Z",
+      "rawStatus": "COLLECTION_INCOMPLETE_REVIEW_REQUIRED",
+      "executionErrors": [
+        "Pottery finite maker/collection controls"
+      ],
+      "failedChecks": [],
+      "visits": 0,
+      "scans": 0,
+      "screens": 5,
+      "forms": [
+        {
+          "key": "nested:http://127.0.0.1:37391/boardroom/billboard/demos/donut/site.html#catering-form",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "nested:http://127.0.0.1:37391/boardroom/billboard/demos/donut/site.html#catering-form",
+          "state": "filled-submit"
+        },
+        {
+          "key": "nested:http://127.0.0.1:37391/boardroom/springboard/demos/dining/sign.html#email-request-form",
+          "state": "empty-submit",
+          "valid": false
+        },
+        {
+          "key": "nested:http://127.0.0.1:37391/boardroom/springboard/demos/dining/sign.html#email-request-form",
+          "state": "filled-submit"
+        }
+      ],
+      "checks": [
+        {
+          "name": "Snapshot rejects POST",
+          "ok": true
+        },
+        {
+          "name": "Donut Catering enquiry opens from native menu",
+          "ok": true
+        },
+        {
+          "name": "Donut Catering empty form is invalid",
+          "ok": true
+        },
+        {
+          "name": "Donut Catering filled form was exercised",
+          "ok": true
+        },
+        {
+          "name": "Donut Catering result honestly says nothing sent",
+          "ok": true
+        },
+        {
+          "name": "Donut Catering Escape closes and restores reachable opener",
+          "ok": true
+        },
+        {
+          "name": "Diner call reaches Contact from Find Us",
+          "ok": true
+        },
+        {
+          "name": "Diner call completion is honest",
+          "ok": true
+        },
+        {
+          "name": "Diner call Escape restores Find Us and its link",
+          "ok": true
+        },
+        {
+          "name": "Diner call second Escape restores main opener",
+          "ok": true
+        },
+        {
+          "name": "Diner directions reaches Contact from Find Us",
+          "ok": true
+        },
+        {
+          "name": "Diner directions completion is honest",
+          "ok": true
+        },
+        {
+          "name": "Diner directions Escape restores Find Us and its link",
+          "ok": true
+        },
+        {
+          "name": "Diner directions second Escape restores main opener",
+          "ok": true
+        },
+        {
+          "name": "Dining native Home reveal 1440,900",
+          "ok": true
+        },
+        {
+          "name": "Dining revealed Dine card navigates 1440,900",
+          "ok": true
+        },
+        {
+          "name": "Dining native Home reveal 390,844",
+          "ok": true
+        },
+        {
+          "name": "Dining revealed Dine card navigates 390,844",
+          "ok": true
+        },
+        {
+          "name": "Dining mobile email empty form invalid",
+          "ok": true
+        },
+        {
+          "name": "Dining mobile confirmation is a no-send demonstration",
+          "ok": true
+        },
+        {
+          "name": "Dining mobile completion restores request button",
+          "ok": true
+        },
+        {
+          "name": "Charity Diary has expected five entries",
+          "ok": true
+        },
+        {
+          "name": "Charity Diary entry 1 is current",
+          "ok": true
+        },
+        {
+          "name": "Charity Diary entry 2 is current",
+          "ok": true
+        },
+        {
+          "name": "Charity Diary entry 3 is current",
+          "ok": true
+        },
+        {
+          "name": "Charity Diary entry 4 is current",
+          "ok": true
+        },
+        {
+          "name": "Charity Diary entry 5 is current",
+          "ok": true
+        },
+        {
+          "name": "Charity Diary entries are distinct",
+          "ok": true
+        },
+        {
+          "name": "Charity Diary Previous reverses one entry",
+          "ok": true
+        },
+        {
+          "name": "Tailor Collection has expected six looks",
+          "ok": true
+        },
+        {
+          "name": "Tailor look 1 is active",
+          "ok": true
+        },
+        {
+          "name": "Tailor look 2 is active",
+          "ok": true
+        },
+        {
+          "name": "Tailor look 3 is active",
+          "ok": true
+        },
+        {
+          "name": "Tailor look 4 is active",
+          "ok": true
+        },
+        {
+          "name": "Tailor look 5 is active",
+          "ok": true
+        },
+        {
+          "name": "Tailor look 6 is active",
+          "ok": true
+        },
+        {
+          "name": "Tailor collection views are distinct",
+          "ok": true
+        },
+        {
+          "name": "Tailor Next look wraps to first",
+          "ok": true
+        },
+        {
+          "name": "Tailor Previous look wraps to last",
+          "ok": true
+        },
+        {
+          "name": "Tailor Craft has native disclosure controls",
+          "ok": true
+        },
+        {
+          "name": "Tailor Craft disclosure 0 opens exclusively",
+          "ok": true
+        },
+        {
+          "name": "Tailor Craft disclosure 0 closes with keyboard",
+          "ok": true
+        },
+        {
+          "name": "Tailor Craft disclosure 1 opens exclusively",
+          "ok": true
+        },
+        {
+          "name": "Tailor Craft disclosure 1 closes with keyboard",
+          "ok": true
+        },
+        {
+          "name": "Tailor Craft disclosure 2 opens exclusively",
+          "ok": true
+        },
+        {
+          "name": "Tailor Craft disclosure 2 closes with keyboard",
+          "ok": true
+        },
+        {
+          "name": "Tailor Craft disclosure 3 opens exclusively",
+          "ok": true
+        },
+        {
+          "name": "Tailor Craft disclosure 3 closes with keyboard",
+          "ok": true
+        },
+        {
+          "name": "Pottery maker normal mode offers Pause photos",
+          "ok": true
+        },
+        {
+          "name": "Pottery maker Pause sets pressed state",
+          "ok": true
+        },
+        {
+          "name": "Pottery maker pause holds photograph beyond a full interval",
+          "ok": true
+        },
+        {
+          "name": "Pottery maker Play resumes unpressed state",
+          "ok": true
+        },
+        {
+          "name": "Pottery maker reduced mode offers Next photo",
+          "ok": true
+        },
+        {
+          "name": "Pottery reduced Next photo advances photograph",
+          "ok": true
+        },
+        {
+          "name": "Pottery collection 1 selected",
+          "ok": true
+        },
+        {
+          "name": "Rendered target contrast .gallery-head > p",
+          "ok": true
+        },
+        {
+          "name": "Rendered target contrast .gallery-head > h2",
+          "ok": true
+        }
+      ]
+    },
+    "collection": {
+      "runnerCommit": "569b40b2036677312a66cde0a28d28dc0ae89701",
+      "started": "2026-10-28T02:55:03.174Z",
+      "finished": "2026-10-28T02:55:16.971Z",
+      "rawStatus": "COLLECTION_FINISHED_REVIEW_REQUIRED",
+      "executionErrors": [],
+      "failedChecks": [],
+      "visits": 0,
+      "scans": 0,
+      "screens": 0,
+      "forms": [],
+      "checks": [
+        {
+          "name": "Snapshot rejects POST",
+          "ok": true
+        },
+        {
+          "name": "Pottery collection scene actually active",
+          "ok": true
+        },
+        {
+          "name": "Pottery collection 1 selected",
+          "ok": true
+        },
+        {
+          "name": "Pottery collection 2 selected",
+          "ok": true
+        },
+        {
+          "name": "Pottery collection 3 selected",
+          "ok": true
+        },
+        {
+          "name": "Pottery all three collection titles distinct",
+          "ok": true
+        },
+        {
+          "name": "Pottery collection next wraps first",
+          "ok": true
+        },
+        {
+          "name": "Pottery collection previous wraps last",
+          "ok": true
+        }
+      ]
+    }
+  },
+  "resolutions": [
+    {
+      "initial": "Census moving captures: Diner desktop/phone, Produce phone",
+      "resolvedBy": "recovery",
+      "evidence": "recovered-*.png; stable, Diner uses UI Pause; Produce phase hold recorded"
+    },
+    {
+      "initial": "Census responsive-navigation errors, two visits",
+      "resolvedBy": "recovery",
+      "evidence": "both missing keys recorded in visits"
+    },
+    {
+      "initial": "Pottery generic control errors",
+      "resolvedBy": "recovery",
+      "evidence": "14 recovered controls, no false checks"
+    },
+    {
+      "initial": "Donut hidden duplicate/menu and Diner inert background contact links",
+      "resolvedBy": "nested",
+      "evidence": "native scoped openers, no-send assertions and focus restoration all pass"
+    },
+    {
+      "initial": "Tailor test closed containing dialog",
+      "resolvedBy": "focus",
+      "evidence": "empty and honest completion observed after preserving original dialog"
+    },
+    {
+      "initial": "Dining readonly To field prevented generic fill",
+      "resolvedBy": "nested",
+      "evidence": "readonly fields skipped, empty and honest completion plus focus return pass"
+    },
+    {
+      "initial": "Pottery fragment-only goto did not activate Collection",
+      "resolvedBy": "collection",
+      "evidence": "fresh page, actual scene navigation, all three distinct collections and wrap checks pass"
+    },
+    {
+      "initial": "Noticeboard axe contrast used unpainted background",
+      "resolvedBy": "nested",
+      "evidence": [
+        {
+          "selector": ".gallery-head > p",
+          "text": "NOTICEBOARD IN ACTION",
+          "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+          "color": [
+            33,
+            27,
+            22
+          ],
+          "opacity": 1,
+          "threshold": 4.5,
+          "minRatio": 12.80049665125674,
+          "maxRatio": 12.929526367711935,
+          "samples": 355,
+          "belowThreshold": 0,
+          "worst": {
+            "x": 76,
+            "y": 250,
+            "background": [
+              232,
+              223,
+              196
+            ]
+          },
+          "viewport": [
+            1440,
+            900
+          ],
+          "state": "settled target page at top; includes rendered image and pseudo-element backgrounds"
+        },
+        {
+          "selector": ".gallery-head > h2",
+          "text": "Three examples. Fresh information, without the fuss.",
+          "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+          "color": [
+            33,
+            27,
+            22
+          ],
+          "opacity": 0.96,
+          "threshold": 3,
+          "minRatio": 11.66357387448578,
+          "maxRatio": 11.781121134635502,
+          "samples": 2331,
+          "belowThreshold": 0,
+          "worst": {
+            "x": 660,
+            "y": 164,
+            "background": [
+              232,
+              223,
+              195
+            ]
+          },
+          "viewport": [
+            1440,
+            900
+          ],
+          "state": "settled target page at top; includes rendered image and pseudo-element backgrounds"
+        }
+      ]
+    },
+    {
+      "initial": "Tailor decorative numeral low contrast",
+      "resolvedBy": "review",
+      "evidence": "aria-hidden=true, purely decorative duplicate; visible independent chapter indicator"
+    }
+  ],
+  "limitations": [
+    "A source snapshot, with GET deployment comparisons; not a live backend test.",
+    "No real orders, messages, bookings or payments.",
+    "Phone dimensions are emulated; Linux WebKit is not actual Safari/iOS.",
+    "Retained captures require actual visual inspection. Source inventory and text evidence require editorial review.",
+    "Automated feature observations do not prove correct product semantics. Untested or failed controls remain pending.",
+    "Native zoom shortcut did not change headless browser viewport/DPR; not a zoom pass.",
+    "Not every image-backed contrast state, time/hover state, physical device or screen reader is certified."
+  ]
+}

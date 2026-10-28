@@ -1,3 +1,7 @@
+# COMPLETED — read REPORT.md first
+
+The declared sitewide routine sample and human evidence review are complete with eight repair groups. No public files were repaired or published. Read REPORT.md, evidence-summary.json and visual-review.json. Do not resume the old pending collection instructions below or rerun the broad sweep. Product repairs require a separate instruction. The historical launch/continuation record follows for provenance.
+
 # Tab Lab sitewide check: continuation record
 
 Authorised by Robert on 28 October 2026: start the whole Tab Lab and twelve-demo check now; save evidence so a fresh session can continue. This is an audit only. Do not repair public files or publish product changes without approval.

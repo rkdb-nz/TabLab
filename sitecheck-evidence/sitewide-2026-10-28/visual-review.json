@@ -1,0 +1,1396 @@
+[
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_billboard_demos_donut_site_html.png",
+    "sha256": "00ffa7f2b605e51f41264fbcf3ab68fd62cb2a251edcca997d71a6ffc2cba973",
+    "observation": "Desktop Donut composition clear; hamburger and order button visible; features fit.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_billboard_demos_donut_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/billboard/demos/donut/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_390x844__boardroom_billboard_demos_donut_site_html.png",
+    "sha256": "7af15ad5a0b1fdca72246537f8f2d57d65f52c89ac0192245edde7adeb841634",
+    "observation": "Phone Donut image/copy/three features fit; no visible clipping.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "chromium_390x844__boardroom_billboard_demos_donut_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/billboard/demos/donut/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_billboard_demos_drilling_site_html.png",
+    "sha256": "f123970695a23c9fc7472cd3bed8a9534615c877a7a0dc683e11a4787ef8cef2",
+    "observation": "Desktop Drilling artwork legible at supplied scale; menu visible.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_billboard_demos_drilling_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/billboard/demos/drilling/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_390x844__boardroom_billboard_demos_drilling_site_html.png",
+    "sha256": "79a96853a14639067e1fe0d0486b8c284da6b1573b118fd4ce0189166a7f45f3",
+    "observation": "Phone Drilling hero, CTA and three feature strips fit.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "chromium_390x844__boardroom_billboard_demos_drilling_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/billboard/demos/drilling/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_billboard_demos_mini-golf_site_html.png",
+    "sha256": "69757643f176372644a10e69bcf0fb3591cf76ffd9257f4fa0a8cca4440059e4",
+    "observation": "Desktop Mini Golf artwork/navigation appear aligned; map lettering inspected.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_billboard_demos_mini-golf_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/billboard/demos/mini-golf/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_390x844__boardroom_billboard_demos_mini-golf_site_html.png",
+    "sha256": "6f42c64def94047397cea75f2f08ada768dbd66262a41cde0561892d4424b4a0",
+    "observation": "Phone Mini Golf hero, booking button, features and footer fit.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "chromium_390x844__boardroom_billboard_demos_mini-golf_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/billboard/demos/mini-golf/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_billboard_index_html.png",
+    "sha256": "ff7d7ea3522d115e6f8ce48f3e17ed3951bcbcb4c6351275e343c59489bddbbf",
+    "observation": "Billboard gallery: three demo previews and navigation aligned; small embedded preview lettering is artwork.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_billboard_index_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/billboard/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_index_html.png",
+    "sha256": "a641f08b1e34a99c743dc8d8bb0b36ad4325dcaa4ae8bd1e959d1aa5b322c6b2",
+    "observation": "Boardroom: four direction cards and explanatory copy visible with no obstruction.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_index_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_noticeboard_demos_charity-walk_site_html.png",
+    "sha256": "b2c212df1e4daa3942e0be682e12812d8f972bb3e0bf9364a120c5a367ea0f2b",
+    "observation": "Charity desktop: journal footer text very small/pale; axe contrast evidence retained. Other columns appear intact.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_noticeboard_demos_charity-walk_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/noticeboard/demos/charity-walk/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_390x844__boardroom_noticeboard_demos_charity-walk_site_html.png",
+    "sha256": "0ed6c4b6ceff3e99737c153dcb9cf79e356927c7511dfd55e5feda920088d692",
+    "observation": "Charity phone: hub tiles fit; primary slogan wraps onto two lines.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "chromium_390x844__boardroom_noticeboard_demos_charity-walk_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/noticeboard/demos/charity-walk/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_noticeboard_demos_diner_site_html.png",
+    "sha256": "baf8c4e20826da6a57cc79392f2130d2e640750b5ffb41ab808343c0a48a7ae8",
+    "observation": "Diner desktop: layout and controls intact; moving ticker caused unstable capture, recovery pending.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": false,
+    "state": "chromium_1440x900__boardroom_noticeboard_demos_diner_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/noticeboard/demos/diner/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_390x844__boardroom_noticeboard_demos_diner_site_html.png",
+    "sha256": "1e59405488b25f3c241e114a6db8311048a7e17dbc8f2ef06661eba175e1f454",
+    "observation": "Diner phone: hero/CTA fit; moving ticker unstable, recovery pending.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": false,
+    "state": "chromium_390x844__boardroom_noticeboard_demos_diner_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/noticeboard/demos/diner/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_noticeboard_demos_produce_site_html.png",
+    "sha256": "73fca1fec0576be5d9191a4443854a4abf90cb7c132f1249fe0780a0c4268544",
+    "observation": "Produce desktop: price board and footer fit; no visible clipping.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_noticeboard_demos_produce_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/noticeboard/demos/produce/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_390x844__boardroom_noticeboard_demos_produce_site_html.png",
+    "sha256": "6f696ca647df105dff8cc580c5d8b9eb7c11653cf9a76c46463326043732d96b",
+    "observation": "Produce phone: board fits but footer shows partial second block and omits third at initial position; inspect footer scrolling behaviour. Moving capture recovery pending.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": false,
+    "state": "chromium_390x844__boardroom_noticeboard_demos_produce_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/noticeboard/demos/produce/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_noticeboard_index_html.png",
+    "sha256": "409aeadd3a91ffd0d06512ccdb1fb40baeeacd534e00cbe44f7f9afce2327293",
+    "observation": "Noticeboard gallery layout intact; initial axe contrast results need settled-state confirmation because screenshot headings are dark.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_noticeboard_index_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/noticeboard/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_skateboard_demos_florist_site_html.png",
+    "sha256": "d6977bcd59d4374cefee01dd7675532270bd03b1d93040d23e71c9a0921f50b5",
+    "observation": "Florist desktop: six collections, parallax divider and enquiry form render; long-page overview reviewed.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_skateboard_demos_florist_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/skateboard/demos/florist/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_390x844__boardroom_skateboard_demos_florist_site_html.png",
+    "sha256": "2c6c110859d610557d63c759d70f4bfd2439850075acca96dc3264384260bbfb",
+    "observation": "Florist phone: single-column collections and enquiry present; long-page overview needs native-size crop for detailed copy.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "chromium_390x844__boardroom_skateboard_demos_florist_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/skateboard/demos/florist/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_skateboard_demos_florist_success_html.png",
+    "sha256": "5774a2b5deb7ecf1e0400bd6e58c29c57f50bb2bbac759393f65b9f67070b72a",
+    "observation": "Florist standalone success honestly says enquiry not sent and no response; return link visible.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_skateboard_demos_florist_success_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/skateboard/demos/florist/success.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_390x844__boardroom_skateboard_demos_pottery_mobile_html.png",
+    "sha256": "f2e15cd5abee32fde352be65bf62d9b65493e1cd5e2e6388380f94c90aea6ece",
+    "observation": "Pottery phone: first scene, navigation and return tab render with no text obstruction; region landmark finding is structural.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "chromium_390x844__boardroom_skateboard_demos_pottery_mobile_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/skateboard/demos/pottery/mobile.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_skateboard_demos_pottery_site_html.png",
+    "sha256": "c11dfa295c5c1a6d6eb5a669c58d99e237617d8f5d7d1705e1fc9b015215e100",
+    "observation": "Pottery desktop: all long-page sections/images appear after natural reveal scroll; pre-scroll image metrics were lazy-load observations, not broken images.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_skateboard_demos_pottery_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/skateboard/demos/pottery/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_390x844__boardroom_skateboard_demos_pottery_site_html.png",
+    "sha256": "f2e15cd5abee32fde352be65bf62d9b65493e1cd5e2e6388380f94c90aea6ece",
+    "observation": "Pottery site route correctly presents mobile scene UI at phone width.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "chromium_390x844__boardroom_skateboard_demos_pottery_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/skateboard/demos/pottery/mobile.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_skateboard_demos_tailor_shop_index_html.png",
+    "sha256": "3f7692a1ab28dd950a428657ccacc728fae77ef6f7ebd1f9a1a59e632a51fd8d",
+    "observation": "Tailor shop: nine product tiles visible; introduction says four looks/twelve pieces but only nine product entries shown. Missing language/main landmarks confirmed in source scan; investigate copy mismatch.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_skateboard_demos_tailor_shop_index_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/skateboard/demos/tailor/shop/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_skateboard_demos_tailor_site_html.png",
+    "sha256": "3ca2922d82e43e53717d70429249fbbf66b9e5f9809e4b9ce31418507080c67a",
+    "observation": "Tailor desktop landing/chapter indicator and CTA fit.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_skateboard_demos_tailor_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/skateboard/demos/tailor/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_390x844__boardroom_skateboard_demos_tailor_site_html.png",
+    "sha256": "fb3f0297273c8268204f17e9e50a8c3aaad321dd00335096203ff2a99005c549",
+    "observation": "Tailor phone landing and next-chapter control fit; body text wraps readably.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "chromium_390x844__boardroom_skateboard_demos_tailor_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/skateboard/demos/tailor/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_skateboard_index_html.png",
+    "sha256": "d8948c6dc818170224143b6264a19b4a2b0c351aa407b0047c05cc154c469c33",
+    "observation": "Skateboard gallery: previews, navigation and text aligned.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_skateboard_index_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/skateboard/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_dining_dine_html.png",
+    "sha256": "5c096c6f7060e6a86568c0e059d764d10cbd5a6bc9c2a60a669f509acdc73023",
+    "observation": "Dining menu: dishes/prices and chef story visible. Copy and dietary tags reviewed as displayed, no factual dietary certification.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_demos_dining_dine_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/dining/dine.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_dining_reviews_html.png",
+    "sha256": "6cc91703f4f4f7afe77df7c2b7e1d32435b95306138202deea584d516e548849",
+    "observation": "Dining reviews: sample-review notice present; five review cards fit.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_demos_dining_reviews_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/dining/reviews.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_dining_sign_html.png",
+    "sha256": "4e1179fc90f09043ead65393aa16a5dedd39ad6fb9e699aa25b02635e7dcac77",
+    "observation": "Dining Sign: form, map and FAQs fit; wording implies real booking until completion, review no-send visibility.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_demos_dining_sign_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/dining/sign.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_dining_site_html.png",
+    "sha256": "de64d9406e691851e056253c67157a0233b507354571d873a73591d0a41f5c8a",
+    "observation": "Dining desktop landing: substantial empty patterned area below three navigation cards; investigate excessive page height.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_demos_dining_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/dining/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_dining_wine_html.png",
+    "sha256": "075f4f5806e1ed7d5a0b6e6fbbb4e1f06d573c015e34d2afee01c01e60890ea6",
+    "observation": "Dining wine page: two-column list and prices intact; long-page overview reviewed.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_demos_dining_wine_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/dining/wine.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_retreat_book_html.png",
+    "sha256": "e5e5a9c9085d6cbf3b344f74451c98fbc9dc1b062f1447b89b914c80cdc42d99",
+    "observation": "Retreat Book: form labels and submit visible; no obvious clipping.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_demos_retreat_book_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/retreat/book.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_retreat_discover_html.png",
+    "sha256": "4f652431551317ded1bc5b09a4a8b2736ed48acf4af8529dc1dda8485ce6db85",
+    "observation": "Retreat Discover: nine desktop scene sections and panels render; overview reviewed.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "1 / 9",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/retreat/discover.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_retreat_retreats_html.png",
+    "sha256": "bc85459521b3bdd4e9d7c592f17e707534e22b60f88b1721285cd5588f3a06a0",
+    "observation": "Retreats: four alternating property sections, thumbnails and enquiries render; overview reviewed.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_demos_retreat_retreats_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/retreat/retreats.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_retreat_reviews_html.png",
+    "sha256": "e2c51e0f982c3c3d6eb477c08a4fc5b0b56b81ccf422fe8f35f03c1aa74cc6ca",
+    "observation": "Retreat Reviews: heading readable and sample-story notice present; planted lab defect absent in real source.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_demos_retreat_reviews_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/retreat/reviews.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_retreat_site_html.png",
+    "sha256": "617cff543739798c02240638b092745dff87e736ec9d74964058a57363d4d155",
+    "observation": "Retreat Home desktop: four images load and normal spacing; white heading overlaps bright sky, rendered contrast failure confirmed separately.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_demos_retreat_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/retreat/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_390x844__boardroom_springboard_demos_retreat_site_html.png",
+    "sha256": "066a735cd48194df5d21acd8a788689911d625487a859bbf3f35eb670af82887",
+    "observation": "Retreat Home phone: entire heading and four cards present; lab clipping/gap/broken image faults absent.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "chromium_390x844__boardroom_springboard_demos_retreat_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/retreat/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_theatre_book-tickets_html.png",
+    "sha256": "e84fa7e491624fa1db01372f9309323f22a6e282eba42e2fa15a8aa2a983e111",
+    "observation": "Theatre booking: sample schedule, disabled checkout and initial totals visible; controls fit.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_demos_theatre_book-tickets_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/theatre/book-tickets.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_theatre_clementine-street_html.png",
+    "sha256": "4146a2291a331efd801a73db6a5619b8539600f91ee2e2979d3c83b090cb3dae",
+    "observation": "Theatre venue: capture begins partway down nested content after natural image scroll; initial metrics show full heading, so do not call this clipping without fresh-state verification.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_demos_theatre_clementine-street_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/theatre/clementine-street.html#theatre",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_theatre_coming-soon_html.png",
+    "sha256": "021ac3e788488806dcac2fa1ed80af12a7ae630e44da64baa012970d0d75f6eb",
+    "observation": "Theatre Coming Soon: three posters, descriptions and sample-season disclaimers render.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_demos_theatre_coming-soon_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/theatre/coming-soon.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_theatre_now-playing_html.png",
+    "sha256": "5f2817b0965668a8e0119b689b4d6d92a91f3652c0d3a298b598c18b79adecfc",
+    "observation": "Theatre Now Playing: poster, tabs, synopsis and sample-season information fit.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_demos_theatre_now-playing_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/theatre/now-playing.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_demos_theatre_site_html.png",
+    "sha256": "65ff82da7888a47c71f781881120c1e42b2c561dd6bbe89042a72c93ff518c63",
+    "observation": "Theatre desktop landing: title, slideshow pause and CTAs visible.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_demos_theatre_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/theatre/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_390x844__boardroom_springboard_demos_theatre_site_html.png",
+    "sha256": "02ad9746b59c76f7dc2a1cf6925dcc199efa44c0d2b3cdb130b96666852d62dd",
+    "observation": "Theatre phone landing: title and CTAs fit; contact footer visible.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "chromium_390x844__boardroom_springboard_demos_theatre_site_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/demos/theatre/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__boardroom_springboard_index_html.png",
+    "sha256": "cf342dc4c88e7d705c9e54cd6b2e49a91f28669d0d691d70a1f9cda417bee5c6",
+    "observation": "Springboard gallery: three previews/navigation/copy fit.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__boardroom_springboard_index_html.png",
+    "sourceURL": "http://127.0.0.1:39827/boardroom/springboard/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__foundrycare_index_html.png",
+    "sha256": "8c113aa050ccfd78b95061febe7adc7442ff16b89b62c8d5c6e8642051150877",
+    "observation": "TabLabCare: six services and pricing readable; no overlap.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__foundrycare_index_html.png",
+    "sourceURL": "http://127.0.0.1:39827/foundrycare/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__index_html.png",
+    "sha256": "ace5d5403f12c7a1b481688e690f6c4a49ed6e2ec77cc595de0bdac90be542d5",
+    "observation": "Main desktop landing: two CTAs and navigation visible; approved artwork retained.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__index_html.png",
+    "sourceURL": "http://127.0.0.1:39827/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_390x844__index_html.png",
+    "sha256": "ce2c4084e50db658efb4a22f5d17bd7b0011e7dfc234e5e50879a4bd4c9c489e",
+    "observation": "Main phone landing: two CTAs and navigation fit.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "chromium_390x844__index_html.png",
+    "sourceURL": "http://127.0.0.1:39827/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__maintenance_index_html.png",
+    "sha256": "aee5a05fb7fea8eff5a2b82a9d0f7ed9a8032d2dbfe0d40843fd95c3e062401d",
+    "observation": "Maintenance page: clear maintenance message, no unintended content seen.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__maintenance_index_html.png",
+    "sourceURL": "http://127.0.0.1:39827/maintenance/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__start_index_html.png",
+    "sha256": "ac98578eb78f539ea72a7ba88c5dff5894778d28ed1c4c95a8302e0ca1eb6e86",
+    "observation": "Start page: older but coherent style; enquiry CTA present.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__start_index_html.png",
+    "sourceURL": "http://127.0.0.1:39827/start/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__the-foundry_index_html.png",
+    "sha256": "cfcab878f01654a48925cff2fff2ae14cb5fb3f1aa02b292084b3dba9c2afe86",
+    "observation": "About Tab Lab: four principles and pricing shown without clipping.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__the-foundry_index_html.png",
+    "sourceURL": "http://127.0.0.1:39827/the-foundry/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "census",
+    "file": "chromium_1440x900__whywebsite_index_html.png",
+    "sha256": "ced3a7d8eaadeefe1fc85b2dbdbd39b43ca4ec821167817be4c735b3b041990f",
+    "observation": "Why Website: copy and artwork readable with no visible overlap.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "chromium_1440x900__whywebsite_index_html.png",
+    "sourceURL": "http://127.0.0.1:39827/whywebsite/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "features",
+    "file": "main-exploreButton.png",
+    "sha256": "c2be6c2822ec06d6bedd354d5af080ab34f6e44b47155861c86e90008a595c1b",
+    "observation": "Main Explore/enquiry state text and controls visible without clipping.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "main-exploreButton.png",
+    "sourceURL": "http://127.0.0.1:39463/index.html#explore",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "features",
+    "file": "main-sortButton.png",
+    "sha256": "e00251c0e74ff6f49206256ea3a68fc3f6225000e85d699f2be741580b1fb826",
+    "observation": "Main Explore/enquiry state text and controls visible without clipping.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "main-sortButton.png",
+    "sourceURL": "http://127.0.0.1:39463/index.html#make-site",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "features",
+    "file": "main-menu-rotated.png",
+    "sha256": "82781c2bb074abf7aed48acaaa62b6d8a4d1fdfb5f3963ea7632d1348fe9ff46",
+    "observation": "Rotated main menu remains visible; bottom entry near edge but available for reachability check.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      844,
+      390
+    ],
+    "stable": true,
+    "state": "main-menu-rotated.png",
+    "sourceURL": "http://127.0.0.1:39463/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "features",
+    "file": "wrapper-fullscreen-1440x900.png",
+    "sha256": "264b713be959cafac7504f0b36b5e76d02e89c3dacf2af3babf5ab0ccaa6eb38",
+    "observation": "Fullscreen Home content and Tab Lab return control visible; bright-sky text contrast remains.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "wrapper-fullscreen-1440x900.png",
+    "sourceURL": "http://127.0.0.1:39463/boardroom/springboard/demos/retreat/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "features",
+    "file": "wrapper-fullscreen-390x844.png",
+    "sha256": "49fb7901a442b35a9499aaa5b0c453ec69074a596dfca976f0058fb36ae7d7f8",
+    "observation": "Fullscreen Home content and Tab Lab return control visible; bright-sky text contrast remains.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "wrapper-fullscreen-390x844.png",
+    "sourceURL": "http://127.0.0.1:39463/boardroom/springboard/demos/retreat/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "features",
+    "file": "feature-0-tailor-site_html.png",
+    "sha256": "b0516eccb01a1634a71614575756eedc5953c0d03673565f66a6683982387db2",
+    "observation": "Tailor Milan boutique scene text, switch and enquiry control visible.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "feature-0-tailor-site_html.png",
+    "sourceURL": "http://127.0.0.1:39463/boardroom/skateboard/demos/tailor/site.html#boutiques",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "features",
+    "file": "feature-1-tailor-site_html.png",
+    "sha256": "6d498104d889e18f774938b58cb4bcb1a980e448a60eb829043f247506905c17",
+    "observation": "Tailor visit dialog fits phone with visible close, labelled fields and submit.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "visit-dialog",
+    "sourceURL": "http://127.0.0.1:39463/boardroom/skateboard/demos/tailor/site.html#boutiques",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "secondary",
+    "file": "firefox_1440x900__index_html.png",
+    "sha256": "590b0092a43eabd8e9a63dbb06e644278a74e31577edf844195eef42c7f5c715",
+    "observation": "Main landing layout inspected in firefox at stated viewport; controls and text visible.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "firefox",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "firefox_1440x900__index_html.png",
+    "sourceURL": "http://127.0.0.1:39863/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "secondary",
+    "file": "firefox_390x844__index_html.png",
+    "sha256": "6c720f8e3e05efe0bf5265020a6a0e5e9ab75e13dfc03628ed5c880f2c0cb6eb",
+    "observation": "Main landing layout inspected in firefox at stated viewport; controls and text visible.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "firefox",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "firefox_390x844__index_html.png",
+    "sourceURL": "http://127.0.0.1:39863/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "secondary",
+    "file": "webkit_1440x900__index_html.png",
+    "sha256": "2853705700800c70cc7bcc8492a76ede24185f4e5eab6bdff1db87c6ec494356",
+    "observation": "Main landing layout inspected in webkit at stated viewport; controls and text visible.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "webkit",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "webkit_1440x900__index_html.png",
+    "sourceURL": "http://127.0.0.1:39863/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "secondary",
+    "file": "webkit_390x844__index_html.png",
+    "sha256": "5a578ad0f8bc83853b423892ed5a7fce26e2da72d45f7e8fe0ee62a931f32634",
+    "observation": "Main landing layout inspected in webkit at stated viewport; controls and text visible.",
+    "method": "actual visual inspection",
+    "run": 40614967756,
+    "engine": "webkit",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "webkit_390x844__index_html.png",
+    "sourceURL": "http://127.0.0.1:39863/index.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "recovery",
+    "file": "recovered-diner-1440x900.png",
+    "sha256": "80ae9d378d5d1be2e1478bf227ed25a1c0357ff61b533f0b11ea28433f9d8d47",
+    "observation": "Ticker paused using visible control; stable landing matches reviewed composition.",
+    "method": "actual visual inspection",
+    "run": 40621541223,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "recovered-diner-1440x900.png",
+    "sourceURL": "http://127.0.0.1:46309/boardroom/noticeboard/demos/diner/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "recovery",
+    "file": "recovered-diner-390x844.png",
+    "sha256": "b40f6b3dcd2feb82b04d16a0bd231862b319a2ef25306c7692209018d2a18646",
+    "observation": "Ticker paused using visible control; stable landing matches reviewed composition.",
+    "method": "actual visual inspection",
+    "run": 40621541223,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "recovered-diner-390x844.png",
+    "sourceURL": "http://127.0.0.1:46309/boardroom/noticeboard/demos/diner/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "recovery",
+    "file": "recovered-produce-390x844.png",
+    "sha256": "c543651aaaf1a5bb7e04905dfda7385ab7a1688926235082138525f7672c92f4",
+    "observation": "Footer animation phase held only for capture; initial mobile clipping visible.",
+    "method": "actual visual inspection",
+    "run": 40621541223,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "recovered-produce-390x844.png",
+    "sourceURL": "http://127.0.0.1:46309/boardroom/noticeboard/demos/produce/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "recovery",
+    "file": "chromium_390x844__boardroom_springboard_demos_dining_site_html.png",
+    "sha256": "dffa9de305a53bf8d43b326fb5b22127a424c6e5f16701479b5aa8df56f28491",
+    "observation": "Hero-only first mobile scene shown with blank off-scene full-page region; source shows navigation is revealed by explicit swipe/PageDown, targeted check pending.",
+    "method": "actual visual inspection",
+    "run": 40621541223,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "chromium_390x844__boardroom_springboard_demos_dining_site_html.png",
+    "sourceURL": "http://127.0.0.1:46309/boardroom/springboard/demos/dining/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "recovery",
+    "file": "pottery-dialog-elinor.png",
+    "sha256": "491306d8f2c9fcdf4022c54b429e0d37cc7896fbd25549e3298be2ccf65d4e33",
+    "observation": "Dialog content and close visible; longer maker/workshop sheets show scrollable continuation rather than clipped page content. Gallery and visit details fit.",
+    "method": "actual visual inspection",
+    "run": 40621541223,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "elinor",
+    "sourceURL": "http://127.0.0.1:46309/boardroom/skateboard/demos/pottery/mobile.html#maker",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "recovery",
+    "file": "pottery-dialog-gallery.png",
+    "sha256": "c5bdc6df0224d54adf4c262f9bd32c95e7dbfcea40fcecec7a143c303b47fc82",
+    "observation": "Dialog content and close visible; longer maker/workshop sheets show scrollable continuation rather than clipped page content. Gallery and visit details fit.",
+    "method": "actual visual inspection",
+    "run": 40621541223,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "gallery",
+    "sourceURL": "http://127.0.0.1:46309/boardroom/skateboard/demos/pottery/mobile.html#collection",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "recovery",
+    "file": "pottery-dialog-workshops.png",
+    "sha256": "475ad7b37d7682c1b794c3b5d33922bc7de9110f93195afcb333e6735af29d50",
+    "observation": "Dialog content and close visible; longer maker/workshop sheets show scrollable continuation rather than clipped page content. Gallery and visit details fit.",
+    "method": "actual visual inspection",
+    "run": 40621541223,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "workshops",
+    "sourceURL": "http://127.0.0.1:46309/boardroom/skateboard/demos/pottery/mobile.html#visit",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "recovery",
+    "file": "pottery-dialog-contact.png",
+    "sha256": "4f7ef2d581849d1dc19bad90ec2927de1fad00b40ac7828af7a9fc8a918b9955",
+    "observation": "Dialog content and close visible; longer maker/workshop sheets show scrollable continuation rather than clipped page content. Gallery and visit details fit.",
+    "method": "actual visual inspection",
+    "run": 40621541223,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "contact",
+    "sourceURL": "http://127.0.0.1:46309/boardroom/skateboard/demos/pottery/mobile.html#visit",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "recovery",
+    "file": "pottery-dialog-visit-details.png",
+    "sha256": "97dd7fa5d5f2fc4c05057fab97908e48f23d3d6316b791bb6c04a2cb3b6fea12",
+    "observation": "Dialog content and close visible; longer maker/workshop sheets show scrollable continuation rather than clipped page content. Gallery and visit details fit.",
+    "method": "actual visual inspection",
+    "run": 40621541223,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "visit-details",
+    "sourceURL": "http://127.0.0.1:46309/boardroom/skateboard/demos/pottery/mobile.html#visit",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "recovery",
+    "file": "tailor-enquiry-result.png",
+    "sha256": "364ed98c5898442abd72885b2e3c68b8acc43574c3fe48816d112d627a895464",
+    "observation": "Tailor capture is boutique after invalid-test dialog closure; superseded by corrected helper test, not a completion screenshot.",
+    "method": "actual visual inspection",
+    "run": 40621541223,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "tailor-enquiry-result.png",
+    "sourceURL": "http://127.0.0.1:46309/boardroom/skateboard/demos/tailor/site.html#boutiques",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "focus",
+    "file": "charity-note-1440x900.png",
+    "sha256": "becacb80dcd66f239d7b1e8cd52ea5a5260f7eac2d82679e8761dda508a77821",
+    "observation": "Honest no-send confirmation readable, close/Done available.",
+    "method": "actual visual inspection",
+    "run": 40622086910,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "trail-note-dialog",
+    "sourceURL": "http://127.0.0.1:40011/boardroom/noticeboard/demos/charity-walk/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "focus",
+    "file": "charity-note-390x844.png",
+    "sha256": "4413b32d2da8aec6cd627c49f944f4a7507c7e379f3469c15d50123206175fbe",
+    "observation": "Honest no-send confirmation readable, close/Done available.",
+    "method": "actual visual inspection",
+    "run": 40622086910,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "trail-note-dialog",
+    "sourceURL": "http://127.0.0.1:40011/boardroom/noticeboard/demos/charity-walk/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "focus",
+    "file": "dining-mobile-request-result.png",
+    "sha256": "ac468cfb1b024423219a8625053d647705e7bb63280340361fcdf36623d09c1f",
+    "observation": "Native invalid-field prompt visible; this is validation evidence, not a completion result. Helper stopped on readonly To input; correction pending.",
+    "method": "actual visual inspection",
+    "run": 40622086910,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "booking-email",
+    "sourceURL": "http://127.0.0.1:40011/boardroom/springboard/demos/dining/sign.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "focus",
+    "file": "tailor-result-final.png",
+    "sha256": "7ca55ae877d9a1ed969c885d695edb63fbdad21785c1d5aac3a035da985e90fa",
+    "observation": "Corrected enquiry test reaches readable honest no-booking/no-message confirmation.",
+    "method": "actual visual inspection",
+    "run": 40622086910,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "visit-dialog",
+    "sourceURL": "http://127.0.0.1:40011/boardroom/skateboard/demos/tailor/site.html#boutiques",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "focus",
+    "file": "theatre-venue-initial.png",
+    "sha256": "bed4bfd1150e47fabc880252031b90faf237066bfd9dcb300bcde3075d24957d",
+    "observation": "Fresh venue state shows full heading. Earlier part-scrolled capture is not a product clipping finding.",
+    "method": "actual visual inspection",
+    "run": 40622086910,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "theatre-venue-initial.png",
+    "sourceURL": "http://127.0.0.1:40011/boardroom/springboard/demos/theatre/clementine-street.html#theatre",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "focus",
+    "file": "produce-reduced-footer.png",
+    "sha256": "609d48ed9efd931a7e2be7c5abb02cd24451ad6dc56c93506c18ea49abb87d6d",
+    "observation": "Reduced-motion Produce footer hides opening-hours text and entire third block beyond clipped 390px container; animations none.",
+    "method": "actual visual inspection",
+    "run": 40622086910,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "produce-reduced-footer.png",
+    "sourceURL": "http://127.0.0.1:40011/boardroom/noticeboard/demos/produce/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "nested",
+    "file": "donut-catering-result.png",
+    "sha256": "082ec10b2de0a18be71289838cc5a366b1d7271c96a0ed435c947b8eb20efa47",
+    "observation": "Catering filled fields and truthful no-enquiry-sent result readable; panel has an inner scroll position after submission.",
+    "method": "actual visual inspection",
+    "run": 40623084972,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "donut-catering-result.png",
+    "sourceURL": "http://127.0.0.1:37391/boardroom/billboard/demos/donut/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "nested",
+    "file": "diner-directions-result.png",
+    "sha256": "98df4c8dcb0c8676c5319a9fe93ff7d8851c7a4a96b5c885248704c0eb859d9b",
+    "observation": "Directions completion explicitly says fictional address and no real directions opened; close visible.",
+    "method": "actual visual inspection",
+    "run": 40623084972,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "diner-directions-result.png",
+    "sourceURL": "http://127.0.0.1:37391/boardroom/noticeboard/demos/diner/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "nested",
+    "file": "dining-home-cards-1440x900.png",
+    "sha256": "909668003d7cb3949766c0d1dc8998e00ac676fe13a24930ae13a7a62e167594",
+    "observation": "Dining native reveal shows three navigation cards with readable labels; no blank-region defect asserted.",
+    "method": "actual visual inspection",
+    "run": 40623084972,
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "state": "dining-home-cards-1440x900.png",
+    "sourceURL": "http://127.0.0.1:37391/boardroom/springboard/demos/dining/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "nested",
+    "file": "dining-home-cards-390x844.png",
+    "sha256": "5247371979a846c8ed8fb8bc3ec529c47221644ddc2532b4815c477476c343d8",
+    "observation": "Dining native reveal shows three navigation cards with readable labels; no blank-region defect asserted.",
+    "method": "actual visual inspection",
+    "run": 40623084972,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "dining-home-cards-390x844.png",
+    "sourceURL": "http://127.0.0.1:37391/boardroom/springboard/demos/dining/site.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  },
+  {
+    "task": "nested",
+    "file": "dining-mobile-email-result-final.png",
+    "sha256": "ea21f59e040ea988e579b6e7cf720c4b3539a7de9ed03ab990324f8f1acb3108",
+    "observation": "Dining mobile completion readable and explicitly no table request/no booking made; close control visible.",
+    "method": "actual visual inspection",
+    "run": 40623084972,
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "state": "booking-confirmation",
+    "sourceURL": "http://127.0.0.1:37391/boardroom/springboard/demos/dining/sign.html",
+    "sourceCommit": "7410e040214f7369013a41d47aa3422e4c4bd6e0"
+  }
+]
