@@ -1,0 +1,184 @@
+[
+  {
+    "file": "retreat-1440x900.png",
+    "sha256": "907aed7c1f4b5c672f37e715d80537a1cb33fc5110c4fce5899d8fd6f51e373d",
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "reviewed": true,
+    "observation": "Desktop heading and paragraph clearly readable over stronger left-side gradient; photograph/sign and composition retained.",
+    "sourceCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6"
+  },
+  {
+    "file": "retreat-390x844.png",
+    "sha256": "85d382efcacea6c913b1f3da64852a178e64f767b98bcaa74b720a38cfd6d47b",
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "reviewed": true,
+    "observation": "Portrait heading and copy fully readable; menu and return tab visible; image composition retained.",
+    "sourceCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6"
+  },
+  {
+    "file": "retreat-844x390.png",
+    "sha256": "17e7619c20af6f6a92756e0421afae332abcde874b29c49a30cd2bf1e104644b",
+    "engine": "chromium",
+    "viewport": [
+      844,
+      390
+    ],
+    "stable": true,
+    "reviewed": true,
+    "observation": "Landscape adjacent image/dark-copy composition retained; full heading and paragraph fit.",
+    "sourceCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6"
+  },
+  {
+    "file": "produce-390x844-reduce.png",
+    "sha256": "bc08b5f5508c1fb1bd3afc162e444faa215e83bb6374c591b04bdfab39e55509",
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "reviewed": true,
+    "observation": "Three footer columns and all subtitles visible; board clears footer; static reduced-motion state.",
+    "sourceCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6"
+  },
+  {
+    "file": "produce-844x390-reduce.png",
+    "sha256": "645f672683df6f136b47687dedd54b1ff56df5c1548f0f20303d6ae62db8c826",
+    "engine": "chromium",
+    "viewport": [
+      844,
+      390
+    ],
+    "stable": true,
+    "reviewed": true,
+    "observation": "All three footer messages/subtitles visible; board clears footer with existing scroll hint.",
+    "sourceCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6"
+  },
+  {
+    "file": "produce-320x568-reduce.png",
+    "sha256": "6ef01e02a181ca843b7c7ce281576cc992f36cf1c32ad43ccfb2fa827f3acfa9",
+    "engine": "chromium",
+    "viewport": [
+      320,
+      568
+    ],
+    "stable": true,
+    "reviewed": true,
+    "observation": "Narrow footer wraps headings and supporting copy without clipping; board and navigation visible.",
+    "sourceCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6"
+  },
+  {
+    "file": "charity-desktop.png",
+    "sha256": "1092e1f0553b1fb10b92979d7f663a6283b3c21f82ba95e156df0e4e77234640",
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "reviewed": true,
+    "observation": "Journal footer is larger/darker and fits under five entries; neighbouring cards retain layout.",
+    "sourceCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6"
+  },
+  {
+    "file": "shop-desktop.png",
+    "sha256": "7ddeaec895592d9df9e59b04bfe23abd479bf89b2b84a2ae786d0bf15d622856",
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "reviewed": true,
+    "observation": "Nine products form three rows; revised introductory wording visible; header/navigation intact. Full layout overview plus native top crop inspected.",
+    "sourceCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6"
+  },
+  {
+    "file": "shop-phone.png",
+    "sha256": "edca8cf63aa6b5e979fc5cd4a1b0ac651b4e5839fe7ba59b29736c5f61a6ee90",
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "reviewed": true,
+    "observation": "All nine products stack in one column. Full layout overview plus native top crop inspected; revised introduction wraps cleanly.",
+    "sourceCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6"
+  },
+  {
+    "file": "pottery-phone.png",
+    "sha256": "f2e15cd5abee32fde352be65bf62d9b65493e1cd5e2e6388380f94c90aea6ece",
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "reviewed": true,
+    "observation": "Return tab remains in original position; first scene, copy and scene navigation retain layout.",
+    "sourceCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6"
+  },
+  {
+    "file": "landing-chromium-1440x900.png",
+    "sha256": "d520362faeb61eafe873784b87b252d52b4d9939ca8b31a8cf3b6b50606c0301",
+    "engine": "chromium",
+    "viewport": [
+      1440,
+      900
+    ],
+    "stable": true,
+    "reviewed": true,
+    "observation": "Explore destination panel and all four choices fit desktop composition.",
+    "sourceCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6"
+  },
+  {
+    "file": "landing-chromium-390x844.png",
+    "sha256": "c2be6c2822ec06d6bedd354d5af080ab34f6e44b47155861c86e90008a595c1b",
+    "engine": "chromium",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "reviewed": true,
+    "observation": "Explore heading, explanatory copy and all four destination buttons fit portrait.",
+    "sourceCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6"
+  },
+  {
+    "file": "landing-firefox-390x844.png",
+    "sha256": "0f529afbbcf787adff080425c20b83fadf17ccb2bd5f92ac653ea89b6b79b97c",
+    "engine": "firefox",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "reviewed": true,
+    "observation": "Explore heading, explanatory copy and all four destination buttons fit portrait in Firefox.",
+    "sourceCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6"
+  },
+  {
+    "file": "landing-webkit-390x844.png",
+    "sha256": "7e0eceb228b1dfb9abc22b4c2b5fa8d75fcee1430bc64c045fb3d686268ac6c7",
+    "engine": "webkit",
+    "viewport": [
+      390,
+      844
+    ],
+    "stable": true,
+    "reviewed": true,
+    "observation": "Explore heading, explanatory copy and all four destination buttons fit portrait in Linux WebKit.",
+    "sourceCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6"
+  }
+]

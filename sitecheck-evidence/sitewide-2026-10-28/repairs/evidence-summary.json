@@ -1,0 +1,2067 @@
+{
+  "status": "TARGETED_ROUTINE_REPAIRS_PASSED_WITHIN_SAMPLE",
+  "source": "7410e040214f7369013a41d47aa3422e4c4bd6e0",
+  "productCommit": "050482bd7cbee74993414f8a54ffbea3c705ded6",
+  "imageOnlyCommit": "28e98d1d28b9744572b3a12bb1b94b10e4222359",
+  "resolved": [
+    "SW01",
+    "SW02",
+    "SW03",
+    "SW04",
+    "SW05",
+    "SW06",
+    "SW07",
+    "SW08"
+  ],
+  "primary": {
+    "run": 40628173180,
+    "assertions": 56,
+    "passed": 53,
+    "supersededIncorrectAssertions": [
+      {
+        "name": "chromium optimised phone background active",
+        "ok": false,
+        "details": "url(\"http://127.0.0.1:39741/assets/backgrounds/tablab-mobile-landscape.png\")"
+      },
+      {
+        "name": "firefox optimised phone background active",
+        "ok": false,
+        "details": "url(\"http://127.0.0.1:39741/assets/backgrounds/tablab-mobile-landscape.png\")"
+      },
+      {
+        "name": "webkit optimised phone background active",
+        "ok": false,
+        "details": "url(\"http://127.0.0.1:39741/assets/backgrounds/tablab-mobile-landscape.png\")"
+      }
+    ],
+    "checks": [
+      {
+        "name": "Snapshot rejects POST",
+        "ok": true
+      },
+      {
+        "name": "Rendered target contrast .hero h1",
+        "ok": true,
+        "details": {
+          "selector": ".hero h1",
+          "text": "A collection of distinctive retreats.",
+          "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "opacity": 1,
+          "threshold": 3,
+          "minRatio": 7.854578767471407,
+          "maxRatio": 20.50264926567334,
+          "samples": 16041,
+          "belowThreshold": 0,
+          "worst": {
+            "x": 110,
+            "y": 193,
+            "background": [
+              83,
+              82,
+              74
+            ]
+          },
+          "viewport": [
+            1440,
+            900
+          ],
+          "state": "settled target page at top; includes rendered image and pseudo-element backgrounds"
+        }
+      },
+      {
+        "name": "Rendered target contrast .hero p",
+        "ok": true,
+        "details": {
+          "selector": ".hero p",
+          "text": "Four houses, held by forest, farm, coast and town. Built with timber, stone and restraint. Designed for long mornings and quiet nights.",
+          "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "opacity": 1,
+          "threshold": 4.5,
+          "minRatio": 15.18101005201014,
+          "maxRatio": 20.76608062161435,
+          "samples": 874,
+          "belowThreshold": 0,
+          "worst": {
+            "x": 291,
+            "y": 742,
+            "background": [
+              44,
+              37,
+              22
+            ]
+          },
+          "viewport": [
+            1440,
+            900
+          ],
+          "state": "settled target page at top; includes rendered image and pseudo-element backgrounds"
+        }
+      },
+      {
+        "name": "Rendered target contrast .hero h1",
+        "ok": true,
+        "details": {
+          "selector": ".hero h1",
+          "text": "A collection of distinctive retreats.",
+          "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "opacity": 1,
+          "threshold": 3,
+          "minRatio": 12.652842259314482,
+          "maxRatio": 20.855619809200437,
+          "samples": 2523,
+          "belowThreshold": 0,
+          "worst": {
+            "x": 66,
+            "y": 593,
+            "background": [
+              61,
+              49,
+              33
+            ]
+          },
+          "viewport": [
+            1440,
+            900
+          ],
+          "state": "settled target page at top; includes rendered image and pseudo-element backgrounds"
+        }
+      },
+      {
+        "name": "Rendered target contrast .hero p",
+        "ok": true,
+        "details": {
+          "selector": ".hero p",
+          "text": "Four houses, held by forest, farm, coast and town. Built with timber, stone and restraint. Designed for long mornings and quiet nights.",
+          "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "opacity": 1,
+          "threshold": 4.5,
+          "minRatio": 14.776089556734432,
+          "maxRatio": 20.76608062161435,
+          "samples": 874,
+          "belowThreshold": 0,
+          "worst": {
+            "x": 299,
+            "y": 693,
+            "background": [
+              51,
+              37,
+              27
+            ]
+          },
+          "viewport": [
+            1440,
+            900
+          ],
+          "state": "settled target page at top; includes rendered image and pseudo-element backgrounds"
+        }
+      },
+      {
+        "name": "Rendered target contrast .hero h1",
+        "ok": true,
+        "details": {
+          "selector": ".hero h1",
+          "text": "A collection of distinctive retreats.",
+          "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+          "color": [
+            43,
+            43,
+            40
+          ],
+          "opacity": 1,
+          "threshold": 3,
+          "minRatio": 13.882950037230119,
+          "maxRatio": 13.882950037230119,
+          "samples": 1659,
+          "belowThreshold": 0,
+          "worst": {
+            "x": 494,
+            "y": 91,
+            "background": [
+              255,
+              252,
+              248
+            ]
+          },
+          "viewport": [
+            1440,
+            900
+          ],
+          "state": "settled target page at top; includes rendered image and pseudo-element backgrounds"
+        }
+      },
+      {
+        "name": "Rendered target contrast .hero p",
+        "ok": true,
+        "details": {
+          "selector": ".hero p",
+          "text": "Four houses, held by forest, farm, coast and town. Built with timber, stone and restraint. Designed for long mornings and quiet nights.",
+          "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+          "color": [
+            43,
+            43,
+            40
+          ],
+          "opacity": 1,
+          "threshold": 4.5,
+          "minRatio": 13.882950037230119,
+          "maxRatio": 13.882950037230119,
+          "samples": 234,
+          "belowThreshold": 0,
+          "worst": {
+            "x": 419,
+            "y": 231,
+            "background": [
+              255,
+              252,
+              248
+            ]
+          },
+          "viewport": [
+            1440,
+            900
+          ],
+          "state": "settled target page at top; includes rendered image and pseudo-element backgrounds"
+        }
+      },
+      {
+        "name": "Produce all footer content no-preference 1440,900",
+        "ok": true,
+        "details": {
+          "footer": {
+            "x": 158.390625,
+            "y": 814,
+            "width": 1123.21875,
+            "height": 86,
+            "top": 814,
+            "right": 1281.609375,
+            "bottom": 900,
+            "left": 158.390625
+          },
+          "items": [
+            {
+              "text": "GROWN LOCALLY\nSupporting our community",
+              "rect": {
+                "x": 158.390625,
+                "y": 834.5,
+                "width": 374.40625,
+                "height": 45,
+                "top": 834.5,
+                "right": 532.796875,
+                "bottom": 879.5,
+                "left": 158.390625
+              },
+              "scroll": [
+                374,
+                45
+              ],
+              "client": [
+                374,
+                45
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "OPEN FRIDAY TO SUNDAY\nMorning until sold out",
+              "rect": {
+                "x": 532.796875,
+                "y": 834.5,
+                "width": 374.40625,
+                "height": 45,
+                "top": 834.5,
+                "right": 907.203125,
+                "bottom": 879.5,
+                "left": 532.796875
+              },
+              "scroll": [
+                373,
+                45
+              ],
+              "client": [
+                373,
+                45
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "FIND US ON THE ROAD\nLook for the green roof",
+              "rect": {
+                "x": 907.203125,
+                "y": 834.5,
+                "width": 374.40625,
+                "height": 45,
+                "top": 834.5,
+                "right": 1281.609375,
+                "bottom": 879.5,
+                "left": 907.203125
+              },
+              "scroll": [
+                373,
+                45
+              ],
+              "client": [
+                373,
+                45
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            }
+          ]
+        }
+      },
+      {
+        "name": "Produce board clears footer no-preference 1440,900",
+        "ok": true,
+        "details": {
+          "zone": {
+            "x": 924.5,
+            "y": 162,
+            "width": 403.1875,
+            "height": 576
+          },
+          "footer": {
+            "x": 158.390625,
+            "y": 814,
+            "width": 1123.21875,
+            "height": 86,
+            "top": 814,
+            "right": 1281.609375,
+            "bottom": 900,
+            "left": 158.390625
+          }
+        }
+      },
+      {
+        "name": "Produce all footer content no-preference 390,844",
+        "ok": true,
+        "details": {
+          "footer": {
+            "x": 0,
+            "y": 760,
+            "width": 390,
+            "height": 84,
+            "top": 760,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          },
+          "items": [
+            {
+              "text": "GROWN LOCALLY\nSupporting our community",
+              "rect": {
+                "x": 0,
+                "y": 773.84375,
+                "width": 130,
+                "height": 56.3125,
+                "top": 773.84375,
+                "right": 130,
+                "bottom": 830.15625,
+                "left": 0
+              },
+              "scroll": [
+                130,
+                56
+              ],
+              "client": [
+                130,
+                56
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "OPEN FRIDAY TO SUNDAY\nMorning until sold out",
+              "rect": {
+                "x": 130,
+                "y": 780.4375,
+                "width": 130,
+                "height": 43.125,
+                "top": 780.4375,
+                "right": 260,
+                "bottom": 823.5625,
+                "left": 130
+              },
+              "scroll": [
+                129,
+                43
+              ],
+              "client": [
+                129,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "FIND US ON THE ROAD\nLook for the green roof",
+              "rect": {
+                "x": 260,
+                "y": 780.4375,
+                "width": 130,
+                "height": 43.125,
+                "top": 780.4375,
+                "right": 390,
+                "bottom": 823.5625,
+                "left": 260
+              },
+              "scroll": [
+                129,
+                43
+              ],
+              "client": [
+                129,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            }
+          ]
+        }
+      },
+      {
+        "name": "Produce board clears footer no-preference 390,844",
+        "ok": true,
+        "details": {
+          "zone": {
+            "x": 46.8046875,
+            "y": 164,
+            "width": 296.390625,
+            "height": 584
+          },
+          "footer": {
+            "x": 0,
+            "y": 760,
+            "width": 390,
+            "height": 84,
+            "top": 760,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          }
+        }
+      },
+      {
+        "name": "Produce all footer content no-preference 844,390",
+        "ok": true,
+        "details": {
+          "footer": {
+            "x": 0,
+            "y": 326,
+            "width": 844,
+            "height": 64,
+            "top": 326,
+            "right": 844,
+            "bottom": 390,
+            "left": 0
+          },
+          "items": [
+            {
+              "text": "GROWN LOCALLY\nSupporting our community",
+              "rect": {
+                "x": 0,
+                "y": 336.4375,
+                "width": 281.328125,
+                "height": 43.125,
+                "top": 336.4375,
+                "right": 281.328125,
+                "bottom": 379.5625,
+                "left": 0
+              },
+              "scroll": [
+                281,
+                43
+              ],
+              "client": [
+                281,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "OPEN FRIDAY TO SUNDAY\nMorning until sold out",
+              "rect": {
+                "x": 281.328125,
+                "y": 336.4375,
+                "width": 281.328125,
+                "height": 43.125,
+                "top": 336.4375,
+                "right": 562.65625,
+                "bottom": 379.5625,
+                "left": 281.328125
+              },
+              "scroll": [
+                280,
+                43
+              ],
+              "client": [
+                280,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "FIND US ON THE ROAD\nLook for the green roof",
+              "rect": {
+                "x": 562.65625,
+                "y": 336.4375,
+                "width": 281.34375,
+                "height": 43.125,
+                "top": 336.4375,
+                "right": 844,
+                "bottom": 379.5625,
+                "left": 562.65625
+              },
+              "scroll": [
+                280,
+                43
+              ],
+              "client": [
+                280,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            }
+          ]
+        }
+      },
+      {
+        "name": "Produce board clears footer no-preference 844,390",
+        "ok": true,
+        "details": {
+          "zone": {
+            "x": 424.890625,
+            "y": 10,
+            "width": 405.109375,
+            "height": 304
+          },
+          "footer": {
+            "x": 0,
+            "y": 326,
+            "width": 844,
+            "height": 64,
+            "top": 326,
+            "right": 844,
+            "bottom": 390,
+            "left": 0
+          }
+        }
+      },
+      {
+        "name": "Produce all footer content no-preference 320,568",
+        "ok": true,
+        "details": {
+          "footer": {
+            "x": 0,
+            "y": 484,
+            "width": 320,
+            "height": 84,
+            "top": 484,
+            "right": 320,
+            "bottom": 568,
+            "left": 0
+          },
+          "items": [
+            {
+              "text": "GROWN LOCALLY\nSupporting our community",
+              "rect": {
+                "x": 0,
+                "y": 497.84375,
+                "width": 106.65625,
+                "height": 56.3125,
+                "top": 497.84375,
+                "right": 106.65625,
+                "bottom": 554.15625,
+                "left": 0
+              },
+              "scroll": [
+                107,
+                56
+              ],
+              "client": [
+                107,
+                56
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "OPEN FRIDAY TO SUNDAY\nMorning until sold out",
+              "rect": {
+                "x": 106.65625,
+                "y": 490.375,
+                "width": 106.671875,
+                "height": 71.25,
+                "top": 490.375,
+                "right": 213.328125,
+                "bottom": 561.625,
+                "left": 106.65625
+              },
+              "scroll": [
+                106,
+                71
+              ],
+              "client": [
+                106,
+                71
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "FIND US ON THE ROAD\nLook for the green roof",
+              "rect": {
+                "x": 213.328125,
+                "y": 490.375,
+                "width": 106.65625,
+                "height": 71.25,
+                "top": 490.375,
+                "right": 319.984375,
+                "bottom": 561.625,
+                "left": 213.328125
+              },
+              "scroll": [
+                106,
+                71
+              ],
+              "client": [
+                106,
+                71
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            }
+          ]
+        }
+      },
+      {
+        "name": "Produce board clears footer no-preference 320,568",
+        "ok": true,
+        "details": {
+          "zone": {
+            "x": 38.40625,
+            "y": 134,
+            "width": 243.1875,
+            "height": 338
+          },
+          "footer": {
+            "x": 0,
+            "y": 484,
+            "width": 320,
+            "height": 84,
+            "top": 484,
+            "right": 320,
+            "bottom": 568,
+            "left": 0
+          }
+        }
+      },
+      {
+        "name": "Produce all footer content no-preference 780,300",
+        "ok": true,
+        "details": {
+          "footer": {
+            "x": 0,
+            "y": 236,
+            "width": 780,
+            "height": 64,
+            "top": 236,
+            "right": 780,
+            "bottom": 300,
+            "left": 0
+          },
+          "items": [
+            {
+              "text": "GROWN LOCALLY\nSupporting our community",
+              "rect": {
+                "x": 0,
+                "y": 246.4375,
+                "width": 260,
+                "height": 43.125,
+                "top": 246.4375,
+                "right": 260,
+                "bottom": 289.5625,
+                "left": 0
+              },
+              "scroll": [
+                260,
+                43
+              ],
+              "client": [
+                260,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "OPEN FRIDAY TO SUNDAY\nMorning until sold out",
+              "rect": {
+                "x": 260,
+                "y": 246.4375,
+                "width": 260,
+                "height": 43.125,
+                "top": 246.4375,
+                "right": 520,
+                "bottom": 289.5625,
+                "left": 260
+              },
+              "scroll": [
+                259,
+                43
+              ],
+              "client": [
+                259,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "FIND US ON THE ROAD\nLook for the green roof",
+              "rect": {
+                "x": 520,
+                "y": 246.4375,
+                "width": 260,
+                "height": 43.125,
+                "top": 246.4375,
+                "right": 780,
+                "bottom": 289.5625,
+                "left": 520
+              },
+              "scroll": [
+                259,
+                43
+              ],
+              "client": [
+                259,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            }
+          ]
+        }
+      },
+      {
+        "name": "Produce board clears footer no-preference 780,300",
+        "ok": true,
+        "details": {
+          "zone": {
+            "x": 391.609375,
+            "y": 10,
+            "width": 374.390625,
+            "height": 214
+          },
+          "footer": {
+            "x": 0,
+            "y": 236,
+            "width": 780,
+            "height": 64,
+            "top": 236,
+            "right": 780,
+            "bottom": 300,
+            "left": 0
+          }
+        }
+      },
+      {
+        "name": "Produce all footer content reduce 1440,900",
+        "ok": true,
+        "details": {
+          "footer": {
+            "x": 158.390625,
+            "y": 814,
+            "width": 1123.21875,
+            "height": 86,
+            "top": 814,
+            "right": 1281.609375,
+            "bottom": 900,
+            "left": 158.390625
+          },
+          "items": [
+            {
+              "text": "GROWN LOCALLY\nSupporting our community",
+              "rect": {
+                "x": 158.390625,
+                "y": 834.5,
+                "width": 374.40625,
+                "height": 45,
+                "top": 834.5,
+                "right": 532.796875,
+                "bottom": 879.5,
+                "left": 158.390625
+              },
+              "scroll": [
+                374,
+                45
+              ],
+              "client": [
+                374,
+                45
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "OPEN FRIDAY TO SUNDAY\nMorning until sold out",
+              "rect": {
+                "x": 532.796875,
+                "y": 834.5,
+                "width": 374.40625,
+                "height": 45,
+                "top": 834.5,
+                "right": 907.203125,
+                "bottom": 879.5,
+                "left": 532.796875
+              },
+              "scroll": [
+                373,
+                45
+              ],
+              "client": [
+                373,
+                45
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "FIND US ON THE ROAD\nLook for the green roof",
+              "rect": {
+                "x": 907.203125,
+                "y": 834.5,
+                "width": 374.40625,
+                "height": 45,
+                "top": 834.5,
+                "right": 1281.609375,
+                "bottom": 879.5,
+                "left": 907.203125
+              },
+              "scroll": [
+                373,
+                45
+              ],
+              "client": [
+                373,
+                45
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            }
+          ]
+        }
+      },
+      {
+        "name": "Produce board clears footer reduce 1440,900",
+        "ok": true,
+        "details": {
+          "zone": {
+            "x": 924.5,
+            "y": 162,
+            "width": 403.1875,
+            "height": 576
+          },
+          "footer": {
+            "x": 158.390625,
+            "y": 814,
+            "width": 1123.21875,
+            "height": 86,
+            "top": 814,
+            "right": 1281.609375,
+            "bottom": 900,
+            "left": 158.390625
+          }
+        }
+      },
+      {
+        "name": "Produce all footer content reduce 390,844",
+        "ok": true,
+        "details": {
+          "footer": {
+            "x": 0,
+            "y": 760,
+            "width": 390,
+            "height": 84,
+            "top": 760,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          },
+          "items": [
+            {
+              "text": "GROWN LOCALLY\nSupporting our community",
+              "rect": {
+                "x": 0,
+                "y": 773.84375,
+                "width": 130,
+                "height": 56.3125,
+                "top": 773.84375,
+                "right": 130,
+                "bottom": 830.15625,
+                "left": 0
+              },
+              "scroll": [
+                130,
+                56
+              ],
+              "client": [
+                130,
+                56
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "OPEN FRIDAY TO SUNDAY\nMorning until sold out",
+              "rect": {
+                "x": 130,
+                "y": 780.4375,
+                "width": 130,
+                "height": 43.125,
+                "top": 780.4375,
+                "right": 260,
+                "bottom": 823.5625,
+                "left": 130
+              },
+              "scroll": [
+                129,
+                43
+              ],
+              "client": [
+                129,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "FIND US ON THE ROAD\nLook for the green roof",
+              "rect": {
+                "x": 260,
+                "y": 780.4375,
+                "width": 130,
+                "height": 43.125,
+                "top": 780.4375,
+                "right": 390,
+                "bottom": 823.5625,
+                "left": 260
+              },
+              "scroll": [
+                129,
+                43
+              ],
+              "client": [
+                129,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            }
+          ]
+        }
+      },
+      {
+        "name": "Produce board clears footer reduce 390,844",
+        "ok": true,
+        "details": {
+          "zone": {
+            "x": 46.8046875,
+            "y": 164,
+            "width": 296.390625,
+            "height": 584
+          },
+          "footer": {
+            "x": 0,
+            "y": 760,
+            "width": 390,
+            "height": 84,
+            "top": 760,
+            "right": 390,
+            "bottom": 844,
+            "left": 0
+          }
+        }
+      },
+      {
+        "name": "Produce all footer content reduce 844,390",
+        "ok": true,
+        "details": {
+          "footer": {
+            "x": 0,
+            "y": 326,
+            "width": 844,
+            "height": 64,
+            "top": 326,
+            "right": 844,
+            "bottom": 390,
+            "left": 0
+          },
+          "items": [
+            {
+              "text": "GROWN LOCALLY\nSupporting our community",
+              "rect": {
+                "x": 0,
+                "y": 336.4375,
+                "width": 281.328125,
+                "height": 43.125,
+                "top": 336.4375,
+                "right": 281.328125,
+                "bottom": 379.5625,
+                "left": 0
+              },
+              "scroll": [
+                281,
+                43
+              ],
+              "client": [
+                281,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "OPEN FRIDAY TO SUNDAY\nMorning until sold out",
+              "rect": {
+                "x": 281.328125,
+                "y": 336.4375,
+                "width": 281.328125,
+                "height": 43.125,
+                "top": 336.4375,
+                "right": 562.65625,
+                "bottom": 379.5625,
+                "left": 281.328125
+              },
+              "scroll": [
+                280,
+                43
+              ],
+              "client": [
+                280,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "FIND US ON THE ROAD\nLook for the green roof",
+              "rect": {
+                "x": 562.65625,
+                "y": 336.4375,
+                "width": 281.34375,
+                "height": 43.125,
+                "top": 336.4375,
+                "right": 844,
+                "bottom": 379.5625,
+                "left": 562.65625
+              },
+              "scroll": [
+                280,
+                43
+              ],
+              "client": [
+                280,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            }
+          ]
+        }
+      },
+      {
+        "name": "Produce board clears footer reduce 844,390",
+        "ok": true,
+        "details": {
+          "zone": {
+            "x": 424.890625,
+            "y": 10,
+            "width": 405.109375,
+            "height": 304
+          },
+          "footer": {
+            "x": 0,
+            "y": 326,
+            "width": 844,
+            "height": 64,
+            "top": 326,
+            "right": 844,
+            "bottom": 390,
+            "left": 0
+          }
+        }
+      },
+      {
+        "name": "Produce all footer content reduce 320,568",
+        "ok": true,
+        "details": {
+          "footer": {
+            "x": 0,
+            "y": 484,
+            "width": 320,
+            "height": 84,
+            "top": 484,
+            "right": 320,
+            "bottom": 568,
+            "left": 0
+          },
+          "items": [
+            {
+              "text": "GROWN LOCALLY\nSupporting our community",
+              "rect": {
+                "x": 0,
+                "y": 497.84375,
+                "width": 106.65625,
+                "height": 56.3125,
+                "top": 497.84375,
+                "right": 106.65625,
+                "bottom": 554.15625,
+                "left": 0
+              },
+              "scroll": [
+                107,
+                56
+              ],
+              "client": [
+                107,
+                56
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "OPEN FRIDAY TO SUNDAY\nMorning until sold out",
+              "rect": {
+                "x": 106.65625,
+                "y": 490.375,
+                "width": 106.671875,
+                "height": 71.25,
+                "top": 490.375,
+                "right": 213.328125,
+                "bottom": 561.625,
+                "left": 106.65625
+              },
+              "scroll": [
+                106,
+                71
+              ],
+              "client": [
+                106,
+                71
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "FIND US ON THE ROAD\nLook for the green roof",
+              "rect": {
+                "x": 213.328125,
+                "y": 490.375,
+                "width": 106.65625,
+                "height": 71.25,
+                "top": 490.375,
+                "right": 319.984375,
+                "bottom": 561.625,
+                "left": 213.328125
+              },
+              "scroll": [
+                106,
+                71
+              ],
+              "client": [
+                106,
+                71
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            }
+          ]
+        }
+      },
+      {
+        "name": "Produce board clears footer reduce 320,568",
+        "ok": true,
+        "details": {
+          "zone": {
+            "x": 38.40625,
+            "y": 134,
+            "width": 243.1875,
+            "height": 338
+          },
+          "footer": {
+            "x": 0,
+            "y": 484,
+            "width": 320,
+            "height": 84,
+            "top": 484,
+            "right": 320,
+            "bottom": 568,
+            "left": 0
+          }
+        }
+      },
+      {
+        "name": "Produce all footer content reduce 780,300",
+        "ok": true,
+        "details": {
+          "footer": {
+            "x": 0,
+            "y": 236,
+            "width": 780,
+            "height": 64,
+            "top": 236,
+            "right": 780,
+            "bottom": 300,
+            "left": 0
+          },
+          "items": [
+            {
+              "text": "GROWN LOCALLY\nSupporting our community",
+              "rect": {
+                "x": 0,
+                "y": 246.4375,
+                "width": 260,
+                "height": 43.125,
+                "top": 246.4375,
+                "right": 260,
+                "bottom": 289.5625,
+                "left": 0
+              },
+              "scroll": [
+                260,
+                43
+              ],
+              "client": [
+                260,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "OPEN FRIDAY TO SUNDAY\nMorning until sold out",
+              "rect": {
+                "x": 260,
+                "y": 246.4375,
+                "width": 260,
+                "height": 43.125,
+                "top": 246.4375,
+                "right": 520,
+                "bottom": 289.5625,
+                "left": 260
+              },
+              "scroll": [
+                259,
+                43
+              ],
+              "client": [
+                259,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            },
+            {
+              "text": "FIND US ON THE ROAD\nLook for the green roof",
+              "rect": {
+                "x": 520,
+                "y": 246.4375,
+                "width": 260,
+                "height": 43.125,
+                "top": 246.4375,
+                "right": 780,
+                "bottom": 289.5625,
+                "left": 520
+              },
+              "scroll": [
+                259,
+                43
+              ],
+              "client": [
+                259,
+                43
+              ],
+              "animation": "none",
+              "inside": true,
+              "fit": true
+            }
+          ]
+        }
+      },
+      {
+        "name": "Produce board clears footer reduce 780,300",
+        "ok": true,
+        "details": {
+          "zone": {
+            "x": 391.609375,
+            "y": 10,
+            "width": 374.390625,
+            "height": 214
+          },
+          "footer": {
+            "x": 0,
+            "y": 236,
+            "width": 780,
+            "height": 64,
+            "top": 236,
+            "right": 780,
+            "bottom": 300,
+            "left": 0
+          }
+        }
+      },
+      {
+        "name": "charity-desktop accessibility repaired",
+        "ok": true,
+        "details": {
+          "file": "/boardroom/noticeboard/demos/charity-walk/site.html",
+          "size": [
+            1440,
+            900
+          ],
+          "violations": []
+        }
+      },
+      {
+        "name": "shop-desktop accessibility repaired",
+        "ok": true,
+        "details": {
+          "file": "/boardroom/skateboard/demos/tailor/shop/index.html",
+          "size": [
+            1440,
+            900
+          ],
+          "violations": []
+        }
+      },
+      {
+        "name": "Shop language main and nine pieces",
+        "ok": true
+      },
+      {
+        "name": "shop-phone accessibility repaired",
+        "ok": true,
+        "details": {
+          "file": "/boardroom/skateboard/demos/tailor/shop/index.html",
+          "size": [
+            390,
+            844
+          ],
+          "violations": []
+        }
+      },
+      {
+        "name": "Shop language main and nine pieces",
+        "ok": true
+      },
+      {
+        "name": "pottery-phone accessibility repaired",
+        "ok": true,
+        "details": {
+          "file": "/boardroom/skateboard/demos/pottery/mobile.html",
+          "size": [
+            390,
+            844
+          ],
+          "violations": []
+        }
+      },
+      {
+        "name": "Pottery return inside navigation",
+        "ok": true
+      },
+      {
+        "name": "Pottery return destination retained",
+        "ok": true,
+        "details": "../../index.html"
+      },
+      {
+        "name": "chromium 1440,900 main navigation",
+        "ok": true
+      },
+      {
+        "name": "chromium 1440,900 main no overflow",
+        "ok": true,
+        "details": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "chromium 390,844 main navigation",
+        "ok": true
+      },
+      {
+        "name": "chromium 390,844 main no overflow",
+        "ok": true,
+        "details": [
+          390,
+          844
+        ]
+      },
+      {
+        "name": "chromium optimised phone background active",
+        "ok": false,
+        "details": "url(\"http://127.0.0.1:39741/assets/backgrounds/tablab-mobile-landscape.png\")"
+      },
+      {
+        "name": "chromium 844,390 main navigation",
+        "ok": true
+      },
+      {
+        "name": "chromium 844,390 main no overflow",
+        "ok": true,
+        "details": [
+          844,
+          390
+        ]
+      },
+      {
+        "name": "chromium 320,568 main navigation",
+        "ok": true
+      },
+      {
+        "name": "chromium 320,568 main no overflow",
+        "ok": true,
+        "details": [
+          320,
+          568
+        ]
+      },
+      {
+        "name": "chromium 780,300 main navigation",
+        "ok": true
+      },
+      {
+        "name": "chromium 780,300 main no overflow",
+        "ok": true,
+        "details": [
+          780,
+          300
+        ]
+      },
+      {
+        "name": "firefox 1440,900 main navigation",
+        "ok": true
+      },
+      {
+        "name": "firefox 1440,900 main no overflow",
+        "ok": true,
+        "details": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "firefox 390,844 main navigation",
+        "ok": true
+      },
+      {
+        "name": "firefox 390,844 main no overflow",
+        "ok": true,
+        "details": [
+          390,
+          844
+        ]
+      },
+      {
+        "name": "firefox optimised phone background active",
+        "ok": false,
+        "details": "url(\"http://127.0.0.1:39741/assets/backgrounds/tablab-mobile-landscape.png\")"
+      },
+      {
+        "name": "webkit 1440,900 main navigation",
+        "ok": true
+      },
+      {
+        "name": "webkit 1440,900 main no overflow",
+        "ok": true,
+        "details": [
+          1440,
+          900
+        ]
+      },
+      {
+        "name": "webkit 390,844 main navigation",
+        "ok": true
+      },
+      {
+        "name": "webkit 390,844 main no overflow",
+        "ok": true,
+        "details": [
+          390,
+          844
+        ]
+      },
+      {
+        "name": "webkit optimised phone background active",
+        "ok": false,
+        "details": "url(\"http://127.0.0.1:39741/assets/backgrounds/tablab-mobile-landscape.png\")"
+      }
+    ],
+    "scans": [
+      {
+        "file": "/boardroom/noticeboard/demos/charity-walk/site.html",
+        "size": [
+          1440,
+          900
+        ],
+        "violations": []
+      },
+      {
+        "file": "/boardroom/skateboard/demos/tailor/shop/index.html",
+        "size": [
+          1440,
+          900
+        ],
+        "violations": []
+      },
+      {
+        "file": "/boardroom/skateboard/demos/tailor/shop/index.html",
+        "size": [
+          390,
+          844
+        ],
+        "violations": []
+      },
+      {
+        "file": "/boardroom/skateboard/demos/pottery/mobile.html",
+        "size": [
+          390,
+          844
+        ],
+        "violations": []
+      }
+    ],
+    "errors": [],
+    "console": [],
+    "assets": [],
+    "visits": [
+      {
+        "engine": "chromium",
+        "size": [
+          1440,
+          900
+        ],
+        "file": "/index.html"
+      },
+      {
+        "engine": "chromium",
+        "size": [
+          390,
+          844
+        ],
+        "file": "/index.html"
+      },
+      {
+        "engine": "chromium",
+        "size": [
+          844,
+          390
+        ],
+        "file": "/index.html"
+      },
+      {
+        "engine": "chromium",
+        "size": [
+          320,
+          568
+        ],
+        "file": "/index.html"
+      },
+      {
+        "engine": "chromium",
+        "size": [
+          780,
+          300
+        ],
+        "file": "/index.html"
+      },
+      {
+        "engine": "firefox",
+        "size": [
+          1440,
+          900
+        ],
+        "file": "/index.html"
+      },
+      {
+        "engine": "firefox",
+        "size": [
+          390,
+          844
+        ],
+        "file": "/index.html"
+      },
+      {
+        "engine": "webkit",
+        "size": [
+          1440,
+          900
+        ],
+        "file": "/index.html"
+      },
+      {
+        "engine": "webkit",
+        "size": [
+          390,
+          844
+        ],
+        "file": "/index.html"
+      }
+    ]
+  },
+  "imageDiagnostic": {
+    "run": 40628540770,
+    "checks": [
+      {
+        "name": "Snapshot rejects POST",
+        "ok": true
+      },
+      {
+        "name": "chromium portrait initial WebP active",
+        "ok": true,
+        "details": {
+          "base": "url(\"http://127.0.0.1:40991/assets/backgrounds/tablab-mobile-portrait.webp\")",
+          "before": "linear-gradient(rgba(215, 149, 84, 0.1) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgba(215, 149, 84, 0.08) 1px, rgba(0, 0, 0, 0) 1px)"
+        }
+      },
+      {
+        "name": "chromium portrait Explore WebP layer active",
+        "ok": false,
+        "details": {
+          "base": "url(\"http://127.0.0.1:40991/assets/backgrounds/tablab-mobile-landscape.png\")",
+          "before": "none"
+        }
+      },
+      {
+        "name": "chromium WebP asset delivered intact",
+        "ok": true,
+        "details": {
+          "status": 200,
+          "bytes": 1212976
+        }
+      },
+      {
+        "name": "firefox portrait initial WebP active",
+        "ok": true,
+        "details": {
+          "base": "url(\"http://127.0.0.1:40991/assets/backgrounds/tablab-mobile-portrait.webp\")",
+          "before": "linear-gradient(rgba(215, 149, 84, 0.1) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgba(215, 149, 84, 0.08) 1px, rgba(0, 0, 0, 0) 1px)"
+        }
+      },
+      {
+        "name": "firefox portrait Explore WebP layer active",
+        "ok": false,
+        "details": {
+          "base": "url(\"http://127.0.0.1:40991/assets/backgrounds/tablab-mobile-landscape.png\")",
+          "before": "none"
+        }
+      },
+      {
+        "name": "firefox WebP asset delivered intact",
+        "ok": true,
+        "details": {
+          "status": 200,
+          "bytes": 1212976
+        }
+      },
+      {
+        "name": "webkit portrait initial WebP active",
+        "ok": true,
+        "details": {
+          "base": "url(\"http://127.0.0.1:40991/assets/backgrounds/tablab-mobile-portrait.webp\")",
+          "before": "linear-gradient(rgba(215, 149, 84, 0.1) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgba(215, 149, 84, 0.08) 1px, rgba(0, 0, 0, 0) 1px)"
+        }
+      },
+      {
+        "name": "webkit portrait Explore WebP layer active",
+        "ok": false,
+        "details": {
+          "base": "url(\"http://127.0.0.1:40991/assets/backgrounds/tablab-mobile-landscape.png\")",
+          "before": "none"
+        }
+      },
+      {
+        "name": "webkit WebP asset delivered intact",
+        "ok": true,
+        "details": {
+          "status": 200,
+          "bytes": 1212976
+        }
+      }
+    ],
+    "errors": []
+  },
+  "imageVerify": {
+    "run": 40628918378,
+    "checks": [
+      {
+        "name": "Snapshot rejects POST",
+        "ok": true
+      },
+      {
+        "name": "chromium portrait initial WebP active",
+        "ok": true,
+        "details": {
+          "base": "url(\"http://127.0.0.1:41501/assets/backgrounds/tablab-mobile-portrait.webp\")",
+          "before": "linear-gradient(rgba(215, 149, 84, 0.1) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgba(215, 149, 84, 0.08) 1px, rgba(0, 0, 0, 0) 1px)"
+        }
+      },
+      {
+        "name": "chromium portrait Explore retains intentional background",
+        "ok": true,
+        "details": {
+          "base": "url(\"http://127.0.0.1:41501/assets/backgrounds/tablab-mobile-landscape.png\")",
+          "before": "none"
+        }
+      },
+      {
+        "name": "chromium WebP asset delivered intact",
+        "ok": true,
+        "details": {
+          "status": 200,
+          "bytes": 1212976
+        }
+      },
+      {
+        "name": "firefox portrait initial WebP active",
+        "ok": true,
+        "details": {
+          "base": "url(\"http://127.0.0.1:41501/assets/backgrounds/tablab-mobile-portrait.webp\")",
+          "before": "linear-gradient(rgba(215, 149, 84, 0.1) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgba(215, 149, 84, 0.08) 1px, rgba(0, 0, 0, 0) 1px)"
+        }
+      },
+      {
+        "name": "firefox portrait Explore retains intentional background",
+        "ok": true,
+        "details": {
+          "base": "url(\"http://127.0.0.1:41501/assets/backgrounds/tablab-mobile-landscape.png\")",
+          "before": "none"
+        }
+      },
+      {
+        "name": "firefox WebP asset delivered intact",
+        "ok": true,
+        "details": {
+          "status": 200,
+          "bytes": 1212976
+        }
+      },
+      {
+        "name": "webkit portrait initial WebP active",
+        "ok": true,
+        "details": {
+          "base": "url(\"http://127.0.0.1:41501/assets/backgrounds/tablab-mobile-portrait.webp\")",
+          "before": "linear-gradient(rgba(215, 149, 84, 0.1) 1px, rgba(0, 0, 0, 0) 1px), linear-gradient(90deg, rgba(215, 149, 84, 0.08) 1px, rgba(0, 0, 0, 0) 1px)"
+        }
+      },
+      {
+        "name": "webkit portrait Explore retains intentional background",
+        "ok": true,
+        "details": {
+          "base": "url(\"http://127.0.0.1:41501/assets/backgrounds/tablab-mobile-landscape.png\")",
+          "before": "none"
+        }
+      },
+      {
+        "name": "webkit WebP asset delivered intact",
+        "ok": true,
+        "details": {
+          "status": 200,
+          "bytes": 1212976
+        }
+      }
+    ],
+    "errors": []
+  },
+  "contrast": [
+    {
+      "selector": ".hero h1",
+      "text": "A collection of distinctive retreats.",
+      "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "opacity": 1,
+      "threshold": 3,
+      "minRatio": 7.854578767471407,
+      "maxRatio": 20.50264926567334,
+      "samples": 16041,
+      "belowThreshold": 0,
+      "worst": {
+        "x": 110,
+        "y": 193,
+        "background": [
+          83,
+          82,
+          74
+        ]
+      },
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "settled target page at top; includes rendered image and pseudo-element backgrounds",
+      "rawViewportLabelCorrected": true
+    },
+    {
+      "selector": ".hero p",
+      "text": "Four houses, held by forest, farm, coast and town. Built with timber, stone and restraint. Designed for long mornings and quiet nights.",
+      "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "opacity": 1,
+      "threshold": 4.5,
+      "minRatio": 15.18101005201014,
+      "maxRatio": 20.76608062161435,
+      "samples": 874,
+      "belowThreshold": 0,
+      "worst": {
+        "x": 291,
+        "y": 742,
+        "background": [
+          44,
+          37,
+          22
+        ]
+      },
+      "viewport": [
+        1440,
+        900
+      ],
+      "state": "settled target page at top; includes rendered image and pseudo-element backgrounds",
+      "rawViewportLabelCorrected": true
+    },
+    {
+      "selector": ".hero h1",
+      "text": "A collection of distinctive retreats.",
+      "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "opacity": 1,
+      "threshold": 3,
+      "minRatio": 12.652842259314482,
+      "maxRatio": 20.855619809200437,
+      "samples": 2523,
+      "belowThreshold": 0,
+      "worst": {
+        "x": 66,
+        "y": 593,
+        "background": [
+          61,
+          49,
+          33
+        ]
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "state": "settled target page at top; includes rendered image and pseudo-element backgrounds",
+      "rawViewportLabelCorrected": true
+    },
+    {
+      "selector": ".hero p",
+      "text": "Four houses, held by forest, farm, coast and town. Built with timber, stone and restraint. Designed for long mornings and quiet nights.",
+      "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+      "color": [
+        255,
+        255,
+        255
+      ],
+      "opacity": 1,
+      "threshold": 4.5,
+      "minRatio": 14.776089556734432,
+      "maxRatio": 20.76608062161435,
+      "samples": 874,
+      "belowThreshold": 0,
+      "worst": {
+        "x": 299,
+        "y": 693,
+        "background": [
+          51,
+          37,
+          27
+        ]
+      },
+      "viewport": [
+        390,
+        844
+      ],
+      "state": "settled target page at top; includes rendered image and pseudo-element backgrounds",
+      "rawViewportLabelCorrected": true
+    },
+    {
+      "selector": ".hero h1",
+      "text": "A collection of distinctive retreats.",
+      "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+      "color": [
+        43,
+        43,
+        40
+      ],
+      "opacity": 1,
+      "threshold": 3,
+      "minRatio": 13.882950037230119,
+      "maxRatio": 13.882950037230119,
+      "samples": 1659,
+      "belowThreshold": 0,
+      "worst": {
+        "x": 494,
+        "y": 91,
+        "background": [
+          255,
+          252,
+          248
+        ]
+      },
+      "viewport": [
+        844,
+        390
+      ],
+      "state": "settled target page at top; includes rendered image and pseudo-element backgrounds",
+      "rawViewportLabelCorrected": true
+    },
+    {
+      "selector": ".hero p",
+      "text": "Four houses, held by forest, farm, coast and town. Built with timber, stone and restraint. Designed for long mornings and quiet nights.",
+      "method": "DOM text only temporarily hidden; rendered background sampled at opaque glyph-mask interior; antialias coverage excluded; original styles restored",
+      "color": [
+        43,
+        43,
+        40
+      ],
+      "opacity": 1,
+      "threshold": 4.5,
+      "minRatio": 13.882950037230119,
+      "maxRatio": 13.882950037230119,
+      "samples": 234,
+      "belowThreshold": 0,
+      "worst": {
+        "x": 419,
+        "y": 231,
+        "background": [
+          255,
+          252,
+          248
+        ]
+      },
+      "viewport": [
+        844,
+        390
+      ],
+      "state": "settled target page at top; includes rendered image and pseudo-element backgrounds",
+      "rawViewportLabelCorrected": true
+    }
+  ],
+  "reviewedScreens": 14,
+  "stableScreens": 14,
+  "forms": [
+    {
+      "key": "chromium:http://127.0.0.1:39741/boardroom/springboard/demos/retreat/book.html#clementine-book-form",
+      "state": "empty-submit",
+      "valid": false,
+      "text": "Skip to content\nCLEMENTINE'S\nBOOK\nSimple. Calm. Beautiful.\n\nRates are tailored to the season and length of stay. We'd love to prepare a personalised quote for your visit.\n\nRETREAT\nWoodland Retreat\nCoastal Retreat\nFarm Retreat\nTown Retreat\nUndecided\nDATES\nGUESTS\nNAME\n\nPlease enter your name.\n\nEMAIL\n\nPlease enter your email address.\n\nMESSAGE\n\nPlease correct 2 fields.\n\n\nSEND ENQUIRY\nLOCATION\n\nThirty minutes apart, all within an hour of the city. Exact addresses shared on booking. Forest to coast in one afternoon.\n\nCLEMENTINE'S\nA collection of distinctive retreats.\nContact Clementine’s\n© 2026 Clementine's\nTab Lab"
+    },
+    {
+      "key": "chromium:http://127.0.0.1:39741/boardroom/springboard/demos/retreat/book.html#clementine-book-form",
+      "state": "filled-submit",
+      "text": "Skip to content\nCLEMENTINE'S\nBOOK\nSimple. Calm. Beautiful.\n\nRates are tailored to the season and length of stay. We'd love to prepare a personalised quote for your visit.\n\nRETREAT\nWoodland Retreat\nCoastal Retreat\nFarm Retreat\nTown Retreat\nUndecided\nDATES\nGUESTS\nNAME\nEMAIL\nMESSAGE\n\nSEND ENQUIRY\n❀\nDemo complete.\n\nThis is a demonstration. No enquiry has been sent and no stay has been booked.\n\nOK\nLOCATION\n\nThirty minutes apart, all within an hour of the city. Exact addresses shared on booking. Forest to coast in one afternoon.\n\nCLEMENTINE'S\nA collection of distinctive retreats.\nContact Clementine’s\n© 2026 Clementine's\nTab Lab"
+    },
+    {
+      "key": "firefox:http://127.0.0.1:39741/boardroom/springboard/demos/retreat/book.html#clementine-book-form",
+      "state": "empty-submit",
+      "valid": false,
+      "text": "Skip to content\nCLEMENTINE'S\nBOOK\nSimple. Calm. Beautiful.\n\nRates are tailored to the season and length of stay. We'd love to prepare a personalised quote for your visit.\n\nRETREAT\nDATES\nGUESTS\nNAME\n\nPlease enter your name.\n\nEMAIL\n\nPlease enter your email address.\n\nMESSAGE\n\nPlease correct 2 fields.\n\n\nSEND ENQUIRY\nLOCATION\n\nThirty minutes apart, all within an hour of the city. Exact addresses shared on booking. Forest to coast in one afternoon.\n\nCLEMENTINE'S\nA collection of distinctive retreats.\nContact Clementine’s\n© 2026 Clementine's\nTab Lab"
+    },
+    {
+      "key": "firefox:http://127.0.0.1:39741/boardroom/springboard/demos/retreat/book.html#clementine-book-form",
+      "state": "filled-submit",
+      "text": "Skip to content\nCLEMENTINE'S\nBOOK\nSimple. Calm. Beautiful.\n\nRates are tailored to the season and length of stay. We'd love to prepare a personalised quote for your visit.\n\nRETREAT\nDATES\nGUESTS\nNAME\nEMAIL\nMESSAGE\n\nSEND ENQUIRY\n❀\nDemo complete.\n\nThis is a demonstration. No enquiry has been sent and no stay has been booked.\n\nOK\nLOCATION\n\nThirty minutes apart, all within an hour of the city. Exact addresses shared on booking. Forest to coast in one afternoon.\n\nCLEMENTINE'S\nA collection of distinctive retreats.\nContact Clementine’s\n© 2026 Clementine's\nTab Lab"
+    },
+    {
+      "key": "webkit:http://127.0.0.1:39741/boardroom/springboard/demos/retreat/book.html#clementine-book-form",
+      "state": "empty-submit",
+      "valid": false,
+      "text": "Skip to content\nCLEMENTINE'S\n\nBOOK\nSimple. Calm. Beautiful.\n\nRates are tailored to the season and length of stay. We'd love to prepare a personalised quote for your visit.\n\nRETREAT\n\nDATES\n\nGUESTS\n\nNAME\n\nPlease enter your name.\nEMAIL\n\nPlease enter your email address.\nMESSAGE\n\nPlease correct 2 fields.\n\nSEND ENQUIRY\n\nLOCATION\nThirty minutes apart, all within an hour of the city. Exact addresses shared on booking. Forest to coast in one afternoon.\nCLEMENTINE'S\nA collection of distinctive retreats.\nContact Clementine’s\n© 2026 Clementine's\nTab Lab"
+    },
+    {
+      "key": "webkit:http://127.0.0.1:39741/boardroom/springboard/demos/retreat/book.html#clementine-book-form",
+      "state": "filled-submit",
+      "text": "Skip to content\nCLEMENTINE'S\n\nBOOK\nSimple. Calm. Beautiful.\n\nRates are tailored to the season and length of stay. We'd love to prepare a personalised quote for your visit.\n\nRETREAT\n\nDATES\n\nGUESTS\n\nNAME\n\nEMAIL\n\nMESSAGE\n\nSEND ENQUIRY\n❀\nDemo complete.\nThis is a demonstration. No enquiry has been sent and no stay has been booked.\n\nOK\n\nLOCATION\nThirty minutes apart, all within an hour of the city. Exact addresses shared on booking. Forest to coast in one afternoon.\nCLEMENTINE'S\nA collection of distinctive retreats.\nContact Clementine’s\n© 2026 Clementine's\nTab Lab"
+    }
+  ],
+  "independentReview": {
+    "scope": "Initial portrait and post-Explore CSS cascade",
+    "outcome": "Initial portrait uses converted WebP. Existing tablab-mobile.css:142 uses landscape base for Explore; :331-337 explicitly hides decorative pseudo-element. Filename restoration yields baseline CSS; no product regression."
+  },
+  "image": {
+    "originalBytes": 1667173,
+    "webpBytes": 1212976,
+    "pixelDifferences": 0,
+    "gitBlob": "0d4695b008c81de3e2a8ee53affff41bcab7da64"
+  },
+  "productionPublished": false
+}
