@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 25
     env:
-      CHECK_TASK: repairs
+      CHECK_TASK: imageverify
       AUDIT_SOURCE_COMMIT: 7410e040214f7369013a41d47aa3422e4c4bd6e0
     steps:
       - uses: actions/checkout@v4
@@ -25,6 +25,6 @@ jobs:
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: sitewide-repair-retest
-          path: sitecheck-evidence/sitewide-2026-10-28/repairs/
+          name: sitewide-repair-imageverify
+          path: sitecheck-evidence/sitewide-2026-10-28/imageverify/
           retention-days: 90
