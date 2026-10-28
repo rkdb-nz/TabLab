@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        task: [recovery]
+        task: [focus]
     env:
       AUDIT_SOURCE_COMMIT: 7410e040214f7369013a41d47aa3422e4c4bd6e0
       CHECK_TASK: '${{ matrix.task }}'
