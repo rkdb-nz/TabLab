@@ -38,3 +38,11 @@ A generic control click or form submission is an observation, not an automatic p
 5. Deduplicate confirmed findings across pages, sizes and engines. Return one concise report with the sitecheck protocol's two lists: fixes available for approval; actual user decisions. Separate testing limitations from decisions. No repairs or publishing in this phase.
 
 Physical phones, actual Safari/iOS and screen readers, real delivery/backend semantics and universal pixel-perfect certification remain outside this audit. Earlier sitecheck reports can be reused only with unchanged-source provenance and must not be called fresh checks.
+
+## Launch checkpoint
+
+Run launched successfully: https://github.com/rkdb-nz/TabLab/actions/runs/40614967756 . Runner commit: 96ee0232fe0a9f9849bfa4abd537fe8a1f9a1f28. It was observed **in progress**, not merely configured, in the launching session. Inspect the run for current status.
+
+Readiness in the launching session: source access passed (83 HTML/JS files read, 56 HTML files classified as 38 pages, 12 wrappers, two internal previews and four fragments). Hosted Chrome opened the live landing page, clicked “Let me choose”, waited for “The Boardroom” link to become visible, and the settled Explore panel screenshot was actually inspected at https://tablab.rkdb.nz/#explore. No live form submitted. Syntax checks passed for the new scripts; lab reference-contrast and retry/stability guards passed locally. Firefox/WebKit launch and collection proof is to be obtained from the secondary job, not assumed from availability.
+
+Resume instruction for the user: **Continue the Tab Lab sitewide audit from run 40614967756. Read the HANDOFF.md on audit/sitewide-2026-10-28 in rkdb-nz/TabLab.**
