@@ -1,0 +1,57 @@
+name: Tab Lab sitewide evidence sweep
+on:
+  push:
+    branches: ['audit/sitewide-2026-10-28']
+    paths: ['qa/sitewide/**', '.github/workflows/sitecheck-sitewide.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  collect:
+    name: '${{ matrix.task }}'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 35
+    strategy:
+      fail-fast: false
+      matrix:
+        task: [census, features, secondary, lighthouse]
+    env:
+      AUDIT_SOURCE_COMMIT: 7410e040214f7369013a41d47aa3422e4c4bd6e0
+      CHECK_TASK: '${{ matrix.task }}'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify website source is unchanged
+        run: git diff --exit-code "$AUDIT_SOURCE_COMMIT" -- public
+      - run: npm ci --prefix qa/sitewide --no-audit --no-fund
+      - name: Install the declared browsers
+        working-directory: qa/sitewide
+        run: |
+          if [ "$CHECK_TASK" = secondary ]; then
+            npx playwright install --with-deps firefox webkit
+          else
+            npx playwright install --with-deps chromium
+          fi
+      - name: Verify measurement and retry guards
+        run: node qa/sitewide/verify.cjs
+      - name: Collect and checkpoint evidence
+        run: node qa/sitewide/run.cjs
+      - name: Publish collection summary
+        if: always()
+        run: |
+          if [ -f "sitecheck-evidence/sitewide-2026-10-28/$CHECK_TASK/SUMMARY.md" ]; then
+            cat "sitecheck-evidence/sitewide-2026-10-28/$CHECK_TASK/SUMMARY.md" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo 'INCOMPLETE: collection did not produce a summary; inspect job logs.' >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: 'sitewide-${{ matrix.task }}'
+          path: 'sitecheck-evidence/sitewide-2026-10-28/${{ matrix.task }}/'
+          retention-days: 90
+          if-no-files-found: error
