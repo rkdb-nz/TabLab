@@ -1,0 +1,600 @@
+{
+  "chrome-live": {
+    "version": "155.0.8059.39",
+    "checks": [
+      {
+        "label": "1440x900 about focus inside",
+        "evidence": true
+      },
+      {
+        "label": "1440x900 about scroll bottom",
+        "evidence": {
+          "top": 0,
+          "height": 845,
+          "scroll": 845,
+          "last": 740.75,
+          "panelBottom": 845
+        }
+      },
+      {
+        "label": "1440x900 no overlap",
+        "evidence": true
+      },
+      {
+        "label": "1440x900 find focus inside",
+        "evidence": true
+      },
+      {
+        "label": "1440x900 find scroll bottom",
+        "evidence": {
+          "top": 161,
+          "height": 845,
+          "scroll": 1006,
+          "last": 804.703125,
+          "panelBottom": 845
+        }
+      },
+      {
+        "label": "1440x900 keyboard panel focus",
+        "evidence": {
+          "active": "<button class=\"panel-close\" type=\"button\" aria-label=\"Close panel\">\u00d7</button>",
+          "open": "about-panel"
+        }
+      },
+      {
+        "label": "1440x900 focus restored",
+        "evidence": true
+      },
+      {
+        "label": "1440x900 fullscreen",
+        "evidence": [
+          1440,
+          900
+        ]
+      },
+      {
+        "label": "1440x900 return",
+        "evidence": [
+          1426,
+          845
+        ]
+      },
+      {
+        "label": "1440x900 execution error",
+        "evidence": "page.waitForURL: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/noticeboard/index.html\" until \"load\"\n============================================================"
+      },
+      {
+        "label": "390x844 about focus inside",
+        "evidence": true
+      },
+      {
+        "label": "390x844 about scroll bottom",
+        "evidence": {
+          "top": 68,
+          "height": 763,
+          "scroll": 831,
+          "last": 731.140625,
+          "panelBottom": 763
+        }
+      },
+      {
+        "label": "390x844 no overlap",
+        "evidence": true
+      },
+      {
+        "label": "390x844 find focus inside",
+        "evidence": true
+      },
+      {
+        "label": "390x844 find scroll bottom",
+        "evidence": {
+          "top": 208,
+          "height": 763,
+          "scroll": 971,
+          "last": 731.171875,
+          "panelBottom": 763
+        }
+      },
+      {
+        "label": "390x844 demo call",
+        "evidence": "Demo only \u2014 no call has been placed."
+      },
+      {
+        "label": "390x844 demo email",
+        "evidence": "Demo only \u2014 no email has been created or sent."
+      },
+      {
+        "label": "390x844 keyboard panel focus",
+        "evidence": {
+          "active": "<button class=\"panel-close\" type=\"button\" aria-label=\"Close panel\">\u00d7</button>",
+          "open": "about-panel"
+        }
+      },
+      {
+        "label": "390x844 focus restored",
+        "evidence": true
+      },
+      {
+        "label": "390x844 fullscreen",
+        "evidence": [
+          390,
+          844
+        ]
+      },
+      {
+        "label": "390x844 return",
+        "evidence": [
+          382,
+          763
+        ]
+      },
+      {
+        "label": "390x844 execution error",
+        "evidence": "page.waitForURL: Timeout 30000ms exceeded.\n=========================== logs ===========================\nwaiting for navigation to \"**/noticeboard/index.html\" until \"load\"\n============================================================"
+      },
+      {
+        "label": "844x390 about focus inside",
+        "evidence": true
+      },
+      {
+        "label": "844x390 about scroll bottom",
+        "evidence": {
+          "top": 443,
+          "height": 338,
+          "scroll": 781,
+          "last": 297.75,
+          "panelBottom": 338
+        }
+      },
+      {
+        "label": "844x390 no overlap",
+        "evidence": true
+      },
+      {
+        "label": "844x390 find focus inside",
+        "evidence": true
+      },
+      {
+        "label": "844x390 find scroll bottom",
+        "evidence": {
+          "top": 668,
+          "height": 338,
+          "scroll": 1006,
+          "last": 297.703125,
+          "panelBottom": 338
+        }
+      },
+      {
+        "label": "844x390 keyboard panel focus",
+        "evidence": {
+          "active": "<button class=\"panel-close\" type=\"button\" aria-label=\"Close panel\">\u00d7</button>",
+          "open": "about-panel"
+        }
+      },
+      {
+        "label": "844x390 focus restored",
+        "evidence": true
+      },
+      {
+        "label": "320x568 about focus inside",
+        "evidence": true
+      },
+      {
+        "label": "320x568 about scroll bottom",
+        "evidence": {
+          "top": 439,
+          "height": 487,
+          "scroll": 926,
+          "last": 455.328125,
+          "panelBottom": 487
+        }
+      },
+      {
+        "label": "320x568 no overlap",
+        "evidence": true
+      },
+      {
+        "label": "320x568 find focus inside",
+        "evidence": true
+      },
+      {
+        "label": "320x568 find scroll bottom",
+        "evidence": {
+          "top": 545,
+          "height": 487,
+          "scroll": 1032,
+          "last": 455.15625,
+          "panelBottom": 487
+        }
+      },
+      {
+        "label": "320x568 keyboard panel focus",
+        "evidence": {
+          "active": "<button class=\"panel-close\" type=\"button\" aria-label=\"Close panel\">\u00d7</button>",
+          "open": "about-panel"
+        }
+      },
+      {
+        "label": "320x568 focus restored",
+        "evidence": true
+      },
+      {
+        "label": "780x300 about focus inside",
+        "evidence": true
+      },
+      {
+        "label": "780x300 about scroll bottom",
+        "evidence": {
+          "top": 533,
+          "height": 248,
+          "scroll": 781,
+          "last": 207.75,
+          "panelBottom": 248
+        }
+      },
+      {
+        "label": "780x300 no overlap",
+        "evidence": true
+      },
+      {
+        "label": "780x300 find focus inside",
+        "evidence": true
+      },
+      {
+        "label": "780x300 find scroll bottom",
+        "evidence": {
+          "top": 758,
+          "height": 248,
+          "scroll": 1006,
+          "last": 207.703125,
+          "panelBottom": 248
+        }
+      },
+      {
+        "label": "780x300 keyboard panel focus",
+        "evidence": {
+          "active": "<button class=\"panel-close\" type=\"button\" aria-label=\"Close panel\">\u00d7</button>",
+          "open": "about-panel"
+        }
+      },
+      {
+        "label": "780x300 focus restored",
+        "evidence": true
+      }
+    ],
+    "errors": [],
+    "captures": [
+      {
+        "file": "1440x900-home.png",
+        "viewport": [
+          1440,
+          900
+        ],
+        "state": "1440x900-home",
+        "inspected": false
+      },
+      {
+        "file": "390x844-home.png",
+        "viewport": [
+          390,
+          844
+        ],
+        "state": "390x844-home",
+        "inspected": false
+      },
+      {
+        "file": "390x844-about.png",
+        "viewport": [
+          390,
+          844
+        ],
+        "state": "390x844-about",
+        "inspected": false
+      },
+      {
+        "file": "demo-contact-bottom.png",
+        "viewport": [
+          390,
+          844
+        ],
+        "state": "demo-contact-bottom",
+        "inspected": false
+      },
+      {
+        "file": "844x390-home.png",
+        "viewport": [
+          844,
+          390
+        ],
+        "state": "844x390-home",
+        "inspected": false
+      },
+      {
+        "file": "320x568-home.png",
+        "viewport": [
+          320,
+          568
+        ],
+        "state": "320x568-home",
+        "inspected": false
+      },
+      {
+        "file": "780x300-home.png",
+        "viewport": [
+          780,
+          300
+        ],
+        "state": "780x300-home",
+        "inspected": false
+      },
+      {
+        "file": "short-board-bottom.png",
+        "viewport": [
+          780,
+          300
+        ],
+        "state": "short-board-bottom",
+        "inspected": false
+      },
+      {
+        "file": "780x300-about.png",
+        "viewport": [
+          780,
+          300
+        ],
+        "state": "780x300-about",
+        "inspected": false
+      }
+    ]
+  },
+  "firefox-live": {
+    "version": "153.0",
+    "checks": [
+      {
+        "label": "1440x900 about focus inside",
+        "evidence": true
+      },
+      {
+        "label": "1440x900 about scroll bottom",
+        "evidence": {
+          "top": 0,
+          "height": 845,
+          "scroll": 845,
+          "last": 740.8333129882812,
+          "panelBottom": 845
+        }
+      },
+      {
+        "label": "1440x900 no overlap",
+        "evidence": true
+      },
+      {
+        "label": "1440x900 find focus inside",
+        "evidence": true
+      },
+      {
+        "label": "1440x900 find scroll bottom",
+        "evidence": {
+          "top": 143,
+          "height": 845,
+          "scroll": 988,
+          "last": 804.7999877929688,
+          "panelBottom": 845
+        }
+      },
+      {
+        "label": "1440x900 keyboard panel focus",
+        "evidence": {
+          "active": "<button class=\"panel-close\" type=\"button\" aria-label=\"Close panel\">\u00d7</button>",
+          "open": "about-panel"
+        }
+      },
+      {
+        "label": "1440x900 focus restored",
+        "evidence": true
+      },
+      {
+        "label": "390x844 about focus inside",
+        "evidence": true
+      },
+      {
+        "label": "390x844 about scroll bottom",
+        "evidence": {
+          "top": 68,
+          "height": 763,
+          "scroll": 831,
+          "last": 731.2333526611328,
+          "panelBottom": 763
+        }
+      },
+      {
+        "label": "390x844 no overlap",
+        "evidence": true
+      },
+      {
+        "label": "390x844 find focus inside",
+        "evidence": true
+      },
+      {
+        "label": "390x844 find scroll bottom",
+        "evidence": {
+          "top": 217,
+          "height": 763,
+          "scroll": 980,
+          "last": 730.683349609375,
+          "panelBottom": 763
+        }
+      },
+      {
+        "label": "390x844 demo call",
+        "evidence": "Demo only \u2014 no call has been placed."
+      },
+      {
+        "label": "390x844 demo email",
+        "evidence": "Demo only \u2014 no email has been created or sent."
+      },
+      {
+        "label": "390x844 keyboard panel focus",
+        "evidence": {
+          "active": "<button class=\"panel-close\" type=\"button\" aria-label=\"Close panel\">\u00d7</button>",
+          "open": "about-panel"
+        }
+      },
+      {
+        "label": "390x844 focus restored",
+        "evidence": true
+      }
+    ],
+    "errors": [],
+    "captures": []
+  },
+  "chrome-native-zoom": {
+    "version": "155.0.8059.39",
+    "checks": [
+      {
+        "label": "1440x900 about focus inside",
+        "evidence": true
+      },
+      {
+        "label": "1440x900 about scroll bottom",
+        "evidence": {
+          "top": 0,
+          "height": 845,
+          "scroll": 845,
+          "last": 740.75,
+          "panelBottom": 845
+        }
+      },
+      {
+        "label": "1440x900 no overlap",
+        "evidence": true
+      },
+      {
+        "label": "1440x900 find focus inside",
+        "evidence": true
+      },
+      {
+        "label": "1440x900 find scroll bottom",
+        "evidence": {
+          "top": 161,
+          "height": 845,
+          "scroll": 1006,
+          "last": 804.703125,
+          "panelBottom": 845
+        }
+      },
+      {
+        "label": "1440x900 keyboard panel focus",
+        "evidence": {
+          "active": "<button class=\"panel-close\" type=\"button\" aria-label=\"Close panel\">\u00d7</button>",
+          "open": "about-panel"
+        }
+      },
+      {
+        "label": "1440x900 focus restored",
+        "evidence": true
+      },
+      {
+        "label": "1440x900 fullscreen",
+        "evidence": [
+          1440,
+          900
+        ]
+      },
+      {
+        "label": "1440x900 return",
+        "evidence": [
+          1426,
+          845
+        ]
+      },
+      {
+        "label": "1440x900 gallery",
+        "evidence": "https://tablab.rkdb.nz/boardroom/noticeboard/"
+      },
+      {
+        "label": "native 200 percent metrics",
+        "evidence": {
+          "before": {
+            "innerWidth": 1440,
+            "innerHeight": 900,
+            "outerWidth": 1448,
+            "dpr": 1
+          },
+          "after": {
+            "innerWidth": 720,
+            "innerHeight": 450,
+            "outerWidth": 1448,
+            "dpr": 2,
+            "cssZoom": "1"
+          }
+        }
+      },
+      {
+        "label": "native 200 verified",
+        "evidence": true
+      },
+      {
+        "label": "native zoom layout",
+        "evidence": {
+          "viewport": [
+            720,
+            450
+          ],
+          "brand": {
+            "x": 66.2109375,
+            "y": 16,
+            "width": 198.765625,
+            "height": 86.6171875,
+            "top": 16,
+            "right": 264.9765625,
+            "bottom": 102.6171875,
+            "left": 66.2109375
+          },
+          "board": {
+            "x": 360.40625,
+            "y": 10,
+            "width": 345.59375,
+            "height": 384,
+            "top": 10,
+            "right": 706,
+            "bottom": 394,
+            "left": 360.40625
+          },
+          "noOverlap": true,
+          "boardFits": true
+        }
+      }
+    ],
+    "errors": [],
+    "captures": [
+      {
+        "file": "1440x900-home.png",
+        "viewport": [
+          1440,
+          900
+        ],
+        "state": "1440x900-home",
+        "inspected": false
+      },
+      {
+        "file": "native-200-home.png",
+        "viewport": [
+          720,
+          450
+        ],
+        "state": "native-200-home",
+        "inspected": false
+      },
+      {
+        "file": "native-200-find-bottom.png",
+        "viewport": [
+          720,
+          450
+        ],
+        "state": "native-200-find-bottom",
+        "inspected": false
+      }
+    ]
+  }
+}
